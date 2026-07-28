@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background: #f2f7f3;
+}
+
+body {
+  color: #173b32;
+  font-family: Arial, "PingFang SC", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
