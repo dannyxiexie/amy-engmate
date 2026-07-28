@@ -257,6 +257,12 @@
 .amy-score p { color: #6b7974; font-size: 12px; }
 
 .amy-history { display: grid; gap: 8px; margin-top: 18px; }
+.amy-history-tools { display: flex; flex-direction: row !important; gap: 8px; }
+.amy-history-tools button,
+.amy-history-tools label { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 11px; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); color: var(--ink); cursor: pointer; font-size: 12px; font-weight: 700; }
+.amy-history-tools button { width: auto !important; height: auto !important; }
+.amy-history-tools button:disabled { opacity: .45; cursor: not-allowed; }
+.amy-history-tools input { display: none; }
 .amy-history button { display: grid; grid-template-columns: 92px 1fr auto auto; gap: 12px; align-items: center; padding: 15px; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); color: var(--ink); text-align: left; cursor: pointer; }
 .amy-history button span:nth-child(2) { color: #65756f; font-size: 13px; }
 .amy-history strong { color: var(--green); }
@@ -278,4 +284,6 @@
   .amy-score { grid-column: span 2; }
   .amy-history button { grid-template-columns: 76px 1fr auto auto; gap: 7px; }
   .amy-history button span:nth-child(2) { font-size: 11px; }
+  .amy-heading { align-items: flex-start; }
+  .amy-history-tools { flex-direction: column !important; }
 }

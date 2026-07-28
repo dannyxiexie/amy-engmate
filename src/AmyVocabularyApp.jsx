@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { ArrowLeft, BookOpen, Check, CheckCircle2, ChevronRight, Clock3, GraduationCap, History, RotateCcw, X } from "lucide-react";
+import { ArrowLeft, BookOpen, Check, CheckCircle2, ChevronRight, Clock3, Download, GraduationCap, History, RotateCcw, Upload, X } from "lucide-react";
 import { createAmyExam, createClozePrompt, fetchAmyVocabulary, formatTime, gradeMeaning, hideTermInExample } from "./amyVocabularyData.js";
 import "./amyVocabulary.css";
 
@@ -28,6 +28,20 @@ function readDrafts() {
   } catch {
     return {};
   }
+}
+
+function mergeHistory(importedHistory = [], localHistory = []) {
+  const byId = new Map();
+  [...importedHistory, ...localHistory].forEach((item) => {
+    if (!item?.id || !item?.exam || !item?.results) return;
+    const previous = byId.get(item.id);
+    const previousTime = new Date(previous?.regradedAt || previous?.completedAt || 0).getTime();
+    const itemTime = new Date(item.regradedAt || item.completedAt || 0).getTime();
+    if (!previous || itemTime >= previousTime) byId.set(item.id, item);
+  });
+  return [...byId.values()]
+    .sort((left, right) => new Date(right.completedAt || 0).getTime() - new Date(left.completedAt || 0).getTime())
+    .slice(0, 200);
 }
 
 function isDraftCompatible(draft, session) {
@@ -143,8 +157,8 @@ function Paper({ session, exam, setExam, elapsed, results, onSubmit, isGrading =
   </main>;
 }
 
-function HistoryPage({ history, onOpen }) {
-  return <main className="amy-content"><div className="amy-heading"><div><span>EXAM ARCHIVE</span><h1>历史考试</h1></div></div>{history.length ? <div className="amy-history">{history.map((item) => <button key={item.id} onClick={() => onOpen(item)}><span>第 {item.session} 次</span><span>{new Date(item.completedAt).toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}</span><strong>{item.results.score} 分</strong><ChevronRight size={17} /></button>)}</div> : <p className="amy-empty">完成一次考试后，成绩和错题会保存在这里。</p>}</main>;
+function HistoryPage({ history, onOpen, onExport, onImport }) {
+  return <main className="amy-content"><div className="amy-heading"><div><span>EXAM ARCHIVE</span><h1>历史考试</h1></div><div className="amy-history-tools"><button onClick={onExport} disabled={!history.length}><Download size={15} />导出记录</button><label><Upload size={15} />导入记录<input type="file" accept="application/json,.json" onChange={(event) => { onImport(event.target.files?.[0]); event.target.value = ""; }} /></label></div></div>{history.length ? <div className="amy-history">{history.map((item) => <button key={item.id} onClick={() => onOpen(item)}><span>第 {item.session} 次</span><span>{new Date(item.completedAt).toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}</span><strong>{item.results.score} 分</strong><ChevronRight size={17} /></button>)}</div> : <p className="amy-empty">完成一次考试后，成绩和错题会保存在这里。</p>}</main>;
 }
 
 export default function AmyVocabularyApp({ onBack }) {
@@ -241,6 +255,27 @@ export default function AmyVocabularyApp({ onBack }) {
     setHistory((current) => [{ id: String(Date.now()) + Math.random().toString(36).slice(2, 7), completedAt: new Date().toISOString(), session: session.number, elapsed, exam: readyExam, results: outcome, gradingVersion: GRADING_VERSION }, ...current].slice(0, 18));
     setIsGrading(false);
   };
+  const exportHistory = () => {
+    if (!history.length) return;
+    const blob = new Blob([JSON.stringify({ exportedAt: new Date().toISOString(), history }, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `amy-engmate-exam-history-${new Date().toISOString().slice(0, 10)}.json`;
+    link.click();
+    URL.revokeObjectURL(url);
+  };
+  const importHistory = async (file) => {
+    if (!file) return;
+    try {
+      const payload = JSON.parse(await file.text());
+      const imported = Array.isArray(payload) ? payload : payload.history;
+      if (!Array.isArray(imported)) throw new Error("invalid history");
+      setHistory((current) => mergeHistory(imported, current));
+    } catch {
+      window.alert("这个文件不是有效的 Amy 考试记录。");
+    }
+  };
   const back = () => { if (view === "home") onBack?.(); else if (view === "historyDetail") setView("history"); else setView("home"); };
   if (error) return <main className="amy-loading">资料加载失败：{error}</main>;
   if (!data) return <main className="amy-loading">正在打开英语词汇复习</main>;
@@ -249,7 +284,7 @@ export default function AmyVocabularyApp({ onBack }) {
     {view === "home" ? <SessionPicker data={data} selected={selected} drafts={drafts} onSelect={setSelected} onView={setView} onStart={start} /> : null}
     {view === "review" && session ? <Review session={session} /> : null}
     {view === "exam" && session && exam ? <><Paper session={session} exam={exam} setExam={setExam} elapsed={elapsed} results={results} onSubmit={submit} isGrading={isGrading} />{results ? <button className="amy-retry" onClick={restart}><RotateCcw size={16} /> 再考一套</button> : null}</> : null}
-    {view === "history" ? <HistoryPage history={history} onOpen={(item) => { setRecord(item); setSelected(item.session); setView("historyDetail"); }} /> : null}
+    {view === "history" ? <HistoryPage history={history} onOpen={(item) => { setRecord(item); setSelected(item.session); setView("historyDetail"); }} onExport={exportHistory} onImport={importHistory} /> : null}
     {view === "historyDetail" && record && archivedSession ? <Paper session={archivedSession} exam={record.exam} setExam={() => {}} elapsed={record.elapsed} results={record.results} onSubmit={() => {}} /> : null}
   </div>;
 }
