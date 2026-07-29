@@ -3,6 +3,8 @@ name: Deploy Amy EngMate to GitHub Pages
 on:
   push:
     branches: ["main"]
+    paths-ignore:
+      - "exam-logs/**"
   workflow_dispatch:
 
 permissions:

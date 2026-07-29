@@ -262,12 +262,64 @@
 .amy-history-tools label { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 11px; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); color: var(--ink); cursor: pointer; font-size: 12px; font-weight: 700; }
 .amy-history-tools button { width: auto !important; height: auto !important; }
 .amy-history-tools button:disabled { opacity: .45; cursor: not-allowed; }
+.amy-history-tools button.cloud { border-color: #b8cfc4; background: #e8f2ec; color: var(--green); }
 .amy-history-tools input { display: none; }
+.amy-cloud-status { display: flex; align-items: center; gap: 7px; margin-top: 14px; padding: 10px 12px; border: 1px solid #cad9d1; background: #edf4ef; color: #4e625b; font-size: 12px; }
+.amy-cloud-status.success { border-color: #b9d7c7; color: #197348; }
+.amy-cloud-status.error { border-color: #e1c5bf; background: #fff3f0; color: #a04439; }
+.amy-cloud-status.loading svg { animation: amy-cloud-pulse 1.2s ease-in-out infinite; }
 .amy-history button { display: grid; grid-template-columns: 92px 1fr auto auto; gap: 12px; align-items: center; padding: 15px; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); color: var(--ink); text-align: left; cursor: pointer; }
 .amy-history button span:nth-child(2) { color: #65756f; font-size: 13px; }
 .amy-history strong { color: var(--green); }
 .amy-empty { padding: 30px; color: #667772; background: var(--paper); }
 .amy-loading { display: grid; place-items: center; min-height: 100%; color: #38574d; background: #f3f7f3; }
+
+@keyframes amy-cloud-pulse {
+  50% { opacity: .35; }
+}
+
+.amy-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(18, 39, 33, .48);
+}
+
+.amy-dialog {
+  width: min(520px, 100%);
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #bac9c1;
+  border-radius: 6px;
+  background: var(--paper);
+  box-shadow: 0 18px 50px rgba(18, 39, 33, .22);
+}
+
+.amy-dialog-title {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 11px;
+  align-items: start;
+}
+
+.amy-dialog-title > svg { margin-top: 3px; color: var(--green); }
+.amy-dialog-title h2 { margin: 0; font: 700 21px/1.3 Georgia, "Songti SC", serif; }
+.amy-dialog-title p { margin: 4px 0 0; color: #65756f; font-size: 12px; }
+.amy-dialog-title button { display: grid; place-items: center; width: 32px; height: 32px; border: 0; background: transparent; color: #52635e; cursor: pointer; }
+
+.amy-token-field { display: grid; gap: 7px; margin-top: 19px; color: #40544d; font-size: 12px; font-weight: 700; }
+.amy-token-field input { width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid #c6d2cb; border-radius: 3px; background: #fff; font: 14px/1.4 monospace; }
+.amy-token-help { margin: 11px 0; color: #65756f; font-size: 12px; line-height: 1.6; }
+.amy-token-link { color: var(--green); font-size: 12px; font-weight: 700; }
+.amy-dialog-error { margin: 12px 0 0; padding: 9px 10px; background: #fff0ed; color: #a04439; font-size: 12px; }
+.amy-dialog-actions { display: grid; grid-template-columns: 1fr auto auto; gap: 8px; margin-top: 20px; }
+.amy-dialog-actions button { min-height: 36px; padding: 0 12px; border: 1px solid var(--line); border-radius: 4px; background: #fff; color: var(--ink); cursor: pointer; font-size: 12px; font-weight: 700; }
+.amy-dialog-actions button.primary { border-color: var(--green); background: var(--green); color: #fff; }
+.amy-dialog-actions button.danger { justify-self: start; border-color: #e1c5bf; color: #a04439; }
+.amy-dialog-actions button:disabled { opacity: .5; cursor: not-allowed; }
 
 @media (max-width: 720px) {
   .amy-home,
@@ -286,4 +338,9 @@
   .amy-history button span:nth-child(2) { font-size: 11px; }
   .amy-heading { align-items: flex-start; }
   .amy-history-tools { flex-direction: column !important; }
+  .amy-history-tools button,
+  .amy-history-tools label { justify-content: center; }
+  .amy-dialog-actions { grid-template-columns: 1fr 1fr; }
+  .amy-dialog-actions span,
+  .amy-dialog-actions button.danger { grid-column: 1 / -1; }
 }

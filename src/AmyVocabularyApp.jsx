@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { ArrowLeft, BookOpen, Check, CheckCircle2, ChevronRight, Clock3, Download, GraduationCap, History, RotateCcw, Upload, X } from "lucide-react";
+import { ArrowLeft, BookOpen, Check, CheckCircle2, ChevronRight, Clock3, CloudUpload, Download, GraduationCap, History, KeyRound, RotateCcw, Upload, X } from "lucide-react";
 import { createAmyExam, createClozePrompt, fetchAmyVocabulary, formatTime, gradeMeaning, hideTermInExample } from "./amyVocabularyData.js";
+import { GITHUB_TOKEN_KEY, GITHUB_TOKEN_URL, loadGithubExamLogs, uploadGithubExamLog, verifyGithubWriteToken } from "./githubExamLogs.js";
 import "./amyVocabulary.css";
 
 const HISTORY_KEY = "family-reader:amy-grade-5-vocabulary:exam-history:v1";
@@ -14,7 +15,7 @@ function readHistory() {
   if (typeof window === "undefined") return [];
   try {
     const data = JSON.parse(window.localStorage.getItem(HISTORY_KEY) || "[]");
-    return Array.isArray(data) ? data.slice(0, 18) : [];
+    return Array.isArray(data) ? data.slice(0, 200) : [];
   } catch {
     return [];
   }
@@ -157,8 +158,24 @@ function Paper({ session, exam, setExam, elapsed, results, onSubmit, isGrading =
   </main>;
 }
 
-function HistoryPage({ history, onOpen, onExport, onImport }) {
-  return <main className="amy-content"><div className="amy-heading"><div><span>EXAM ARCHIVE</span><h1>历史考试</h1></div><div className="amy-history-tools"><button onClick={onExport} disabled={!history.length}><Download size={15} />导出记录</button><label><Upload size={15} />导入记录<input type="file" accept="application/json,.json" onChange={(event) => { onImport(event.target.files?.[0]); event.target.value = ""; }} /></label></div></div>{history.length ? <div className="amy-history">{history.map((item) => <button key={item.id} onClick={() => onOpen(item)}><span>第 {item.session} 次</span><span>{new Date(item.completedAt).toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}</span><strong>{item.results.score} 分</strong><ChevronRight size={17} /></button>)}</div> : <p className="amy-empty">完成一次考试后，成绩和错题会保存在这里。</p>}</main>;
+function GithubAccessDialog({ initialToken, isSaving, error, onClose, onSave, onClear }) {
+  const [token, setToken] = useState(initialToken);
+  return <div className="amy-dialog-backdrop" role="presentation">
+    <section className="amy-dialog" role="dialog" aria-modal="true" aria-labelledby="github-access-title">
+      <div className="amy-dialog-title"><KeyRound size={20} /><div><h2 id="github-access-title">连接 GitHub</h2><p>只用于把考试记录写入 amy-engmate 仓库。</p></div><button aria-label="关闭" onClick={onClose}><X size={18} /></button></div>
+      <label className="amy-token-field">GitHub Token<input type="password" value={token} onChange={(event) => setToken(event.target.value.trim())} placeholder="github_pat_..." autoComplete="off" /></label>
+      <p className="amy-token-help">请创建精细权限 Token，只选择 <strong>dannyxiexie/amy-engmate</strong>，并将仓库权限中的 <strong>Contents</strong> 设为 Read and write。</p>
+      <a className="amy-token-link" href={GITHUB_TOKEN_URL} target="_blank" rel="noreferrer">打开 GitHub 创建授权</a>
+      {error ? <p className="amy-dialog-error">{error}</p> : null}
+      <div className="amy-dialog-actions">{initialToken ? <button className="danger" onClick={onClear}>清除授权</button> : <span />}<button className="secondary" onClick={onClose}>取消</button><button className="primary" disabled={!token || isSaving} onClick={() => onSave(token)}>{isSaving ? "正在验证" : "保存并上传"}</button></div>
+    </section>
+  </div>;
+}
+
+function HistoryPage({ history, onOpen, onExport, onImport, onUpload, cloudStatus, isUploading }) {
+  return <main className="amy-content"><div className="amy-heading"><div><span>EXAM ARCHIVE</span><h1>历史考试</h1></div><div className="amy-history-tools"><button onClick={onExport} disabled={!history.length}><Download size={15} />导出记录</button><label><Upload size={15} />导入记录<input type="file" accept="application/json,.json" onChange={(event) => { onImport(event.target.files?.[0]); event.target.value = ""; }} /></label><button className="cloud" onClick={onUpload} disabled={!history.length || isUploading}><CloudUpload size={15} />{isUploading ? "正在上传" : "上传记录"}</button></div></div>
+    {cloudStatus.message ? <div className={`amy-cloud-status ${cloudStatus.type || ""}`}><CloudUpload size={15} /><span>{cloudStatus.message}</span></div> : null}
+    {history.length ? <div className="amy-history">{history.map((item) => <button key={item.id} onClick={() => onOpen(item)}><span>第 {item.session} 次</span><span>{new Date(item.completedAt).toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}</span><strong>{item.results.score} 分</strong><ChevronRight size={17} /></button>)}</div> : <p className="amy-empty">完成一次考试后，成绩和错题会保存在这里。</p>}</main>;
 }
 
 export default function AmyVocabularyApp({ onBack }) {
@@ -174,14 +191,39 @@ export default function AmyVocabularyApp({ onBack }) {
   const [storageReady, setStorageReady] = useState(false);
   const [record, setRecord] = useState(null);
   const [isGrading, setIsGrading] = useState(false);
+  const [githubToken, setGithubToken] = useState("");
+  const [showGithubAccess, setShowGithubAccess] = useState(false);
+  const [githubAccessError, setGithubAccessError] = useState("");
+  const [isSavingGithubAccess, setIsSavingGithubAccess] = useState(false);
+  const [isUploading, setIsUploading] = useState(false);
+  const [cloudStatus, setCloudStatus] = useState({ type: "loading", message: "正在读取云端考试记录" });
   const regradedRecords = useRef(new Set());
   const session = useMemo(() => data?.sessions.find((item) => item.number === selected), [data, selected]);
   useEffect(() => { fetchAmyVocabulary().then(setData).catch((reason) => setError(reason.message)); }, []);
   useEffect(() => {
     setHistory(readHistory());
     setDrafts(readDrafts());
+    setGithubToken(window.localStorage.getItem(GITHUB_TOKEN_KEY) || "");
     setStorageReady(true);
   }, []);
+  useEffect(() => {
+    if (!storageReady) return;
+    let cancelled = false;
+    const token = window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
+    loadGithubExamLogs(token)
+      .then((cloudHistory) => {
+        if (cancelled) return;
+        setHistory((current) => mergeHistory(cloudHistory, current));
+        setCloudStatus({
+          type: "success",
+          message: cloudHistory.length ? `已从 GitHub 同步 ${cloudHistory.length} 份考试记录` : "GitHub 中还没有考试记录"
+        });
+      })
+      .catch(() => {
+        if (!cancelled) setCloudStatus({ type: "error", message: "暂时无法读取 GitHub 记录，本地历史不受影响" });
+      });
+    return () => { cancelled = true; };
+  }, [storageReady]);
   useEffect(() => {
     if (!storageReady) return;
     window.localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
@@ -252,8 +294,16 @@ export default function AmyVocabularyApp({ onBack }) {
     setExam(readyExam);
     setResults(outcome);
     clearDraft(session.number);
-    setHistory((current) => [{ id: String(Date.now()) + Math.random().toString(36).slice(2, 7), completedAt: new Date().toISOString(), session: session.number, elapsed, exam: readyExam, results: outcome, gradingVersion: GRADING_VERSION }, ...current].slice(0, 18));
+    const completedRecord = { id: String(Date.now()) + Math.random().toString(36).slice(2, 7), completedAt: new Date().toISOString(), session: session.number, elapsed, exam: readyExam, results: outcome, gradingVersion: GRADING_VERSION };
+    setHistory((current) => mergeHistory([completedRecord], current));
     setIsGrading(false);
+    const token = window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
+    if (token) {
+      setCloudStatus({ type: "loading", message: "正在把本次考试保存到 GitHub" });
+      uploadGithubExamLog(completedRecord, token)
+        .then(() => setCloudStatus({ type: "success", message: "本次考试已保存到 GitHub" }))
+        .catch(() => setCloudStatus({ type: "error", message: "本次考试已保存在设备中，请到历史页重新上传" }));
+    }
   };
   const exportHistory = () => {
     if (!history.length) return;
@@ -276,6 +326,54 @@ export default function AmyVocabularyApp({ onBack }) {
       window.alert("这个文件不是有效的 Amy 考试记录。");
     }
   };
+  const uploadHistory = async (tokenOverride = "") => {
+    const token = tokenOverride || githubToken || window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
+    if (!token) {
+      setGithubAccessError("");
+      setShowGithubAccess(true);
+      return;
+    }
+    if (!history.length || isUploading) return;
+    setIsUploading(true);
+    setCloudStatus({ type: "loading", message: `正在上传 ${history.length} 份考试记录` });
+    try {
+      for (let index = 0; index < history.length; index += 1) {
+        setCloudStatus({ type: "loading", message: `正在上传第 ${index + 1} / ${history.length} 份记录` });
+        await uploadGithubExamLog(history[index], token);
+      }
+      setCloudStatus({ type: "success", message: `已将 ${history.length} 份考试记录同步到 GitHub` });
+    } catch (reason) {
+      setCloudStatus({ type: "error", message: reason.message || "上传失败，本地记录仍然保留" });
+      if (/授权|权限|Token/.test(reason.message || "")) {
+        setGithubAccessError(reason.message);
+        setShowGithubAccess(true);
+      }
+    } finally {
+      setIsUploading(false);
+    }
+  };
+  const saveGithubAccess = async (token) => {
+    setIsSavingGithubAccess(true);
+    setGithubAccessError("");
+    try {
+      await verifyGithubWriteToken(token);
+      window.localStorage.setItem(GITHUB_TOKEN_KEY, token);
+      setGithubToken(token);
+      setShowGithubAccess(false);
+      await uploadHistory(token);
+    } catch (reason) {
+      setGithubAccessError(reason.message || "无法验证 GitHub 授权");
+    } finally {
+      setIsSavingGithubAccess(false);
+    }
+  };
+  const clearGithubAccess = () => {
+    window.localStorage.removeItem(GITHUB_TOKEN_KEY);
+    setGithubToken("");
+    setGithubAccessError("");
+    setShowGithubAccess(false);
+    setCloudStatus({ type: "", message: "已清除这台设备上的 GitHub 写入授权" });
+  };
   const back = () => { if (view === "home") onBack?.(); else if (view === "historyDetail") setView("history"); else setView("home"); };
   if (error) return <main className="amy-loading">资料加载失败：{error}</main>;
   if (!data) return <main className="amy-loading">正在打开英语词汇复习</main>;
@@ -284,7 +382,8 @@ export default function AmyVocabularyApp({ onBack }) {
     {view === "home" ? <SessionPicker data={data} selected={selected} drafts={drafts} onSelect={setSelected} onView={setView} onStart={start} /> : null}
     {view === "review" && session ? <Review session={session} /> : null}
     {view === "exam" && session && exam ? <><Paper session={session} exam={exam} setExam={setExam} elapsed={elapsed} results={results} onSubmit={submit} isGrading={isGrading} />{results ? <button className="amy-retry" onClick={restart}><RotateCcw size={16} /> 再考一套</button> : null}</> : null}
-    {view === "history" ? <HistoryPage history={history} onOpen={(item) => { setRecord(item); setSelected(item.session); setView("historyDetail"); }} onExport={exportHistory} onImport={importHistory} /> : null}
+    {view === "history" ? <HistoryPage history={history} onOpen={(item) => { setRecord(item); setSelected(item.session); setView("historyDetail"); }} onExport={exportHistory} onImport={importHistory} onUpload={() => uploadHistory()} cloudStatus={cloudStatus} isUploading={isUploading} /> : null}
     {view === "historyDetail" && record && archivedSession ? <Paper session={archivedSession} exam={record.exam} setExam={() => {}} elapsed={record.elapsed} results={record.results} onSubmit={() => {}} /> : null}
+    {showGithubAccess ? <GithubAccessDialog initialToken={githubToken} isSaving={isSavingGithubAccess} error={githubAccessError} onClose={() => setShowGithubAccess(false)} onSave={saveGithubAccess} onClear={clearGithubAccess} /> : null}
   </div>;
 }
