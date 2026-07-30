@@ -1,0 +1,2330 @@
+{
+  "id": "1785371695305jgl44",
+  "completedAt": "2026-07-30T00:34:55.305Z",
+  "session": 1,
+  "elapsed": 17,
+  "exam": {
+    "meanings": [
+      {
+        "term": "of course",
+        "meaningZh": "当然",
+        "acceptedMeaningsZh": [
+          "当然",
+          "自然如此"
+        ],
+        "example": "Of course, I will go.",
+        "exampleZh": "当然，我会去。",
+        "relation": "single",
+        "id": "s1-g11-i1",
+        "sourceGroupId": "s1-g11",
+        "session": 1,
+        "teacherNumber": "11",
+        "displayNumber": "11",
+        "answer": "当然"
+      },
+      {
+        "term": "May",
+        "meaningZh": "五月",
+        "acceptedMeaningsZh": [
+          "五月"
+        ],
+        "example": "It is warm and sunny in May.",
+        "exampleZh": "五月份温暖且阳光充足。",
+        "relation": "list",
+        "id": "s1-g48-i5",
+        "sourceGroupId": "s1-g48",
+        "session": 1,
+        "teacherNumber": "48",
+        "displayNumber": "48-5",
+        "answer": "五月"
+      },
+      {
+        "term": "ask",
+        "meaningZh": "提问",
+        "acceptedMeaningsZh": [
+          "提问",
+          "询问"
+        ],
+        "example": "Ask me a question.",
+        "exampleZh": "向我提个问题。",
+        "relation": "single",
+        "id": "s1-g42-i1",
+        "sourceGroupId": "s1-g42",
+        "session": 1,
+        "teacherNumber": "42",
+        "displayNumber": "42-1",
+        "answer": ""
+      },
+      {
+        "term": "have a minute",
+        "meaningZh": "有一分钟时间；有空",
+        "acceptedMeaningsZh": [
+          "有一分钟时间",
+          "有空"
+        ],
+        "example": "Do you have a minute?",
+        "exampleZh": "你现在有空吗？",
+        "relation": "phrase-alternative",
+        "id": "s1-g7-i1",
+        "sourceGroupId": "s1-g7",
+        "session": 1,
+        "teacherNumber": "7",
+        "displayNumber": "7",
+        "answer": ""
+      },
+      {
+        "term": "question",
+        "meaningZh": "问题",
+        "acceptedMeaningsZh": [
+          "问题",
+          "疑问句"
+        ],
+        "example": "Can I ask you a question?",
+        "exampleZh": "我可以问你一个问题吗？",
+        "relation": "single",
+        "id": "s1-g42-i3",
+        "sourceGroupId": "s1-g42",
+        "session": 1,
+        "teacherNumber": "42",
+        "displayNumber": "42-3",
+        "answer": ""
+      },
+      {
+        "term": "That's great.",
+        "meaningZh": "这很棒",
+        "acceptedMeaningsZh": [
+          "这很棒",
+          "太好了"
+        ],
+        "example": "That's great.",
+        "exampleZh": "这很棒。",
+        "relation": "phrase-alternative",
+        "id": "s1-g12-i1",
+        "sourceGroupId": "s1-g12",
+        "session": 1,
+        "teacherNumber": "12",
+        "displayNumber": "12-1",
+        "answer": ""
+      },
+      {
+        "term": "It sounds helpful.",
+        "meaningZh": "听起来有帮助",
+        "acceptedMeaningsZh": [
+          "听起来有帮助",
+          "听起来很有用"
+        ],
+        "example": "It sounds helpful.",
+        "exampleZh": "听起来有帮助。",
+        "relation": "single",
+        "id": "s1-g21-i1",
+        "sourceGroupId": "s1-g21",
+        "session": 1,
+        "teacherNumber": "21",
+        "displayNumber": "21",
+        "answer": ""
+      },
+      {
+        "term": "February",
+        "meaningZh": "二月",
+        "acceptedMeaningsZh": [
+          "二月"
+        ],
+        "example": "It often rains in February.",
+        "exampleZh": "二月经常下雨。",
+        "relation": "list",
+        "id": "s1-g48-i2",
+        "sourceGroupId": "s1-g48",
+        "session": 1,
+        "teacherNumber": "48",
+        "displayNumber": "48-2",
+        "answer": ""
+      },
+      {
+        "term": "ninth",
+        "meaningZh": "第九",
+        "acceptedMeaningsZh": [
+          "第九",
+          "序数词 nine 的对应形式"
+        ],
+        "example": "It was my ninth trip to Paris.",
+        "exampleZh": "这是我去巴黎的第九次旅行。",
+        "relation": "inflection",
+        "id": "s1-g47-i18",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-18",
+        "answer": ""
+      },
+      {
+        "term": "eight",
+        "meaningZh": "八",
+        "acceptedMeaningsZh": [
+          "八",
+          "第八"
+        ],
+        "example": "Eight stars are in the sky.",
+        "exampleZh": "天空中有八颗星（示例）。",
+        "relation": "list",
+        "id": "s1-g47-i15",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-15",
+        "answer": ""
+      },
+      {
+        "term": "third",
+        "meaningZh": "第三",
+        "acceptedMeaningsZh": [
+          "第三",
+          "序数词 three 的对应形式"
+        ],
+        "example": "This is the third floor.",
+        "exampleZh": "这是三楼。",
+        "relation": "inflection",
+        "id": "s1-g47-i6",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-6",
+        "answer": ""
+      },
+      {
+        "term": "That's good.",
+        "meaningZh": "那很好。",
+        "acceptedMeaningsZh": [
+          "那很好",
+          "那不错"
+        ],
+        "example": "That's good.",
+        "exampleZh": "那很好。",
+        "relation": "single",
+        "id": "s1-g12-i2",
+        "sourceGroupId": "s1-g12",
+        "session": 1,
+        "teacherNumber": "12",
+        "displayNumber": "12-2",
+        "answer": ""
+      },
+      {
+        "term": "July",
+        "meaningZh": "七月",
+        "acceptedMeaningsZh": [
+          "七月"
+        ],
+        "example": "Summer holidays begin in July.",
+        "exampleZh": "暑假从七月份开始。",
+        "relation": "list",
+        "id": "s1-g48-i7",
+        "sourceGroupId": "s1-g48",
+        "session": 1,
+        "teacherNumber": "48",
+        "displayNumber": "48-7",
+        "answer": ""
+      },
+      {
+        "term": "feel bad",
+        "meaningZh": "感觉不好",
+        "acceptedMeaningsZh": [
+          "感觉不好",
+          "感到糟糕"
+        ],
+        "example": "He feels bad about it.",
+        "exampleZh": "他对这件事感到很糟。",
+        "relation": "phrase-alternative",
+        "id": "s1-g27-i2",
+        "sourceGroupId": "s1-g27",
+        "session": 1,
+        "teacherNumber": "27",
+        "displayNumber": "27-2",
+        "answer": ""
+      },
+      {
+        "term": "ten",
+        "meaningZh": "十",
+        "acceptedMeaningsZh": [
+          "十",
+          "第十"
+        ],
+        "example": "Ten fingers are on two hands.",
+        "exampleZh": "两只手共有十个手指。",
+        "relation": "list",
+        "id": "s1-g47-i19",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-19",
+        "answer": ""
+      },
+      {
+        "term": "the same problem",
+        "meaningZh": "相同的问题",
+        "acceptedMeaningsZh": [
+          "相同的问题",
+          "同样的问题"
+        ],
+        "example": "They have the same problem.",
+        "exampleZh": "他们遇到了同样的问题。",
+        "relation": "phrase-alternative",
+        "id": "s1-g29-i1",
+        "sourceGroupId": "s1-g29",
+        "session": 1,
+        "teacherNumber": "29",
+        "displayNumber": "29",
+        "answer": ""
+      },
+      {
+        "term": "Would you like to + verb?",
+        "meaningZh": "询问是否想做某事",
+        "acceptedMeaningsZh": [
+          "询问是否想做某事",
+          "想不想做..."
+        ],
+        "example": "Would you like to + verb?",
+        "exampleZh": "询问是否想做某事？",
+        "relation": "pattern",
+        "id": "s1-g13-i1",
+        "sourceGroupId": "s1-g13",
+        "session": 1,
+        "teacherNumber": "13",
+        "displayNumber": "13-1",
+        "answer": ""
+      },
+      {
+        "term": "four",
+        "meaningZh": "四",
+        "acceptedMeaningsZh": [
+          "四",
+          "第四"
+        ],
+        "example": "Four legs are needed for a chair.",
+        "exampleZh": "椅子需要四条腿。",
+        "relation": "list",
+        "id": "s1-g47-i7",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-7",
+        "answer": ""
+      },
+      {
+        "term": "one",
+        "meaningZh": "一",
+        "acceptedMeaningsZh": [
+          "一",
+          "第一"
+        ],
+        "example": "One is the first number.",
+        "exampleZh": "一个是第一个数字。",
+        "relation": "list",
+        "id": "s1-g47-i1",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-1",
+        "answer": ""
+      },
+      {
+        "term": "at school",
+        "meaningZh": "在学校",
+        "acceptedMeaningsZh": [
+          "在学校",
+          "在学里"
+        ],
+        "example": "She is at school.",
+        "exampleZh": "她在学校。",
+        "relation": "single",
+        "id": "s1-g26-i2",
+        "sourceGroupId": "s1-g26",
+        "session": 1,
+        "teacherNumber": "26",
+        "displayNumber": "26-2",
+        "answer": ""
+      },
+      {
+        "term": "When do you want to go?",
+        "meaningZh": "你想什么时候去？",
+        "acceptedMeaningsZh": [
+          "你想什么时候去",
+          "什么时候想去"
+        ],
+        "example": "When do you want to go?",
+        "exampleZh": "你想什么时候去？",
+        "relation": "pattern",
+        "id": "s1-g15-i1",
+        "sourceGroupId": "s1-g15",
+        "session": 1,
+        "teacherNumber": "15",
+        "displayNumber": "15",
+        "answer": ""
+      },
+      {
+        "term": "sixth",
+        "meaningZh": "第六",
+        "acceptedMeaningsZh": [
+          "第六",
+          "序数词 six 的对应形式"
+        ],
+        "example": "It was my sixth attempt.",
+        "exampleZh": "这是我的第六次尝试。",
+        "relation": "inflection",
+        "id": "s1-g47-i12",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-12",
+        "answer": ""
+      },
+      {
+        "term": "visit sb. with me tomorrow",
+        "meaningZh": "明天和我一起去拜访某人",
+        "acceptedMeaningsZh": [
+          "明天和我一起去拜访某人"
+        ],
+        "example": "Please visit Grandma with me tomorrow.",
+        "exampleZh": "请明天和我一起去看望奶奶。",
+        "relation": "pattern",
+        "id": "s1-g14-i1",
+        "sourceGroupId": "s1-g14",
+        "session": 1,
+        "teacherNumber": "14",
+        "displayNumber": "14",
+        "answer": ""
+      },
+      {
+        "term": "want to + verb",
+        "meaningZh": "想要做某事",
+        "acceptedMeaningsZh": [
+          "想要做某事",
+          "想做..."
+        ],
+        "example": "I want to go home.",
+        "exampleZh": "我想回家。",
+        "relation": "pattern",
+        "id": "s1-g13-i2",
+        "sourceGroupId": "s1-g13",
+        "session": 1,
+        "teacherNumber": "13",
+        "displayNumber": "13-2",
+        "answer": ""
+      },
+      {
+        "term": "Why ...?",
+        "meaningZh": "为什么……？",
+        "acceptedMeaningsZh": [
+          "为什么"
+        ],
+        "example": "Why are you late?",
+        "exampleZh": "你为什么迟到？",
+        "relation": "pattern",
+        "id": "s1-g17-i1",
+        "sourceGroupId": "s1-g17",
+        "session": 1,
+        "teacherNumber": "17",
+        "displayNumber": "17-1",
+        "answer": ""
+      },
+      {
+        "term": "a good idea",
+        "meaningZh": "一个好主意",
+        "acceptedMeaningsZh": [
+          "一个好主意",
+          "一个很好的想法"
+        ],
+        "example": "That's a good idea.",
+        "exampleZh": "那是一个好主意。",
+        "relation": "phrase-alternative",
+        "id": "s1-g35-i1",
+        "sourceGroupId": "s1-g35",
+        "session": 1,
+        "teacherNumber": "35",
+        "displayNumber": "35",
+        "answer": ""
+      },
+      {
+        "term": "That's amazing.",
+        "meaningZh": "太棒了",
+        "acceptedMeaningsZh": [
+          "太棒了",
+          "真令人惊叹"
+        ],
+        "example": "That's amazing.",
+        "exampleZh": "太棒了。",
+        "relation": "single",
+        "id": "s1-g46-i1",
+        "sourceGroupId": "s1-g46",
+        "session": 1,
+        "teacherNumber": "46",
+        "displayNumber": "46",
+        "answer": ""
+      },
+      {
+        "term": "seventh",
+        "meaningZh": "第七",
+        "acceptedMeaningsZh": [
+          "第七",
+          "序数词 seven 的对应形式"
+        ],
+        "example": "It was his seventh victory.",
+        "exampleZh": "这是他获得的第七个胜利。",
+        "relation": "inflection",
+        "id": "s1-g47-i14",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-14",
+        "answer": ""
+      },
+      {
+        "term": "spend 30 minutes",
+        "meaningZh": "花30分钟",
+        "acceptedMeaningsZh": [
+          "花30分钟",
+          "用30分钟"
+        ],
+        "example": "She spent thirty minutes reading.",
+        "exampleZh": "她花了半小时阅读。",
+        "relation": "phrase-alternative",
+        "id": "s1-g32-i1",
+        "sourceGroupId": "s1-g32",
+        "session": 1,
+        "teacherNumber": "32",
+        "displayNumber": "32",
+        "answer": ""
+      },
+      {
+        "term": "at home",
+        "meaningZh": "在家",
+        "acceptedMeaningsZh": [
+          "在家",
+          "在家里"
+        ],
+        "example": "He is at home.",
+        "exampleZh": "他在家。",
+        "relation": "single",
+        "id": "s1-g26-i1",
+        "sourceGroupId": "s1-g26",
+        "session": 1,
+        "teacherNumber": "26",
+        "displayNumber": "26-1",
+        "answer": ""
+      },
+      {
+        "term": "six",
+        "meaningZh": "六",
+        "acceptedMeaningsZh": [
+          "六",
+          "第六"
+        ],
+        "example": "Six months have passed since then.",
+        "exampleZh": "从那以后已经过了六个月。",
+        "relation": "list",
+        "id": "s1-g47-i11",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-11",
+        "answer": ""
+      },
+      {
+        "term": "have a great day",
+        "meaningZh": "度过美好的一天",
+        "acceptedMeaningsZh": [
+          "度过美好的一天",
+          "祝你今天过得愉快"
+        ],
+        "example": "Have a great day!",
+        "exampleZh": "祝你今天过得愉快！",
+        "relation": "phrase-alternative",
+        "id": "s1-g1-i1",
+        "sourceGroupId": "s1-g1",
+        "session": 1,
+        "teacherNumber": "1",
+        "displayNumber": "1-1",
+        "answer": ""
+      },
+      {
+        "term": "will try this",
+        "meaningZh": "会试试这个",
+        "acceptedMeaningsZh": [
+          "会试试这个",
+          "将尝试这个"
+        ],
+        "example": "I will try this.",
+        "exampleZh": "我会试试这个。",
+        "relation": "pattern",
+        "id": "s1-g22-i1",
+        "sourceGroupId": "s1-g22",
+        "session": 1,
+        "teacherNumber": "22",
+        "displayNumber": "22",
+        "answer": ""
+      },
+      {
+        "term": "make a plan",
+        "meaningZh": "制定计划",
+        "acceptedMeaningsZh": [
+          "制定计划",
+          "做计划"
+        ],
+        "example": "We need to make a plan.",
+        "exampleZh": "我们需要制定一个计划。",
+        "relation": "phrase-alternative",
+        "id": "s1-g30-i1",
+        "sourceGroupId": "s1-g30",
+        "session": 1,
+        "teacherNumber": "30",
+        "displayNumber": "30",
+        "answer": ""
+      },
+      {
+        "term": "a useful skill",
+        "meaningZh": "一项有用的技能",
+        "acceptedMeaningsZh": [
+          "一项有用的技能",
+          "一个有用的技巧"
+        ],
+        "example": "Learning English is a useful skill.",
+        "exampleZh": "学习英语是一项有用的技能。",
+        "relation": "single",
+        "id": "s1-g20-i1",
+        "sourceGroupId": "s1-g20",
+        "session": 1,
+        "teacherNumber": "20",
+        "displayNumber": "20",
+        "answer": ""
+      },
+      {
+        "term": "second",
+        "meaningZh": "第二",
+        "acceptedMeaningsZh": [
+          "第二",
+          "序数词 two 的对应形式"
+        ],
+        "example": "It was my second try.",
+        "exampleZh": "这是我的第二次尝试。",
+        "relation": "inflection",
+        "id": "s1-g47-i4",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-4",
+        "answer": ""
+      },
+      {
+        "term": "What can I do for you?",
+        "meaningZh": "我能为您做什么？",
+        "acceptedMeaningsZh": [
+          "我能为您做什么？"
+        ],
+        "example": "What can I do for you?",
+        "exampleZh": "我能为您做什么？",
+        "relation": "single",
+        "id": "s1-g8-i1",
+        "sourceGroupId": "s1-g8",
+        "session": 1,
+        "teacherNumber": "8",
+        "displayNumber": "8",
+        "answer": ""
+      },
+      {
+        "term": "June",
+        "meaningZh": "六月",
+        "acceptedMeaningsZh": [
+          "六月"
+        ],
+        "example": "School ends in June often.",
+        "exampleZh": "学校通常在六月底结束。",
+        "relation": "list",
+        "id": "s1-g48-i6",
+        "sourceGroupId": "s1-g48",
+        "session": 1,
+        "teacherNumber": "48",
+        "displayNumber": "48-6",
+        "answer": ""
+      },
+      {
+        "term": "on + date",
+        "meaningZh": "在某个日期",
+        "acceptedMeaningsZh": [
+          "在某个日期",
+          "用于日期前"
+        ],
+        "example": "The party is on May 1st.",
+        "exampleZh": "聚会在5月1日。",
+        "relation": "pattern",
+        "id": "s1-g50-i1",
+        "sourceGroupId": "s1-g50",
+        "session": 1,
+        "teacherNumber": "50",
+        "displayNumber": "50",
+        "answer": ""
+      },
+      {
+        "term": "August",
+        "meaningZh": "八月",
+        "acceptedMeaningsZh": [
+          "八月"
+        ],
+        "example": "It is hot and busy in August.",
+        "exampleZh": "八月份炎热且忙碌。",
+        "relation": "list",
+        "id": "s1-g48-i8",
+        "sourceGroupId": "s1-g48",
+        "session": 1,
+        "teacherNumber": "48",
+        "displayNumber": "48-8",
+        "answer": ""
+      },
+      {
+        "term": "for example",
+        "meaningZh": "例如",
+        "acceptedMeaningsZh": [
+          "例如",
+          "比如"
+        ],
+        "example": "For example, he likes cats.",
+        "exampleZh": "例如，他喜欢猫。",
+        "relation": "pattern",
+        "id": "s1-g31-i1",
+        "sourceGroupId": "s1-g31",
+        "session": 1,
+        "teacherNumber": "31",
+        "displayNumber": "31",
+        "answer": ""
+      },
+      {
+        "term": "in + month",
+        "meaningZh": "在某个月",
+        "acceptedMeaningsZh": [
+          "在某个月",
+          "用于月份前"
+        ],
+        "example": "It is in January.",
+        "exampleZh": "它在一月。",
+        "relation": "pattern",
+        "id": "s1-g49-i1",
+        "sourceGroupId": "s1-g49",
+        "session": 1,
+        "teacherNumber": "49",
+        "displayNumber": "49",
+        "answer": ""
+      },
+      {
+        "term": "eighth",
+        "meaningZh": "第八",
+        "acceptedMeaningsZh": [
+          "第八",
+          "序数词 eight 的对应形式"
+        ],
+        "example": "It was my eighth lesson today.",
+        "exampleZh": "今天是我的第八节课。",
+        "relation": "inflection",
+        "id": "s1-g47-i16",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-16",
+        "answer": ""
+      },
+      {
+        "term": "about robots",
+        "meaningZh": "关于机器人",
+        "acceptedMeaningsZh": [
+          "关于机器人"
+        ],
+        "example": "This book is about robots.",
+        "exampleZh": "这本书是关于机器人的。",
+        "relation": "phrase-alternative",
+        "id": "s1-g4-i1",
+        "sourceGroupId": "s1-g4",
+        "session": 1,
+        "teacherNumber": "4",
+        "displayNumber": "4",
+        "answer": ""
+      },
+      {
+        "term": "fourth",
+        "meaningZh": "第四",
+        "acceptedMeaningsZh": [
+          "第四",
+          "序数词 four 的对应形式"
+        ],
+        "example": "It was my fourth birthday.",
+        "exampleZh": "这是我第四次生日（周岁）。",
+        "relation": "inflection",
+        "id": "s1-g47-i8",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-8",
+        "answer": ""
+      },
+      {
+        "term": "help sb. do sth.",
+        "meaningZh": "帮助某人做某事",
+        "acceptedMeaningsZh": [
+          "帮助某人做某事"
+        ],
+        "example": "She helped me clean the room.",
+        "exampleZh": "她帮我打扫了房间。",
+        "relation": "pattern",
+        "id": "s1-g24-i1",
+        "sourceGroupId": "s1-g24",
+        "session": 1,
+        "teacherNumber": "24",
+        "displayNumber": "24-1",
+        "answer": ""
+      },
+      {
+        "term": "two",
+        "meaningZh": "二",
+        "acceptedMeaningsZh": [
+          "二",
+          "第二"
+        ],
+        "example": "Two is a small even number.",
+        "exampleZh": "二是偶数中的一个小数字。",
+        "relation": "list",
+        "id": "s1-g47-i3",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-3",
+        "answer": ""
+      },
+      {
+        "term": "before every class",
+        "meaningZh": "在每节课之前",
+        "acceptedMeaningsZh": [
+          "在每节课之前",
+          "每次上课前"
+        ],
+        "example": "We must be ready before every class.",
+        "exampleZh": "我们必须在这每节课之前准备好。",
+        "relation": "phrase-alternative",
+        "id": "s1-g19-i1",
+        "sourceGroupId": "s1-g19",
+        "session": 1,
+        "teacherNumber": "19",
+        "displayNumber": "19",
+        "answer": ""
+      },
+      {
+        "term": "seven",
+        "meaningZh": "七",
+        "acceptedMeaningsZh": [
+          "七",
+          "第七"
+        ],
+        "example": "Seven days make a week.",
+        "exampleZh": "七天组成一周。",
+        "relation": "list",
+        "id": "s1-g47-i13",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-13",
+        "answer": ""
+      },
+      {
+        "term": "over there",
+        "meaningZh": "在那边",
+        "acceptedMeaningsZh": [
+          "在那边",
+          "那边去"
+        ],
+        "example": "Go over there.",
+        "exampleZh": "到那边去吧。",
+        "relation": "list",
+        "id": "s1-g5-i1",
+        "sourceGroupId": "s1-g5",
+        "session": 1,
+        "teacherNumber": "5",
+        "displayNumber": "5",
+        "answer": ""
+      },
+      {
+        "term": "fifth",
+        "meaningZh": "第五",
+        "acceptedMeaningsZh": [
+          "第五",
+          "序数词 five 的对应形式"
+        ],
+        "example": "It was my fifth year here.",
+        "exampleZh": "这是我在这里度过的第五年。",
+        "relation": "inflection",
+        "id": "s1-g47-i10",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-10",
+        "answer": ""
+      },
+      {
+        "term": "five",
+        "meaningZh": "五",
+        "acceptedMeaningsZh": [
+          "五",
+          "第五"
+        ],
+        "example": "Five fingers are on one hand.",
+        "exampleZh": "一只手有五个手指。",
+        "relation": "list",
+        "id": "s1-g47-i9",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-9",
+        "answer": ""
+      },
+      {
+        "term": "first",
+        "meaningZh": "第一",
+        "acceptedMeaningsZh": [
+          "第一",
+          "序数词 one 的对应形式"
+        ],
+        "example": "It was my first day here.",
+        "exampleZh": "这是我来的第一天。",
+        "relation": "inflection",
+        "id": "s1-g47-i2",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-2",
+        "answer": ""
+      },
+      {
+        "term": "March",
+        "meaningZh": "三月",
+        "acceptedMeaningsZh": [
+          "三月"
+        ],
+        "example": "Spring starts in March.",
+        "exampleZh": "春天从三月开始。",
+        "relation": "list",
+        "id": "s1-g48-i3",
+        "sourceGroupId": "s1-g48",
+        "session": 1,
+        "teacherNumber": "48",
+        "displayNumber": "48-3",
+        "answer": ""
+      },
+      {
+        "term": "have fun",
+        "meaningZh": "玩得开心",
+        "acceptedMeaningsZh": [
+          "玩得开心",
+          "好好玩一下"
+        ],
+        "example": "Have fun!",
+        "exampleZh": "这很好玩！",
+        "relation": "single",
+        "id": "s1-g34-i1",
+        "sourceGroupId": "s1-g34",
+        "session": 1,
+        "teacherNumber": "34",
+        "displayNumber": "34",
+        "answer": ""
+      },
+      {
+        "term": "learn new words",
+        "meaningZh": "学习新单词",
+        "acceptedMeaningsZh": [
+          "学习新单词",
+          "学一些新的词"
+        ],
+        "example": "I learned some new words today.",
+        "exampleZh": "我今天学会了一些新单词。",
+        "relation": "phrase-alternative",
+        "id": "s1-g18-i1",
+        "sourceGroupId": "s1-g18",
+        "session": 1,
+        "teacherNumber": "18",
+        "displayNumber": "18",
+        "answer": ""
+      },
+      {
+        "term": "What a lovely robot!",
+        "meaningZh": "多么可爱的机器人！",
+        "acceptedMeaningsZh": [
+          "多么可爱的机器人！",
+          "感叹句结构"
+        ],
+        "example": "What a lovely robot!",
+        "exampleZh": "多么可爱的机器人！",
+        "relation": "pattern",
+        "id": "s1-g41-i2",
+        "sourceGroupId": "s1-g41",
+        "session": 1,
+        "teacherNumber": "41",
+        "displayNumber": "41-2",
+        "answer": ""
+      },
+      {
+        "term": "help us learn words",
+        "meaningZh": "帮助我们学习单词",
+        "acceptedMeaningsZh": [
+          "帮助我们学习单词",
+          "帮我们学词"
+        ],
+        "example": "They help us learn new words every day.",
+        "exampleZh": "他们每天帮我们学习新单词。",
+        "relation": "phrase-alternative",
+        "id": "s1-g24-i2",
+        "sourceGroupId": "s1-g24",
+        "session": 1,
+        "teacherNumber": "24",
+        "displayNumber": "24-2",
+        "answer": ""
+      },
+      {
+        "term": "9 p.m.",
+        "meaningZh": "晚上九点",
+        "acceptedMeaningsZh": [
+          "晚上九点"
+        ],
+        "example": "The meeting starts at 9 p.m.",
+        "exampleZh": "会议在晚上九点开始。",
+        "relation": "list",
+        "id": "s1-g16-i2",
+        "sourceGroupId": "s1-g16",
+        "session": 1,
+        "teacherNumber": "16",
+        "displayNumber": "16-2",
+        "answer": ""
+      },
+      {
+        "term": "choose a story",
+        "meaningZh": "选择一个故事",
+        "acceptedMeaningsZh": [
+          "选择一个故事",
+          "选一个故事"
+        ],
+        "example": "Choose the most interesting story for us to read together.",
+        "exampleZh": "让我们一起读最有趣的这个故事吧，请你们选择一下。",
+        "relation": "phrase-alternative",
+        "id": "s1-g38-i1",
+        "sourceGroupId": "s1-g38",
+        "session": 1,
+        "teacherNumber": "38",
+        "displayNumber": "38",
+        "answer": ""
+      },
+      {
+        "term": "give yourself 30 minutes",
+        "meaningZh": "给自己三十分钟",
+        "acceptedMeaningsZh": [
+          "给自己三十分钟",
+          "给自已三十分钟"
+        ],
+        "example": "Give yourself thirty minutes.",
+        "exampleZh": "给你自己三十分钟。",
+        "relation": "phrase-alternative",
+        "id": "s1-g33-i1",
+        "sourceGroupId": "s1-g33",
+        "session": 1,
+        "teacherNumber": "33",
+        "displayNumber": "33",
+        "answer": ""
+      },
+      {
+        "term": "know a game",
+        "meaningZh": "知道一个游戏",
+        "acceptedMeaningsZh": [
+          "知道一个游戏",
+          "会一个游戏"
+        ],
+        "example": "Do you know a game?",
+        "exampleZh": "你知道这个游戏吗？",
+        "relation": "phrase-alternative",
+        "id": "s1-g23-i1",
+        "sourceGroupId": "s1-g23",
+        "session": 1,
+        "teacherNumber": "23",
+        "displayNumber": "23",
+        "answer": ""
+      },
+      {
+        "term": "I believe I can do ...",
+        "meaningZh": "我相信我能做到……",
+        "acceptedMeaningsZh": [
+          "我相信我能做到……"
+        ],
+        "example": "I believe I can do it.",
+        "exampleZh": "我相信我能做到它。",
+        "relation": "pattern",
+        "id": "s1-g36-i1",
+        "sourceGroupId": "s1-g36",
+        "session": 1,
+        "teacherNumber": "36",
+        "displayNumber": "36",
+        "answer": ""
+      },
+      {
+        "term": "three",
+        "meaningZh": "三",
+        "acceptedMeaningsZh": [
+          "三",
+          "第三"
+        ],
+        "example": "Three days have passed.",
+        "exampleZh": "三天已经过去了。",
+        "relation": "list",
+        "id": "s1-g47-i5",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-5",
+        "answer": ""
+      },
+      {
+        "term": "play it together",
+        "meaningZh": "一起玩它",
+        "acceptedMeaningsZh": [
+          "一起玩它",
+          "一起玩"
+        ],
+        "example": "Let's play it together.",
+        "exampleZh": "我们一起玩吧。",
+        "relation": "phrase-alternative",
+        "id": "s1-g25-i1",
+        "sourceGroupId": "s1-g25",
+        "session": 1,
+        "teacherNumber": "25",
+        "displayNumber": "25",
+        "answer": ""
+      },
+      {
+        "term": "look for a storybook",
+        "meaningZh": "寻找一本故事书",
+        "acceptedMeaningsZh": [
+          "寻找一本故事书"
+        ],
+        "example": "I am looking for a storybook.",
+        "exampleZh": "我正在找一本故事书。",
+        "relation": "phrase-alternative",
+        "id": "s1-g3-i1",
+        "sourceGroupId": "s1-g3",
+        "session": 1,
+        "teacherNumber": "3",
+        "displayNumber": "3",
+        "answer": ""
+      },
+      {
+        "term": "feel so good",
+        "meaningZh": "感觉很好",
+        "acceptedMeaningsZh": [
+          "感觉很好",
+          "感觉很棒"
+        ],
+        "example": "I feel so good.",
+        "exampleZh": "我感觉很棒。",
+        "relation": "phrase-alternative",
+        "id": "s1-g27-i1",
+        "sourceGroupId": "s1-g27",
+        "session": 1,
+        "teacherNumber": "27",
+        "displayNumber": "27-1",
+        "answer": ""
+      },
+      {
+        "term": "have a good day",
+        "meaningZh": "度过美好的一天",
+        "acceptedMeaningsZh": [
+          "度过美好的一天",
+          "祝你今天过得愉快"
+        ],
+        "example": "Have a good day!",
+        "exampleZh": "祝你今天过得愉快！",
+        "relation": "phrase-alternative",
+        "id": "s1-g1-i2",
+        "sourceGroupId": "s1-g1",
+        "session": 1,
+        "teacherNumber": "1",
+        "displayNumber": "1-2",
+        "answer": ""
+      },
+      {
+        "term": "September",
+        "meaningZh": "九月",
+        "acceptedMeaningsZh": [
+          "九月"
+        ],
+        "example": "School starts again in September.",
+        "exampleZh": "九月份学校再次开学。",
+        "relation": "list",
+        "id": "s1-g48-i9",
+        "sourceGroupId": "s1-g48",
+        "session": 1,
+        "teacherNumber": "48",
+        "displayNumber": "48-9",
+        "answer": ""
+      },
+      {
+        "term": "give you the answer",
+        "meaningZh": "给你答案",
+        "acceptedMeaningsZh": [
+          "给你答案",
+          "把答案给..."
+        ],
+        "example": "Give me your homework.",
+        "exampleZh": "给我你的作业。",
+        "relation": "pattern",
+        "id": "s1-g43-i1",
+        "sourceGroupId": "s1-g43",
+        "session": 1,
+        "teacherNumber": "43",
+        "displayNumber": "43",
+        "answer": ""
+      },
+      {
+        "term": "search for ...",
+        "meaningZh": "搜索；寻找",
+        "acceptedMeaningsZh": [
+          "搜索",
+          "寻找"
+        ],
+        "example": "Search for information about the history of science.",
+        "exampleZh": "搜索关于科学历史的信息。",
+        "relation": "pattern",
+        "id": "s1-g39-i1",
+        "sourceGroupId": "s1-g39",
+        "session": 1,
+        "teacherNumber": "39",
+        "displayNumber": "39",
+        "answer": ""
+      },
+      {
+        "term": "join the kung fu club",
+        "meaningZh": "加入功夫俱乐部",
+        "acceptedMeaningsZh": [
+          "加入功夫俱乐部"
+        ],
+        "example": "I want to join the kung fu club.",
+        "exampleZh": "我想加入功夫俱乐部。",
+        "relation": "phrase-alternative",
+        "id": "s1-g10-i1",
+        "sourceGroupId": "s1-g10",
+        "session": 1,
+        "teacherNumber": "10",
+        "displayNumber": "10",
+        "answer": ""
+      },
+      {
+        "term": "January",
+        "meaningZh": "一月",
+        "acceptedMeaningsZh": [
+          "一月"
+        ],
+        "example": "My birthday is in January.",
+        "exampleZh": "我的生日在一月。",
+        "relation": "list",
+        "id": "s1-g48-i1",
+        "sourceGroupId": "s1-g48",
+        "session": 1,
+        "teacherNumber": "48",
+        "displayNumber": "48-1",
+        "answer": ""
+      },
+      {
+        "term": "How lovely the robot is!",
+        "meaningZh": "多么可爱的机器人！",
+        "acceptedMeaningsZh": [
+          "多么可爱的机器人！",
+          "这个机器人真可爱。"
+        ],
+        "example": "How lovely the robot is!",
+        "exampleZh": "多么可爱的机器人！",
+        "relation": "single",
+        "id": "s1-g41-i1",
+        "sourceGroupId": "s1-g41",
+        "session": 1,
+        "teacherNumber": "41",
+        "displayNumber": "41-1",
+        "answer": ""
+      },
+      {
+        "term": "9 a.m.",
+        "meaningZh": "上午九点",
+        "acceptedMeaningsZh": [
+          "上午九点"
+        ],
+        "example": "It is 9 a.m. now.",
+        "exampleZh": "现在是上午九点。",
+        "relation": "list",
+        "id": "s1-g16-i1",
+        "sourceGroupId": "s1-g16",
+        "session": 1,
+        "teacherNumber": "16",
+        "displayNumber": "16-1",
+        "answer": ""
+      },
+      {
+        "term": "answer",
+        "meaningZh": "回答",
+        "acceptedMeaningsZh": [
+          "回答",
+          "答复"
+        ],
+        "example": "Please answer the question.",
+        "exampleZh": "请回答问题。",
+        "relation": "single",
+        "id": "s1-g42-i2",
+        "sourceGroupId": "s1-g42",
+        "session": 1,
+        "teacherNumber": "42",
+        "displayNumber": "42-2",
+        "answer": ""
+      },
+      {
+        "term": "spell it again",
+        "meaningZh": "再拼写一遍",
+        "acceptedMeaningsZh": [
+          "再拼写一遍",
+          "再拼一次"
+        ],
+        "example": "Spell the word again.",
+        "exampleZh": "把这个单词再拼一遍。",
+        "relation": "phrase-alternative",
+        "id": "s1-g45-i1",
+        "sourceGroupId": "s1-g45",
+        "session": 1,
+        "teacherNumber": "45",
+        "displayNumber": "45",
+        "answer": ""
+      },
+      {
+        "term": "October",
+        "meaningZh": "十月",
+        "acceptedMeaningsZh": [
+          "十月"
+        ],
+        "example": "Autumn leaves fall in October.",
+        "exampleZh": "十月的秋叶飘落。",
+        "relation": "list",
+        "id": "s1-g48-i10",
+        "sourceGroupId": "s1-g48",
+        "session": 1,
+        "teacherNumber": "48",
+        "displayNumber": "48-10",
+        "answer": ""
+      },
+      {
+        "term": "tenth",
+        "meaningZh": "第十",
+        "acceptedMeaningsZh": [
+          "第十",
+          "序数词 ten 的对应形式"
+        ],
+        "example": "It was my tenth birthday this year.",
+        "exampleZh": "这是我今年出生的第十个年头（周岁）。",
+        "relation": "inflection",
+        "id": "s1-g47-i20",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-20",
+        "answer": ""
+      },
+      {
+        "term": "Don't worry.",
+        "meaningZh": "别担心",
+        "acceptedMeaningsZh": [
+          "别担心",
+          "不用担心"
+        ],
+        "example": "Don't worry.",
+        "exampleZh": "别担心。",
+        "relation": "phrase-alternative",
+        "id": "s1-g28-i1",
+        "sourceGroupId": "s1-g28",
+        "session": 1,
+        "teacherNumber": "28",
+        "displayNumber": "28",
+        "answer": ""
+      },
+      {
+        "term": "April",
+        "meaningZh": "四月",
+        "acceptedMeaningsZh": [
+          "四月"
+        ],
+        "example": "Flowers bloom in April.",
+        "exampleZh": "四月份花朵盛开。",
+        "relation": "list",
+        "id": "s1-g48-i4",
+        "sourceGroupId": "s1-g48",
+        "session": 1,
+        "teacherNumber": "48",
+        "displayNumber": "48-4",
+        "answer": ""
+      },
+      {
+        "term": "find interesting stories",
+        "meaningZh": "寻找有趣的故事",
+        "acceptedMeaningsZh": [
+          "寻找有趣的故事",
+          "找有趣的故事情节"
+        ],
+        "example": "Find some interesting stories about animals.",
+        "exampleZh": "找到一些关于动物的有趣故事。",
+        "relation": "phrase-alternative",
+        "id": "s1-g37-i1",
+        "sourceGroupId": "s1-g37",
+        "session": 1,
+        "teacherNumber": "37",
+        "displayNumber": "37",
+        "answer": ""
+      },
+      {
+        "term": "Chinese kung fu",
+        "meaningZh": "中国功夫",
+        "acceptedMeaningsZh": [
+          "中国功夫"
+        ],
+        "example": "This is Chinese kung fu.",
+        "exampleZh": "这是中国功夫。",
+        "relation": "single",
+        "id": "s1-g9-i1",
+        "sourceGroupId": "s1-g9",
+        "session": 1,
+        "teacherNumber": "9",
+        "displayNumber": "9",
+        "answer": ""
+      },
+      {
+        "term": "You're welcome.",
+        "meaningZh": "不客气",
+        "acceptedMeaningsZh": [
+          "不客气",
+          "不用谢"
+        ],
+        "example": "You're welcome.",
+        "exampleZh": "不客气。",
+        "relation": "single",
+        "id": "s1-g6-i1",
+        "sourceGroupId": "s1-g6",
+        "session": 1,
+        "teacherNumber": "6",
+        "displayNumber": "6",
+        "answer": ""
+      },
+      {
+        "term": "How can I help you?",
+        "meaningZh": "我能帮你做什么？",
+        "acceptedMeaningsZh": [
+          "我能帮你做什么？"
+        ],
+        "example": "How can I help you?",
+        "exampleZh": "我能帮你做什么？",
+        "relation": "pattern",
+        "id": "s1-g2-i1",
+        "sourceGroupId": "s1-g2",
+        "session": 1,
+        "teacherNumber": "2",
+        "displayNumber": "2",
+        "answer": ""
+      },
+      {
+        "term": "November",
+        "meaningZh": "十一月",
+        "acceptedMeaningsZh": [
+          "十一月"
+        ],
+        "example": "It is cold and windy in November.",
+        "exampleZh": "十一月份寒冷且多风。",
+        "relation": "list",
+        "id": "s1-g48-i11",
+        "sourceGroupId": "s1-g48",
+        "session": 1,
+        "teacherNumber": "48",
+        "displayNumber": "48-11",
+        "answer": ""
+      },
+      {
+        "term": "nine",
+        "meaningZh": "九",
+        "acceptedMeaningsZh": [
+          "九",
+          "第九"
+        ],
+        "example": "Nine months are left in the year.",
+        "exampleZh": "一年中还剩九月（示例）。",
+        "relation": "list",
+        "id": "s1-g47-i17",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-17",
+        "answer": ""
+      },
+      {
+        "term": "Because ...",
+        "meaningZh": "因为……",
+        "acceptedMeaningsZh": [
+          "因为"
+        ],
+        "example": "Because it rained, we stayed home.",
+        "exampleZh": "因为它下雨了，所以我们待在家里。",
+        "relation": "pattern",
+        "id": "s1-g17-i2",
+        "sourceGroupId": "s1-g17",
+        "session": 1,
+        "teacherNumber": "17",
+        "displayNumber": "17-2",
+        "answer": ""
+      },
+      {
+        "term": "How do you spell it?",
+        "meaningZh": "你怎么拼写它？",
+        "acceptedMeaningsZh": [
+          "你怎么拼写它？"
+        ],
+        "example": "How do you spell it?",
+        "exampleZh": "你怎么拼写它？",
+        "relation": "single",
+        "id": "s1-g44-i1",
+        "sourceGroupId": "s1-g44",
+        "session": 1,
+        "teacherNumber": "44",
+        "displayNumber": "44",
+        "answer": ""
+      },
+      {
+        "term": "a lovely and smart robot",
+        "meaningZh": "一个可爱又聪明的机器人",
+        "acceptedMeaningsZh": [
+          "一个可爱又聪明的机器人",
+          "可爱的且聪明的机器人"
+        ],
+        "example": "This is a lovely and smart robot that can help you.",
+        "exampleZh": "这是一个既可爱又聪明的机器人，它可以帮你。",
+        "relation": "list",
+        "id": "s1-g40-i1",
+        "sourceGroupId": "s1-g40",
+        "session": 1,
+        "teacherNumber": "40",
+        "displayNumber": "40",
+        "answer": ""
+      },
+      {
+        "term": "December",
+        "meaningZh": "十二月",
+        "acceptedMeaningsZh": [
+          "十二月"
+        ],
+        "example": "Christmas comes in December.",
+        "exampleZh": "圣诞节在十二月中来。",
+        "relation": "list",
+        "id": "s1-g48-i12",
+        "sourceGroupId": "s1-g48",
+        "session": 1,
+        "teacherNumber": "48",
+        "displayNumber": "48-12",
+        "answer": ""
+      }
+    ],
+    "cloze": [
+      {
+        "term": "sixth",
+        "meaningZh": "第六",
+        "acceptedMeaningsZh": [
+          "第六",
+          "序数词 six 的对应形式"
+        ],
+        "example": "It was my sixth attempt.",
+        "exampleZh": "这是我的第六次尝试。",
+        "relation": "inflection",
+        "id": "s1-g47-i12",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-12",
+        "answer": "",
+        "prompt": "It was my _____ attempt.",
+        "choices": [
+          "sixth",
+          "When do you want to go?",
+          "ask",
+          "a lovely and smart robot"
+        ]
+      },
+      {
+        "term": "seventh",
+        "meaningZh": "第七",
+        "acceptedMeaningsZh": [
+          "第七",
+          "序数词 seven 的对应形式"
+        ],
+        "example": "It was his seventh victory.",
+        "exampleZh": "这是他获得的第七个胜利。",
+        "relation": "inflection",
+        "id": "s1-g47-i14",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-14",
+        "answer": "",
+        "prompt": "It was his _____ victory.",
+        "choices": [
+          "sixth",
+          "You're welcome.",
+          "seventh",
+          "six"
+        ]
+      },
+      {
+        "term": "December",
+        "meaningZh": "十二月",
+        "acceptedMeaningsZh": [
+          "十二月"
+        ],
+        "example": "Christmas comes in December.",
+        "exampleZh": "圣诞节在十二月中来。",
+        "relation": "list",
+        "id": "s1-g48-i12",
+        "sourceGroupId": "s1-g48",
+        "session": 1,
+        "teacherNumber": "48",
+        "displayNumber": "48-12",
+        "answer": "",
+        "prompt": "Christmas comes in _____.",
+        "choices": [
+          "at school",
+          "December",
+          "have a great day",
+          "of course"
+        ]
+      },
+      {
+        "term": "January",
+        "meaningZh": "一月",
+        "acceptedMeaningsZh": [
+          "一月"
+        ],
+        "example": "My birthday is in January.",
+        "exampleZh": "我的生日在一月。",
+        "relation": "list",
+        "id": "s1-g48-i1",
+        "sourceGroupId": "s1-g48",
+        "session": 1,
+        "teacherNumber": "48",
+        "displayNumber": "48-1",
+        "answer": "",
+        "prompt": "My birthday is in _____.",
+        "choices": [
+          "four",
+          "a lovely and smart robot",
+          "have a good day",
+          "January"
+        ]
+      },
+      {
+        "term": "at school",
+        "meaningZh": "在学校",
+        "acceptedMeaningsZh": [
+          "在学校",
+          "在学里"
+        ],
+        "example": "She is at school.",
+        "exampleZh": "她在学校。",
+        "relation": "single",
+        "id": "s1-g26-i2",
+        "sourceGroupId": "s1-g26",
+        "session": 1,
+        "teacherNumber": "26",
+        "displayNumber": "26-2",
+        "answer": "",
+        "prompt": "She is _____.",
+        "choices": [
+          "ninth",
+          "at school",
+          "give you the answer",
+          "9 p.m."
+        ]
+      },
+      {
+        "term": "nine",
+        "meaningZh": "九",
+        "acceptedMeaningsZh": [
+          "九",
+          "第九"
+        ],
+        "example": "Nine months are left in the year.",
+        "exampleZh": "一年中还剩九月（示例）。",
+        "relation": "list",
+        "id": "s1-g47-i17",
+        "sourceGroupId": "s1-g47",
+        "session": 1,
+        "teacherNumber": "47",
+        "displayNumber": "47-17",
+        "answer": "",
+        "prompt": "_____ months are left in the year.",
+        "choices": [
+          "will try this",
+          "What a lovely robot!",
+          "That's amazing.",
+          "nine"
+        ]
+      },
+      {
+        "term": "question",
+        "meaningZh": "问题",
+        "acceptedMeaningsZh": [
+          "问题",
+          "疑问句"
+        ],
+        "example": "Can I ask you a question?",
+        "exampleZh": "我可以问你一个问题吗？",
+        "relation": "single",
+        "id": "s1-g42-i3",
+        "sourceGroupId": "s1-g42",
+        "session": 1,
+        "teacherNumber": "42",
+        "displayNumber": "42-3",
+        "answer": "",
+        "prompt": "Can I ask you a _____?",
+        "choices": [
+          "at home",
+          "What a lovely robot!",
+          "question",
+          "December"
+        ]
+      },
+      {
+        "term": "a useful skill",
+        "meaningZh": "一项有用的技能",
+        "acceptedMeaningsZh": [
+          "一项有用的技能",
+          "一个有用的技巧"
+        ],
+        "example": "Learning English is a useful skill.",
+        "exampleZh": "学习英语是一项有用的技能。",
+        "relation": "single",
+        "id": "s1-g20-i1",
+        "sourceGroupId": "s1-g20",
+        "session": 1,
+        "teacherNumber": "20",
+        "displayNumber": "20",
+        "answer": "",
+        "prompt": "Learning English is _____.",
+        "choices": [
+          "a useful skill",
+          "make a plan",
+          "spell it again",
+          "July"
+        ]
+      },
+      {
+        "term": "have a minute",
+        "meaningZh": "有一分钟时间；有空",
+        "acceptedMeaningsZh": [
+          "有一分钟时间",
+          "有空"
+        ],
+        "example": "Do you have a minute?",
+        "exampleZh": "你现在有空吗？",
+        "relation": "phrase-alternative",
+        "id": "s1-g7-i1",
+        "sourceGroupId": "s1-g7",
+        "session": 1,
+        "teacherNumber": "7",
+        "displayNumber": "7",
+        "answer": "",
+        "prompt": "Do you _____?",
+        "choices": [
+          "I believe I can do ...",
+          "have a minute",
+          "choose a story",
+          "Because ..."
+        ]
+      },
+      {
+        "term": "April",
+        "meaningZh": "四月",
+        "acceptedMeaningsZh": [
+          "四月"
+        ],
+        "example": "Flowers bloom in April.",
+        "exampleZh": "四月份花朵盛开。",
+        "relation": "list",
+        "id": "s1-g48-i4",
+        "sourceGroupId": "s1-g48",
+        "session": 1,
+        "teacherNumber": "48",
+        "displayNumber": "48-4",
+        "answer": "",
+        "prompt": "Flowers bloom in _____.",
+        "choices": [
+          "February",
+          "April",
+          "search for ...",
+          "Because ..."
+        ]
+      },
+      {
+        "term": "9 a.m.",
+        "meaningZh": "上午九点",
+        "acceptedMeaningsZh": [
+          "上午九点"
+        ],
+        "example": "It is 9 a.m. now.",
+        "exampleZh": "现在是上午九点。",
+        "relation": "list",
+        "id": "s1-g16-i1",
+        "sourceGroupId": "s1-g16",
+        "session": 1,
+        "teacherNumber": "16",
+        "displayNumber": "16-1",
+        "answer": "",
+        "prompt": "It is _____ now.",
+        "choices": [
+          "on + date",
+          "January",
+          "9 a.m.",
+          "fifth"
+        ]
+      },
+      {
+        "term": "October",
+        "meaningZh": "十月",
+        "acceptedMeaningsZh": [
+          "十月"
+        ],
+        "example": "Autumn leaves fall in October.",
+        "exampleZh": "十月的秋叶飘落。",
+        "relation": "list",
+        "id": "s1-g48-i10",
+        "sourceGroupId": "s1-g48",
+        "session": 1,
+        "teacherNumber": "48",
+        "displayNumber": "48-10",
+        "answer": "",
+        "prompt": "Autumn leaves fall in _____.",
+        "choices": [
+          "January",
+          "October",
+          "have fun",
+          "question"
+        ]
+      }
+    ],
+    "signature": "s1-g11-i1,s1-g48-i5,s1-g42-i1,s1-g7-i1,s1-g42-i3,s1-g12-i1,s1-g21-i1,s1-g48-i2,s1-g47-i18,s1-g47-i15,s1-g47-i6,s1-g12-i2,s1-g48-i7,s1-g27-i2,s1-g47-i19,s1-g29-i1,s1-g13-i1,s1-g47-i7,s1-g47-i1,s1-g26-i2,s1-g15-i1,s1-g47-i12,s1-g14-i1,s1-g13-i2,s1-g17-i1,s1-g35-i1,s1-g46-i1,s1-g47-i14,s1-g32-i1,s1-g26-i1,s1-g47-i11,s1-g1-i1,s1-g22-i1,s1-g30-i1,s1-g20-i1,s1-g47-i4,s1-g8-i1,s1-g48-i6,s1-g50-i1,s1-g48-i8,s1-g31-i1,s1-g49-i1,s1-g47-i16,s1-g4-i1,s1-g47-i8,s1-g24-i1,s1-g47-i3,s1-g19-i1,s1-g47-i13,s1-g5-i1,s1-g47-i10,s1-g47-i9,s1-g47-i2,s1-g48-i3,s1-g34-i1,s1-g18-i1,s1-g41-i2,s1-g24-i2,s1-g16-i2,s1-g38-i1,s1-g33-i1,s1-g23-i1,s1-g36-i1,s1-g47-i5,s1-g25-i1,s1-g3-i1,s1-g27-i1,s1-g1-i2,s1-g48-i9,s1-g43-i1,s1-g39-i1,s1-g10-i1,s1-g48-i1,s1-g41-i1,s1-g16-i1,s1-g42-i2,s1-g45-i1,s1-g48-i10,s1-g47-i20,s1-g28-i1,s1-g48-i4,s1-g37-i1,s1-g9-i1,s1-g6-i1,s1-g2-i1,s1-g48-i11,s1-g47-i17,s1-g17-i2,s1-g44-i1,s1-g40-i1,s1-g48-i12|s1-g47-i12:sixth,When do you want to go?,ask,a lovely and smart robot|s1-g47-i14:sixth,You're welcome.,seventh,six|s1-g48-i12:at school,December,have a great day,of course|s1-g48-i1:four,a lovely and smart robot,have a good day,January|s1-g26-i2:ninth,at school,give you the answer,9 p.m.|s1-g47-i17:will try this,What a lovely robot!,That's amazing.,nine|s1-g42-i3:at home,What a lovely robot!,question,December|s1-g20-i1:a useful skill,make a plan,spell it again,July|s1-g7-i1:I believe I can do ...,have a minute,choose a story,Because ...|s1-g48-i4:February,April,search for ...,Because ...|s1-g16-i1:on + date,January,9 a.m.,fifth|s1-g48-i10:January,October,have fun,question"
+  },
+  "results": {
+    "meanings": [
+      {
+        "id": "s1-g11-i1",
+        "correct": true,
+        "answer": "当然"
+      },
+      {
+        "id": "s1-g48-i5",
+        "correct": true,
+        "answer": "五月"
+      },
+      {
+        "id": "s1-g42-i1",
+        "correct": false,
+        "answer": "提问"
+      },
+      {
+        "id": "s1-g7-i1",
+        "correct": false,
+        "answer": "有一分钟时间；有空"
+      },
+      {
+        "id": "s1-g42-i3",
+        "correct": false,
+        "answer": "问题"
+      },
+      {
+        "id": "s1-g12-i1",
+        "correct": false,
+        "answer": "这很棒"
+      },
+      {
+        "id": "s1-g21-i1",
+        "correct": false,
+        "answer": "听起来有帮助"
+      },
+      {
+        "id": "s1-g48-i2",
+        "correct": false,
+        "answer": "二月"
+      },
+      {
+        "id": "s1-g47-i18",
+        "correct": false,
+        "answer": "第九"
+      },
+      {
+        "id": "s1-g47-i15",
+        "correct": false,
+        "answer": "八"
+      },
+      {
+        "id": "s1-g47-i6",
+        "correct": false,
+        "answer": "第三"
+      },
+      {
+        "id": "s1-g12-i2",
+        "correct": false,
+        "answer": "那很好。"
+      },
+      {
+        "id": "s1-g48-i7",
+        "correct": false,
+        "answer": "七月"
+      },
+      {
+        "id": "s1-g27-i2",
+        "correct": false,
+        "answer": "感觉不好"
+      },
+      {
+        "id": "s1-g47-i19",
+        "correct": false,
+        "answer": "十"
+      },
+      {
+        "id": "s1-g29-i1",
+        "correct": false,
+        "answer": "相同的问题"
+      },
+      {
+        "id": "s1-g13-i1",
+        "correct": false,
+        "answer": "询问是否想做某事"
+      },
+      {
+        "id": "s1-g47-i7",
+        "correct": false,
+        "answer": "四"
+      },
+      {
+        "id": "s1-g47-i1",
+        "correct": false,
+        "answer": "一"
+      },
+      {
+        "id": "s1-g26-i2",
+        "correct": false,
+        "answer": "在学校"
+      },
+      {
+        "id": "s1-g15-i1",
+        "correct": false,
+        "answer": "你想什么时候去？"
+      },
+      {
+        "id": "s1-g47-i12",
+        "correct": false,
+        "answer": "第六"
+      },
+      {
+        "id": "s1-g14-i1",
+        "correct": false,
+        "answer": "明天和我一起去拜访某人"
+      },
+      {
+        "id": "s1-g13-i2",
+        "correct": false,
+        "answer": "想要做某事"
+      },
+      {
+        "id": "s1-g17-i1",
+        "correct": false,
+        "answer": "为什么……？"
+      },
+      {
+        "id": "s1-g35-i1",
+        "correct": false,
+        "answer": "一个好主意"
+      },
+      {
+        "id": "s1-g46-i1",
+        "correct": false,
+        "answer": "太棒了"
+      },
+      {
+        "id": "s1-g47-i14",
+        "correct": false,
+        "answer": "第七"
+      },
+      {
+        "id": "s1-g32-i1",
+        "correct": false,
+        "answer": "花30分钟"
+      },
+      {
+        "id": "s1-g26-i1",
+        "correct": false,
+        "answer": "在家"
+      },
+      {
+        "id": "s1-g47-i11",
+        "correct": false,
+        "answer": "六"
+      },
+      {
+        "id": "s1-g1-i1",
+        "correct": false,
+        "answer": "度过美好的一天"
+      },
+      {
+        "id": "s1-g22-i1",
+        "correct": false,
+        "answer": "会试试这个"
+      },
+      {
+        "id": "s1-g30-i1",
+        "correct": false,
+        "answer": "制定计划"
+      },
+      {
+        "id": "s1-g20-i1",
+        "correct": false,
+        "answer": "一项有用的技能"
+      },
+      {
+        "id": "s1-g47-i4",
+        "correct": false,
+        "answer": "第二"
+      },
+      {
+        "id": "s1-g8-i1",
+        "correct": false,
+        "answer": "我能为您做什么？"
+      },
+      {
+        "id": "s1-g48-i6",
+        "correct": false,
+        "answer": "六月"
+      },
+      {
+        "id": "s1-g50-i1",
+        "correct": false,
+        "answer": "在某个日期"
+      },
+      {
+        "id": "s1-g48-i8",
+        "correct": false,
+        "answer": "八月"
+      },
+      {
+        "id": "s1-g31-i1",
+        "correct": false,
+        "answer": "例如"
+      },
+      {
+        "id": "s1-g49-i1",
+        "correct": false,
+        "answer": "在某个月"
+      },
+      {
+        "id": "s1-g47-i16",
+        "correct": false,
+        "answer": "第八"
+      },
+      {
+        "id": "s1-g4-i1",
+        "correct": false,
+        "answer": "关于机器人"
+      },
+      {
+        "id": "s1-g47-i8",
+        "correct": false,
+        "answer": "第四"
+      },
+      {
+        "id": "s1-g24-i1",
+        "correct": false,
+        "answer": "帮助某人做某事"
+      },
+      {
+        "id": "s1-g47-i3",
+        "correct": false,
+        "answer": "二"
+      },
+      {
+        "id": "s1-g19-i1",
+        "correct": false,
+        "answer": "在每节课之前"
+      },
+      {
+        "id": "s1-g47-i13",
+        "correct": false,
+        "answer": "七"
+      },
+      {
+        "id": "s1-g5-i1",
+        "correct": false,
+        "answer": "在那边"
+      },
+      {
+        "id": "s1-g47-i10",
+        "correct": false,
+        "answer": "第五"
+      },
+      {
+        "id": "s1-g47-i9",
+        "correct": false,
+        "answer": "五"
+      },
+      {
+        "id": "s1-g47-i2",
+        "correct": false,
+        "answer": "第一"
+      },
+      {
+        "id": "s1-g48-i3",
+        "correct": false,
+        "answer": "三月"
+      },
+      {
+        "id": "s1-g34-i1",
+        "correct": false,
+        "answer": "玩得开心"
+      },
+      {
+        "id": "s1-g18-i1",
+        "correct": false,
+        "answer": "学习新单词"
+      },
+      {
+        "id": "s1-g41-i2",
+        "correct": false,
+        "answer": "多么可爱的机器人！"
+      },
+      {
+        "id": "s1-g24-i2",
+        "correct": false,
+        "answer": "帮助我们学习单词"
+      },
+      {
+        "id": "s1-g16-i2",
+        "correct": false,
+        "answer": "晚上九点"
+      },
+      {
+        "id": "s1-g38-i1",
+        "correct": false,
+        "answer": "选择一个故事"
+      },
+      {
+        "id": "s1-g33-i1",
+        "correct": false,
+        "answer": "给自己三十分钟"
+      },
+      {
+        "id": "s1-g23-i1",
+        "correct": false,
+        "answer": "知道一个游戏"
+      },
+      {
+        "id": "s1-g36-i1",
+        "correct": false,
+        "answer": "我相信我能做到……"
+      },
+      {
+        "id": "s1-g47-i5",
+        "correct": false,
+        "answer": "三"
+      },
+      {
+        "id": "s1-g25-i1",
+        "correct": false,
+        "answer": "一起玩它"
+      },
+      {
+        "id": "s1-g3-i1",
+        "correct": false,
+        "answer": "寻找一本故事书"
+      },
+      {
+        "id": "s1-g27-i1",
+        "correct": false,
+        "answer": "感觉很好"
+      },
+      {
+        "id": "s1-g1-i2",
+        "correct": false,
+        "answer": "度过美好的一天"
+      },
+      {
+        "id": "s1-g48-i9",
+        "correct": false,
+        "answer": "九月"
+      },
+      {
+        "id": "s1-g43-i1",
+        "correct": false,
+        "answer": "给你答案"
+      },
+      {
+        "id": "s1-g39-i1",
+        "correct": false,
+        "answer": "搜索；寻找"
+      },
+      {
+        "id": "s1-g10-i1",
+        "correct": false,
+        "answer": "加入功夫俱乐部"
+      },
+      {
+        "id": "s1-g48-i1",
+        "correct": false,
+        "answer": "一月"
+      },
+      {
+        "id": "s1-g41-i1",
+        "correct": false,
+        "answer": "多么可爱的机器人！"
+      },
+      {
+        "id": "s1-g16-i1",
+        "correct": false,
+        "answer": "上午九点"
+      },
+      {
+        "id": "s1-g42-i2",
+        "correct": false,
+        "answer": "回答"
+      },
+      {
+        "id": "s1-g45-i1",
+        "correct": false,
+        "answer": "再拼写一遍"
+      },
+      {
+        "id": "s1-g48-i10",
+        "correct": false,
+        "answer": "十月"
+      },
+      {
+        "id": "s1-g47-i20",
+        "correct": false,
+        "answer": "第十"
+      },
+      {
+        "id": "s1-g28-i1",
+        "correct": false,
+        "answer": "别担心"
+      },
+      {
+        "id": "s1-g48-i4",
+        "correct": false,
+        "answer": "四月"
+      },
+      {
+        "id": "s1-g37-i1",
+        "correct": false,
+        "answer": "寻找有趣的故事"
+      },
+      {
+        "id": "s1-g9-i1",
+        "correct": false,
+        "answer": "中国功夫"
+      },
+      {
+        "id": "s1-g6-i1",
+        "correct": false,
+        "answer": "不客气"
+      },
+      {
+        "id": "s1-g2-i1",
+        "correct": false,
+        "answer": "我能帮你做什么？"
+      },
+      {
+        "id": "s1-g48-i11",
+        "correct": false,
+        "answer": "十一月"
+      },
+      {
+        "id": "s1-g47-i17",
+        "correct": false,
+        "answer": "九"
+      },
+      {
+        "id": "s1-g17-i2",
+        "correct": false,
+        "answer": "因为……"
+      },
+      {
+        "id": "s1-g44-i1",
+        "correct": false,
+        "answer": "你怎么拼写它？"
+      },
+      {
+        "id": "s1-g40-i1",
+        "correct": false,
+        "answer": "一个可爱又聪明的机器人"
+      },
+      {
+        "id": "s1-g48-i12",
+        "correct": false,
+        "answer": "十二月"
+      }
+    ],
+    "cloze": [
+      {
+        "correct": false,
+        "answer": "sixth"
+      },
+      {
+        "correct": false,
+        "answer": "seventh"
+      },
+      {
+        "correct": false,
+        "answer": "December"
+      },
+      {
+        "correct": false,
+        "answer": "January"
+      },
+      {
+        "correct": false,
+        "answer": "at school"
+      },
+      {
+        "correct": false,
+        "answer": "nine"
+      },
+      {
+        "correct": false,
+        "answer": "question"
+      },
+      {
+        "correct": false,
+        "answer": "a useful skill"
+      },
+      {
+        "correct": false,
+        "answer": "have a minute"
+      },
+      {
+        "correct": false,
+        "answer": "April"
+      },
+      {
+        "correct": false,
+        "answer": "9 a.m."
+      },
+      {
+        "correct": false,
+        "answer": "October"
+      }
+    ],
+    "correct": 2,
+    "total": 103,
+    "score": 2
+  },
+  "gradingVersion": 5
+}
