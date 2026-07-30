@@ -117,11 +117,12 @@
 
 .reward-fields {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(180px, 1.3fr) auto;
   gap: 12px;
   align-items: end;
 }
 
+.reward-fields.payment { grid-template-columns: repeat(2, minmax(0, 1fr)) minmax(220px, 1.6fr) auto; }
 .reward-fields label { display: grid; gap: 7px; color: #52625c; font-size: 12px; font-weight: 700; }
 .reward-fields input {
   width: 100%;
@@ -171,6 +172,7 @@
 .reward-kind.payment { color: #9a5b16; background: #fff0dc; }
 .reward-list article > div { display: flex; flex-direction: column; gap: 4px; }
 .reward-list article > div strong { font-size: 14px; }
+.reward-list article > div p { margin: 0; color: #4f5e59; font-size: 13px; line-height: 1.45; overflow-wrap: anywhere; }
 .reward-list article small { color: #74817c; font-size: 11px; }
 .reward-list article > b { font-size: 16px; text-align: right; }
 .reward-list article > b.reward { color: #16714c; }
@@ -190,7 +192,9 @@
   .reward-ledger { padding: 16px; }
   .reward-section-title { align-items: flex-start; }
   .reward-cloud-status { max-width: 150px; text-align: right; }
-  .reward-fields { grid-template-columns: 1fr 1fr; }
+  .reward-fields,
+  .reward-fields.payment { grid-template-columns: 1fr 1fr; }
+  .reward-fields .reward-note { grid-column: 1 / -1; }
   .reward-fields .reward-submit { grid-column: 1 / -1; }
   .reward-list article { grid-template-columns: 44px minmax(0, 1fr) auto; padding: 9px 0; }
   .reward-list article > small { grid-column: 2 / -1; text-align: left; }

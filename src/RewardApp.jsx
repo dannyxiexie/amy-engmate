@@ -63,6 +63,7 @@ export default function RewardApp({ onBack }) {
   const [startDate, setStartDate] = useState(today());
   const [endDate, setEndDate] = useState(today());
   const [amount, setAmount] = useState("");
+  const [note, setNote] = useState("");
   const [cloudStatus, setCloudStatus] = useState({ type: "loading", message: "正在同步奖励记录" });
   const [showGithubAccess, setShowGithubAccess] = useState(false);
   const [githubToken, setGithubToken] = useState("");
@@ -155,10 +156,12 @@ export default function RewardApp({ onBack }) {
       startDate,
       endDate: entryType === "reward" ? endDate : startDate,
       amount: Math.round(numericAmount * 100) / 100,
+      note: note.trim(),
       createdAt: new Date().toISOString()
     };
     setRecords((current) => mergeRecords(record, current));
     setAmount("");
+    setNote("");
 
     const token = window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
     if (token) {
@@ -225,10 +228,11 @@ export default function RewardApp({ onBack }) {
           <button className={entryType === "payment" ? "active" : ""} onClick={() => setEntryType("payment")}><ArrowUpRight size={17} />已充值扣减</button>
         </div>
 
-        <div className="reward-fields">
+        <div className={`reward-fields ${entryType}`}>
           <label>{entryType === "reward" ? "从几号" : "充值日期"}<input type="date" value={startDate} onChange={(event) => setStartDate(event.target.value)} /></label>
           {entryType === "reward" ? <label>到几号<input type="date" value={endDate} min={startDate} onChange={(event) => setEndDate(event.target.value)} /></label> : null}
           <label>金额（元）<input type="number" min="0.01" step="0.01" inputMode="decimal" value={amount} onChange={(event) => setAmount(event.target.value)} placeholder="0" /></label>
+          <label className="reward-note">备注（可选）<input type="text" maxLength="100" value={note} onChange={(event) => setNote(event.target.value)} placeholder="例如：本周作业全部完成" /></label>
           <button className="reward-submit" onClick={addRecord}><Plus size={18} />记一笔</button>
         </div>
       </section>
@@ -240,6 +244,7 @@ export default function RewardApp({ onBack }) {
             <span className={`reward-kind ${record.type}`}>{record.type === "reward" ? "奖励" : "充值"}</span>
             <div>
               <strong>{record.type === "reward" && record.startDate !== record.endDate ? `${displayDate(record.startDate)} - ${displayDate(record.endDate)}` : displayDate(record.startDate)}</strong>
+              {record.note ? <p>{record.note}</p> : null}
               <small>{new Date(record.createdAt).toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })} 录入</small>
             </div>
             <b className={record.type}>{record.type === "reward" ? "+" : "-"}{money(record.amount)}</b>
