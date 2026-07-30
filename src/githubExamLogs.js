@@ -5,7 +5,6 @@ const LOG_DIRECTORY = "exam-logs";
 const API_ROOT = `https://api.github.com/repos/${OWNER}/${REPOSITORY}`;
 
 export const GITHUB_TOKEN_KEY = "amy-engmate:github-write-token:v1";
-export const GITHUB_TOKEN_URL = "https://github.com/settings/personal-access-tokens/new?name=Amy%20EngMate%20exam%20logs&description=Upload%20Amy%20exam%20history&target_name=dannyxiexie&expires_in=365&contents=write";
 
 function requestHeaders(token, accept = "application/vnd.github+json") {
   return {

@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowLeft, BookOpen, Check, CheckCircle2, ChevronRight, Clock3, CloudUpload, Download, GraduationCap, History, KeyRound, RotateCcw, Upload, X } from "lucide-react";
 import { createAmyExam, createClozePrompt, fetchAmyVocabulary, formatTime, gradeMeaning, hideTermInExample } from "./amyVocabularyData.js";
-import { GITHUB_TOKEN_KEY, GITHUB_TOKEN_URL, loadGithubExamLogs, uploadGithubExamLog, verifyGithubWriteToken } from "./githubExamLogs.js";
+import { GITHUB_TOKEN_KEY, loadGithubExamLogs, uploadGithubExamLog, verifyGithubWriteToken } from "./githubExamLogs.js";
 import "./amyVocabulary.css";
 
 const HISTORY_KEY = "family-reader:amy-grade-5-vocabulary:exam-history:v1";
@@ -162,12 +162,11 @@ function GithubAccessDialog({ initialToken, isSaving, error, onClose, onSave, on
   const [token, setToken] = useState(initialToken);
   return <div className="amy-dialog-backdrop" role="presentation">
     <section className="amy-dialog" role="dialog" aria-modal="true" aria-labelledby="github-access-title">
-      <div className="amy-dialog-title"><KeyRound size={20} /><div><h2 id="github-access-title">连接 GitHub</h2><p>只用于把考试记录写入 amy-engmate 仓库。</p></div><button aria-label="关闭" onClick={onClose}><X size={18} /></button></div>
-      <label className="amy-token-field">GitHub Token<input type="password" value={token} onChange={(event) => setToken(event.target.value.trim())} placeholder="github_pat_..." autoComplete="off" /></label>
-      <p className="amy-token-help">请创建精细权限 Token，只选择 <strong>dannyxiexie/amy-engmate</strong>，并将仓库权限中的 <strong>Contents</strong> 设为 Read and write。</p>
-      <a className="amy-token-link" href={GITHUB_TOKEN_URL} target="_blank" rel="noreferrer">打开 GitHub 创建授权</a>
+      <div className="amy-dialog-title"><KeyRound size={20} /><div><h2 id="github-access-title">上传代码</h2></div><button aria-label="关闭" onClick={onClose}><X size={18} /></button></div>
+      <p className="amy-token-help">请上传代码，有问题咨询管理员</p>
+      <label className="amy-token-field">代码<input type="password" value={token} onChange={(event) => setToken(event.target.value.trim())} placeholder="请输入代码" autoComplete="off" /></label>
       {error ? <p className="amy-dialog-error">{error}</p> : null}
-      <div className="amy-dialog-actions">{initialToken ? <button className="danger" onClick={onClear}>清除授权</button> : <span />}<button className="secondary" onClick={onClose}>取消</button><button className="primary" disabled={!token || isSaving} onClick={() => onSave(token)}>{isSaving ? "正在验证" : "保存并上传"}</button></div>
+      <div className="amy-dialog-actions">{initialToken ? <button className="danger" onClick={onClear}>清除代码</button> : <span />}<button className="secondary" onClick={onClose}>取消</button><button className="primary" disabled={!token || isSaving} onClick={() => onSave(token)}>{isSaving ? "正在验证" : "保存"}</button></div>
     </section>
   </div>;
 }
@@ -303,6 +302,9 @@ export default function AmyVocabularyApp({ onBack }) {
       uploadGithubExamLog(completedRecord, token)
         .then(() => setCloudStatus({ type: "success", message: "本次考试已保存到 GitHub" }))
         .catch(() => setCloudStatus({ type: "error", message: "本次考试已保存在设备中，请到历史页重新上传" }));
+    } else {
+      setGithubAccessError("");
+      setShowGithubAccess(true);
     }
   };
   const exportHistory = () => {
