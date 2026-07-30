@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { ArrowLeft, BookOpen, Check, CheckCircle2, ChevronRight, Clock3, CloudUpload, Download, GraduationCap, History, KeyRound, RotateCcw, Upload, X } from "lucide-react";
+import { ArrowLeft, BookOpen, Check, CheckCircle2, ChevronRight, Clock3, CloudUpload, Download, Gift, GraduationCap, History, RotateCcw, Upload, X } from "lucide-react";
 import { createAmyExam, createClozePrompt, fetchAmyVocabulary, formatTime, gradeMeaning, hideTermInExample } from "./amyVocabularyData.js";
 import { GITHUB_TOKEN_KEY, loadGithubExamLogs, uploadGithubExamLog, verifyGithubWriteToken } from "./githubExamLogs.js";
+import GithubCodeDialog from "./GithubCodeDialog.jsx";
 import "./amyVocabulary.css";
 
 const HISTORY_KEY = "family-reader:amy-grade-5-vocabulary:exam-history:v1";
@@ -158,26 +159,13 @@ function Paper({ session, exam, setExam, elapsed, results, onSubmit, isGrading =
   </main>;
 }
 
-function GithubAccessDialog({ initialToken, isSaving, error, onClose, onSave, onClear }) {
-  const [token, setToken] = useState(initialToken);
-  return <div className="amy-dialog-backdrop" role="presentation">
-    <section className="amy-dialog" role="dialog" aria-modal="true" aria-labelledby="github-access-title">
-      <div className="amy-dialog-title"><KeyRound size={20} /><div><h2 id="github-access-title">上传代码</h2></div><button aria-label="关闭" onClick={onClose}><X size={18} /></button></div>
-      <p className="amy-token-help">请上传代码，有问题咨询管理员</p>
-      <label className="amy-token-field">代码<input type="password" value={token} onChange={(event) => setToken(event.target.value.trim())} placeholder="请输入代码" autoComplete="off" /></label>
-      {error ? <p className="amy-dialog-error">{error}</p> : null}
-      <div className="amy-dialog-actions">{initialToken ? <button className="danger" onClick={onClear}>清除代码</button> : <span />}<button className="secondary" onClick={onClose}>取消</button><button className="primary" disabled={!token || isSaving} onClick={() => onSave(token)}>{isSaving ? "正在验证" : "保存"}</button></div>
-    </section>
-  </div>;
-}
-
 function HistoryPage({ history, onOpen, onExport, onImport, onUpload, cloudStatus, isUploading }) {
   return <main className="amy-content"><div className="amy-heading"><div><span>EXAM ARCHIVE</span><h1>历史考试</h1></div><div className="amy-history-tools"><button onClick={onExport} disabled={!history.length}><Download size={15} />导出记录</button><label><Upload size={15} />导入记录<input type="file" accept="application/json,.json" onChange={(event) => { onImport(event.target.files?.[0]); event.target.value = ""; }} /></label><button className="cloud" onClick={onUpload} disabled={!history.length || isUploading}><CloudUpload size={15} />{isUploading ? "正在上传" : "上传记录"}</button></div></div>
     {cloudStatus.message ? <div className={`amy-cloud-status ${cloudStatus.type || ""}`}><CloudUpload size={15} /><span>{cloudStatus.message}</span></div> : null}
     {history.length ? <div className="amy-history">{history.map((item) => <button key={item.id} onClick={() => onOpen(item)}><span>第 {item.session} 次</span><span>{new Date(item.completedAt).toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}</span><strong>{item.results.score} 分</strong><ChevronRight size={17} /></button>)}</div> : <p className="amy-empty">完成一次考试后，成绩和错题会保存在这里。</p>}</main>;
 }
 
-export default function AmyVocabularyApp({ onBack }) {
+export default function AmyVocabularyApp({ onBack, onOpenRewards }) {
   const [data, setData] = useState(null);
   const [error, setError] = useState("");
   const [selected, setSelected] = useState(null);
@@ -380,12 +368,12 @@ export default function AmyVocabularyApp({ onBack }) {
   if (error) return <main className="amy-loading">资料加载失败：{error}</main>;
   if (!data) return <main className="amy-loading">正在打开英语词汇复习</main>;
   const archivedSession = record ? data.sessions.find((item) => item.number === record.session) : null;
-  return <div className="amy-app"><header>{view === "home" && !onBack ? <span className="amy-header-spacer" /> : <button aria-label="返回" onClick={back}><ArrowLeft size={19} /></button>}<div><span>AMY VOCABULARY</span><strong>五年级英语词汇 · 复习与考试</strong></div><button className="amy-history-button" onClick={() => setView("history")}><History size={16} /><span>历史</span></button></header>
+  return <div className="amy-app"><header>{view === "home" && !onBack ? <span className="amy-header-spacer" /> : <button aria-label="返回" onClick={back}><ArrowLeft size={19} /></button>}<div><span>AMY VOCABULARY</span><strong>五年级英语词汇 · 复习与考试</strong></div><nav className="amy-header-actions"><button className="amy-history-button" onClick={() => setView("history")}><History size={16} /><span>历史</span></button>{onOpenRewards ? <button className="amy-history-button" onClick={onOpenRewards}><Gift size={16} /><span>奖励</span></button> : null}</nav></header>
     {view === "home" ? <SessionPicker data={data} selected={selected} drafts={drafts} onSelect={setSelected} onView={setView} onStart={start} /> : null}
     {view === "review" && session ? <Review session={session} /> : null}
     {view === "exam" && session && exam ? <><Paper session={session} exam={exam} setExam={setExam} elapsed={elapsed} results={results} onSubmit={submit} isGrading={isGrading} />{results ? <button className="amy-retry" onClick={restart}><RotateCcw size={16} /> 再考一套</button> : null}</> : null}
     {view === "history" ? <HistoryPage history={history} onOpen={(item) => { setRecord(item); setSelected(item.session); setView("historyDetail"); }} onExport={exportHistory} onImport={importHistory} onUpload={() => uploadHistory()} cloudStatus={cloudStatus} isUploading={isUploading} /> : null}
     {view === "historyDetail" && record && archivedSession ? <Paper session={archivedSession} exam={record.exam} setExam={() => {}} elapsed={record.elapsed} results={record.results} onSubmit={() => {}} /> : null}
-    {showGithubAccess ? <GithubAccessDialog initialToken={githubToken} isSaving={isSavingGithubAccess} error={githubAccessError} onClose={() => setShowGithubAccess(false)} onSave={saveGithubAccess} onClear={clearGithubAccess} /> : null}
+    {showGithubAccess ? <GithubCodeDialog initialToken={githubToken} isSaving={isSavingGithubAccess} error={githubAccessError} onClose={() => setShowGithubAccess(false)} onSave={saveGithubAccess} onClear={clearGithubAccess} /> : null}
   </div>;
 }

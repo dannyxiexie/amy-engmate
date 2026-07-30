@@ -5,6 +5,7 @@ on:
     branches: ["main"]
     paths-ignore:
       - "exam-logs/**"
+      - "reward-logs/**"
   workflow_dispatch:
 
 permissions:

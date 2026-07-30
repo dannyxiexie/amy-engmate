@@ -44,6 +44,7 @@
 .amy-heading span { color: var(--green); font-size: 10px; font-weight: 800; letter-spacing: 1px; }
 .amy-app header div strong { font-size: 14px; }
 .amy-history-button { width: auto !important; grid-auto-flow: column !important; gap: 5px; font-size: 13px !important; }
+.amy-header-actions { display: flex; gap: 4px; }
 
 .amy-home,
 .amy-content {

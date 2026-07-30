@@ -1,0 +1,197 @@
+.reward-app {
+  --ink: #24342f;
+  --green: #23745d;
+  --gold: #b47712;
+  --paper: #fffdf8;
+  --line: #d8ded9;
+  min-height: 100dvh;
+  overflow-y: auto;
+  color: var(--ink);
+  background: #f4f7f4;
+  font-family: Arial, "PingFang SC", sans-serif;
+}
+
+.reward-app button,
+.reward-app input { font: inherit; }
+
+.reward-app > header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+  min-height: 58px;
+  padding: 0 20px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 253, 248, .97);
+}
+
+.reward-app > header button {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.reward-app > header > div { display: flex; flex-direction: column; }
+.reward-app > header > div span,
+.reward-section-title > div > span { color: var(--green); font-size: 10px; font-weight: 800; letter-spacing: 1px; }
+.reward-app > header > div strong { font-size: 14px; }
+.reward-app .reward-sync-button { width: auto; grid-auto-flow: column; gap: 5px; font-size: 13px; }
+.reward-app .reward-sync-button:disabled { opacity: .45; cursor: not-allowed; }
+
+.reward-main {
+  width: min(920px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 34px 0 60px;
+}
+
+.reward-balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 132px;
+  padding: 24px 28px;
+  border-left: 5px solid #d9a132;
+  background: #fff6dc;
+}
+
+.reward-balance > div { display: flex; flex-direction: column; }
+.reward-balance span { color: #6f654d; font-size: 13px; font-weight: 700; }
+.reward-balance strong { margin: 6px 0 4px; color: #7a4c00; font: 700 38px/1.1 Georgia, "Songti SC", serif; }
+.reward-balance small { color: #7c7461; }
+.reward-balance svg { color: #aa7213; }
+
+.reward-entry,
+.reward-ledger {
+  margin-top: 22px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.reward-section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 16px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--line);
+}
+
+.reward-section-title h1,
+.reward-section-title h2 { margin: 5px 0 0; font: 700 24px/1.2 Georgia, "Songti SC", serif; }
+.reward-section-title > strong { color: #68766f; font-size: 13px; }
+
+.reward-cloud-status { display: flex; align-items: center; gap: 6px; color: #697871; font-size: 12px; }
+.reward-cloud-status.success { color: #247453; }
+.reward-cloud-status.error { color: #a04439; }
+.reward-cloud-status.loading svg { animation: reward-cloud-pulse 1.2s ease-in-out infinite; }
+
+.reward-type {
+  display: inline-flex;
+  margin: 18px 0;
+  border: 1px solid var(--line);
+}
+
+.reward-type button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 0;
+  background: #fff;
+  color: #5b6964;
+  cursor: pointer;
+}
+
+.reward-type button + button { border-left: 1px solid var(--line); }
+.reward-type button.active { background: #e8f2ec; color: var(--green); font-weight: 700; }
+
+.reward-fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.reward-fields label { display: grid; gap: 7px; color: #52625c; font-size: 12px; font-weight: 700; }
+.reward-fields input {
+  width: 100%;
+  min-height: 42px;
+  padding: 0 10px;
+  border: 1px solid #c6d1ca;
+  border-radius: 3px;
+  background: #fff;
+  color: var(--ink);
+}
+
+.reward-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 42px;
+  padding: 0 17px;
+  border: 0;
+  border-radius: 3px;
+  background: var(--green);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.reward-list { display: grid; }
+.reward-list article {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) auto 112px;
+  gap: 12px;
+  align-items: center;
+  min-height: 70px;
+  border-bottom: 1px solid #e7ebe8;
+}
+
+.reward-kind {
+  display: grid;
+  place-items: center;
+  min-height: 27px;
+  color: var(--green);
+  background: #e7f1eb;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.reward-kind.payment { color: #9a5b16; background: #fff0dc; }
+.reward-list article > div { display: flex; flex-direction: column; gap: 4px; }
+.reward-list article > div strong { font-size: 14px; }
+.reward-list article small { color: #74817c; font-size: 11px; }
+.reward-list article > b { font-size: 16px; text-align: right; }
+.reward-list article > b.reward { color: #16714c; }
+.reward-list article > b.payment { color: #a05f1a; }
+.reward-list article > small { text-align: right; }
+.reward-empty { margin: 0; padding: 34px 0 12px; color: #74817c; text-align: center; }
+
+@keyframes reward-cloud-pulse {
+  50% { opacity: .35; }
+}
+
+@media (max-width: 720px) {
+  .reward-main { width: calc(100% - 24px); padding-top: 18px; }
+  .reward-balance { min-height: 116px; padding: 20px; }
+  .reward-balance strong { font-size: 32px; }
+  .reward-entry,
+  .reward-ledger { padding: 16px; }
+  .reward-section-title { align-items: flex-start; }
+  .reward-cloud-status { max-width: 150px; text-align: right; }
+  .reward-fields { grid-template-columns: 1fr 1fr; }
+  .reward-fields .reward-submit { grid-column: 1 / -1; }
+  .reward-list article { grid-template-columns: 44px minmax(0, 1fr) auto; padding: 9px 0; }
+  .reward-list article > small { grid-column: 2 / -1; text-align: left; }
+}

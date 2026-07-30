@@ -2,6 +2,7 @@ const OWNER = "dannyxiexie";
 const REPOSITORY = "amy-engmate";
 const BRANCH = "main";
 const LOG_DIRECTORY = "exam-logs";
+const REWARD_DIRECTORY = "reward-logs";
 const API_ROOT = `https://api.github.com/repos/${OWNER}/${REPOSITORY}`;
 
 export const GITHUB_TOKEN_KEY = "amy-engmate:github-write-token:v1";
@@ -29,8 +30,8 @@ function decodeBase64(value) {
   return new TextDecoder().decode(bytes);
 }
 
-function recordFileName(record) {
-  const date = String(record.completedAt || new Date().toISOString()).slice(0, 10);
+function recordFileName(record, dateField = "completedAt") {
+  const date = String(record[dateField] || new Date().toISOString()).slice(0, 10);
   const safeId = String(record.id || Date.now()).replace(/[^a-zA-Z0-9_-]/g, "");
   return `${date}-${safeId}.json`;
 }
@@ -48,9 +49,13 @@ async function githubRequest(path, { token = "", method = "GET", body, accept } 
 }
 
 export async function loadGithubExamLogs(token = "") {
-  const directoryResponse = await githubRequest(`/contents/${LOG_DIRECTORY}?ref=${BRANCH}`, { token });
+  return loadGithubLogs(LOG_DIRECTORY, token, (record) => record?.id && record?.exam && record?.results);
+}
+
+async function loadGithubLogs(directory, token, isValidRecord) {
+  const directoryResponse = await githubRequest(`/contents/${directory}?ref=${BRANCH}`, { token });
   if (directoryResponse.status === 404) return [];
-  if (!directoryResponse.ok) throw new Error("暂时无法读取 GitHub 考试日志");
+  if (!directoryResponse.ok) throw new Error("暂时无法读取 GitHub 记录");
 
   const files = (await directoryResponse.json())
     .filter((item) => item.type === "file" && item.name.endsWith(".json"))
@@ -60,11 +65,11 @@ export async function loadGithubExamLogs(token = "") {
   const records = [];
   for (const file of files) {
     try {
-      const response = await githubRequest(`/contents/${encodeURIComponent(LOG_DIRECTORY)}/${encodeURIComponent(file.name)}?ref=${BRANCH}`, { token });
+      const response = await githubRequest(`/contents/${encodeURIComponent(directory)}/${encodeURIComponent(file.name)}?ref=${BRANCH}`, { token });
       if (!response.ok) continue;
       const payload = await response.json();
       const record = JSON.parse(decodeBase64(payload.content || ""));
-      if (record?.id && record?.exam && record?.results) records.push(record);
+      if (isValidRecord(record)) records.push(record);
     } catch {
       // One damaged log should not hide the remaining history.
     }
@@ -73,10 +78,37 @@ export async function loadGithubExamLogs(token = "") {
 }
 
 export async function uploadGithubExamLog(record, token) {
+  return uploadGithubLog({
+    directory: LOG_DIRECTORY,
+    record,
+    token,
+    dateField: "completedAt",
+    commitMessage: `Save Amy exam record ${record.id}`
+  });
+}
+
+export async function loadGithubRewardLogs(token = "") {
+  return loadGithubLogs(
+    REWARD_DIRECTORY,
+    token,
+    (record) => record?.id && ["reward", "payment"].includes(record?.type) && Number(record?.amount) > 0
+  );
+}
+
+export async function uploadGithubRewardLog(record, token) {
+  return uploadGithubLog({
+    directory: REWARD_DIRECTORY,
+    record,
+    token,
+    dateField: "createdAt",
+    commitMessage: `Save Amy reward record ${record.id}`
+  });
+}
+
+async function uploadGithubLog({ directory, record, token, dateField, commitMessage }) {
   if (!token) throw new Error("需要先连接 GitHub");
-  const fileName = recordFileName(record);
-  const path = `${LOG_DIRECTORY}/${fileName}`;
-  const existingResponse = await githubRequest(`/contents/${encodeURIComponent(LOG_DIRECTORY)}/${encodeURIComponent(fileName)}?ref=${BRANCH}`, { token });
+  const fileName = recordFileName(record, dateField);
+  const existingResponse = await githubRequest(`/contents/${encodeURIComponent(directory)}/${encodeURIComponent(fileName)}?ref=${BRANCH}`, { token });
   let sha;
   if (existingResponse.ok) {
     sha = (await existingResponse.json()).sha;
@@ -84,11 +116,11 @@ export async function uploadGithubExamLog(record, token) {
     throw new Error(existingResponse.status === 401 || existingResponse.status === 403 ? "GitHub 授权无效或没有写入权限" : "无法检查云端记录");
   }
 
-  const uploadResponse = await githubRequest(`/contents/${encodeURIComponent(LOG_DIRECTORY)}/${encodeURIComponent(fileName)}`, {
+  const uploadResponse = await githubRequest(`/contents/${encodeURIComponent(directory)}/${encodeURIComponent(fileName)}`, {
     token,
     method: "PUT",
     body: {
-      message: `Save Amy exam record ${record.id}`,
+      message: commitMessage,
       branch: BRANCH,
       content: encodeBase64(JSON.stringify(record, null, 2)),
       ...(sha ? { sha } : {})
@@ -99,7 +131,7 @@ export async function uploadGithubExamLog(record, token) {
     if (uploadResponse.status === 401 || uploadResponse.status === 403) {
       throw new Error("GitHub 授权无效或没有写入权限");
     }
-    throw new Error(reason.message || "上传考试记录失败");
+    throw new Error(reason.message || "上传记录失败");
   }
   return { fileName, updated: Boolean(sha) };
 }
