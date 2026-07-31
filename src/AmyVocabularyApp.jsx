@@ -46,6 +46,18 @@ function mergeHistory(importedHistory = [], localHistory = []) {
     .slice(0, 200);
 }
 
+function recordUpdatedAt(record) {
+  return new Date(record?.regradedAt || record?.completedAt || 0).getTime();
+}
+
+function recordsNeedingUpload(localHistory, cloudHistory) {
+  const cloudById = new Map(cloudHistory.map((record) => [record.id, record]));
+  return localHistory.filter((record) => {
+    const cloudRecord = cloudById.get(record.id);
+    return !cloudRecord || recordUpdatedAt(record) > recordUpdatedAt(cloudRecord);
+  });
+}
+
 function isDraftCompatible(draft, session) {
   if (!draft?.exam || !Array.isArray(draft.exam.meanings) || !session?.entries?.length) return false;
   const expectedIds = new Set(session.entries.map((entry) => entry.id));
@@ -197,10 +209,43 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards }) {
     if (!storageReady) return;
     let cancelled = false;
     const token = window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
+    const localHistory = readHistory();
     loadGithubExamLogs(token)
-      .then((cloudHistory) => {
+      .then(async (cloudHistory) => {
         if (cancelled) return;
         setHistory((current) => mergeHistory(cloudHistory, current));
+        const pendingRecords = recordsNeedingUpload(localHistory, cloudHistory);
+        if (pendingRecords.length && !token) {
+          setCloudStatus({
+            type: "error",
+            message: `有 ${pendingRecords.length} 份考试只保存在这台设备，需要上传代码才能同步`
+          });
+          setGithubAccessError("");
+          setShowGithubAccess(true);
+          return;
+        }
+        if (pendingRecords.length) {
+          setCloudStatus({ type: "loading", message: `发现 ${pendingRecords.length} 份未同步记录，正在自动补传` });
+          try {
+            for (const record of pendingRecords) await uploadGithubExamLog(record, token);
+            if (cancelled) return;
+            setCloudStatus({
+              type: "success",
+              message: `${mergeHistory(cloudHistory, localHistory).length} 份考试记录已全部同步`
+            });
+          } catch (reason) {
+            if (cancelled) return;
+            setCloudStatus({
+              type: "error",
+              message: `${pendingRecords.length} 份记录仍只在这台设备，稍后打开会自动重试`
+            });
+            if (/授权|权限|Token/.test(reason.message || "")) {
+              setGithubAccessError(reason.message);
+              setShowGithubAccess(true);
+            }
+          }
+          return;
+        }
         setCloudStatus({
           type: "success",
           message: cloudHistory.length ? `已从 GitHub 同步 ${cloudHistory.length} 份考试记录` : "GitHub 中还没有考试记录"
