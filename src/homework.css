@@ -1,0 +1,242 @@
+.homework-app {
+  --ink: #20332d;
+  --green: #20745b;
+  --gold: #a96e13;
+  --paper: #fffefa;
+  --line: #d8ded9;
+  min-height: 100dvh;
+  overflow-y: auto;
+  color: var(--ink);
+  background: #f3f7f4;
+  font-family: Arial, "PingFang SC", sans-serif;
+}
+
+.homework-app button,
+.homework-app input,
+.homework-app textarea { font: inherit; }
+
+.homework-app > header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+  min-height: 58px;
+  padding: 0 20px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 254, 250, .97);
+}
+
+.homework-app > header > button {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.homework-app > header > div { display: flex; flex-direction: column; }
+.homework-app > header > div span,
+.homework-page-heading > div > span { color: var(--green); font-size: 10px; font-weight: 800; letter-spacing: 1px; }
+.homework-app > header > div strong { font-size: 14px; }
+.homework-app .homework-header-add { width: auto; grid-auto-flow: column; gap: 5px; font-size: 13px; }
+.homework-header-spacer { width: 34px; }
+
+.homework-list-page,
+.homework-editor,
+.homework-detail {
+  width: min(1040px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 34px 0 60px;
+}
+
+.homework-page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.homework-page-heading h1 { margin: 6px 0 0; font: 700 30px/1.2 Georgia, "Songti SC", serif; }
+.homework-page-heading > small { color: #65756f; }
+.homework-new-button,
+.homework-add-images,
+.homework-editor-actions button,
+.homework-detail-actions button,
+.homework-inline-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 38px;
+  padding: 0 13px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.homework-new-button { border-color: var(--green); background: var(--green); color: #fff; }
+.homework-status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 14px 0;
+  padding: 9px 11px;
+  border-left: 3px solid #9ebcad;
+  background: #edf4ef;
+  color: #51645d;
+  font-size: 12px;
+}
+
+.homework-post-list { display: grid; gap: 9px; }
+.homework-post-list > button {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr) auto auto;
+  gap: 14px;
+  align-items: center;
+  width: 100%;
+  min-height: 94px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--paper);
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+
+.homework-date-block { display: flex; flex-direction: column; align-items: center; padding: 8px 4px; background: #e8f1ec; }
+.homework-date-block strong { font: 700 23px/1 Georgia, "Songti SC", serif; }
+.homework-date-block span { margin-top: 5px; color: var(--green); font-size: 11px; font-weight: 700; }
+.homework-post-list button > div:nth-child(2) { min-width: 0; }
+.homework-post-list button > div:nth-child(2) > strong { font-size: 15px; }
+.homework-post-list p { margin: 5px 0; color: #53635d; line-height: 1.45; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.homework-post-list small { color: #74817c; }
+.homework-state { padding: 5px 8px; background: #fff1d8; color: #8b5b0f; font-size: 11px; font-weight: 700; }
+.homework-state.confirmed { background: #e4f2e9; color: #166d48; }
+.homework-empty { margin: 16px 0 0; padding: 34px; background: var(--paper); color: #6e7c77; text-align: center; }
+
+.homework-editor-fields { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 16px; margin-top: 20px; }
+.homework-editor-fields label,
+.homework-edit-grid label,
+.homework-comment-compose label { display: grid; gap: 7px; color: #50615b; font-size: 12px; font-weight: 700; }
+.homework-editor input,
+.homework-editor textarea,
+.homework-comment-compose textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c6d1ca;
+  border-radius: 3px;
+  background: #fff;
+  color: var(--ink);
+  resize: vertical;
+}
+
+.homework-editor-fields input { min-height: 42px; }
+.homework-image-editor { margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--line); }
+.homework-editor-title { display: flex; justify-content: space-between; align-items: center; gap: 14px; }
+.homework-editor-title > div { display: flex; align-items: baseline; gap: 10px; }
+.homework-editor-title h2 { margin: 0; font: 700 20px/1.2 Georgia, "Songti SC", serif; }
+.homework-editor-title span { color: #65756f; font-size: 12px; }
+.homework-add-images { min-height: 36px; font-size: 12px; }
+.homework-add-images input,
+.homework-dropzone input { display: none; }
+
+.homework-dropzone {
+  display: grid;
+  place-items: center;
+  gap: 7px;
+  min-height: 180px;
+  margin-top: 14px;
+  border: 1px dashed #9fb4aa;
+  background: #fbfdfa;
+  color: var(--green);
+  cursor: pointer;
+}
+
+.homework-dropzone span { color: #6c7b75; font-size: 12px; }
+.homework-edit-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 15px; }
+.homework-edit-grid article { position: relative; min-width: 0; padding: 8px; border: 1px solid var(--line); background: var(--paper); }
+.homework-edit-grid img,
+.homework-edit-grid .homework-image-failed { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #edf1ee; }
+.homework-edit-grid label { margin-top: 8px; }
+.homework-edit-grid input { min-height: 38px; }
+.homework-remove-image { position: absolute; top: 13px; right: 13px; display: grid; place-items: center; width: 30px; height: 30px; border: 0; border-radius: 3px; background: rgba(255, 255, 255, .92); color: #a2473d; cursor: pointer; }
+.homework-form-error { margin: 16px 0 0; padding: 10px 12px; background: #fff0ed; color: #a04439; font-size: 13px; }
+.homework-save-progress { display: flex; align-items: center; gap: 7px; margin-top: 16px; color: var(--green); font-size: 13px; }
+.homework-save-progress svg { animation: homework-pulse 1.1s ease-in-out infinite; }
+.homework-editor-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 20px; }
+.homework-editor-actions button.primary { min-width: 110px; border-color: var(--green); background: var(--green); color: #fff; }
+.homework-editor-actions button:disabled { opacity: .5; cursor: not-allowed; }
+
+.homework-detail { width: min(900px, calc(100% - 32px)); }
+.homework-detail-head { padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+.homework-inline-back { min-height: 32px; padding: 0; border: 0; background: transparent; color: var(--green); font-size: 12px; }
+.homework-detail-head > div:nth-child(2) > span { color: var(--green); font-size: 12px; font-weight: 800; }
+.homework-detail-head h1 { margin: 8px 0; font: 700 28px/1.35 Georgia, "Songti SC", serif; overflow-wrap: anywhere; }
+.homework-detail-head small { color: #6e7c77; }
+.homework-detail-actions { display: flex; gap: 8px; margin-top: 16px; }
+.homework-detail-actions button.confirm { border-color: #d5b76d; background: #fff4d7; color: #7c540e; }
+.homework-detail-actions button:disabled { opacity: .55; cursor: not-allowed; }
+.homework-confirmed { display: inline-flex; align-items: center; gap: 6px; padding: 8px 11px; background: #e4f2e9; color: #176b48; font-size: 13px; font-weight: 700; }
+
+.homework-post-comments { margin: 20px 0 26px; padding: 18px; border-left: 4px solid #d5ad58; background: #fff9ea; }
+.homework-section-label { display: flex; align-items: center; gap: 7px; color: #4f605a; font-size: 12px; }
+.homework-section-label span { margin-left: auto; color: #75827d; }
+.homework-comments { display: grid; gap: 7px; margin-top: 10px; }
+.homework-comments article { padding: 10px 11px; border-left: 2px solid #b8cbc1; background: rgba(255, 255, 255, .76); }
+.homework-comments p { margin: 0; color: #33463f; line-height: 1.55; overflow-wrap: anywhere; }
+.homework-comments time { display: block; margin-top: 5px; color: #7a8782; font-size: 10px; }
+.homework-comment-compose { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; align-items: end; margin-top: 10px; }
+.homework-comment-compose label { gap: 0; }
+.homework-comment-compose textarea { min-height: 42px; background: #fff; }
+.homework-comment-compose button { display: inline-flex; align-items: center; justify-content: center; gap: 5px; min-height: 42px; padding: 0 13px; border: 0; border-radius: 3px; background: var(--green); color: #fff; cursor: pointer; font-weight: 700; }
+.homework-comment-compose button:disabled { opacity: .45; cursor: not-allowed; }
+
+.homework-gallery { display: grid; gap: 22px; }
+.homework-photo-card { border: 1px solid var(--line); background: var(--paper); }
+.homework-photo-heading { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 10px; align-items: center; padding: 12px 14px; background: #edf4ef; }
+.homework-photo-heading span { display: grid; place-items: center; width: 27px; height: 27px; background: #dbeae2; color: var(--green); font-size: 11px; font-weight: 800; }
+.homework-photo-heading h2 { margin: 0; font: 700 18px/1.35 Georgia, "Songti SC", serif; overflow-wrap: anywhere; }
+.homework-photo-card > img,
+.homework-photo-card > .homework-image-failed { display: block; width: 100%; max-height: 780px; object-fit: contain; background: #eef1ee; }
+.homework-image-failed { display: grid; place-items: center; min-height: 180px; color: #6e7c77; font-size: 12px; }
+.homework-photo-comments { padding: 14px; border-top: 1px solid var(--line); }
+
+@keyframes homework-pulse { 50% { opacity: .35; } }
+
+@media (max-width: 720px) {
+  .homework-list-page,
+  .homework-editor,
+  .homework-detail { width: calc(100% - 24px); padding-top: 20px; }
+  .homework-page-heading { align-items: center; }
+  .homework-page-heading h1 { font-size: 25px; }
+  .homework-post-list > button { grid-template-columns: 48px minmax(0, 1fr) auto; gap: 9px; padding: 11px; }
+  .homework-post-list > button > svg { display: none; }
+  .homework-date-block strong { font-size: 20px; }
+  .homework-state { grid-column: 2 / -1; justify-self: start; }
+  .homework-editor-fields { grid-template-columns: 1fr; }
+  .homework-edit-grid { grid-template-columns: 1fr 1fr; }
+  .homework-detail-head h1 { font-size: 24px; }
+  .homework-detail-actions { flex-wrap: wrap; }
+  .homework-comment-compose { grid-template-columns: 1fr; }
+  .homework-comment-compose button { justify-self: end; min-width: 84px; }
+}
+
+@media (max-width: 430px) {
+  .homework-app > header { padding: 0 12px; }
+  .homework-app .homework-header-add span { display: none; }
+  .homework-edit-grid { grid-template-columns: 1fr; }
+  .homework-editor-title { align-items: flex-end; }
+  .homework-photo-heading h2 { font-size: 16px; }
+}

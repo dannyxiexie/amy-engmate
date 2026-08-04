@@ -6,6 +6,7 @@ on:
     paths-ignore:
       - "exam-logs/**"
       - "reward-logs/**"
+      - "homework-posts/**"
   workflow_dispatch:
 
 permissions:

@@ -343,3 +343,10 @@
   .amy-dialog-actions span,
   .amy-dialog-actions button.danger { grid-column: 1 / -1; }
 }
+
+@media (max-width: 480px) {
+  .amy-app header { padding: 0 12px; gap: 7px; }
+  .amy-header-actions { gap: 0; }
+  .amy-header-actions .amy-history-button { width: 34px !important; }
+  .amy-header-actions .amy-history-button span { display: none; }
+}
