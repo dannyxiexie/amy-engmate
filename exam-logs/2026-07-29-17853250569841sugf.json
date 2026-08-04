@@ -1,0 +1,2071 @@
+{
+  "id": "17853250569841sugf",
+  "completedAt": "2026-07-29T11:37:36.984Z",
+  "session": 2,
+  "elapsed": 1276,
+  "exam": {
+    "meanings": [
+      {
+        "term": "help me keep ...",
+        "meaningZh": "帮助我保留……",
+        "acceptedMeaningsZh": [
+          "帮助我保留",
+          "帮我留住"
+        ],
+        "example": "Please help me keep quiet.",
+        "exampleZh": "请帮我保持安静。",
+        "relation": "phrase-alternative",
+        "id": "s2-g19-i2",
+        "sourceGroupId": "s2-g19",
+        "session": 2,
+        "teacherNumber": "19",
+        "displayNumber": "19-2",
+        "answer": "帮我保持…"
+      },
+      {
+        "term": "come and join our club",
+        "meaningZh": "来加入我们的俱乐部",
+        "acceptedMeaningsZh": [
+          "来加入我们的俱乐部",
+          "欢迎加入我们"
+        ],
+        "example": "Come and join our club.",
+        "exampleZh": "欢迎来到我们的俱乐部。",
+        "relation": "phrase-alternative",
+        "id": "s2-g1-i1",
+        "sourceGroupId": "s2-g1",
+        "session": 2,
+        "teacherNumber": "1",
+        "displayNumber": "1",
+        "answer": "前往加入我们的俱乐部"
+      },
+      {
+        "term": "look nice",
+        "meaningZh": "看起来不错",
+        "acceptedMeaningsZh": [
+          "看起来不错"
+        ],
+        "example": "The flowers look nice.",
+        "exampleZh": "这些花看起来很漂亮。",
+        "relation": "pattern",
+        "id": "s2-g36-i1",
+        "sourceGroupId": "s2-g36",
+        "session": 2,
+        "teacherNumber": "36",
+        "displayNumber": "36-1",
+        "answer": "看起来很好"
+      },
+      {
+        "term": "feel sad",
+        "meaningZh": "感到难过",
+        "acceptedMeaningsZh": [
+          "感到难过",
+          "感到伤心"
+        ],
+        "example": "She feels sad today.",
+        "exampleZh": "她今天感到很难过。",
+        "relation": "pattern",
+        "id": "s2-g52-i2",
+        "sourceGroupId": "s2-g52",
+        "session": 2,
+        "teacherNumber": "52",
+        "displayNumber": "52-2",
+        "answer": "感觉伤心"
+      },
+      {
+        "term": "painting",
+        "meaningZh": "绘画",
+        "acceptedMeaningsZh": [
+          "绘画",
+          "画作"
+        ],
+        "example": "The painting on the wall is beautiful.",
+        "exampleZh": "墙上的画很美。",
+        "relation": "word-family",
+        "id": "s2-g23-i2",
+        "sourceGroupId": "s2-g23",
+        "session": 2,
+        "teacherNumber": "23",
+        "displayNumber": "23-2",
+        "answer": "涂颜料"
+      },
+      {
+        "term": "Grade Five",
+        "meaningZh": "五年级",
+        "acceptedMeaningsZh": [
+          "五年级"
+        ],
+        "example": "There are five students in the class.",
+        "exampleZh": "有五个学生在教室里。",
+        "relation": "single",
+        "id": "s2-g13-i2",
+        "sourceGroupId": "s2-g13",
+        "session": 2,
+        "teacherNumber": "13",
+        "displayNumber": "13-2",
+        "answer": "五年级"
+      },
+      {
+        "term": "be amazing",
+        "meaningZh": "令人惊叹的",
+        "acceptedMeaningsZh": [
+          "令人惊叹的",
+          "惊人的"
+        ],
+        "example": "It is so amazing to see the sunset.",
+        "exampleZh": "看到日落真是太惊人了。",
+        "relation": "phrase-alternative",
+        "id": "s2-g26-i1",
+        "sourceGroupId": "s2-g26",
+        "session": 2,
+        "teacherNumber": "26",
+        "displayNumber": "26",
+        "answer": "神奇的"
+      },
+      {
+        "term": "the Huangpu River",
+        "meaningZh": "黄浦江",
+        "acceptedMeaningsZh": [
+          "黄浦江",
+          "黄浦河"
+        ],
+        "example": "The Huangpu River flows through Shanghai.",
+        "exampleZh": "这条河流穿过上海。",
+        "relation": "list",
+        "id": "s2-g25-i1",
+        "sourceGroupId": "s2-g25",
+        "session": 2,
+        "teacherNumber": "25",
+        "displayNumber": "25",
+        "answer": "黄浦江"
+      },
+      {
+        "term": "rule",
+        "meaningZh": "规则",
+        "acceptedMeaningsZh": [
+          "规则",
+          "规定"
+        ],
+        "example": "Follow the rules.",
+        "exampleZh": "遵守规则。",
+        "relation": "single",
+        "id": "s2-g57-i1",
+        "sourceGroupId": "s2-g57",
+        "session": 2,
+        "teacherNumber": "57",
+        "displayNumber": "57",
+        "answer": "规矩规则"
+      },
+      {
+        "term": "change",
+        "meaningZh": "改变",
+        "acceptedMeaningsZh": [
+          "改变",
+          "变化"
+        ],
+        "example": "The leaves change color in autumn.",
+        "exampleZh": "叶子在秋天变色。",
+        "relation": "single",
+        "id": "s2-g37-i1",
+        "sourceGroupId": "s2-g37",
+        "session": 2,
+        "teacherNumber": "37",
+        "displayNumber": "37",
+        "answer": "改变变化"
+      },
+      {
+        "term": "would like to",
+        "meaningZh": "想要做某事",
+        "acceptedMeaningsZh": [
+          "想要做某事",
+          "想干某事"
+        ],
+        "example": "I would like to go home.",
+        "exampleZh": "我想回家去。",
+        "relation": "pattern",
+        "id": "s2-g30-i1",
+        "sourceGroupId": "s2-g30",
+        "session": 2,
+        "teacherNumber": "30",
+        "displayNumber": "30-1",
+        "answer": "你想要…"
+      },
+      {
+        "term": "a lot of",
+        "meaningZh": "很多",
+        "acceptedMeaningsZh": [
+          "很多",
+          "大量"
+        ],
+        "example": "There are a lot of books on the table.",
+        "exampleZh": "有很多书在桌子上。",
+        "relation": "single",
+        "id": "s2-g53-i1",
+        "sourceGroupId": "s2-g53",
+        "session": 2,
+        "teacherNumber": "53",
+        "displayNumber": "53-1",
+        "answer": "许多"
+      },
+      {
+        "term": "topic words",
+        "meaningZh": "主题词汇",
+        "acceptedMeaningsZh": [
+          "主题词汇"
+        ],
+        "example": "Here are some topic words for our lesson.",
+        "exampleZh": "这里有一些我们课程的主题词汇。",
+        "relation": "list",
+        "id": "s2-g56-i1",
+        "sourceGroupId": "s2-g56",
+        "session": 2,
+        "teacherNumber": "56",
+        "displayNumber": "56",
+        "answer": "主题词"
+      },
+      {
+        "term": "much",
+        "meaningZh": "很多（不可数）",
+        "acceptedMeaningsZh": [
+          "很多（不可数）"
+        ],
+        "example": "I don't have much time left.",
+        "exampleZh": "我没什么时间了。",
+        "relation": "single",
+        "id": "s2-g50-i2",
+        "sourceGroupId": "s2-g50",
+        "session": 2,
+        "teacherNumber": "50",
+        "displayNumber": "50-2",
+        "answer": "许多"
+      },
+      {
+        "term": "play with ...",
+        "meaningZh": "和……一起玩",
+        "acceptedMeaningsZh": [
+          "和……一起玩",
+          "摆弄"
+        ],
+        "example": "Let's play with the toys.",
+        "exampleZh": "让我们和玩具一起玩。",
+        "relation": "phrase-alternative",
+        "id": "s2-g29-i1",
+        "sourceGroupId": "s2-g29",
+        "session": 2,
+        "teacherNumber": "29",
+        "displayNumber": "29",
+        "answer": "和…一起玩"
+      },
+      {
+        "term": "What about ...?",
+        "meaningZh": "……怎么样？……如何呢？",
+        "acceptedMeaningsZh": [
+          "……怎么样？……如何呢？"
+        ],
+        "example": "What about having lunch at school today?",
+        "exampleZh": "今天在学校吃午饭怎么样？",
+        "relation": "pattern",
+        "id": "s2-g38-i2",
+        "sourceGroupId": "s2-g38",
+        "session": 2,
+        "teacherNumber": "38",
+        "displayNumber": "38-2",
+        "answer": "关于…"
+      },
+      {
+        "term": "Chinese culture",
+        "meaningZh": "中国文化",
+        "acceptedMeaningsZh": [
+          "中国文化",
+          "中国风俗习惯"
+        ],
+        "example": "This is Chinese culture.",
+        "exampleZh": "这项是中国文化。",
+        "relation": "single",
+        "id": "s2-g41-i1",
+        "sourceGroupId": "s2-g41",
+        "session": 2,
+        "teacherNumber": "41",
+        "displayNumber": "41",
+        "answer": "中国文化"
+      },
+      {
+        "term": "wait for you",
+        "meaningZh": "等待你",
+        "acceptedMeaningsZh": [
+          "等待你",
+          "等你"
+        ],
+        "example": "I will wait for you.",
+        "exampleZh": "我会等你。",
+        "relation": "phrase-alternative",
+        "id": "s2-g15-i1",
+        "sourceGroupId": "s2-g15",
+        "session": 2,
+        "teacherNumber": "15",
+        "displayNumber": "15",
+        "answer": "等你"
+      },
+      {
+        "term": "chart",
+        "meaningZh": "图表",
+        "acceptedMeaningsZh": [
+          "图表",
+          "图表"
+        ],
+        "example": "Look at the chart carefully.",
+        "exampleZh": "仔细看看这张图表。",
+        "relation": "single",
+        "id": "s2-g59-i1",
+        "sourceGroupId": "s2-g59",
+        "session": 2,
+        "teacherNumber": "60",
+        "displayNumber": "60",
+        "answer": "图表"
+      },
+      {
+        "term": "It's hard to do ...",
+        "meaningZh": "很难做……",
+        "acceptedMeaningsZh": [
+          "很难做……",
+          "做起来很困难"
+        ],
+        "example": "It is hard to do the math problem.",
+        "exampleZh": "做这道数学题很难。",
+        "relation": "phrase-alternative",
+        "id": "s2-g44-i1",
+        "sourceGroupId": "s2-g44",
+        "session": 2,
+        "teacherNumber": "44",
+        "displayNumber": "44",
+        "answer": "这很坚定去做某事"
+      },
+      {
+        "term": "need to do sth.",
+        "meaningZh": "需要做某事",
+        "acceptedMeaningsZh": [
+          "需要做某事",
+          "需要做..."
+        ],
+        "example": "I need to do my homework now.",
+        "exampleZh": "我现在需要做我的作业了。",
+        "relation": "pattern",
+        "id": "s2-g35-i1",
+        "sourceGroupId": "s2-g35",
+        "session": 2,
+        "teacherNumber": "35",
+        "displayNumber": "35-1",
+        "answer": "需要去做某事"
+      },
+      {
+        "term": "don't look nice",
+        "meaningZh": "看起来不好看",
+        "acceptedMeaningsZh": [
+          "看起来不好看"
+        ],
+        "example": "These colours don't look nice.",
+        "exampleZh": "这些颜色看起来不好看。",
+        "relation": "pattern",
+        "id": "s2-g36-i3",
+        "sourceGroupId": "s2-g36",
+        "session": 2,
+        "teacherNumber": "36",
+        "displayNumber": "36-3",
+        "answer": "看起来不好"
+      },
+      {
+        "term": "become",
+        "meaningZh": "变成",
+        "acceptedMeaningsZh": [
+          "变成",
+          "成为"
+        ],
+        "example": "The weather becomes cold in winter.",
+        "exampleZh": "冬天天气变得寒冷了。",
+        "relation": "inflection",
+        "id": "s2-g47-i1",
+        "sourceGroupId": "s2-g47",
+        "session": 2,
+        "teacherNumber": "47",
+        "displayNumber": "47-1",
+        "answer": "变得"
+      },
+      {
+        "term": "have lots of fun",
+        "meaningZh": "玩得开心",
+        "acceptedMeaningsZh": [
+          "玩得开心",
+          "过得愉快"
+        ],
+        "example": "Have a lot of fun.",
+        "exampleZh": "这让我们玩得很开心。",
+        "relation": "phrase-alternative",
+        "id": "s2-g54-i1",
+        "sourceGroupId": "s2-g54",
+        "session": 2,
+        "teacherNumber": "54",
+        "displayNumber": "54",
+        "answer": "感到许多开心的心情/有了许多开心的心情/祝你开心"
+      },
+      {
+        "term": "sound great",
+        "meaningZh": "听起来很棒",
+        "acceptedMeaningsZh": [
+          "听起来很棒"
+        ],
+        "example": "Your idea sounds great.",
+        "exampleZh": "你的主意听起来很棒。",
+        "relation": "pattern",
+        "id": "s2-g36-i5",
+        "sourceGroupId": "s2-g36",
+        "session": 2,
+        "teacherNumber": "36",
+        "displayNumber": "36-5",
+        "answer": "听起来很好"
+      },
+      {
+        "term": "task",
+        "meaningZh": "任务",
+        "acceptedMeaningsZh": [
+          "任务",
+          "课题"
+        ],
+        "example": "Do your task now.",
+        "exampleZh": "现在做你的任务。",
+        "relation": "single",
+        "id": "s2-g55-i1",
+        "sourceGroupId": "s2-g55",
+        "session": 2,
+        "teacherNumber": "55",
+        "displayNumber": "55",
+        "answer": "任务"
+      },
+      {
+        "term": "with your help",
+        "meaningZh": "在你的帮助下",
+        "acceptedMeaningsZh": [
+          "在你的帮助下"
+        ],
+        "example": "With your help, we finished the work.",
+        "exampleZh": "在你的帮助下，我们完成了工作。",
+        "relation": "single",
+        "id": "s2-g46-i1",
+        "sourceGroupId": "s2-g46",
+        "session": 2,
+        "teacherNumber": "46",
+        "displayNumber": "46",
+        "answer": "有了你的帮助/与你一起帮助"
+      },
+      {
+        "term": "bamboo",
+        "meaningZh": "竹子",
+        "acceptedMeaningsZh": [
+          "竹子",
+          "竹类植物"
+        ],
+        "example": "Bamboo grows very fast in the south.",
+        "exampleZh": "南方的竹子长得很快。",
+        "relation": "single",
+        "id": "s2-g39-i1",
+        "sourceGroupId": "s2-g39",
+        "session": 2,
+        "teacherNumber": "39",
+        "displayNumber": "39",
+        "answer": "竹子"
+      },
+      {
+        "term": "paint",
+        "meaningZh": "画（动词）",
+        "acceptedMeaningsZh": [
+          "画（动词）",
+          "颜料（名词）"
+        ],
+        "example": "She likes to paint pictures.",
+        "exampleZh": "她喜欢画画。",
+        "relation": "single",
+        "id": "s2-g23-i1",
+        "sourceGroupId": "s2-g23",
+        "session": 2,
+        "teacherNumber": "23",
+        "displayNumber": "23-1",
+        "answer": "涂色"
+      },
+      {
+        "term": "feel tired",
+        "meaningZh": "感到疲倦",
+        "acceptedMeaningsZh": [
+          "感到疲倦",
+          "感到累"
+        ],
+        "example": "We feel tired after the game.",
+        "exampleZh": "比赛后我们感到很累。",
+        "relation": "pattern",
+        "id": "s2-g52-i3",
+        "sourceGroupId": "s2-g52",
+        "session": 2,
+        "teacherNumber": "52",
+        "displayNumber": "52-3",
+        "answer": "感觉很累"
+      },
+      {
+        "term": "how to use ... well",
+        "meaningZh": "如何熟练使用……",
+        "acceptedMeaningsZh": [
+          "如何熟练使用",
+          "如何很好地使用"
+        ],
+        "example": "How do you use this tool?",
+        "exampleZh": "你如何正确使用这个工具？",
+        "relation": "pattern",
+        "id": "s2-g28-i1",
+        "sourceGroupId": "s2-g28",
+        "session": 2,
+        "teacherNumber": "28",
+        "displayNumber": "28",
+        "answer": "怎么样很好地去使用某个物品"
+      },
+      {
+        "term": "looks nice",
+        "meaningZh": "看起来不错",
+        "acceptedMeaningsZh": [
+          "看起来不错"
+        ],
+        "example": "The pot looks nice.",
+        "exampleZh": "这个花盆看起来很漂亮。",
+        "relation": "inflection",
+        "id": "s2-g36-i2",
+        "sourceGroupId": "s2-g36",
+        "session": 2,
+        "teacherNumber": "36",
+        "displayNumber": "36-2",
+        "answer": "看起来很好"
+      },
+      {
+        "term": "make a photo journey",
+        "meaningZh": "制作摄影旅行记录",
+        "acceptedMeaningsZh": [
+          "制作摄影旅行记录",
+          "制作照片之旅"
+        ],
+        "example": "Let's make a photo journey together.",
+        "exampleZh": "让我们一起拍一段旅程吧。",
+        "relation": "phrase-alternative",
+        "id": "s2-g4-i1",
+        "sourceGroupId": "s2-g4",
+        "session": 2,
+        "teacherNumber": "4",
+        "displayNumber": "4",
+        "answer": "旅行"
+      },
+      {
+        "term": "learn",
+        "meaningZh": "学习",
+        "acceptedMeaningsZh": [
+          "学习",
+          "学会"
+        ],
+        "example": "I want to learn English well.",
+        "exampleZh": "我想学好英语。",
+        "relation": "single",
+        "id": "s2-g27-i1",
+        "sourceGroupId": "s2-g27",
+        "session": 2,
+        "teacherNumber": "27",
+        "displayNumber": "27",
+        "answer": "学习"
+      },
+      {
+        "term": "begin to do ...",
+        "meaningZh": "开始做……",
+        "acceptedMeaningsZh": [
+          "开始做……",
+          "着手做……"
+        ],
+        "example": "I begin to do my homework now.",
+        "exampleZh": "我现在开始做作业了。",
+        "relation": "pattern",
+        "id": "s2-g43-i1",
+        "sourceGroupId": "s2-g43",
+        "session": 2,
+        "teacherNumber": "43",
+        "displayNumber": "43",
+        "answer": "开始做某事"
+      },
+      {
+        "term": "Grade Four",
+        "meaningZh": "四年级",
+        "acceptedMeaningsZh": [
+          "四年级",
+          "小学四年级"
+        ],
+        "example": "He is in Grade Four.",
+        "exampleZh": "他在读四年级。",
+        "relation": "single",
+        "id": "s2-g13-i1",
+        "sourceGroupId": "s2-g13",
+        "session": 2,
+        "teacherNumber": "13",
+        "displayNumber": "13-1",
+        "answer": "四年级"
+      },
+      {
+        "term": "give a try",
+        "meaningZh": "试一试",
+        "acceptedMeaningsZh": [
+          "试一试",
+          "尝试一下"
+        ],
+        "example": "You should give it a try.",
+        "exampleZh": "你应该试试它。",
+        "relation": "phrase-alternative",
+        "id": "s2-g31-i1",
+        "sourceGroupId": "s2-g31",
+        "session": 2,
+        "teacherNumber": "31",
+        "displayNumber": "31",
+        "answer": "去尝试/给某是一个尝试的机会"
+      },
+      {
+        "term": "photography",
+        "meaningZh": "摄影术",
+        "acceptedMeaningsZh": [
+          "摄影术",
+          "拍照技术"
+        ],
+        "example": "She loves photography and takes many photos.",
+        "exampleZh": "她热爱摄影并拍了很多照片。",
+        "relation": "single",
+        "id": "s2-g7-i1",
+        "sourceGroupId": "s2-g7",
+        "session": 2,
+        "teacherNumber": "7",
+        "displayNumber": "7",
+        "answer": "摄影拍照"
+      },
+      {
+        "term": "solve the problem",
+        "meaningZh": "解决问题",
+        "acceptedMeaningsZh": [
+          "解决问题"
+        ],
+        "example": "Let's solve the problem together.",
+        "exampleZh": "让我们一起解决这个问题吧。",
+        "relation": "phrase-alternative",
+        "id": "s2-g42-i1",
+        "sourceGroupId": "s2-g42",
+        "session": 2,
+        "teacherNumber": "42",
+        "displayNumber": "42",
+        "answer": "相同的问题"
+      },
+      {
+        "term": "in life",
+        "meaningZh": "在生活中",
+        "acceptedMeaningsZh": [
+          "在生活中",
+          "在生命里"
+        ],
+        "example": "In my early days in life, I learned a lot.",
+        "exampleZh": "在我早年的生活中，我学到了很多。",
+        "relation": "single",
+        "id": "s2-g21-i1",
+        "sourceGroupId": "s2-g21",
+        "session": 2,
+        "teacherNumber": "21",
+        "displayNumber": "21",
+        "answer": "在…"
+      },
+      {
+        "term": "storytelling",
+        "meaningZh": "讲故事",
+        "acceptedMeaningsZh": [
+          "讲故事",
+          "讲述故事"
+        ],
+        "example": "She loves storytelling.",
+        "exampleZh": "她喜欢讲故事。",
+        "relation": "single",
+        "id": "s2-g9-i1",
+        "sourceGroupId": "s2-g9",
+        "session": 2,
+        "teacherNumber": "9",
+        "displayNumber": "9",
+        "answer": "故事分享会"
+      },
+      {
+        "term": "ph /f/",
+        "meaningZh": "字母组合 ph 发音为 f",
+        "acceptedMeaningsZh": [
+          "字母组合 ph 发音为 f"
+        ],
+        "example": "The word starts with ph.",
+        "exampleZh": "这个单词以 ph 开头。",
+        "relation": "list",
+        "id": "s2-g16-i1",
+        "sourceGroupId": "s2-g16",
+        "session": 2,
+        "teacherNumber": "16",
+        "displayNumber": "16-1",
+        "answer": "（纯音标）"
+      },
+      {
+        "term": "sweet moments",
+        "meaningZh": "甜蜜的时刻",
+        "acceptedMeaningsZh": [
+          "甜蜜的时刻",
+          "美好的瞬间"
+        ],
+        "example": "We shared sweet moments together.",
+        "exampleZh": "我们一起度过了甜蜜的时光。",
+        "relation": "single",
+        "id": "s2-g20-i1",
+        "sourceGroupId": "s2-g20",
+        "session": 2,
+        "teacherNumber": "20",
+        "displayNumber": "20",
+        "answer": "甜蜜时刻"
+      },
+      {
+        "term": "this term",
+        "meaningZh": "这学期",
+        "acceptedMeaningsZh": [
+          "这学期",
+          "本学期"
+        ],
+        "example": "This is my first day this term.",
+        "exampleZh": "这是我这学期的第一天。",
+        "relation": "single",
+        "id": "s2-g12-i1",
+        "sourceGroupId": "s2-g12",
+        "session": 2,
+        "teacherNumber": "12",
+        "displayNumber": "12",
+        "answer": "这秒"
+      },
+      {
+        "term": "the night view",
+        "meaningZh": "夜景",
+        "acceptedMeaningsZh": [
+          "夜景",
+          "夜晚的景色"
+        ],
+        "example": "We enjoyed the moonlit night view.",
+        "exampleZh": "我们欣赏着月光下的夜景。",
+        "relation": "single",
+        "id": "s2-g24-i1",
+        "sourceGroupId": "s2-g24",
+        "session": 2,
+        "teacherNumber": "24",
+        "displayNumber": "24",
+        "answer": "这个夜景"
+      },
+      {
+        "term": "want to",
+        "meaningZh": "想要做某事",
+        "acceptedMeaningsZh": [
+          "想要做某事",
+          "想做某事"
+        ],
+        "example": "I want to play football.",
+        "exampleZh": "我想踢足球。",
+        "relation": "pattern",
+        "id": "s2-g30-i2",
+        "sourceGroupId": "s2-g30",
+        "session": 2,
+        "teacherNumber": "30",
+        "displayNumber": "30-2",
+        "answer": "想要去做"
+      },
+      {
+        "term": "plant some sunflowers",
+        "meaningZh": "种一些向日葵",
+        "acceptedMeaningsZh": [
+          "种一些向日葵",
+          "种植几朵向日葵"
+        ],
+        "example": "We can plant some sunflowers in the garden.",
+        "exampleZh": "我们可以在花园里种些向日葵。",
+        "relation": "single",
+        "id": "s2-g32-i1",
+        "sourceGroupId": "s2-g32",
+        "session": 2,
+        "teacherNumber": "32",
+        "displayNumber": "32",
+        "answer": "种植一些向日葵"
+      },
+      {
+        "term": "be glad (to do)",
+        "meaningZh": "高兴（做某事）",
+        "acceptedMeaningsZh": [
+          "高兴（做某事）"
+        ],
+        "example": "I am glad to help you.",
+        "exampleZh": "我很乐意帮助你。",
+        "relation": "single",
+        "id": "s2-g17-i1",
+        "sourceGroupId": "s2-g17",
+        "session": 2,
+        "teacherNumber": "17",
+        "displayNumber": "17",
+        "answer": "开心地去做某事"
+      },
+      {
+        "term": "need to paint them",
+        "meaningZh": "需要给它们上色",
+        "acceptedMeaningsZh": [
+          "需要给它们上色",
+          "需要粉刷它们"
+        ],
+        "example": "We need to paint the walls red.",
+        "exampleZh": "我们需要把墙壁刷成红色。",
+        "relation": "phrase-alternative",
+        "id": "s2-g35-i2",
+        "sourceGroupId": "s2-g35",
+        "session": 2,
+        "teacherNumber": "35",
+        "displayNumber": "35-2",
+        "answer": "需要涂出它们"
+      },
+      {
+        "term": "become easier",
+        "meaningZh": "变得更容易",
+        "acceptedMeaningsZh": [
+          "变得更容易"
+        ],
+        "example": "The problem becomes easier as we go on.",
+        "exampleZh": "问题随着我们继续而变得越来越简单。",
+        "relation": "inflection",
+        "id": "s2-g47-i3",
+        "sourceGroupId": "s2-g47",
+        "session": 2,
+        "teacherNumber": "47",
+        "displayNumber": "47-3",
+        "answer": "变得简单了"
+      },
+      {
+        "term": "pottery club",
+        "meaningZh": "陶艺俱乐部",
+        "acceptedMeaningsZh": [
+          "陶艺俱乐部",
+          "陶器社团"
+        ],
+        "example": "He joined the pottery club last week.",
+        "exampleZh": "他上周加入了陶艺俱乐部。",
+        "relation": "single",
+        "id": "s2-g6-i1",
+        "sourceGroupId": "s2-g6",
+        "session": 2,
+        "teacherNumber": "6",
+        "displayNumber": "6",
+        "answer": "陶泥俱乐部"
+      },
+      {
+        "term": "at the same time",
+        "meaningZh": "同时",
+        "acceptedMeaningsZh": [
+          "同时",
+          "在同一时间"
+        ],
+        "example": "They arrived at the same time.",
+        "exampleZh": "他们同时到达。",
+        "relation": "phrase-alternative",
+        "id": "s2-g22-i1",
+        "sourceGroupId": "s2-g22",
+        "session": 2,
+        "teacherNumber": "22",
+        "displayNumber": "22",
+        "answer": "在琐碎的时间"
+      },
+      {
+        "term": "take photographs",
+        "meaningZh": "拍照",
+        "acceptedMeaningsZh": [
+          "拍照",
+          "拍照片"
+        ],
+        "example": "They take photographs every day.",
+        "exampleZh": "他们每天拍照。",
+        "relation": "phrase-alternative",
+        "id": "s2-g18-i1",
+        "sourceGroupId": "s2-g18",
+        "session": 2,
+        "teacherNumber": "18",
+        "displayNumber": "18-1",
+        "answer": "拍一些照片"
+      },
+      {
+        "term": "become easy",
+        "meaningZh": "变得容易",
+        "acceptedMeaningsZh": [
+          "变得容易"
+        ],
+        "example": "It will become easier to do this.",
+        "exampleZh": "做这件事会变得更容易。",
+        "relation": "phrase-alternative",
+        "id": "s2-g47-i2",
+        "sourceGroupId": "s2-g47",
+        "session": 2,
+        "teacherNumber": "47",
+        "displayNumber": "47-2",
+        "answer": "变得简单"
+      },
+      {
+        "term": "on + weekday",
+        "meaningZh": "在某个星期几",
+        "acceptedMeaningsZh": [
+          "在某个星期几",
+          "用于星期前"
+        ],
+        "example": "Meet me on Monday.",
+        "exampleZh": "周一见。",
+        "relation": "pattern",
+        "id": "s2-g10-i1",
+        "sourceGroupId": "s2-g10",
+        "session": 2,
+        "teacherNumber": "10",
+        "displayNumber": "10",
+        "answer": "在一到五（日）"
+      },
+      {
+        "term": "photo",
+        "meaningZh": "照片",
+        "acceptedMeaningsZh": [
+          "照片"
+        ],
+        "example": "She took a photo of me.",
+        "exampleZh": "她给我拍了张照片。",
+        "relation": "single",
+        "id": "s2-g18-i2",
+        "sourceGroupId": "s2-g18",
+        "session": 2,
+        "teacherNumber": "18",
+        "displayNumber": "18-2",
+        "answer": "照片"
+      },
+      {
+        "term": "be going to do sth.",
+        "meaningZh": "将要做某事",
+        "acceptedMeaningsZh": [
+          "将要做某事",
+          "计划要做的事"
+        ],
+        "example": "We are going to visit our grandparents.",
+        "exampleZh": "我们要去拜访我们的祖父母。",
+        "relation": "pattern",
+        "id": "s2-g3-i1",
+        "sourceGroupId": "s2-g3",
+        "session": 2,
+        "teacherNumber": "3",
+        "displayNumber": "3",
+        "answer": "将要去做某事"
+      },
+      {
+        "term": "feel happy",
+        "meaningZh": "感到开心",
+        "acceptedMeaningsZh": [
+          "感到开心",
+          "感到快乐"
+        ],
+        "example": "I feel happy today.",
+        "exampleZh": "我今天感到很开心。",
+        "relation": "pattern",
+        "id": "s2-g52-i1",
+        "sourceGroupId": "s2-g52",
+        "session": 2,
+        "teacherNumber": "52",
+        "displayNumber": "52-1",
+        "answer": "感觉开心"
+      },
+      {
+        "term": "brush pot",
+        "meaningZh": "笔筒",
+        "acceptedMeaningsZh": [
+          "笔筒"
+        ],
+        "example": "I made a brush pot from clay.",
+        "exampleZh": "我用陶土做了一个笔筒。",
+        "relation": "phrase-alternative",
+        "id": "s2-g34-i1",
+        "sourceGroupId": "s2-g34",
+        "session": 2,
+        "teacherNumber": "34",
+        "displayNumber": "34",
+        "answer": "笔筒"
+      },
+      {
+        "term": "give up",
+        "meaningZh": "放弃",
+        "acceptedMeaningsZh": [
+          "放弃",
+          "不再做某事"
+        ],
+        "example": "He gave up smoking.",
+        "exampleZh": "他戒烟了。",
+        "relation": "phrase-alternative",
+        "id": "s2-g45-i1",
+        "sourceGroupId": "s2-g45",
+        "session": 2,
+        "teacherNumber": "45",
+        "displayNumber": "45",
+        "answer": "起立"
+      },
+      {
+        "term": "phone",
+        "meaningZh": "电话",
+        "acceptedMeaningsZh": [
+          "电话",
+          "手机"
+        ],
+        "example": "Call me on my phone.",
+        "exampleZh": "用手机给我打电话。",
+        "relation": "single",
+        "id": "s2-g16-i3",
+        "sourceGroupId": "s2-g16",
+        "session": 2,
+        "teacherNumber": "16",
+        "displayNumber": "16-3",
+        "answer": "手机"
+      },
+      {
+        "term": "make a photo journal",
+        "meaningZh": "制作照片日记",
+        "acceptedMeaningsZh": [
+          "制作照片日记",
+          "做一本记录照片的日记"
+        ],
+        "example": "She made a photo journal about her trip.",
+        "exampleZh": "她制作了一本关于旅行的照片日记。",
+        "relation": "single",
+        "id": "s2-g5-i1",
+        "sourceGroupId": "s2-g5",
+        "session": 2,
+        "teacherNumber": "5",
+        "displayNumber": "5",
+        "answer": "日历日志"
+      },
+      {
+        "term": "photos of plants",
+        "meaningZh": "植物的照片",
+        "acceptedMeaningsZh": [
+          "植物的照片",
+          "植物图片"
+        ],
+        "example": "Here are photos of plants.",
+        "exampleZh": "这里有植物的照片。",
+        "relation": "list",
+        "id": "s2-g49-i1",
+        "sourceGroupId": "s2-g49",
+        "session": 2,
+        "teacherNumber": "49",
+        "displayNumber": "49",
+        "answer": "一些植物的照片"
+      },
+      {
+        "term": "project",
+        "meaningZh": "项目",
+        "acceptedMeaningsZh": [
+          "项目",
+          "工程"
+        ],
+        "example": "Our school project is great.",
+        "exampleZh": "我们的学校项目很棒。",
+        "relation": "single",
+        "id": "s2-g58-i1",
+        "sourceGroupId": "s2-g58",
+        "session": 2,
+        "teacherNumber": "58",
+        "displayNumber": "58",
+        "answer": "学科/板块"
+      },
+      {
+        "term": "gardening",
+        "meaningZh": "园艺",
+        "acceptedMeaningsZh": [
+          "园艺",
+          "种植花草"
+        ],
+        "example": "They enjoy gardening in their garden.",
+        "exampleZh": "他们喜欢在花园里种花种草。",
+        "relation": "single",
+        "id": "s2-g8-i1",
+        "sourceGroupId": "s2-g8",
+        "session": 2,
+        "teacherNumber": "8",
+        "displayNumber": "8",
+        "answer": "园艺"
+      },
+      {
+        "term": "doesn't look nice",
+        "meaningZh": "看起来不好看",
+        "acceptedMeaningsZh": [
+          "看起来不好看"
+        ],
+        "example": "This colour doesn't look nice.",
+        "exampleZh": "这个颜色看起来不好看。",
+        "relation": "inflection",
+        "id": "s2-g36-i4",
+        "sourceGroupId": "s2-g36",
+        "session": 2,
+        "teacherNumber": "36",
+        "displayNumber": "36-4",
+        "answer": "看起来不好"
+      },
+      {
+        "term": "sports field",
+        "meaningZh": "运动场",
+        "acceptedMeaningsZh": [
+          "运动场",
+          "体育场地"
+        ],
+        "example": "The students play on the sports field.",
+        "exampleZh": "这个学生在操场上玩。",
+        "relation": "list",
+        "id": "s2-g14-i1",
+        "sourceGroupId": "s2-g14",
+        "session": 2,
+        "teacherNumber": "14",
+        "displayNumber": "14",
+        "answer": "运动中心"
+      },
+      {
+        "term": "help sb. do sth.",
+        "meaningZh": "帮助某人做某事",
+        "acceptedMeaningsZh": [
+          "帮助某人做某事"
+        ],
+        "example": "I can help you clean the room.",
+        "exampleZh": "我可以帮你打扫房间。",
+        "relation": "pattern-alternative",
+        "id": "s2-g19-i1",
+        "sourceGroupId": "s2-g19",
+        "session": 2,
+        "teacherNumber": "19",
+        "displayNumber": "19-1",
+        "answer": "帮助某人去做某事"
+      },
+      {
+        "term": "more",
+        "meaningZh": "更多",
+        "acceptedMeaningsZh": [
+          "更多",
+          "更多的"
+        ],
+        "example": "Do you want more water?",
+        "exampleZh": "你想要更多的水吗？",
+        "relation": "inflection",
+        "id": "s2-g50-i3",
+        "sourceGroupId": "s2-g50",
+        "session": 2,
+        "teacherNumber": "50",
+        "displayNumber": "50-3",
+        "answer": "很多/更多"
+      },
+      {
+        "term": "lots of",
+        "meaningZh": "许多",
+        "acceptedMeaningsZh": [
+          "许多",
+          "大量"
+        ],
+        "example": "There are lots of books on the shelf.",
+        "exampleZh": "有很多书在书架上。",
+        "relation": "single",
+        "id": "s2-g53-i2",
+        "sourceGroupId": "s2-g53",
+        "session": 2,
+        "teacherNumber": "53",
+        "displayNumber": "53-2",
+        "answer": "许多"
+      },
+      {
+        "term": "many",
+        "meaningZh": "许多（可数）",
+        "acceptedMeaningsZh": [
+          "许多（可数）"
+        ],
+        "example": "There are many stars in the sky.",
+        "exampleZh": "天空中有很多星星。",
+        "relation": "single",
+        "id": "s2-g50-i1",
+        "sourceGroupId": "s2-g50",
+        "session": 2,
+        "teacherNumber": "50",
+        "displayNumber": "50-1",
+        "answer": "许多"
+      },
+      {
+        "term": "family and friends",
+        "meaningZh": "家人和朋友",
+        "acceptedMeaningsZh": [
+          "家人和朋友"
+        ],
+        "example": "My family and friends are coming.",
+        "exampleZh": "我的家人和朋友要来了。",
+        "relation": "list",
+        "id": "s2-g51-i1",
+        "sourceGroupId": "s2-g51",
+        "session": 2,
+        "teacherNumber": "51",
+        "displayNumber": "51",
+        "answer": "家庭和朋友们"
+      },
+      {
+        "term": "good to join the clubs",
+        "meaningZh": "加入这些社团很好",
+        "acceptedMeaningsZh": [
+          "加入这些社团很好"
+        ],
+        "example": "It is good to join the clubs.",
+        "exampleZh": "这很适合加入这些社团。",
+        "relation": "single",
+        "id": "s2-g2-i1",
+        "sourceGroupId": "s2-g2",
+        "session": 2,
+        "teacherNumber": "2",
+        "displayNumber": "2",
+        "answer": "很好的去参加这个俱乐部"
+      },
+      {
+        "term": "photo",
+        "meaningZh": "照片",
+        "acceptedMeaningsZh": [
+          "照片",
+          "图片"
+        ],
+        "example": "Look at the photo.",
+        "exampleZh": "看这张照片。",
+        "relation": "single",
+        "id": "s2-g16-i2",
+        "sourceGroupId": "s2-g16",
+        "session": 2,
+        "teacherNumber": "16",
+        "displayNumber": "16-2",
+        "answer": "照片"
+      },
+      {
+        "term": "Welcome back to ...",
+        "meaningZh": "欢迎回到……",
+        "acceptedMeaningsZh": [
+          "欢迎回到"
+        ],
+        "example": "Welcome back to school.",
+        "exampleZh": "欢迎回到学校。",
+        "relation": "phrase-alternative",
+        "id": "s2-g11-i1",
+        "sourceGroupId": "s2-g11",
+        "session": 2,
+        "teacherNumber": "11",
+        "displayNumber": "11",
+        "answer": "欢迎回来"
+      },
+      {
+        "term": "Alice says",
+        "meaningZh": "爱丽丝说",
+        "acceptedMeaningsZh": [
+          "爱丽丝说",
+          "说话"
+        ],
+        "example": "Alice says.",
+        "exampleZh": "这项任务很容易。",
+        "relation": "single",
+        "id": "s2-g33-i1",
+        "sourceGroupId": "s2-g33",
+        "session": 2,
+        "teacherNumber": "33",
+        "displayNumber": "33",
+        "answer": "Alice说"
+      },
+      {
+        "term": "learn how to take pictures",
+        "meaningZh": "学习如何拍照",
+        "acceptedMeaningsZh": [
+          "学习如何拍照"
+        ],
+        "example": "She learned how to take pictures last week.",
+        "exampleZh": "她上周学会了怎么拍照。",
+        "relation": "single",
+        "id": "s2-g48-i1",
+        "sourceGroupId": "s2-g48",
+        "session": 2,
+        "teacherNumber": "48",
+        "displayNumber": "48",
+        "answer": "学习怎么样拍照片"
+      },
+      {
+        "term": "noble plants",
+        "meaningZh": "高洁的植物",
+        "acceptedMeaningsZh": [
+          "高洁的植物",
+          "高雅的植物"
+        ],
+        "example": "The bamboo is considered a noble plant here.",
+        "exampleZh": "这里的竹子被视为一种高贵的植物。",
+        "relation": "phrase-alternative",
+        "id": "s2-g40-i1",
+        "sourceGroupId": "s2-g40",
+        "session": 2,
+        "teacherNumber": "40",
+        "displayNumber": "40",
+        "answer": "高贵的植物在中国传统文化里指梅兰竹菊四君子"
+      },
+      {
+        "term": "How about ...?",
+        "meaningZh": "……怎么样？……如何呢？",
+        "acceptedMeaningsZh": [
+          "……怎么样？……如何呢？"
+        ],
+        "example": "How about going to the park this weekend?",
+        "exampleZh": "这个周末去公园怎么样？",
+        "relation": "pattern",
+        "id": "s2-g38-i1",
+        "sourceGroupId": "s2-g38",
+        "session": 2,
+        "teacherNumber": "38",
+        "displayNumber": "38-1",
+        "answer": "关于…？"
+      }
+    ],
+    "cloze": [
+      {
+        "term": "more",
+        "meaningZh": "更多",
+        "acceptedMeaningsZh": [
+          "更多",
+          "更多的"
+        ],
+        "example": "Do you want more water?",
+        "exampleZh": "你想要更多的水吗？",
+        "relation": "inflection",
+        "id": "s2-g50-i3",
+        "sourceGroupId": "s2-g50",
+        "session": 2,
+        "teacherNumber": "50",
+        "displayNumber": "50-3",
+        "answer": "more",
+        "prompt": "Do you want _____ water?",
+        "choices": [
+          "looks nice",
+          "want to",
+          "need to paint them",
+          "more"
+        ]
+      },
+      {
+        "term": "gardening",
+        "meaningZh": "园艺",
+        "acceptedMeaningsZh": [
+          "园艺",
+          "种植花草"
+        ],
+        "example": "They enjoy gardening in their garden.",
+        "exampleZh": "他们喜欢在花园里种花种草。",
+        "relation": "single",
+        "id": "s2-g8-i1",
+        "sourceGroupId": "s2-g8",
+        "session": 2,
+        "teacherNumber": "8",
+        "displayNumber": "8",
+        "answer": "gardening",
+        "prompt": "They enjoy _____ in their garden.",
+        "choices": [
+          "make a photo journey",
+          "gardening",
+          "sound great",
+          "become easy"
+        ]
+      },
+      {
+        "term": "family and friends",
+        "meaningZh": "家人和朋友",
+        "acceptedMeaningsZh": [
+          "家人和朋友"
+        ],
+        "example": "My family and friends are coming.",
+        "exampleZh": "我的家人和朋友要来了。",
+        "relation": "list",
+        "id": "s2-g51-i1",
+        "sourceGroupId": "s2-g51",
+        "session": 2,
+        "teacherNumber": "51",
+        "displayNumber": "51",
+        "answer": "family and friends",
+        "prompt": "My _____ are coming.",
+        "choices": [
+          "give a try",
+          "photo",
+          "wait for you",
+          "family and friends"
+        ]
+      },
+      {
+        "term": "paint",
+        "meaningZh": "画（动词）",
+        "acceptedMeaningsZh": [
+          "画（动词）",
+          "颜料（名词）"
+        ],
+        "example": "She likes to paint pictures.",
+        "exampleZh": "她喜欢画画。",
+        "relation": "single",
+        "id": "s2-g23-i1",
+        "sourceGroupId": "s2-g23",
+        "session": 2,
+        "teacherNumber": "23",
+        "displayNumber": "23-1",
+        "answer": "paint",
+        "prompt": "She likes to _____ pictures.",
+        "choices": [
+          "paint",
+          "good to join the clubs",
+          "feel tired",
+          "at the same time"
+        ]
+      },
+      {
+        "term": "make a photo journey",
+        "meaningZh": "制作摄影旅行记录",
+        "acceptedMeaningsZh": [
+          "制作摄影旅行记录",
+          "制作照片之旅"
+        ],
+        "example": "Let's make a photo journey together.",
+        "exampleZh": "让我们一起拍一段旅程吧。",
+        "relation": "phrase-alternative",
+        "id": "s2-g4-i1",
+        "sourceGroupId": "s2-g4",
+        "session": 2,
+        "teacherNumber": "4",
+        "displayNumber": "4",
+        "answer": "make a photo journey",
+        "prompt": "Let's _____ together.",
+        "choices": [
+          "ph /f/",
+          "doesn't look nice",
+          "What about ...?",
+          "make a photo journey"
+        ]
+      },
+      {
+        "term": "storytelling",
+        "meaningZh": "讲故事",
+        "acceptedMeaningsZh": [
+          "讲故事",
+          "讲述故事"
+        ],
+        "example": "She loves storytelling.",
+        "exampleZh": "她喜欢讲故事。",
+        "relation": "single",
+        "id": "s2-g9-i1",
+        "sourceGroupId": "s2-g9",
+        "session": 2,
+        "teacherNumber": "9",
+        "displayNumber": "9",
+        "answer": "storytelling",
+        "prompt": "She loves _____.",
+        "choices": [
+          "change",
+          "learn",
+          "sweet moments",
+          "storytelling"
+        ]
+      },
+      {
+        "term": "solve the problem",
+        "meaningZh": "解决问题",
+        "acceptedMeaningsZh": [
+          "解决问题"
+        ],
+        "example": "Let's solve the problem together.",
+        "exampleZh": "让我们一起解决这个问题吧。",
+        "relation": "phrase-alternative",
+        "id": "s2-g42-i1",
+        "sourceGroupId": "s2-g42",
+        "session": 2,
+        "teacherNumber": "42",
+        "displayNumber": "42",
+        "answer": "photography",
+        "prompt": "Let's _____ together.",
+        "choices": [
+          "photography",
+          "solve the problem",
+          "be going to do sth.",
+          "pottery club"
+        ]
+      },
+      {
+        "term": "project",
+        "meaningZh": "项目",
+        "acceptedMeaningsZh": [
+          "项目",
+          "工程"
+        ],
+        "example": "Our school project is great.",
+        "exampleZh": "我们的学校项目很棒。",
+        "relation": "single",
+        "id": "s2-g58-i1",
+        "sourceGroupId": "s2-g58",
+        "session": 2,
+        "teacherNumber": "58",
+        "displayNumber": "58",
+        "answer": "project",
+        "prompt": "Our school _____ is great.",
+        "choices": [
+          "feel tired",
+          "project",
+          "family and friends",
+          "photo"
+        ]
+      },
+      {
+        "term": "learn",
+        "meaningZh": "学习",
+        "acceptedMeaningsZh": [
+          "学习",
+          "学会"
+        ],
+        "example": "I want to learn English well.",
+        "exampleZh": "我想学好英语。",
+        "relation": "single",
+        "id": "s2-g27-i1",
+        "sourceGroupId": "s2-g27",
+        "session": 2,
+        "teacherNumber": "27",
+        "displayNumber": "27",
+        "answer": "learn",
+        "prompt": "I want to _____ English well.",
+        "choices": [
+          "pottery club",
+          "noble plants",
+          "want to",
+          "learn"
+        ]
+      },
+      {
+        "term": "feel happy",
+        "meaningZh": "感到开心",
+        "acceptedMeaningsZh": [
+          "感到开心",
+          "感到快乐"
+        ],
+        "example": "I feel happy today.",
+        "exampleZh": "我今天感到很开心。",
+        "relation": "pattern",
+        "id": "s2-g52-i1",
+        "sourceGroupId": "s2-g52",
+        "session": 2,
+        "teacherNumber": "52",
+        "displayNumber": "52-1",
+        "answer": "feel happy",
+        "prompt": "I _____ today.",
+        "choices": [
+          "feel happy",
+          "many",
+          "How about ...?",
+          "phone"
+        ]
+      },
+      {
+        "term": "this term",
+        "meaningZh": "这学期",
+        "acceptedMeaningsZh": [
+          "这学期",
+          "本学期"
+        ],
+        "example": "This is my first day this term.",
+        "exampleZh": "这是我这学期的第一天。",
+        "relation": "single",
+        "id": "s2-g12-i1",
+        "sourceGroupId": "s2-g12",
+        "session": 2,
+        "teacherNumber": "12",
+        "displayNumber": "12",
+        "answer": "at the same time",
+        "prompt": "This is my first day _____.",
+        "choices": [
+          "What about ...?",
+          "at the same time",
+          "make a photo journey",
+          "this term"
+        ]
+      },
+      {
+        "term": "Chinese culture",
+        "meaningZh": "中国文化",
+        "acceptedMeaningsZh": [
+          "中国文化",
+          "中国风俗习惯"
+        ],
+        "example": "This is Chinese culture.",
+        "exampleZh": "这项是中国文化。",
+        "relation": "single",
+        "id": "s2-g41-i1",
+        "sourceGroupId": "s2-g41",
+        "session": 2,
+        "teacherNumber": "41",
+        "displayNumber": "41",
+        "answer": "Chinese culture",
+        "prompt": "This is _____.",
+        "choices": [
+          "come and join our club",
+          "lots of",
+          "solve the problem",
+          "Chinese culture"
+        ]
+      }
+    ],
+    "signature": "s2-g19-i2,s2-g1-i1,s2-g36-i1,s2-g52-i2,s2-g23-i2,s2-g13-i2,s2-g26-i1,s2-g25-i1,s2-g57-i1,s2-g37-i1,s2-g30-i1,s2-g53-i1,s2-g56-i1,s2-g50-i2,s2-g29-i1,s2-g38-i2,s2-g41-i1,s2-g15-i1,s2-g59-i1,s2-g44-i1,s2-g35-i1,s2-g36-i3,s2-g47-i1,s2-g54-i1,s2-g36-i5,s2-g55-i1,s2-g46-i1,s2-g39-i1,s2-g23-i1,s2-g52-i3,s2-g28-i1,s2-g36-i2,s2-g4-i1,s2-g27-i1,s2-g43-i1,s2-g13-i1,s2-g31-i1,s2-g7-i1,s2-g42-i1,s2-g21-i1,s2-g9-i1,s2-g16-i1,s2-g20-i1,s2-g12-i1,s2-g24-i1,s2-g30-i2,s2-g32-i1,s2-g17-i1,s2-g35-i2,s2-g47-i3,s2-g6-i1,s2-g22-i1,s2-g18-i1,s2-g47-i2,s2-g10-i1,s2-g18-i2,s2-g3-i1,s2-g52-i1,s2-g34-i1,s2-g45-i1,s2-g16-i3,s2-g5-i1,s2-g49-i1,s2-g58-i1,s2-g8-i1,s2-g36-i4,s2-g14-i1,s2-g19-i1,s2-g50-i3,s2-g53-i2,s2-g50-i1,s2-g51-i1,s2-g2-i1,s2-g16-i2,s2-g11-i1,s2-g33-i1,s2-g48-i1,s2-g40-i1,s2-g38-i1|s2-g50-i3:looks nice,want to,need to paint them,more|s2-g8-i1:make a photo journey,gardening,sound great,become easy|s2-g51-i1:give a try,photo,wait for you,family and friends|s2-g23-i1:paint,good to join the clubs,feel tired,at the same time|s2-g4-i1:ph /f/,doesn't look nice,What about ...?,make a photo journey|s2-g9-i1:change,learn,sweet moments,storytelling|s2-g42-i1:photography,solve the problem,be going to do sth.,pottery club|s2-g58-i1:feel tired,project,family and friends,photo|s2-g27-i1:pottery club,noble plants,want to,learn|s2-g52-i1:feel happy,many,How about ...?,phone|s2-g12-i1:What about ...?,at the same time,make a photo journey,this term|s2-g41-i1:come and join our club,lots of,solve the problem,Chinese culture"
+  },
+  "results": {
+    "meanings": [
+      {
+        "id": "s2-g19-i2",
+        "correct": false,
+        "answer": "帮助我保留……"
+      },
+      {
+        "id": "s2-g1-i1",
+        "correct": false,
+        "answer": "来加入我们的俱乐部"
+      },
+      {
+        "id": "s2-g36-i1",
+        "correct": false,
+        "answer": "看起来不错"
+      },
+      {
+        "id": "s2-g52-i2",
+        "correct": false,
+        "answer": "感到难过"
+      },
+      {
+        "id": "s2-g23-i2",
+        "correct": false,
+        "answer": "绘画"
+      },
+      {
+        "id": "s2-g13-i2",
+        "correct": true,
+        "answer": "五年级"
+      },
+      {
+        "id": "s2-g26-i1",
+        "correct": false,
+        "answer": "令人惊叹的"
+      },
+      {
+        "id": "s2-g25-i1",
+        "correct": true,
+        "answer": "黄浦江"
+      },
+      {
+        "id": "s2-g57-i1",
+        "correct": false,
+        "answer": "规则"
+      },
+      {
+        "id": "s2-g37-i1",
+        "correct": false,
+        "answer": "改变"
+      },
+      {
+        "id": "s2-g30-i1",
+        "correct": false,
+        "answer": "想要做某事"
+      },
+      {
+        "id": "s2-g53-i1",
+        "correct": false,
+        "answer": "很多"
+      },
+      {
+        "id": "s2-g56-i1",
+        "correct": false,
+        "answer": "主题词汇"
+      },
+      {
+        "id": "s2-g50-i2",
+        "correct": false,
+        "answer": "很多（不可数）"
+      },
+      {
+        "id": "s2-g29-i1",
+        "correct": true,
+        "answer": "和……一起玩"
+      },
+      {
+        "id": "s2-g38-i2",
+        "correct": false,
+        "answer": "……怎么样？……如何呢？"
+      },
+      {
+        "id": "s2-g41-i1",
+        "correct": true,
+        "answer": "中国文化"
+      },
+      {
+        "id": "s2-g15-i1",
+        "correct": false,
+        "answer": "等待你"
+      },
+      {
+        "id": "s2-g59-i1",
+        "correct": true,
+        "answer": "图表"
+      },
+      {
+        "id": "s2-g44-i1",
+        "correct": false,
+        "answer": "很难做……"
+      },
+      {
+        "id": "s2-g35-i1",
+        "correct": false,
+        "answer": "需要做某事"
+      },
+      {
+        "id": "s2-g36-i3",
+        "correct": true,
+        "answer": "看起来不好看"
+      },
+      {
+        "id": "s2-g47-i1",
+        "correct": false,
+        "answer": "变成"
+      },
+      {
+        "id": "s2-g54-i1",
+        "correct": false,
+        "answer": "玩得开心"
+      },
+      {
+        "id": "s2-g36-i5",
+        "correct": false,
+        "answer": "听起来很棒"
+      },
+      {
+        "id": "s2-g55-i1",
+        "correct": true,
+        "answer": "任务"
+      },
+      {
+        "id": "s2-g46-i1",
+        "correct": false,
+        "answer": "在你的帮助下"
+      },
+      {
+        "id": "s2-g39-i1",
+        "correct": true,
+        "answer": "竹子"
+      },
+      {
+        "id": "s2-g23-i1",
+        "correct": false,
+        "answer": "画（动词）"
+      },
+      {
+        "id": "s2-g52-i3",
+        "correct": false,
+        "answer": "感到疲倦"
+      },
+      {
+        "id": "s2-g28-i1",
+        "correct": false,
+        "answer": "如何熟练使用……"
+      },
+      {
+        "id": "s2-g36-i2",
+        "correct": false,
+        "answer": "看起来不错"
+      },
+      {
+        "id": "s2-g4-i1",
+        "correct": false,
+        "answer": "制作摄影旅行记录"
+      },
+      {
+        "id": "s2-g27-i1",
+        "correct": true,
+        "answer": "学习"
+      },
+      {
+        "id": "s2-g43-i1",
+        "correct": false,
+        "answer": "开始做……"
+      },
+      {
+        "id": "s2-g13-i1",
+        "correct": true,
+        "answer": "四年级"
+      },
+      {
+        "id": "s2-g31-i1",
+        "correct": false,
+        "answer": "试一试"
+      },
+      {
+        "id": "s2-g7-i1",
+        "correct": false,
+        "answer": "摄影术"
+      },
+      {
+        "id": "s2-g42-i1",
+        "correct": false,
+        "answer": "解决问题"
+      },
+      {
+        "id": "s2-g21-i1",
+        "correct": false,
+        "answer": "在生活中"
+      },
+      {
+        "id": "s2-g9-i1",
+        "correct": false,
+        "answer": "讲故事"
+      },
+      {
+        "id": "s2-g16-i1",
+        "correct": false,
+        "answer": "字母组合 ph 发音为 f"
+      },
+      {
+        "id": "s2-g20-i1",
+        "correct": false,
+        "answer": "甜蜜的时刻"
+      },
+      {
+        "id": "s2-g12-i1",
+        "correct": false,
+        "answer": "这学期"
+      },
+      {
+        "id": "s2-g24-i1",
+        "correct": false,
+        "answer": "夜景"
+      },
+      {
+        "id": "s2-g30-i2",
+        "correct": false,
+        "answer": "想要做某事"
+      },
+      {
+        "id": "s2-g32-i1",
+        "correct": false,
+        "answer": "种一些向日葵"
+      },
+      {
+        "id": "s2-g17-i1",
+        "correct": false,
+        "answer": "高兴（做某事）"
+      },
+      {
+        "id": "s2-g35-i2",
+        "correct": false,
+        "answer": "需要给它们上色"
+      },
+      {
+        "id": "s2-g47-i3",
+        "correct": false,
+        "answer": "变得更容易"
+      },
+      {
+        "id": "s2-g6-i1",
+        "correct": false,
+        "answer": "陶艺俱乐部"
+      },
+      {
+        "id": "s2-g22-i1",
+        "correct": false,
+        "answer": "同时"
+      },
+      {
+        "id": "s2-g18-i1",
+        "correct": false,
+        "answer": "拍照"
+      },
+      {
+        "id": "s2-g47-i2",
+        "correct": false,
+        "answer": "变得容易"
+      },
+      {
+        "id": "s2-g10-i1",
+        "correct": false,
+        "answer": "在某个星期几"
+      },
+      {
+        "id": "s2-g18-i2",
+        "correct": true,
+        "answer": "照片"
+      },
+      {
+        "id": "s2-g3-i1",
+        "correct": false,
+        "answer": "将要做某事"
+      },
+      {
+        "id": "s2-g52-i1",
+        "correct": false,
+        "answer": "感到开心"
+      },
+      {
+        "id": "s2-g34-i1",
+        "correct": true,
+        "answer": "笔筒"
+      },
+      {
+        "id": "s2-g45-i1",
+        "correct": false,
+        "answer": "放弃"
+      },
+      {
+        "id": "s2-g16-i3",
+        "correct": false,
+        "answer": "电话"
+      },
+      {
+        "id": "s2-g5-i1",
+        "correct": false,
+        "answer": "制作照片日记"
+      },
+      {
+        "id": "s2-g49-i1",
+        "correct": true,
+        "answer": "植物的照片"
+      },
+      {
+        "id": "s2-g58-i1",
+        "correct": false,
+        "answer": "项目"
+      },
+      {
+        "id": "s2-g8-i1",
+        "correct": true,
+        "answer": "园艺"
+      },
+      {
+        "id": "s2-g36-i4",
+        "correct": true,
+        "answer": "看起来不好看"
+      },
+      {
+        "id": "s2-g14-i1",
+        "correct": false,
+        "answer": "运动场"
+      },
+      {
+        "id": "s2-g19-i1",
+        "correct": false,
+        "answer": "帮助某人做某事"
+      },
+      {
+        "id": "s2-g50-i3",
+        "correct": false,
+        "answer": "更多"
+      },
+      {
+        "id": "s2-g53-i2",
+        "correct": true,
+        "answer": "许多"
+      },
+      {
+        "id": "s2-g50-i1",
+        "correct": false,
+        "answer": "许多（可数）"
+      },
+      {
+        "id": "s2-g51-i1",
+        "correct": false,
+        "answer": "家人和朋友"
+      },
+      {
+        "id": "s2-g2-i1",
+        "correct": false,
+        "answer": "加入这些社团很好"
+      },
+      {
+        "id": "s2-g16-i2",
+        "correct": true,
+        "answer": "照片"
+      },
+      {
+        "id": "s2-g11-i1",
+        "correct": false,
+        "answer": "欢迎回到……"
+      },
+      {
+        "id": "s2-g33-i1",
+        "correct": false,
+        "answer": "爱丽丝说"
+      },
+      {
+        "id": "s2-g48-i1",
+        "correct": false,
+        "answer": "学习如何拍照"
+      },
+      {
+        "id": "s2-g40-i1",
+        "correct": false,
+        "answer": "高洁的植物"
+      },
+      {
+        "id": "s2-g38-i1",
+        "correct": false,
+        "answer": "……怎么样？……如何呢？"
+      }
+    ],
+    "cloze": [
+      {
+        "correct": true,
+        "answer": "more"
+      },
+      {
+        "correct": true,
+        "answer": "gardening"
+      },
+      {
+        "correct": true,
+        "answer": "family and friends"
+      },
+      {
+        "correct": true,
+        "answer": "paint"
+      },
+      {
+        "correct": true,
+        "answer": "make a photo journey"
+      },
+      {
+        "correct": true,
+        "answer": "storytelling"
+      },
+      {
+        "correct": false,
+        "answer": "solve the problem"
+      },
+      {
+        "correct": true,
+        "answer": "project"
+      },
+      {
+        "correct": true,
+        "answer": "learn"
+      },
+      {
+        "correct": true,
+        "answer": "feel happy"
+      },
+      {
+        "correct": false,
+        "answer": "this term"
+      },
+      {
+        "correct": true,
+        "answer": "Chinese culture"
+      }
+    ],
+    "correct": 27,
+    "total": 91,
+    "score": 30
+  },
+  "gradingVersion": 5
+}
