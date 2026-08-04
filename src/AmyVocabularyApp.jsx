@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowLeft, BookOpen, Check, CheckCircle2, ChevronRight, Clock3, CloudUpload, Download, Gift, GraduationCap, History, Images, RotateCcw, Upload, X } from "lucide-react";
-import { createAmyExam, createClozePrompt, fetchAmyVocabulary, formatTime, gradeMeaning, hideTermInExample } from "./amyVocabularyData.js";
+import { AMY_VOCABULARY_MANIFEST, createAmyExam, createClozePrompt, fetchAmyVocabularySession, formatTime, gradeMeaning, hideTermInExample } from "./amyVocabularyData.js";
 import { GITHUB_TOKEN_KEY, loadGithubExamLogs, uploadGithubExamLog, verifyGithubWriteToken } from "./githubExamLogs.js";
 import GithubCodeDialog from "./GithubCodeDialog.jsx";
 import "./amyVocabulary.css";
@@ -114,9 +114,11 @@ async function gradeExam(exam) {
   return { meanings, cloze, correct, total, score: total ? Math.round(correct / total * 100) : 0 };
 }
 
-function SessionPicker({ data, selected, drafts, onSelect, onView, onStart }) {
+function SessionPicker({ data, selected, drafts, loadingSession, onSelect, onView, onStart }) {
   const current = data.sessions.find((item) => item.number === selected);
   const hasDraft = current && isDraftCompatible(drafts[current.number], current);
+  const isLoading = current && loadingSession === current.number;
+  const isReady = current && Array.isArray(current.entries);
   return <main className="amy-home">
     <div className="amy-title"><span>AMY · GRADE 5 VOCABULARY</span><h1>{data.title}</h1><p>选择第几次，先复习中文和例句，再完成覆盖全部学习项的测试。</p></div>
     <section className="amy-session-grid">
@@ -125,8 +127,8 @@ function SessionPicker({ data, selected, drafts, onSelect, onView, onStart }) {
       </button>)}
     </section>
     {current ? <section className="amy-mode-row">
-      <button onClick={() => onView("review")}><BookOpen size={24} /><span><strong>复习</strong><small>英文、中文、例句和翻译</small></span><ChevronRight size={18} /></button>
-      <button className="exam" onClick={onStart}><GraduationCap size={24} /><span><strong>{hasDraft ? "继续考试" : "考试"}</strong><small>{hasDraft ? "继续上次未提交的试卷" : "全量英译中，加例句选词"}</small></span><ChevronRight size={18} /></button>
+      <button disabled={!isReady} onClick={() => onView("review")}><BookOpen size={24} /><span><strong>{isLoading ? "正在载入" : "复习"}</strong><small>{isLoading ? "只加载这一次的资料" : "英文、中文、例句和翻译"}</small></span><ChevronRight size={18} /></button>
+      <button disabled={!isReady} className="exam" onClick={onStart}><GraduationCap size={24} /><span><strong>{isLoading ? "正在载入" : hasDraft ? "继续考试" : "考试"}</strong><small>{isLoading ? "很快就好" : hasDraft ? "继续上次未提交的试卷" : "全量英译中，加例句选词"}</small></span><ChevronRight size={18} /></button>
     </section> : null}
   </main>;
 }
@@ -178,9 +180,9 @@ function HistoryPage({ history, onOpen, onExport, onImport, onUpload, cloudStatu
 }
 
 export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework }) {
-  const [data, setData] = useState(null);
-  const [error, setError] = useState("");
+  const [data, setData] = useState(AMY_VOCABULARY_MANIFEST);
   const [selected, setSelected] = useState(null);
+  const [loadingSession, setLoadingSession] = useState(null);
   const [view, setView] = useState("home");
   const [exam, setExam] = useState(null);
   const [elapsed, setElapsed] = useState(0);
@@ -195,10 +197,10 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
   const [githubAccessError, setGithubAccessError] = useState("");
   const [isSavingGithubAccess, setIsSavingGithubAccess] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
-  const [cloudStatus, setCloudStatus] = useState({ type: "loading", message: "正在读取云端考试记录" });
+  const [cloudLoaded, setCloudLoaded] = useState(false);
+  const [cloudStatus, setCloudStatus] = useState({ type: "", message: "打开历史时会自动同步云端记录" });
   const regradedRecords = useRef(new Set());
   const session = useMemo(() => data?.sessions.find((item) => item.number === selected), [data, selected]);
-  useEffect(() => { fetchAmyVocabulary().then(setData).catch((reason) => setError(reason.message)); }, []);
   useEffect(() => {
     setHistory(readHistory());
     setDrafts(readDrafts());
@@ -206,7 +208,7 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
     setStorageReady(true);
   }, []);
   useEffect(() => {
-    if (!storageReady) return;
+    if (!storageReady || view !== "history" || cloudLoaded) return;
     let cancelled = false;
     const token = window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
     const localHistory = readHistory();
@@ -233,6 +235,7 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
               type: "success",
               message: `${mergeHistory(cloudHistory, localHistory).length} 份考试记录已全部同步`
             });
+            setCloudLoaded(true);
           } catch (reason) {
             if (cancelled) return;
             setCloudStatus({
@@ -250,12 +253,13 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
           type: "success",
           message: cloudHistory.length ? `已从 GitHub 同步 ${cloudHistory.length} 份考试记录` : "GitHub 中还没有考试记录"
         });
+        setCloudLoaded(true);
       })
       .catch(() => {
         if (!cancelled) setCloudStatus({ type: "error", message: "暂时无法读取 GitHub 记录，本地历史不受影响" });
       });
     return () => { cancelled = true; };
-  }, [storageReady]);
+  }, [cloudLoaded, storageReady, view]);
   useEffect(() => {
     if (!storageReady) return;
     window.localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
@@ -292,6 +296,23 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
     window.localStorage.setItem(DRAFTS_KEY, JSON.stringify(next));
     return next;
   });
+  const selectSession = async (sessionNumber) => {
+    setSelected(sessionNumber);
+    const existing = data.sessions.find((item) => item.number === sessionNumber);
+    if (Array.isArray(existing?.entries)) return;
+    setLoadingSession(sessionNumber);
+    try {
+      const loadedSession = await fetchAmyVocabularySession(sessionNumber);
+      setData((current) => ({
+        ...current,
+        sessions: current.sessions.map((item) => item.number === sessionNumber ? loadedSession : item)
+      }));
+    } catch (reason) {
+      window.alert(reason.message || "资料加载失败，请稍后重试");
+    } finally {
+      setLoadingSession((current) => current === sessionNumber ? null : current);
+    }
+  };
   const start = () => {
     if (!session?.entries.length) return;
     const draft = drafts[session.number];
@@ -377,6 +398,7 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
         await uploadGithubExamLog(history[index], token);
       }
       setCloudStatus({ type: "success", message: `已将 ${history.length} 份考试记录同步到 GitHub` });
+      setCloudLoaded(true);
     } catch (reason) {
       setCloudStatus({ type: "error", message: reason.message || "上传失败，本地记录仍然保留" });
       if (/授权|权限|Token/.test(reason.message || "")) {
@@ -410,11 +432,9 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
     setCloudStatus({ type: "", message: "已清除这台设备上的 GitHub 写入授权" });
   };
   const back = () => { if (view === "home") onBack?.(); else if (view === "historyDetail") setView("history"); else setView("home"); };
-  if (error) return <main className="amy-loading">资料加载失败：{error}</main>;
-  if (!data) return <main className="amy-loading">正在打开英语词汇复习</main>;
   const archivedSession = record ? data.sessions.find((item) => item.number === record.session) : null;
   return <div className="amy-app"><header>{view === "home" && !onBack ? <span className="amy-header-spacer" /> : <button aria-label="返回" onClick={back}><ArrowLeft size={19} /></button>}<div><span>AMY VOCABULARY</span><strong>五年级英语词汇 · 复习与考试</strong></div><nav className="amy-header-actions"><button aria-label="考试历史" className="amy-history-button" onClick={() => setView("history")}><History size={16} /><span>历史</span></button>{onOpenRewards ? <button aria-label="奖励系统" className="amy-history-button" onClick={onOpenRewards}><Gift size={16} /><span>奖励</span></button> : null}{onOpenHomework ? <button aria-label="作业发布" className="amy-history-button" onClick={onOpenHomework}><Images size={16} /><span>作业</span></button> : null}</nav></header>
-    {view === "home" ? <SessionPicker data={data} selected={selected} drafts={drafts} onSelect={setSelected} onView={setView} onStart={start} /> : null}
+    {view === "home" ? <SessionPicker data={data} selected={selected} drafts={drafts} loadingSession={loadingSession} onSelect={selectSession} onView={setView} onStart={start} /> : null}
     {view === "review" && session ? <Review session={session} /> : null}
     {view === "exam" && session && exam ? <><Paper session={session} exam={exam} setExam={setExam} elapsed={elapsed} results={results} onSubmit={submit} isGrading={isGrading} />{results ? <button className="amy-retry" onClick={restart}><RotateCcw size={16} /> 再考一套</button> : null}</> : null}
     {view === "history" ? <HistoryPage history={history} onOpen={(item) => { setRecord(item); setSelected(item.session); setView("historyDetail"); }} onExport={exportHistory} onImport={importHistory} onUpload={() => uploadHistory()} cloudStatus={cloudStatus} isUploading={isUploading} /> : null}

@@ -1,0 +1,2899 @@
+{
+  "number": 4,
+  "available": true,
+  "verifiedEnglish": true,
+  "groupCount": 56,
+  "itemCount": 79,
+  "groups": [
+    {
+      "id": "s4-g1",
+      "teacherNumber": "1",
+      "sourceText": "plant / plants",
+      "items": [
+        {
+          "term": "plant",
+          "meaningZh": "植物",
+          "acceptedMeaningsZh": [
+            "植物",
+            "种植"
+          ],
+          "example": "This plant is green.",
+          "exampleZh": "这项植物是绿色的。",
+          "relation": "single",
+          "id": "s4-g1-i1",
+          "sourceGroupId": "s4-g1",
+          "session": 4,
+          "teacherNumber": "1",
+          "displayNumber": "1-1"
+        },
+        {
+          "term": "plants",
+          "meaningZh": "植物（复数）",
+          "acceptedMeaningsZh": [
+            "植物",
+            "植物的复数"
+          ],
+          "example": "These plants are tall.",
+          "exampleZh": "这些植物很高。",
+          "relation": "list",
+          "id": "s4-g1-i2",
+          "sourceGroupId": "s4-g1",
+          "session": 4,
+          "teacherNumber": "1",
+          "displayNumber": "1-2"
+        }
+      ]
+    },
+    {
+      "id": "s4-g2",
+      "teacherNumber": "2",
+      "sourceText": "make a poster",
+      "items": [
+        {
+          "term": "make a poster",
+          "meaningZh": "制作海报",
+          "acceptedMeaningsZh": [
+            "制作海报"
+          ],
+          "example": "Make a poster for the event.",
+          "exampleZh": "为活动制作一张海报。",
+          "relation": "single",
+          "id": "s4-g2-i1",
+          "sourceGroupId": "s4-g2",
+          "session": 4,
+          "teacherNumber": "2",
+          "displayNumber": "2"
+        }
+      ]
+    },
+    {
+      "id": "s4-g3",
+      "teacherNumber": "3",
+      "sourceText": "stem / seeds / leaf → leaves / root (roots)",
+      "items": [
+        {
+          "term": "stem",
+          "meaningZh": "茎",
+          "acceptedMeaningsZh": [
+            "茎",
+            "主干"
+          ],
+          "example": "The stem holds up the leaves.",
+          "exampleZh": "茎支撑着叶子。",
+          "relation": "single",
+          "id": "s4-g3-i1",
+          "sourceGroupId": "s4-g3",
+          "session": 4,
+          "teacherNumber": "3",
+          "displayNumber": "3-1"
+        },
+        {
+          "term": "seeds",
+          "meaningZh": "种子",
+          "acceptedMeaningsZh": [
+            "种子"
+          ],
+          "example": "These seeds are small.",
+          "exampleZh": "这些种子很小。",
+          "relation": "list",
+          "id": "s4-g3-i2",
+          "sourceGroupId": "s4-g3",
+          "session": 4,
+          "teacherNumber": "3",
+          "displayNumber": "3-2"
+        },
+        {
+          "term": "leaf",
+          "meaningZh": "叶子",
+          "acceptedMeaningsZh": [
+            "叶子"
+          ],
+          "example": "A leaf is green and flat.",
+          "exampleZh": "一片叶子是绿色且扁平的。",
+          "relation": "list",
+          "id": "s4-g3-i3",
+          "sourceGroupId": "s4-g3",
+          "session": 4,
+          "teacherNumber": "3",
+          "displayNumber": "3-3"
+        },
+        {
+          "term": "leaves",
+          "meaningZh": "叶子（复数）",
+          "acceptedMeaningsZh": [
+            "叶子",
+            "叶子的复数"
+          ],
+          "example": "The leaves fall in autumn.",
+          "exampleZh": "树叶在秋天落下。",
+          "relation": "list",
+          "id": "s4-g3-i4",
+          "sourceGroupId": "s4-g3",
+          "session": 4,
+          "teacherNumber": "3",
+          "displayNumber": "3-4"
+        },
+        {
+          "term": "root (roots)",
+          "meaningZh": "根（根系）",
+          "acceptedMeaningsZh": [
+            "根（根系）"
+          ],
+          "example": "The root absorbs water from the soil.",
+          "exampleZh": "根从土壤中吸收水分。",
+          "relation": "single",
+          "id": "s4-g3-i5",
+          "sourceGroupId": "s4-g3",
+          "session": 4,
+          "teacherNumber": "3",
+          "displayNumber": "3-5"
+        }
+      ]
+    },
+    {
+      "id": "s4-g4",
+      "teacherNumber": "4",
+      "sourceText": "soil / sunlight / water / air / sunshine",
+      "items": [
+        {
+          "term": "soil",
+          "meaningZh": "土壤",
+          "acceptedMeaningsZh": [
+            "土壤",
+            "泥土"
+          ],
+          "example": "Plants grow in rich soil.",
+          "exampleZh": "植物在肥沃的土壤中生长。",
+          "relation": "list",
+          "id": "s4-g4-i1",
+          "sourceGroupId": "s4-g4",
+          "session": 4,
+          "teacherNumber": "4",
+          "displayNumber": "4-1"
+        },
+        {
+          "term": "sunlight",
+          "meaningZh": "阳光",
+          "acceptedMeaningsZh": [
+            "阳光"
+          ],
+          "example": "The sunlight is warm today.",
+          "exampleZh": "今天的阳光很温暖。",
+          "relation": "single",
+          "id": "s4-g4-i2",
+          "sourceGroupId": "s4-g4",
+          "session": 4,
+          "teacherNumber": "4",
+          "displayNumber": "4-2"
+        },
+        {
+          "term": "water",
+          "meaningZh": "水",
+          "acceptedMeaningsZh": [
+            "水"
+          ],
+          "example": "We need water for the garden.",
+          "exampleZh": "我们需要花园里的水。",
+          "relation": "list",
+          "id": "s4-g4-i3",
+          "sourceGroupId": "s4-g4",
+          "session": 4,
+          "teacherNumber": "4",
+          "displayNumber": "4-3"
+        },
+        {
+          "term": "air",
+          "meaningZh": "空气",
+          "acceptedMeaningsZh": [
+            "空气",
+            "大气"
+          ],
+          "example": "Fresh air makes us feel good.",
+          "exampleZh": "新鲜空气让我们感觉很好。",
+          "relation": "list",
+          "id": "s4-g4-i4",
+          "sourceGroupId": "s4-g4",
+          "session": 4,
+          "teacherNumber": "4",
+          "displayNumber": "4-4"
+        },
+        {
+          "term": "sunshine",
+          "meaningZh": "阳光",
+          "acceptedMeaningsZh": [
+            "阳光",
+            "日光"
+          ],
+          "example": "The sunshine is bright on the beach.",
+          "exampleZh": "海滩上的阳光很明亮。",
+          "relation": "single",
+          "id": "s4-g4-i5",
+          "sourceGroupId": "s4-g4",
+          "session": 4,
+          "teacherNumber": "4",
+          "displayNumber": "4-5"
+        }
+      ]
+    },
+    {
+      "id": "s4-g5",
+      "teacherNumber": "5",
+      "sourceText": "water lily",
+      "items": [
+        {
+          "term": "water lily",
+          "meaningZh": "睡莲",
+          "acceptedMeaningsZh": [
+            "睡莲",
+            "水莲花"
+          ],
+          "example": "The water lily floats on the pond.",
+          "exampleZh": "这朵睡莲漂浮在池塘上。",
+          "relation": "single",
+          "id": "s4-g5-i1",
+          "sourceGroupId": "s4-g5",
+          "session": 4,
+          "teacherNumber": "5",
+          "displayNumber": "5"
+        }
+      ]
+    },
+    {
+      "id": "s4-g6",
+      "teacherNumber": "6",
+      "sourceText": "morning glory",
+      "items": [
+        {
+          "term": "morning glory",
+          "meaningZh": "牵牛花",
+          "acceptedMeaningsZh": [
+            "牵牛花",
+            "朝颜花"
+          ],
+          "example": "Morning glories bloom at dawn.",
+          "exampleZh": "牵牛花在黎明时绽放。",
+          "relation": "single",
+          "id": "s4-g6-i1",
+          "sourceGroupId": "s4-g6",
+          "session": 4,
+          "teacherNumber": "6",
+          "displayNumber": "6"
+        }
+      ]
+    },
+    {
+      "id": "s4-g7",
+      "teacherNumber": "7",
+      "sourceText": "pine cone",
+      "items": [
+        {
+          "term": "pine cone",
+          "meaningZh": "松果",
+          "acceptedMeaningsZh": [
+            "松果",
+            "松树果实"
+          ],
+          "example": "The pine cone opens in summer.",
+          "exampleZh": "松果在夏天张开。",
+          "relation": "single",
+          "id": "s4-g7-i1",
+          "sourceGroupId": "s4-g7",
+          "session": 4,
+          "teacherNumber": "7",
+          "displayNumber": "7"
+        }
+      ]
+    },
+    {
+      "id": "s4-g8",
+      "teacherNumber": "8",
+      "sourceText": "bamboo shoots",
+      "items": [
+        {
+          "term": "bamboo shoots",
+          "meaningZh": "竹笋",
+          "acceptedMeaningsZh": [
+            "竹笋",
+            "竹子嫩芽"
+          ],
+          "example": "Bamboo shoots are delicious.",
+          "exampleZh": "竹笋很好吃。",
+          "relation": "single",
+          "id": "s4-g8-i1",
+          "sourceGroupId": "s4-g8",
+          "session": 4,
+          "teacherNumber": "8",
+          "displayNumber": "8"
+        }
+      ]
+    },
+    {
+      "id": "s4-g9",
+      "teacherNumber": "9",
+      "sourceText": "hold the plant in place",
+      "items": [
+        {
+          "term": "hold the plant in place",
+          "meaningZh": "把植物固定住",
+          "acceptedMeaningsZh": [
+            "把植物固定住",
+            "使植物保持原位"
+          ],
+          "example": "Hold the plant in place.",
+          "exampleZh": "把植物固定在原地。",
+          "relation": "phrase-alternative",
+          "id": "s4-g9-i1",
+          "sourceGroupId": "s4-g9",
+          "session": 4,
+          "teacherNumber": "9",
+          "displayNumber": "9"
+        }
+      ]
+    },
+    {
+      "id": "s4-g10",
+      "teacherNumber": "10",
+      "sourceText": "take in",
+      "items": [
+        {
+          "term": "take in",
+          "meaningZh": "吸收",
+          "acceptedMeaningsZh": [
+            "吸收",
+            "接受",
+            "引进"
+          ],
+          "example": "Take it in.",
+          "exampleZh": "把它收进来/吸进去。",
+          "relation": "single",
+          "id": "s4-g10-i1",
+          "sourceGroupId": "s4-g10",
+          "session": 4,
+          "teacherNumber": "10",
+          "displayNumber": "10"
+        }
+      ]
+    },
+    {
+      "id": "s4-g11",
+      "teacherNumber": "11",
+      "sourceText": "move up",
+      "items": [
+        {
+          "term": "move up",
+          "meaningZh": "向上移动",
+          "acceptedMeaningsZh": [
+            "向上移动",
+            "往上走"
+          ],
+          "example": "Move the box up.",
+          "exampleZh": "把箱子搬上去。",
+          "relation": "phrase-alternative",
+          "id": "s4-g11-i1",
+          "sourceGroupId": "s4-g11",
+          "session": 4,
+          "teacherNumber": "11",
+          "displayNumber": "11"
+        }
+      ]
+    },
+    {
+      "id": "s4-g12",
+      "teacherNumber": "12",
+      "sourceText": "bring ... to ...",
+      "items": [
+        {
+          "term": "bring ... to ...",
+          "meaningZh": "把……带到……处",
+          "acceptedMeaningsZh": [
+            "把……带到……处"
+          ],
+          "example": "Bring me a book to school.",
+          "exampleZh": "给我带本书到学校去。",
+          "relation": "pattern",
+          "id": "s4-g12-i1",
+          "sourceGroupId": "s4-g12",
+          "session": 4,
+          "teacherNumber": "12",
+          "displayNumber": "12"
+        }
+      ]
+    },
+    {
+      "id": "s4-g13",
+      "teacherNumber": "13",
+      "sourceText": "grow big / grow bigger and bigger",
+      "items": [
+        {
+          "term": "grow big",
+          "meaningZh": "长得很大",
+          "acceptedMeaningsZh": [
+            "长得很大",
+            "长得很高"
+          ],
+          "example": "The tree grows big.",
+          "exampleZh": "这棵树长得很大。",
+          "relation": "single",
+          "id": "s4-g13-i1",
+          "sourceGroupId": "s4-g13",
+          "session": 4,
+          "teacherNumber": "13",
+          "displayNumber": "13-1"
+        },
+        {
+          "term": "grow bigger and bigger",
+          "meaningZh": "越来越大",
+          "acceptedMeaningsZh": [
+            "越来越大",
+            "不断变大"
+          ],
+          "example": "It grows bigger and bigger every year.",
+          "exampleZh": "它每年都在变得越来越小。",
+          "relation": "phrase-alternative",
+          "id": "s4-g13-i2",
+          "sourceGroupId": "s4-g13",
+          "session": 4,
+          "teacherNumber": "13",
+          "displayNumber": "13-2"
+        }
+      ]
+    },
+    {
+      "id": "s4-g14",
+      "teacherNumber": "14",
+      "sourceText": "soon",
+      "items": [
+        {
+          "term": "soon",
+          "meaningZh": "很快；不久",
+          "acceptedMeaningsZh": [
+            "很快",
+            "不久"
+          ],
+          "example": "I will see you soon.",
+          "exampleZh": "我很快就会见到你。",
+          "relation": "single",
+          "id": "s4-g14-i1",
+          "sourceGroupId": "s4-g14",
+          "session": 4,
+          "teacherNumber": "14",
+          "displayNumber": "14"
+        }
+      ]
+    },
+    {
+      "id": "s4-g15",
+      "teacherNumber": "15",
+      "sourceText": "come out",
+      "items": [
+        {
+          "term": "come out",
+          "meaningZh": "出来",
+          "acceptedMeaningsZh": [
+            "出来",
+            "出现"
+          ],
+          "example": "The sun comes out at 6 am.",
+          "exampleZh": "太阳早上六点出来。",
+          "relation": "single",
+          "id": "s4-g15-i1",
+          "sourceGroupId": "s4-g15",
+          "session": 4,
+          "teacherNumber": "15",
+          "displayNumber": "15"
+        }
+      ]
+    },
+    {
+      "id": "s4-g16",
+      "teacherNumber": "16",
+      "sourceText": "grow into",
+      "items": [
+        {
+          "term": "grow into",
+          "meaningZh": "长成；变成",
+          "acceptedMeaningsZh": [
+            "长成",
+            "变成"
+          ],
+          "example": "He grew into a tall man.",
+          "exampleZh": "他长成了一个高个子男人。",
+          "relation": "phrase-alternative",
+          "id": "s4-g16-i1",
+          "sourceGroupId": "s4-g16",
+          "session": 4,
+          "teacherNumber": "16",
+          "displayNumber": "16"
+        }
+      ]
+    },
+    {
+      "id": "s4-g17",
+      "teacherNumber": "17",
+      "sourceText": "a fruit holding seeds",
+      "items": [
+        {
+          "term": "a fruit holding seeds",
+          "meaningZh": "一个装着种子的果实",
+          "acceptedMeaningsZh": [
+            "一个装着种子的果实",
+            "一种结出果实的植物"
+          ],
+          "example": "This is a fruit holding seeds.",
+          "exampleZh": "这是一个装着种子的果实。",
+          "relation": "phrase-alternative",
+          "id": "s4-g17-i1",
+          "sourceGroupId": "s4-g17",
+          "session": 4,
+          "teacherNumber": "17",
+          "displayNumber": "17"
+        }
+      ]
+    },
+    {
+      "id": "s4-g18",
+      "teacherNumber": "18",
+      "sourceText": "fall into",
+      "items": [
+        {
+          "term": "fall into",
+          "meaningZh": "掉进",
+          "acceptedMeaningsZh": [
+            "掉进",
+            "落入"
+          ],
+          "example": "The ball fell into the box.",
+          "exampleZh": "球掉进了盒子里。",
+          "relation": "pattern",
+          "id": "s4-g18-i1",
+          "sourceGroupId": "s4-g18",
+          "session": 4,
+          "teacherNumber": "18",
+          "displayNumber": "18"
+        }
+      ]
+    },
+    {
+      "id": "s4-g19",
+      "teacherNumber": "19",
+      "sourceText": "a visit to ...",
+      "items": [
+        {
+          "term": "a visit to ...",
+          "meaningZh": "一次去……的参观",
+          "acceptedMeaningsZh": [
+            "一次参观",
+            "一次访问"
+          ],
+          "example": "It was a visit to my grandmother's house.",
+          "exampleZh": "那是一次去我家奶奶家的拜访。",
+          "relation": "phrase-alternative",
+          "id": "s4-g19-i1",
+          "sourceGroupId": "s4-g19",
+          "session": 4,
+          "teacherNumber": "19",
+          "displayNumber": "19"
+        }
+      ]
+    },
+    {
+      "id": "s4-g20",
+      "teacherNumber": "20",
+      "sourceText": "botanical",
+      "items": [
+        {
+          "term": "botanical",
+          "meaningZh": "植物学的",
+          "acceptedMeaningsZh": [
+            "植物学的",
+            "与植物有关的"
+          ],
+          "example": "This is botanical knowledge.",
+          "exampleZh": "这是植物学知识。",
+          "relation": "single",
+          "id": "s4-g20-i1",
+          "sourceGroupId": "s4-g20",
+          "session": 4,
+          "teacherNumber": "20",
+          "displayNumber": "20"
+        }
+      ]
+    },
+    {
+      "id": "s4-g21",
+      "teacherNumber": "21",
+      "sourceText": "botanical garden",
+      "items": [
+        {
+          "term": "botanical garden",
+          "meaningZh": "植物园",
+          "acceptedMeaningsZh": [
+            "植物园",
+            "植物园"
+          ],
+          "example": "The school has a botanical garden.",
+          "exampleZh": "这所学校有一个植物园。",
+          "relation": "list",
+          "id": "s4-g21-i1",
+          "sourceGroupId": "s4-g21",
+          "session": 4,
+          "teacherNumber": "21",
+          "displayNumber": "21"
+        }
+      ]
+    },
+    {
+      "id": "s4-g22",
+      "teacherNumber": "22",
+      "sourceText": "the tulip",
+      "items": [
+        {
+          "term": "the tulip",
+          "meaningZh": "郁金香",
+          "acceptedMeaningsZh": [
+            "郁金香",
+            "水仙花（特指）"
+          ],
+          "example": "She planted the tulip in spring.",
+          "exampleZh": "她春天种了那株郁金香。",
+          "relation": "single",
+          "id": "s4-g22-i1",
+          "sourceGroupId": "s4-g22",
+          "session": 4,
+          "teacherNumber": "22",
+          "displayNumber": "22"
+        }
+      ]
+    },
+    {
+      "id": "s4-g23",
+      "teacherNumber": "23",
+      "sourceText": "ice cream cone",
+      "items": [
+        {
+          "term": "ice cream cone",
+          "meaningZh": "冰淇淋甜筒",
+          "acceptedMeaningsZh": [
+            "冰淇淋甜筒",
+            "蛋筒冰淇淋"
+          ],
+          "example": "I ate an ice cream cone at lunch.",
+          "exampleZh": "我午餐吃了一个冰淇淋甜筒。",
+          "relation": "list",
+          "id": "s4-g23-i1",
+          "sourceGroupId": "s4-g23",
+          "session": 4,
+          "teacherNumber": "23",
+          "displayNumber": "23"
+        }
+      ]
+    },
+    {
+      "id": "s4-g24",
+      "teacherNumber": "24",
+      "sourceText": "name tag",
+      "items": [
+        {
+          "term": "name tag",
+          "meaningZh": "姓名牌",
+          "acceptedMeaningsZh": [
+            "姓名牌",
+            "名牌"
+          ],
+          "example": "Put your name tag on the bag.",
+          "exampleZh": "把你的姓名牌挂在包上。",
+          "relation": "single",
+          "id": "s4-g24-i1",
+          "sourceGroupId": "s4-g24",
+          "session": 4,
+          "teacherNumber": "24",
+          "displayNumber": "24"
+        }
+      ]
+    },
+    {
+      "id": "s4-g25",
+      "teacherNumber": "25",
+      "sourceText": "be called",
+      "items": [
+        {
+          "term": "be called",
+          "meaningZh": "被叫做",
+          "acceptedMeaningsZh": [
+            "被叫做",
+            "被称为"
+          ],
+          "example": "He is called Tom.",
+          "exampleZh": "他叫汤姆。",
+          "relation": "single",
+          "id": "s4-g25-i1",
+          "sourceGroupId": "s4-g25",
+          "session": 4,
+          "teacherNumber": "25",
+          "displayNumber": "25"
+        }
+      ]
+    },
+    {
+      "id": "s4-g26",
+      "teacherNumber": "26",
+      "sourceText": "How lovely / cute!",
+      "items": [
+        {
+          "term": "How lovely!",
+          "meaningZh": "多么可爱啊！",
+          "acceptedMeaningsZh": [
+            "多么可爱啊！"
+          ],
+          "example": "How lovely!",
+          "exampleZh": "多么可爱啊！",
+          "relation": "pattern",
+          "id": "s4-g26-i1",
+          "sourceGroupId": "s4-g26",
+          "session": 4,
+          "teacherNumber": "26",
+          "displayNumber": "26-1"
+        },
+        {
+          "term": "How cute!",
+          "meaningZh": "多么可爱啊！",
+          "acceptedMeaningsZh": [
+            "多么可爱",
+            "真可爱"
+          ],
+          "example": "How cute!",
+          "exampleZh": "多么可爱啊！",
+          "relation": "single",
+          "id": "s4-g26-i2",
+          "sourceGroupId": "s4-g26",
+          "session": 4,
+          "teacherNumber": "26",
+          "displayNumber": "26-2"
+        }
+      ]
+    },
+    {
+      "id": "s4-g27",
+      "teacherNumber": "27",
+      "sourceText": "cover / be covered with ...",
+      "items": [
+        {
+          "term": "cover",
+          "meaningZh": "覆盖；遮盖",
+          "acceptedMeaningsZh": [
+            "覆盖；遮盖"
+          ],
+          "example": "Please cover the book.",
+          "exampleZh": "请盖住书。",
+          "relation": "single",
+          "id": "s4-g27-i1",
+          "sourceGroupId": "s4-g27",
+          "session": 4,
+          "teacherNumber": "27",
+          "displayNumber": "27-1"
+        },
+        {
+          "term": "be covered with...",
+          "meaningZh": "被……所覆盖/沾满",
+          "acceptedMeaningsZh": [
+            "被……所覆盖/沾满"
+          ],
+          "example": "The table is covered with flowers.",
+          "exampleZh": "桌子铺满了花。",
+          "relation": "phrase-alternative",
+          "id": "s4-g27-i2",
+          "sourceGroupId": "s4-g27",
+          "session": 4,
+          "teacherNumber": "27",
+          "displayNumber": "27-2"
+        }
+      ]
+    },
+    {
+      "id": "s4-g28",
+      "teacherNumber": "28",
+      "sourceText": "creepers",
+      "items": [
+        {
+          "term": "creepers",
+          "meaningZh": "攀援植物",
+          "acceptedMeaningsZh": [
+            "攀援植物",
+            "藤本植物"
+          ],
+          "example": "These creepers are green.",
+          "exampleZh": "这些藤蔓是绿色的。",
+          "relation": "single",
+          "id": "s4-g28-i1",
+          "sourceGroupId": "s4-g28",
+          "session": 4,
+          "teacherNumber": "28",
+          "displayNumber": "28"
+        }
+      ]
+    },
+    {
+      "id": "s4-g29",
+      "teacherNumber": "29",
+      "sourceText": "all over the wall",
+      "items": [
+        {
+          "term": "all over the wall",
+          "meaningZh": "遍布墙面",
+          "acceptedMeaningsZh": [
+            "遍布墙面",
+            "墙上到处都是"
+          ],
+          "example": "The flowers are all over the wall.",
+          "exampleZh": "这面墙上的花到处都是。",
+          "relation": "phrase-alternative",
+          "id": "s4-g29-i1",
+          "sourceGroupId": "s4-g29",
+          "session": 4,
+          "teacherNumber": "29",
+          "displayNumber": "29"
+        }
+      ]
+    },
+    {
+      "id": "s4-g30",
+      "teacherNumber": "30",
+      "sourceText": "special",
+      "items": [
+        {
+          "term": "special",
+          "meaningZh": "特别的",
+          "acceptedMeaningsZh": [
+            "特别的",
+            "特殊的"
+          ],
+          "example": "This is a special day.",
+          "exampleZh": "今天是个特别的日子。",
+          "relation": "single",
+          "id": "s4-g30-i1",
+          "sourceGroupId": "s4-g30",
+          "session": 4,
+          "teacherNumber": "30",
+          "displayNumber": "30"
+        }
+      ]
+    },
+    {
+      "id": "s4-g31",
+      "teacherNumber": "31",
+      "sourceText": "meat-eating plants",
+      "items": [
+        {
+          "term": "meat-eating plants",
+          "meaningZh": "食肉植物",
+          "acceptedMeaningsZh": [
+            "食肉植物"
+          ],
+          "example": "These are meat-eating plants.",
+          "exampleZh": "这些是食肉植物。",
+          "relation": "phrase-alternative",
+          "id": "s4-g31-i1",
+          "sourceGroupId": "s4-g31",
+          "session": 4,
+          "teacherNumber": "31",
+          "displayNumber": "31"
+        }
+      ]
+    },
+    {
+      "id": "s4-g32",
+      "teacherNumber": "32",
+      "sourceText": "insect / an insect",
+      "items": [
+        {
+          "term": "insect",
+          "meaningZh": "昆虫",
+          "acceptedMeaningsZh": [
+            "昆虫",
+            "虫子"
+          ],
+          "example": "An insect is flying here.",
+          "exampleZh": "一只昆虫在这里飞着。",
+          "relation": "single",
+          "id": "s4-g32-i1",
+          "sourceGroupId": "s4-g32",
+          "session": 4,
+          "teacherNumber": "32",
+          "displayNumber": "32-1"
+        },
+        {
+          "term": "an insect",
+          "meaningZh": "一只昆虫",
+          "acceptedMeaningsZh": [
+            "一只昆虫"
+          ],
+          "example": "It is an insect, not a bird.",
+          "exampleZh": "它是一只昆虫，不是鸟。",
+          "relation": "phrase-alternative",
+          "id": "s4-g32-i2",
+          "sourceGroupId": "s4-g32",
+          "session": 4,
+          "teacherNumber": "32",
+          "displayNumber": "32-2"
+        }
+      ]
+    },
+    {
+      "id": "s4-g33",
+      "teacherNumber": "33",
+      "sourceText": "broad leaves",
+      "items": [
+        {
+          "term": "broad leaves",
+          "meaningZh": "宽大的叶子",
+          "acceptedMeaningsZh": [
+            "宽大的叶子",
+            "大叶子的"
+          ],
+          "example": "The tree has broad leaves.",
+          "exampleZh": "这棵树有宽大的叶子。",
+          "relation": "single",
+          "id": "s4-g33-i1",
+          "sourceGroupId": "s4-g33",
+          "session": 4,
+          "teacherNumber": "33",
+          "displayNumber": "33"
+        }
+      ]
+    },
+    {
+      "id": "s4-g34",
+      "teacherNumber": "34",
+      "sourceText": "umbrella / an umbrella",
+      "items": [
+        {
+          "term": "umbrella",
+          "meaningZh": "雨伞",
+          "acceptedMeaningsZh": [
+            "雨伞",
+            "遮阳伞"
+          ],
+          "example": "She holds an umbrella.",
+          "exampleZh": "她拿着一把雨伞。",
+          "relation": "single",
+          "id": "s4-g34-i1",
+          "sourceGroupId": "s4-g34",
+          "session": 4,
+          "teacherNumber": "34",
+          "displayNumber": "34-1"
+        },
+        {
+          "term": "an umbrella",
+          "meaningZh": "一把雨伞",
+          "acceptedMeaningsZh": [
+            "一把雨伞",
+            "一个遮阳伞"
+          ],
+          "example": "She has an umbrella.",
+          "exampleZh": "她有了一把雨伞。",
+          "relation": "phrase-alternative",
+          "id": "s4-g34-i2",
+          "sourceGroupId": "s4-g34",
+          "session": 4,
+          "teacherNumber": "34",
+          "displayNumber": "34-2"
+        }
+      ]
+    },
+    {
+      "id": "s4-g35",
+      "teacherNumber": "35",
+      "sourceText": "the mud",
+      "items": [
+        {
+          "term": "the mud",
+          "meaningZh": "泥巴",
+          "acceptedMeaningsZh": [
+            "泥巴",
+            "泥浆"
+          ],
+          "example": "There is the mud on my shoes.",
+          "exampleZh": "我的鞋子上有泥巴。",
+          "relation": "single",
+          "id": "s4-g35-i1",
+          "sourceGroupId": "s4-g35",
+          "session": 4,
+          "teacherNumber": "35",
+          "displayNumber": "35"
+        }
+      ]
+    },
+    {
+      "id": "s4-g36",
+      "teacherNumber": "36",
+      "sourceText": "in front of ... / behind ... / under ... / on ...",
+      "items": [
+        {
+          "term": "in front of ...",
+          "meaningZh": "在……前面",
+          "acceptedMeaningsZh": [
+            "在……前面",
+            "位于……前方"
+          ],
+          "example": "The car is in front of the house.",
+          "exampleZh": "汽车在房子前面。",
+          "relation": "pattern",
+          "id": "s4-g36-i1",
+          "sourceGroupId": "s4-g36",
+          "session": 4,
+          "teacherNumber": "36",
+          "displayNumber": "36-1"
+        },
+        {
+          "term": "behind ...",
+          "meaningZh": "在……后面",
+          "acceptedMeaningsZh": [
+            "在……后面",
+            "位于……后方"
+          ],
+          "example": "The cat is behind the door.",
+          "exampleZh": "猫在门后面。",
+          "relation": "pattern",
+          "id": "s4-g36-i2",
+          "sourceGroupId": "s4-g36",
+          "session": 4,
+          "teacherNumber": "36",
+          "displayNumber": "36-2"
+        },
+        {
+          "term": "under ...",
+          "meaningZh": "在……下面",
+          "acceptedMeaningsZh": [
+            "在……下面",
+            "位于……下方"
+          ],
+          "example": "The bird is under the tree.",
+          "exampleZh": "鸟在树下。",
+          "relation": "pattern",
+          "id": "s4-g36-i3",
+          "sourceGroupId": "s4-g36",
+          "session": 4,
+          "teacherNumber": "36",
+          "displayNumber": "36-3"
+        },
+        {
+          "term": "on ...",
+          "meaningZh": "在……上面",
+          "acceptedMeaningsZh": [
+            "在……上面",
+            "位于……上方"
+          ],
+          "example": "The book is on the table.",
+          "exampleZh": "书在桌子上面。",
+          "relation": "pattern",
+          "id": "s4-g36-i4",
+          "sourceGroupId": "s4-g36",
+          "session": 4,
+          "teacherNumber": "36",
+          "displayNumber": "36-4"
+        }
+      ]
+    },
+    {
+      "id": "s4-g37",
+      "teacherNumber": "37",
+      "sourceText": "beautiful",
+      "items": [
+        {
+          "term": "beautiful",
+          "meaningZh": "美丽的",
+          "acceptedMeaningsZh": [
+            "美丽的",
+            "漂亮的"
+          ],
+          "example": "She is beautiful.",
+          "exampleZh": "她很漂亮。",
+          "relation": "single",
+          "id": "s4-g37-i1",
+          "sourceGroupId": "s4-g37",
+          "session": 4,
+          "teacherNumber": "37",
+          "displayNumber": "37"
+        }
+      ]
+    },
+    {
+      "id": "s4-g38",
+      "teacherNumber": "38",
+      "sourceText": "still",
+      "items": [
+        {
+          "term": "still",
+          "meaningZh": "仍然；还",
+          "acceptedMeaningsZh": [
+            "仍然",
+            "还"
+          ],
+          "example": "He is still sleeping.",
+          "exampleZh": "他还在睡觉。",
+          "relation": "single",
+          "id": "s4-g38-i1",
+          "sourceGroupId": "s4-g38",
+          "session": 4,
+          "teacherNumber": "38",
+          "displayNumber": "38"
+        }
+      ]
+    },
+    {
+      "id": "s4-g39",
+      "teacherNumber": "39",
+      "sourceText": "amazing",
+      "items": [
+        {
+          "term": "amazing",
+          "meaningZh": "令人惊叹的",
+          "acceptedMeaningsZh": [
+            "令人惊叹的",
+            "惊人的"
+          ],
+          "example": "It was an amazing show.",
+          "exampleZh": "那是一场精彩的表演。",
+          "relation": "single",
+          "id": "s4-g39-i1",
+          "sourceGroupId": "s4-g39",
+          "session": 4,
+          "teacherNumber": "39",
+          "displayNumber": "39"
+        }
+      ]
+    },
+    {
+      "id": "s4-g40",
+      "teacherNumber": "40",
+      "sourceText": "little feathers",
+      "items": [
+        {
+          "term": "little feathers",
+          "meaningZh": "小羽毛",
+          "acceptedMeaningsZh": [
+            "小羽毛",
+            "小小的羽毛"
+          ],
+          "example": "The bird has little feathers.",
+          "exampleZh": "这只鸟有细小的羽毛。",
+          "relation": "list",
+          "id": "s4-g40-i1",
+          "sourceGroupId": "s4-g40",
+          "session": 4,
+          "teacherNumber": "40",
+          "displayNumber": "40"
+        }
+      ]
+    },
+    {
+      "id": "s4-g41",
+      "teacherNumber": "41",
+      "sourceText": "marvel",
+      "items": [
+        {
+          "term": "marvel",
+          "meaningZh": "奇迹；令人惊叹的事物",
+          "acceptedMeaningsZh": [
+            "奇迹",
+            "令人惊叹的事物"
+          ],
+          "example": "The flower is a marvel of nature.",
+          "exampleZh": "这朵花是大自然的奇迹。",
+          "relation": "single",
+          "id": "s4-g41-i1",
+          "sourceGroupId": "s4-g41",
+          "session": 4,
+          "teacherNumber": "41",
+          "displayNumber": "41"
+        }
+      ]
+    },
+    {
+      "id": "s4-g42",
+      "teacherNumber": "42",
+      "sourceText": "Peru",
+      "items": [
+        {
+          "term": "Peru",
+          "meaningZh": "秘鲁",
+          "acceptedMeaningsZh": [
+            "秘鲁"
+          ],
+          "example": "I visited Peru last year.",
+          "exampleZh": "我去年去了秘鲁。",
+          "relation": "single",
+          "id": "s4-g42-i1",
+          "sourceGroupId": "s4-g42",
+          "session": 4,
+          "teacherNumber": "42",
+          "displayNumber": "42"
+        }
+      ]
+    },
+    {
+      "id": "s4-g43",
+      "teacherNumber": "43",
+      "sourceText": "the four-o'clock flower",
+      "items": [
+        {
+          "term": "the four-o'clock flower",
+          "meaningZh": "四点钟花",
+          "acceptedMeaningsZh": [
+            "四点钟花",
+            "朝颜花"
+          ],
+          "example": "The four-o'clock flower blooms at dawn.",
+          "exampleZh": "四点钟花在黎明时开放。",
+          "relation": "list",
+          "id": "s4-g43-i1",
+          "sourceGroupId": "s4-g43",
+          "session": 4,
+          "teacherNumber": "43",
+          "displayNumber": "43"
+        }
+      ]
+    },
+    {
+      "id": "s4-g44",
+      "teacherNumber": "44",
+      "sourceText": "weather",
+      "items": [
+        {
+          "term": "weather",
+          "meaningZh": "天气",
+          "acceptedMeaningsZh": [
+            "天气"
+          ],
+          "example": "Check the weather before you go out.",
+          "exampleZh": "出门前查一下天气吧。",
+          "relation": "single",
+          "id": "s4-g44-i1",
+          "sourceGroupId": "s4-g44",
+          "session": 4,
+          "teacherNumber": "44",
+          "displayNumber": "44"
+        }
+      ]
+    },
+    {
+      "id": "s4-g45",
+      "teacherNumber": "45",
+      "sourceText": "fade",
+      "items": [
+        {
+          "term": "fade",
+          "meaningZh": "逐渐消失",
+          "acceptedMeaningsZh": [
+            "逐渐消失",
+            "褪色"
+          ],
+          "example": "The colors fade in the sun.",
+          "exampleZh": "这些颜色在阳光下褪去了。",
+          "relation": "single",
+          "id": "s4-g45-i1",
+          "sourceGroupId": "s4-g45",
+          "session": 4,
+          "teacherNumber": "45",
+          "displayNumber": "45"
+        }
+      ]
+    },
+    {
+      "id": "s4-g46",
+      "teacherNumber": "46",
+      "sourceText": "close up",
+      "items": [
+        {
+          "term": "close up",
+          "meaningZh": "合上",
+          "acceptedMeaningsZh": [
+            "合上",
+            "靠近"
+          ],
+          "example": "Please close up the book.",
+          "exampleZh": "请合上书。",
+          "relation": "phrase-alternative",
+          "id": "s4-g46-i1",
+          "sourceGroupId": "s4-g46",
+          "session": 4,
+          "teacherNumber": "46",
+          "displayNumber": "46"
+        }
+      ]
+    },
+    {
+      "id": "s4-g47",
+      "teacherNumber": "47",
+      "sourceText": "pine cone scale",
+      "items": [
+        {
+          "term": "pine cone scale",
+          "meaningZh": "松果鳞片",
+          "acceptedMeaningsZh": [
+            "松果鳞片"
+          ],
+          "example": "A pine cone has many scales.",
+          "exampleZh": "一个松果有许多鳞片。",
+          "relation": "list",
+          "id": "s4-g47-i1",
+          "sourceGroupId": "s4-g47",
+          "session": 4,
+          "teacherNumber": "47",
+          "displayNumber": "47"
+        }
+      ]
+    },
+    {
+      "id": "s4-g48",
+      "teacherNumber": "48",
+      "sourceText": "fold",
+      "items": [
+        {
+          "term": "fold",
+          "meaningZh": "折叠",
+          "acceptedMeaningsZh": [
+            "折叠",
+            "折成"
+          ],
+          "example": "Fold the paper into a triangle.",
+          "exampleZh": "把纸折成一个三角形。",
+          "relation": "single",
+          "id": "s4-g48-i1",
+          "sourceGroupId": "s4-g48",
+          "session": 4,
+          "teacherNumber": "48",
+          "displayNumber": "48"
+        }
+      ]
+    },
+    {
+      "id": "s4-g49",
+      "teacherNumber": "49",
+      "sourceText": "protect",
+      "items": [
+        {
+          "term": "protect",
+          "meaningZh": "保护",
+          "acceptedMeaningsZh": [
+            "保护",
+            "防护"
+          ],
+          "example": "Protect the flowers.",
+          "exampleZh": "保护花朵。",
+          "relation": "single",
+          "id": "s4-g49-i1",
+          "sourceGroupId": "s4-g49",
+          "session": 4,
+          "teacherNumber": "49",
+          "displayNumber": "49"
+        }
+      ]
+    },
+    {
+      "id": "s4-g50",
+      "teacherNumber": "50",
+      "sourceText": "petal",
+      "items": [
+        {
+          "term": "petal",
+          "meaningZh": "花瓣",
+          "acceptedMeaningsZh": [
+            "花瓣"
+          ],
+          "example": "The flower has a red petal.",
+          "exampleZh": "这朵花有一片红色的花瓣。",
+          "relation": "single",
+          "id": "s4-g50-i1",
+          "sourceGroupId": "s4-g50",
+          "session": 4,
+          "teacherNumber": "50",
+          "displayNumber": "50"
+        }
+      ]
+    },
+    {
+      "id": "s4-g51",
+      "teacherNumber": "51",
+      "sourceText": "close tightly",
+      "items": [
+        {
+          "term": "close tightly",
+          "meaningZh": "紧紧关闭",
+          "acceptedMeaningsZh": [
+            "紧紧关闭",
+            "紧密闭合"
+          ],
+          "example": "Close the door tightly.",
+          "exampleZh": "把门紧紧地关上。",
+          "relation": "phrase-alternative",
+          "id": "s4-g51-i1",
+          "sourceGroupId": "s4-g51",
+          "session": 4,
+          "teacherNumber": "51",
+          "displayNumber": "51"
+        }
+      ]
+    },
+    {
+      "id": "s4-g52",
+      "teacherNumber": "52",
+      "sourceText": "wonderful",
+      "items": [
+        {
+          "term": "wonderful",
+          "meaningZh": "极好的",
+          "acceptedMeaningsZh": [
+            "极好的",
+            "精彩的"
+          ],
+          "example": "It is a wonderful day.",
+          "exampleZh": "这是一天非常精彩的日子。",
+          "relation": "single",
+          "id": "s4-g52-i1",
+          "sourceGroupId": "s4-g52",
+          "session": 4,
+          "teacherNumber": "52",
+          "displayNumber": "52"
+        }
+      ]
+    },
+    {
+      "id": "s4-g53",
+      "teacherNumber": "53",
+      "sourceText": "report / reporter",
+      "items": [
+        {
+          "term": "report",
+          "meaningZh": "报告",
+          "acceptedMeaningsZh": [
+            "报告",
+            "汇报"
+          ],
+          "example": "He reported the news.",
+          "exampleZh": "他汇报了新闻。",
+          "relation": "single",
+          "id": "s4-g53-i1",
+          "sourceGroupId": "s4-g53",
+          "session": 4,
+          "teacherNumber": "53",
+          "displayNumber": "53-1"
+        },
+        {
+          "term": "reporter",
+          "meaningZh": "记者",
+          "acceptedMeaningsZh": [
+            "记者",
+            "报道者"
+          ],
+          "example": "The reporter wrote a story.",
+          "exampleZh": "这位记者写了一篇故事。",
+          "relation": "single",
+          "id": "s4-g53-i2",
+          "sourceGroupId": "s4-g53",
+          "session": 4,
+          "teacherNumber": "53",
+          "displayNumber": "53-2"
+        }
+      ]
+    },
+    {
+      "id": "s4-g54",
+      "teacherNumber": "54",
+      "sourceText": "find / look for / find out",
+      "items": [
+        {
+          "term": "find",
+          "meaningZh": "找到",
+          "acceptedMeaningsZh": [
+            "找到",
+            "发现"
+          ],
+          "example": "I can find my way home.",
+          "exampleZh": "我能找到回家的路。",
+          "relation": "single",
+          "id": "s4-g54-i1",
+          "sourceGroupId": "s4-g54",
+          "session": 4,
+          "teacherNumber": "54",
+          "displayNumber": "54-1"
+        },
+        {
+          "term": "look for",
+          "meaningZh": "寻找",
+          "acceptedMeaningsZh": [
+            "寻找",
+            "找"
+          ],
+          "example": "Please look for your keys.",
+          "exampleZh": "请找找你的钥匙。",
+          "relation": "phrase-alternative",
+          "id": "s4-g54-i2",
+          "sourceGroupId": "s4-g54",
+          "session": 4,
+          "teacherNumber": "54",
+          "displayNumber": "54-2"
+        },
+        {
+          "term": "find out",
+          "meaningZh": "查明",
+          "acceptedMeaningsZh": [
+            "查明",
+            "找出结果"
+          ],
+          "example": "We need to find out the truth.",
+          "exampleZh": "我们需要查出真相。",
+          "relation": "phrase-alternative",
+          "id": "s4-g54-i3",
+          "sourceGroupId": "s4-g54",
+          "session": 4,
+          "teacherNumber": "54",
+          "displayNumber": "54-3"
+        }
+      ]
+    },
+    {
+      "id": "s4-g55",
+      "teacherNumber": "55",
+      "sourceText": "a long stem / big leaves / large / face the sun",
+      "items": [
+        {
+          "term": "a long stem",
+          "meaningZh": "一根长长的茎干",
+          "acceptedMeaningsZh": [
+            "一根长长的茎干"
+          ],
+          "example": "The plant has a long stem.",
+          "exampleZh": "这株植物有一根长茎。",
+          "relation": "single",
+          "id": "s4-g55-i1",
+          "sourceGroupId": "s4-g55",
+          "session": 4,
+          "teacherNumber": "55",
+          "displayNumber": "55-1"
+        },
+        {
+          "term": "big leaves",
+          "meaningZh": "大叶子",
+          "acceptedMeaningsZh": [
+            "大叶子",
+            "大的叶片"
+          ],
+          "example": "It has big green leaves.",
+          "exampleZh": "它有又大又绿的叶子。",
+          "relation": "phrase-alternative",
+          "id": "s4-g55-i2",
+          "sourceGroupId": "s4-g55",
+          "session": 4,
+          "teacherNumber": "55",
+          "displayNumber": "55-2"
+        },
+        {
+          "term": "large",
+          "meaningZh": "大的",
+          "acceptedMeaningsZh": [
+            "大的",
+            "宽大的"
+          ],
+          "example": "The tree is large and old.",
+          "exampleZh": "这棵树很大很老。",
+          "relation": "single",
+          "id": "s4-g55-i3",
+          "sourceGroupId": "s4-g55",
+          "session": 4,
+          "teacherNumber": "55",
+          "displayNumber": "55-3"
+        },
+        {
+          "term": "face the sun",
+          "meaningZh": "面向太阳",
+          "acceptedMeaningsZh": [
+            "面向太阳",
+            "朝向日出"
+          ],
+          "example": "She faces the sun every morning.",
+          "exampleZh": "她每天早上都面向太阳。",
+          "relation": "phrase-alternative",
+          "id": "s4-g55-i4",
+          "sourceGroupId": "s4-g55",
+          "session": 4,
+          "teacherNumber": "55",
+          "displayNumber": "55-4"
+        }
+      ]
+    },
+    {
+      "id": "s4-g56",
+      "teacherNumber": "56",
+      "sourceText": "smile",
+      "items": [
+        {
+          "term": "smile",
+          "meaningZh": "微笑",
+          "acceptedMeaningsZh": [
+            "微笑",
+            "笑"
+          ],
+          "example": "Please smile at me.",
+          "exampleZh": "请对我微笑一下。",
+          "relation": "single",
+          "id": "s4-g56-i1",
+          "sourceGroupId": "s4-g56",
+          "session": 4,
+          "teacherNumber": "56",
+          "displayNumber": "56"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "term": "plant",
+      "meaningZh": "植物",
+      "acceptedMeaningsZh": [
+        "植物",
+        "种植"
+      ],
+      "example": "This plant is green.",
+      "exampleZh": "这项植物是绿色的。",
+      "relation": "single",
+      "id": "s4-g1-i1",
+      "sourceGroupId": "s4-g1",
+      "session": 4,
+      "teacherNumber": "1",
+      "displayNumber": "1-1"
+    },
+    {
+      "term": "plants",
+      "meaningZh": "植物（复数）",
+      "acceptedMeaningsZh": [
+        "植物",
+        "植物的复数"
+      ],
+      "example": "These plants are tall.",
+      "exampleZh": "这些植物很高。",
+      "relation": "list",
+      "id": "s4-g1-i2",
+      "sourceGroupId": "s4-g1",
+      "session": 4,
+      "teacherNumber": "1",
+      "displayNumber": "1-2"
+    },
+    {
+      "term": "make a poster",
+      "meaningZh": "制作海报",
+      "acceptedMeaningsZh": [
+        "制作海报"
+      ],
+      "example": "Make a poster for the event.",
+      "exampleZh": "为活动制作一张海报。",
+      "relation": "single",
+      "id": "s4-g2-i1",
+      "sourceGroupId": "s4-g2",
+      "session": 4,
+      "teacherNumber": "2",
+      "displayNumber": "2"
+    },
+    {
+      "term": "stem",
+      "meaningZh": "茎",
+      "acceptedMeaningsZh": [
+        "茎",
+        "主干"
+      ],
+      "example": "The stem holds up the leaves.",
+      "exampleZh": "茎支撑着叶子。",
+      "relation": "single",
+      "id": "s4-g3-i1",
+      "sourceGroupId": "s4-g3",
+      "session": 4,
+      "teacherNumber": "3",
+      "displayNumber": "3-1"
+    },
+    {
+      "term": "seeds",
+      "meaningZh": "种子",
+      "acceptedMeaningsZh": [
+        "种子"
+      ],
+      "example": "These seeds are small.",
+      "exampleZh": "这些种子很小。",
+      "relation": "list",
+      "id": "s4-g3-i2",
+      "sourceGroupId": "s4-g3",
+      "session": 4,
+      "teacherNumber": "3",
+      "displayNumber": "3-2"
+    },
+    {
+      "term": "leaf",
+      "meaningZh": "叶子",
+      "acceptedMeaningsZh": [
+        "叶子"
+      ],
+      "example": "A leaf is green and flat.",
+      "exampleZh": "一片叶子是绿色且扁平的。",
+      "relation": "list",
+      "id": "s4-g3-i3",
+      "sourceGroupId": "s4-g3",
+      "session": 4,
+      "teacherNumber": "3",
+      "displayNumber": "3-3"
+    },
+    {
+      "term": "leaves",
+      "meaningZh": "叶子（复数）",
+      "acceptedMeaningsZh": [
+        "叶子",
+        "叶子的复数"
+      ],
+      "example": "The leaves fall in autumn.",
+      "exampleZh": "树叶在秋天落下。",
+      "relation": "list",
+      "id": "s4-g3-i4",
+      "sourceGroupId": "s4-g3",
+      "session": 4,
+      "teacherNumber": "3",
+      "displayNumber": "3-4"
+    },
+    {
+      "term": "root (roots)",
+      "meaningZh": "根（根系）",
+      "acceptedMeaningsZh": [
+        "根（根系）"
+      ],
+      "example": "The root absorbs water from the soil.",
+      "exampleZh": "根从土壤中吸收水分。",
+      "relation": "single",
+      "id": "s4-g3-i5",
+      "sourceGroupId": "s4-g3",
+      "session": 4,
+      "teacherNumber": "3",
+      "displayNumber": "3-5"
+    },
+    {
+      "term": "soil",
+      "meaningZh": "土壤",
+      "acceptedMeaningsZh": [
+        "土壤",
+        "泥土"
+      ],
+      "example": "Plants grow in rich soil.",
+      "exampleZh": "植物在肥沃的土壤中生长。",
+      "relation": "list",
+      "id": "s4-g4-i1",
+      "sourceGroupId": "s4-g4",
+      "session": 4,
+      "teacherNumber": "4",
+      "displayNumber": "4-1"
+    },
+    {
+      "term": "sunlight",
+      "meaningZh": "阳光",
+      "acceptedMeaningsZh": [
+        "阳光"
+      ],
+      "example": "The sunlight is warm today.",
+      "exampleZh": "今天的阳光很温暖。",
+      "relation": "single",
+      "id": "s4-g4-i2",
+      "sourceGroupId": "s4-g4",
+      "session": 4,
+      "teacherNumber": "4",
+      "displayNumber": "4-2"
+    },
+    {
+      "term": "water",
+      "meaningZh": "水",
+      "acceptedMeaningsZh": [
+        "水"
+      ],
+      "example": "We need water for the garden.",
+      "exampleZh": "我们需要花园里的水。",
+      "relation": "list",
+      "id": "s4-g4-i3",
+      "sourceGroupId": "s4-g4",
+      "session": 4,
+      "teacherNumber": "4",
+      "displayNumber": "4-3"
+    },
+    {
+      "term": "air",
+      "meaningZh": "空气",
+      "acceptedMeaningsZh": [
+        "空气",
+        "大气"
+      ],
+      "example": "Fresh air makes us feel good.",
+      "exampleZh": "新鲜空气让我们感觉很好。",
+      "relation": "list",
+      "id": "s4-g4-i4",
+      "sourceGroupId": "s4-g4",
+      "session": 4,
+      "teacherNumber": "4",
+      "displayNumber": "4-4"
+    },
+    {
+      "term": "sunshine",
+      "meaningZh": "阳光",
+      "acceptedMeaningsZh": [
+        "阳光",
+        "日光"
+      ],
+      "example": "The sunshine is bright on the beach.",
+      "exampleZh": "海滩上的阳光很明亮。",
+      "relation": "single",
+      "id": "s4-g4-i5",
+      "sourceGroupId": "s4-g4",
+      "session": 4,
+      "teacherNumber": "4",
+      "displayNumber": "4-5"
+    },
+    {
+      "term": "water lily",
+      "meaningZh": "睡莲",
+      "acceptedMeaningsZh": [
+        "睡莲",
+        "水莲花"
+      ],
+      "example": "The water lily floats on the pond.",
+      "exampleZh": "这朵睡莲漂浮在池塘上。",
+      "relation": "single",
+      "id": "s4-g5-i1",
+      "sourceGroupId": "s4-g5",
+      "session": 4,
+      "teacherNumber": "5",
+      "displayNumber": "5"
+    },
+    {
+      "term": "morning glory",
+      "meaningZh": "牵牛花",
+      "acceptedMeaningsZh": [
+        "牵牛花",
+        "朝颜花"
+      ],
+      "example": "Morning glories bloom at dawn.",
+      "exampleZh": "牵牛花在黎明时绽放。",
+      "relation": "single",
+      "id": "s4-g6-i1",
+      "sourceGroupId": "s4-g6",
+      "session": 4,
+      "teacherNumber": "6",
+      "displayNumber": "6"
+    },
+    {
+      "term": "pine cone",
+      "meaningZh": "松果",
+      "acceptedMeaningsZh": [
+        "松果",
+        "松树果实"
+      ],
+      "example": "The pine cone opens in summer.",
+      "exampleZh": "松果在夏天张开。",
+      "relation": "single",
+      "id": "s4-g7-i1",
+      "sourceGroupId": "s4-g7",
+      "session": 4,
+      "teacherNumber": "7",
+      "displayNumber": "7"
+    },
+    {
+      "term": "bamboo shoots",
+      "meaningZh": "竹笋",
+      "acceptedMeaningsZh": [
+        "竹笋",
+        "竹子嫩芽"
+      ],
+      "example": "Bamboo shoots are delicious.",
+      "exampleZh": "竹笋很好吃。",
+      "relation": "single",
+      "id": "s4-g8-i1",
+      "sourceGroupId": "s4-g8",
+      "session": 4,
+      "teacherNumber": "8",
+      "displayNumber": "8"
+    },
+    {
+      "term": "hold the plant in place",
+      "meaningZh": "把植物固定住",
+      "acceptedMeaningsZh": [
+        "把植物固定住",
+        "使植物保持原位"
+      ],
+      "example": "Hold the plant in place.",
+      "exampleZh": "把植物固定在原地。",
+      "relation": "phrase-alternative",
+      "id": "s4-g9-i1",
+      "sourceGroupId": "s4-g9",
+      "session": 4,
+      "teacherNumber": "9",
+      "displayNumber": "9"
+    },
+    {
+      "term": "take in",
+      "meaningZh": "吸收",
+      "acceptedMeaningsZh": [
+        "吸收",
+        "接受",
+        "引进"
+      ],
+      "example": "Take it in.",
+      "exampleZh": "把它收进来/吸进去。",
+      "relation": "single",
+      "id": "s4-g10-i1",
+      "sourceGroupId": "s4-g10",
+      "session": 4,
+      "teacherNumber": "10",
+      "displayNumber": "10"
+    },
+    {
+      "term": "move up",
+      "meaningZh": "向上移动",
+      "acceptedMeaningsZh": [
+        "向上移动",
+        "往上走"
+      ],
+      "example": "Move the box up.",
+      "exampleZh": "把箱子搬上去。",
+      "relation": "phrase-alternative",
+      "id": "s4-g11-i1",
+      "sourceGroupId": "s4-g11",
+      "session": 4,
+      "teacherNumber": "11",
+      "displayNumber": "11"
+    },
+    {
+      "term": "bring ... to ...",
+      "meaningZh": "把……带到……处",
+      "acceptedMeaningsZh": [
+        "把……带到……处"
+      ],
+      "example": "Bring me a book to school.",
+      "exampleZh": "给我带本书到学校去。",
+      "relation": "pattern",
+      "id": "s4-g12-i1",
+      "sourceGroupId": "s4-g12",
+      "session": 4,
+      "teacherNumber": "12",
+      "displayNumber": "12"
+    },
+    {
+      "term": "grow big",
+      "meaningZh": "长得很大",
+      "acceptedMeaningsZh": [
+        "长得很大",
+        "长得很高"
+      ],
+      "example": "The tree grows big.",
+      "exampleZh": "这棵树长得很大。",
+      "relation": "single",
+      "id": "s4-g13-i1",
+      "sourceGroupId": "s4-g13",
+      "session": 4,
+      "teacherNumber": "13",
+      "displayNumber": "13-1"
+    },
+    {
+      "term": "grow bigger and bigger",
+      "meaningZh": "越来越大",
+      "acceptedMeaningsZh": [
+        "越来越大",
+        "不断变大"
+      ],
+      "example": "It grows bigger and bigger every year.",
+      "exampleZh": "它每年都在变得越来越小。",
+      "relation": "phrase-alternative",
+      "id": "s4-g13-i2",
+      "sourceGroupId": "s4-g13",
+      "session": 4,
+      "teacherNumber": "13",
+      "displayNumber": "13-2"
+    },
+    {
+      "term": "soon",
+      "meaningZh": "很快；不久",
+      "acceptedMeaningsZh": [
+        "很快",
+        "不久"
+      ],
+      "example": "I will see you soon.",
+      "exampleZh": "我很快就会见到你。",
+      "relation": "single",
+      "id": "s4-g14-i1",
+      "sourceGroupId": "s4-g14",
+      "session": 4,
+      "teacherNumber": "14",
+      "displayNumber": "14"
+    },
+    {
+      "term": "come out",
+      "meaningZh": "出来",
+      "acceptedMeaningsZh": [
+        "出来",
+        "出现"
+      ],
+      "example": "The sun comes out at 6 am.",
+      "exampleZh": "太阳早上六点出来。",
+      "relation": "single",
+      "id": "s4-g15-i1",
+      "sourceGroupId": "s4-g15",
+      "session": 4,
+      "teacherNumber": "15",
+      "displayNumber": "15"
+    },
+    {
+      "term": "grow into",
+      "meaningZh": "长成；变成",
+      "acceptedMeaningsZh": [
+        "长成",
+        "变成"
+      ],
+      "example": "He grew into a tall man.",
+      "exampleZh": "他长成了一个高个子男人。",
+      "relation": "phrase-alternative",
+      "id": "s4-g16-i1",
+      "sourceGroupId": "s4-g16",
+      "session": 4,
+      "teacherNumber": "16",
+      "displayNumber": "16"
+    },
+    {
+      "term": "a fruit holding seeds",
+      "meaningZh": "一个装着种子的果实",
+      "acceptedMeaningsZh": [
+        "一个装着种子的果实",
+        "一种结出果实的植物"
+      ],
+      "example": "This is a fruit holding seeds.",
+      "exampleZh": "这是一个装着种子的果实。",
+      "relation": "phrase-alternative",
+      "id": "s4-g17-i1",
+      "sourceGroupId": "s4-g17",
+      "session": 4,
+      "teacherNumber": "17",
+      "displayNumber": "17"
+    },
+    {
+      "term": "fall into",
+      "meaningZh": "掉进",
+      "acceptedMeaningsZh": [
+        "掉进",
+        "落入"
+      ],
+      "example": "The ball fell into the box.",
+      "exampleZh": "球掉进了盒子里。",
+      "relation": "pattern",
+      "id": "s4-g18-i1",
+      "sourceGroupId": "s4-g18",
+      "session": 4,
+      "teacherNumber": "18",
+      "displayNumber": "18"
+    },
+    {
+      "term": "a visit to ...",
+      "meaningZh": "一次去……的参观",
+      "acceptedMeaningsZh": [
+        "一次参观",
+        "一次访问"
+      ],
+      "example": "It was a visit to my grandmother's house.",
+      "exampleZh": "那是一次去我家奶奶家的拜访。",
+      "relation": "phrase-alternative",
+      "id": "s4-g19-i1",
+      "sourceGroupId": "s4-g19",
+      "session": 4,
+      "teacherNumber": "19",
+      "displayNumber": "19"
+    },
+    {
+      "term": "botanical",
+      "meaningZh": "植物学的",
+      "acceptedMeaningsZh": [
+        "植物学的",
+        "与植物有关的"
+      ],
+      "example": "This is botanical knowledge.",
+      "exampleZh": "这是植物学知识。",
+      "relation": "single",
+      "id": "s4-g20-i1",
+      "sourceGroupId": "s4-g20",
+      "session": 4,
+      "teacherNumber": "20",
+      "displayNumber": "20"
+    },
+    {
+      "term": "botanical garden",
+      "meaningZh": "植物园",
+      "acceptedMeaningsZh": [
+        "植物园",
+        "植物园"
+      ],
+      "example": "The school has a botanical garden.",
+      "exampleZh": "这所学校有一个植物园。",
+      "relation": "list",
+      "id": "s4-g21-i1",
+      "sourceGroupId": "s4-g21",
+      "session": 4,
+      "teacherNumber": "21",
+      "displayNumber": "21"
+    },
+    {
+      "term": "the tulip",
+      "meaningZh": "郁金香",
+      "acceptedMeaningsZh": [
+        "郁金香",
+        "水仙花（特指）"
+      ],
+      "example": "She planted the tulip in spring.",
+      "exampleZh": "她春天种了那株郁金香。",
+      "relation": "single",
+      "id": "s4-g22-i1",
+      "sourceGroupId": "s4-g22",
+      "session": 4,
+      "teacherNumber": "22",
+      "displayNumber": "22"
+    },
+    {
+      "term": "ice cream cone",
+      "meaningZh": "冰淇淋甜筒",
+      "acceptedMeaningsZh": [
+        "冰淇淋甜筒",
+        "蛋筒冰淇淋"
+      ],
+      "example": "I ate an ice cream cone at lunch.",
+      "exampleZh": "我午餐吃了一个冰淇淋甜筒。",
+      "relation": "list",
+      "id": "s4-g23-i1",
+      "sourceGroupId": "s4-g23",
+      "session": 4,
+      "teacherNumber": "23",
+      "displayNumber": "23"
+    },
+    {
+      "term": "name tag",
+      "meaningZh": "姓名牌",
+      "acceptedMeaningsZh": [
+        "姓名牌",
+        "名牌"
+      ],
+      "example": "Put your name tag on the bag.",
+      "exampleZh": "把你的姓名牌挂在包上。",
+      "relation": "single",
+      "id": "s4-g24-i1",
+      "sourceGroupId": "s4-g24",
+      "session": 4,
+      "teacherNumber": "24",
+      "displayNumber": "24"
+    },
+    {
+      "term": "be called",
+      "meaningZh": "被叫做",
+      "acceptedMeaningsZh": [
+        "被叫做",
+        "被称为"
+      ],
+      "example": "He is called Tom.",
+      "exampleZh": "他叫汤姆。",
+      "relation": "single",
+      "id": "s4-g25-i1",
+      "sourceGroupId": "s4-g25",
+      "session": 4,
+      "teacherNumber": "25",
+      "displayNumber": "25"
+    },
+    {
+      "term": "How lovely!",
+      "meaningZh": "多么可爱啊！",
+      "acceptedMeaningsZh": [
+        "多么可爱啊！"
+      ],
+      "example": "How lovely!",
+      "exampleZh": "多么可爱啊！",
+      "relation": "pattern",
+      "id": "s4-g26-i1",
+      "sourceGroupId": "s4-g26",
+      "session": 4,
+      "teacherNumber": "26",
+      "displayNumber": "26-1"
+    },
+    {
+      "term": "How cute!",
+      "meaningZh": "多么可爱啊！",
+      "acceptedMeaningsZh": [
+        "多么可爱",
+        "真可爱"
+      ],
+      "example": "How cute!",
+      "exampleZh": "多么可爱啊！",
+      "relation": "single",
+      "id": "s4-g26-i2",
+      "sourceGroupId": "s4-g26",
+      "session": 4,
+      "teacherNumber": "26",
+      "displayNumber": "26-2"
+    },
+    {
+      "term": "cover",
+      "meaningZh": "覆盖；遮盖",
+      "acceptedMeaningsZh": [
+        "覆盖；遮盖"
+      ],
+      "example": "Please cover the book.",
+      "exampleZh": "请盖住书。",
+      "relation": "single",
+      "id": "s4-g27-i1",
+      "sourceGroupId": "s4-g27",
+      "session": 4,
+      "teacherNumber": "27",
+      "displayNumber": "27-1"
+    },
+    {
+      "term": "be covered with...",
+      "meaningZh": "被……所覆盖/沾满",
+      "acceptedMeaningsZh": [
+        "被……所覆盖/沾满"
+      ],
+      "example": "The table is covered with flowers.",
+      "exampleZh": "桌子铺满了花。",
+      "relation": "phrase-alternative",
+      "id": "s4-g27-i2",
+      "sourceGroupId": "s4-g27",
+      "session": 4,
+      "teacherNumber": "27",
+      "displayNumber": "27-2"
+    },
+    {
+      "term": "creepers",
+      "meaningZh": "攀援植物",
+      "acceptedMeaningsZh": [
+        "攀援植物",
+        "藤本植物"
+      ],
+      "example": "These creepers are green.",
+      "exampleZh": "这些藤蔓是绿色的。",
+      "relation": "single",
+      "id": "s4-g28-i1",
+      "sourceGroupId": "s4-g28",
+      "session": 4,
+      "teacherNumber": "28",
+      "displayNumber": "28"
+    },
+    {
+      "term": "all over the wall",
+      "meaningZh": "遍布墙面",
+      "acceptedMeaningsZh": [
+        "遍布墙面",
+        "墙上到处都是"
+      ],
+      "example": "The flowers are all over the wall.",
+      "exampleZh": "这面墙上的花到处都是。",
+      "relation": "phrase-alternative",
+      "id": "s4-g29-i1",
+      "sourceGroupId": "s4-g29",
+      "session": 4,
+      "teacherNumber": "29",
+      "displayNumber": "29"
+    },
+    {
+      "term": "special",
+      "meaningZh": "特别的",
+      "acceptedMeaningsZh": [
+        "特别的",
+        "特殊的"
+      ],
+      "example": "This is a special day.",
+      "exampleZh": "今天是个特别的日子。",
+      "relation": "single",
+      "id": "s4-g30-i1",
+      "sourceGroupId": "s4-g30",
+      "session": 4,
+      "teacherNumber": "30",
+      "displayNumber": "30"
+    },
+    {
+      "term": "meat-eating plants",
+      "meaningZh": "食肉植物",
+      "acceptedMeaningsZh": [
+        "食肉植物"
+      ],
+      "example": "These are meat-eating plants.",
+      "exampleZh": "这些是食肉植物。",
+      "relation": "phrase-alternative",
+      "id": "s4-g31-i1",
+      "sourceGroupId": "s4-g31",
+      "session": 4,
+      "teacherNumber": "31",
+      "displayNumber": "31"
+    },
+    {
+      "term": "insect",
+      "meaningZh": "昆虫",
+      "acceptedMeaningsZh": [
+        "昆虫",
+        "虫子"
+      ],
+      "example": "An insect is flying here.",
+      "exampleZh": "一只昆虫在这里飞着。",
+      "relation": "single",
+      "id": "s4-g32-i1",
+      "sourceGroupId": "s4-g32",
+      "session": 4,
+      "teacherNumber": "32",
+      "displayNumber": "32-1"
+    },
+    {
+      "term": "an insect",
+      "meaningZh": "一只昆虫",
+      "acceptedMeaningsZh": [
+        "一只昆虫"
+      ],
+      "example": "It is an insect, not a bird.",
+      "exampleZh": "它是一只昆虫，不是鸟。",
+      "relation": "phrase-alternative",
+      "id": "s4-g32-i2",
+      "sourceGroupId": "s4-g32",
+      "session": 4,
+      "teacherNumber": "32",
+      "displayNumber": "32-2"
+    },
+    {
+      "term": "broad leaves",
+      "meaningZh": "宽大的叶子",
+      "acceptedMeaningsZh": [
+        "宽大的叶子",
+        "大叶子的"
+      ],
+      "example": "The tree has broad leaves.",
+      "exampleZh": "这棵树有宽大的叶子。",
+      "relation": "single",
+      "id": "s4-g33-i1",
+      "sourceGroupId": "s4-g33",
+      "session": 4,
+      "teacherNumber": "33",
+      "displayNumber": "33"
+    },
+    {
+      "term": "umbrella",
+      "meaningZh": "雨伞",
+      "acceptedMeaningsZh": [
+        "雨伞",
+        "遮阳伞"
+      ],
+      "example": "She holds an umbrella.",
+      "exampleZh": "她拿着一把雨伞。",
+      "relation": "single",
+      "id": "s4-g34-i1",
+      "sourceGroupId": "s4-g34",
+      "session": 4,
+      "teacherNumber": "34",
+      "displayNumber": "34-1"
+    },
+    {
+      "term": "an umbrella",
+      "meaningZh": "一把雨伞",
+      "acceptedMeaningsZh": [
+        "一把雨伞",
+        "一个遮阳伞"
+      ],
+      "example": "She has an umbrella.",
+      "exampleZh": "她有了一把雨伞。",
+      "relation": "phrase-alternative",
+      "id": "s4-g34-i2",
+      "sourceGroupId": "s4-g34",
+      "session": 4,
+      "teacherNumber": "34",
+      "displayNumber": "34-2"
+    },
+    {
+      "term": "the mud",
+      "meaningZh": "泥巴",
+      "acceptedMeaningsZh": [
+        "泥巴",
+        "泥浆"
+      ],
+      "example": "There is the mud on my shoes.",
+      "exampleZh": "我的鞋子上有泥巴。",
+      "relation": "single",
+      "id": "s4-g35-i1",
+      "sourceGroupId": "s4-g35",
+      "session": 4,
+      "teacherNumber": "35",
+      "displayNumber": "35"
+    },
+    {
+      "term": "in front of ...",
+      "meaningZh": "在……前面",
+      "acceptedMeaningsZh": [
+        "在……前面",
+        "位于……前方"
+      ],
+      "example": "The car is in front of the house.",
+      "exampleZh": "汽车在房子前面。",
+      "relation": "pattern",
+      "id": "s4-g36-i1",
+      "sourceGroupId": "s4-g36",
+      "session": 4,
+      "teacherNumber": "36",
+      "displayNumber": "36-1"
+    },
+    {
+      "term": "behind ...",
+      "meaningZh": "在……后面",
+      "acceptedMeaningsZh": [
+        "在……后面",
+        "位于……后方"
+      ],
+      "example": "The cat is behind the door.",
+      "exampleZh": "猫在门后面。",
+      "relation": "pattern",
+      "id": "s4-g36-i2",
+      "sourceGroupId": "s4-g36",
+      "session": 4,
+      "teacherNumber": "36",
+      "displayNumber": "36-2"
+    },
+    {
+      "term": "under ...",
+      "meaningZh": "在……下面",
+      "acceptedMeaningsZh": [
+        "在……下面",
+        "位于……下方"
+      ],
+      "example": "The bird is under the tree.",
+      "exampleZh": "鸟在树下。",
+      "relation": "pattern",
+      "id": "s4-g36-i3",
+      "sourceGroupId": "s4-g36",
+      "session": 4,
+      "teacherNumber": "36",
+      "displayNumber": "36-3"
+    },
+    {
+      "term": "on ...",
+      "meaningZh": "在……上面",
+      "acceptedMeaningsZh": [
+        "在……上面",
+        "位于……上方"
+      ],
+      "example": "The book is on the table.",
+      "exampleZh": "书在桌子上面。",
+      "relation": "pattern",
+      "id": "s4-g36-i4",
+      "sourceGroupId": "s4-g36",
+      "session": 4,
+      "teacherNumber": "36",
+      "displayNumber": "36-4"
+    },
+    {
+      "term": "beautiful",
+      "meaningZh": "美丽的",
+      "acceptedMeaningsZh": [
+        "美丽的",
+        "漂亮的"
+      ],
+      "example": "She is beautiful.",
+      "exampleZh": "她很漂亮。",
+      "relation": "single",
+      "id": "s4-g37-i1",
+      "sourceGroupId": "s4-g37",
+      "session": 4,
+      "teacherNumber": "37",
+      "displayNumber": "37"
+    },
+    {
+      "term": "still",
+      "meaningZh": "仍然；还",
+      "acceptedMeaningsZh": [
+        "仍然",
+        "还"
+      ],
+      "example": "He is still sleeping.",
+      "exampleZh": "他还在睡觉。",
+      "relation": "single",
+      "id": "s4-g38-i1",
+      "sourceGroupId": "s4-g38",
+      "session": 4,
+      "teacherNumber": "38",
+      "displayNumber": "38"
+    },
+    {
+      "term": "amazing",
+      "meaningZh": "令人惊叹的",
+      "acceptedMeaningsZh": [
+        "令人惊叹的",
+        "惊人的"
+      ],
+      "example": "It was an amazing show.",
+      "exampleZh": "那是一场精彩的表演。",
+      "relation": "single",
+      "id": "s4-g39-i1",
+      "sourceGroupId": "s4-g39",
+      "session": 4,
+      "teacherNumber": "39",
+      "displayNumber": "39"
+    },
+    {
+      "term": "little feathers",
+      "meaningZh": "小羽毛",
+      "acceptedMeaningsZh": [
+        "小羽毛",
+        "小小的羽毛"
+      ],
+      "example": "The bird has little feathers.",
+      "exampleZh": "这只鸟有细小的羽毛。",
+      "relation": "list",
+      "id": "s4-g40-i1",
+      "sourceGroupId": "s4-g40",
+      "session": 4,
+      "teacherNumber": "40",
+      "displayNumber": "40"
+    },
+    {
+      "term": "marvel",
+      "meaningZh": "奇迹；令人惊叹的事物",
+      "acceptedMeaningsZh": [
+        "奇迹",
+        "令人惊叹的事物"
+      ],
+      "example": "The flower is a marvel of nature.",
+      "exampleZh": "这朵花是大自然的奇迹。",
+      "relation": "single",
+      "id": "s4-g41-i1",
+      "sourceGroupId": "s4-g41",
+      "session": 4,
+      "teacherNumber": "41",
+      "displayNumber": "41"
+    },
+    {
+      "term": "Peru",
+      "meaningZh": "秘鲁",
+      "acceptedMeaningsZh": [
+        "秘鲁"
+      ],
+      "example": "I visited Peru last year.",
+      "exampleZh": "我去年去了秘鲁。",
+      "relation": "single",
+      "id": "s4-g42-i1",
+      "sourceGroupId": "s4-g42",
+      "session": 4,
+      "teacherNumber": "42",
+      "displayNumber": "42"
+    },
+    {
+      "term": "the four-o'clock flower",
+      "meaningZh": "四点钟花",
+      "acceptedMeaningsZh": [
+        "四点钟花",
+        "朝颜花"
+      ],
+      "example": "The four-o'clock flower blooms at dawn.",
+      "exampleZh": "四点钟花在黎明时开放。",
+      "relation": "list",
+      "id": "s4-g43-i1",
+      "sourceGroupId": "s4-g43",
+      "session": 4,
+      "teacherNumber": "43",
+      "displayNumber": "43"
+    },
+    {
+      "term": "weather",
+      "meaningZh": "天气",
+      "acceptedMeaningsZh": [
+        "天气"
+      ],
+      "example": "Check the weather before you go out.",
+      "exampleZh": "出门前查一下天气吧。",
+      "relation": "single",
+      "id": "s4-g44-i1",
+      "sourceGroupId": "s4-g44",
+      "session": 4,
+      "teacherNumber": "44",
+      "displayNumber": "44"
+    },
+    {
+      "term": "fade",
+      "meaningZh": "逐渐消失",
+      "acceptedMeaningsZh": [
+        "逐渐消失",
+        "褪色"
+      ],
+      "example": "The colors fade in the sun.",
+      "exampleZh": "这些颜色在阳光下褪去了。",
+      "relation": "single",
+      "id": "s4-g45-i1",
+      "sourceGroupId": "s4-g45",
+      "session": 4,
+      "teacherNumber": "45",
+      "displayNumber": "45"
+    },
+    {
+      "term": "close up",
+      "meaningZh": "合上",
+      "acceptedMeaningsZh": [
+        "合上",
+        "靠近"
+      ],
+      "example": "Please close up the book.",
+      "exampleZh": "请合上书。",
+      "relation": "phrase-alternative",
+      "id": "s4-g46-i1",
+      "sourceGroupId": "s4-g46",
+      "session": 4,
+      "teacherNumber": "46",
+      "displayNumber": "46"
+    },
+    {
+      "term": "pine cone scale",
+      "meaningZh": "松果鳞片",
+      "acceptedMeaningsZh": [
+        "松果鳞片"
+      ],
+      "example": "A pine cone has many scales.",
+      "exampleZh": "一个松果有许多鳞片。",
+      "relation": "list",
+      "id": "s4-g47-i1",
+      "sourceGroupId": "s4-g47",
+      "session": 4,
+      "teacherNumber": "47",
+      "displayNumber": "47"
+    },
+    {
+      "term": "fold",
+      "meaningZh": "折叠",
+      "acceptedMeaningsZh": [
+        "折叠",
+        "折成"
+      ],
+      "example": "Fold the paper into a triangle.",
+      "exampleZh": "把纸折成一个三角形。",
+      "relation": "single",
+      "id": "s4-g48-i1",
+      "sourceGroupId": "s4-g48",
+      "session": 4,
+      "teacherNumber": "48",
+      "displayNumber": "48"
+    },
+    {
+      "term": "protect",
+      "meaningZh": "保护",
+      "acceptedMeaningsZh": [
+        "保护",
+        "防护"
+      ],
+      "example": "Protect the flowers.",
+      "exampleZh": "保护花朵。",
+      "relation": "single",
+      "id": "s4-g49-i1",
+      "sourceGroupId": "s4-g49",
+      "session": 4,
+      "teacherNumber": "49",
+      "displayNumber": "49"
+    },
+    {
+      "term": "petal",
+      "meaningZh": "花瓣",
+      "acceptedMeaningsZh": [
+        "花瓣"
+      ],
+      "example": "The flower has a red petal.",
+      "exampleZh": "这朵花有一片红色的花瓣。",
+      "relation": "single",
+      "id": "s4-g50-i1",
+      "sourceGroupId": "s4-g50",
+      "session": 4,
+      "teacherNumber": "50",
+      "displayNumber": "50"
+    },
+    {
+      "term": "close tightly",
+      "meaningZh": "紧紧关闭",
+      "acceptedMeaningsZh": [
+        "紧紧关闭",
+        "紧密闭合"
+      ],
+      "example": "Close the door tightly.",
+      "exampleZh": "把门紧紧地关上。",
+      "relation": "phrase-alternative",
+      "id": "s4-g51-i1",
+      "sourceGroupId": "s4-g51",
+      "session": 4,
+      "teacherNumber": "51",
+      "displayNumber": "51"
+    },
+    {
+      "term": "wonderful",
+      "meaningZh": "极好的",
+      "acceptedMeaningsZh": [
+        "极好的",
+        "精彩的"
+      ],
+      "example": "It is a wonderful day.",
+      "exampleZh": "这是一天非常精彩的日子。",
+      "relation": "single",
+      "id": "s4-g52-i1",
+      "sourceGroupId": "s4-g52",
+      "session": 4,
+      "teacherNumber": "52",
+      "displayNumber": "52"
+    },
+    {
+      "term": "report",
+      "meaningZh": "报告",
+      "acceptedMeaningsZh": [
+        "报告",
+        "汇报"
+      ],
+      "example": "He reported the news.",
+      "exampleZh": "他汇报了新闻。",
+      "relation": "single",
+      "id": "s4-g53-i1",
+      "sourceGroupId": "s4-g53",
+      "session": 4,
+      "teacherNumber": "53",
+      "displayNumber": "53-1"
+    },
+    {
+      "term": "reporter",
+      "meaningZh": "记者",
+      "acceptedMeaningsZh": [
+        "记者",
+        "报道者"
+      ],
+      "example": "The reporter wrote a story.",
+      "exampleZh": "这位记者写了一篇故事。",
+      "relation": "single",
+      "id": "s4-g53-i2",
+      "sourceGroupId": "s4-g53",
+      "session": 4,
+      "teacherNumber": "53",
+      "displayNumber": "53-2"
+    },
+    {
+      "term": "find",
+      "meaningZh": "找到",
+      "acceptedMeaningsZh": [
+        "找到",
+        "发现"
+      ],
+      "example": "I can find my way home.",
+      "exampleZh": "我能找到回家的路。",
+      "relation": "single",
+      "id": "s4-g54-i1",
+      "sourceGroupId": "s4-g54",
+      "session": 4,
+      "teacherNumber": "54",
+      "displayNumber": "54-1"
+    },
+    {
+      "term": "look for",
+      "meaningZh": "寻找",
+      "acceptedMeaningsZh": [
+        "寻找",
+        "找"
+      ],
+      "example": "Please look for your keys.",
+      "exampleZh": "请找找你的钥匙。",
+      "relation": "phrase-alternative",
+      "id": "s4-g54-i2",
+      "sourceGroupId": "s4-g54",
+      "session": 4,
+      "teacherNumber": "54",
+      "displayNumber": "54-2"
+    },
+    {
+      "term": "find out",
+      "meaningZh": "查明",
+      "acceptedMeaningsZh": [
+        "查明",
+        "找出结果"
+      ],
+      "example": "We need to find out the truth.",
+      "exampleZh": "我们需要查出真相。",
+      "relation": "phrase-alternative",
+      "id": "s4-g54-i3",
+      "sourceGroupId": "s4-g54",
+      "session": 4,
+      "teacherNumber": "54",
+      "displayNumber": "54-3"
+    },
+    {
+      "term": "a long stem",
+      "meaningZh": "一根长长的茎干",
+      "acceptedMeaningsZh": [
+        "一根长长的茎干"
+      ],
+      "example": "The plant has a long stem.",
+      "exampleZh": "这株植物有一根长茎。",
+      "relation": "single",
+      "id": "s4-g55-i1",
+      "sourceGroupId": "s4-g55",
+      "session": 4,
+      "teacherNumber": "55",
+      "displayNumber": "55-1"
+    },
+    {
+      "term": "big leaves",
+      "meaningZh": "大叶子",
+      "acceptedMeaningsZh": [
+        "大叶子",
+        "大的叶片"
+      ],
+      "example": "It has big green leaves.",
+      "exampleZh": "它有又大又绿的叶子。",
+      "relation": "phrase-alternative",
+      "id": "s4-g55-i2",
+      "sourceGroupId": "s4-g55",
+      "session": 4,
+      "teacherNumber": "55",
+      "displayNumber": "55-2"
+    },
+    {
+      "term": "large",
+      "meaningZh": "大的",
+      "acceptedMeaningsZh": [
+        "大的",
+        "宽大的"
+      ],
+      "example": "The tree is large and old.",
+      "exampleZh": "这棵树很大很老。",
+      "relation": "single",
+      "id": "s4-g55-i3",
+      "sourceGroupId": "s4-g55",
+      "session": 4,
+      "teacherNumber": "55",
+      "displayNumber": "55-3"
+    },
+    {
+      "term": "face the sun",
+      "meaningZh": "面向太阳",
+      "acceptedMeaningsZh": [
+        "面向太阳",
+        "朝向日出"
+      ],
+      "example": "She faces the sun every morning.",
+      "exampleZh": "她每天早上都面向太阳。",
+      "relation": "phrase-alternative",
+      "id": "s4-g55-i4",
+      "sourceGroupId": "s4-g55",
+      "session": 4,
+      "teacherNumber": "55",
+      "displayNumber": "55-4"
+    },
+    {
+      "term": "smile",
+      "meaningZh": "微笑",
+      "acceptedMeaningsZh": [
+        "微笑",
+        "笑"
+      ],
+      "example": "Please smile at me.",
+      "exampleZh": "请对我微笑一下。",
+      "relation": "single",
+      "id": "s4-g56-i1",
+      "sourceGroupId": "s4-g56",
+      "session": 4,
+      "teacherNumber": "56",
+      "displayNumber": "56"
+    }
+  ]
+}

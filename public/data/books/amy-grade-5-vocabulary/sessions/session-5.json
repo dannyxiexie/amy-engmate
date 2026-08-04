@@ -1,0 +1,3601 @@
+{
+  "number": 5,
+  "available": true,
+  "verifiedEnglish": true,
+  "groupCount": 66,
+  "itemCount": 98,
+  "groups": [
+    {
+      "id": "s5-g1",
+      "teacherNumber": "1",
+      "sourceText": "make and write",
+      "items": [
+        {
+          "term": "make and write",
+          "meaningZh": "制作并书写",
+          "acceptedMeaningsZh": [
+            "制作并书写",
+            "写作练习"
+          ],
+          "example": "Make and write a story.",
+          "exampleZh": "做一个故事。",
+          "relation": "phrase-alternative",
+          "id": "s5-g1-i1",
+          "sourceGroupId": "s5-g1",
+          "session": 5,
+          "teacherNumber": "1",
+          "displayNumber": "1"
+        }
+      ]
+    },
+    {
+      "id": "s5-g2",
+      "teacherNumber": "2",
+      "sourceText": "observation",
+      "items": [
+        {
+          "term": "observation",
+          "meaningZh": "观察",
+          "acceptedMeaningsZh": [
+            "观察",
+            "观测"
+          ],
+          "example": "We made an observation about the sky.",
+          "exampleZh": "我们对天空进行了观察。",
+          "relation": "single",
+          "id": "s5-g2-i1",
+          "sourceGroupId": "s5-g2",
+          "session": 5,
+          "teacherNumber": "2",
+          "displayNumber": "2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g3",
+      "teacherNumber": "3",
+      "sourceText": "diary",
+      "items": [
+        {
+          "term": "diary",
+          "meaningZh": "日记",
+          "acceptedMeaningsZh": [
+            "日记",
+            "日记录"
+          ],
+          "example": "I write my diary every day.",
+          "exampleZh": "我每天都写日记。",
+          "relation": "single",
+          "id": "s5-g3-i1",
+          "sourceGroupId": "s5-g3",
+          "session": 5,
+          "teacherNumber": "3",
+          "displayNumber": "3"
+        }
+      ]
+    },
+    {
+      "id": "s5-g4",
+      "teacherNumber": "4",
+      "sourceText": "whale (whales)",
+      "items": [
+        {
+          "term": "whale (whales)",
+          "meaningZh": "鲸鱼（鲸类）",
+          "acceptedMeaningsZh": [
+            "鲸鱼（鲸类）"
+          ],
+          "example": "The whale is swimming in the ocean.",
+          "exampleZh": "这只鲸鱼正在海洋里游动。",
+          "relation": "list",
+          "id": "s5-g4-i1",
+          "sourceGroupId": "s5-g4",
+          "session": 5,
+          "teacherNumber": "4",
+          "displayNumber": "4"
+        }
+      ]
+    },
+    {
+      "id": "s5-g5",
+      "teacherNumber": "5",
+      "sourceText": "safari park",
+      "items": [
+        {
+          "term": "safari park",
+          "meaningZh": "野生动物园",
+          "acceptedMeaningsZh": [
+            "野生动物园",
+            "动物园里的野生动物保护区"
+          ],
+          "example": "We visited a safari park.",
+          "exampleZh": "我们参观了一个野生动物园。",
+          "relation": "single",
+          "id": "s5-g5-i1",
+          "sourceGroupId": "s5-g5",
+          "session": 5,
+          "teacherNumber": "5",
+          "displayNumber": "5"
+        }
+      ]
+    },
+    {
+      "id": "s5-g6",
+      "teacherNumber": "6",
+      "sourceText": "panda",
+      "items": [
+        {
+          "term": "panda",
+          "meaningZh": "熊猫",
+          "acceptedMeaningsZh": [
+            "熊猫",
+            "中国的国宝"
+          ],
+          "example": "The panda is cute.",
+          "exampleZh": "这只熊猫很可爱。",
+          "relation": "single",
+          "id": "s5-g6-i1",
+          "sourceGroupId": "s5-g6",
+          "session": 5,
+          "teacherNumber": "6",
+          "displayNumber": "6"
+        }
+      ]
+    },
+    {
+      "id": "s5-g7",
+      "teacherNumber": "7",
+      "sourceText": "giraffe",
+      "items": [
+        {
+          "term": "giraffe",
+          "meaningZh": "长颈鹿",
+          "acceptedMeaningsZh": [
+            "长颈鹿",
+            "脖子很长的动物"
+          ],
+          "example": "Look at the giraffe.",
+          "exampleZh": "看那只长颈鹿。",
+          "relation": "single",
+          "id": "s5-g7-i1",
+          "sourceGroupId": "s5-g7",
+          "session": 5,
+          "teacherNumber": "7",
+          "displayNumber": "7"
+        }
+      ]
+    },
+    {
+      "id": "s5-g8",
+      "teacherNumber": "8",
+      "sourceText": "hippo",
+      "items": [
+        {
+          "term": "hippo",
+          "meaningZh": "河马",
+          "acceptedMeaningsZh": [
+            "河马",
+            "生活在河流里的哺乳动物"
+          ],
+          "example": "The hippo is big.",
+          "exampleZh": "这只河马很大。",
+          "relation": "single",
+          "id": "s5-g8-i1",
+          "sourceGroupId": "s5-g8",
+          "session": 5,
+          "teacherNumber": "8",
+          "displayNumber": "8"
+        }
+      ]
+    },
+    {
+      "id": "s5-g9",
+      "teacherNumber": "9",
+      "sourceText": "feel / look / taste / sound",
+      "items": [
+        {
+          "term": "feel",
+          "meaningZh": "感觉；摸起来",
+          "acceptedMeaningsZh": [
+            "感觉",
+            "摸起来"
+          ],
+          "example": "I can feel the wind.",
+          "exampleZh": "我能感觉到风。",
+          "relation": "single",
+          "id": "s5-g9-i1",
+          "sourceGroupId": "s5-g9",
+          "session": 5,
+          "teacherNumber": "9",
+          "displayNumber": "9-1"
+        },
+        {
+          "term": "look",
+          "meaningZh": "看起来",
+          "acceptedMeaningsZh": [
+            "看起来",
+            "看"
+          ],
+          "example": "Look at that bird.",
+          "exampleZh": "看看那只鸟。",
+          "relation": "single",
+          "id": "s5-g9-i2",
+          "sourceGroupId": "s5-g9",
+          "session": 5,
+          "teacherNumber": "9",
+          "displayNumber": "9-2"
+        },
+        {
+          "term": "taste",
+          "meaningZh": "尝起来",
+          "acceptedMeaningsZh": [
+            "尝起来",
+            "品尝"
+          ],
+          "example": "The soup tastes good.",
+          "exampleZh": "这汤尝起来很好。",
+          "relation": "single",
+          "id": "s5-g9-i3",
+          "sourceGroupId": "s5-g9",
+          "session": 5,
+          "teacherNumber": "9",
+          "displayNumber": "9-3"
+        },
+        {
+          "term": "sound",
+          "meaningZh": "听起来",
+          "acceptedMeaningsZh": [
+            "听起来"
+          ],
+          "example": "It sounds interesting.",
+          "exampleZh": "它听起来很有趣。",
+          "relation": "single",
+          "id": "s5-g9-i4",
+          "sourceGroupId": "s5-g9",
+          "session": 5,
+          "teacherNumber": "9",
+          "displayNumber": "9-4"
+        }
+      ]
+    },
+    {
+      "id": "s5-g10",
+      "teacherNumber": "10",
+      "sourceText": "list the ideas",
+      "items": [
+        {
+          "term": "list the ideas",
+          "meaningZh": "列出想法",
+          "acceptedMeaningsZh": [
+            "列出想法",
+            "列举主意"
+          ],
+          "example": "List the ideas.",
+          "exampleZh": "列出这些想法。",
+          "relation": "phrase-alternative",
+          "id": "s5-g10-i1",
+          "sourceGroupId": "s5-g10",
+          "session": 5,
+          "teacherNumber": "10",
+          "displayNumber": "10"
+        }
+      ]
+    },
+    {
+      "id": "s5-g11",
+      "teacherNumber": "11",
+      "sourceText": "go to see",
+      "items": [
+        {
+          "term": "go to see",
+          "meaningZh": "去看；去参观",
+          "acceptedMeaningsZh": [
+            "去看",
+            "去参观"
+          ],
+          "example": "Let's go to see the museum.",
+          "exampleZh": "让我们一起去参观博物馆。",
+          "relation": "phrase-alternative",
+          "id": "s5-g11-i1",
+          "sourceGroupId": "s5-g11",
+          "session": 5,
+          "teacherNumber": "11",
+          "displayNumber": "11"
+        }
+      ]
+    },
+    {
+      "id": "s5-g12",
+      "teacherNumber": "12",
+      "sourceText": "visit",
+      "items": [
+        {
+          "term": "visit",
+          "meaningZh": "拜访",
+          "acceptedMeaningsZh": [
+            "拜访",
+            "访问"
+          ],
+          "example": "I will visit my grandmother tomorrow.",
+          "exampleZh": "我明天会去探望我的祖母。",
+          "relation": "single",
+          "id": "s5-g12-i1",
+          "sourceGroupId": "s5-g12",
+          "session": 5,
+          "teacherNumber": "12",
+          "displayNumber": "12"
+        }
+      ]
+    },
+    {
+      "id": "s5-g13",
+      "teacherNumber": "13",
+      "sourceText": "take a truck tour",
+      "items": [
+        {
+          "term": "take a truck tour",
+          "meaningZh": "乘卡车游览",
+          "acceptedMeaningsZh": [
+            "乘卡车游览",
+            "坐卡车去参观"
+          ],
+          "example": "We will take a truck tour to the mountains.",
+          "exampleZh": "我们将乘坐卡车去山区游览。",
+          "relation": "phrase-alternative",
+          "id": "s5-g13-i1",
+          "sourceGroupId": "s5-g13",
+          "session": 5,
+          "teacherNumber": "13",
+          "displayNumber": "13"
+        }
+      ]
+    },
+    {
+      "id": "s5-g14",
+      "teacherNumber": "14",
+      "sourceText": "watch a movie / see a film",
+      "items": [
+        {
+          "term": "watch a movie",
+          "meaningZh": "看电影",
+          "acceptedMeaningsZh": [
+            "看电影",
+            "观看电影"
+          ],
+          "example": "Let's watch a movie this evening.",
+          "exampleZh": "让我们今晚看一部电影吧。",
+          "relation": "single",
+          "id": "s5-g14-i1",
+          "sourceGroupId": "s5-g14",
+          "session": 5,
+          "teacherNumber": "14",
+          "displayNumber": "14-1"
+        },
+        {
+          "term": "see a film",
+          "meaningZh": "看电影",
+          "acceptedMeaningsZh": [
+            "看电影",
+            "观赏影片"
+          ],
+          "example": "I want to see a film tonight.",
+          "exampleZh": "我想今晚去看一场电影。",
+          "relation": "synonym",
+          "id": "s5-g14-i2",
+          "sourceGroupId": "s5-g14",
+          "session": 5,
+          "teacherNumber": "14",
+          "displayNumber": "14-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g15",
+      "teacherNumber": "15",
+      "sourceText": "prepare for",
+      "items": [
+        {
+          "term": "prepare for",
+          "meaningZh": "为……做准备",
+          "acceptedMeaningsZh": [
+            "为……做准备",
+            "准备迎接"
+          ],
+          "example": "She is preparing for the exam.",
+          "exampleZh": "她正在为考试做准备。",
+          "relation": "phrase-alternative",
+          "id": "s5-g15-i1",
+          "sourceGroupId": "s5-g15",
+          "session": 5,
+          "teacherNumber": "15",
+          "displayNumber": "15"
+        }
+      ]
+    },
+    {
+      "id": "s5-g16",
+      "teacherNumber": "16",
+      "sourceText": "good / better",
+      "items": [
+        {
+          "term": "good",
+          "meaningZh": "好的",
+          "acceptedMeaningsZh": [
+            "好的",
+            "优秀的",
+            "有益的"
+          ],
+          "example": "Good morning, everyone!",
+          "exampleZh": "大家早上好！",
+          "relation": "single",
+          "id": "s5-g16-i1",
+          "sourceGroupId": "s5-g16",
+          "session": 5,
+          "teacherNumber": "16",
+          "displayNumber": "16-1"
+        },
+        {
+          "term": "better",
+          "meaningZh": "更好的",
+          "acceptedMeaningsZh": [
+            "更好的",
+            "更优的",
+            "较佳的"
+          ],
+          "example": "This cake is better than that one.",
+          "exampleZh": "这块蛋糕比那块更好吃。",
+          "relation": "inflection",
+          "id": "s5-g16-i2",
+          "sourceGroupId": "s5-g16",
+          "session": 5,
+          "teacherNumber": "16",
+          "displayNumber": "16-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g17",
+      "teacherNumber": "17",
+      "sourceText": "understanding",
+      "items": [
+        {
+          "term": "understanding",
+          "meaningZh": "理解",
+          "acceptedMeaningsZh": [
+            "理解",
+            "懂得的"
+          ],
+          "example": "I have a good understanding.",
+          "exampleZh": "我有很好的了解。",
+          "relation": "single",
+          "id": "s5-g17-i1",
+          "sourceGroupId": "s5-g17",
+          "session": 5,
+          "teacherNumber": "17",
+          "displayNumber": "17"
+        }
+      ]
+    },
+    {
+      "id": "s5-g18",
+      "teacherNumber": "18",
+      "sourceText": "find out",
+      "items": [
+        {
+          "term": "find out",
+          "meaningZh": "找出",
+          "acceptedMeaningsZh": [
+            "找出",
+            "发现"
+          ],
+          "example": "Can you find out the answer?",
+          "exampleZh": "你能找到答案吗？",
+          "relation": "pattern",
+          "id": "s5-g18-i1",
+          "sourceGroupId": "s5-g18",
+          "session": 5,
+          "teacherNumber": "18",
+          "displayNumber": "18"
+        }
+      ]
+    },
+    {
+      "id": "s5-g19",
+      "teacherNumber": "19",
+      "sourceText": "habit (habits)",
+      "items": [
+        {
+          "term": "habit",
+          "meaningZh": "习惯",
+          "acceptedMeaningsZh": [
+            "习惯"
+          ],
+          "example": "It is a bad habit.",
+          "exampleZh": "这是一个坏习惯。",
+          "relation": "single",
+          "id": "s5-g19-i1",
+          "sourceGroupId": "s5-g19",
+          "session": 5,
+          "teacherNumber": "19",
+          "displayNumber": "19-1"
+        },
+        {
+          "term": "habits",
+          "meaningZh": "习惯（复数）",
+          "acceptedMeaningsZh": [
+            "习惯",
+            "习惯的复数"
+          ],
+          "example": "They have many good habits.",
+          "exampleZh": "他们有很多好习惯。",
+          "relation": "inflection",
+          "id": "s5-g19-i2",
+          "sourceGroupId": "s5-g19",
+          "session": 5,
+          "teacherNumber": "19",
+          "displayNumber": "19-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g20",
+      "teacherNumber": "20",
+      "sourceText": "habits of animals",
+      "items": [
+        {
+          "term": "habits of animals",
+          "meaningZh": "动物的习性",
+          "acceptedMeaningsZh": [
+            "动物的习性",
+            "动物的习惯"
+          ],
+          "example": "Animals have different habits.",
+          "exampleZh": "动物有不同的习惯。",
+          "relation": "phrase-alternative",
+          "id": "s5-g20-i1",
+          "sourceGroupId": "s5-g20",
+          "session": 5,
+          "teacherNumber": "20",
+          "displayNumber": "20"
+        }
+      ]
+    },
+    {
+      "id": "s5-g21",
+      "teacherNumber": "21",
+      "sourceText": "like",
+      "items": [
+        {
+          "term": "like",
+          "meaningZh": "喜欢",
+          "acceptedMeaningsZh": [
+            "喜欢",
+            "喜爱"
+          ],
+          "example": "I like cats.",
+          "exampleZh": "我喜欢猫。",
+          "relation": "single",
+          "id": "s5-g21-i1",
+          "sourceGroupId": "s5-g21",
+          "session": 5,
+          "teacherNumber": "21",
+          "displayNumber": "21"
+        }
+      ]
+    },
+    {
+      "id": "s5-g22",
+      "teacherNumber": "22",
+      "sourceText": "learn about",
+      "items": [
+        {
+          "term": "learn about",
+          "meaningZh": "了解……",
+          "acceptedMeaningsZh": [
+            "了解",
+            "学习有关"
+          ],
+          "example": "We learn about space.",
+          "exampleZh": "我们学习太空知识。",
+          "relation": "phrase-alternative",
+          "id": "s5-g22-i1",
+          "sourceGroupId": "s5-g22",
+          "session": 5,
+          "teacherNumber": "22",
+          "displayNumber": "22"
+        }
+      ]
+    },
+    {
+      "id": "s5-g23",
+      "teacherNumber": "23",
+      "sourceText": "threat / threat to sea animals",
+      "items": [
+        {
+          "term": "threat",
+          "meaningZh": "威胁",
+          "acceptedMeaningsZh": [
+            "威胁",
+            "危险"
+          ],
+          "example": "There is a threat to the forest.",
+          "exampleZh": "森林面临威胁。",
+          "relation": "single",
+          "id": "s5-g23-i1",
+          "sourceGroupId": "s5-g23",
+          "session": 5,
+          "teacherNumber": "23",
+          "displayNumber": "23-1"
+        },
+        {
+          "term": "threat to sea animals",
+          "meaningZh": "对海洋动物的威胁",
+          "acceptedMeaningsZh": [
+            "对海洋动物的威胁"
+          ],
+          "example": "A shark poses a threat to sea turtles.",
+          "exampleZh": "鲨鱼对海龟构成威胁。",
+          "relation": "phrase-alternative",
+          "id": "s5-g23-i2",
+          "sourceGroupId": "s5-g23",
+          "session": 5,
+          "teacherNumber": "23",
+          "displayNumber": "23-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g24",
+      "teacherNumber": "24",
+      "sourceText": "whale / dolphin",
+      "items": [
+        {
+          "term": "whale",
+          "meaningZh": "鲸鱼",
+          "acceptedMeaningsZh": [
+            "鲸鱼",
+            "大型鱼类哺乳动物"
+          ],
+          "example": "The blue whale is very big.",
+          "exampleZh": "蓝鲸非常大。",
+          "relation": "single",
+          "id": "s5-g24-i1",
+          "sourceGroupId": "s5-g24",
+          "session": 5,
+          "teacherNumber": "24",
+          "displayNumber": "24-1"
+        },
+        {
+          "term": "dolphin",
+          "meaningZh": "海豚",
+          "acceptedMeaningsZh": [
+            "海豚",
+            "海洋生物"
+          ],
+          "example": "Dolphins are smart animals.",
+          "exampleZh": "海豚是聪明的动物。",
+          "relation": "single",
+          "id": "s5-g24-i2",
+          "sourceGroupId": "s5-g24",
+          "session": 5,
+          "teacherNumber": "24",
+          "displayNumber": "24-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g25",
+      "teacherNumber": "25",
+      "sourceText": "interact / interact with",
+      "items": [
+        {
+          "term": "interact",
+          "meaningZh": "互相作用",
+          "acceptedMeaningsZh": [
+            "互相作用",
+            "互动"
+          ],
+          "example": "They interact with each other.",
+          "exampleZh": "他们彼此互动。",
+          "relation": "single",
+          "id": "s5-g25-i1",
+          "sourceGroupId": "s5-g25",
+          "session": 5,
+          "teacherNumber": "25",
+          "displayNumber": "25-1"
+        },
+        {
+          "term": "interact with",
+          "meaningZh": "与...互动",
+          "acceptedMeaningsZh": [
+            "与...互动",
+            "和...交流"
+          ],
+          "example": "We should interact with our teachers.",
+          "exampleZh": "我们应该和老师互动交流。",
+          "relation": "phrase-alternative",
+          "id": "s5-g25-i2",
+          "sourceGroupId": "s5-g25",
+          "session": 5,
+          "teacherNumber": "25",
+          "displayNumber": "25-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g26",
+      "teacherNumber": "26",
+      "sourceText": "enjoy / enjoy yourself",
+      "items": [
+        {
+          "term": "enjoy",
+          "meaningZh": "享受",
+          "acceptedMeaningsZh": [
+            "享受",
+            "喜爱"
+          ],
+          "example": "I enjoy reading books.",
+          "exampleZh": "我喜欢读书。",
+          "relation": "single",
+          "id": "s5-g26-i1",
+          "sourceGroupId": "s5-g26",
+          "session": 5,
+          "teacherNumber": "26",
+          "displayNumber": "26-1"
+        },
+        {
+          "term": "enjoy yourself",
+          "meaningZh": "玩得开心",
+          "acceptedMeaningsZh": [
+            "玩得开心",
+            "过得愉快"
+          ],
+          "example": "Please enjoy your holiday.",
+          "exampleZh": "祝您假期愉快，尽情放松。",
+          "relation": "phrase-alternative",
+          "id": "s5-g26-i2",
+          "sourceGroupId": "s5-g26",
+          "session": 5,
+          "teacherNumber": "26",
+          "displayNumber": "26-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g27",
+      "teacherNumber": "27",
+      "sourceText": "fun activities",
+      "items": [
+        {
+          "term": "fun activities",
+          "meaningZh": "有趣的活动",
+          "acceptedMeaningsZh": [
+            "有趣的活动",
+            "好玩的事情"
+          ],
+          "example": "We have fun activities.",
+          "exampleZh": "这些活动很有趣。",
+          "relation": "phrase-alternative",
+          "id": "s5-g27-i1",
+          "sourceGroupId": "s5-g27",
+          "session": 5,
+          "teacherNumber": "27",
+          "displayNumber": "27"
+        }
+      ]
+    },
+    {
+      "id": "s5-g28",
+      "teacherNumber": "28",
+      "sourceText": "closed-toe shoes",
+      "items": [
+        {
+          "term": "closed-toe shoes",
+          "meaningZh": "包头的鞋",
+          "acceptedMeaningsZh": [
+            "包头的鞋",
+            "有脚趾孔的鞋（错误）",
+            "不露趾的鞋子"
+          ],
+          "example": "She wears closed-toe shoes.",
+          "exampleZh": "她穿的是包头鞋。",
+          "relation": "single",
+          "id": "s5-g28-i1",
+          "sourceGroupId": "s5-g28",
+          "session": 5,
+          "teacherNumber": "28",
+          "displayNumber": "28"
+        }
+      ]
+    },
+    {
+      "id": "s5-g29",
+      "teacherNumber": "29",
+      "sourceText": "raincoat",
+      "items": [
+        {
+          "term": "raincoat",
+          "meaningZh": "雨衣",
+          "acceptedMeaningsZh": [
+            "雨衣",
+            "带雨披的斗篷"
+          ],
+          "example": "She wore a raincoat to school.",
+          "exampleZh": "她穿了一件雨衣去学校。",
+          "relation": "single",
+          "id": "s5-g29-i1",
+          "sourceGroupId": "s5-g29",
+          "session": 5,
+          "teacherNumber": "29",
+          "displayNumber": "29"
+        }
+      ]
+    },
+    {
+      "id": "s5-g30",
+      "teacherNumber": "30",
+      "sourceText": "don't forget / forget to do sth.",
+      "items": [
+        {
+          "term": "don't forget",
+          "meaningZh": "别忘了",
+          "acceptedMeaningsZh": [
+            "别忘了",
+            "不要忘记"
+          ],
+          "example": "Don't forget your homework.",
+          "exampleZh": "别忘了你的作业。",
+          "relation": "phrase-alternative",
+          "id": "s5-g30-i1",
+          "sourceGroupId": "s5-g30",
+          "session": 5,
+          "teacherNumber": "30",
+          "displayNumber": "30-1"
+        },
+        {
+          "term": "forget to do sth.",
+          "meaningZh": "忘记做某事",
+          "acceptedMeaningsZh": [
+            "忘记做某事"
+          ],
+          "example": "I forgot to lock the door.",
+          "exampleZh": "我忘了锁门。",
+          "relation": "pattern",
+          "id": "s5-g30-i2",
+          "sourceGroupId": "s5-g30",
+          "session": 5,
+          "teacherNumber": "30",
+          "displayNumber": "30-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g31",
+      "teacherNumber": "31",
+      "sourceText": "take home / take it (them) home",
+      "items": [
+        {
+          "term": "take home",
+          "meaningZh": "带回家",
+          "acceptedMeaningsZh": [
+            "带回家",
+            "带回家"
+          ],
+          "example": "Please take this book home.",
+          "exampleZh": "请把这本书带回家。",
+          "relation": "phrase-alternative",
+          "id": "s5-g31-i1",
+          "sourceGroupId": "s5-g31",
+          "session": 5,
+          "teacherNumber": "31",
+          "displayNumber": "31-1"
+        },
+        {
+          "term": "take it (them) home",
+          "meaningZh": "把它（它们）带回家",
+          "acceptedMeaningsZh": [
+            "把它（它们）带回家"
+          ],
+          "example": "Take the toys home, please.",
+          "exampleZh": "把玩具们带回去吧，请。",
+          "relation": "phrase-alternative",
+          "id": "s5-g31-i2",
+          "sourceGroupId": "s5-g31",
+          "session": 5,
+          "teacherNumber": "31",
+          "displayNumber": "31-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g32",
+      "teacherNumber": "32",
+      "sourceText": "bring",
+      "items": [
+        {
+          "term": "bring",
+          "meaningZh": "带来",
+          "acceptedMeaningsZh": [
+            "带来",
+            "拿来"
+          ],
+          "example": "Can you bring me some water?",
+          "exampleZh": "你能给我拿点水吗？",
+          "relation": "single",
+          "id": "s5-g32-i1",
+          "sourceGroupId": "s5-g32",
+          "session": 5,
+          "teacherNumber": "32",
+          "displayNumber": "32"
+        }
+      ]
+    },
+    {
+      "id": "s5-g33",
+      "teacherNumber": "33",
+      "sourceText": "behave / how to behave",
+      "items": [
+        {
+          "term": "behave",
+          "meaningZh": "表现",
+          "acceptedMeaningsZh": [
+            "表现",
+            "行为"
+          ],
+          "example": "He behaved well.",
+          "exampleZh": "他表现得很好。",
+          "relation": "single",
+          "id": "s5-g33-i1",
+          "sourceGroupId": "s5-g33",
+          "session": 5,
+          "teacherNumber": "33",
+          "displayNumber": "33-1"
+        },
+        {
+          "term": "how to behave",
+          "meaningZh": "如何表现",
+          "acceptedMeaningsZh": [
+            "如何表现",
+            "怎样举止"
+          ],
+          "example": "How should I behave here?",
+          "exampleZh": "我在这儿该怎么表现？",
+          "relation": "pattern",
+          "id": "s5-g33-i2",
+          "sourceGroupId": "s5-g33",
+          "session": 5,
+          "teacherNumber": "33",
+          "displayNumber": "33-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g34",
+      "teacherNumber": "34",
+      "sourceText": "respect",
+      "items": [
+        {
+          "term": "respect",
+          "meaningZh": "尊重",
+          "acceptedMeaningsZh": [
+            "尊重",
+            "尊敬"
+          ],
+          "example": "Please respect others.",
+          "exampleZh": "请尊重他人。",
+          "relation": "single",
+          "id": "s5-g34-i1",
+          "sourceGroupId": "s5-g34",
+          "session": 5,
+          "teacherNumber": "34",
+          "displayNumber": "34"
+        }
+      ]
+    },
+    {
+      "id": "s5-g35",
+      "teacherNumber": "35",
+      "sourceText": "care for / take care of / take good care of",
+      "items": [
+        {
+          "term": "care for",
+          "meaningZh": "关心",
+          "acceptedMeaningsZh": [
+            "关心",
+            "照顾"
+          ],
+          "example": "I care for my sister.",
+          "exampleZh": "我照顾我的妹妹。",
+          "relation": "phrase-alternative",
+          "id": "s5-g35-i1",
+          "sourceGroupId": "s5-g35",
+          "session": 5,
+          "teacherNumber": "35",
+          "displayNumber": "35-1"
+        },
+        {
+          "term": "take care of",
+          "meaningZh": "照料",
+          "acceptedMeaningsZh": [
+            "照料",
+            "处理"
+          ],
+          "example": "Take care of your homework.",
+          "exampleZh": "把你的作业处理好。",
+          "relation": "phrase-alternative",
+          "id": "s5-g35-i2",
+          "sourceGroupId": "s5-g35",
+          "session": 5,
+          "teacherNumber": "35",
+          "displayNumber": "35-2"
+        },
+        {
+          "term": "take good care of",
+          "meaningZh": "好好照顾",
+          "acceptedMeaningsZh": [
+            "好好照顾",
+            "精心照料"
+          ],
+          "example": "Please take good care of the flowers.",
+          "exampleZh": "请好好照顾这些花。",
+          "relation": "phrase-alternative",
+          "id": "s5-g35-i3",
+          "sourceGroupId": "s5-g35",
+          "session": 5,
+          "teacherNumber": "35",
+          "displayNumber": "35-3"
+        }
+      ]
+    },
+    {
+      "id": "s5-g36",
+      "teacherNumber": "36",
+      "sourceText": "protect",
+      "items": [
+        {
+          "term": "protect",
+          "meaningZh": "保护",
+          "acceptedMeaningsZh": [
+            "保护",
+            "保卫"
+          ],
+          "example": "We must protect animals.",
+          "exampleZh": "我们必须保护动物。",
+          "relation": "single",
+          "id": "s5-g36-i1",
+          "sourceGroupId": "s5-g36",
+          "session": 5,
+          "teacherNumber": "36",
+          "displayNumber": "36"
+        }
+      ]
+    },
+    {
+      "id": "s5-g37",
+      "teacherNumber": "37",
+      "sourceText": "would like to join / would not like to join / wouldn't",
+      "items": [
+        {
+          "term": "would like to join",
+          "meaningZh": "想要加入",
+          "acceptedMeaningsZh": [
+            "想要加入",
+            "想参加"
+          ],
+          "example": "I would like to join the club.",
+          "exampleZh": "我想加入俱乐部。",
+          "relation": "phrase-alternative",
+          "id": "s5-g37-i1",
+          "sourceGroupId": "s5-g37",
+          "session": 5,
+          "teacherNumber": "37",
+          "displayNumber": "37-1"
+        },
+        {
+          "term": "would not like to join",
+          "meaningZh": "不想加入",
+          "acceptedMeaningsZh": [
+            "不想加入",
+            "不愿参加"
+          ],
+          "example": "She wouldn't like to join us.",
+          "exampleZh": "她不愿意加入我们。",
+          "relation": "phrase-alternative",
+          "id": "s5-g37-i2",
+          "sourceGroupId": "s5-g37",
+          "session": 5,
+          "teacherNumber": "37",
+          "displayNumber": "37-2"
+        },
+        {
+          "term": "wouldn't",
+          "meaningZh": "不会；不愿意",
+          "acceptedMeaningsZh": [
+            "不会",
+            "不愿意",
+            "would not的缩写"
+          ],
+          "example": "I wouldn't go there.",
+          "exampleZh": "我不会去那里。",
+          "relation": "inflection",
+          "id": "s5-g37-i3",
+          "sourceGroupId": "s5-g37",
+          "session": 5,
+          "teacherNumber": "37",
+          "displayNumber": "37-3"
+        }
+      ]
+    },
+    {
+      "id": "s5-g38",
+      "teacherNumber": "38",
+      "sourceText": "close (verb) / close (adjective) / be close to ...",
+      "items": [
+        {
+          "term": "close (verb)",
+          "meaningZh": "关闭",
+          "acceptedMeaningsZh": [
+            "关闭",
+            "靠近（动词）"
+          ],
+          "example": "Please close the door.",
+          "exampleZh": "请关门。",
+          "relation": "single",
+          "id": "s5-g38-i1",
+          "sourceGroupId": "s5-g38",
+          "session": 5,
+          "teacherNumber": "38",
+          "displayNumber": "38-1"
+        },
+        {
+          "term": "close (adjective)",
+          "meaningZh": "近的",
+          "acceptedMeaningsZh": [
+            "近的",
+            "亲密的（形容词）"
+          ],
+          "example": "He is my best friend and he is very close to me.",
+          "exampleZh": "他是我的好朋友，他离我很近/很亲近我。",
+          "relation": "single",
+          "id": "s5-g38-i2",
+          "sourceGroupId": "s5-g38",
+          "session": 5,
+          "teacherNumber": "38",
+          "displayNumber": "38-2"
+        },
+        {
+          "term": "be close to ...",
+          "meaningZh": "靠近……",
+          "acceptedMeaningsZh": [
+            "靠近……",
+            "与……接近"
+          ],
+          "example": "The house is close to the park.",
+          "exampleZh": "房子在公园附近。",
+          "relation": "phrase-alternative",
+          "id": "s5-g38-i3",
+          "sourceGroupId": "s5-g38",
+          "session": 5,
+          "teacherNumber": "38",
+          "displayNumber": "38-3"
+        }
+      ]
+    },
+    {
+      "id": "s5-g39",
+      "teacherNumber": "39",
+      "sourceText": "flamingo",
+      "items": [
+        {
+          "term": "flamingo",
+          "meaningZh": "火烈鸟（一种红色的鸟类）",
+          "acceptedMeaningsZh": [
+            "火烈鸟（一种红色的鸟类）"
+          ],
+          "example": "Look at that beautiful flamingo in the lake.",
+          "exampleZh": "看湖里的那只美丽的火烈鸟。",
+          "relation": "single",
+          "id": "s5-g39-i1",
+          "sourceGroupId": "s5-g39",
+          "session": 5,
+          "teacherNumber": "39",
+          "displayNumber": "39"
+        }
+      ]
+    },
+    {
+      "id": "s5-g40",
+      "teacherNumber": "40",
+      "sourceText": "all of them",
+      "items": [
+        {
+          "term": "all of them",
+          "meaningZh": "它们全部",
+          "acceptedMeaningsZh": [
+            "它们全部",
+            "所有这些"
+          ],
+          "example": "All of them are ready to go.",
+          "exampleZh": "它们都准备好了要出发。",
+          "relation": "phrase-alternative",
+          "id": "s5-g40-i1",
+          "sourceGroupId": "s5-g40",
+          "session": 5,
+          "teacherNumber": "40",
+          "displayNumber": "40"
+        }
+      ]
+    },
+    {
+      "id": "s5-g41",
+      "teacherNumber": "41",
+      "sourceText": "there / their",
+      "items": [
+        {
+          "term": "there",
+          "meaningZh": "那里",
+          "acceptedMeaningsZh": [
+            "那里",
+            "那地方"
+          ],
+          "example": "They are there.",
+          "exampleZh": "他们在那里。",
+          "relation": "single",
+          "id": "s5-g41-i1",
+          "sourceGroupId": "s5-g41",
+          "session": 5,
+          "teacherNumber": "41",
+          "displayNumber": "41-1"
+        },
+        {
+          "term": "their",
+          "meaningZh": "他们的",
+          "acceptedMeaningsZh": [
+            "他们的",
+            "她们的",
+            "它们的"
+          ],
+          "example": "This is their book.",
+          "exampleZh": "这是他们的书。",
+          "relation": "single",
+          "id": "s5-g41-i2",
+          "sourceGroupId": "s5-g41",
+          "session": 5,
+          "teacherNumber": "41",
+          "displayNumber": "41-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g42",
+      "teacherNumber": "42",
+      "sourceText": "baby → babies",
+      "items": [
+        {
+          "term": "baby",
+          "meaningZh": "婴儿",
+          "acceptedMeaningsZh": [
+            "婴儿",
+            "小孩"
+          ],
+          "example": "The baby is sleeping.",
+          "exampleZh": "这个婴儿正在睡觉。",
+          "relation": "single",
+          "id": "s5-g42-i1",
+          "sourceGroupId": "s5-g42",
+          "session": 5,
+          "teacherNumber": "42",
+          "displayNumber": "42-1"
+        },
+        {
+          "term": "babies",
+          "meaningZh": "婴儿（复数）",
+          "acceptedMeaningsZh": [
+            "婴儿",
+            "婴儿的复数"
+          ],
+          "example": "There are many babies in the hospital.",
+          "exampleZh": "有好多婴儿在医院。",
+          "relation": "single",
+          "id": "s5-g42-i2",
+          "sourceGroupId": "s5-g42",
+          "session": 5,
+          "teacherNumber": "42",
+          "displayNumber": "42-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g43",
+      "teacherNumber": "43",
+      "sourceText": "animal keeper",
+      "items": [
+        {
+          "term": "animal keeper",
+          "meaningZh": "动物饲养员",
+          "acceptedMeaningsZh": [
+            "动物饲养员",
+            "动物园管理员"
+          ],
+          "example": "He is an animal keeper.",
+          "exampleZh": "他是一名动物饲养员。",
+          "relation": "single",
+          "id": "s5-g43-i1",
+          "sourceGroupId": "s5-g43",
+          "session": 5,
+          "teacherNumber": "43",
+          "displayNumber": "43"
+        }
+      ]
+    },
+    {
+      "id": "s5-g44",
+      "teacherNumber": "44",
+      "sourceText": "try to feed",
+      "items": [
+        {
+          "term": "try to feed",
+          "meaningZh": "尝试喂养",
+          "acceptedMeaningsZh": [
+            "尝试喂养",
+            "试着喂食物"
+          ],
+          "example": "Try to feed the birds every morning.",
+          "exampleZh": "每天早上试着喂鸟。",
+          "relation": "phrase-alternative",
+          "id": "s5-g44-i1",
+          "sourceGroupId": "s5-g44",
+          "session": 5,
+          "teacherNumber": "44",
+          "displayNumber": "44"
+        }
+      ]
+    },
+    {
+      "id": "s5-g45",
+      "teacherNumber": "45",
+      "sourceText": "be going to ... / be going to do",
+      "items": [
+        {
+          "term": "be going to...",
+          "meaningZh": "将要",
+          "acceptedMeaningsZh": [
+            "将要",
+            "打算做某事"
+          ],
+          "example": "I am going to visit my grandparents.",
+          "exampleZh": "我打算去拜访我的祖父母。",
+          "relation": "pattern",
+          "id": "s5-g45-i1",
+          "sourceGroupId": "s5-g45",
+          "session": 5,
+          "teacherNumber": "45",
+          "displayNumber": "45-1"
+        },
+        {
+          "term": "be going to do",
+          "meaningZh": "将要做",
+          "acceptedMeaningsZh": [
+            "将要做",
+            "打算做"
+          ],
+          "example": "I am going to go home.",
+          "exampleZh": "我要回家。",
+          "relation": "phrase-alternative",
+          "id": "s5-g45-i2",
+          "sourceGroupId": "s5-g45",
+          "session": 5,
+          "teacherNumber": "45",
+          "displayNumber": "45-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g46",
+      "teacherNumber": "46",
+      "sourceText": "give sb. sth. / give the baby sweets",
+      "items": [
+        {
+          "term": "give sb. sth.",
+          "meaningZh": "给某人某物",
+          "acceptedMeaningsZh": [
+            "给某人某物",
+            "把东西交给某人"
+          ],
+          "example": "Give me a pen.",
+          "exampleZh": "给我一支钢笔。",
+          "relation": "phrase-alternative",
+          "id": "s5-g46-i1",
+          "sourceGroupId": "s5-g46",
+          "session": 5,
+          "teacherNumber": "46",
+          "displayNumber": "46-1"
+        },
+        {
+          "term": "give the baby sweets",
+          "meaningZh": "给婴儿糖果",
+          "acceptedMeaningsZh": [
+            "给婴儿糖果",
+            "喂宝宝甜食"
+          ],
+          "example": "Give the baby some sweets.",
+          "exampleZh": "给宝宝一些糖果。",
+          "relation": "phrase-alternative",
+          "id": "s5-g46-i2",
+          "sourceGroupId": "s5-g46",
+          "session": 5,
+          "teacherNumber": "46",
+          "displayNumber": "46-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g47",
+      "teacherNumber": "47",
+      "sourceText": "injection (injections)",
+      "items": [
+        {
+          "term": "injection (injections)",
+          "meaningZh": "注射；打针",
+          "acceptedMeaningsZh": [
+            "注射",
+            "打针"
+          ],
+          "example": "The doctor gave an injection.",
+          "exampleZh": "医生给病人打了针。",
+          "relation": "phrase-alternative",
+          "id": "s5-g47-i1",
+          "sourceGroupId": "s5-g47",
+          "session": 5,
+          "teacherNumber": "47",
+          "displayNumber": "47"
+        }
+      ]
+    },
+    {
+      "id": "s5-g48",
+      "teacherNumber": "48",
+      "sourceText": "keep healthy",
+      "items": [
+        {
+          "term": "keep healthy",
+          "meaningZh": "保持健康",
+          "acceptedMeaningsZh": [
+            "保持健康",
+            "保重身体"
+          ],
+          "example": "Keep yourself healthy.",
+          "exampleZh": "保持身体健康。",
+          "relation": "phrase-alternative",
+          "id": "s5-g48-i1",
+          "sourceGroupId": "s5-g48",
+          "session": 5,
+          "teacherNumber": "48",
+          "displayNumber": "48"
+        }
+      ]
+    },
+    {
+      "id": "s5-g49",
+      "teacherNumber": "49",
+      "sourceText": "get closer to ...",
+      "items": [
+        {
+          "term": "get closer to ...",
+          "meaningZh": "靠近……",
+          "acceptedMeaningsZh": [
+            "靠近……",
+            "接近……"
+          ],
+          "example": "We are getting closer to the finish line.",
+          "exampleZh": "我们正接近终点。",
+          "relation": "phrase-alternative",
+          "id": "s5-g49-i1",
+          "sourceGroupId": "s5-g49",
+          "session": 5,
+          "teacherNumber": "49",
+          "displayNumber": "49"
+        }
+      ]
+    },
+    {
+      "id": "s5-g50",
+      "teacherNumber": "50",
+      "sourceText": "see → saw",
+      "items": [
+        {
+          "term": "see",
+          "meaningZh": "看见（原形）",
+          "acceptedMeaningsZh": [
+            "看见",
+            "看到"
+          ],
+          "example": "I can see you clearly now.",
+          "exampleZh": "我现在能清楚地看到你。",
+          "relation": "single",
+          "id": "s5-g50-i1",
+          "sourceGroupId": "s5-g50",
+          "session": 5,
+          "teacherNumber": "50",
+          "displayNumber": "50-1"
+        },
+        {
+          "term": "saw",
+          "meaningZh": "看见（过去式）",
+          "acceptedMeaningsZh": [
+            "看见",
+            "看到",
+            "see的过去式"
+          ],
+          "example": "He saw me yesterday morning.",
+          "exampleZh": "他昨天早上看到了我。",
+          "relation": "inflection",
+          "id": "s5-g50-i2",
+          "sourceGroupId": "s5-g50",
+          "session": 5,
+          "teacherNumber": "50",
+          "displayNumber": "50-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g51",
+      "teacherNumber": "51",
+      "sourceText": "last week / last month / last year",
+      "items": [
+        {
+          "term": "last week",
+          "meaningZh": "上周",
+          "acceptedMeaningsZh": [
+            "上周",
+            "上个星期"
+          ],
+          "example": "I went to the park last week.",
+          "exampleZh": "我上周去了公园。",
+          "relation": "list",
+          "id": "s5-g51-i1",
+          "sourceGroupId": "s5-g51",
+          "session": 5,
+          "teacherNumber": "51",
+          "displayNumber": "51-1"
+        },
+        {
+          "term": "last month",
+          "meaningZh": "上个月",
+          "acceptedMeaningsZh": [
+            "上个月",
+            "上月"
+          ],
+          "example": "We visited my grandparents last month.",
+          "exampleZh": "我们上个月拜访了祖父母。",
+          "relation": "list",
+          "id": "s5-g51-i2",
+          "sourceGroupId": "s5-g51",
+          "session": 5,
+          "teacherNumber": "51",
+          "displayNumber": "51-2"
+        },
+        {
+          "term": "last year",
+          "meaningZh": "去年",
+          "acceptedMeaningsZh": [
+            "去年",
+            "上一年的"
+          ],
+          "example": "It was a wonderful day last year.",
+          "exampleZh": "那是去年一个美好的日子。",
+          "relation": "list",
+          "id": "s5-g51-i3",
+          "sourceGroupId": "s5-g51",
+          "session": 5,
+          "teacherNumber": "51",
+          "displayNumber": "51-3"
+        }
+      ]
+    },
+    {
+      "id": "s5-g52",
+      "teacherNumber": "52",
+      "sourceText": "different / look different from ...",
+      "items": [
+        {
+          "term": "different",
+          "meaningZh": "不同的",
+          "acceptedMeaningsZh": [
+            "不同的",
+            "不一样的"
+          ],
+          "example": "The two photos look different.",
+          "exampleZh": "这两张照片看起来不一样。",
+          "relation": "single",
+          "id": "s5-g52-i1",
+          "sourceGroupId": "s5-g52",
+          "session": 5,
+          "teacherNumber": "52",
+          "displayNumber": "52-1"
+        },
+        {
+          "term": "look different from ...",
+          "meaningZh": "与……不同",
+          "acceptedMeaningsZh": [
+            "与……不同",
+            "和……不一样"
+          ],
+          "example": "She looks very different from her sister.",
+          "exampleZh": "她和她的姐姐看起来很不一样。",
+          "relation": "phrase-alternative",
+          "id": "s5-g52-i2",
+          "sourceGroupId": "s5-g52",
+          "session": 5,
+          "teacherNumber": "52",
+          "displayNumber": "52-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g53",
+      "teacherNumber": "53",
+      "sourceText": "crawl",
+      "items": [
+        {
+          "term": "crawl",
+          "meaningZh": "爬行",
+          "acceptedMeaningsZh": [
+            "爬行",
+            "爬"
+          ],
+          "example": "The children are crawling on the ground.",
+          "exampleZh": "孩子们正在地上爬行。",
+          "relation": "single",
+          "id": "s5-g53-i1",
+          "sourceGroupId": "s5-g53",
+          "session": 5,
+          "teacherNumber": "53",
+          "displayNumber": "53"
+        }
+      ]
+    },
+    {
+      "id": "s5-g54",
+      "teacherNumber": "54",
+      "sourceText": "spend the day resting",
+      "items": [
+        {
+          "term": "spend the day resting",
+          "meaningZh": "用一天休息",
+          "acceptedMeaningsZh": [
+            "用一天休息",
+            "花一天休息"
+          ],
+          "example": "We spent the day resting at home.",
+          "exampleZh": "我们在家度过了一个休息的一天。",
+          "relation": "phrase-alternative",
+          "id": "s5-g54-i1",
+          "sourceGroupId": "s5-g54",
+          "session": 5,
+          "teacherNumber": "54",
+          "displayNumber": "54"
+        }
+      ]
+    },
+    {
+      "id": "s5-g55",
+      "teacherNumber": "55",
+      "sourceText": "how to dive",
+      "items": [
+        {
+          "term": "how to dive",
+          "meaningZh": "如何潜水",
+          "acceptedMeaningsZh": [
+            "如何潜水"
+          ],
+          "example": "I don't know how to dive yet.",
+          "exampleZh": "我还不怎么知道如何潜水。",
+          "relation": "pattern",
+          "id": "s5-g55-i1",
+          "sourceGroupId": "s5-g55",
+          "session": 5,
+          "teacherNumber": "55",
+          "displayNumber": "55"
+        }
+      ]
+    },
+    {
+      "id": "s5-g56",
+      "teacherNumber": "56",
+      "sourceText": "see sb. doing",
+      "items": [
+        {
+          "term": "see sb. doing",
+          "meaningZh": "看见某人正在做某事",
+          "acceptedMeaningsZh": [
+            "看见某人正在做某事"
+          ],
+          "example": "I saw him playing football in the park.",
+          "exampleZh": "我看见他在公园里踢足球了。",
+          "relation": "pattern",
+          "id": "s5-g56-i1",
+          "sourceGroupId": "s5-g56",
+          "session": 5,
+          "teacherNumber": "56",
+          "displayNumber": "56"
+        }
+      ]
+    },
+    {
+      "id": "s5-g57",
+      "teacherNumber": "57",
+      "sourceText": "nine years old / nine-year-old",
+      "items": [
+        {
+          "term": "nine years old",
+          "meaningZh": "九岁",
+          "acceptedMeaningsZh": [
+            "九岁",
+            "九年大"
+          ],
+          "example": "I am nine years old.",
+          "exampleZh": "我九岁了。",
+          "relation": "single",
+          "id": "s5-g57-i1",
+          "sourceGroupId": "s5-g57",
+          "session": 5,
+          "teacherNumber": "57",
+          "displayNumber": "57-1"
+        },
+        {
+          "term": "nine-year-old",
+          "meaningZh": "九岁的",
+          "acceptedMeaningsZh": [
+            "九岁的",
+            "九年制的"
+          ],
+          "example": "He is a nine-year-old boy.",
+          "exampleZh": "他是一个九岁的孩子。",
+          "relation": "single",
+          "id": "s5-g57-i2",
+          "sourceGroupId": "s5-g57",
+          "session": 5,
+          "teacherNumber": "57",
+          "displayNumber": "57-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g58",
+      "teacherNumber": "58",
+      "sourceText": "give birth to",
+      "items": [
+        {
+          "term": "give birth to",
+          "meaningZh": "生育",
+          "acceptedMeaningsZh": [
+            "生育",
+            "生孩子"
+          ],
+          "example": "She gave birth to a baby.",
+          "exampleZh": "她生了一个婴儿。",
+          "relation": "phrase-alternative",
+          "id": "s5-g58-i1",
+          "sourceGroupId": "s5-g58",
+          "session": 5,
+          "teacherNumber": "58",
+          "displayNumber": "58"
+        }
+      ]
+    },
+    {
+      "id": "s5-g59",
+      "teacherNumber": "59",
+      "sourceText": "feed → fed",
+      "items": [
+        {
+          "term": "feed",
+          "meaningZh": "喂养（原形）",
+          "acceptedMeaningsZh": [
+            "喂养",
+            "喂"
+          ],
+          "example": "The dog needs to be fed.",
+          "exampleZh": "这只狗需要被喂食。",
+          "relation": "single",
+          "id": "s5-g59-i1",
+          "sourceGroupId": "s5-g59",
+          "session": 5,
+          "teacherNumber": "59",
+          "displayNumber": "59-1"
+        },
+        {
+          "term": "fed",
+          "meaningZh": "喂养（过去式）",
+          "acceptedMeaningsZh": [
+            "喂养",
+            "喂",
+            "feed的过去式"
+          ],
+          "example": "Fed me a cookie.",
+          "exampleZh": "给我一块曲奇饼干。",
+          "relation": "single",
+          "id": "s5-g59-i2",
+          "sourceGroupId": "s5-g59",
+          "session": 5,
+          "teacherNumber": "59",
+          "displayNumber": "59-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g60",
+      "teacherNumber": "60",
+      "sourceText": "feed grass / leaves",
+      "items": [
+        {
+          "term": "feed grass",
+          "meaningZh": "喂草",
+          "acceptedMeaningsZh": [
+            "喂草",
+            "给草吃"
+          ],
+          "example": "The cows feed grass every morning.",
+          "exampleZh": "这头牛每天早上都喂草。",
+          "relation": "phrase-alternative",
+          "id": "s5-g60-i1",
+          "sourceGroupId": "s5-g60",
+          "session": 5,
+          "teacherNumber": "60",
+          "displayNumber": "60-1"
+        },
+        {
+          "term": "leaves",
+          "meaningZh": "叶子",
+          "acceptedMeaningsZh": [
+            "叶子",
+            "落叶"
+          ],
+          "example": "The leaves are green.",
+          "exampleZh": "叶子。",
+          "relation": "single",
+          "id": "s5-g60-i2",
+          "sourceGroupId": "s5-g60",
+          "session": 5,
+          "teacherNumber": "60",
+          "displayNumber": "60-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g61",
+      "teacherNumber": "61",
+      "sourceText": "eat → ate",
+      "items": [
+        {
+          "term": "eat",
+          "meaningZh": "吃（原形）",
+          "acceptedMeaningsZh": [
+            "吃"
+          ],
+          "example": "I eat an apple every day.",
+          "exampleZh": "我每天吃一个苹果。",
+          "relation": "single",
+          "id": "s5-g61-i1",
+          "sourceGroupId": "s5-g61",
+          "session": 5,
+          "teacherNumber": "61",
+          "displayNumber": "61-1"
+        },
+        {
+          "term": "ate",
+          "meaningZh": "吃（过去式）",
+          "acceptedMeaningsZh": [
+            "吃",
+            "eat的过去式"
+          ],
+          "example": "He ate an apple.",
+          "exampleZh": "他吃了一个苹果。",
+          "relation": "single",
+          "id": "s5-g61-i2",
+          "sourceGroupId": "s5-g61",
+          "session": 5,
+          "teacherNumber": "61",
+          "displayNumber": "61-2"
+        }
+      ]
+    },
+    {
+      "id": "s5-g62",
+      "teacherNumber": "62",
+      "sourceText": "shrimp",
+      "items": [
+        {
+          "term": "shrimp",
+          "meaningZh": "虾",
+          "acceptedMeaningsZh": [
+            "虾",
+            "小虾"
+          ],
+          "example": "This is a shrimp.",
+          "exampleZh": "这项是小虾。",
+          "relation": "single",
+          "id": "s5-g62-i1",
+          "sourceGroupId": "s5-g62",
+          "session": 5,
+          "teacherNumber": "62",
+          "displayNumber": "62"
+        }
+      ]
+    },
+    {
+      "id": "s5-g63",
+      "teacherNumber": "63",
+      "sourceText": "algae",
+      "items": [
+        {
+          "term": "algae",
+          "meaningZh": "藻类",
+          "acceptedMeaningsZh": [
+            "藻类",
+            "海藻"
+          ],
+          "example": "Algae live in water.",
+          "exampleZh": "这些生物生活在水中。",
+          "relation": "single",
+          "id": "s5-g63-i1",
+          "sourceGroupId": "s5-g63",
+          "session": 5,
+          "teacherNumber": "63",
+          "displayNumber": "63"
+        }
+      ]
+    },
+    {
+      "id": "s5-g64",
+      "teacherNumber": "64",
+      "sourceText": "long necks",
+      "items": [
+        {
+          "term": "long necks",
+          "meaningZh": "长脖子",
+          "acceptedMeaningsZh": [
+            "长脖子"
+          ],
+          "example": "They have long necks.",
+          "exampleZh": "它们有长脖子。",
+          "relation": "list",
+          "id": "s5-g64-i1",
+          "sourceGroupId": "s5-g64",
+          "session": 5,
+          "teacherNumber": "64",
+          "displayNumber": "64"
+        }
+      ]
+    },
+    {
+      "id": "s5-g65",
+      "teacherNumber": "65",
+      "sourceText": "lay ... on ...",
+      "items": [
+        {
+          "term": "lay...on...",
+          "meaningZh": "把……放在……上",
+          "acceptedMeaningsZh": [
+            "把放在上",
+            "放在上面"
+          ],
+          "example": "He lay on the bed.",
+          "exampleZh": "他把身体放在床上。",
+          "relation": "phrase-alternative",
+          "id": "s5-g65-i1",
+          "sourceGroupId": "s5-g65",
+          "session": 5,
+          "teacherNumber": "65",
+          "displayNumber": "65"
+        }
+      ]
+    },
+    {
+      "id": "s5-g66",
+      "teacherNumber": "66",
+      "sourceText": "their heads / backs",
+      "items": [
+        {
+          "term": "their heads",
+          "meaningZh": "它们的头",
+          "acceptedMeaningsZh": [
+            "它们的头",
+            "他们的头"
+          ],
+          "example": "They put their heads down.",
+          "exampleZh": "他们把脑袋低下去。",
+          "relation": "single",
+          "id": "s5-g66-i1",
+          "sourceGroupId": "s5-g66",
+          "session": 5,
+          "teacherNumber": "66",
+          "displayNumber": "66-1"
+        },
+        {
+          "term": "their backs",
+          "meaningZh": "它们的背部",
+          "acceptedMeaningsZh": [
+            "它们的背部",
+            "他们的背部"
+          ],
+          "example": "She touched her backs.",
+          "exampleZh": "她摸了摸她的背。",
+          "relation": "list",
+          "id": "s5-g66-i2",
+          "sourceGroupId": "s5-g66",
+          "session": 5,
+          "teacherNumber": "66",
+          "displayNumber": "66-2"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "term": "make and write",
+      "meaningZh": "制作并书写",
+      "acceptedMeaningsZh": [
+        "制作并书写",
+        "写作练习"
+      ],
+      "example": "Make and write a story.",
+      "exampleZh": "做一个故事。",
+      "relation": "phrase-alternative",
+      "id": "s5-g1-i1",
+      "sourceGroupId": "s5-g1",
+      "session": 5,
+      "teacherNumber": "1",
+      "displayNumber": "1"
+    },
+    {
+      "term": "observation",
+      "meaningZh": "观察",
+      "acceptedMeaningsZh": [
+        "观察",
+        "观测"
+      ],
+      "example": "We made an observation about the sky.",
+      "exampleZh": "我们对天空进行了观察。",
+      "relation": "single",
+      "id": "s5-g2-i1",
+      "sourceGroupId": "s5-g2",
+      "session": 5,
+      "teacherNumber": "2",
+      "displayNumber": "2"
+    },
+    {
+      "term": "diary",
+      "meaningZh": "日记",
+      "acceptedMeaningsZh": [
+        "日记",
+        "日记录"
+      ],
+      "example": "I write my diary every day.",
+      "exampleZh": "我每天都写日记。",
+      "relation": "single",
+      "id": "s5-g3-i1",
+      "sourceGroupId": "s5-g3",
+      "session": 5,
+      "teacherNumber": "3",
+      "displayNumber": "3"
+    },
+    {
+      "term": "whale (whales)",
+      "meaningZh": "鲸鱼（鲸类）",
+      "acceptedMeaningsZh": [
+        "鲸鱼（鲸类）"
+      ],
+      "example": "The whale is swimming in the ocean.",
+      "exampleZh": "这只鲸鱼正在海洋里游动。",
+      "relation": "list",
+      "id": "s5-g4-i1",
+      "sourceGroupId": "s5-g4",
+      "session": 5,
+      "teacherNumber": "4",
+      "displayNumber": "4"
+    },
+    {
+      "term": "safari park",
+      "meaningZh": "野生动物园",
+      "acceptedMeaningsZh": [
+        "野生动物园",
+        "动物园里的野生动物保护区"
+      ],
+      "example": "We visited a safari park.",
+      "exampleZh": "我们参观了一个野生动物园。",
+      "relation": "single",
+      "id": "s5-g5-i1",
+      "sourceGroupId": "s5-g5",
+      "session": 5,
+      "teacherNumber": "5",
+      "displayNumber": "5"
+    },
+    {
+      "term": "panda",
+      "meaningZh": "熊猫",
+      "acceptedMeaningsZh": [
+        "熊猫",
+        "中国的国宝"
+      ],
+      "example": "The panda is cute.",
+      "exampleZh": "这只熊猫很可爱。",
+      "relation": "single",
+      "id": "s5-g6-i1",
+      "sourceGroupId": "s5-g6",
+      "session": 5,
+      "teacherNumber": "6",
+      "displayNumber": "6"
+    },
+    {
+      "term": "giraffe",
+      "meaningZh": "长颈鹿",
+      "acceptedMeaningsZh": [
+        "长颈鹿",
+        "脖子很长的动物"
+      ],
+      "example": "Look at the giraffe.",
+      "exampleZh": "看那只长颈鹿。",
+      "relation": "single",
+      "id": "s5-g7-i1",
+      "sourceGroupId": "s5-g7",
+      "session": 5,
+      "teacherNumber": "7",
+      "displayNumber": "7"
+    },
+    {
+      "term": "hippo",
+      "meaningZh": "河马",
+      "acceptedMeaningsZh": [
+        "河马",
+        "生活在河流里的哺乳动物"
+      ],
+      "example": "The hippo is big.",
+      "exampleZh": "这只河马很大。",
+      "relation": "single",
+      "id": "s5-g8-i1",
+      "sourceGroupId": "s5-g8",
+      "session": 5,
+      "teacherNumber": "8",
+      "displayNumber": "8"
+    },
+    {
+      "term": "feel",
+      "meaningZh": "感觉；摸起来",
+      "acceptedMeaningsZh": [
+        "感觉",
+        "摸起来"
+      ],
+      "example": "I can feel the wind.",
+      "exampleZh": "我能感觉到风。",
+      "relation": "single",
+      "id": "s5-g9-i1",
+      "sourceGroupId": "s5-g9",
+      "session": 5,
+      "teacherNumber": "9",
+      "displayNumber": "9-1"
+    },
+    {
+      "term": "look",
+      "meaningZh": "看起来",
+      "acceptedMeaningsZh": [
+        "看起来",
+        "看"
+      ],
+      "example": "Look at that bird.",
+      "exampleZh": "看看那只鸟。",
+      "relation": "single",
+      "id": "s5-g9-i2",
+      "sourceGroupId": "s5-g9",
+      "session": 5,
+      "teacherNumber": "9",
+      "displayNumber": "9-2"
+    },
+    {
+      "term": "taste",
+      "meaningZh": "尝起来",
+      "acceptedMeaningsZh": [
+        "尝起来",
+        "品尝"
+      ],
+      "example": "The soup tastes good.",
+      "exampleZh": "这汤尝起来很好。",
+      "relation": "single",
+      "id": "s5-g9-i3",
+      "sourceGroupId": "s5-g9",
+      "session": 5,
+      "teacherNumber": "9",
+      "displayNumber": "9-3"
+    },
+    {
+      "term": "sound",
+      "meaningZh": "听起来",
+      "acceptedMeaningsZh": [
+        "听起来"
+      ],
+      "example": "It sounds interesting.",
+      "exampleZh": "它听起来很有趣。",
+      "relation": "single",
+      "id": "s5-g9-i4",
+      "sourceGroupId": "s5-g9",
+      "session": 5,
+      "teacherNumber": "9",
+      "displayNumber": "9-4"
+    },
+    {
+      "term": "list the ideas",
+      "meaningZh": "列出想法",
+      "acceptedMeaningsZh": [
+        "列出想法",
+        "列举主意"
+      ],
+      "example": "List the ideas.",
+      "exampleZh": "列出这些想法。",
+      "relation": "phrase-alternative",
+      "id": "s5-g10-i1",
+      "sourceGroupId": "s5-g10",
+      "session": 5,
+      "teacherNumber": "10",
+      "displayNumber": "10"
+    },
+    {
+      "term": "go to see",
+      "meaningZh": "去看；去参观",
+      "acceptedMeaningsZh": [
+        "去看",
+        "去参观"
+      ],
+      "example": "Let's go to see the museum.",
+      "exampleZh": "让我们一起去参观博物馆。",
+      "relation": "phrase-alternative",
+      "id": "s5-g11-i1",
+      "sourceGroupId": "s5-g11",
+      "session": 5,
+      "teacherNumber": "11",
+      "displayNumber": "11"
+    },
+    {
+      "term": "visit",
+      "meaningZh": "拜访",
+      "acceptedMeaningsZh": [
+        "拜访",
+        "访问"
+      ],
+      "example": "I will visit my grandmother tomorrow.",
+      "exampleZh": "我明天会去探望我的祖母。",
+      "relation": "single",
+      "id": "s5-g12-i1",
+      "sourceGroupId": "s5-g12",
+      "session": 5,
+      "teacherNumber": "12",
+      "displayNumber": "12"
+    },
+    {
+      "term": "take a truck tour",
+      "meaningZh": "乘卡车游览",
+      "acceptedMeaningsZh": [
+        "乘卡车游览",
+        "坐卡车去参观"
+      ],
+      "example": "We will take a truck tour to the mountains.",
+      "exampleZh": "我们将乘坐卡车去山区游览。",
+      "relation": "phrase-alternative",
+      "id": "s5-g13-i1",
+      "sourceGroupId": "s5-g13",
+      "session": 5,
+      "teacherNumber": "13",
+      "displayNumber": "13"
+    },
+    {
+      "term": "watch a movie",
+      "meaningZh": "看电影",
+      "acceptedMeaningsZh": [
+        "看电影",
+        "观看电影"
+      ],
+      "example": "Let's watch a movie this evening.",
+      "exampleZh": "让我们今晚看一部电影吧。",
+      "relation": "single",
+      "id": "s5-g14-i1",
+      "sourceGroupId": "s5-g14",
+      "session": 5,
+      "teacherNumber": "14",
+      "displayNumber": "14-1"
+    },
+    {
+      "term": "see a film",
+      "meaningZh": "看电影",
+      "acceptedMeaningsZh": [
+        "看电影",
+        "观赏影片"
+      ],
+      "example": "I want to see a film tonight.",
+      "exampleZh": "我想今晚去看一场电影。",
+      "relation": "synonym",
+      "id": "s5-g14-i2",
+      "sourceGroupId": "s5-g14",
+      "session": 5,
+      "teacherNumber": "14",
+      "displayNumber": "14-2"
+    },
+    {
+      "term": "prepare for",
+      "meaningZh": "为……做准备",
+      "acceptedMeaningsZh": [
+        "为……做准备",
+        "准备迎接"
+      ],
+      "example": "She is preparing for the exam.",
+      "exampleZh": "她正在为考试做准备。",
+      "relation": "phrase-alternative",
+      "id": "s5-g15-i1",
+      "sourceGroupId": "s5-g15",
+      "session": 5,
+      "teacherNumber": "15",
+      "displayNumber": "15"
+    },
+    {
+      "term": "good",
+      "meaningZh": "好的",
+      "acceptedMeaningsZh": [
+        "好的",
+        "优秀的",
+        "有益的"
+      ],
+      "example": "Good morning, everyone!",
+      "exampleZh": "大家早上好！",
+      "relation": "single",
+      "id": "s5-g16-i1",
+      "sourceGroupId": "s5-g16",
+      "session": 5,
+      "teacherNumber": "16",
+      "displayNumber": "16-1"
+    },
+    {
+      "term": "better",
+      "meaningZh": "更好的",
+      "acceptedMeaningsZh": [
+        "更好的",
+        "更优的",
+        "较佳的"
+      ],
+      "example": "This cake is better than that one.",
+      "exampleZh": "这块蛋糕比那块更好吃。",
+      "relation": "inflection",
+      "id": "s5-g16-i2",
+      "sourceGroupId": "s5-g16",
+      "session": 5,
+      "teacherNumber": "16",
+      "displayNumber": "16-2"
+    },
+    {
+      "term": "understanding",
+      "meaningZh": "理解",
+      "acceptedMeaningsZh": [
+        "理解",
+        "懂得的"
+      ],
+      "example": "I have a good understanding.",
+      "exampleZh": "我有很好的了解。",
+      "relation": "single",
+      "id": "s5-g17-i1",
+      "sourceGroupId": "s5-g17",
+      "session": 5,
+      "teacherNumber": "17",
+      "displayNumber": "17"
+    },
+    {
+      "term": "find out",
+      "meaningZh": "找出",
+      "acceptedMeaningsZh": [
+        "找出",
+        "发现"
+      ],
+      "example": "Can you find out the answer?",
+      "exampleZh": "你能找到答案吗？",
+      "relation": "pattern",
+      "id": "s5-g18-i1",
+      "sourceGroupId": "s5-g18",
+      "session": 5,
+      "teacherNumber": "18",
+      "displayNumber": "18"
+    },
+    {
+      "term": "habit",
+      "meaningZh": "习惯",
+      "acceptedMeaningsZh": [
+        "习惯"
+      ],
+      "example": "It is a bad habit.",
+      "exampleZh": "这是一个坏习惯。",
+      "relation": "single",
+      "id": "s5-g19-i1",
+      "sourceGroupId": "s5-g19",
+      "session": 5,
+      "teacherNumber": "19",
+      "displayNumber": "19-1"
+    },
+    {
+      "term": "habits",
+      "meaningZh": "习惯（复数）",
+      "acceptedMeaningsZh": [
+        "习惯",
+        "习惯的复数"
+      ],
+      "example": "They have many good habits.",
+      "exampleZh": "他们有很多好习惯。",
+      "relation": "inflection",
+      "id": "s5-g19-i2",
+      "sourceGroupId": "s5-g19",
+      "session": 5,
+      "teacherNumber": "19",
+      "displayNumber": "19-2"
+    },
+    {
+      "term": "habits of animals",
+      "meaningZh": "动物的习性",
+      "acceptedMeaningsZh": [
+        "动物的习性",
+        "动物的习惯"
+      ],
+      "example": "Animals have different habits.",
+      "exampleZh": "动物有不同的习惯。",
+      "relation": "phrase-alternative",
+      "id": "s5-g20-i1",
+      "sourceGroupId": "s5-g20",
+      "session": 5,
+      "teacherNumber": "20",
+      "displayNumber": "20"
+    },
+    {
+      "term": "like",
+      "meaningZh": "喜欢",
+      "acceptedMeaningsZh": [
+        "喜欢",
+        "喜爱"
+      ],
+      "example": "I like cats.",
+      "exampleZh": "我喜欢猫。",
+      "relation": "single",
+      "id": "s5-g21-i1",
+      "sourceGroupId": "s5-g21",
+      "session": 5,
+      "teacherNumber": "21",
+      "displayNumber": "21"
+    },
+    {
+      "term": "learn about",
+      "meaningZh": "了解……",
+      "acceptedMeaningsZh": [
+        "了解",
+        "学习有关"
+      ],
+      "example": "We learn about space.",
+      "exampleZh": "我们学习太空知识。",
+      "relation": "phrase-alternative",
+      "id": "s5-g22-i1",
+      "sourceGroupId": "s5-g22",
+      "session": 5,
+      "teacherNumber": "22",
+      "displayNumber": "22"
+    },
+    {
+      "term": "threat",
+      "meaningZh": "威胁",
+      "acceptedMeaningsZh": [
+        "威胁",
+        "危险"
+      ],
+      "example": "There is a threat to the forest.",
+      "exampleZh": "森林面临威胁。",
+      "relation": "single",
+      "id": "s5-g23-i1",
+      "sourceGroupId": "s5-g23",
+      "session": 5,
+      "teacherNumber": "23",
+      "displayNumber": "23-1"
+    },
+    {
+      "term": "threat to sea animals",
+      "meaningZh": "对海洋动物的威胁",
+      "acceptedMeaningsZh": [
+        "对海洋动物的威胁"
+      ],
+      "example": "A shark poses a threat to sea turtles.",
+      "exampleZh": "鲨鱼对海龟构成威胁。",
+      "relation": "phrase-alternative",
+      "id": "s5-g23-i2",
+      "sourceGroupId": "s5-g23",
+      "session": 5,
+      "teacherNumber": "23",
+      "displayNumber": "23-2"
+    },
+    {
+      "term": "whale",
+      "meaningZh": "鲸鱼",
+      "acceptedMeaningsZh": [
+        "鲸鱼",
+        "大型鱼类哺乳动物"
+      ],
+      "example": "The blue whale is very big.",
+      "exampleZh": "蓝鲸非常大。",
+      "relation": "single",
+      "id": "s5-g24-i1",
+      "sourceGroupId": "s5-g24",
+      "session": 5,
+      "teacherNumber": "24",
+      "displayNumber": "24-1"
+    },
+    {
+      "term": "dolphin",
+      "meaningZh": "海豚",
+      "acceptedMeaningsZh": [
+        "海豚",
+        "海洋生物"
+      ],
+      "example": "Dolphins are smart animals.",
+      "exampleZh": "海豚是聪明的动物。",
+      "relation": "single",
+      "id": "s5-g24-i2",
+      "sourceGroupId": "s5-g24",
+      "session": 5,
+      "teacherNumber": "24",
+      "displayNumber": "24-2"
+    },
+    {
+      "term": "interact",
+      "meaningZh": "互相作用",
+      "acceptedMeaningsZh": [
+        "互相作用",
+        "互动"
+      ],
+      "example": "They interact with each other.",
+      "exampleZh": "他们彼此互动。",
+      "relation": "single",
+      "id": "s5-g25-i1",
+      "sourceGroupId": "s5-g25",
+      "session": 5,
+      "teacherNumber": "25",
+      "displayNumber": "25-1"
+    },
+    {
+      "term": "interact with",
+      "meaningZh": "与...互动",
+      "acceptedMeaningsZh": [
+        "与...互动",
+        "和...交流"
+      ],
+      "example": "We should interact with our teachers.",
+      "exampleZh": "我们应该和老师互动交流。",
+      "relation": "phrase-alternative",
+      "id": "s5-g25-i2",
+      "sourceGroupId": "s5-g25",
+      "session": 5,
+      "teacherNumber": "25",
+      "displayNumber": "25-2"
+    },
+    {
+      "term": "enjoy",
+      "meaningZh": "享受",
+      "acceptedMeaningsZh": [
+        "享受",
+        "喜爱"
+      ],
+      "example": "I enjoy reading books.",
+      "exampleZh": "我喜欢读书。",
+      "relation": "single",
+      "id": "s5-g26-i1",
+      "sourceGroupId": "s5-g26",
+      "session": 5,
+      "teacherNumber": "26",
+      "displayNumber": "26-1"
+    },
+    {
+      "term": "enjoy yourself",
+      "meaningZh": "玩得开心",
+      "acceptedMeaningsZh": [
+        "玩得开心",
+        "过得愉快"
+      ],
+      "example": "Please enjoy your holiday.",
+      "exampleZh": "祝您假期愉快，尽情放松。",
+      "relation": "phrase-alternative",
+      "id": "s5-g26-i2",
+      "sourceGroupId": "s5-g26",
+      "session": 5,
+      "teacherNumber": "26",
+      "displayNumber": "26-2"
+    },
+    {
+      "term": "fun activities",
+      "meaningZh": "有趣的活动",
+      "acceptedMeaningsZh": [
+        "有趣的活动",
+        "好玩的事情"
+      ],
+      "example": "We have fun activities.",
+      "exampleZh": "这些活动很有趣。",
+      "relation": "phrase-alternative",
+      "id": "s5-g27-i1",
+      "sourceGroupId": "s5-g27",
+      "session": 5,
+      "teacherNumber": "27",
+      "displayNumber": "27"
+    },
+    {
+      "term": "closed-toe shoes",
+      "meaningZh": "包头的鞋",
+      "acceptedMeaningsZh": [
+        "包头的鞋",
+        "有脚趾孔的鞋（错误）",
+        "不露趾的鞋子"
+      ],
+      "example": "She wears closed-toe shoes.",
+      "exampleZh": "她穿的是包头鞋。",
+      "relation": "single",
+      "id": "s5-g28-i1",
+      "sourceGroupId": "s5-g28",
+      "session": 5,
+      "teacherNumber": "28",
+      "displayNumber": "28"
+    },
+    {
+      "term": "raincoat",
+      "meaningZh": "雨衣",
+      "acceptedMeaningsZh": [
+        "雨衣",
+        "带雨披的斗篷"
+      ],
+      "example": "She wore a raincoat to school.",
+      "exampleZh": "她穿了一件雨衣去学校。",
+      "relation": "single",
+      "id": "s5-g29-i1",
+      "sourceGroupId": "s5-g29",
+      "session": 5,
+      "teacherNumber": "29",
+      "displayNumber": "29"
+    },
+    {
+      "term": "don't forget",
+      "meaningZh": "别忘了",
+      "acceptedMeaningsZh": [
+        "别忘了",
+        "不要忘记"
+      ],
+      "example": "Don't forget your homework.",
+      "exampleZh": "别忘了你的作业。",
+      "relation": "phrase-alternative",
+      "id": "s5-g30-i1",
+      "sourceGroupId": "s5-g30",
+      "session": 5,
+      "teacherNumber": "30",
+      "displayNumber": "30-1"
+    },
+    {
+      "term": "forget to do sth.",
+      "meaningZh": "忘记做某事",
+      "acceptedMeaningsZh": [
+        "忘记做某事"
+      ],
+      "example": "I forgot to lock the door.",
+      "exampleZh": "我忘了锁门。",
+      "relation": "pattern",
+      "id": "s5-g30-i2",
+      "sourceGroupId": "s5-g30",
+      "session": 5,
+      "teacherNumber": "30",
+      "displayNumber": "30-2"
+    },
+    {
+      "term": "take home",
+      "meaningZh": "带回家",
+      "acceptedMeaningsZh": [
+        "带回家",
+        "带回家"
+      ],
+      "example": "Please take this book home.",
+      "exampleZh": "请把这本书带回家。",
+      "relation": "phrase-alternative",
+      "id": "s5-g31-i1",
+      "sourceGroupId": "s5-g31",
+      "session": 5,
+      "teacherNumber": "31",
+      "displayNumber": "31-1"
+    },
+    {
+      "term": "take it (them) home",
+      "meaningZh": "把它（它们）带回家",
+      "acceptedMeaningsZh": [
+        "把它（它们）带回家"
+      ],
+      "example": "Take the toys home, please.",
+      "exampleZh": "把玩具们带回去吧，请。",
+      "relation": "phrase-alternative",
+      "id": "s5-g31-i2",
+      "sourceGroupId": "s5-g31",
+      "session": 5,
+      "teacherNumber": "31",
+      "displayNumber": "31-2"
+    },
+    {
+      "term": "bring",
+      "meaningZh": "带来",
+      "acceptedMeaningsZh": [
+        "带来",
+        "拿来"
+      ],
+      "example": "Can you bring me some water?",
+      "exampleZh": "你能给我拿点水吗？",
+      "relation": "single",
+      "id": "s5-g32-i1",
+      "sourceGroupId": "s5-g32",
+      "session": 5,
+      "teacherNumber": "32",
+      "displayNumber": "32"
+    },
+    {
+      "term": "behave",
+      "meaningZh": "表现",
+      "acceptedMeaningsZh": [
+        "表现",
+        "行为"
+      ],
+      "example": "He behaved well.",
+      "exampleZh": "他表现得很好。",
+      "relation": "single",
+      "id": "s5-g33-i1",
+      "sourceGroupId": "s5-g33",
+      "session": 5,
+      "teacherNumber": "33",
+      "displayNumber": "33-1"
+    },
+    {
+      "term": "how to behave",
+      "meaningZh": "如何表现",
+      "acceptedMeaningsZh": [
+        "如何表现",
+        "怎样举止"
+      ],
+      "example": "How should I behave here?",
+      "exampleZh": "我在这儿该怎么表现？",
+      "relation": "pattern",
+      "id": "s5-g33-i2",
+      "sourceGroupId": "s5-g33",
+      "session": 5,
+      "teacherNumber": "33",
+      "displayNumber": "33-2"
+    },
+    {
+      "term": "respect",
+      "meaningZh": "尊重",
+      "acceptedMeaningsZh": [
+        "尊重",
+        "尊敬"
+      ],
+      "example": "Please respect others.",
+      "exampleZh": "请尊重他人。",
+      "relation": "single",
+      "id": "s5-g34-i1",
+      "sourceGroupId": "s5-g34",
+      "session": 5,
+      "teacherNumber": "34",
+      "displayNumber": "34"
+    },
+    {
+      "term": "care for",
+      "meaningZh": "关心",
+      "acceptedMeaningsZh": [
+        "关心",
+        "照顾"
+      ],
+      "example": "I care for my sister.",
+      "exampleZh": "我照顾我的妹妹。",
+      "relation": "phrase-alternative",
+      "id": "s5-g35-i1",
+      "sourceGroupId": "s5-g35",
+      "session": 5,
+      "teacherNumber": "35",
+      "displayNumber": "35-1"
+    },
+    {
+      "term": "take care of",
+      "meaningZh": "照料",
+      "acceptedMeaningsZh": [
+        "照料",
+        "处理"
+      ],
+      "example": "Take care of your homework.",
+      "exampleZh": "把你的作业处理好。",
+      "relation": "phrase-alternative",
+      "id": "s5-g35-i2",
+      "sourceGroupId": "s5-g35",
+      "session": 5,
+      "teacherNumber": "35",
+      "displayNumber": "35-2"
+    },
+    {
+      "term": "take good care of",
+      "meaningZh": "好好照顾",
+      "acceptedMeaningsZh": [
+        "好好照顾",
+        "精心照料"
+      ],
+      "example": "Please take good care of the flowers.",
+      "exampleZh": "请好好照顾这些花。",
+      "relation": "phrase-alternative",
+      "id": "s5-g35-i3",
+      "sourceGroupId": "s5-g35",
+      "session": 5,
+      "teacherNumber": "35",
+      "displayNumber": "35-3"
+    },
+    {
+      "term": "protect",
+      "meaningZh": "保护",
+      "acceptedMeaningsZh": [
+        "保护",
+        "保卫"
+      ],
+      "example": "We must protect animals.",
+      "exampleZh": "我们必须保护动物。",
+      "relation": "single",
+      "id": "s5-g36-i1",
+      "sourceGroupId": "s5-g36",
+      "session": 5,
+      "teacherNumber": "36",
+      "displayNumber": "36"
+    },
+    {
+      "term": "would like to join",
+      "meaningZh": "想要加入",
+      "acceptedMeaningsZh": [
+        "想要加入",
+        "想参加"
+      ],
+      "example": "I would like to join the club.",
+      "exampleZh": "我想加入俱乐部。",
+      "relation": "phrase-alternative",
+      "id": "s5-g37-i1",
+      "sourceGroupId": "s5-g37",
+      "session": 5,
+      "teacherNumber": "37",
+      "displayNumber": "37-1"
+    },
+    {
+      "term": "would not like to join",
+      "meaningZh": "不想加入",
+      "acceptedMeaningsZh": [
+        "不想加入",
+        "不愿参加"
+      ],
+      "example": "She wouldn't like to join us.",
+      "exampleZh": "她不愿意加入我们。",
+      "relation": "phrase-alternative",
+      "id": "s5-g37-i2",
+      "sourceGroupId": "s5-g37",
+      "session": 5,
+      "teacherNumber": "37",
+      "displayNumber": "37-2"
+    },
+    {
+      "term": "wouldn't",
+      "meaningZh": "不会；不愿意",
+      "acceptedMeaningsZh": [
+        "不会",
+        "不愿意",
+        "would not的缩写"
+      ],
+      "example": "I wouldn't go there.",
+      "exampleZh": "我不会去那里。",
+      "relation": "inflection",
+      "id": "s5-g37-i3",
+      "sourceGroupId": "s5-g37",
+      "session": 5,
+      "teacherNumber": "37",
+      "displayNumber": "37-3"
+    },
+    {
+      "term": "close (verb)",
+      "meaningZh": "关闭",
+      "acceptedMeaningsZh": [
+        "关闭",
+        "靠近（动词）"
+      ],
+      "example": "Please close the door.",
+      "exampleZh": "请关门。",
+      "relation": "single",
+      "id": "s5-g38-i1",
+      "sourceGroupId": "s5-g38",
+      "session": 5,
+      "teacherNumber": "38",
+      "displayNumber": "38-1"
+    },
+    {
+      "term": "close (adjective)",
+      "meaningZh": "近的",
+      "acceptedMeaningsZh": [
+        "近的",
+        "亲密的（形容词）"
+      ],
+      "example": "He is my best friend and he is very close to me.",
+      "exampleZh": "他是我的好朋友，他离我很近/很亲近我。",
+      "relation": "single",
+      "id": "s5-g38-i2",
+      "sourceGroupId": "s5-g38",
+      "session": 5,
+      "teacherNumber": "38",
+      "displayNumber": "38-2"
+    },
+    {
+      "term": "be close to ...",
+      "meaningZh": "靠近……",
+      "acceptedMeaningsZh": [
+        "靠近……",
+        "与……接近"
+      ],
+      "example": "The house is close to the park.",
+      "exampleZh": "房子在公园附近。",
+      "relation": "phrase-alternative",
+      "id": "s5-g38-i3",
+      "sourceGroupId": "s5-g38",
+      "session": 5,
+      "teacherNumber": "38",
+      "displayNumber": "38-3"
+    },
+    {
+      "term": "flamingo",
+      "meaningZh": "火烈鸟（一种红色的鸟类）",
+      "acceptedMeaningsZh": [
+        "火烈鸟（一种红色的鸟类）"
+      ],
+      "example": "Look at that beautiful flamingo in the lake.",
+      "exampleZh": "看湖里的那只美丽的火烈鸟。",
+      "relation": "single",
+      "id": "s5-g39-i1",
+      "sourceGroupId": "s5-g39",
+      "session": 5,
+      "teacherNumber": "39",
+      "displayNumber": "39"
+    },
+    {
+      "term": "all of them",
+      "meaningZh": "它们全部",
+      "acceptedMeaningsZh": [
+        "它们全部",
+        "所有这些"
+      ],
+      "example": "All of them are ready to go.",
+      "exampleZh": "它们都准备好了要出发。",
+      "relation": "phrase-alternative",
+      "id": "s5-g40-i1",
+      "sourceGroupId": "s5-g40",
+      "session": 5,
+      "teacherNumber": "40",
+      "displayNumber": "40"
+    },
+    {
+      "term": "there",
+      "meaningZh": "那里",
+      "acceptedMeaningsZh": [
+        "那里",
+        "那地方"
+      ],
+      "example": "They are there.",
+      "exampleZh": "他们在那里。",
+      "relation": "single",
+      "id": "s5-g41-i1",
+      "sourceGroupId": "s5-g41",
+      "session": 5,
+      "teacherNumber": "41",
+      "displayNumber": "41-1"
+    },
+    {
+      "term": "their",
+      "meaningZh": "他们的",
+      "acceptedMeaningsZh": [
+        "他们的",
+        "她们的",
+        "它们的"
+      ],
+      "example": "This is their book.",
+      "exampleZh": "这是他们的书。",
+      "relation": "single",
+      "id": "s5-g41-i2",
+      "sourceGroupId": "s5-g41",
+      "session": 5,
+      "teacherNumber": "41",
+      "displayNumber": "41-2"
+    },
+    {
+      "term": "baby",
+      "meaningZh": "婴儿",
+      "acceptedMeaningsZh": [
+        "婴儿",
+        "小孩"
+      ],
+      "example": "The baby is sleeping.",
+      "exampleZh": "这个婴儿正在睡觉。",
+      "relation": "single",
+      "id": "s5-g42-i1",
+      "sourceGroupId": "s5-g42",
+      "session": 5,
+      "teacherNumber": "42",
+      "displayNumber": "42-1"
+    },
+    {
+      "term": "babies",
+      "meaningZh": "婴儿（复数）",
+      "acceptedMeaningsZh": [
+        "婴儿",
+        "婴儿的复数"
+      ],
+      "example": "There are many babies in the hospital.",
+      "exampleZh": "有好多婴儿在医院。",
+      "relation": "single",
+      "id": "s5-g42-i2",
+      "sourceGroupId": "s5-g42",
+      "session": 5,
+      "teacherNumber": "42",
+      "displayNumber": "42-2"
+    },
+    {
+      "term": "animal keeper",
+      "meaningZh": "动物饲养员",
+      "acceptedMeaningsZh": [
+        "动物饲养员",
+        "动物园管理员"
+      ],
+      "example": "He is an animal keeper.",
+      "exampleZh": "他是一名动物饲养员。",
+      "relation": "single",
+      "id": "s5-g43-i1",
+      "sourceGroupId": "s5-g43",
+      "session": 5,
+      "teacherNumber": "43",
+      "displayNumber": "43"
+    },
+    {
+      "term": "try to feed",
+      "meaningZh": "尝试喂养",
+      "acceptedMeaningsZh": [
+        "尝试喂养",
+        "试着喂食物"
+      ],
+      "example": "Try to feed the birds every morning.",
+      "exampleZh": "每天早上试着喂鸟。",
+      "relation": "phrase-alternative",
+      "id": "s5-g44-i1",
+      "sourceGroupId": "s5-g44",
+      "session": 5,
+      "teacherNumber": "44",
+      "displayNumber": "44"
+    },
+    {
+      "term": "be going to...",
+      "meaningZh": "将要",
+      "acceptedMeaningsZh": [
+        "将要",
+        "打算做某事"
+      ],
+      "example": "I am going to visit my grandparents.",
+      "exampleZh": "我打算去拜访我的祖父母。",
+      "relation": "pattern",
+      "id": "s5-g45-i1",
+      "sourceGroupId": "s5-g45",
+      "session": 5,
+      "teacherNumber": "45",
+      "displayNumber": "45-1"
+    },
+    {
+      "term": "be going to do",
+      "meaningZh": "将要做",
+      "acceptedMeaningsZh": [
+        "将要做",
+        "打算做"
+      ],
+      "example": "I am going to go home.",
+      "exampleZh": "我要回家。",
+      "relation": "phrase-alternative",
+      "id": "s5-g45-i2",
+      "sourceGroupId": "s5-g45",
+      "session": 5,
+      "teacherNumber": "45",
+      "displayNumber": "45-2"
+    },
+    {
+      "term": "give sb. sth.",
+      "meaningZh": "给某人某物",
+      "acceptedMeaningsZh": [
+        "给某人某物",
+        "把东西交给某人"
+      ],
+      "example": "Give me a pen.",
+      "exampleZh": "给我一支钢笔。",
+      "relation": "phrase-alternative",
+      "id": "s5-g46-i1",
+      "sourceGroupId": "s5-g46",
+      "session": 5,
+      "teacherNumber": "46",
+      "displayNumber": "46-1"
+    },
+    {
+      "term": "give the baby sweets",
+      "meaningZh": "给婴儿糖果",
+      "acceptedMeaningsZh": [
+        "给婴儿糖果",
+        "喂宝宝甜食"
+      ],
+      "example": "Give the baby some sweets.",
+      "exampleZh": "给宝宝一些糖果。",
+      "relation": "phrase-alternative",
+      "id": "s5-g46-i2",
+      "sourceGroupId": "s5-g46",
+      "session": 5,
+      "teacherNumber": "46",
+      "displayNumber": "46-2"
+    },
+    {
+      "term": "injection (injections)",
+      "meaningZh": "注射；打针",
+      "acceptedMeaningsZh": [
+        "注射",
+        "打针"
+      ],
+      "example": "The doctor gave an injection.",
+      "exampleZh": "医生给病人打了针。",
+      "relation": "phrase-alternative",
+      "id": "s5-g47-i1",
+      "sourceGroupId": "s5-g47",
+      "session": 5,
+      "teacherNumber": "47",
+      "displayNumber": "47"
+    },
+    {
+      "term": "keep healthy",
+      "meaningZh": "保持健康",
+      "acceptedMeaningsZh": [
+        "保持健康",
+        "保重身体"
+      ],
+      "example": "Keep yourself healthy.",
+      "exampleZh": "保持身体健康。",
+      "relation": "phrase-alternative",
+      "id": "s5-g48-i1",
+      "sourceGroupId": "s5-g48",
+      "session": 5,
+      "teacherNumber": "48",
+      "displayNumber": "48"
+    },
+    {
+      "term": "get closer to ...",
+      "meaningZh": "靠近……",
+      "acceptedMeaningsZh": [
+        "靠近……",
+        "接近……"
+      ],
+      "example": "We are getting closer to the finish line.",
+      "exampleZh": "我们正接近终点。",
+      "relation": "phrase-alternative",
+      "id": "s5-g49-i1",
+      "sourceGroupId": "s5-g49",
+      "session": 5,
+      "teacherNumber": "49",
+      "displayNumber": "49"
+    },
+    {
+      "term": "see",
+      "meaningZh": "看见（原形）",
+      "acceptedMeaningsZh": [
+        "看见",
+        "看到"
+      ],
+      "example": "I can see you clearly now.",
+      "exampleZh": "我现在能清楚地看到你。",
+      "relation": "single",
+      "id": "s5-g50-i1",
+      "sourceGroupId": "s5-g50",
+      "session": 5,
+      "teacherNumber": "50",
+      "displayNumber": "50-1"
+    },
+    {
+      "term": "saw",
+      "meaningZh": "看见（过去式）",
+      "acceptedMeaningsZh": [
+        "看见",
+        "看到",
+        "see的过去式"
+      ],
+      "example": "He saw me yesterday morning.",
+      "exampleZh": "他昨天早上看到了我。",
+      "relation": "inflection",
+      "id": "s5-g50-i2",
+      "sourceGroupId": "s5-g50",
+      "session": 5,
+      "teacherNumber": "50",
+      "displayNumber": "50-2"
+    },
+    {
+      "term": "last week",
+      "meaningZh": "上周",
+      "acceptedMeaningsZh": [
+        "上周",
+        "上个星期"
+      ],
+      "example": "I went to the park last week.",
+      "exampleZh": "我上周去了公园。",
+      "relation": "list",
+      "id": "s5-g51-i1",
+      "sourceGroupId": "s5-g51",
+      "session": 5,
+      "teacherNumber": "51",
+      "displayNumber": "51-1"
+    },
+    {
+      "term": "last month",
+      "meaningZh": "上个月",
+      "acceptedMeaningsZh": [
+        "上个月",
+        "上月"
+      ],
+      "example": "We visited my grandparents last month.",
+      "exampleZh": "我们上个月拜访了祖父母。",
+      "relation": "list",
+      "id": "s5-g51-i2",
+      "sourceGroupId": "s5-g51",
+      "session": 5,
+      "teacherNumber": "51",
+      "displayNumber": "51-2"
+    },
+    {
+      "term": "last year",
+      "meaningZh": "去年",
+      "acceptedMeaningsZh": [
+        "去年",
+        "上一年的"
+      ],
+      "example": "It was a wonderful day last year.",
+      "exampleZh": "那是去年一个美好的日子。",
+      "relation": "list",
+      "id": "s5-g51-i3",
+      "sourceGroupId": "s5-g51",
+      "session": 5,
+      "teacherNumber": "51",
+      "displayNumber": "51-3"
+    },
+    {
+      "term": "different",
+      "meaningZh": "不同的",
+      "acceptedMeaningsZh": [
+        "不同的",
+        "不一样的"
+      ],
+      "example": "The two photos look different.",
+      "exampleZh": "这两张照片看起来不一样。",
+      "relation": "single",
+      "id": "s5-g52-i1",
+      "sourceGroupId": "s5-g52",
+      "session": 5,
+      "teacherNumber": "52",
+      "displayNumber": "52-1"
+    },
+    {
+      "term": "look different from ...",
+      "meaningZh": "与……不同",
+      "acceptedMeaningsZh": [
+        "与……不同",
+        "和……不一样"
+      ],
+      "example": "She looks very different from her sister.",
+      "exampleZh": "她和她的姐姐看起来很不一样。",
+      "relation": "phrase-alternative",
+      "id": "s5-g52-i2",
+      "sourceGroupId": "s5-g52",
+      "session": 5,
+      "teacherNumber": "52",
+      "displayNumber": "52-2"
+    },
+    {
+      "term": "crawl",
+      "meaningZh": "爬行",
+      "acceptedMeaningsZh": [
+        "爬行",
+        "爬"
+      ],
+      "example": "The children are crawling on the ground.",
+      "exampleZh": "孩子们正在地上爬行。",
+      "relation": "single",
+      "id": "s5-g53-i1",
+      "sourceGroupId": "s5-g53",
+      "session": 5,
+      "teacherNumber": "53",
+      "displayNumber": "53"
+    },
+    {
+      "term": "spend the day resting",
+      "meaningZh": "用一天休息",
+      "acceptedMeaningsZh": [
+        "用一天休息",
+        "花一天休息"
+      ],
+      "example": "We spent the day resting at home.",
+      "exampleZh": "我们在家度过了一个休息的一天。",
+      "relation": "phrase-alternative",
+      "id": "s5-g54-i1",
+      "sourceGroupId": "s5-g54",
+      "session": 5,
+      "teacherNumber": "54",
+      "displayNumber": "54"
+    },
+    {
+      "term": "how to dive",
+      "meaningZh": "如何潜水",
+      "acceptedMeaningsZh": [
+        "如何潜水"
+      ],
+      "example": "I don't know how to dive yet.",
+      "exampleZh": "我还不怎么知道如何潜水。",
+      "relation": "pattern",
+      "id": "s5-g55-i1",
+      "sourceGroupId": "s5-g55",
+      "session": 5,
+      "teacherNumber": "55",
+      "displayNumber": "55"
+    },
+    {
+      "term": "see sb. doing",
+      "meaningZh": "看见某人正在做某事",
+      "acceptedMeaningsZh": [
+        "看见某人正在做某事"
+      ],
+      "example": "I saw him playing football in the park.",
+      "exampleZh": "我看见他在公园里踢足球了。",
+      "relation": "pattern",
+      "id": "s5-g56-i1",
+      "sourceGroupId": "s5-g56",
+      "session": 5,
+      "teacherNumber": "56",
+      "displayNumber": "56"
+    },
+    {
+      "term": "nine years old",
+      "meaningZh": "九岁",
+      "acceptedMeaningsZh": [
+        "九岁",
+        "九年大"
+      ],
+      "example": "I am nine years old.",
+      "exampleZh": "我九岁了。",
+      "relation": "single",
+      "id": "s5-g57-i1",
+      "sourceGroupId": "s5-g57",
+      "session": 5,
+      "teacherNumber": "57",
+      "displayNumber": "57-1"
+    },
+    {
+      "term": "nine-year-old",
+      "meaningZh": "九岁的",
+      "acceptedMeaningsZh": [
+        "九岁的",
+        "九年制的"
+      ],
+      "example": "He is a nine-year-old boy.",
+      "exampleZh": "他是一个九岁的孩子。",
+      "relation": "single",
+      "id": "s5-g57-i2",
+      "sourceGroupId": "s5-g57",
+      "session": 5,
+      "teacherNumber": "57",
+      "displayNumber": "57-2"
+    },
+    {
+      "term": "give birth to",
+      "meaningZh": "生育",
+      "acceptedMeaningsZh": [
+        "生育",
+        "生孩子"
+      ],
+      "example": "She gave birth to a baby.",
+      "exampleZh": "她生了一个婴儿。",
+      "relation": "phrase-alternative",
+      "id": "s5-g58-i1",
+      "sourceGroupId": "s5-g58",
+      "session": 5,
+      "teacherNumber": "58",
+      "displayNumber": "58"
+    },
+    {
+      "term": "feed",
+      "meaningZh": "喂养（原形）",
+      "acceptedMeaningsZh": [
+        "喂养",
+        "喂"
+      ],
+      "example": "The dog needs to be fed.",
+      "exampleZh": "这只狗需要被喂食。",
+      "relation": "single",
+      "id": "s5-g59-i1",
+      "sourceGroupId": "s5-g59",
+      "session": 5,
+      "teacherNumber": "59",
+      "displayNumber": "59-1"
+    },
+    {
+      "term": "fed",
+      "meaningZh": "喂养（过去式）",
+      "acceptedMeaningsZh": [
+        "喂养",
+        "喂",
+        "feed的过去式"
+      ],
+      "example": "Fed me a cookie.",
+      "exampleZh": "给我一块曲奇饼干。",
+      "relation": "single",
+      "id": "s5-g59-i2",
+      "sourceGroupId": "s5-g59",
+      "session": 5,
+      "teacherNumber": "59",
+      "displayNumber": "59-2"
+    },
+    {
+      "term": "feed grass",
+      "meaningZh": "喂草",
+      "acceptedMeaningsZh": [
+        "喂草",
+        "给草吃"
+      ],
+      "example": "The cows feed grass every morning.",
+      "exampleZh": "这头牛每天早上都喂草。",
+      "relation": "phrase-alternative",
+      "id": "s5-g60-i1",
+      "sourceGroupId": "s5-g60",
+      "session": 5,
+      "teacherNumber": "60",
+      "displayNumber": "60-1"
+    },
+    {
+      "term": "leaves",
+      "meaningZh": "叶子",
+      "acceptedMeaningsZh": [
+        "叶子",
+        "落叶"
+      ],
+      "example": "The leaves are green.",
+      "exampleZh": "叶子。",
+      "relation": "single",
+      "id": "s5-g60-i2",
+      "sourceGroupId": "s5-g60",
+      "session": 5,
+      "teacherNumber": "60",
+      "displayNumber": "60-2"
+    },
+    {
+      "term": "eat",
+      "meaningZh": "吃（原形）",
+      "acceptedMeaningsZh": [
+        "吃"
+      ],
+      "example": "I eat an apple every day.",
+      "exampleZh": "我每天吃一个苹果。",
+      "relation": "single",
+      "id": "s5-g61-i1",
+      "sourceGroupId": "s5-g61",
+      "session": 5,
+      "teacherNumber": "61",
+      "displayNumber": "61-1"
+    },
+    {
+      "term": "ate",
+      "meaningZh": "吃（过去式）",
+      "acceptedMeaningsZh": [
+        "吃",
+        "eat的过去式"
+      ],
+      "example": "He ate an apple.",
+      "exampleZh": "他吃了一个苹果。",
+      "relation": "single",
+      "id": "s5-g61-i2",
+      "sourceGroupId": "s5-g61",
+      "session": 5,
+      "teacherNumber": "61",
+      "displayNumber": "61-2"
+    },
+    {
+      "term": "shrimp",
+      "meaningZh": "虾",
+      "acceptedMeaningsZh": [
+        "虾",
+        "小虾"
+      ],
+      "example": "This is a shrimp.",
+      "exampleZh": "这项是小虾。",
+      "relation": "single",
+      "id": "s5-g62-i1",
+      "sourceGroupId": "s5-g62",
+      "session": 5,
+      "teacherNumber": "62",
+      "displayNumber": "62"
+    },
+    {
+      "term": "algae",
+      "meaningZh": "藻类",
+      "acceptedMeaningsZh": [
+        "藻类",
+        "海藻"
+      ],
+      "example": "Algae live in water.",
+      "exampleZh": "这些生物生活在水中。",
+      "relation": "single",
+      "id": "s5-g63-i1",
+      "sourceGroupId": "s5-g63",
+      "session": 5,
+      "teacherNumber": "63",
+      "displayNumber": "63"
+    },
+    {
+      "term": "long necks",
+      "meaningZh": "长脖子",
+      "acceptedMeaningsZh": [
+        "长脖子"
+      ],
+      "example": "They have long necks.",
+      "exampleZh": "它们有长脖子。",
+      "relation": "list",
+      "id": "s5-g64-i1",
+      "sourceGroupId": "s5-g64",
+      "session": 5,
+      "teacherNumber": "64",
+      "displayNumber": "64"
+    },
+    {
+      "term": "lay...on...",
+      "meaningZh": "把……放在……上",
+      "acceptedMeaningsZh": [
+        "把放在上",
+        "放在上面"
+      ],
+      "example": "He lay on the bed.",
+      "exampleZh": "他把身体放在床上。",
+      "relation": "phrase-alternative",
+      "id": "s5-g65-i1",
+      "sourceGroupId": "s5-g65",
+      "session": 5,
+      "teacherNumber": "65",
+      "displayNumber": "65"
+    },
+    {
+      "term": "their heads",
+      "meaningZh": "它们的头",
+      "acceptedMeaningsZh": [
+        "它们的头",
+        "他们的头"
+      ],
+      "example": "They put their heads down.",
+      "exampleZh": "他们把脑袋低下去。",
+      "relation": "single",
+      "id": "s5-g66-i1",
+      "sourceGroupId": "s5-g66",
+      "session": 5,
+      "teacherNumber": "66",
+      "displayNumber": "66-1"
+    },
+    {
+      "term": "their backs",
+      "meaningZh": "它们的背部",
+      "acceptedMeaningsZh": [
+        "它们的背部",
+        "他们的背部"
+      ],
+      "example": "She touched her backs.",
+      "exampleZh": "她摸了摸她的背。",
+      "relation": "list",
+      "id": "s5-g66-i2",
+      "sourceGroupId": "s5-g66",
+      "session": 5,
+      "teacherNumber": "66",
+      "displayNumber": "66-2"
+    }
+  ]
+}

@@ -105,6 +105,7 @@
 }
 
 .amy-mode-row .exam { border-color: #d6ba72; background: #fff7df; }
+.amy-mode-row button:disabled { opacity: .58; cursor: wait; }
 .amy-mode-row span { display: flex; flex-direction: column; gap: 4px; }
 .amy-mode-row small { color: #68756f; }
 

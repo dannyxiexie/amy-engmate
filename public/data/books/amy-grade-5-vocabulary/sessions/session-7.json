@@ -1,0 +1,4766 @@
+{
+  "number": 7,
+  "available": true,
+  "verifiedEnglish": true,
+  "groupCount": 75,
+  "itemCount": 133,
+  "groups": [
+    {
+      "id": "s7-g1",
+      "teacherNumber": "1",
+      "sourceText": "write a letter",
+      "items": [
+        {
+          "term": "write a letter",
+          "meaningZh": "写信",
+          "acceptedMeaningsZh": [
+            "写信",
+            "给某人写一封信"
+          ],
+          "example": "Write me a letter about your trip.",
+          "exampleZh": "给我写一封关于你旅行的信。",
+          "relation": "phrase-alternative",
+          "id": "s7-g1-i1",
+          "sourceGroupId": "s7-g1",
+          "session": 7,
+          "teacherNumber": "1",
+          "displayNumber": "1"
+        }
+      ]
+    },
+    {
+      "id": "s7-g2",
+      "teacherNumber": "2",
+      "sourceText": "future",
+      "items": [
+        {
+          "term": "future",
+          "meaningZh": "未来",
+          "acceptedMeaningsZh": [
+            "未来",
+            "将来"
+          ],
+          "example": "The future looks bright.",
+          "exampleZh": "未来看起来充满希望。",
+          "relation": "single",
+          "id": "s7-g2-i1",
+          "sourceGroupId": "s7-g2",
+          "session": 7,
+          "teacherNumber": "2",
+          "displayNumber": "2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g3",
+      "teacherNumber": "3",
+      "sourceText": "challenge",
+      "items": [
+        {
+          "term": "challenge",
+          "meaningZh": "挑战",
+          "acceptedMeaningsZh": [
+            "挑战",
+            "难题"
+          ],
+          "example": "This is a big challenge for me.",
+          "exampleZh": "这对我来说是个大挑战。",
+          "relation": "single",
+          "id": "s7-g3-i1",
+          "sourceGroupId": "s7-g3",
+          "session": 7,
+          "teacherNumber": "3",
+          "displayNumber": "3"
+        }
+      ]
+    },
+    {
+      "id": "s7-g4",
+      "teacherNumber": "4",
+      "sourceText": "give up",
+      "items": [
+        {
+          "term": "give up",
+          "meaningZh": "放弃",
+          "acceptedMeaningsZh": [
+            "放弃",
+            "不再坚持"
+          ],
+          "example": "Don't give up, you can do it.",
+          "exampleZh": "不要放弃，你可以做到的。",
+          "relation": "phrase-alternative",
+          "id": "s7-g4-i1",
+          "sourceGroupId": "s7-g4",
+          "session": 7,
+          "teacherNumber": "4",
+          "displayNumber": "4"
+        }
+      ]
+    },
+    {
+      "id": "s7-g5",
+      "teacherNumber": "5",
+      "sourceText": "succeed / success",
+      "items": [
+        {
+          "term": "succeed",
+          "meaningZh": "成功",
+          "acceptedMeaningsZh": [
+            "成功",
+            "达成目标"
+          ],
+          "example": "They succeeded in their task.",
+          "exampleZh": "他们完成了任务。",
+          "relation": "single",
+          "id": "s7-g5-i1",
+          "sourceGroupId": "s7-g5",
+          "session": 7,
+          "teacherNumber": "5",
+          "displayNumber": "5-1"
+        },
+        {
+          "term": "success",
+          "meaningZh": "成功",
+          "acceptedMeaningsZh": [
+            "成功",
+            "胜利"
+          ],
+          "example": "Their success was great.",
+          "exampleZh": "他们的成就很大。",
+          "relation": "single",
+          "id": "s7-g5-i2",
+          "sourceGroupId": "s7-g5",
+          "session": 7,
+          "teacherNumber": "5",
+          "displayNumber": "5-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g6",
+      "teacherNumber": "6",
+      "sourceText": "practice",
+      "items": [
+        {
+          "term": "practice",
+          "meaningZh": "练习",
+          "acceptedMeaningsZh": [
+            "练习",
+            "实践"
+          ],
+          "example": "I practice English every day.",
+          "exampleZh": "我每天都练习英语。",
+          "relation": "single",
+          "id": "s7-g6-i1",
+          "sourceGroupId": "s7-g6",
+          "session": 7,
+          "teacherNumber": "6",
+          "displayNumber": "6"
+        }
+      ]
+    },
+    {
+      "id": "s7-g7",
+      "teacherNumber": "7",
+      "sourceText": "good → better",
+      "items": [
+        {
+          "term": "good",
+          "meaningZh": "好的",
+          "acceptedMeaningsZh": [
+            "好的",
+            "好"
+          ],
+          "example": "This is good.",
+          "exampleZh": "这是好的。",
+          "relation": "single",
+          "id": "s7-g7-i1",
+          "sourceGroupId": "s7-g7",
+          "session": 7,
+          "teacherNumber": "7",
+          "displayNumber": "7-1"
+        },
+        {
+          "term": "better",
+          "meaningZh": "更好的",
+          "acceptedMeaningsZh": [
+            "更好的",
+            "较好"
+          ],
+          "example": "It is better.",
+          "exampleZh": "它更好了。",
+          "relation": "inflection",
+          "id": "s7-g7-i2",
+          "sourceGroupId": "s7-g7",
+          "session": 7,
+          "teacherNumber": "7",
+          "displayNumber": "7-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g8",
+      "teacherNumber": "8",
+      "sourceText": "is / am → was; are → were",
+      "items": [
+        {
+          "term": "is",
+          "meaningZh": "是（第三人称单数）",
+          "acceptedMeaningsZh": [
+            "是（第三人称单数）"
+          ],
+          "example": "He is a student.",
+          "exampleZh": "他是学生。",
+          "relation": "single",
+          "id": "s7-g8-i1",
+          "sourceGroupId": "s7-g8",
+          "session": 7,
+          "teacherNumber": "8",
+          "displayNumber": "8-1"
+        },
+        {
+          "term": "am",
+          "meaningZh": "是（第一人称单数）",
+          "acceptedMeaningsZh": [
+            "是（第一人称单数）"
+          ],
+          "example": "I am happy.",
+          "exampleZh": "我很快乐。",
+          "relation": "single",
+          "id": "s7-g8-i2",
+          "sourceGroupId": "s7-g8",
+          "session": 7,
+          "teacherNumber": "8",
+          "displayNumber": "8-2"
+        },
+        {
+          "term": "was",
+          "meaningZh": "是（过去式",
+          "acceptedMeaningsZh": [
+            "是（过去式",
+            "所有主语）"
+          ],
+          "example": "It was yesterday.",
+          "exampleZh": "那是昨天。",
+          "relation": "inflection",
+          "id": "s7-g8-i3",
+          "sourceGroupId": "s7-g8",
+          "session": 7,
+          "teacherNumber": "8",
+          "displayNumber": "8-3"
+        },
+        {
+          "term": "are",
+          "meaningZh": "是（复数或第二人称）",
+          "acceptedMeaningsZh": [
+            "是（复数或第二人称）"
+          ],
+          "example": "They are here.",
+          "exampleZh": "他们在这里。",
+          "relation": "single",
+          "id": "s7-g8-i4",
+          "sourceGroupId": "s7-g8",
+          "session": 7,
+          "teacherNumber": "8",
+          "displayNumber": "8-4"
+        },
+        {
+          "term": "were",
+          "meaningZh": "是（过去式",
+          "acceptedMeaningsZh": [
+            "是（过去式",
+            "复数/二单）"
+          ],
+          "example": "We were late.",
+          "exampleZh": "我们迟到了。",
+          "relation": "inflection",
+          "id": "s7-g8-i5",
+          "sourceGroupId": "s7-g8",
+          "session": 7,
+          "teacherNumber": "8",
+          "displayNumber": "8-5"
+        }
+      ]
+    },
+    {
+      "id": "s7-g9",
+      "teacherNumber": "9",
+      "sourceText": "left / right",
+      "items": [
+        {
+          "term": "left",
+          "meaningZh": "左边的",
+          "acceptedMeaningsZh": [
+            "左边的",
+            "左边"
+          ],
+          "example": "Turn left.",
+          "exampleZh": "向左转。",
+          "relation": "single",
+          "id": "s7-g9-i1",
+          "sourceGroupId": "s7-g9",
+          "session": 7,
+          "teacherNumber": "9",
+          "displayNumber": "9-1"
+        },
+        {
+          "term": "right",
+          "meaningZh": "右边的",
+          "acceptedMeaningsZh": [
+            "右边的",
+            "右边"
+          ],
+          "example": "Go right now.",
+          "exampleZh": "现在向右走。",
+          "relation": "single",
+          "id": "s7-g9-i2",
+          "sourceGroupId": "s7-g9",
+          "session": 7,
+          "teacherNumber": "9",
+          "displayNumber": "9-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g10",
+      "teacherNumber": "10",
+      "sourceText": "foot → feet",
+      "items": [
+        {
+          "term": "foot",
+          "meaningZh": "脚",
+          "acceptedMeaningsZh": [
+            "脚",
+            "足部"
+          ],
+          "example": "My foot hurts.",
+          "exampleZh": "我的脚疼了。",
+          "relation": "single",
+          "id": "s7-g10-i1",
+          "sourceGroupId": "s7-g10",
+          "session": 7,
+          "teacherNumber": "10",
+          "displayNumber": "10-1"
+        },
+        {
+          "term": "feet",
+          "meaningZh": "双脚",
+          "acceptedMeaningsZh": [
+            "双脚",
+            "多只脚"
+          ],
+          "example": "Their feet are wet.",
+          "exampleZh": "他们的脚湿了。",
+          "relation": "inflection",
+          "id": "s7-g10-i2",
+          "sourceGroupId": "s7-g10",
+          "session": 7,
+          "teacherNumber": "10",
+          "displayNumber": "10-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g11",
+      "teacherNumber": "11",
+      "sourceText": "give up",
+      "items": [
+        {
+          "term": "give up",
+          "meaningZh": "放弃",
+          "acceptedMeaningsZh": [
+            "放弃",
+            "不再做某事"
+          ],
+          "example": "He gave up smoking.",
+          "exampleZh": "他戒烟了。",
+          "relation": "single",
+          "id": "s7-g11-i1",
+          "sourceGroupId": "s7-g11",
+          "session": 7,
+          "teacherNumber": "11",
+          "displayNumber": "11"
+        }
+      ]
+    },
+    {
+      "id": "s7-g12",
+      "teacherNumber": "12",
+      "sourceText": "practice",
+      "items": [
+        {
+          "term": "practice",
+          "meaningZh": "练习",
+          "acceptedMeaningsZh": [
+            "练习",
+            "实践"
+          ],
+          "example": "We practice English every day.",
+          "exampleZh": "我们每天练习英语。",
+          "relation": "single",
+          "id": "s7-g12-i1",
+          "sourceGroupId": "s7-g12",
+          "session": 7,
+          "teacherNumber": "12",
+          "displayNumber": "12"
+        }
+      ]
+    },
+    {
+      "id": "s7-g13",
+      "teacherNumber": "13",
+      "sourceText": "keep myself / yourself / himself / herself / ourselves / themselves strong",
+      "items": [
+        {
+          "term": "keep myself",
+          "meaningZh": "保持我自己",
+          "acceptedMeaningsZh": [
+            "保持我自己",
+            "保留我自己"
+          ],
+          "example": "I will keep myself.",
+          "exampleZh": "保持我自己。",
+          "relation": "phrase-alternative",
+          "id": "s7-g13-i1",
+          "sourceGroupId": "s7-g13",
+          "session": 7,
+          "teacherNumber": "13",
+          "displayNumber": "13-1"
+        },
+        {
+          "term": "yourself",
+          "meaningZh": "你自己",
+          "acceptedMeaningsZh": [
+            "你自己",
+            "自己"
+          ],
+          "example": "You should help yourself.",
+          "exampleZh": "你自己。",
+          "relation": "single",
+          "id": "s7-g13-i2",
+          "sourceGroupId": "s7-g13",
+          "session": 7,
+          "teacherNumber": "13",
+          "displayNumber": "13-2"
+        },
+        {
+          "term": "himself",
+          "meaningZh": "他自己",
+          "acceptedMeaningsZh": [
+            "他自己",
+            "自己"
+          ],
+          "example": "He did it himself.",
+          "exampleZh": "他亲自做的。",
+          "relation": "single",
+          "id": "s7-g13-i3",
+          "sourceGroupId": "s7-g13",
+          "session": 7,
+          "teacherNumber": "13",
+          "displayNumber": "13-3"
+        },
+        {
+          "term": "herself",
+          "meaningZh": "她自己",
+          "acceptedMeaningsZh": [
+            "她自己",
+            "自己（反身代词）"
+          ],
+          "example": "She did it herself.",
+          "exampleZh": "她自己做这件事。",
+          "relation": "single",
+          "id": "s7-g13-i4",
+          "sourceGroupId": "s7-g13",
+          "session": 7,
+          "teacherNumber": "13",
+          "displayNumber": "13-4"
+        },
+        {
+          "term": "ourselves",
+          "meaningZh": "我们自己",
+          "acceptedMeaningsZh": [
+            "我们自己",
+            "我们自身"
+          ],
+          "example": "We did it ourselves.",
+          "exampleZh": "我们自己。",
+          "relation": "single",
+          "id": "s7-g13-i5",
+          "sourceGroupId": "s7-g13",
+          "session": 7,
+          "teacherNumber": "13",
+          "displayNumber": "13-5"
+        },
+        {
+          "term": "themselves strong",
+          "meaningZh": "他们自己很强",
+          "acceptedMeaningsZh": [
+            "他们自己很强",
+            "强壮的"
+          ],
+          "example": "They are themselves strong.",
+          "exampleZh": "他们是他们自己的。",
+          "relation": "phrase-alternative",
+          "id": "s7-g13-i6",
+          "sourceGroupId": "s7-g13",
+          "session": 7,
+          "teacherNumber": "13",
+          "displayNumber": "13-6"
+        }
+      ]
+    },
+    {
+      "id": "s7-g14",
+      "teacherNumber": "14",
+      "sourceText": "move mountains",
+      "items": [
+        {
+          "term": "move mountains",
+          "meaningZh": "移山",
+          "acceptedMeaningsZh": [
+            "移山",
+            "移动大山"
+          ],
+          "example": "They want to move mountains.",
+          "exampleZh": "他们想要移开大山。",
+          "relation": "phrase-alternative",
+          "id": "s7-g14-i1",
+          "sourceGroupId": "s7-g14",
+          "session": 7,
+          "teacherNumber": "14",
+          "displayNumber": "14"
+        }
+      ]
+    },
+    {
+      "id": "s7-g15",
+      "teacherNumber": "15",
+      "sourceText": "Where there is a will, there is a way.",
+      "items": [
+        {
+          "term": "Where there is a will, there is a way.",
+          "meaningZh": "有志者事竟成",
+          "acceptedMeaningsZh": [
+            "有志者事竟成",
+            "有决心就有办法"
+          ],
+          "example": "Where there is a will, there is a way.",
+          "exampleZh": "有志者事竟成。",
+          "relation": "pattern",
+          "id": "s7-g15-i1",
+          "sourceGroupId": "s7-g15",
+          "session": 7,
+          "teacherNumber": "15",
+          "displayNumber": "15"
+        }
+      ]
+    },
+    {
+      "id": "s7-g16",
+      "teacherNumber": "16",
+      "sourceText": "quotation",
+      "items": [
+        {
+          "term": "quotation",
+          "meaningZh": "引语",
+          "acceptedMeaningsZh": [
+            "引语",
+            "引用语句"
+          ],
+          "example": "He made a quotation about the weather.",
+          "exampleZh": "他做了一个关于天气的引语。",
+          "relation": "single",
+          "id": "s7-g16-i1",
+          "sourceGroupId": "s7-g16",
+          "session": 7,
+          "teacherNumber": "16",
+          "displayNumber": "16"
+        }
+      ]
+    },
+    {
+      "id": "s7-g17",
+      "teacherNumber": "17",
+      "sourceText": "win → won",
+      "items": [
+        {
+          "term": "win",
+          "meaningZh": "赢得",
+          "acceptedMeaningsZh": [
+            "赢得",
+            "获胜"
+          ],
+          "example": "He won the game.",
+          "exampleZh": "他赢了比赛。",
+          "relation": "single",
+          "id": "s7-g17-i1",
+          "sourceGroupId": "s7-g17",
+          "session": 7,
+          "teacherNumber": "17",
+          "displayNumber": "17-1"
+        },
+        {
+          "term": "won",
+          "meaningZh": "赢的",
+          "acceptedMeaningsZh": [
+            "赢的",
+            "赢得的"
+          ],
+          "example": "He won the game.",
+          "exampleZh": "他赢了比赛。",
+          "relation": "single",
+          "id": "s7-g17-i2",
+          "sourceGroupId": "s7-g17",
+          "session": 7,
+          "teacherNumber": "17",
+          "displayNumber": "17-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g18",
+      "teacherNumber": "18",
+      "sourceText": "win a prize",
+      "items": [
+        {
+          "term": "win a prize",
+          "meaningZh": "赢得奖品",
+          "acceptedMeaningsZh": [
+            "赢得奖品",
+            "获奖"
+          ],
+          "example": "They won a prize in the contest.",
+          "exampleZh": "他们在这场竞赛中赢得了奖品。",
+          "relation": "phrase-alternative",
+          "id": "s7-g18-i1",
+          "sourceGroupId": "s7-g18",
+          "session": 7,
+          "teacherNumber": "18",
+          "displayNumber": "18"
+        }
+      ]
+    },
+    {
+      "id": "s7-g19",
+      "teacherNumber": "19",
+      "sourceText": "in a contest",
+      "items": [
+        {
+          "term": "in a contest",
+          "meaningZh": "参加竞赛",
+          "acceptedMeaningsZh": [
+            "参加竞赛",
+            "在竞赛中"
+          ],
+          "example": "They are in a contest.",
+          "exampleZh": "他们正在参加竞赛。",
+          "relation": "phrase-alternative",
+          "id": "s7-g19-i1",
+          "sourceGroupId": "s7-g19",
+          "session": 7,
+          "teacherNumber": "19",
+          "displayNumber": "19"
+        }
+      ]
+    },
+    {
+      "id": "s7-g20",
+      "teacherNumber": "20",
+      "sourceText": "remember",
+      "items": [
+        {
+          "term": "remember",
+          "meaningZh": "记住",
+          "acceptedMeaningsZh": [
+            "记住",
+            "记得"
+          ],
+          "example": "Remember your homework.",
+          "exampleZh": "记得你的作业。",
+          "relation": "single",
+          "id": "s7-g20-i1",
+          "sourceGroupId": "s7-g20",
+          "session": 7,
+          "teacherNumber": "20",
+          "displayNumber": "20"
+        }
+      ]
+    },
+    {
+      "id": "s7-g21",
+      "teacherNumber": "21",
+      "sourceText": "the first time",
+      "items": [
+        {
+          "term": "the first time",
+          "meaningZh": "第一次",
+          "acceptedMeaningsZh": [
+            "第一次",
+            "头一次"
+          ],
+          "example": "It was the first time I saw him.",
+          "exampleZh": "那是我第一次见到他。",
+          "relation": "list",
+          "id": "s7-g21-i1",
+          "sourceGroupId": "s7-g21",
+          "session": 7,
+          "teacherNumber": "21",
+          "displayNumber": "21"
+        }
+      ]
+    },
+    {
+      "id": "s7-g22",
+      "teacherNumber": "22",
+      "sourceText": "meet → met",
+      "items": [
+        {
+          "term": "meet",
+          "meaningZh": "遇见",
+          "acceptedMeaningsZh": [
+            "遇见",
+            "见面"
+          ],
+          "example": "We met at school yesterday.",
+          "exampleZh": "我们昨天在学校见了一面。",
+          "relation": "single",
+          "id": "s7-g22-i1",
+          "sourceGroupId": "s7-g22",
+          "session": 7,
+          "teacherNumber": "22",
+          "displayNumber": "22-1"
+        },
+        {
+          "term": "met",
+          "meaningZh": "遇见的（过去式）",
+          "acceptedMeaningsZh": [
+            "遇见的（过去式）"
+          ],
+          "example": "They met in the park last week.",
+          "exampleZh": "他们上周在公园见了面。",
+          "relation": "inflection",
+          "id": "s7-g22-i2",
+          "sourceGroupId": "s7-g22",
+          "session": 7,
+          "teacherNumber": "22",
+          "displayNumber": "22-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g23",
+      "teacherNumber": "23",
+      "sourceText": "shy / quiet",
+      "items": [
+        {
+          "term": "shy",
+          "meaningZh": "害羞的",
+          "acceptedMeaningsZh": [
+            "害羞的",
+            "腼腆的"
+          ],
+          "example": "He is a bit shy about speaking.",
+          "exampleZh": "他有点不敢说话，很害羞。",
+          "relation": "single",
+          "id": "s7-g23-i1",
+          "sourceGroupId": "s7-g23",
+          "session": 7,
+          "teacherNumber": "23",
+          "displayNumber": "23-1"
+        },
+        {
+          "term": "quiet",
+          "meaningZh": "安静的",
+          "acceptedMeaningsZh": [
+            "安静的",
+            "寂静的"
+          ],
+          "example": "The library is very quiet now.",
+          "exampleZh": "现在图书馆非常安静。",
+          "relation": "synonym",
+          "id": "s7-g23-i2",
+          "sourceGroupId": "s7-g23",
+          "session": 7,
+          "teacherNumber": "23",
+          "displayNumber": "23-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g24",
+      "teacherNumber": "24",
+      "sourceText": "confident / be confident",
+      "items": [
+        {
+          "term": "confident",
+          "meaningZh": "自信的",
+          "acceptedMeaningsZh": [
+            "自信的",
+            "有信心的"
+          ],
+          "example": "She feels confident about the test.",
+          "exampleZh": "她对考试很有信心。",
+          "relation": "single",
+          "id": "s7-g24-i1",
+          "sourceGroupId": "s7-g24",
+          "session": 7,
+          "teacherNumber": "24",
+          "displayNumber": "24-1"
+        },
+        {
+          "term": "be confident",
+          "meaningZh": "感到自信",
+          "acceptedMeaningsZh": [
+            "感到自信",
+            "变得自信"
+          ],
+          "example": "He became more confident after practice.",
+          "exampleZh": "他在练习后变得更自信了。",
+          "relation": "phrase-alternative",
+          "id": "s7-g24-i2",
+          "sourceGroupId": "s7-g24",
+          "session": 7,
+          "teacherNumber": "24",
+          "displayNumber": "24-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g25",
+      "teacherNumber": "25",
+      "sourceText": "used to be",
+      "items": [
+        {
+          "term": "used to be",
+          "meaningZh": "过去常常",
+          "acceptedMeaningsZh": [
+            "过去常常",
+            "曾经做过"
+          ],
+          "example": "They used to be friends.",
+          "exampleZh": "他们曾经是朋友。",
+          "relation": "pattern",
+          "id": "s7-g25-i1",
+          "sourceGroupId": "s7-g25",
+          "session": 7,
+          "teacherNumber": "25",
+          "displayNumber": "25"
+        }
+      ]
+    },
+    {
+      "id": "s7-g26",
+      "teacherNumber": "26",
+      "sourceText": "be nervous",
+      "items": [
+        {
+          "term": "be nervous",
+          "meaningZh": "感到紧张",
+          "acceptedMeaningsZh": [
+            "感到紧张",
+            "神经紧绷"
+          ],
+          "example": "He is very nervous about the test.",
+          "exampleZh": "他对考试感到非常紧张。",
+          "relation": "phrase-alternative",
+          "id": "s7-g26-i1",
+          "sourceGroupId": "s7-g26",
+          "session": 7,
+          "teacherNumber": "26",
+          "displayNumber": "26"
+        }
+      ]
+    },
+    {
+      "id": "s7-g27",
+      "teacherNumber": "27",
+      "sourceText": "do → did",
+      "items": [
+        {
+          "term": "do",
+          "meaningZh": "做",
+          "acceptedMeaningsZh": [
+            "做",
+            "干"
+          ],
+          "example": "Please do your homework now.",
+          "exampleZh": "请现在做作业吧。",
+          "relation": "single",
+          "id": "s7-g27-i1",
+          "sourceGroupId": "s7-g27",
+          "session": 7,
+          "teacherNumber": "27",
+          "displayNumber": "27-1"
+        },
+        {
+          "term": "did",
+          "meaningZh": "做了（过去式）",
+          "acceptedMeaningsZh": [
+            "做了（过去式）"
+          ],
+          "example": "I did my homework yesterday.",
+          "exampleZh": "我昨天完成了作业。",
+          "relation": "inflection",
+          "id": "s7-g27-i2",
+          "sourceGroupId": "s7-g27",
+          "session": 7,
+          "teacherNumber": "27",
+          "displayNumber": "27-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g28",
+      "teacherNumber": "28",
+      "sourceText": "How do you make it?",
+      "items": [
+        {
+          "term": "How do you make it?",
+          "meaningZh": "你如何做到这一点？",
+          "acceptedMeaningsZh": [
+            "你如何做到这一点？",
+            "你怎么做到的呢？"
+          ],
+          "example": "How do you make it?",
+          "exampleZh": "你如何做到这一点？",
+          "relation": "pattern",
+          "id": "s7-g28-i1",
+          "sourceGroupId": "s7-g28",
+          "session": 7,
+          "teacherNumber": "28",
+          "displayNumber": "28"
+        }
+      ]
+    },
+    {
+      "id": "s7-g29",
+      "teacherNumber": "29",
+      "sourceText": "learn → learned",
+      "items": [
+        {
+          "term": "learn",
+          "meaningZh": "学习",
+          "acceptedMeaningsZh": [
+            "学习",
+            "学"
+          ],
+          "example": "He wants to learn English.",
+          "exampleZh": "他想学英语。",
+          "relation": "single",
+          "id": "s7-g29-i1",
+          "sourceGroupId": "s7-g29",
+          "session": 7,
+          "teacherNumber": "29",
+          "displayNumber": "29-1"
+        },
+        {
+          "term": "learned",
+          "meaningZh": "已学的",
+          "acceptedMeaningsZh": [
+            "已学的",
+            "学会的"
+          ],
+          "example": "She has learned many words.",
+          "exampleZh": "她已经学会了很多单词。",
+          "relation": "inflection",
+          "id": "s7-g29-i2",
+          "sourceGroupId": "s7-g29",
+          "session": 7,
+          "teacherNumber": "29",
+          "displayNumber": "29-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g30",
+      "teacherNumber": "30",
+      "sourceText": "learn from ...",
+      "items": [
+        {
+          "term": "learn from...",
+          "meaningZh": "从……学习",
+          "acceptedMeaningsZh": [
+            "从……学习",
+            "向……学习"
+          ],
+          "example": "I can learn from my mistakes.",
+          "exampleZh": "我可以从我犯的错误中学习。",
+          "relation": "pattern",
+          "id": "s7-g30-i1",
+          "sourceGroupId": "s7-g30",
+          "session": 7,
+          "teacherNumber": "30",
+          "displayNumber": "30"
+        }
+      ]
+    },
+    {
+      "id": "s7-g31",
+      "teacherNumber": "31",
+      "sourceText": "do a lot of practice",
+      "items": [
+        {
+          "term": "do a lot of practice",
+          "meaningZh": "做很多练习",
+          "acceptedMeaningsZh": [
+            "做很多练习",
+            "进行大量练习"
+          ],
+          "example": "I do a lot of practice.",
+          "exampleZh": "我做很多练习。",
+          "relation": "phrase-alternative",
+          "id": "s7-g31-i1",
+          "sourceGroupId": "s7-g31",
+          "session": 7,
+          "teacherNumber": "31",
+          "displayNumber": "31"
+        }
+      ]
+    },
+    {
+      "id": "s7-g32",
+      "teacherNumber": "32",
+      "sourceText": "What else? / Who else?",
+      "items": [
+        {
+          "term": "What else?",
+          "meaningZh": "还有什么别的吗？还有其他的吗？",
+          "acceptedMeaningsZh": [
+            "还有什么别的吗？还有其他的吗？"
+          ],
+          "example": "What else?",
+          "exampleZh": "还有什么别的吗？还有其他的吗？",
+          "relation": "list",
+          "id": "s7-g32-i1",
+          "sourceGroupId": "s7-g32",
+          "session": 7,
+          "teacherNumber": "32",
+          "displayNumber": "32-1"
+        },
+        {
+          "term": "Who else?",
+          "meaningZh": "谁还？还有谁？",
+          "acceptedMeaningsZh": [
+            "谁还？还有谁？"
+          ],
+          "example": "Who else?",
+          "exampleZh": "谁还？还有谁？",
+          "relation": "list",
+          "id": "s7-g32-i2",
+          "sourceGroupId": "s7-g32",
+          "session": 7,
+          "teacherNumber": "32",
+          "displayNumber": "32-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g33",
+      "teacherNumber": "33",
+      "sourceText": "tell → told",
+      "items": [
+        {
+          "term": "tell",
+          "meaningZh": "告诉",
+          "acceptedMeaningsZh": [
+            "告诉",
+            "说"
+          ],
+          "example": "He told me a story.",
+          "exampleZh": "他给我讲了一个故事。",
+          "relation": "single",
+          "id": "s7-g33-i1",
+          "sourceGroupId": "s7-g33",
+          "session": 7,
+          "teacherNumber": "33",
+          "displayNumber": "33-1"
+        },
+        {
+          "term": "told",
+          "meaningZh": "告诉",
+          "acceptedMeaningsZh": [
+            "告诉",
+            "告知的过去式或分词形式"
+          ],
+          "example": "He told me the news.",
+          "exampleZh": "他告诉我这个消息。",
+          "relation": "single",
+          "id": "s7-g33-i2",
+          "sourceGroupId": "s7-g33",
+          "session": 7,
+          "teacherNumber": "33",
+          "displayNumber": "33-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g34",
+      "teacherNumber": "34",
+      "sourceText": "make → made",
+      "items": [
+        {
+          "term": "make",
+          "meaningZh": "制作",
+          "acceptedMeaningsZh": [
+            "制作",
+            "制造"
+          ],
+          "example": "He wants to make a model.",
+          "exampleZh": "他想做一个模型。",
+          "relation": "single",
+          "id": "s7-g34-i1",
+          "sourceGroupId": "s7-g34",
+          "session": 7,
+          "teacherNumber": "34",
+          "displayNumber": "34-1"
+        },
+        {
+          "term": "made",
+          "meaningZh": "制作的",
+          "acceptedMeaningsZh": [
+            "制作的",
+            "制造的（过去式）"
+          ],
+          "example": "She made a cake for me.",
+          "exampleZh": "她为我做了一个蛋糕。",
+          "relation": "inflection",
+          "id": "s7-g34-i2",
+          "sourceGroupId": "s7-g34",
+          "session": 7,
+          "teacherNumber": "34",
+          "displayNumber": "34-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g35",
+      "teacherNumber": "35",
+      "sourceText": "give me advice",
+      "items": [
+        {
+          "term": "give me advice",
+          "meaningZh": "给我建议",
+          "acceptedMeaningsZh": [
+            "给我建议",
+            "给意见"
+          ],
+          "example": "Give me some advice on this.",
+          "exampleZh": "在这个问题上给我一些建议。",
+          "relation": "phrase-alternative",
+          "id": "s7-g35-i1",
+          "sourceGroupId": "s7-g35",
+          "session": 7,
+          "teacherNumber": "35",
+          "displayNumber": "35"
+        }
+      ]
+    },
+    {
+      "id": "s7-g36",
+      "teacherNumber": "36",
+      "sourceText": "be good at / be good at doing / be not good at doing",
+      "items": [
+        {
+          "term": "be good at",
+          "meaningZh": "擅长于",
+          "acceptedMeaningsZh": [
+            "擅长于",
+            "善于做某事"
+          ],
+          "example": "He is good at math.",
+          "exampleZh": "他擅长数学。",
+          "relation": "single",
+          "id": "s7-g36-i1",
+          "sourceGroupId": "s7-g36",
+          "session": 7,
+          "teacherNumber": "36",
+          "displayNumber": "36-1"
+        },
+        {
+          "term": "be good at doing",
+          "meaningZh": "擅长做...（动名词形式）",
+          "acceptedMeaningsZh": [
+            "擅长做...（动名词形式）"
+          ],
+          "example": "She is good at singing.",
+          "exampleZh": "她擅长唱歌。",
+          "relation": "phrase-alternative",
+          "id": "s7-g36-i2",
+          "sourceGroupId": "s7-g36",
+          "session": 7,
+          "teacherNumber": "36",
+          "displayNumber": "36-2"
+        },
+        {
+          "term": "be not good at doing",
+          "meaningZh": "不擅长做...",
+          "acceptedMeaningsZh": [
+            "不擅长做...",
+            "不会做某事"
+          ],
+          "example": "He is not good at playing chess.",
+          "exampleZh": "他不擅长下棋。",
+          "relation": "phrase-alternative",
+          "id": "s7-g36-i3",
+          "sourceGroupId": "s7-g36",
+          "session": 7,
+          "teacherNumber": "36",
+          "displayNumber": "36-3"
+        }
+      ]
+    },
+    {
+      "id": "s7-g37",
+      "teacherNumber": "37",
+      "sourceText": "be sick",
+      "items": [
+        {
+          "term": "be sick",
+          "meaningZh": "生病",
+          "acceptedMeaningsZh": [
+            "生病",
+            "患病"
+          ],
+          "example": "He is be sick.",
+          "exampleZh": "他生病了。",
+          "relation": "phrase-alternative",
+          "id": "s7-g37-i1",
+          "sourceGroupId": "s7-g37",
+          "session": 7,
+          "teacherNumber": "37",
+          "displayNumber": "37"
+        }
+      ]
+    },
+    {
+      "id": "s7-g38",
+      "teacherNumber": "38",
+      "sourceText": "can → could",
+      "items": [
+        {
+          "term": "can",
+          "meaningZh": "能",
+          "acceptedMeaningsZh": [
+            "能",
+            "可以"
+          ],
+          "example": "I can swim.",
+          "exampleZh": "我会游泳。",
+          "relation": "single",
+          "id": "s7-g38-i1",
+          "sourceGroupId": "s7-g38",
+          "session": 7,
+          "teacherNumber": "38",
+          "displayNumber": "38-1"
+        },
+        {
+          "term": "could",
+          "meaningZh": "能够（过去式）",
+          "acceptedMeaningsZh": [
+            "能够（过去式）",
+            "可能（推测）"
+          ],
+          "example": "He could fly when he was young.",
+          "exampleZh": "他年轻时会飞。",
+          "relation": "inflection",
+          "id": "s7-g38-i2",
+          "sourceGroupId": "s7-g38",
+          "session": 7,
+          "teacherNumber": "38",
+          "displayNumber": "38-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g39",
+      "teacherNumber": "39",
+      "sourceText": "control",
+      "items": [
+        {
+          "term": "control",
+          "meaningZh": "控制",
+          "acceptedMeaningsZh": [
+            "控制",
+            "管制"
+          ],
+          "example": "The teacher controls the class.",
+          "exampleZh": "老师控制着班级。",
+          "relation": "single",
+          "id": "s7-g39-i1",
+          "sourceGroupId": "s7-g39",
+          "session": 7,
+          "teacherNumber": "39",
+          "displayNumber": "39"
+        }
+      ]
+    },
+    {
+      "id": "s7-g40",
+      "teacherNumber": "40",
+      "sourceText": "give up",
+      "items": [
+        {
+          "term": "give up",
+          "meaningZh": "放弃",
+          "acceptedMeaningsZh": [
+            "放弃",
+            "不再做某事"
+          ],
+          "example": "He gave up smoking last year.",
+          "exampleZh": "他去年戒烟了。",
+          "relation": "phrase-alternative",
+          "id": "s7-g40-i1",
+          "sourceGroupId": "s7-g40",
+          "session": 7,
+          "teacherNumber": "40",
+          "displayNumber": "40"
+        }
+      ]
+    },
+    {
+      "id": "s7-g41",
+      "teacherNumber": "41",
+      "sourceText": "teach → taught",
+      "items": [
+        {
+          "term": "teach",
+          "meaningZh": "教",
+          "acceptedMeaningsZh": [
+            "教",
+            "教授"
+          ],
+          "example": "She taught me English.",
+          "exampleZh": "她教我英语。",
+          "relation": "single",
+          "id": "s7-g41-i1",
+          "sourceGroupId": "s7-g41",
+          "session": 7,
+          "teacherNumber": "41",
+          "displayNumber": "41-1"
+        },
+        {
+          "term": "taught",
+          "meaningZh": "教的（过去式）",
+          "acceptedMeaningsZh": [
+            "教的（过去式）",
+            "教授的（过去式）"
+          ],
+          "example": "She taught me English last year.",
+          "exampleZh": "去年她教我英语了。",
+          "relation": "inflection",
+          "id": "s7-g41-i2",
+          "sourceGroupId": "s7-g41",
+          "session": 7,
+          "teacherNumber": "41",
+          "displayNumber": "41-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g42",
+      "teacherNumber": "42",
+      "sourceText": "ask → asked",
+      "items": [
+        {
+          "term": "ask",
+          "meaningZh": "问",
+          "acceptedMeaningsZh": [
+            "问",
+            "询问"
+          ],
+          "example": "Can you ask him?",
+          "exampleZh": "你能问他吗？",
+          "relation": "single",
+          "id": "s7-g42-i1",
+          "sourceGroupId": "s7-g42",
+          "session": 7,
+          "teacherNumber": "42",
+          "displayNumber": "42-1"
+        },
+        {
+          "term": "asked",
+          "meaningZh": "问的（过去式）",
+          "acceptedMeaningsZh": [
+            "问的（过去式）",
+            "询问的（过去式）"
+          ],
+          "example": "He asked me a question.",
+          "exampleZh": "他问我一个问题。",
+          "relation": "inflection",
+          "id": "s7-g42-i2",
+          "sourceGroupId": "s7-g42",
+          "session": 7,
+          "teacherNumber": "42",
+          "displayNumber": "42-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g43",
+      "teacherNumber": "43",
+      "sourceText": "nod / nod your head",
+      "items": [
+        {
+          "term": "nod",
+          "meaningZh": "点头",
+          "acceptedMeaningsZh": [
+            "点头",
+            "示意"
+          ],
+          "example": "Please nod if you agree.",
+          "exampleZh": "如果你同意请点点头。",
+          "relation": "single",
+          "id": "s7-g43-i1",
+          "sourceGroupId": "s7-g43",
+          "session": 7,
+          "teacherNumber": "43",
+          "displayNumber": "43-1"
+        },
+        {
+          "term": "nod your head",
+          "meaningZh": "点头（动作）",
+          "acceptedMeaningsZh": [
+            "点头（动作）"
+          ],
+          "example": "He nodded his head to show agreement.",
+          "exampleZh": "他点头表示同意。",
+          "relation": "phrase-alternative",
+          "id": "s7-g43-i2",
+          "sourceGroupId": "s7-g43",
+          "session": 7,
+          "teacherNumber": "43",
+          "displayNumber": "43-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g44",
+      "teacherNumber": "44",
+      "sourceText": "make some signs / can't make any signs",
+      "items": [
+        {
+          "term": "make some signs",
+          "meaningZh": "做几个手势",
+          "acceptedMeaningsZh": [
+            "做几个手势",
+            "做出一些标志"
+          ],
+          "example": "Please make some signs for the game.",
+          "exampleZh": "请为游戏做一些手势。",
+          "relation": "single",
+          "id": "s7-g44-i1",
+          "sourceGroupId": "s7-g44",
+          "session": 7,
+          "teacherNumber": "44",
+          "displayNumber": "44-1"
+        },
+        {
+          "term": "can't make any signs",
+          "meaningZh": "不能做任何手势",
+          "acceptedMeaningsZh": [
+            "不能做任何手势",
+            "无法做出任何标志"
+          ],
+          "example": "I can't make any signs right now.",
+          "exampleZh": "我现在没法做任何手势了。",
+          "relation": "phrase-alternative",
+          "id": "s7-g44-i2",
+          "sourceGroupId": "s7-g44",
+          "session": 7,
+          "teacherNumber": "44",
+          "displayNumber": "44-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g45",
+      "teacherNumber": "45",
+      "sourceText": "tell → told",
+      "items": [
+        {
+          "term": "tell",
+          "meaningZh": "告诉",
+          "acceptedMeaningsZh": [
+            "告诉",
+            "说"
+          ],
+          "example": "He wants to tell me the truth.",
+          "exampleZh": "他想告诉我真相。",
+          "relation": "single",
+          "id": "s7-g45-i1",
+          "sourceGroupId": "s7-g45",
+          "session": 7,
+          "teacherNumber": "45",
+          "displayNumber": "45-1"
+        },
+        {
+          "term": "told",
+          "meaningZh": "告诉的（过去式）",
+          "acceptedMeaningsZh": [
+            "告诉的（过去式）"
+          ],
+          "example": "She told him a secret yesterday.",
+          "exampleZh": "她昨天告诉他一个秘密。",
+          "relation": "inflection",
+          "id": "s7-g45-i2",
+          "sourceGroupId": "s7-g45",
+          "session": 7,
+          "teacherNumber": "45",
+          "displayNumber": "45-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g46",
+      "teacherNumber": "46",
+      "sourceText": "be able to do / be unable to do",
+      "items": [
+        {
+          "term": "be able to do",
+          "meaningZh": "能够做某事",
+          "acceptedMeaningsZh": [
+            "能够做某事",
+            "有能力做某事"
+          ],
+          "example": "They are able to swim.",
+          "exampleZh": "他们能游泳。",
+          "relation": "single",
+          "id": "s7-g46-i1",
+          "sourceGroupId": "s7-g46",
+          "session": 7,
+          "teacherNumber": "46",
+          "displayNumber": "46-1"
+        },
+        {
+          "term": "be unable to do",
+          "meaningZh": "无法做某事",
+          "acceptedMeaningsZh": [
+            "无法做某事",
+            "不能做某事"
+          ],
+          "example": "They are not able to open the door.",
+          "exampleZh": "他们打不开那扇门。",
+          "relation": "phrase-alternative",
+          "id": "s7-g46-i2",
+          "sourceGroupId": "s7-g46",
+          "session": 7,
+          "teacherNumber": "46",
+          "displayNumber": "46-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g47",
+      "teacherNumber": "47",
+      "sourceText": "be doing / was doing / were doing",
+      "items": [
+        {
+          "term": "be doing",
+          "meaningZh": "正在做",
+          "acceptedMeaningsZh": [
+            "正在做",
+            "正在进行时态"
+          ],
+          "example": "I am be doing.",
+          "exampleZh": "我正在做。",
+          "relation": "pattern",
+          "id": "s7-g47-i1",
+          "sourceGroupId": "s7-g47",
+          "session": 7,
+          "teacherNumber": "47",
+          "displayNumber": "47-1"
+        },
+        {
+          "term": "was doing",
+          "meaningZh": "过去进行时",
+          "acceptedMeaningsZh": [
+            "过去进行时",
+            "正在做某事（过去）"
+          ],
+          "example": "I was doing my homework.",
+          "exampleZh": "我那时在做作业。",
+          "relation": "pattern",
+          "id": "s7-g47-i2",
+          "sourceGroupId": "s7-g47",
+          "session": 7,
+          "teacherNumber": "47",
+          "displayNumber": "47-2"
+        },
+        {
+          "term": "were doing",
+          "meaningZh": "正在做",
+          "acceptedMeaningsZh": [
+            "正在做",
+            "过去进行时"
+          ],
+          "example": "They were doing homework.",
+          "exampleZh": "他们当时在做作业。",
+          "relation": "pattern",
+          "id": "s7-g47-i3",
+          "sourceGroupId": "s7-g47",
+          "session": 7,
+          "teacherNumber": "47",
+          "displayNumber": "47-3"
+        }
+      ]
+    },
+    {
+      "id": "s7-g48",
+      "teacherNumber": "48",
+      "sourceText": "watch sb. doing / watch my mum cleaning the house",
+      "items": [
+        {
+          "term": "watch sb. doing",
+          "meaningZh": "观看某人正在做某事",
+          "acceptedMeaningsZh": [
+            "观看某人正在做某事",
+            "看别人在做事情"
+          ],
+          "example": "I watched him playing football.",
+          "exampleZh": "我看着他踢足球。",
+          "relation": "pattern",
+          "id": "s7-g48-i1",
+          "sourceGroupId": "s7-g48",
+          "session": 7,
+          "teacherNumber": "48",
+          "displayNumber": "48-1"
+        },
+        {
+          "term": "watch my mum cleaning the house",
+          "meaningZh": "看妈妈打扫房子",
+          "acceptedMeaningsZh": [
+            "看妈妈打扫房子",
+            "观察母亲做家务"
+          ],
+          "example": "I watched my mum cleaning the house.",
+          "exampleZh": "我看过妈妈在打扫房子。",
+          "relation": "phrase-alternative",
+          "id": "s7-g48-i2",
+          "sourceGroupId": "s7-g48",
+          "session": 7,
+          "teacherNumber": "48",
+          "displayNumber": "48-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g49",
+      "teacherNumber": "49",
+      "sourceText": "use → using",
+      "items": [
+        {
+          "term": "use",
+          "meaningZh": "使用",
+          "acceptedMeaningsZh": [
+            "使用",
+            "用"
+          ],
+          "example": "I use this tool.",
+          "exampleZh": "我使用这个工具。",
+          "relation": "single",
+          "id": "s7-g49-i1",
+          "sourceGroupId": "s7-g49",
+          "session": 7,
+          "teacherNumber": "49",
+          "displayNumber": "49-1"
+        },
+        {
+          "term": "using",
+          "meaningZh": "正在使用的",
+          "acceptedMeaningsZh": [
+            "正在使用的",
+            "使用中"
+          ],
+          "example": "He is using a pen now.",
+          "exampleZh": "他正现在用一支笔。",
+          "relation": "inflection",
+          "id": "s7-g49-i2",
+          "sourceGroupId": "s7-g49",
+          "session": 7,
+          "teacherNumber": "49",
+          "displayNumber": "49-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g50",
+      "teacherNumber": "50",
+      "sourceText": "a piece of / a piece of chalk",
+      "items": [
+        {
+          "term": "a piece of",
+          "meaningZh": "一块的",
+          "acceptedMeaningsZh": [
+            "一块的",
+            "一件的"
+          ],
+          "example": "It's a piece of paper.",
+          "exampleZh": "它是一张纸。",
+          "relation": "phrase-alternative",
+          "id": "s7-g50-i1",
+          "sourceGroupId": "s7-g50",
+          "session": 7,
+          "teacherNumber": "50",
+          "displayNumber": "50-1"
+        },
+        {
+          "term": "a piece of chalk",
+          "meaningZh": "一块粉笔的",
+          "acceptedMeaningsZh": [
+            "一块粉笔的",
+            "一根粉笔的"
+          ],
+          "example": "She drew with a piece of chalk.",
+          "exampleZh": "她用一块粉笔画画了。",
+          "relation": "phrase-alternative",
+          "id": "s7-g50-i2",
+          "sourceGroupId": "s7-g50",
+          "session": 7,
+          "teacherNumber": "50",
+          "displayNumber": "50-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g51",
+      "teacherNumber": "51",
+      "sourceText": "take → took",
+      "items": [
+        {
+          "term": "take",
+          "meaningZh": "拿",
+          "acceptedMeaningsZh": [
+            "拿",
+            "取"
+          ],
+          "example": "Take the book.",
+          "exampleZh": "把书拿走。",
+          "relation": "single",
+          "id": "s7-g51-i1",
+          "sourceGroupId": "s7-g51",
+          "session": 7,
+          "teacherNumber": "51",
+          "displayNumber": "51-1"
+        },
+        {
+          "term": "took",
+          "meaningZh": "拿了（过去式）",
+          "acceptedMeaningsZh": [
+            "拿了（过去式）"
+          ],
+          "example": "He took the book yesterday.",
+          "exampleZh": "他昨天把那本书拿走了。",
+          "relation": "inflection",
+          "id": "s7-g51-i2",
+          "sourceGroupId": "s7-g51",
+          "session": 7,
+          "teacherNumber": "51",
+          "displayNumber": "51-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g52",
+      "teacherNumber": "52",
+      "sourceText": "take ... from ...",
+      "items": [
+        {
+          "term": "take ... from ...",
+          "meaningZh": "从……里拿走",
+          "acceptedMeaningsZh": [
+            "从……里拿走",
+            "把……从……带走"
+          ],
+          "example": "Take it from here.",
+          "exampleZh": "把它从这里拿走。",
+          "relation": "phrase-alternative",
+          "id": "s7-g52-i1",
+          "sourceGroupId": "s7-g52",
+          "session": 7,
+          "teacherNumber": "52",
+          "displayNumber": "52"
+        }
+      ]
+    },
+    {
+      "id": "s7-g53",
+      "teacherNumber": "53",
+      "sourceText": "slow / slowly / walk slowly / run slowly",
+      "items": [
+        {
+          "term": "slow",
+          "meaningZh": "缓慢的",
+          "acceptedMeaningsZh": [
+            "缓慢的",
+            "慢速的"
+          ],
+          "example": "He walks slowly.",
+          "exampleZh": "他走得慢。",
+          "relation": "single",
+          "id": "s7-g53-i1",
+          "sourceGroupId": "s7-g53",
+          "session": 7,
+          "teacherNumber": "53",
+          "displayNumber": "53-1"
+        },
+        {
+          "term": "slowly",
+          "meaningZh": "慢慢地",
+          "acceptedMeaningsZh": [
+            "慢慢地",
+            "作为副词"
+          ],
+          "example": "She runs slowly.",
+          "exampleZh": "她跑得慢。",
+          "relation": "inflection",
+          "id": "s7-g53-i2",
+          "sourceGroupId": "s7-g53",
+          "session": 7,
+          "teacherNumber": "53",
+          "displayNumber": "53-2"
+        },
+        {
+          "term": "walk slowly",
+          "meaningZh": "慢慢走",
+          "acceptedMeaningsZh": [
+            "慢慢走",
+            "慢行"
+          ],
+          "example": "Please walk slowly.",
+          "exampleZh": "请慢慢走。",
+          "relation": "phrase-alternative",
+          "id": "s7-g53-i3",
+          "sourceGroupId": "s7-g53",
+          "session": 7,
+          "teacherNumber": "53",
+          "displayNumber": "53-3"
+        },
+        {
+          "term": "run slowly",
+          "meaningZh": "慢跑",
+          "acceptedMeaningsZh": [
+            "慢跑",
+            "缓慢跑"
+          ],
+          "example": "He can run slowly.",
+          "exampleZh": "他能慢跑。",
+          "relation": "phrase-alternative",
+          "id": "s7-g53-i4",
+          "sourceGroupId": "s7-g53",
+          "session": 7,
+          "teacherNumber": "53",
+          "displayNumber": "53-4"
+        }
+      ]
+    },
+    {
+      "id": "s7-g54",
+      "teacherNumber": "54",
+      "sourceText": "hold → held",
+      "items": [
+        {
+          "term": "hold",
+          "meaningZh": "抓住",
+          "acceptedMeaningsZh": [
+            "抓住",
+            "握住"
+          ],
+          "example": "Hold my hand.",
+          "exampleZh": "握着我的手。",
+          "relation": "single",
+          "id": "s7-g54-i1",
+          "sourceGroupId": "s7-g54",
+          "session": 7,
+          "teacherNumber": "54",
+          "displayNumber": "54-1"
+        },
+        {
+          "term": "held",
+          "meaningZh": "被抓住的",
+          "acceptedMeaningsZh": [
+            "被抓住的",
+            "过去式"
+          ],
+          "example": "The ball was held.",
+          "exampleZh": "球被抓住了。",
+          "relation": "inflection",
+          "id": "s7-g54-i2",
+          "sourceGroupId": "s7-g54",
+          "session": 7,
+          "teacherNumber": "54",
+          "displayNumber": "54-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g55",
+      "teacherNumber": "55",
+      "sourceText": "tight / tightly / hold tightly",
+      "items": [
+        {
+          "term": "tight",
+          "meaningZh": "紧的",
+          "acceptedMeaningsZh": [
+            "紧的",
+            "紧密的"
+          ],
+          "example": "Tie the rope tight.",
+          "exampleZh": "把绳子系紧。",
+          "relation": "single",
+          "id": "s7-g55-i1",
+          "sourceGroupId": "s7-g55",
+          "session": 7,
+          "teacherNumber": "55",
+          "displayNumber": "55-1"
+        },
+        {
+          "term": "tightly",
+          "meaningZh": "紧紧地",
+          "acceptedMeaningsZh": [
+            "紧紧地",
+            "作为副词"
+          ],
+          "example": "Hold it tightly.",
+          "exampleZh": "紧紧握住它。",
+          "relation": "inflection",
+          "id": "s7-g55-i2",
+          "sourceGroupId": "s7-g55",
+          "session": 7,
+          "teacherNumber": "55",
+          "displayNumber": "55-2"
+        },
+        {
+          "term": "hold tightly",
+          "meaningZh": "抓紧",
+          "acceptedMeaningsZh": [
+            "抓紧",
+            "用力握"
+          ],
+          "example": "He holds his breath tightly.",
+          "exampleZh": "他屏住呼吸很紧。",
+          "relation": "phrase-alternative",
+          "id": "s7-g55-i3",
+          "sourceGroupId": "s7-g55",
+          "session": 7,
+          "teacherNumber": "55",
+          "displayNumber": "55-3"
+        }
+      ]
+    },
+    {
+      "id": "s7-g56",
+      "teacherNumber": "56",
+      "sourceText": "write → wrote",
+      "items": [
+        {
+          "term": "write",
+          "meaningZh": "写",
+          "acceptedMeaningsZh": [
+            "写",
+            "书写"
+          ],
+          "example": "Write your name here.",
+          "exampleZh": "在这里写下你的名字。",
+          "relation": "single",
+          "id": "s7-g56-i1",
+          "sourceGroupId": "s7-g56",
+          "session": 7,
+          "teacherNumber": "56",
+          "displayNumber": "56-1"
+        },
+        {
+          "term": "wrote",
+          "meaningZh": "写的",
+          "acceptedMeaningsZh": [
+            "写的",
+            "过去式"
+          ],
+          "example": "She wrote a letter.",
+          "exampleZh": "她写了一封信。",
+          "relation": "inflection",
+          "id": "s7-g56-i2",
+          "sourceGroupId": "s7-g56",
+          "session": 7,
+          "teacherNumber": "56",
+          "displayNumber": "56-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g57",
+      "teacherNumber": "57",
+      "sourceText": "can't → couldn't",
+      "items": [
+        {
+          "term": "can't",
+          "meaningZh": "不能",
+          "acceptedMeaningsZh": [
+            "不能",
+            "不可以"
+          ],
+          "example": "I can't go out.",
+          "exampleZh": "我不能出去。",
+          "relation": "single",
+          "id": "s7-g57-i1",
+          "sourceGroupId": "s7-g57",
+          "session": 7,
+          "teacherNumber": "57",
+          "displayNumber": "57-1"
+        },
+        {
+          "term": "couldn't",
+          "meaningZh": "不能的过去式",
+          "acceptedMeaningsZh": [
+            "不能的过去式",
+            "过去的否定形式"
+          ],
+          "example": "He couldn't come yesterday.",
+          "exampleZh": "他昨天没能来。",
+          "relation": "inflection",
+          "id": "s7-g57-i2",
+          "sourceGroupId": "s7-g57",
+          "session": 7,
+          "teacherNumber": "57",
+          "displayNumber": "57-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g58",
+      "teacherNumber": "58",
+      "sourceText": "letter (a written message / an alphabet character)",
+      "items": [
+        {
+          "term": "letter (a written message",
+          "meaningZh": "(一封信)",
+          "acceptedMeaningsZh": [
+            "(一封信)",
+            "(一封写好的信)"
+          ],
+          "example": "This is a letter from my friend.",
+          "exampleZh": "这是一封来自我朋友的信。",
+          "relation": "single",
+          "id": "s7-g58-i1",
+          "sourceGroupId": "s7-g58",
+          "session": 7,
+          "teacherNumber": "58",
+          "displayNumber": "58-1"
+        },
+        {
+          "term": "an alphabet character)",
+          "meaningZh": "一个字母字符",
+          "acceptedMeaningsZh": [
+            "一个字母字符",
+            "一个英文字母"
+          ],
+          "example": "This is an alphabet character.",
+          "exampleZh": "这是一个字母字符。",
+          "relation": "single",
+          "id": "s7-g58-i2",
+          "sourceGroupId": "s7-g58",
+          "session": 7,
+          "teacherNumber": "58",
+          "displayNumber": "58-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g59",
+      "teacherNumber": "59",
+      "sourceText": "a road to a new world",
+      "items": [
+        {
+          "term": "a road to a new world",
+          "meaningZh": "通往一个新世界的路径",
+          "acceptedMeaningsZh": [
+            "通往一个新世界的路径",
+            "一条通向新世界的路"
+          ],
+          "example": "This is the path that leads us to a better future.",
+          "exampleZh": "这就是引领我们走向更美好未来的道路。",
+          "relation": "phrase-alternative",
+          "id": "s7-g59-i1",
+          "sourceGroupId": "s7-g59",
+          "session": 7,
+          "teacherNumber": "59",
+          "displayNumber": "59"
+        }
+      ]
+    },
+    {
+      "id": "s7-g60",
+      "teacherNumber": "60",
+      "sourceText": "grow → grew",
+      "items": [
+        {
+          "term": "grow",
+          "meaningZh": "生长",
+          "acceptedMeaningsZh": [
+            "生长",
+            "成长"
+          ],
+          "example": "The plant grows very quickly in spring.",
+          "exampleZh": "这株植物在春天长得很快。",
+          "relation": "single",
+          "id": "s7-g60-i1",
+          "sourceGroupId": "s7-g60",
+          "session": 7,
+          "teacherNumber": "60",
+          "displayNumber": "60-1"
+        },
+        {
+          "term": "grew",
+          "meaningZh": "过去式：生长了",
+          "acceptedMeaningsZh": [
+            "过去式：生长了",
+            "长成了"
+          ],
+          "example": "The tree grew tall over the years.",
+          "exampleZh": "这棵树几年间长高了。",
+          "relation": "inflection",
+          "id": "s7-g60-i2",
+          "sourceGroupId": "s7-g60",
+          "session": 7,
+          "teacherNumber": "60",
+          "displayNumber": "60-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g61",
+      "teacherNumber": "61",
+      "sourceText": "become → became",
+      "items": [
+        {
+          "term": "become",
+          "meaningZh": "变成",
+          "acceptedMeaningsZh": [
+            "变成",
+            "成为"
+          ],
+          "example": "He became a doctor.",
+          "exampleZh": "他变成了医生。",
+          "relation": "single",
+          "id": "s7-g61-i1",
+          "sourceGroupId": "s7-g61",
+          "session": 7,
+          "teacherNumber": "61",
+          "displayNumber": "61-1"
+        },
+        {
+          "term": "became",
+          "meaningZh": "变成",
+          "acceptedMeaningsZh": [
+            "变成",
+            "成为"
+          ],
+          "example": "He became a teacher.",
+          "exampleZh": "他成为一名老师。",
+          "relation": "single",
+          "id": "s7-g61-i2",
+          "sourceGroupId": "s7-g61",
+          "session": 7,
+          "teacherNumber": "61",
+          "displayNumber": "61-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g62",
+      "teacherNumber": "62",
+      "sourceText": "a letter to ...",
+      "items": [
+        {
+          "term": "a letter to...",
+          "meaningZh": "给……的一封信",
+          "acceptedMeaningsZh": [
+            "给……的一封信",
+            "写信给……"
+          ],
+          "example": "This is a letter to my friend.",
+          "exampleZh": "这是一封给我的朋友的信。",
+          "relation": "list",
+          "id": "s7-g62-i1",
+          "sourceGroupId": "s7-g62",
+          "session": 7,
+          "teacherNumber": "62",
+          "displayNumber": "62"
+        }
+      ]
+    },
+    {
+      "id": "s7-g63",
+      "teacherNumber": "63",
+      "sourceText": "future / in the future",
+      "items": [
+        {
+          "term": "future",
+          "meaningZh": "未来的",
+          "acceptedMeaningsZh": [
+            "未来的",
+            "将来"
+          ],
+          "example": "We will meet in the future.",
+          "exampleZh": "我们将来会见面。",
+          "relation": "single",
+          "id": "s7-g63-i1",
+          "sourceGroupId": "s7-g63",
+          "session": 7,
+          "teacherNumber": "63",
+          "displayNumber": "63-1"
+        },
+        {
+          "term": "in the future",
+          "meaningZh": "在未来",
+          "acceptedMeaningsZh": [
+            "在未来",
+            "在将来"
+          ],
+          "example": "See you in the future.",
+          "exampleZh": "未来见你。",
+          "relation": "phrase-alternative",
+          "id": "s7-g63-i2",
+          "sourceGroupId": "s7-g63",
+          "session": 7,
+          "teacherNumber": "63",
+          "displayNumber": "63-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g64",
+      "teacherNumber": "64",
+      "sourceText": "still",
+      "items": [
+        {
+          "term": "still",
+          "meaningZh": "仍然",
+          "acceptedMeaningsZh": [
+            "仍然",
+            "还"
+          ],
+          "example": "He is still sleeping.",
+          "exampleZh": "他还在睡觉。",
+          "relation": "single",
+          "id": "s7-g64-i1",
+          "sourceGroupId": "s7-g64",
+          "session": 7,
+          "teacherNumber": "64",
+          "displayNumber": "64"
+        }
+      ]
+    },
+    {
+      "id": "s7-g65",
+      "teacherNumber": "65",
+      "sourceText": "remember / remember about ...",
+      "items": [
+        {
+          "term": "remember",
+          "meaningZh": "记住",
+          "acceptedMeaningsZh": [
+            "记住",
+            "记得"
+          ],
+          "example": "Remember the lesson.",
+          "exampleZh": "记住这堂课。",
+          "relation": "single",
+          "id": "s7-g65-i1",
+          "sourceGroupId": "s7-g65",
+          "session": 7,
+          "teacherNumber": "65",
+          "displayNumber": "65-1"
+        },
+        {
+          "term": "remember about ...",
+          "meaningZh": "关于……记起/提醒",
+          "acceptedMeaningsZh": [
+            "关于……记起/提醒"
+          ],
+          "example": "Remember about your homework.",
+          "exampleZh": "别忘了你的作业。",
+          "relation": "phrase-alternative",
+          "id": "s7-g65-i2",
+          "sourceGroupId": "s7-g65",
+          "session": 7,
+          "teacherNumber": "65",
+          "displayNumber": "65-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g66",
+      "teacherNumber": "66",
+      "sourceText": "Grade Five / Class One / Class One Grade Five",
+      "items": [
+        {
+          "term": "Grade Five",
+          "meaningZh": "五年级",
+          "acceptedMeaningsZh": [
+            "五年级",
+            "五年级学生"
+          ],
+          "example": "I am in Grade Five.",
+          "exampleZh": "我在五年级。",
+          "relation": "single",
+          "id": "s7-g66-i1",
+          "sourceGroupId": "s7-g66",
+          "session": 7,
+          "teacherNumber": "66",
+          "displayNumber": "66-1"
+        },
+        {
+          "term": "Class One",
+          "meaningZh": "一班",
+          "acceptedMeaningsZh": [
+            "一班",
+            "第一班"
+          ],
+          "example": "Welcome to Class One.",
+          "exampleZh": "欢迎来到一班。",
+          "relation": "single",
+          "id": "s7-g66-i2",
+          "sourceGroupId": "s7-g66",
+          "session": 7,
+          "teacherNumber": "66",
+          "displayNumber": "66-2"
+        },
+        {
+          "term": "Class One Grade Five",
+          "meaningZh": "五年一班",
+          "acceptedMeaningsZh": [
+            "五年一班",
+            "五年级一班"
+          ],
+          "example": "This is Class One, Grade Five.",
+          "exampleZh": "这是五年一班。",
+          "relation": "phrase-alternative",
+          "id": "s7-g66-i3",
+          "sourceGroupId": "s7-g66",
+          "session": 7,
+          "teacherNumber": "66",
+          "displayNumber": "66-3"
+        }
+      ]
+    },
+    {
+      "id": "s7-g67",
+      "teacherNumber": "67",
+      "sourceText": "vegetables",
+      "items": [
+        {
+          "term": "vegetables",
+          "meaningZh": "蔬菜",
+          "acceptedMeaningsZh": [
+            "蔬菜",
+            "青菜类食物"
+          ],
+          "example": "We eat vegetables every day.",
+          "exampleZh": "我们每天吃蔬菜。",
+          "relation": "single",
+          "id": "s7-g67-i1",
+          "sourceGroupId": "s7-g67",
+          "session": 7,
+          "teacherNumber": "67",
+          "displayNumber": "67"
+        }
+      ]
+    },
+    {
+      "id": "s7-g68",
+      "teacherNumber": "68",
+      "sourceText": "fresh fruit / fresh air",
+      "items": [
+        {
+          "term": "fresh fruit",
+          "meaningZh": "新鲜水果",
+          "acceptedMeaningsZh": [
+            "新鲜水果",
+            "刚摘的水果"
+          ],
+          "example": "I like fresh fruit.",
+          "exampleZh": "我喜欢新鲜水果。",
+          "relation": "phrase-alternative",
+          "id": "s7-g68-i1",
+          "sourceGroupId": "s7-g68",
+          "session": 7,
+          "teacherNumber": "68",
+          "displayNumber": "68-1"
+        },
+        {
+          "term": "fresh air",
+          "meaningZh": "新鲜空气",
+          "acceptedMeaningsZh": [
+            "新鲜空气",
+            "清新的空气"
+          ],
+          "example": "We need fresh air to breathe.",
+          "exampleZh": "我们需要新鲜空气呼吸。",
+          "relation": "phrase-alternative",
+          "id": "s7-g68-i2",
+          "sourceGroupId": "s7-g68",
+          "session": 7,
+          "teacherNumber": "68",
+          "displayNumber": "68-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g69",
+      "teacherNumber": "69",
+      "sourceText": "diet / healthy diet",
+      "items": [
+        {
+          "term": "diet",
+          "meaningZh": "饮食",
+          "acceptedMeaningsZh": [
+            "饮食",
+            "膳食"
+          ],
+          "example": "A balanced diet is important for children.",
+          "exampleZh": "这项均衡的饮食对儿童很重要。",
+          "relation": "single",
+          "id": "s7-g69-i1",
+          "sourceGroupId": "s7-g69",
+          "session": 7,
+          "teacherNumber": "69",
+          "displayNumber": "69-1"
+        },
+        {
+          "term": "healthy diet",
+          "meaningZh": "健康的饮食",
+          "acceptedMeaningsZh": [
+            "健康的饮食",
+            "健康膳食"
+          ],
+          "example": "Eat a healthy diet every day.",
+          "exampleZh": "每天吃健康的饮食。",
+          "relation": "phrase-alternative",
+          "id": "s7-g69-i2",
+          "sourceGroupId": "s7-g69",
+          "session": 7,
+          "teacherNumber": "69",
+          "displayNumber": "69-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g70",
+      "teacherNumber": "70",
+      "sourceText": "become / become strong / become stronger",
+      "items": [
+        {
+          "term": "become",
+          "meaningZh": "变成",
+          "acceptedMeaningsZh": [
+            "变成",
+            "成为"
+          ],
+          "example": "He became a teacher.",
+          "exampleZh": "他成了一名老师。",
+          "relation": "single",
+          "id": "s7-g70-i1",
+          "sourceGroupId": "s7-g70",
+          "session": 7,
+          "teacherNumber": "70",
+          "displayNumber": "70-1"
+        },
+        {
+          "term": "become strong",
+          "meaningZh": "变得强壮的",
+          "acceptedMeaningsZh": [
+            "变得强壮的",
+            "变强了"
+          ],
+          "example": "The boy becomes strong quickly.",
+          "exampleZh": "这个男孩很快变得强壮起来。",
+          "relation": "phrase-alternative",
+          "id": "s7-g70-i2",
+          "sourceGroupId": "s7-g70",
+          "session": 7,
+          "teacherNumber": "70",
+          "displayNumber": "70-2"
+        },
+        {
+          "term": "become stronger",
+          "meaningZh": "变得更强的",
+          "acceptedMeaningsZh": [
+            "变得更强的",
+            "更强壮了"
+          ],
+          "example": "He became stronger after exercise.",
+          "exampleZh": "他锻炼后变得更强壮了。",
+          "relation": "phrase-alternative",
+          "id": "s7-g70-i3",
+          "sourceGroupId": "s7-g70",
+          "session": 7,
+          "teacherNumber": "70",
+          "displayNumber": "70-3"
+        }
+      ]
+    },
+    {
+      "id": "s7-g71",
+      "teacherNumber": "71",
+      "sourceText": "give up doing ...",
+      "items": [
+        {
+          "term": "give up doing",
+          "meaningZh": "放弃做……",
+          "acceptedMeaningsZh": [
+            "放弃做……",
+            "放弃做某事"
+          ],
+          "example": "He gave up doing homework.",
+          "exampleZh": "他放弃了做作业。",
+          "relation": "phrase-alternative",
+          "id": "s7-g71-i1",
+          "sourceGroupId": "s7-g71",
+          "session": 7,
+          "teacherNumber": "71",
+          "displayNumber": "71"
+        }
+      ]
+    },
+    {
+      "id": "s7-g72",
+      "teacherNumber": "72",
+      "sourceText": "proud / be proud of ...",
+      "items": [
+        {
+          "term": "proud",
+          "meaningZh": "自豪的",
+          "acceptedMeaningsZh": [
+            "自豪的",
+            "骄傲的"
+          ],
+          "example": "She is proud of her family.",
+          "exampleZh": "她为自己的家人感到自豪。",
+          "relation": "single",
+          "id": "s7-g72-i1",
+          "sourceGroupId": "s7-g72",
+          "session": 7,
+          "teacherNumber": "72",
+          "displayNumber": "72-1"
+        },
+        {
+          "term": "be proud of",
+          "meaningZh": "为……感到自豪",
+          "acceptedMeaningsZh": [
+            "为……感到自豪",
+            "对……感到骄傲"
+          ],
+          "example": "He is proud of his achievement.",
+          "exampleZh": "他对自己的成就感到自豪。",
+          "relation": "phrase-alternative",
+          "id": "s7-g72-i2",
+          "sourceGroupId": "s7-g72",
+          "session": 7,
+          "teacherNumber": "72",
+          "displayNumber": "72-2"
+        }
+      ]
+    },
+    {
+      "id": "s7-g73",
+      "teacherNumber": "73",
+      "sourceText": "shortcoming",
+      "items": [
+        {
+          "term": "shortcoming",
+          "meaningZh": "缺点",
+          "acceptedMeaningsZh": [
+            "缺点",
+            "不足"
+          ],
+          "example": "He has a shortcoming in his work.",
+          "exampleZh": "他有工作上的不足之处。",
+          "relation": "single",
+          "id": "s7-g73-i1",
+          "sourceGroupId": "s7-g73",
+          "session": 7,
+          "teacherNumber": "73",
+          "displayNumber": "73"
+        }
+      ]
+    },
+    {
+      "id": "s7-g74",
+      "teacherNumber": "74",
+      "sourceText": "in the past",
+      "items": [
+        {
+          "term": "in the past",
+          "meaningZh": "在过去",
+          "acceptedMeaningsZh": [
+            "在过去"
+          ],
+          "example": "We lived here in the past.",
+          "exampleZh": "我们过去住在这里。",
+          "relation": "pattern",
+          "id": "s7-g74-i1",
+          "sourceGroupId": "s7-g74",
+          "session": 7,
+          "teacherNumber": "74",
+          "displayNumber": "74"
+        }
+      ]
+    },
+    {
+      "id": "s7-g75",
+      "teacherNumber": "75",
+      "sourceText": "cause / because",
+      "items": [
+        {
+          "term": "cause",
+          "meaningZh": "原因",
+          "acceptedMeaningsZh": [
+            "原因",
+            "起因"
+          ],
+          "example": "What caused the accident?",
+          "exampleZh": "什么导致了事故？",
+          "relation": "single",
+          "id": "s7-g75-i1",
+          "sourceGroupId": "s7-g75",
+          "session": 7,
+          "teacherNumber": "75",
+          "displayNumber": "75-1"
+        },
+        {
+          "term": "because",
+          "meaningZh": "因为",
+          "acceptedMeaningsZh": [
+            "因为",
+            "由于"
+          ],
+          "example": "I stayed home because it rained.",
+          "exampleZh": "我待在家里是因为下雨了。",
+          "relation": "pattern",
+          "id": "s7-g75-i2",
+          "sourceGroupId": "s7-g75",
+          "session": 7,
+          "teacherNumber": "75",
+          "displayNumber": "75-2"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "term": "write a letter",
+      "meaningZh": "写信",
+      "acceptedMeaningsZh": [
+        "写信",
+        "给某人写一封信"
+      ],
+      "example": "Write me a letter about your trip.",
+      "exampleZh": "给我写一封关于你旅行的信。",
+      "relation": "phrase-alternative",
+      "id": "s7-g1-i1",
+      "sourceGroupId": "s7-g1",
+      "session": 7,
+      "teacherNumber": "1",
+      "displayNumber": "1"
+    },
+    {
+      "term": "future",
+      "meaningZh": "未来",
+      "acceptedMeaningsZh": [
+        "未来",
+        "将来"
+      ],
+      "example": "The future looks bright.",
+      "exampleZh": "未来看起来充满希望。",
+      "relation": "single",
+      "id": "s7-g2-i1",
+      "sourceGroupId": "s7-g2",
+      "session": 7,
+      "teacherNumber": "2",
+      "displayNumber": "2"
+    },
+    {
+      "term": "challenge",
+      "meaningZh": "挑战",
+      "acceptedMeaningsZh": [
+        "挑战",
+        "难题"
+      ],
+      "example": "This is a big challenge for me.",
+      "exampleZh": "这对我来说是个大挑战。",
+      "relation": "single",
+      "id": "s7-g3-i1",
+      "sourceGroupId": "s7-g3",
+      "session": 7,
+      "teacherNumber": "3",
+      "displayNumber": "3"
+    },
+    {
+      "term": "give up",
+      "meaningZh": "放弃",
+      "acceptedMeaningsZh": [
+        "放弃",
+        "不再坚持"
+      ],
+      "example": "Don't give up, you can do it.",
+      "exampleZh": "不要放弃，你可以做到的。",
+      "relation": "phrase-alternative",
+      "id": "s7-g4-i1",
+      "sourceGroupId": "s7-g4",
+      "session": 7,
+      "teacherNumber": "4",
+      "displayNumber": "4"
+    },
+    {
+      "term": "succeed",
+      "meaningZh": "成功",
+      "acceptedMeaningsZh": [
+        "成功",
+        "达成目标"
+      ],
+      "example": "They succeeded in their task.",
+      "exampleZh": "他们完成了任务。",
+      "relation": "single",
+      "id": "s7-g5-i1",
+      "sourceGroupId": "s7-g5",
+      "session": 7,
+      "teacherNumber": "5",
+      "displayNumber": "5-1"
+    },
+    {
+      "term": "success",
+      "meaningZh": "成功",
+      "acceptedMeaningsZh": [
+        "成功",
+        "胜利"
+      ],
+      "example": "Their success was great.",
+      "exampleZh": "他们的成就很大。",
+      "relation": "single",
+      "id": "s7-g5-i2",
+      "sourceGroupId": "s7-g5",
+      "session": 7,
+      "teacherNumber": "5",
+      "displayNumber": "5-2"
+    },
+    {
+      "term": "practice",
+      "meaningZh": "练习",
+      "acceptedMeaningsZh": [
+        "练习",
+        "实践"
+      ],
+      "example": "I practice English every day.",
+      "exampleZh": "我每天都练习英语。",
+      "relation": "single",
+      "id": "s7-g6-i1",
+      "sourceGroupId": "s7-g6",
+      "session": 7,
+      "teacherNumber": "6",
+      "displayNumber": "6"
+    },
+    {
+      "term": "good",
+      "meaningZh": "好的",
+      "acceptedMeaningsZh": [
+        "好的",
+        "好"
+      ],
+      "example": "This is good.",
+      "exampleZh": "这是好的。",
+      "relation": "single",
+      "id": "s7-g7-i1",
+      "sourceGroupId": "s7-g7",
+      "session": 7,
+      "teacherNumber": "7",
+      "displayNumber": "7-1"
+    },
+    {
+      "term": "better",
+      "meaningZh": "更好的",
+      "acceptedMeaningsZh": [
+        "更好的",
+        "较好"
+      ],
+      "example": "It is better.",
+      "exampleZh": "它更好了。",
+      "relation": "inflection",
+      "id": "s7-g7-i2",
+      "sourceGroupId": "s7-g7",
+      "session": 7,
+      "teacherNumber": "7",
+      "displayNumber": "7-2"
+    },
+    {
+      "term": "is",
+      "meaningZh": "是（第三人称单数）",
+      "acceptedMeaningsZh": [
+        "是（第三人称单数）"
+      ],
+      "example": "He is a student.",
+      "exampleZh": "他是学生。",
+      "relation": "single",
+      "id": "s7-g8-i1",
+      "sourceGroupId": "s7-g8",
+      "session": 7,
+      "teacherNumber": "8",
+      "displayNumber": "8-1"
+    },
+    {
+      "term": "am",
+      "meaningZh": "是（第一人称单数）",
+      "acceptedMeaningsZh": [
+        "是（第一人称单数）"
+      ],
+      "example": "I am happy.",
+      "exampleZh": "我很快乐。",
+      "relation": "single",
+      "id": "s7-g8-i2",
+      "sourceGroupId": "s7-g8",
+      "session": 7,
+      "teacherNumber": "8",
+      "displayNumber": "8-2"
+    },
+    {
+      "term": "was",
+      "meaningZh": "是（过去式",
+      "acceptedMeaningsZh": [
+        "是（过去式",
+        "所有主语）"
+      ],
+      "example": "It was yesterday.",
+      "exampleZh": "那是昨天。",
+      "relation": "inflection",
+      "id": "s7-g8-i3",
+      "sourceGroupId": "s7-g8",
+      "session": 7,
+      "teacherNumber": "8",
+      "displayNumber": "8-3"
+    },
+    {
+      "term": "are",
+      "meaningZh": "是（复数或第二人称）",
+      "acceptedMeaningsZh": [
+        "是（复数或第二人称）"
+      ],
+      "example": "They are here.",
+      "exampleZh": "他们在这里。",
+      "relation": "single",
+      "id": "s7-g8-i4",
+      "sourceGroupId": "s7-g8",
+      "session": 7,
+      "teacherNumber": "8",
+      "displayNumber": "8-4"
+    },
+    {
+      "term": "were",
+      "meaningZh": "是（过去式",
+      "acceptedMeaningsZh": [
+        "是（过去式",
+        "复数/二单）"
+      ],
+      "example": "We were late.",
+      "exampleZh": "我们迟到了。",
+      "relation": "inflection",
+      "id": "s7-g8-i5",
+      "sourceGroupId": "s7-g8",
+      "session": 7,
+      "teacherNumber": "8",
+      "displayNumber": "8-5"
+    },
+    {
+      "term": "left",
+      "meaningZh": "左边的",
+      "acceptedMeaningsZh": [
+        "左边的",
+        "左边"
+      ],
+      "example": "Turn left.",
+      "exampleZh": "向左转。",
+      "relation": "single",
+      "id": "s7-g9-i1",
+      "sourceGroupId": "s7-g9",
+      "session": 7,
+      "teacherNumber": "9",
+      "displayNumber": "9-1"
+    },
+    {
+      "term": "right",
+      "meaningZh": "右边的",
+      "acceptedMeaningsZh": [
+        "右边的",
+        "右边"
+      ],
+      "example": "Go right now.",
+      "exampleZh": "现在向右走。",
+      "relation": "single",
+      "id": "s7-g9-i2",
+      "sourceGroupId": "s7-g9",
+      "session": 7,
+      "teacherNumber": "9",
+      "displayNumber": "9-2"
+    },
+    {
+      "term": "foot",
+      "meaningZh": "脚",
+      "acceptedMeaningsZh": [
+        "脚",
+        "足部"
+      ],
+      "example": "My foot hurts.",
+      "exampleZh": "我的脚疼了。",
+      "relation": "single",
+      "id": "s7-g10-i1",
+      "sourceGroupId": "s7-g10",
+      "session": 7,
+      "teacherNumber": "10",
+      "displayNumber": "10-1"
+    },
+    {
+      "term": "feet",
+      "meaningZh": "双脚",
+      "acceptedMeaningsZh": [
+        "双脚",
+        "多只脚"
+      ],
+      "example": "Their feet are wet.",
+      "exampleZh": "他们的脚湿了。",
+      "relation": "inflection",
+      "id": "s7-g10-i2",
+      "sourceGroupId": "s7-g10",
+      "session": 7,
+      "teacherNumber": "10",
+      "displayNumber": "10-2"
+    },
+    {
+      "term": "give up",
+      "meaningZh": "放弃",
+      "acceptedMeaningsZh": [
+        "放弃",
+        "不再做某事"
+      ],
+      "example": "He gave up smoking.",
+      "exampleZh": "他戒烟了。",
+      "relation": "single",
+      "id": "s7-g11-i1",
+      "sourceGroupId": "s7-g11",
+      "session": 7,
+      "teacherNumber": "11",
+      "displayNumber": "11"
+    },
+    {
+      "term": "practice",
+      "meaningZh": "练习",
+      "acceptedMeaningsZh": [
+        "练习",
+        "实践"
+      ],
+      "example": "We practice English every day.",
+      "exampleZh": "我们每天练习英语。",
+      "relation": "single",
+      "id": "s7-g12-i1",
+      "sourceGroupId": "s7-g12",
+      "session": 7,
+      "teacherNumber": "12",
+      "displayNumber": "12"
+    },
+    {
+      "term": "keep myself",
+      "meaningZh": "保持我自己",
+      "acceptedMeaningsZh": [
+        "保持我自己",
+        "保留我自己"
+      ],
+      "example": "I will keep myself.",
+      "exampleZh": "保持我自己。",
+      "relation": "phrase-alternative",
+      "id": "s7-g13-i1",
+      "sourceGroupId": "s7-g13",
+      "session": 7,
+      "teacherNumber": "13",
+      "displayNumber": "13-1"
+    },
+    {
+      "term": "yourself",
+      "meaningZh": "你自己",
+      "acceptedMeaningsZh": [
+        "你自己",
+        "自己"
+      ],
+      "example": "You should help yourself.",
+      "exampleZh": "你自己。",
+      "relation": "single",
+      "id": "s7-g13-i2",
+      "sourceGroupId": "s7-g13",
+      "session": 7,
+      "teacherNumber": "13",
+      "displayNumber": "13-2"
+    },
+    {
+      "term": "himself",
+      "meaningZh": "他自己",
+      "acceptedMeaningsZh": [
+        "他自己",
+        "自己"
+      ],
+      "example": "He did it himself.",
+      "exampleZh": "他亲自做的。",
+      "relation": "single",
+      "id": "s7-g13-i3",
+      "sourceGroupId": "s7-g13",
+      "session": 7,
+      "teacherNumber": "13",
+      "displayNumber": "13-3"
+    },
+    {
+      "term": "herself",
+      "meaningZh": "她自己",
+      "acceptedMeaningsZh": [
+        "她自己",
+        "自己（反身代词）"
+      ],
+      "example": "She did it herself.",
+      "exampleZh": "她自己做这件事。",
+      "relation": "single",
+      "id": "s7-g13-i4",
+      "sourceGroupId": "s7-g13",
+      "session": 7,
+      "teacherNumber": "13",
+      "displayNumber": "13-4"
+    },
+    {
+      "term": "ourselves",
+      "meaningZh": "我们自己",
+      "acceptedMeaningsZh": [
+        "我们自己",
+        "我们自身"
+      ],
+      "example": "We did it ourselves.",
+      "exampleZh": "我们自己。",
+      "relation": "single",
+      "id": "s7-g13-i5",
+      "sourceGroupId": "s7-g13",
+      "session": 7,
+      "teacherNumber": "13",
+      "displayNumber": "13-5"
+    },
+    {
+      "term": "themselves strong",
+      "meaningZh": "他们自己很强",
+      "acceptedMeaningsZh": [
+        "他们自己很强",
+        "强壮的"
+      ],
+      "example": "They are themselves strong.",
+      "exampleZh": "他们是他们自己的。",
+      "relation": "phrase-alternative",
+      "id": "s7-g13-i6",
+      "sourceGroupId": "s7-g13",
+      "session": 7,
+      "teacherNumber": "13",
+      "displayNumber": "13-6"
+    },
+    {
+      "term": "move mountains",
+      "meaningZh": "移山",
+      "acceptedMeaningsZh": [
+        "移山",
+        "移动大山"
+      ],
+      "example": "They want to move mountains.",
+      "exampleZh": "他们想要移开大山。",
+      "relation": "phrase-alternative",
+      "id": "s7-g14-i1",
+      "sourceGroupId": "s7-g14",
+      "session": 7,
+      "teacherNumber": "14",
+      "displayNumber": "14"
+    },
+    {
+      "term": "Where there is a will, there is a way.",
+      "meaningZh": "有志者事竟成",
+      "acceptedMeaningsZh": [
+        "有志者事竟成",
+        "有决心就有办法"
+      ],
+      "example": "Where there is a will, there is a way.",
+      "exampleZh": "有志者事竟成。",
+      "relation": "pattern",
+      "id": "s7-g15-i1",
+      "sourceGroupId": "s7-g15",
+      "session": 7,
+      "teacherNumber": "15",
+      "displayNumber": "15"
+    },
+    {
+      "term": "quotation",
+      "meaningZh": "引语",
+      "acceptedMeaningsZh": [
+        "引语",
+        "引用语句"
+      ],
+      "example": "He made a quotation about the weather.",
+      "exampleZh": "他做了一个关于天气的引语。",
+      "relation": "single",
+      "id": "s7-g16-i1",
+      "sourceGroupId": "s7-g16",
+      "session": 7,
+      "teacherNumber": "16",
+      "displayNumber": "16"
+    },
+    {
+      "term": "win",
+      "meaningZh": "赢得",
+      "acceptedMeaningsZh": [
+        "赢得",
+        "获胜"
+      ],
+      "example": "He won the game.",
+      "exampleZh": "他赢了比赛。",
+      "relation": "single",
+      "id": "s7-g17-i1",
+      "sourceGroupId": "s7-g17",
+      "session": 7,
+      "teacherNumber": "17",
+      "displayNumber": "17-1"
+    },
+    {
+      "term": "won",
+      "meaningZh": "赢的",
+      "acceptedMeaningsZh": [
+        "赢的",
+        "赢得的"
+      ],
+      "example": "He won the game.",
+      "exampleZh": "他赢了比赛。",
+      "relation": "single",
+      "id": "s7-g17-i2",
+      "sourceGroupId": "s7-g17",
+      "session": 7,
+      "teacherNumber": "17",
+      "displayNumber": "17-2"
+    },
+    {
+      "term": "win a prize",
+      "meaningZh": "赢得奖品",
+      "acceptedMeaningsZh": [
+        "赢得奖品",
+        "获奖"
+      ],
+      "example": "They won a prize in the contest.",
+      "exampleZh": "他们在这场竞赛中赢得了奖品。",
+      "relation": "phrase-alternative",
+      "id": "s7-g18-i1",
+      "sourceGroupId": "s7-g18",
+      "session": 7,
+      "teacherNumber": "18",
+      "displayNumber": "18"
+    },
+    {
+      "term": "in a contest",
+      "meaningZh": "参加竞赛",
+      "acceptedMeaningsZh": [
+        "参加竞赛",
+        "在竞赛中"
+      ],
+      "example": "They are in a contest.",
+      "exampleZh": "他们正在参加竞赛。",
+      "relation": "phrase-alternative",
+      "id": "s7-g19-i1",
+      "sourceGroupId": "s7-g19",
+      "session": 7,
+      "teacherNumber": "19",
+      "displayNumber": "19"
+    },
+    {
+      "term": "remember",
+      "meaningZh": "记住",
+      "acceptedMeaningsZh": [
+        "记住",
+        "记得"
+      ],
+      "example": "Remember your homework.",
+      "exampleZh": "记得你的作业。",
+      "relation": "single",
+      "id": "s7-g20-i1",
+      "sourceGroupId": "s7-g20",
+      "session": 7,
+      "teacherNumber": "20",
+      "displayNumber": "20"
+    },
+    {
+      "term": "the first time",
+      "meaningZh": "第一次",
+      "acceptedMeaningsZh": [
+        "第一次",
+        "头一次"
+      ],
+      "example": "It was the first time I saw him.",
+      "exampleZh": "那是我第一次见到他。",
+      "relation": "list",
+      "id": "s7-g21-i1",
+      "sourceGroupId": "s7-g21",
+      "session": 7,
+      "teacherNumber": "21",
+      "displayNumber": "21"
+    },
+    {
+      "term": "meet",
+      "meaningZh": "遇见",
+      "acceptedMeaningsZh": [
+        "遇见",
+        "见面"
+      ],
+      "example": "We met at school yesterday.",
+      "exampleZh": "我们昨天在学校见了一面。",
+      "relation": "single",
+      "id": "s7-g22-i1",
+      "sourceGroupId": "s7-g22",
+      "session": 7,
+      "teacherNumber": "22",
+      "displayNumber": "22-1"
+    },
+    {
+      "term": "met",
+      "meaningZh": "遇见的（过去式）",
+      "acceptedMeaningsZh": [
+        "遇见的（过去式）"
+      ],
+      "example": "They met in the park last week.",
+      "exampleZh": "他们上周在公园见了面。",
+      "relation": "inflection",
+      "id": "s7-g22-i2",
+      "sourceGroupId": "s7-g22",
+      "session": 7,
+      "teacherNumber": "22",
+      "displayNumber": "22-2"
+    },
+    {
+      "term": "shy",
+      "meaningZh": "害羞的",
+      "acceptedMeaningsZh": [
+        "害羞的",
+        "腼腆的"
+      ],
+      "example": "He is a bit shy about speaking.",
+      "exampleZh": "他有点不敢说话，很害羞。",
+      "relation": "single",
+      "id": "s7-g23-i1",
+      "sourceGroupId": "s7-g23",
+      "session": 7,
+      "teacherNumber": "23",
+      "displayNumber": "23-1"
+    },
+    {
+      "term": "quiet",
+      "meaningZh": "安静的",
+      "acceptedMeaningsZh": [
+        "安静的",
+        "寂静的"
+      ],
+      "example": "The library is very quiet now.",
+      "exampleZh": "现在图书馆非常安静。",
+      "relation": "synonym",
+      "id": "s7-g23-i2",
+      "sourceGroupId": "s7-g23",
+      "session": 7,
+      "teacherNumber": "23",
+      "displayNumber": "23-2"
+    },
+    {
+      "term": "confident",
+      "meaningZh": "自信的",
+      "acceptedMeaningsZh": [
+        "自信的",
+        "有信心的"
+      ],
+      "example": "She feels confident about the test.",
+      "exampleZh": "她对考试很有信心。",
+      "relation": "single",
+      "id": "s7-g24-i1",
+      "sourceGroupId": "s7-g24",
+      "session": 7,
+      "teacherNumber": "24",
+      "displayNumber": "24-1"
+    },
+    {
+      "term": "be confident",
+      "meaningZh": "感到自信",
+      "acceptedMeaningsZh": [
+        "感到自信",
+        "变得自信"
+      ],
+      "example": "He became more confident after practice.",
+      "exampleZh": "他在练习后变得更自信了。",
+      "relation": "phrase-alternative",
+      "id": "s7-g24-i2",
+      "sourceGroupId": "s7-g24",
+      "session": 7,
+      "teacherNumber": "24",
+      "displayNumber": "24-2"
+    },
+    {
+      "term": "used to be",
+      "meaningZh": "过去常常",
+      "acceptedMeaningsZh": [
+        "过去常常",
+        "曾经做过"
+      ],
+      "example": "They used to be friends.",
+      "exampleZh": "他们曾经是朋友。",
+      "relation": "pattern",
+      "id": "s7-g25-i1",
+      "sourceGroupId": "s7-g25",
+      "session": 7,
+      "teacherNumber": "25",
+      "displayNumber": "25"
+    },
+    {
+      "term": "be nervous",
+      "meaningZh": "感到紧张",
+      "acceptedMeaningsZh": [
+        "感到紧张",
+        "神经紧绷"
+      ],
+      "example": "He is very nervous about the test.",
+      "exampleZh": "他对考试感到非常紧张。",
+      "relation": "phrase-alternative",
+      "id": "s7-g26-i1",
+      "sourceGroupId": "s7-g26",
+      "session": 7,
+      "teacherNumber": "26",
+      "displayNumber": "26"
+    },
+    {
+      "term": "do",
+      "meaningZh": "做",
+      "acceptedMeaningsZh": [
+        "做",
+        "干"
+      ],
+      "example": "Please do your homework now.",
+      "exampleZh": "请现在做作业吧。",
+      "relation": "single",
+      "id": "s7-g27-i1",
+      "sourceGroupId": "s7-g27",
+      "session": 7,
+      "teacherNumber": "27",
+      "displayNumber": "27-1"
+    },
+    {
+      "term": "did",
+      "meaningZh": "做了（过去式）",
+      "acceptedMeaningsZh": [
+        "做了（过去式）"
+      ],
+      "example": "I did my homework yesterday.",
+      "exampleZh": "我昨天完成了作业。",
+      "relation": "inflection",
+      "id": "s7-g27-i2",
+      "sourceGroupId": "s7-g27",
+      "session": 7,
+      "teacherNumber": "27",
+      "displayNumber": "27-2"
+    },
+    {
+      "term": "How do you make it?",
+      "meaningZh": "你如何做到这一点？",
+      "acceptedMeaningsZh": [
+        "你如何做到这一点？",
+        "你怎么做到的呢？"
+      ],
+      "example": "How do you make it?",
+      "exampleZh": "你如何做到这一点？",
+      "relation": "pattern",
+      "id": "s7-g28-i1",
+      "sourceGroupId": "s7-g28",
+      "session": 7,
+      "teacherNumber": "28",
+      "displayNumber": "28"
+    },
+    {
+      "term": "learn",
+      "meaningZh": "学习",
+      "acceptedMeaningsZh": [
+        "学习",
+        "学"
+      ],
+      "example": "He wants to learn English.",
+      "exampleZh": "他想学英语。",
+      "relation": "single",
+      "id": "s7-g29-i1",
+      "sourceGroupId": "s7-g29",
+      "session": 7,
+      "teacherNumber": "29",
+      "displayNumber": "29-1"
+    },
+    {
+      "term": "learned",
+      "meaningZh": "已学的",
+      "acceptedMeaningsZh": [
+        "已学的",
+        "学会的"
+      ],
+      "example": "She has learned many words.",
+      "exampleZh": "她已经学会了很多单词。",
+      "relation": "inflection",
+      "id": "s7-g29-i2",
+      "sourceGroupId": "s7-g29",
+      "session": 7,
+      "teacherNumber": "29",
+      "displayNumber": "29-2"
+    },
+    {
+      "term": "learn from...",
+      "meaningZh": "从……学习",
+      "acceptedMeaningsZh": [
+        "从……学习",
+        "向……学习"
+      ],
+      "example": "I can learn from my mistakes.",
+      "exampleZh": "我可以从我犯的错误中学习。",
+      "relation": "pattern",
+      "id": "s7-g30-i1",
+      "sourceGroupId": "s7-g30",
+      "session": 7,
+      "teacherNumber": "30",
+      "displayNumber": "30"
+    },
+    {
+      "term": "do a lot of practice",
+      "meaningZh": "做很多练习",
+      "acceptedMeaningsZh": [
+        "做很多练习",
+        "进行大量练习"
+      ],
+      "example": "I do a lot of practice.",
+      "exampleZh": "我做很多练习。",
+      "relation": "phrase-alternative",
+      "id": "s7-g31-i1",
+      "sourceGroupId": "s7-g31",
+      "session": 7,
+      "teacherNumber": "31",
+      "displayNumber": "31"
+    },
+    {
+      "term": "What else?",
+      "meaningZh": "还有什么别的吗？还有其他的吗？",
+      "acceptedMeaningsZh": [
+        "还有什么别的吗？还有其他的吗？"
+      ],
+      "example": "What else?",
+      "exampleZh": "还有什么别的吗？还有其他的吗？",
+      "relation": "list",
+      "id": "s7-g32-i1",
+      "sourceGroupId": "s7-g32",
+      "session": 7,
+      "teacherNumber": "32",
+      "displayNumber": "32-1"
+    },
+    {
+      "term": "Who else?",
+      "meaningZh": "谁还？还有谁？",
+      "acceptedMeaningsZh": [
+        "谁还？还有谁？"
+      ],
+      "example": "Who else?",
+      "exampleZh": "谁还？还有谁？",
+      "relation": "list",
+      "id": "s7-g32-i2",
+      "sourceGroupId": "s7-g32",
+      "session": 7,
+      "teacherNumber": "32",
+      "displayNumber": "32-2"
+    },
+    {
+      "term": "tell",
+      "meaningZh": "告诉",
+      "acceptedMeaningsZh": [
+        "告诉",
+        "说"
+      ],
+      "example": "He told me a story.",
+      "exampleZh": "他给我讲了一个故事。",
+      "relation": "single",
+      "id": "s7-g33-i1",
+      "sourceGroupId": "s7-g33",
+      "session": 7,
+      "teacherNumber": "33",
+      "displayNumber": "33-1"
+    },
+    {
+      "term": "told",
+      "meaningZh": "告诉",
+      "acceptedMeaningsZh": [
+        "告诉",
+        "告知的过去式或分词形式"
+      ],
+      "example": "He told me the news.",
+      "exampleZh": "他告诉我这个消息。",
+      "relation": "single",
+      "id": "s7-g33-i2",
+      "sourceGroupId": "s7-g33",
+      "session": 7,
+      "teacherNumber": "33",
+      "displayNumber": "33-2"
+    },
+    {
+      "term": "make",
+      "meaningZh": "制作",
+      "acceptedMeaningsZh": [
+        "制作",
+        "制造"
+      ],
+      "example": "He wants to make a model.",
+      "exampleZh": "他想做一个模型。",
+      "relation": "single",
+      "id": "s7-g34-i1",
+      "sourceGroupId": "s7-g34",
+      "session": 7,
+      "teacherNumber": "34",
+      "displayNumber": "34-1"
+    },
+    {
+      "term": "made",
+      "meaningZh": "制作的",
+      "acceptedMeaningsZh": [
+        "制作的",
+        "制造的（过去式）"
+      ],
+      "example": "She made a cake for me.",
+      "exampleZh": "她为我做了一个蛋糕。",
+      "relation": "inflection",
+      "id": "s7-g34-i2",
+      "sourceGroupId": "s7-g34",
+      "session": 7,
+      "teacherNumber": "34",
+      "displayNumber": "34-2"
+    },
+    {
+      "term": "give me advice",
+      "meaningZh": "给我建议",
+      "acceptedMeaningsZh": [
+        "给我建议",
+        "给意见"
+      ],
+      "example": "Give me some advice on this.",
+      "exampleZh": "在这个问题上给我一些建议。",
+      "relation": "phrase-alternative",
+      "id": "s7-g35-i1",
+      "sourceGroupId": "s7-g35",
+      "session": 7,
+      "teacherNumber": "35",
+      "displayNumber": "35"
+    },
+    {
+      "term": "be good at",
+      "meaningZh": "擅长于",
+      "acceptedMeaningsZh": [
+        "擅长于",
+        "善于做某事"
+      ],
+      "example": "He is good at math.",
+      "exampleZh": "他擅长数学。",
+      "relation": "single",
+      "id": "s7-g36-i1",
+      "sourceGroupId": "s7-g36",
+      "session": 7,
+      "teacherNumber": "36",
+      "displayNumber": "36-1"
+    },
+    {
+      "term": "be good at doing",
+      "meaningZh": "擅长做...（动名词形式）",
+      "acceptedMeaningsZh": [
+        "擅长做...（动名词形式）"
+      ],
+      "example": "She is good at singing.",
+      "exampleZh": "她擅长唱歌。",
+      "relation": "phrase-alternative",
+      "id": "s7-g36-i2",
+      "sourceGroupId": "s7-g36",
+      "session": 7,
+      "teacherNumber": "36",
+      "displayNumber": "36-2"
+    },
+    {
+      "term": "be not good at doing",
+      "meaningZh": "不擅长做...",
+      "acceptedMeaningsZh": [
+        "不擅长做...",
+        "不会做某事"
+      ],
+      "example": "He is not good at playing chess.",
+      "exampleZh": "他不擅长下棋。",
+      "relation": "phrase-alternative",
+      "id": "s7-g36-i3",
+      "sourceGroupId": "s7-g36",
+      "session": 7,
+      "teacherNumber": "36",
+      "displayNumber": "36-3"
+    },
+    {
+      "term": "be sick",
+      "meaningZh": "生病",
+      "acceptedMeaningsZh": [
+        "生病",
+        "患病"
+      ],
+      "example": "He is be sick.",
+      "exampleZh": "他生病了。",
+      "relation": "phrase-alternative",
+      "id": "s7-g37-i1",
+      "sourceGroupId": "s7-g37",
+      "session": 7,
+      "teacherNumber": "37",
+      "displayNumber": "37"
+    },
+    {
+      "term": "can",
+      "meaningZh": "能",
+      "acceptedMeaningsZh": [
+        "能",
+        "可以"
+      ],
+      "example": "I can swim.",
+      "exampleZh": "我会游泳。",
+      "relation": "single",
+      "id": "s7-g38-i1",
+      "sourceGroupId": "s7-g38",
+      "session": 7,
+      "teacherNumber": "38",
+      "displayNumber": "38-1"
+    },
+    {
+      "term": "could",
+      "meaningZh": "能够（过去式）",
+      "acceptedMeaningsZh": [
+        "能够（过去式）",
+        "可能（推测）"
+      ],
+      "example": "He could fly when he was young.",
+      "exampleZh": "他年轻时会飞。",
+      "relation": "inflection",
+      "id": "s7-g38-i2",
+      "sourceGroupId": "s7-g38",
+      "session": 7,
+      "teacherNumber": "38",
+      "displayNumber": "38-2"
+    },
+    {
+      "term": "control",
+      "meaningZh": "控制",
+      "acceptedMeaningsZh": [
+        "控制",
+        "管制"
+      ],
+      "example": "The teacher controls the class.",
+      "exampleZh": "老师控制着班级。",
+      "relation": "single",
+      "id": "s7-g39-i1",
+      "sourceGroupId": "s7-g39",
+      "session": 7,
+      "teacherNumber": "39",
+      "displayNumber": "39"
+    },
+    {
+      "term": "give up",
+      "meaningZh": "放弃",
+      "acceptedMeaningsZh": [
+        "放弃",
+        "不再做某事"
+      ],
+      "example": "He gave up smoking last year.",
+      "exampleZh": "他去年戒烟了。",
+      "relation": "phrase-alternative",
+      "id": "s7-g40-i1",
+      "sourceGroupId": "s7-g40",
+      "session": 7,
+      "teacherNumber": "40",
+      "displayNumber": "40"
+    },
+    {
+      "term": "teach",
+      "meaningZh": "教",
+      "acceptedMeaningsZh": [
+        "教",
+        "教授"
+      ],
+      "example": "She taught me English.",
+      "exampleZh": "她教我英语。",
+      "relation": "single",
+      "id": "s7-g41-i1",
+      "sourceGroupId": "s7-g41",
+      "session": 7,
+      "teacherNumber": "41",
+      "displayNumber": "41-1"
+    },
+    {
+      "term": "taught",
+      "meaningZh": "教的（过去式）",
+      "acceptedMeaningsZh": [
+        "教的（过去式）",
+        "教授的（过去式）"
+      ],
+      "example": "She taught me English last year.",
+      "exampleZh": "去年她教我英语了。",
+      "relation": "inflection",
+      "id": "s7-g41-i2",
+      "sourceGroupId": "s7-g41",
+      "session": 7,
+      "teacherNumber": "41",
+      "displayNumber": "41-2"
+    },
+    {
+      "term": "ask",
+      "meaningZh": "问",
+      "acceptedMeaningsZh": [
+        "问",
+        "询问"
+      ],
+      "example": "Can you ask him?",
+      "exampleZh": "你能问他吗？",
+      "relation": "single",
+      "id": "s7-g42-i1",
+      "sourceGroupId": "s7-g42",
+      "session": 7,
+      "teacherNumber": "42",
+      "displayNumber": "42-1"
+    },
+    {
+      "term": "asked",
+      "meaningZh": "问的（过去式）",
+      "acceptedMeaningsZh": [
+        "问的（过去式）",
+        "询问的（过去式）"
+      ],
+      "example": "He asked me a question.",
+      "exampleZh": "他问我一个问题。",
+      "relation": "inflection",
+      "id": "s7-g42-i2",
+      "sourceGroupId": "s7-g42",
+      "session": 7,
+      "teacherNumber": "42",
+      "displayNumber": "42-2"
+    },
+    {
+      "term": "nod",
+      "meaningZh": "点头",
+      "acceptedMeaningsZh": [
+        "点头",
+        "示意"
+      ],
+      "example": "Please nod if you agree.",
+      "exampleZh": "如果你同意请点点头。",
+      "relation": "single",
+      "id": "s7-g43-i1",
+      "sourceGroupId": "s7-g43",
+      "session": 7,
+      "teacherNumber": "43",
+      "displayNumber": "43-1"
+    },
+    {
+      "term": "nod your head",
+      "meaningZh": "点头（动作）",
+      "acceptedMeaningsZh": [
+        "点头（动作）"
+      ],
+      "example": "He nodded his head to show agreement.",
+      "exampleZh": "他点头表示同意。",
+      "relation": "phrase-alternative",
+      "id": "s7-g43-i2",
+      "sourceGroupId": "s7-g43",
+      "session": 7,
+      "teacherNumber": "43",
+      "displayNumber": "43-2"
+    },
+    {
+      "term": "make some signs",
+      "meaningZh": "做几个手势",
+      "acceptedMeaningsZh": [
+        "做几个手势",
+        "做出一些标志"
+      ],
+      "example": "Please make some signs for the game.",
+      "exampleZh": "请为游戏做一些手势。",
+      "relation": "single",
+      "id": "s7-g44-i1",
+      "sourceGroupId": "s7-g44",
+      "session": 7,
+      "teacherNumber": "44",
+      "displayNumber": "44-1"
+    },
+    {
+      "term": "can't make any signs",
+      "meaningZh": "不能做任何手势",
+      "acceptedMeaningsZh": [
+        "不能做任何手势",
+        "无法做出任何标志"
+      ],
+      "example": "I can't make any signs right now.",
+      "exampleZh": "我现在没法做任何手势了。",
+      "relation": "phrase-alternative",
+      "id": "s7-g44-i2",
+      "sourceGroupId": "s7-g44",
+      "session": 7,
+      "teacherNumber": "44",
+      "displayNumber": "44-2"
+    },
+    {
+      "term": "tell",
+      "meaningZh": "告诉",
+      "acceptedMeaningsZh": [
+        "告诉",
+        "说"
+      ],
+      "example": "He wants to tell me the truth.",
+      "exampleZh": "他想告诉我真相。",
+      "relation": "single",
+      "id": "s7-g45-i1",
+      "sourceGroupId": "s7-g45",
+      "session": 7,
+      "teacherNumber": "45",
+      "displayNumber": "45-1"
+    },
+    {
+      "term": "told",
+      "meaningZh": "告诉的（过去式）",
+      "acceptedMeaningsZh": [
+        "告诉的（过去式）"
+      ],
+      "example": "She told him a secret yesterday.",
+      "exampleZh": "她昨天告诉他一个秘密。",
+      "relation": "inflection",
+      "id": "s7-g45-i2",
+      "sourceGroupId": "s7-g45",
+      "session": 7,
+      "teacherNumber": "45",
+      "displayNumber": "45-2"
+    },
+    {
+      "term": "be able to do",
+      "meaningZh": "能够做某事",
+      "acceptedMeaningsZh": [
+        "能够做某事",
+        "有能力做某事"
+      ],
+      "example": "They are able to swim.",
+      "exampleZh": "他们能游泳。",
+      "relation": "single",
+      "id": "s7-g46-i1",
+      "sourceGroupId": "s7-g46",
+      "session": 7,
+      "teacherNumber": "46",
+      "displayNumber": "46-1"
+    },
+    {
+      "term": "be unable to do",
+      "meaningZh": "无法做某事",
+      "acceptedMeaningsZh": [
+        "无法做某事",
+        "不能做某事"
+      ],
+      "example": "They are not able to open the door.",
+      "exampleZh": "他们打不开那扇门。",
+      "relation": "phrase-alternative",
+      "id": "s7-g46-i2",
+      "sourceGroupId": "s7-g46",
+      "session": 7,
+      "teacherNumber": "46",
+      "displayNumber": "46-2"
+    },
+    {
+      "term": "be doing",
+      "meaningZh": "正在做",
+      "acceptedMeaningsZh": [
+        "正在做",
+        "正在进行时态"
+      ],
+      "example": "I am be doing.",
+      "exampleZh": "我正在做。",
+      "relation": "pattern",
+      "id": "s7-g47-i1",
+      "sourceGroupId": "s7-g47",
+      "session": 7,
+      "teacherNumber": "47",
+      "displayNumber": "47-1"
+    },
+    {
+      "term": "was doing",
+      "meaningZh": "过去进行时",
+      "acceptedMeaningsZh": [
+        "过去进行时",
+        "正在做某事（过去）"
+      ],
+      "example": "I was doing my homework.",
+      "exampleZh": "我那时在做作业。",
+      "relation": "pattern",
+      "id": "s7-g47-i2",
+      "sourceGroupId": "s7-g47",
+      "session": 7,
+      "teacherNumber": "47",
+      "displayNumber": "47-2"
+    },
+    {
+      "term": "were doing",
+      "meaningZh": "正在做",
+      "acceptedMeaningsZh": [
+        "正在做",
+        "过去进行时"
+      ],
+      "example": "They were doing homework.",
+      "exampleZh": "他们当时在做作业。",
+      "relation": "pattern",
+      "id": "s7-g47-i3",
+      "sourceGroupId": "s7-g47",
+      "session": 7,
+      "teacherNumber": "47",
+      "displayNumber": "47-3"
+    },
+    {
+      "term": "watch sb. doing",
+      "meaningZh": "观看某人正在做某事",
+      "acceptedMeaningsZh": [
+        "观看某人正在做某事",
+        "看别人在做事情"
+      ],
+      "example": "I watched him playing football.",
+      "exampleZh": "我看着他踢足球。",
+      "relation": "pattern",
+      "id": "s7-g48-i1",
+      "sourceGroupId": "s7-g48",
+      "session": 7,
+      "teacherNumber": "48",
+      "displayNumber": "48-1"
+    },
+    {
+      "term": "watch my mum cleaning the house",
+      "meaningZh": "看妈妈打扫房子",
+      "acceptedMeaningsZh": [
+        "看妈妈打扫房子",
+        "观察母亲做家务"
+      ],
+      "example": "I watched my mum cleaning the house.",
+      "exampleZh": "我看过妈妈在打扫房子。",
+      "relation": "phrase-alternative",
+      "id": "s7-g48-i2",
+      "sourceGroupId": "s7-g48",
+      "session": 7,
+      "teacherNumber": "48",
+      "displayNumber": "48-2"
+    },
+    {
+      "term": "use",
+      "meaningZh": "使用",
+      "acceptedMeaningsZh": [
+        "使用",
+        "用"
+      ],
+      "example": "I use this tool.",
+      "exampleZh": "我使用这个工具。",
+      "relation": "single",
+      "id": "s7-g49-i1",
+      "sourceGroupId": "s7-g49",
+      "session": 7,
+      "teacherNumber": "49",
+      "displayNumber": "49-1"
+    },
+    {
+      "term": "using",
+      "meaningZh": "正在使用的",
+      "acceptedMeaningsZh": [
+        "正在使用的",
+        "使用中"
+      ],
+      "example": "He is using a pen now.",
+      "exampleZh": "他正现在用一支笔。",
+      "relation": "inflection",
+      "id": "s7-g49-i2",
+      "sourceGroupId": "s7-g49",
+      "session": 7,
+      "teacherNumber": "49",
+      "displayNumber": "49-2"
+    },
+    {
+      "term": "a piece of",
+      "meaningZh": "一块的",
+      "acceptedMeaningsZh": [
+        "一块的",
+        "一件的"
+      ],
+      "example": "It's a piece of paper.",
+      "exampleZh": "它是一张纸。",
+      "relation": "phrase-alternative",
+      "id": "s7-g50-i1",
+      "sourceGroupId": "s7-g50",
+      "session": 7,
+      "teacherNumber": "50",
+      "displayNumber": "50-1"
+    },
+    {
+      "term": "a piece of chalk",
+      "meaningZh": "一块粉笔的",
+      "acceptedMeaningsZh": [
+        "一块粉笔的",
+        "一根粉笔的"
+      ],
+      "example": "She drew with a piece of chalk.",
+      "exampleZh": "她用一块粉笔画画了。",
+      "relation": "phrase-alternative",
+      "id": "s7-g50-i2",
+      "sourceGroupId": "s7-g50",
+      "session": 7,
+      "teacherNumber": "50",
+      "displayNumber": "50-2"
+    },
+    {
+      "term": "take",
+      "meaningZh": "拿",
+      "acceptedMeaningsZh": [
+        "拿",
+        "取"
+      ],
+      "example": "Take the book.",
+      "exampleZh": "把书拿走。",
+      "relation": "single",
+      "id": "s7-g51-i1",
+      "sourceGroupId": "s7-g51",
+      "session": 7,
+      "teacherNumber": "51",
+      "displayNumber": "51-1"
+    },
+    {
+      "term": "took",
+      "meaningZh": "拿了（过去式）",
+      "acceptedMeaningsZh": [
+        "拿了（过去式）"
+      ],
+      "example": "He took the book yesterday.",
+      "exampleZh": "他昨天把那本书拿走了。",
+      "relation": "inflection",
+      "id": "s7-g51-i2",
+      "sourceGroupId": "s7-g51",
+      "session": 7,
+      "teacherNumber": "51",
+      "displayNumber": "51-2"
+    },
+    {
+      "term": "take ... from ...",
+      "meaningZh": "从……里拿走",
+      "acceptedMeaningsZh": [
+        "从……里拿走",
+        "把……从……带走"
+      ],
+      "example": "Take it from here.",
+      "exampleZh": "把它从这里拿走。",
+      "relation": "phrase-alternative",
+      "id": "s7-g52-i1",
+      "sourceGroupId": "s7-g52",
+      "session": 7,
+      "teacherNumber": "52",
+      "displayNumber": "52"
+    },
+    {
+      "term": "slow",
+      "meaningZh": "缓慢的",
+      "acceptedMeaningsZh": [
+        "缓慢的",
+        "慢速的"
+      ],
+      "example": "He walks slowly.",
+      "exampleZh": "他走得慢。",
+      "relation": "single",
+      "id": "s7-g53-i1",
+      "sourceGroupId": "s7-g53",
+      "session": 7,
+      "teacherNumber": "53",
+      "displayNumber": "53-1"
+    },
+    {
+      "term": "slowly",
+      "meaningZh": "慢慢地",
+      "acceptedMeaningsZh": [
+        "慢慢地",
+        "作为副词"
+      ],
+      "example": "She runs slowly.",
+      "exampleZh": "她跑得慢。",
+      "relation": "inflection",
+      "id": "s7-g53-i2",
+      "sourceGroupId": "s7-g53",
+      "session": 7,
+      "teacherNumber": "53",
+      "displayNumber": "53-2"
+    },
+    {
+      "term": "walk slowly",
+      "meaningZh": "慢慢走",
+      "acceptedMeaningsZh": [
+        "慢慢走",
+        "慢行"
+      ],
+      "example": "Please walk slowly.",
+      "exampleZh": "请慢慢走。",
+      "relation": "phrase-alternative",
+      "id": "s7-g53-i3",
+      "sourceGroupId": "s7-g53",
+      "session": 7,
+      "teacherNumber": "53",
+      "displayNumber": "53-3"
+    },
+    {
+      "term": "run slowly",
+      "meaningZh": "慢跑",
+      "acceptedMeaningsZh": [
+        "慢跑",
+        "缓慢跑"
+      ],
+      "example": "He can run slowly.",
+      "exampleZh": "他能慢跑。",
+      "relation": "phrase-alternative",
+      "id": "s7-g53-i4",
+      "sourceGroupId": "s7-g53",
+      "session": 7,
+      "teacherNumber": "53",
+      "displayNumber": "53-4"
+    },
+    {
+      "term": "hold",
+      "meaningZh": "抓住",
+      "acceptedMeaningsZh": [
+        "抓住",
+        "握住"
+      ],
+      "example": "Hold my hand.",
+      "exampleZh": "握着我的手。",
+      "relation": "single",
+      "id": "s7-g54-i1",
+      "sourceGroupId": "s7-g54",
+      "session": 7,
+      "teacherNumber": "54",
+      "displayNumber": "54-1"
+    },
+    {
+      "term": "held",
+      "meaningZh": "被抓住的",
+      "acceptedMeaningsZh": [
+        "被抓住的",
+        "过去式"
+      ],
+      "example": "The ball was held.",
+      "exampleZh": "球被抓住了。",
+      "relation": "inflection",
+      "id": "s7-g54-i2",
+      "sourceGroupId": "s7-g54",
+      "session": 7,
+      "teacherNumber": "54",
+      "displayNumber": "54-2"
+    },
+    {
+      "term": "tight",
+      "meaningZh": "紧的",
+      "acceptedMeaningsZh": [
+        "紧的",
+        "紧密的"
+      ],
+      "example": "Tie the rope tight.",
+      "exampleZh": "把绳子系紧。",
+      "relation": "single",
+      "id": "s7-g55-i1",
+      "sourceGroupId": "s7-g55",
+      "session": 7,
+      "teacherNumber": "55",
+      "displayNumber": "55-1"
+    },
+    {
+      "term": "tightly",
+      "meaningZh": "紧紧地",
+      "acceptedMeaningsZh": [
+        "紧紧地",
+        "作为副词"
+      ],
+      "example": "Hold it tightly.",
+      "exampleZh": "紧紧握住它。",
+      "relation": "inflection",
+      "id": "s7-g55-i2",
+      "sourceGroupId": "s7-g55",
+      "session": 7,
+      "teacherNumber": "55",
+      "displayNumber": "55-2"
+    },
+    {
+      "term": "hold tightly",
+      "meaningZh": "抓紧",
+      "acceptedMeaningsZh": [
+        "抓紧",
+        "用力握"
+      ],
+      "example": "He holds his breath tightly.",
+      "exampleZh": "他屏住呼吸很紧。",
+      "relation": "phrase-alternative",
+      "id": "s7-g55-i3",
+      "sourceGroupId": "s7-g55",
+      "session": 7,
+      "teacherNumber": "55",
+      "displayNumber": "55-3"
+    },
+    {
+      "term": "write",
+      "meaningZh": "写",
+      "acceptedMeaningsZh": [
+        "写",
+        "书写"
+      ],
+      "example": "Write your name here.",
+      "exampleZh": "在这里写下你的名字。",
+      "relation": "single",
+      "id": "s7-g56-i1",
+      "sourceGroupId": "s7-g56",
+      "session": 7,
+      "teacherNumber": "56",
+      "displayNumber": "56-1"
+    },
+    {
+      "term": "wrote",
+      "meaningZh": "写的",
+      "acceptedMeaningsZh": [
+        "写的",
+        "过去式"
+      ],
+      "example": "She wrote a letter.",
+      "exampleZh": "她写了一封信。",
+      "relation": "inflection",
+      "id": "s7-g56-i2",
+      "sourceGroupId": "s7-g56",
+      "session": 7,
+      "teacherNumber": "56",
+      "displayNumber": "56-2"
+    },
+    {
+      "term": "can't",
+      "meaningZh": "不能",
+      "acceptedMeaningsZh": [
+        "不能",
+        "不可以"
+      ],
+      "example": "I can't go out.",
+      "exampleZh": "我不能出去。",
+      "relation": "single",
+      "id": "s7-g57-i1",
+      "sourceGroupId": "s7-g57",
+      "session": 7,
+      "teacherNumber": "57",
+      "displayNumber": "57-1"
+    },
+    {
+      "term": "couldn't",
+      "meaningZh": "不能的过去式",
+      "acceptedMeaningsZh": [
+        "不能的过去式",
+        "过去的否定形式"
+      ],
+      "example": "He couldn't come yesterday.",
+      "exampleZh": "他昨天没能来。",
+      "relation": "inflection",
+      "id": "s7-g57-i2",
+      "sourceGroupId": "s7-g57",
+      "session": 7,
+      "teacherNumber": "57",
+      "displayNumber": "57-2"
+    },
+    {
+      "term": "letter (a written message",
+      "meaningZh": "(一封信)",
+      "acceptedMeaningsZh": [
+        "(一封信)",
+        "(一封写好的信)"
+      ],
+      "example": "This is a letter from my friend.",
+      "exampleZh": "这是一封来自我朋友的信。",
+      "relation": "single",
+      "id": "s7-g58-i1",
+      "sourceGroupId": "s7-g58",
+      "session": 7,
+      "teacherNumber": "58",
+      "displayNumber": "58-1"
+    },
+    {
+      "term": "an alphabet character)",
+      "meaningZh": "一个字母字符",
+      "acceptedMeaningsZh": [
+        "一个字母字符",
+        "一个英文字母"
+      ],
+      "example": "This is an alphabet character.",
+      "exampleZh": "这是一个字母字符。",
+      "relation": "single",
+      "id": "s7-g58-i2",
+      "sourceGroupId": "s7-g58",
+      "session": 7,
+      "teacherNumber": "58",
+      "displayNumber": "58-2"
+    },
+    {
+      "term": "a road to a new world",
+      "meaningZh": "通往一个新世界的路径",
+      "acceptedMeaningsZh": [
+        "通往一个新世界的路径",
+        "一条通向新世界的路"
+      ],
+      "example": "This is the path that leads us to a better future.",
+      "exampleZh": "这就是引领我们走向更美好未来的道路。",
+      "relation": "phrase-alternative",
+      "id": "s7-g59-i1",
+      "sourceGroupId": "s7-g59",
+      "session": 7,
+      "teacherNumber": "59",
+      "displayNumber": "59"
+    },
+    {
+      "term": "grow",
+      "meaningZh": "生长",
+      "acceptedMeaningsZh": [
+        "生长",
+        "成长"
+      ],
+      "example": "The plant grows very quickly in spring.",
+      "exampleZh": "这株植物在春天长得很快。",
+      "relation": "single",
+      "id": "s7-g60-i1",
+      "sourceGroupId": "s7-g60",
+      "session": 7,
+      "teacherNumber": "60",
+      "displayNumber": "60-1"
+    },
+    {
+      "term": "grew",
+      "meaningZh": "过去式：生长了",
+      "acceptedMeaningsZh": [
+        "过去式：生长了",
+        "长成了"
+      ],
+      "example": "The tree grew tall over the years.",
+      "exampleZh": "这棵树几年间长高了。",
+      "relation": "inflection",
+      "id": "s7-g60-i2",
+      "sourceGroupId": "s7-g60",
+      "session": 7,
+      "teacherNumber": "60",
+      "displayNumber": "60-2"
+    },
+    {
+      "term": "become",
+      "meaningZh": "变成",
+      "acceptedMeaningsZh": [
+        "变成",
+        "成为"
+      ],
+      "example": "He became a doctor.",
+      "exampleZh": "他变成了医生。",
+      "relation": "single",
+      "id": "s7-g61-i1",
+      "sourceGroupId": "s7-g61",
+      "session": 7,
+      "teacherNumber": "61",
+      "displayNumber": "61-1"
+    },
+    {
+      "term": "became",
+      "meaningZh": "变成",
+      "acceptedMeaningsZh": [
+        "变成",
+        "成为"
+      ],
+      "example": "He became a teacher.",
+      "exampleZh": "他成为一名老师。",
+      "relation": "single",
+      "id": "s7-g61-i2",
+      "sourceGroupId": "s7-g61",
+      "session": 7,
+      "teacherNumber": "61",
+      "displayNumber": "61-2"
+    },
+    {
+      "term": "a letter to...",
+      "meaningZh": "给……的一封信",
+      "acceptedMeaningsZh": [
+        "给……的一封信",
+        "写信给……"
+      ],
+      "example": "This is a letter to my friend.",
+      "exampleZh": "这是一封给我的朋友的信。",
+      "relation": "list",
+      "id": "s7-g62-i1",
+      "sourceGroupId": "s7-g62",
+      "session": 7,
+      "teacherNumber": "62",
+      "displayNumber": "62"
+    },
+    {
+      "term": "future",
+      "meaningZh": "未来的",
+      "acceptedMeaningsZh": [
+        "未来的",
+        "将来"
+      ],
+      "example": "We will meet in the future.",
+      "exampleZh": "我们将来会见面。",
+      "relation": "single",
+      "id": "s7-g63-i1",
+      "sourceGroupId": "s7-g63",
+      "session": 7,
+      "teacherNumber": "63",
+      "displayNumber": "63-1"
+    },
+    {
+      "term": "in the future",
+      "meaningZh": "在未来",
+      "acceptedMeaningsZh": [
+        "在未来",
+        "在将来"
+      ],
+      "example": "See you in the future.",
+      "exampleZh": "未来见你。",
+      "relation": "phrase-alternative",
+      "id": "s7-g63-i2",
+      "sourceGroupId": "s7-g63",
+      "session": 7,
+      "teacherNumber": "63",
+      "displayNumber": "63-2"
+    },
+    {
+      "term": "still",
+      "meaningZh": "仍然",
+      "acceptedMeaningsZh": [
+        "仍然",
+        "还"
+      ],
+      "example": "He is still sleeping.",
+      "exampleZh": "他还在睡觉。",
+      "relation": "single",
+      "id": "s7-g64-i1",
+      "sourceGroupId": "s7-g64",
+      "session": 7,
+      "teacherNumber": "64",
+      "displayNumber": "64"
+    },
+    {
+      "term": "remember",
+      "meaningZh": "记住",
+      "acceptedMeaningsZh": [
+        "记住",
+        "记得"
+      ],
+      "example": "Remember the lesson.",
+      "exampleZh": "记住这堂课。",
+      "relation": "single",
+      "id": "s7-g65-i1",
+      "sourceGroupId": "s7-g65",
+      "session": 7,
+      "teacherNumber": "65",
+      "displayNumber": "65-1"
+    },
+    {
+      "term": "remember about ...",
+      "meaningZh": "关于……记起/提醒",
+      "acceptedMeaningsZh": [
+        "关于……记起/提醒"
+      ],
+      "example": "Remember about your homework.",
+      "exampleZh": "别忘了你的作业。",
+      "relation": "phrase-alternative",
+      "id": "s7-g65-i2",
+      "sourceGroupId": "s7-g65",
+      "session": 7,
+      "teacherNumber": "65",
+      "displayNumber": "65-2"
+    },
+    {
+      "term": "Grade Five",
+      "meaningZh": "五年级",
+      "acceptedMeaningsZh": [
+        "五年级",
+        "五年级学生"
+      ],
+      "example": "I am in Grade Five.",
+      "exampleZh": "我在五年级。",
+      "relation": "single",
+      "id": "s7-g66-i1",
+      "sourceGroupId": "s7-g66",
+      "session": 7,
+      "teacherNumber": "66",
+      "displayNumber": "66-1"
+    },
+    {
+      "term": "Class One",
+      "meaningZh": "一班",
+      "acceptedMeaningsZh": [
+        "一班",
+        "第一班"
+      ],
+      "example": "Welcome to Class One.",
+      "exampleZh": "欢迎来到一班。",
+      "relation": "single",
+      "id": "s7-g66-i2",
+      "sourceGroupId": "s7-g66",
+      "session": 7,
+      "teacherNumber": "66",
+      "displayNumber": "66-2"
+    },
+    {
+      "term": "Class One Grade Five",
+      "meaningZh": "五年一班",
+      "acceptedMeaningsZh": [
+        "五年一班",
+        "五年级一班"
+      ],
+      "example": "This is Class One, Grade Five.",
+      "exampleZh": "这是五年一班。",
+      "relation": "phrase-alternative",
+      "id": "s7-g66-i3",
+      "sourceGroupId": "s7-g66",
+      "session": 7,
+      "teacherNumber": "66",
+      "displayNumber": "66-3"
+    },
+    {
+      "term": "vegetables",
+      "meaningZh": "蔬菜",
+      "acceptedMeaningsZh": [
+        "蔬菜",
+        "青菜类食物"
+      ],
+      "example": "We eat vegetables every day.",
+      "exampleZh": "我们每天吃蔬菜。",
+      "relation": "single",
+      "id": "s7-g67-i1",
+      "sourceGroupId": "s7-g67",
+      "session": 7,
+      "teacherNumber": "67",
+      "displayNumber": "67"
+    },
+    {
+      "term": "fresh fruit",
+      "meaningZh": "新鲜水果",
+      "acceptedMeaningsZh": [
+        "新鲜水果",
+        "刚摘的水果"
+      ],
+      "example": "I like fresh fruit.",
+      "exampleZh": "我喜欢新鲜水果。",
+      "relation": "phrase-alternative",
+      "id": "s7-g68-i1",
+      "sourceGroupId": "s7-g68",
+      "session": 7,
+      "teacherNumber": "68",
+      "displayNumber": "68-1"
+    },
+    {
+      "term": "fresh air",
+      "meaningZh": "新鲜空气",
+      "acceptedMeaningsZh": [
+        "新鲜空气",
+        "清新的空气"
+      ],
+      "example": "We need fresh air to breathe.",
+      "exampleZh": "我们需要新鲜空气呼吸。",
+      "relation": "phrase-alternative",
+      "id": "s7-g68-i2",
+      "sourceGroupId": "s7-g68",
+      "session": 7,
+      "teacherNumber": "68",
+      "displayNumber": "68-2"
+    },
+    {
+      "term": "diet",
+      "meaningZh": "饮食",
+      "acceptedMeaningsZh": [
+        "饮食",
+        "膳食"
+      ],
+      "example": "A balanced diet is important for children.",
+      "exampleZh": "这项均衡的饮食对儿童很重要。",
+      "relation": "single",
+      "id": "s7-g69-i1",
+      "sourceGroupId": "s7-g69",
+      "session": 7,
+      "teacherNumber": "69",
+      "displayNumber": "69-1"
+    },
+    {
+      "term": "healthy diet",
+      "meaningZh": "健康的饮食",
+      "acceptedMeaningsZh": [
+        "健康的饮食",
+        "健康膳食"
+      ],
+      "example": "Eat a healthy diet every day.",
+      "exampleZh": "每天吃健康的饮食。",
+      "relation": "phrase-alternative",
+      "id": "s7-g69-i2",
+      "sourceGroupId": "s7-g69",
+      "session": 7,
+      "teacherNumber": "69",
+      "displayNumber": "69-2"
+    },
+    {
+      "term": "become",
+      "meaningZh": "变成",
+      "acceptedMeaningsZh": [
+        "变成",
+        "成为"
+      ],
+      "example": "He became a teacher.",
+      "exampleZh": "他成了一名老师。",
+      "relation": "single",
+      "id": "s7-g70-i1",
+      "sourceGroupId": "s7-g70",
+      "session": 7,
+      "teacherNumber": "70",
+      "displayNumber": "70-1"
+    },
+    {
+      "term": "become strong",
+      "meaningZh": "变得强壮的",
+      "acceptedMeaningsZh": [
+        "变得强壮的",
+        "变强了"
+      ],
+      "example": "The boy becomes strong quickly.",
+      "exampleZh": "这个男孩很快变得强壮起来。",
+      "relation": "phrase-alternative",
+      "id": "s7-g70-i2",
+      "sourceGroupId": "s7-g70",
+      "session": 7,
+      "teacherNumber": "70",
+      "displayNumber": "70-2"
+    },
+    {
+      "term": "become stronger",
+      "meaningZh": "变得更强的",
+      "acceptedMeaningsZh": [
+        "变得更强的",
+        "更强壮了"
+      ],
+      "example": "He became stronger after exercise.",
+      "exampleZh": "他锻炼后变得更强壮了。",
+      "relation": "phrase-alternative",
+      "id": "s7-g70-i3",
+      "sourceGroupId": "s7-g70",
+      "session": 7,
+      "teacherNumber": "70",
+      "displayNumber": "70-3"
+    },
+    {
+      "term": "give up doing",
+      "meaningZh": "放弃做……",
+      "acceptedMeaningsZh": [
+        "放弃做……",
+        "放弃做某事"
+      ],
+      "example": "He gave up doing homework.",
+      "exampleZh": "他放弃了做作业。",
+      "relation": "phrase-alternative",
+      "id": "s7-g71-i1",
+      "sourceGroupId": "s7-g71",
+      "session": 7,
+      "teacherNumber": "71",
+      "displayNumber": "71"
+    },
+    {
+      "term": "proud",
+      "meaningZh": "自豪的",
+      "acceptedMeaningsZh": [
+        "自豪的",
+        "骄傲的"
+      ],
+      "example": "She is proud of her family.",
+      "exampleZh": "她为自己的家人感到自豪。",
+      "relation": "single",
+      "id": "s7-g72-i1",
+      "sourceGroupId": "s7-g72",
+      "session": 7,
+      "teacherNumber": "72",
+      "displayNumber": "72-1"
+    },
+    {
+      "term": "be proud of",
+      "meaningZh": "为……感到自豪",
+      "acceptedMeaningsZh": [
+        "为……感到自豪",
+        "对……感到骄傲"
+      ],
+      "example": "He is proud of his achievement.",
+      "exampleZh": "他对自己的成就感到自豪。",
+      "relation": "phrase-alternative",
+      "id": "s7-g72-i2",
+      "sourceGroupId": "s7-g72",
+      "session": 7,
+      "teacherNumber": "72",
+      "displayNumber": "72-2"
+    },
+    {
+      "term": "shortcoming",
+      "meaningZh": "缺点",
+      "acceptedMeaningsZh": [
+        "缺点",
+        "不足"
+      ],
+      "example": "He has a shortcoming in his work.",
+      "exampleZh": "他有工作上的不足之处。",
+      "relation": "single",
+      "id": "s7-g73-i1",
+      "sourceGroupId": "s7-g73",
+      "session": 7,
+      "teacherNumber": "73",
+      "displayNumber": "73"
+    },
+    {
+      "term": "in the past",
+      "meaningZh": "在过去",
+      "acceptedMeaningsZh": [
+        "在过去"
+      ],
+      "example": "We lived here in the past.",
+      "exampleZh": "我们过去住在这里。",
+      "relation": "pattern",
+      "id": "s7-g74-i1",
+      "sourceGroupId": "s7-g74",
+      "session": 7,
+      "teacherNumber": "74",
+      "displayNumber": "74"
+    },
+    {
+      "term": "cause",
+      "meaningZh": "原因",
+      "acceptedMeaningsZh": [
+        "原因",
+        "起因"
+      ],
+      "example": "What caused the accident?",
+      "exampleZh": "什么导致了事故？",
+      "relation": "single",
+      "id": "s7-g75-i1",
+      "sourceGroupId": "s7-g75",
+      "session": 7,
+      "teacherNumber": "75",
+      "displayNumber": "75-1"
+    },
+    {
+      "term": "because",
+      "meaningZh": "因为",
+      "acceptedMeaningsZh": [
+        "因为",
+        "由于"
+      ],
+      "example": "I stayed home because it rained.",
+      "exampleZh": "我待在家里是因为下雨了。",
+      "relation": "pattern",
+      "id": "s7-g75-i2",
+      "sourceGroupId": "s7-g75",
+      "session": 7,
+      "teacherNumber": "75",
+      "displayNumber": "75-2"
+    }
+  ]
+}

@@ -1,10 +1,37 @@
 export const AMY_VOCABULARY_BOOK_ID = "amy-grade-5-vocabulary";
+const AMY_VOCABULARY_DATA_VERSION = "20260804-1";
 export const AMY_VOCABULARY_CONTENT_URL =
   import.meta.env.BASE_URL + "data/books/" + AMY_VOCABULARY_BOOK_ID + "/content.json";
 
+export const AMY_VOCABULARY_MANIFEST = {
+  id: AMY_VOCABULARY_BOOK_ID,
+  title: "Amy 小学五年级英语词汇",
+  stage: "study-and-exam",
+  sessions: [
+    { number: 1, available: true, itemCount: 91, groupCount: 50 },
+    { number: 2, available: true, itemCount: 79, groupCount: 59 },
+    { number: 3, available: true, itemCount: 78, groupCount: 58 },
+    { number: 4, available: true, itemCount: 79, groupCount: 56 },
+    { number: 5, available: true, itemCount: 98, groupCount: 66 },
+    { number: 6, available: true, itemCount: 109, groupCount: 66 },
+    { number: 7, available: true, itemCount: 133, groupCount: 75 },
+    { number: 8, available: true, itemCount: 104, groupCount: 59 },
+    { number: 9, available: true, itemCount: 125, groupCount: 64 },
+    { number: 10, available: false, itemCount: 0, groupCount: 0 },
+    { number: 11, available: false, itemCount: 0, groupCount: 0 }
+  ]
+};
+
 export async function fetchAmyVocabulary() {
-  const response = await fetch(AMY_VOCABULARY_CONTENT_URL, { cache: "no-cache" });
+  const response = await fetch(AMY_VOCABULARY_CONTENT_URL, { cache: "force-cache" });
   if (!response.ok) throw new Error("无法加载词汇资料（" + response.status + "）");
+  return response.json();
+}
+
+export async function fetchAmyVocabularySession(number) {
+  const url = `${import.meta.env.BASE_URL}data/books/${AMY_VOCABULARY_BOOK_ID}/sessions/session-${number}.json?v=${AMY_VOCABULARY_DATA_VERSION}`;
+  const response = await fetch(url, { cache: "force-cache" });
+  if (!response.ok) throw new Error(`无法加载第 ${number} 次词汇资料（${response.status}）`);
   return response.json();
 }
 
