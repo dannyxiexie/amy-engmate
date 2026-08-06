@@ -19,11 +19,19 @@
       "createdAt": "2026-08-05T11:22:53.437Z"
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "id": "comment-17859895795667bcacf0ae1",
+      "targetType": "post",
+      "targetId": null,
+      "text": "现在是在线提交了，以后就不用把照片再合并了",
+      "createdAt": "2026-08-06T04:12:59.566Z"
+    }
+  ],
   "confirmedAt": "2026-08-06T04:11:54.935Z",
   "confirmedByDeviceId": "device-1785852432232ffeccec3bc",
   "createdAt": "2026-08-05T11:22:53.437Z",
-  "updatedAt": "2026-08-06T04:11:54.935Z",
+  "updatedAt": "2026-08-06T04:12:59.566Z",
   "auditLog": [
     {
       "id": "audit-1785928973437b5f681c046",
@@ -40,6 +48,16 @@
       "deviceId": "device-1785852432232ffeccec3bc",
       "timestamp": "2026-08-06T04:11:56.909Z",
       "details": {}
+    },
+    {
+      "id": "audit-178598958140603c27dfbeb",
+      "action": "add_comment",
+      "deviceId": "device-1785852432232ffeccec3bc",
+      "timestamp": "2026-08-06T04:13:01.406Z",
+      "details": {
+        "targetType": "post",
+        "targetId": null
+      }
     }
   ]
 }
