@@ -62,12 +62,19 @@
       "targetId": "image-1786012663762726a9ea5bc",
       "text": "这次有点小难啊，主要是讲的一个外太空啊，宇宙之东西好专业，有点崩溃呀，词儿还多",
       "createdAt": "2026-08-06T10:40:49.936Z"
+    },
+    {
+      "id": "comment-178601290266886dfcf67f8",
+      "targetType": "image",
+      "targetId": "image-1786012677982afb5454ad1",
+      "text": "这东西吗？做起来特别难，然后题目也多，简直拉完了，但没记的主题还是还有创意的一个NBC吧",
+      "createdAt": "2026-08-06T10:41:42.668Z"
     }
   ],
   "confirmedAt": null,
   "confirmedByDeviceId": null,
   "createdAt": "2026-08-06T10:39:31.428Z",
-  "updatedAt": "2026-08-06T10:40:49.936Z",
+  "updatedAt": "2026-08-06T10:41:42.668Z",
   "auditLog": [
     {
       "id": "audit-1786012771428fb060c863b",
@@ -86,6 +93,16 @@
       "details": {
         "targetType": "image",
         "targetId": "image-1786012663762726a9ea5bc"
+      }
+    },
+    {
+      "id": "audit-178601290332160042523d2",
+      "action": "add_comment",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-06T10:41:43.321Z",
+      "details": {
+        "targetType": "image",
+        "targetId": "image-1786012677982afb5454ad1"
       }
     }
   ]
