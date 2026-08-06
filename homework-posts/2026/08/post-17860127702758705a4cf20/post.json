@@ -76,12 +76,19 @@
       "targetId": "image-17860127313824279c01734",
       "text": "这个数学故事和下面这个数学故事吗？这个故事很好的就是这个题目有点雷霆啊。",
       "createdAt": "2026-08-06T10:42:13.594Z"
+    },
+    {
+      "id": "comment-1786012948106499b6b6384",
+      "targetType": "image",
+      "targetId": "image-1786012753828cfdf8a0e21",
+      "text": "不多说废话，废话不多说，直接看上面的评论",
+      "createdAt": "2026-08-06T10:42:28.106Z"
     }
   ],
   "confirmedAt": null,
   "confirmedByDeviceId": null,
   "createdAt": "2026-08-06T10:39:31.428Z",
-  "updatedAt": "2026-08-06T10:42:13.594Z",
+  "updatedAt": "2026-08-06T10:42:28.106Z",
   "auditLog": [
     {
       "id": "audit-1786012771428fb060c863b",
@@ -120,6 +127,16 @@
       "details": {
         "targetType": "image",
         "targetId": "image-17860127313824279c01734"
+      }
+    },
+    {
+      "id": "audit-17860129486413281d89eee",
+      "action": "add_comment",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-06T10:42:28.641Z",
+      "details": {
+        "targetType": "image",
+        "targetId": "image-1786012753828cfdf8a0e21"
       }
     }
   ]
