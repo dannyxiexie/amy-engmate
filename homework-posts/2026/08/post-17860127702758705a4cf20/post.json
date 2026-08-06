@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "id": "post-17860127702758705a4cf20",
+  "metadataPath": "homework-posts/2026/08/post-17860127702758705a4cf20/post.json",
+  "imageFolder": "public/homework-images/2026/08/post-17860127702758705a4cf20",
+  "homeworkDate": "2026-08-06",
+  "description": "8月6日周四",
+  "images": [
+    {
+      "id": "image-1786012663762726a9ea5bc",
+      "title": "听力",
+      "path": "public/homework-images/2026/08/post-17860127702758705a4cf20/image-1786012663762726a9ea5bc.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-17860127702758705a4cf20/image-1786012663762726a9ea5bc.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-17860127702758705a4cf20/image-1786012663762726a9ea5bc.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1561412,
+      "createdAt": "2026-08-06T10:39:30.597Z"
+    },
+    {
+      "id": "image-1786012677982afb5454ad1",
+      "title": "报纸",
+      "path": "public/homework-images/2026/08/post-17860127702758705a4cf20/image-1786012677982afb5454ad1.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-17860127702758705a4cf20/image-1786012677982afb5454ad1.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-17860127702758705a4cf20/image-1786012677982afb5454ad1.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1572281,
+      "createdAt": "2026-08-06T10:39:30.882Z"
+    },
+    {
+      "id": "image-17860127313824279c01734",
+      "title": "数学故事",
+      "path": "public/homework-images/2026/08/post-17860127702758705a4cf20/image-17860127313824279c01734.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-17860127702758705a4cf20/image-17860127313824279c01734.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-17860127702758705a4cf20/image-17860127313824279c01734.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1456141,
+      "createdAt": "2026-08-06T10:39:31.161Z"
+    },
+    {
+      "id": "image-1786012753828cfdf8a0e21",
+      "title": "数学故事",
+      "path": "public/homework-images/2026/08/post-17860127702758705a4cf20/image-1786012753828cfdf8a0e21.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-17860127702758705a4cf20/image-1786012753828cfdf8a0e21.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-17860127702758705a4cf20/image-1786012753828cfdf8a0e21.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1451788,
+      "createdAt": "2026-08-06T10:39:31.428Z"
+    }
+  ],
+  "comments": [],
+  "confirmedAt": null,
+  "confirmedByDeviceId": null,
+  "createdAt": "2026-08-06T10:39:31.428Z",
+  "updatedAt": "2026-08-06T10:39:31.428Z",
+  "auditLog": [
+    {
+      "id": "audit-1786012771428fb060c863b",
+      "action": "create_post",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-06T10:39:31.428Z",
+      "details": {
+        "imageCount": 4
+      }
+    }
+  ]
+}
