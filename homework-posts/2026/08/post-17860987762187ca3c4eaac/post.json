@@ -133,12 +133,19 @@
       "targetId": "image-1786098668925b82908bae4",
       "text": "这次轻易的词语跟上次一样太难了",
       "createdAt": "2026-08-07T10:36:00.660Z"
+    },
+    {
+      "id": "comment-1786098963477d67b0edbcd",
+      "targetType": "image",
+      "targetId": "image-1786098668925b82908bae4",
+      "text": "这次轻易的词语跟上次一样太难了",
+      "createdAt": "2026-08-07T10:36:03.477Z"
     }
   ],
   "confirmedAt": null,
   "confirmedByDeviceId": null,
   "createdAt": "2026-08-07T10:32:58.127Z",
-  "updatedAt": "2026-08-07T10:36:00.660Z",
+  "updatedAt": "2026-08-07T10:36:03.477Z",
   "auditLog": [
     {
       "id": "audit-1786098778127f481115811",
@@ -204,6 +211,16 @@
       "action": "add_comment",
       "deviceId": "device-1785853121471f4c30ed0f4",
       "timestamp": "2026-08-07T10:36:10.204Z",
+      "details": {
+        "targetType": "image",
+        "targetId": "image-1786098668925b82908bae4"
+      }
+    },
+    {
+      "id": "audit-178609897350120b3219ce2",
+      "action": "add_comment",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-07T10:36:13.501Z",
       "details": {
         "targetType": "image",
         "targetId": "image-1786098668925b82908bae4"
