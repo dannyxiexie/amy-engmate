@@ -91,11 +91,19 @@
       "createdAt": "2026-08-07T10:32:58.127Z"
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "id": "comment-178609893329012af193060",
+      "targetType": "image",
+      "targetId": "image-1786098681239a5b354a7ed",
+      "text": "这个听力也很难，我觉得这次是蛮难的一次",
+      "createdAt": "2026-08-07T10:35:33.290Z"
+    }
+  ],
   "confirmedAt": null,
   "confirmedByDeviceId": null,
   "createdAt": "2026-08-07T10:32:58.127Z",
-  "updatedAt": "2026-08-07T10:32:58.127Z",
+  "updatedAt": "2026-08-07T10:35:33.290Z",
   "auditLog": [
     {
       "id": "audit-1786098778127f481115811",
@@ -104,6 +112,16 @@
       "timestamp": "2026-08-07T10:32:58.127Z",
       "details": {
         "imageCount": 7
+      }
+    },
+    {
+      "id": "audit-1786098935683d9abfbeedd",
+      "action": "add_comment",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-07T10:35:35.683Z",
+      "details": {
+        "targetType": "image",
+        "targetId": "image-1786098681239a5b354a7ed"
       }
     }
   ]
