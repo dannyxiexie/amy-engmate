@@ -147,12 +147,19 @@
       "targetId": "image-178609856206921c1aa66a0",
       "text": "我只有14个单词开始不会",
       "createdAt": "2026-08-07T10:36:26.259Z"
+    },
+    {
+      "id": "comment-178609901579024d9de4d0b",
+      "targetType": "post",
+      "targetId": null,
+      "text": "看似非常困难，实则披荆斩棘",
+      "createdAt": "2026-08-07T10:36:55.790Z"
     }
   ],
   "confirmedAt": null,
   "confirmedByDeviceId": null,
   "createdAt": "2026-08-07T10:32:58.127Z",
-  "updatedAt": "2026-08-07T10:36:26.259Z",
+  "updatedAt": "2026-08-07T10:36:55.790Z",
   "auditLog": [
     {
       "id": "audit-1786098778127f481115811",
@@ -241,6 +248,16 @@
       "details": {
         "targetType": "image",
         "targetId": "image-178609856206921c1aa66a0"
+      }
+    },
+    {
+      "id": "audit-17860990165740a2f31e978",
+      "action": "add_comment",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-07T10:36:56.574Z",
+      "details": {
+        "targetType": "post",
+        "targetId": null
       }
     }
   ]
