@@ -126,12 +126,19 @@
       "targetId": "image-178609860916772a5eedae8",
       "text": "我还会做的就是庄重读书会，水浒传的思维导图",
       "createdAt": "2026-08-07T10:35:38.678Z"
+    },
+    {
+      "id": "comment-17860989606609b2753706c",
+      "targetType": "image",
+      "targetId": "image-1786098668925b82908bae4",
+      "text": "这次轻易的词语跟上次一样太难了",
+      "createdAt": "2026-08-07T10:36:00.660Z"
     }
   ],
   "confirmedAt": null,
   "confirmedByDeviceId": null,
   "createdAt": "2026-08-07T10:32:58.127Z",
-  "updatedAt": "2026-08-07T10:35:38.678Z",
+  "updatedAt": "2026-08-07T10:36:00.660Z",
   "auditLog": [
     {
       "id": "audit-1786098778127f481115811",
@@ -190,6 +197,16 @@
       "details": {
         "targetType": "image",
         "targetId": "image-178609860916772a5eedae8"
+      }
+    },
+    {
+      "id": "audit-1786098970204166c2953b2",
+      "action": "add_comment",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-07T10:36:10.204Z",
+      "details": {
+        "targetType": "image",
+        "targetId": "image-1786098668925b82908bae4"
       }
     }
   ]
