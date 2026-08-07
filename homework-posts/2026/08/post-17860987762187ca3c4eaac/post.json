@@ -119,12 +119,19 @@
       "targetId": "image-1786098535670ff61c88ea4",
       "text": "这次的稍微简单一点",
       "createdAt": "2026-08-07T10:35:44.061Z"
+    },
+    {
+      "id": "comment-1786098938678df5c3daf90",
+      "targetType": "image",
+      "targetId": "image-178609860916772a5eedae8",
+      "text": "我还会做的就是庄重读书会，水浒传的思维导图",
+      "createdAt": "2026-08-07T10:35:38.678Z"
     }
   ],
   "confirmedAt": null,
   "confirmedByDeviceId": null,
   "createdAt": "2026-08-07T10:32:58.127Z",
-  "updatedAt": "2026-08-07T10:35:44.061Z",
+  "updatedAt": "2026-08-07T10:35:38.678Z",
   "auditLog": [
     {
       "id": "audit-1786098778127f481115811",
@@ -173,6 +180,16 @@
       "details": {
         "targetType": "image",
         "targetId": "image-1786098535670ff61c88ea4"
+      }
+    },
+    {
+      "id": "audit-1786098963025bacb015658",
+      "action": "add_comment",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-07T10:36:03.025Z",
+      "details": {
+        "targetType": "image",
+        "targetId": "image-178609860916772a5eedae8"
       }
     }
   ]
