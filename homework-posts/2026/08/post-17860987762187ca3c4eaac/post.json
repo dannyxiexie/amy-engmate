@@ -112,12 +112,19 @@
       "targetId": "image-1786098575303d5af9ec556",
       "text": "后面把我最后不会的五个单词写成了卡片和奶奶互动是抽查",
       "createdAt": "2026-08-07T10:35:40.277Z"
+    },
+    {
+      "id": "comment-1786098944061c9988407f8",
+      "targetType": "image",
+      "targetId": "image-1786098535670ff61c88ea4",
+      "text": "这次的稍微简单一点",
+      "createdAt": "2026-08-07T10:35:44.061Z"
     }
   ],
   "confirmedAt": null,
   "confirmedByDeviceId": null,
   "createdAt": "2026-08-07T10:32:58.127Z",
-  "updatedAt": "2026-08-07T10:35:40.277Z",
+  "updatedAt": "2026-08-07T10:35:44.061Z",
   "auditLog": [
     {
       "id": "audit-1786098778127f481115811",
@@ -156,6 +163,16 @@
       "details": {
         "targetType": "image",
         "targetId": "image-1786098575303d5af9ec556"
+      }
+    },
+    {
+      "id": "audit-1786098958195047daead97",
+      "action": "add_comment",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-07T10:35:58.195Z",
+      "details": {
+        "targetType": "image",
+        "targetId": "image-1786098535670ff61c88ea4"
       }
     }
   ]
