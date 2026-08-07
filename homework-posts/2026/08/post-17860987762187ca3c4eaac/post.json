@@ -140,12 +140,19 @@
       "targetId": "image-1786098668925b82908bae4",
       "text": "这次轻易的词语跟上次一样太难了",
       "createdAt": "2026-08-07T10:36:03.477Z"
+    },
+    {
+      "id": "comment-1786098986259871ddbbdd9",
+      "targetType": "image",
+      "targetId": "image-178609856206921c1aa66a0",
+      "text": "我只有14个单词开始不会",
+      "createdAt": "2026-08-07T10:36:26.259Z"
     }
   ],
   "confirmedAt": null,
   "confirmedByDeviceId": null,
   "createdAt": "2026-08-07T10:32:58.127Z",
-  "updatedAt": "2026-08-07T10:36:03.477Z",
+  "updatedAt": "2026-08-07T10:36:26.259Z",
   "auditLog": [
     {
       "id": "audit-1786098778127f481115811",
@@ -224,6 +231,16 @@
       "details": {
         "targetType": "image",
         "targetId": "image-1786098668925b82908bae4"
+      }
+    },
+    {
+      "id": "audit-1786098987183dce157c138",
+      "action": "add_comment",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-07T10:36:27.183Z",
+      "details": {
+        "targetType": "image",
+        "targetId": "image-178609856206921c1aa66a0"
       }
     }
   ]
