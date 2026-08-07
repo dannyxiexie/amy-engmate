@@ -105,12 +105,19 @@
       "targetId": "image-1786098645589d56157fa97",
       "text": "这次的纸蛮有意思，但讲什么我已经忘光了",
       "createdAt": "2026-08-07T10:35:37.080Z"
+    },
+    {
+      "id": "comment-17860989402774fde544191",
+      "targetType": "image",
+      "targetId": "image-1786098575303d5af9ec556",
+      "text": "后面把我最后不会的五个单词写成了卡片和奶奶互动是抽查",
+      "createdAt": "2026-08-07T10:35:40.277Z"
     }
   ],
   "confirmedAt": null,
   "confirmedByDeviceId": null,
   "createdAt": "2026-08-07T10:32:58.127Z",
-  "updatedAt": "2026-08-07T10:35:37.080Z",
+  "updatedAt": "2026-08-07T10:35:40.277Z",
   "auditLog": [
     {
       "id": "audit-1786098778127f481115811",
@@ -139,6 +146,16 @@
       "details": {
         "targetType": "image",
         "targetId": "image-1786098645589d56157fa97"
+      }
+    },
+    {
+      "id": "audit-1786098943584ab28d4b481",
+      "action": "add_comment",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-07T10:35:43.584Z",
+      "details": {
+        "targetType": "image",
+        "targetId": "image-1786098575303d5af9ec556"
       }
     }
   ]
