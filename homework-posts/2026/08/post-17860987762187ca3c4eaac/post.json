@@ -98,12 +98,19 @@
       "targetId": "image-1786098681239a5b354a7ed",
       "text": "这个听力也很难，我觉得这次是蛮难的一次",
       "createdAt": "2026-08-07T10:35:33.290Z"
+    },
+    {
+      "id": "comment-1786098937080663e2164bb",
+      "targetType": "image",
+      "targetId": "image-1786098645589d56157fa97",
+      "text": "这次的纸蛮有意思，但讲什么我已经忘光了",
+      "createdAt": "2026-08-07T10:35:37.080Z"
     }
   ],
   "confirmedAt": null,
   "confirmedByDeviceId": null,
   "createdAt": "2026-08-07T10:32:58.127Z",
-  "updatedAt": "2026-08-07T10:35:33.290Z",
+  "updatedAt": "2026-08-07T10:35:37.080Z",
   "auditLog": [
     {
       "id": "audit-1786098778127f481115811",
@@ -122,6 +129,16 @@
       "details": {
         "targetType": "image",
         "targetId": "image-1786098681239a5b354a7ed"
+      }
+    },
+    {
+      "id": "audit-178609893822285838f69fe",
+      "action": "add_comment",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-07T10:35:38.222Z",
+      "details": {
+        "targetType": "image",
+        "targetId": "image-1786098645589d56157fa97"
       }
     }
   ]
