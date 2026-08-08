@@ -1,0 +1,2745 @@
+{
+  "id": "1786175534213s30of",
+  "completedAt": "2026-08-08T07:52:14.213Z",
+  "session": 6,
+  "elapsed": 2233,
+  "exam": {
+    "meanings": [
+      {
+        "term": "sleep",
+        "meaningZh": "睡觉",
+        "acceptedMeaningsZh": [
+          "睡觉",
+          "睡眠"
+        ],
+        "example": "I sleep at night.",
+        "exampleZh": "睡觉。",
+        "relation": "single",
+        "id": "s6-g46-i1",
+        "sourceGroupId": "s6-g46",
+        "session": 6,
+        "teacherNumber": "46",
+        "displayNumber": "46-1",
+        "answer": "睡觉"
+      },
+      {
+        "term": "think about",
+        "meaningZh": "思考……；考虑……",
+        "acceptedMeaningsZh": [
+          "思考……；考虑……"
+        ],
+        "example": "Think about your answer carefully.",
+        "exampleZh": "仔细想想你的答案。",
+        "relation": "phrase-alternative",
+        "id": "s6-g63-i2",
+        "sourceGroupId": "s6-g63",
+        "session": 6,
+        "teacherNumber": "63",
+        "displayNumber": "63-2",
+        "answer": "觉得关于"
+      },
+      {
+        "term": "during",
+        "meaningZh": "在……期间",
+        "acceptedMeaningsZh": [
+          "在……期间",
+          "当……时"
+        ],
+        "example": "We played during the summer holiday.",
+        "exampleZh": "我们在暑假期间玩耍了。",
+        "relation": "single",
+        "id": "s6-g40-i1",
+        "sourceGroupId": "s6-g40",
+        "session": 6,
+        "teacherNumber": "40",
+        "displayNumber": "40",
+        "answer": "在什么什么期间"
+      },
+      {
+        "term": "go to see a doctor",
+        "meaningZh": "去看医生",
+        "acceptedMeaningsZh": [
+          "去看医生"
+        ],
+        "example": "I need to go to see a doctor.",
+        "exampleZh": "我需要去看医生了。",
+        "relation": "phrase-alternative",
+        "id": "s6-g1-i2",
+        "sourceGroupId": "s6-g1",
+        "session": 6,
+        "teacherNumber": "1",
+        "displayNumber": "1-2",
+        "answer": "去看医生"
+      },
+      {
+        "term": "fever",
+        "meaningZh": "发烧",
+        "acceptedMeaningsZh": [
+          "发烧",
+          "发热病状"
+        ],
+        "example": "He has a high fever.",
+        "exampleZh": "他发高烧了。",
+        "relation": "single",
+        "id": "s6-g3-i2",
+        "sourceGroupId": "s6-g3",
+        "session": 6,
+        "teacherNumber": "3",
+        "displayNumber": "3-2",
+        "answer": ""
+      },
+      {
+        "term": "create",
+        "meaningZh": "创造",
+        "acceptedMeaningsZh": [
+          "创造",
+          "制作",
+          "建立"
+        ],
+        "example": "She created a new game.",
+        "exampleZh": "她创造了一个新游戏。",
+        "relation": "single",
+        "id": "s6-g58-i1",
+        "sourceGroupId": "s6-g58",
+        "session": 6,
+        "teacherNumber": "58",
+        "displayNumber": "58",
+        "answer": "创造"
+      },
+      {
+        "term": "stay",
+        "meaningZh": "停留",
+        "acceptedMeaningsZh": [
+          "停留",
+          "待着"
+        ],
+        "example": "I stay at home.",
+        "exampleZh": "我呆在家里。",
+        "relation": "single",
+        "id": "s6-g45-i1",
+        "sourceGroupId": "s6-g45",
+        "session": 6,
+        "teacherNumber": "45",
+        "displayNumber": "45-1",
+        "answer": "呆在"
+      },
+      {
+        "term": "doctor",
+        "meaningZh": "医生",
+        "acceptedMeaningsZh": [
+          "医生",
+          "看病的人"
+        ],
+        "example": "He is a doctor.",
+        "exampleZh": "他是一名医生。",
+        "relation": "single",
+        "id": "s6-g1-i1",
+        "sourceGroupId": "s6-g1",
+        "session": 6,
+        "teacherNumber": "1",
+        "displayNumber": "1-1",
+        "answer": "医生"
+      },
+      {
+        "term": "take good care of ...",
+        "meaningZh": "好好照顾……",
+        "acceptedMeaningsZh": [
+          "好好照顾……",
+          "悉心照料……"
+        ],
+        "example": "Please take good care of your mother.",
+        "exampleZh": "请好好照顾你的妈妈。",
+        "relation": "phrase-alternative",
+        "id": "s6-g34-i1",
+        "sourceGroupId": "s6-g34",
+        "session": 6,
+        "teacherNumber": "34",
+        "displayNumber": "34",
+        "answer": "好好的喂养"
+      },
+      {
+        "term": "surprise",
+        "meaningZh": "使...惊讶",
+        "acceptedMeaningsZh": [
+          "使...惊讶",
+          "惊喜"
+        ],
+        "example": "It was a surprise.",
+        "exampleZh": "这是一个惊喜。",
+        "relation": "single",
+        "id": "s6-g47-i1",
+        "sourceGroupId": "s6-g47",
+        "session": 6,
+        "teacherNumber": "47",
+        "displayNumber": "47-1",
+        "answer": "惊喜"
+      },
+      {
+        "term": "favourite",
+        "meaningZh": "最喜欢的",
+        "acceptedMeaningsZh": [
+          "最喜欢的",
+          "喜爱的"
+        ],
+        "example": "She has a favourite book.",
+        "exampleZh": "她有一本最爱的书。",
+        "relation": "single",
+        "id": "s6-g27-i1",
+        "sourceGroupId": "s6-g27",
+        "session": 6,
+        "teacherNumber": "27",
+        "displayNumber": "27",
+        "answer": "最喜欢的"
+      },
+      {
+        "term": "drink lots of water",
+        "meaningZh": "喝很多水",
+        "acceptedMeaningsZh": [
+          "喝很多水",
+          "多喝水"
+        ],
+        "example": "Drink lots of water.",
+        "exampleZh": "多喝点水吧。",
+        "relation": "single",
+        "id": "s6-g16-i1",
+        "sourceGroupId": "s6-g16",
+        "session": 6,
+        "teacherNumber": "16",
+        "displayNumber": "16",
+        "answer": "喝很多水"
+      },
+      {
+        "term": "wake sb. up",
+        "meaningZh": "叫醒某人",
+        "acceptedMeaningsZh": [
+          "叫醒某人"
+        ],
+        "example": "Please wake me up at 7 a.m.",
+        "exampleZh": "请在早上七点叫我起床。",
+        "relation": "single",
+        "id": "s6-g55-i1",
+        "sourceGroupId": "s6-g55",
+        "session": 6,
+        "teacherNumber": "55",
+        "displayNumber": "55",
+        "answer": "某人醒来"
+      },
+      {
+        "term": "a broken arm",
+        "meaningZh": "一只断臂",
+        "acceptedMeaningsZh": [
+          "一只断臂"
+        ],
+        "example": "He has a broken arm.",
+        "exampleZh": "他有一只断臂。",
+        "relation": "phrase-alternative",
+        "id": "s6-g43-i2",
+        "sourceGroupId": "s6-g43",
+        "session": 6,
+        "teacherNumber": "43",
+        "displayNumber": "43-2",
+        "answer": "一个坏了的肩膀或者一个坏了的手臂"
+      },
+      {
+        "term": "in need of ...",
+        "meaningZh": "需要……",
+        "acceptedMeaningsZh": [
+          "需要……",
+          "急需……"
+        ],
+        "example": "We are in need of food now.",
+        "exampleZh": "我们现在急需食物。",
+        "relation": "pattern",
+        "id": "s6-g60-i1",
+        "sourceGroupId": "s6-g60",
+        "session": 6,
+        "teacherNumber": "60",
+        "displayNumber": "60",
+        "answer": "需要"
+      },
+      {
+        "term": "do exercises",
+        "meaningZh": "做运动",
+        "acceptedMeaningsZh": [
+          "做运动",
+          "锻炼"
+        ],
+        "example": "You should do more exercises every day.",
+        "exampleZh": "你应该每天多做些运动。",
+        "relation": "single",
+        "id": "s6-g32-i1",
+        "sourceGroupId": "s6-g32",
+        "session": 6,
+        "teacherNumber": "32",
+        "displayNumber": "32",
+        "answer": "做运动"
+      },
+      {
+        "term": "be surprised",
+        "meaningZh": "感到惊讶的",
+        "acceptedMeaningsZh": [
+          "感到惊讶的",
+          "被惊奇的"
+        ],
+        "example": "I am surprised by the news.",
+        "exampleZh": "这个消息让我很惊讶。",
+        "relation": "phrase-alternative",
+        "id": "s6-g47-i2",
+        "sourceGroupId": "s6-g47",
+        "session": 6,
+        "teacherNumber": "47",
+        "displayNumber": "47-2",
+        "answer": "惊喜"
+      },
+      {
+        "term": "careful",
+        "meaningZh": "小心的",
+        "acceptedMeaningsZh": [
+          "小心的",
+          "仔细的"
+        ],
+        "example": "Be careful when crossing the road.",
+        "exampleZh": "过马路时要小心。",
+        "relation": "single",
+        "id": "s6-g10-i1",
+        "sourceGroupId": "s6-g10",
+        "session": 6,
+        "teacherNumber": "10",
+        "displayNumber": "10-1",
+        "answer": "小心"
+      },
+      {
+        "term": "few",
+        "meaningZh": "少量的",
+        "acceptedMeaningsZh": [
+          "少量的",
+          "数目不多"
+        ],
+        "example": "He has few friends here.",
+        "exampleZh": "他这里的朋友不多。",
+        "relation": "single",
+        "id": "s6-g26-i3",
+        "sourceGroupId": "s6-g26",
+        "session": 6,
+        "teacherNumber": "26",
+        "displayNumber": "26-3",
+        "answer": "一些"
+      },
+      {
+        "term": "keep it dry",
+        "meaningZh": "保持干燥",
+        "acceptedMeaningsZh": [
+          "保持干燥",
+          "让它不湿"
+        ],
+        "example": "Keep your shoes dry in winter.",
+        "exampleZh": "冬天让你的鞋子保持干燥。",
+        "relation": "single",
+        "id": "s6-g12-i1",
+        "sourceGroupId": "s6-g12",
+        "session": 6,
+        "teacherNumber": "12",
+        "displayNumber": "12",
+        "answer": "保持它干燥"
+      },
+      {
+        "term": "play games a lot",
+        "meaningZh": "经常玩游戏",
+        "acceptedMeaningsZh": [
+          "经常玩游戏",
+          "常玩电子游戏"
+        ],
+        "example": "I play video games a lot.",
+        "exampleZh": "我经常玩视频游戏。",
+        "relation": "phrase-alternative",
+        "id": "s6-g21-i1",
+        "sourceGroupId": "s6-g21",
+        "session": 6,
+        "teacherNumber": "21",
+        "displayNumber": "21",
+        "answer": "玩一些游戏"
+      },
+      {
+        "term": "watch less TV",
+        "meaningZh": "少看电视",
+        "acceptedMeaningsZh": [
+          "少看电视",
+          "减少电视观看时间"
+        ],
+        "example": "I watch less TV now.",
+        "exampleZh": "我现在少看一些电视了。",
+        "relation": "phrase-alternative",
+        "id": "s6-g25-i2",
+        "sourceGroupId": "s6-g25",
+        "session": 6,
+        "teacherNumber": "25",
+        "displayNumber": "25-2",
+        "answer": "看电视"
+      },
+      {
+        "term": "watch TV too much",
+        "meaningZh": "看电视太多",
+        "acceptedMeaningsZh": [
+          "看电视太多",
+          "看太多的电视"
+        ],
+        "example": "He watches TV too much.",
+        "exampleZh": "他看电视太多了。",
+        "relation": "phrase-alternative",
+        "id": "s6-g25-i1",
+        "sourceGroupId": "s6-g25",
+        "session": 6,
+        "teacherNumber": "25",
+        "displayNumber": "25-1",
+        "answer": "看很久的电视"
+      },
+      {
+        "term": "nurse",
+        "meaningZh": "护士",
+        "acceptedMeaningsZh": [
+          "护士",
+          "护理人员"
+        ],
+        "example": "The nurse is kind.",
+        "exampleZh": "这位护士很善良。",
+        "relation": "single",
+        "id": "s6-g3-i1",
+        "sourceGroupId": "s6-g3",
+        "session": 6,
+        "teacherNumber": "3",
+        "displayNumber": "3-1",
+        "answer": "护士"
+      },
+      {
+        "term": "talk about ...",
+        "meaningZh": "谈论……",
+        "acceptedMeaningsZh": [
+          "谈论……",
+          "说起……"
+        ],
+        "example": "Let's talk about the weather.",
+        "exampleZh": "让我们谈谈天气吧。",
+        "relation": "pattern",
+        "id": "s6-g35-i1",
+        "sourceGroupId": "s6-g35",
+        "session": 6,
+        "teacherNumber": "35",
+        "displayNumber": "35-1",
+        "answer": "交流关于"
+      },
+      {
+        "term": "talk with ...",
+        "meaningZh": "和……交谈",
+        "acceptedMeaningsZh": [
+          "和……交谈",
+          "与……说话"
+        ],
+        "example": "I like to talk with my friends.",
+        "exampleZh": "我喜欢和朋友聊天。",
+        "relation": "pattern",
+        "id": "s6-g35-i2",
+        "sourceGroupId": "s6-g35",
+        "session": 6,
+        "teacherNumber": "35",
+        "displayNumber": "35-2",
+        "answer": "与某人交流或者交流关于某事"
+      },
+      {
+        "term": "fewer",
+        "meaningZh": "更少的",
+        "acceptedMeaningsZh": [
+          "更少的",
+          "较少数目"
+        ],
+        "example": "She has fewer books than before.",
+        "exampleZh": "她现在的书比之前少一些了。",
+        "relation": "inflection",
+        "id": "s6-g26-i4",
+        "sourceGroupId": "s6-g26",
+        "session": 6,
+        "teacherNumber": "26",
+        "displayNumber": "26-4",
+        "answer": "一些的过去式或者一些的比较级"
+      },
+      {
+        "term": "less",
+        "meaningZh": "更少的",
+        "acceptedMeaningsZh": [
+          "更少的",
+          "较少"
+        ],
+        "example": "We have less time now.",
+        "exampleZh": "我们现在的时间更少了一些。",
+        "relation": "inflection",
+        "id": "s6-g26-i2",
+        "sourceGroupId": "s6-g26",
+        "session": 6,
+        "teacherNumber": "26",
+        "displayNumber": "26-2",
+        "answer": "少量或者小的过去式或者比较级"
+      },
+      {
+        "term": "What should I do?",
+        "meaningZh": "我应该做什么？",
+        "acceptedMeaningsZh": [
+          "我应该做什么？"
+        ],
+        "example": "What should I do?",
+        "exampleZh": "我应该做什么？",
+        "relation": "pattern",
+        "id": "s6-g23-i1",
+        "sourceGroupId": "s6-g23",
+        "session": 6,
+        "teacherNumber": "23",
+        "displayNumber": "23",
+        "answer": "我能干什么？"
+      },
+      {
+        "term": "have an idea",
+        "meaningZh": "有想法",
+        "acceptedMeaningsZh": [
+          "有想法",
+          "有个主意"
+        ],
+        "example": "She has a good idea for the project.",
+        "exampleZh": "她对这个项目有一个好主意。",
+        "relation": "single",
+        "id": "s6-g48-i1",
+        "sourceGroupId": "s6-g48",
+        "session": 6,
+        "teacherNumber": "48",
+        "displayNumber": "48",
+        "answer": "有一个想法或者有一个建议"
+      },
+      {
+        "term": "by mistake",
+        "meaningZh": "错误地",
+        "acceptedMeaningsZh": [
+          "错误地",
+          "不小心"
+        ],
+        "example": "He did it by mistake.",
+        "exampleZh": "他是做错了。",
+        "relation": "single",
+        "id": "s6-g53-i1",
+        "sourceGroupId": "s6-g53",
+        "session": 6,
+        "teacherNumber": "53",
+        "displayNumber": "53",
+        "answer": "错误的"
+      },
+      {
+        "term": "clear",
+        "meaningZh": "清晰的",
+        "acceptedMeaningsZh": [
+          "清晰的",
+          "清楚"
+        ],
+        "example": "The sky is clear.",
+        "exampleZh": "天空很晴朗。",
+        "relation": "single",
+        "id": "s6-g19-i1",
+        "sourceGroupId": "s6-g19",
+        "session": 6,
+        "teacherNumber": "19",
+        "displayNumber": "19-1",
+        "answer": "清晰"
+      },
+      {
+        "term": "think",
+        "meaningZh": "思考",
+        "acceptedMeaningsZh": [
+          "思考",
+          "认为"
+        ],
+        "example": "I think so.",
+        "exampleZh": "我认为是这样。",
+        "relation": "single",
+        "id": "s6-g42-i1",
+        "sourceGroupId": "s6-g42",
+        "session": 6,
+        "teacherNumber": "42",
+        "displayNumber": "42-1",
+        "answer": "觉得"
+      },
+      {
+        "term": "stay asleep",
+        "meaningZh": "保持清醒状态（通常指入睡后）",
+        "acceptedMeaningsZh": [
+          "保持清醒状态（通常指入睡后）"
+        ],
+        "example": "Please stay asleep until morning.",
+        "exampleZh": "保持清醒状态（通常指入睡后）。",
+        "relation": "phrase-alternative",
+        "id": "s6-g46-i3",
+        "sourceGroupId": "s6-g46",
+        "session": 6,
+        "teacherNumber": "46",
+        "displayNumber": "46-3",
+        "answer": "开始"
+      },
+      {
+        "term": "carefully",
+        "meaningZh": "仔细地",
+        "acceptedMeaningsZh": [
+          "仔细地",
+          "小心地"
+        ],
+        "example": "He looked at it carefully.",
+        "exampleZh": "他仔细地看着它。",
+        "relation": "inflection",
+        "id": "s6-g10-i2",
+        "sourceGroupId": "s6-g10",
+        "session": 6,
+        "teacherNumber": "10",
+        "displayNumber": "10-2",
+        "answer": "小心的"
+      },
+      {
+        "term": "runny nose",
+        "meaningZh": "流鼻涕",
+        "acceptedMeaningsZh": [
+          "流鼻涕",
+          "鼻子流水"
+        ],
+        "example": "I have a runny nose.",
+        "exampleZh": "我流鼻水了。",
+        "relation": "single",
+        "id": "s6-g3-i4",
+        "sourceGroupId": "s6-g3",
+        "session": 6,
+        "teacherNumber": "3",
+        "displayNumber": "3-4",
+        "answer": "感冒或者流鼻涕"
+      },
+      {
+        "term": "with",
+        "meaningZh": "和",
+        "acceptedMeaningsZh": [
+          "和",
+          "跟",
+          "用",
+          "带着"
+        ],
+        "example": "I have a pen with me.",
+        "exampleZh": "我随身带着一支笔。",
+        "relation": "single",
+        "id": "s6-g57-i1",
+        "sourceGroupId": "s6-g57",
+        "session": 6,
+        "teacherNumber": "57",
+        "displayNumber": "57",
+        "answer": "和或者与什么是不是事物有关系"
+      },
+      {
+        "term": "have some advice for him",
+        "meaningZh": "给他一些建议",
+        "acceptedMeaningsZh": [
+          "给他一些建议",
+          "给某人一些建议"
+        ],
+        "example": "I have some advice for him.",
+        "exampleZh": "我给他一些建议。",
+        "relation": "phrase-alternative",
+        "id": "s6-g62-i1",
+        "sourceGroupId": "s6-g62",
+        "session": 6,
+        "teacherNumber": "62",
+        "displayNumber": "62",
+        "answer": "对他有一些建议"
+      },
+      {
+        "term": "take it easy",
+        "meaningZh": "放松",
+        "acceptedMeaningsZh": [
+          "放松",
+          "别紧张"
+        ],
+        "example": "Take it easy.",
+        "exampleZh": "放松点。",
+        "relation": "phrase-alternative",
+        "id": "s6-g17-i1",
+        "sourceGroupId": "s6-g17",
+        "session": 6,
+        "teacherNumber": "17",
+        "displayNumber": "17-1",
+        "answer": "这很简单"
+      },
+      {
+        "term": "little",
+        "meaningZh": "少的",
+        "acceptedMeaningsZh": [
+          "少的",
+          "数量少"
+        ],
+        "example": "There is little water left.",
+        "exampleZh": "这里只剩下很少的水了。",
+        "relation": "single",
+        "id": "s6-g26-i1",
+        "sourceGroupId": "s6-g26",
+        "session": 6,
+        "teacherNumber": "26",
+        "displayNumber": "26-1",
+        "answer": "小或者少"
+      },
+      {
+        "term": "What can I do for you?",
+        "meaningZh": "我能为你做什么？",
+        "acceptedMeaningsZh": [
+          "我能为你做什么？",
+          "我能为您做点什么吗？"
+        ],
+        "example": "What can I do for you?",
+        "exampleZh": "我能为你做什么？",
+        "relation": "single",
+        "id": "s6-g18-i2",
+        "sourceGroupId": "s6-g18",
+        "session": 6,
+        "teacherNumber": "18",
+        "displayNumber": "18-2",
+        "answer": "我可以以为你做什么"
+      },
+      {
+        "term": "be bad for ...",
+        "meaningZh": "对……有害",
+        "acceptedMeaningsZh": [
+          "对……有害",
+          "不利于"
+        ],
+        "example": "Smoking is bad for your lungs.",
+        "exampleZh": "吸烟对你的肺有害。",
+        "relation": "phrase-alternative",
+        "id": "s6-g31-i2",
+        "sourceGroupId": "s6-g31",
+        "session": 6,
+        "teacherNumber": "31",
+        "displayNumber": "31-2",
+        "answer": "对什么事情或者对某人是不好的"
+      },
+      {
+        "term": "an hour",
+        "meaningZh": "一小时",
+        "acceptedMeaningsZh": [
+          "一小时",
+          "一个小时"
+        ],
+        "example": "We spent an hour playing games.",
+        "exampleZh": "我们花了一小时玩游戏。",
+        "relation": "single",
+        "id": "s6-g56-i1",
+        "sourceGroupId": "s6-g56",
+        "session": 6,
+        "teacherNumber": "56",
+        "displayNumber": "56",
+        "answer": "1小时"
+      },
+      {
+        "term": "write a list",
+        "meaningZh": "写一份清单",
+        "acceptedMeaningsZh": [
+          "写一份清单",
+          "列一个列表"
+        ],
+        "example": "Write a list of your favorite books.",
+        "exampleZh": "列出你最喜欢的书籍的清单。",
+        "relation": "pattern",
+        "id": "s6-g66-i1",
+        "sourceGroupId": "s6-g66",
+        "session": 6,
+        "teacherNumber": "65（下）",
+        "displayNumber": "65（下）",
+        "answer": "写一个表格或者格式或者建议或者想法"
+      },
+      {
+        "term": "a few days",
+        "meaningZh": "几天",
+        "acceptedMeaningsZh": [
+          "几天",
+          "一些天"
+        ],
+        "example": "I will come back in a few days.",
+        "exampleZh": "我将在几天后回来。",
+        "relation": "list",
+        "id": "s6-g49-i1",
+        "sourceGroupId": "s6-g49",
+        "session": 6,
+        "teacherNumber": "49",
+        "displayNumber": "49",
+        "answer": "一些天"
+      },
+      {
+        "term": "patient (noun)",
+        "meaningZh": "病人",
+        "acceptedMeaningsZh": [
+          "病人",
+          "名词"
+        ],
+        "example": "He is a patient.",
+        "exampleZh": "他是个病人。",
+        "relation": "single",
+        "id": "s6-g37-i1",
+        "sourceGroupId": "s6-g37",
+        "session": 6,
+        "teacherNumber": "37",
+        "displayNumber": "37-1",
+        "answer": ""
+      },
+      {
+        "term": "treat",
+        "meaningZh": "治疗",
+        "acceptedMeaningsZh": [
+          "治疗",
+          "处理"
+        ],
+        "example": "He needs to treat the wound.",
+        "exampleZh": "他需要包扎伤口。",
+        "relation": "single",
+        "id": "s6-g9-i1",
+        "sourceGroupId": "s6-g9",
+        "session": 6,
+        "teacherNumber": "9",
+        "displayNumber": "9-1",
+        "answer": ""
+      },
+      {
+        "term": "a bad cold",
+        "meaningZh": "一场严重的感冒",
+        "acceptedMeaningsZh": [
+          "一场严重的感冒",
+          "一次重感冒"
+        ],
+        "example": "He has had a bad cold.",
+        "exampleZh": "他得了场重感冒。",
+        "relation": "phrase-alternative",
+        "id": "s6-g65-i1",
+        "sourceGroupId": "s6-g65",
+        "session": 6,
+        "teacherNumber": "65（上）",
+        "displayNumber": "65（上）",
+        "answer": "一个恶劣的感冒"
+      },
+      {
+        "term": "at the clinic",
+        "meaningZh": "在诊所里",
+        "acceptedMeaningsZh": [
+          "在诊所里",
+          "于诊所处"
+        ],
+        "example": "We are at the clinic.",
+        "exampleZh": "我们在诊所里面。",
+        "relation": "phrase-alternative",
+        "id": "s6-g4-i2",
+        "sourceGroupId": "s6-g4",
+        "session": 6,
+        "teacherNumber": "4",
+        "displayNumber": "4-2",
+        "answer": "在一家诊所"
+      },
+      {
+        "term": "say gently",
+        "meaningZh": "温柔地说",
+        "acceptedMeaningsZh": [
+          "温柔地说",
+          "轻声讲"
+        ],
+        "example": "Say gently, please.",
+        "exampleZh": "请温柔地说一下。",
+        "relation": "phrase-alternative",
+        "id": "s6-g14-i2",
+        "sourceGroupId": "s6-g14",
+        "session": 6,
+        "teacherNumber": "14",
+        "displayNumber": "14-2",
+        "answer": "轻声地说"
+      },
+      {
+        "term": "stayed",
+        "meaningZh": "停下了",
+        "acceptedMeaningsZh": [
+          "停下了",
+          "待着了"
+        ],
+        "example": "He stayed for two hours.",
+        "exampleZh": "他呆了两个小时。",
+        "relation": "inflection",
+        "id": "s6-g45-i2",
+        "sourceGroupId": "s6-g45",
+        "session": 6,
+        "teacherNumber": "45",
+        "displayNumber": "45-2",
+        "answer": "说话的过去式"
+      },
+      {
+        "term": "How can I help you?",
+        "meaningZh": "如何帮助你",
+        "acceptedMeaningsZh": [
+          "如何帮助你",
+          "怎么帮你你"
+        ],
+        "example": "How can I help you?",
+        "exampleZh": "如何帮助你？",
+        "relation": "pattern",
+        "id": "s6-g18-i1",
+        "sourceGroupId": "s6-g18",
+        "session": 6,
+        "teacherNumber": "18",
+        "displayNumber": "18-1",
+        "answer": "我该怎么样帮助你？"
+      },
+      {
+        "term": "clinic",
+        "meaningZh": "诊所",
+        "acceptedMeaningsZh": [
+          "诊所",
+          "医院门诊部"
+        ],
+        "example": "The clinic is open now.",
+        "exampleZh": "诊所现在开门营业了。",
+        "relation": "single",
+        "id": "s6-g4-i1",
+        "sourceGroupId": "s6-g4",
+        "session": 6,
+        "teacherNumber": "4",
+        "displayNumber": "4-1",
+        "answer": "诊所"
+      },
+      {
+        "term": "see clearly",
+        "meaningZh": "看得很清楚",
+        "acceptedMeaningsZh": [
+          "看得很清楚"
+        ],
+        "example": "I can see clearly now.",
+        "exampleZh": "我现在能看清了。",
+        "relation": "phrase-alternative",
+        "id": "s6-g19-i3",
+        "sourceGroupId": "s6-g19",
+        "session": 6,
+        "teacherNumber": "19",
+        "displayNumber": "19-3",
+        "answer": "清晰地看见"
+      },
+      {
+        "term": "treatment",
+        "meaningZh": "治疗",
+        "acceptedMeaningsZh": [
+          "治疗",
+          "处理"
+        ],
+        "example": "The doctor gave treatment.",
+        "exampleZh": "医生进行了治疗。",
+        "relation": "single",
+        "id": "s6-g41-i1",
+        "sourceGroupId": "s6-g41",
+        "session": 6,
+        "teacherNumber": "41",
+        "displayNumber": "41",
+        "answer": "对待"
+      },
+      {
+        "term": "take my temperature",
+        "meaningZh": "量我的体温",
+        "acceptedMeaningsZh": [
+          "量我的体温"
+        ],
+        "example": "Let me take your temperature.",
+        "exampleZh": "让我给你测一下体温。",
+        "relation": "phrase-alternative",
+        "id": "s6-g13-i2",
+        "sourceGroupId": "s6-g13",
+        "session": 6,
+        "teacherNumber": "13",
+        "displayNumber": "13-2",
+        "answer": "测量我的体温"
+      },
+      {
+        "term": "hurt",
+        "meaningZh": "受伤",
+        "acceptedMeaningsZh": [
+          "受伤",
+          "使疼痛"
+        ],
+        "example": "He hurt his leg yesterday.",
+        "exampleZh": "他昨天弄伤了腿。",
+        "relation": "single",
+        "id": "s6-g6-i1",
+        "sourceGroupId": "s6-g6",
+        "session": 6,
+        "teacherNumber": "6",
+        "displayNumber": "6",
+        "answer": "受伤"
+      },
+      {
+        "term": "once a day",
+        "meaningZh": "一天一次",
+        "acceptedMeaningsZh": [
+          "一天一次",
+          "每天一次"
+        ],
+        "example": "I brush my teeth once a day.",
+        "exampleZh": "我一天刷一次牙。",
+        "relation": "list",
+        "id": "s6-g33-i1",
+        "sourceGroupId": "s6-g33",
+        "session": 6,
+        "teacherNumber": "33",
+        "displayNumber": "33-1",
+        "answer": "一天一次"
+      },
+      {
+        "term": "Don't forget to do ...",
+        "meaningZh": "别忘了做……",
+        "acceptedMeaningsZh": [
+          "别忘了做……",
+          "不要忘记做……"
+        ],
+        "example": "Don't forget to do your homework.",
+        "exampleZh": "别忘了做作业。",
+        "relation": "pattern",
+        "id": "s6-g5-i1",
+        "sourceGroupId": "s6-g5",
+        "session": 6,
+        "teacherNumber": "5",
+        "displayNumber": "5",
+        "answer": "不要忘记做某事"
+      },
+      {
+        "term": "check your homework",
+        "meaningZh": "检查你的作业",
+        "acceptedMeaningsZh": [
+          "检查你的作业"
+        ],
+        "example": "Please check your homework carefully.",
+        "exampleZh": "请仔细检查你的作业。",
+        "relation": "phrase-alternative",
+        "id": "s6-g20-i2",
+        "sourceGroupId": "s6-g20",
+        "session": 6,
+        "teacherNumber": "20",
+        "displayNumber": "20-2",
+        "answer": "检查你的作业"
+      },
+      {
+        "term": "health advice",
+        "meaningZh": "健康建议",
+        "acceptedMeaningsZh": [
+          "健康建议",
+          "保健意见"
+        ],
+        "example": "Follow this health advice.",
+        "exampleZh": "遵循这个健康建议吧。",
+        "relation": "single",
+        "id": "s6-g2-i1",
+        "sourceGroupId": "s6-g2",
+        "session": 6,
+        "teacherNumber": "2",
+        "displayNumber": "2-1",
+        "answer": "健康建议"
+      },
+      {
+        "term": "for example",
+        "meaningZh": "例如",
+        "acceptedMeaningsZh": [
+          "例如",
+          "举例说明"
+        ],
+        "example": "For example, he likes apples.",
+        "exampleZh": "例如，他喜欢苹果。",
+        "relation": "single",
+        "id": "s6-g29-i1",
+        "sourceGroupId": "s6-g29",
+        "session": 6,
+        "teacherNumber": "29",
+        "displayNumber": "29",
+        "answer": "例如"
+      },
+      {
+        "term": "reduce",
+        "meaningZh": "减少",
+        "acceptedMeaningsZh": [
+          "减少",
+          "降低"
+        ],
+        "example": "He needs to reduce the noise.",
+        "exampleZh": "他需要减少噪音。",
+        "relation": "single",
+        "id": "s6-g39-i1",
+        "sourceGroupId": "s6-g39",
+        "session": 6,
+        "teacherNumber": "39",
+        "displayNumber": "39-1",
+        "answer": "减少"
+      },
+      {
+        "term": "reduce his pain",
+        "meaningZh": "减轻他的疼痛",
+        "acceptedMeaningsZh": [
+          "减轻他的疼痛"
+        ],
+        "example": "The doctor advised him to reduce his pain.",
+        "exampleZh": "医生建议他减轻疼痛。",
+        "relation": "phrase-alternative",
+        "id": "s6-g39-i2",
+        "sourceGroupId": "s6-g39",
+        "session": 6,
+        "teacherNumber": "39",
+        "displayNumber": "39-2",
+        "answer": ""
+      },
+      {
+        "term": "temperature",
+        "meaningZh": "体温",
+        "acceptedMeaningsZh": [
+          "体温",
+          "温度"
+        ],
+        "example": "What is the temperature?",
+        "exampleZh": "这个是什么？",
+        "relation": "single",
+        "id": "s6-g13-i1",
+        "sourceGroupId": "s6-g13",
+        "session": 6,
+        "teacherNumber": "13",
+        "displayNumber": "13-1",
+        "answer": "体温"
+      },
+      {
+        "term": "asleep",
+        "meaningZh": "睡着的",
+        "acceptedMeaningsZh": [
+          "睡着的",
+          "熟睡的"
+        ],
+        "example": "He is already asleep.",
+        "exampleZh": "睡着的。",
+        "relation": "inflection",
+        "id": "s6-g46-i2",
+        "sourceGroupId": "s6-g46",
+        "session": 6,
+        "teacherNumber": "46",
+        "displayNumber": "46-2",
+        "answer": "睡着的"
+      },
+      {
+        "term": "cry",
+        "meaningZh": "哭",
+        "acceptedMeaningsZh": [
+          "哭",
+          "哭泣"
+        ],
+        "example": "He wants to cry.",
+        "exampleZh": "他想哭。",
+        "relation": "single",
+        "id": "s6-g38-i1",
+        "sourceGroupId": "s6-g38",
+        "session": 6,
+        "teacherNumber": "38",
+        "displayNumber": "38-1",
+        "answer": "哭泣"
+      },
+      {
+        "term": "cried",
+        "meaningZh": "过去式或过去分词",
+        "acceptedMeaningsZh": [
+          "过去式或过去分词",
+          "表示“哭”的动作已完成"
+        ],
+        "example": "He cried when he saw the dog.",
+        "exampleZh": "他看到狗时就哭了。",
+        "relation": "inflection",
+        "id": "s6-g38-i3",
+        "sourceGroupId": "s6-g38",
+        "session": 6,
+        "teacherNumber": "38",
+        "displayNumber": "38-3",
+        "answer": "哭泣的过去式"
+      },
+      {
+        "term": "come",
+        "meaningZh": "来",
+        "acceptedMeaningsZh": [
+          "来",
+          "到"
+        ],
+        "example": "Please come here now.",
+        "exampleZh": "请现在来这里一下。",
+        "relation": "single",
+        "id": "s6-g51-i1",
+        "sourceGroupId": "s6-g51",
+        "session": 6,
+        "teacherNumber": "51",
+        "displayNumber": "51-1",
+        "answer": "过来"
+      },
+      {
+        "term": "ate",
+        "meaningZh": "吃了",
+        "acceptedMeaningsZh": [
+          "吃了",
+          "过去式"
+        ],
+        "example": "She ate a big meal at dinner.",
+        "exampleZh": "她晚饭吃了一顿大餐。",
+        "relation": "inflection",
+        "id": "s6-g52-i2",
+        "sourceGroupId": "s6-g52",
+        "session": 6,
+        "teacherNumber": "52",
+        "displayNumber": "52-2",
+        "answer": "吃饭的过去式"
+      },
+      {
+        "term": "go cycling",
+        "meaningZh": "骑自行车",
+        "acceptedMeaningsZh": [
+          "骑自行车"
+        ],
+        "example": "Let's go cycling this weekend.",
+        "exampleZh": "这个周末让我们去骑自行车吧。",
+        "relation": "phrase-alternative",
+        "id": "s6-g30-i1",
+        "sourceGroupId": "s6-g30",
+        "session": 6,
+        "teacherNumber": "30",
+        "displayNumber": "30",
+        "answer": "去哭泣"
+      },
+      {
+        "term": "keep it dry",
+        "meaningZh": "保持干燥",
+        "acceptedMeaningsZh": [
+          "保持干燥",
+          "让它不湿"
+        ],
+        "example": "Keep the flowers in a cool place to keep them fresh.",
+        "exampleZh": "这要保持它们的新鲜，把花放在凉爽的地方。",
+        "relation": "phrase-alternative",
+        "id": "s6-g17-i2",
+        "sourceGroupId": "s6-g17",
+        "session": 6,
+        "teacherNumber": "17",
+        "displayNumber": "17-2",
+        "answer": "保持它干燥"
+      },
+      {
+        "term": "twice a day",
+        "meaningZh": "两天一次",
+        "acceptedMeaningsZh": [
+          "两天一次",
+          "每日两次"
+        ],
+        "example": "She drinks milk twice a day.",
+        "exampleZh": "她每天喝两次牛奶。",
+        "relation": "list",
+        "id": "s6-g33-i2",
+        "sourceGroupId": "s6-g33",
+        "session": 6,
+        "teacherNumber": "33",
+        "displayNumber": "33-2",
+        "answer": "一天两次"
+      },
+      {
+        "term": "healthy",
+        "meaningZh": "健康的",
+        "acceptedMeaningsZh": [
+          "健康的",
+          "有活力的"
+        ],
+        "example": "She looks healthy.",
+        "exampleZh": "她看起来很健康。",
+        "relation": "single",
+        "id": "s6-g2-i2",
+        "sourceGroupId": "s6-g2",
+        "session": 6,
+        "teacherNumber": "2",
+        "displayNumber": "2-2",
+        "answer": "健康的"
+      },
+      {
+        "term": "computer games",
+        "meaningZh": "电脑游戏",
+        "acceptedMeaningsZh": [
+          "电脑游戏",
+          "电子游戏"
+        ],
+        "example": "My favorite computer games are puzzles.",
+        "exampleZh": "我最喜欢的电脑游戏是拼图。",
+        "relation": "single",
+        "id": "s6-g22-i1",
+        "sourceGroupId": "s6-g22",
+        "session": 6,
+        "teacherNumber": "22",
+        "displayNumber": "22",
+        "answer": "电脑游戏"
+      },
+      {
+        "term": "broke",
+        "meaningZh": "打破了（过去式）",
+        "acceptedMeaningsZh": [
+          "打破了（过去式）"
+        ],
+        "example": "He broke the window last night.",
+        "exampleZh": "他昨晚打碎了窗户。",
+        "relation": "inflection",
+        "id": "s6-g44-i2",
+        "sourceGroupId": "s6-g44",
+        "session": 6,
+        "teacherNumber": "44",
+        "displayNumber": "44-2",
+        "answer": "打破的过去式"
+      },
+      {
+        "term": "ouch",
+        "meaningZh": "哎呀",
+        "acceptedMeaningsZh": [
+          "哎呀",
+          "疼啊"
+        ],
+        "example": "My toe hurts. Ouch!",
+        "exampleZh": "我的脚趾痛了，哎哟！",
+        "relation": "single",
+        "id": "s6-g36-i1",
+        "sourceGroupId": "s6-g36",
+        "session": 6,
+        "teacherNumber": "36",
+        "displayNumber": "36",
+        "answer": "哎呦"
+      },
+      {
+        "term": "outdoor activities",
+        "meaningZh": "户外活动",
+        "acceptedMeaningsZh": [
+          "户外活动"
+        ],
+        "example": "We have outdoor activities every week.",
+        "exampleZh": "我们每周都有户外活动。",
+        "relation": "phrase-alternative",
+        "id": "s6-g28-i1",
+        "sourceGroupId": "s6-g28",
+        "session": 6,
+        "teacherNumber": "28",
+        "displayNumber": "28",
+        "answer": "外出建议"
+      },
+      {
+        "term": "have a good rest",
+        "meaningZh": "好好休息",
+        "acceptedMeaningsZh": [
+          "好好休息",
+          "充分休息"
+        ],
+        "example": "Have a good rest.",
+        "exampleZh": "好好休息一下。",
+        "relation": "phrase-alternative",
+        "id": "s6-g15-i1",
+        "sourceGroupId": "s6-g15",
+        "session": 6,
+        "teacherNumber": "15",
+        "displayNumber": "15",
+        "answer": "有一个好的想法"
+      },
+      {
+        "term": "later",
+        "meaningZh": "稍后",
+        "acceptedMeaningsZh": [
+          "稍后",
+          "以后"
+        ],
+        "example": "We can meet later.",
+        "exampleZh": "我们可以稍后会面。",
+        "relation": "single",
+        "id": "s6-g50-i1",
+        "sourceGroupId": "s6-g50",
+        "session": 6,
+        "teacherNumber": "50",
+        "displayNumber": "50",
+        "answer": "后面"
+      },
+      {
+        "term": "break",
+        "meaningZh": "打破",
+        "acceptedMeaningsZh": [
+          "打破",
+          "中断"
+        ],
+        "example": "Please break the rule.",
+        "exampleZh": "请遵守规则，不要打破它。",
+        "relation": "single",
+        "id": "s6-g44-i1",
+        "sourceGroupId": "s6-g44",
+        "session": 6,
+        "teacherNumber": "44",
+        "displayNumber": "44-1",
+        "answer": "打破"
+      },
+      {
+        "term": "could",
+        "meaningZh": "能够（过去式）",
+        "acceptedMeaningsZh": [
+          "能够（过去式）",
+          "以前会"
+        ],
+        "example": "He could run fast when he was young.",
+        "exampleZh": "他年轻时跑得快。",
+        "relation": "inflection",
+        "id": "s6-g54-i2",
+        "sourceGroupId": "s6-g54",
+        "session": 6,
+        "teacherNumber": "54",
+        "displayNumber": "54-2",
+        "answer": "可以"
+      },
+      {
+        "term": "broken",
+        "meaningZh": "破碎的",
+        "acceptedMeaningsZh": [
+          "破碎的",
+          "损坏的"
+        ],
+        "example": "The glass is broken.",
+        "exampleZh": "玻璃碎了。",
+        "relation": "single",
+        "id": "s6-g43-i1",
+        "sourceGroupId": "s6-g43",
+        "session": 6,
+        "teacherNumber": "43",
+        "displayNumber": "43-1",
+        "answer": "打破的"
+      },
+      {
+        "term": "can't",
+        "meaningZh": "不能",
+        "acceptedMeaningsZh": [
+          "不能",
+          "不可以"
+        ],
+        "example": "She can't come today.",
+        "exampleZh": "她今天不能来。",
+        "relation": "phrase-alternative",
+        "id": "s6-g54-i3",
+        "sourceGroupId": "s6-g54",
+        "session": 6,
+        "teacherNumber": "54",
+        "displayNumber": "54-3",
+        "answer": "不可以"
+      },
+      {
+        "term": "a problem",
+        "meaningZh": "一个问题",
+        "acceptedMeaningsZh": [
+          "一个问题",
+          "难题"
+        ],
+        "example": "There is a math problem on the board.",
+        "exampleZh": "黑板上有一个数学问题。",
+        "relation": "single",
+        "id": "s6-g64-i1",
+        "sourceGroupId": "s6-g64",
+        "session": 6,
+        "teacherNumber": "64",
+        "displayNumber": "64",
+        "answer": "一个问题"
+      },
+      {
+        "term": "thought",
+        "meaningZh": "思考过的想法",
+        "acceptedMeaningsZh": [
+          "思考过的想法",
+          "想好的主意"
+        ],
+        "example": "He had a thought about it.",
+        "exampleZh": "他对此有了个想法。",
+        "relation": "inflection",
+        "id": "s6-g42-i2",
+        "sourceGroupId": "s6-g42",
+        "session": 6,
+        "teacherNumber": "42",
+        "displayNumber": "42-2",
+        "answer": "想法的过去式"
+      },
+      {
+        "term": "take some medicine",
+        "meaningZh": "吃些药",
+        "acceptedMeaningsZh": [
+          "吃些药",
+          "服用一些药物"
+        ],
+        "example": "You should take some medicine for your cold.",
+        "exampleZh": "你应该吃点感冒药。",
+        "relation": "phrase-alternative",
+        "id": "s6-g7-i1",
+        "sourceGroupId": "s6-g7",
+        "session": 6,
+        "teacherNumber": "7",
+        "displayNumber": "7",
+        "answer": "吃一些药"
+      },
+      {
+        "term": "cough",
+        "meaningZh": "咳嗽",
+        "acceptedMeaningsZh": [
+          "咳嗽",
+          "咳痰症状"
+        ],
+        "example": "She coughs every morning.",
+        "exampleZh": "她每天早上都会咳嗽。",
+        "relation": "single",
+        "id": "s6-g3-i3",
+        "sourceGroupId": "s6-g3",
+        "session": 6,
+        "teacherNumber": "3",
+        "displayNumber": "3-3",
+        "answer": "咳嗽感冒"
+      },
+      {
+        "term": "can",
+        "meaningZh": "能",
+        "acceptedMeaningsZh": [
+          "能",
+          "可以"
+        ],
+        "example": "I can swim well.",
+        "exampleZh": "我能游得很好。",
+        "relation": "single",
+        "id": "s6-g54-i1",
+        "sourceGroupId": "s6-g54",
+        "session": 6,
+        "teacherNumber": "54",
+        "displayNumber": "54-1",
+        "answer": "可以"
+      },
+      {
+        "term": "came",
+        "meaningZh": "来了",
+        "acceptedMeaningsZh": [
+          "来了",
+          "过去式"
+        ],
+        "example": "He came to my house yesterday.",
+        "exampleZh": "他昨天来到了我家。",
+        "relation": "inflection",
+        "id": "s6-g51-i2",
+        "sourceGroupId": "s6-g51",
+        "session": 6,
+        "teacherNumber": "51",
+        "displayNumber": "51-2",
+        "answer": "过来的过去式"
+      },
+      {
+        "term": "operate",
+        "meaningZh": "操作",
+        "acceptedMeaningsZh": [
+          "操作",
+          "执行"
+        ],
+        "example": "He operates the machine.",
+        "exampleZh": "他操作机器。",
+        "relation": "single",
+        "id": "s6-g61-i1",
+        "sourceGroupId": "s6-g61",
+        "session": 6,
+        "teacherNumber": "61",
+        "displayNumber": "61-1",
+        "answer": "操作"
+      },
+      {
+        "term": "give some advice",
+        "meaningZh": "给一些建议",
+        "acceptedMeaningsZh": [
+          "给一些建议",
+          "提供建议"
+        ],
+        "example": "Can you give me some advice on this?",
+        "exampleZh": "你能给我这个方面的建议吗？",
+        "relation": "phrase-alternative",
+        "id": "s6-g24-i1",
+        "sourceGroupId": "s6-g24",
+        "session": 6,
+        "teacherNumber": "24",
+        "displayNumber": "24",
+        "answer": ""
+      },
+      {
+        "term": "adjective)",
+        "meaningZh": "形容词",
+        "acceptedMeaningsZh": [
+          "形容词",
+          "形容性词语"
+        ],
+        "example": "This is an adjective.",
+        "exampleZh": "这是一个形容词。",
+        "relation": "single",
+        "id": "s6-g37-i2",
+        "sourceGroupId": "s6-g37",
+        "session": 6,
+        "teacherNumber": "37",
+        "displayNumber": "37-2",
+        "answer": ""
+      },
+      {
+        "term": "be called",
+        "meaningZh": "叫做",
+        "acceptedMeaningsZh": [
+          "叫做",
+          "叫作"
+        ],
+        "example": "My name is Tom, and I am called Tom.",
+        "exampleZh": "我叫汤姆，大家都叫我汤姆。",
+        "relation": "phrase-alternative",
+        "id": "s6-g59-i1",
+        "sourceGroupId": "s6-g59",
+        "session": 6,
+        "teacherNumber": "59",
+        "displayNumber": "59",
+        "answer": "保持通话"
+      },
+      {
+        "term": "say kindly",
+        "meaningZh": "亲切地说",
+        "acceptedMeaningsZh": [
+          "亲切地说",
+          "温和地讲"
+        ],
+        "example": "Please say kindly to him.",
+        "exampleZh": "请对他客气一点说。",
+        "relation": "phrase-alternative",
+        "id": "s6-g14-i1",
+        "sourceGroupId": "s6-g14",
+        "session": 6,
+        "teacherNumber": "14",
+        "displayNumber": "14-1",
+        "answer": "友好地说"
+      },
+      {
+        "term": "treat the wound carefully",
+        "meaningZh": "小心治疗伤口",
+        "acceptedMeaningsZh": [
+          "小心治疗伤口"
+        ],
+        "example": "She treated his wound carefully.",
+        "exampleZh": "她小心地处理了他的伤口。",
+        "relation": "phrase-alternative",
+        "id": "s6-g11-i1",
+        "sourceGroupId": "s6-g11",
+        "session": 6,
+        "teacherNumber": "11",
+        "displayNumber": "11",
+        "answer": "小心的对待这个伤口"
+      },
+      {
+        "term": "let me check",
+        "meaningZh": "让我检查一下",
+        "acceptedMeaningsZh": [
+          "让我检查一下"
+        ],
+        "example": "Let me check the map first.",
+        "exampleZh": "我先看看地图吧。",
+        "relation": "single",
+        "id": "s6-g20-i1",
+        "sourceGroupId": "s6-g20",
+        "session": 6,
+        "teacherNumber": "20",
+        "displayNumber": "20-1",
+        "answer": "让我检查"
+      },
+      {
+        "term": "flu",
+        "meaningZh": "流感",
+        "acceptedMeaningsZh": [
+          "流感",
+          "流行性感冒"
+        ],
+        "example": "The flu is spreading quickly.",
+        "exampleZh": "流感正在迅速传播。",
+        "relation": "single",
+        "id": "s6-g3-i5",
+        "sourceGroupId": "s6-g3",
+        "session": 6,
+        "teacherNumber": "3",
+        "displayNumber": "3-5",
+        "answer": ""
+      },
+      {
+        "term": "clearly",
+        "meaningZh": "清楚地",
+        "acceptedMeaningsZh": [
+          "清楚地",
+          "清晰地"
+        ],
+        "example": "He looks clearly at the board.",
+        "exampleZh": "他清楚地看着黑板。",
+        "relation": "inflection",
+        "id": "s6-g19-i2",
+        "sourceGroupId": "s6-g19",
+        "session": 6,
+        "teacherNumber": "19",
+        "displayNumber": "19-2",
+        "answer": "清晰的"
+      },
+      {
+        "term": "medicine",
+        "meaningZh": "药",
+        "acceptedMeaningsZh": [
+          "药",
+          "药物",
+          "治疗用品"
+        ],
+        "example": "Take this medicine immediately.",
+        "exampleZh": "立刻服用这种药。",
+        "relation": "single",
+        "id": "s6-g3-i6",
+        "sourceGroupId": "s6-g3",
+        "session": 6,
+        "teacherNumber": "3",
+        "displayNumber": "3-6",
+        "answer": "药"
+      },
+      {
+        "term": "cries",
+        "meaningZh": "第三人称单数形式",
+        "acceptedMeaningsZh": [
+          "第三人称单数形式",
+          "表示“哭”的现在时态"
+        ],
+        "example": "She cries every morning.",
+        "exampleZh": "她每天早上都哭。",
+        "relation": "inflection",
+        "id": "s6-g38-i2",
+        "sourceGroupId": "s6-g38",
+        "session": 6,
+        "teacherNumber": "38",
+        "displayNumber": "38-2",
+        "answer": "哭泣的三单"
+      },
+      {
+        "term": "hurt badly",
+        "meaningZh": "受伤得很重",
+        "acceptedMeaningsZh": [
+          "受伤得很重",
+          "伤得厉害"
+        ],
+        "example": "He was hurt badly in the accident.",
+        "exampleZh": "他在事故中受重伤了。",
+        "relation": "pattern",
+        "id": "s6-g8-i1",
+        "sourceGroupId": "s6-g8",
+        "session": 6,
+        "teacherNumber": "8",
+        "displayNumber": "8",
+        "answer": "不好的伤害"
+      },
+      {
+        "term": "be good for ...",
+        "meaningZh": "对……有益",
+        "acceptedMeaningsZh": [
+          "对……有益",
+          "有利于"
+        ],
+        "example": "Running is good for your health.",
+        "exampleZh": "跑步对你的健康有益。",
+        "relation": "pattern",
+        "id": "s6-g31-i1",
+        "sourceGroupId": "s6-g31",
+        "session": 6,
+        "teacherNumber": "31",
+        "displayNumber": "31-1",
+        "answer": "对什么人或者什么事情好"
+      },
+      {
+        "term": "couldn't",
+        "meaningZh": "不能够（过去式）",
+        "acceptedMeaningsZh": [
+          "不能够（过去式）",
+          "以前不会"
+        ],
+        "example": "They couldn't understand the story then.",
+        "exampleZh": "他们那时听不懂这个故事。",
+        "relation": "inflection",
+        "id": "s6-g54-i4",
+        "sourceGroupId": "s6-g54",
+        "session": 6,
+        "teacherNumber": "54",
+        "displayNumber": "54-4",
+        "answer": "不可以的过去式"
+      },
+      {
+        "term": "think",
+        "meaningZh": "思考",
+        "acceptedMeaningsZh": [
+          "思考",
+          "想"
+        ],
+        "example": "I think about my homework.",
+        "exampleZh": "我考虑我的作业。",
+        "relation": "single",
+        "id": "s6-g63-i1",
+        "sourceGroupId": "s6-g63",
+        "session": 6,
+        "teacherNumber": "63",
+        "displayNumber": "63-1",
+        "answer": "想法"
+      },
+      {
+        "term": "eat",
+        "meaningZh": "吃",
+        "acceptedMeaningsZh": [
+          "吃",
+          "进食"
+        ],
+        "example": "I want to eat an apple now.",
+        "exampleZh": "我现在想吃一个苹果。",
+        "relation": "single",
+        "id": "s6-g52-i1",
+        "sourceGroupId": "s6-g52",
+        "session": 6,
+        "teacherNumber": "52",
+        "displayNumber": "52-1",
+        "answer": "吃"
+      },
+      {
+        "term": "operation",
+        "meaningZh": "操作",
+        "acceptedMeaningsZh": [
+          "操作",
+          "行动"
+        ],
+        "example": "The operation is successful.",
+        "exampleZh": "这次手术很成功。",
+        "relation": "synonym",
+        "id": "s6-g61-i2",
+        "sourceGroupId": "s6-g61",
+        "session": 6,
+        "teacherNumber": "61",
+        "displayNumber": "61-2",
+        "answer": "手术"
+      },
+      {
+        "term": "wound",
+        "meaningZh": "伤口",
+        "acceptedMeaningsZh": [
+          "伤口",
+          "损伤"
+        ],
+        "example": "The doctor cleaned his wound.",
+        "exampleZh": "医生清理了他的伤口。",
+        "relation": "single",
+        "id": "s6-g9-i2",
+        "sourceGroupId": "s6-g9",
+        "session": 6,
+        "teacherNumber": "9",
+        "displayNumber": "9-2",
+        "answer": "伤口"
+      },
+      {
+        "term": "three times a day",
+        "meaningZh": "三次一天",
+        "acceptedMeaningsZh": [
+          "三次一天",
+          "一日三遍"
+        ],
+        "example": "He eats breakfast three times a day.",
+        "exampleZh": "他一天吃三餐早餐。",
+        "relation": "list",
+        "id": "s6-g33-i3",
+        "sourceGroupId": "s6-g33",
+        "session": 6,
+        "teacherNumber": "33",
+        "displayNumber": "33-3",
+        "answer": "三次一天"
+      }
+    ],
+    "cloze": [
+      {
+        "term": "can't",
+        "meaningZh": "不能",
+        "acceptedMeaningsZh": [
+          "不能",
+          "不可以"
+        ],
+        "example": "She can't come today.",
+        "exampleZh": "她今天不能来。",
+        "relation": "phrase-alternative",
+        "id": "s6-g54-i3",
+        "sourceGroupId": "s6-g54",
+        "session": 6,
+        "teacherNumber": "54",
+        "displayNumber": "54-3",
+        "answer": "have a good rest",
+        "prompt": "She _____ come today.",
+        "choices": [
+          "can't",
+          "ouch",
+          "cried",
+          "have a good rest"
+        ]
+      },
+      {
+        "term": "treatment",
+        "meaningZh": "治疗",
+        "acceptedMeaningsZh": [
+          "治疗",
+          "处理"
+        ],
+        "example": "The doctor gave treatment.",
+        "exampleZh": "医生进行了治疗。",
+        "relation": "single",
+        "id": "s6-g41-i1",
+        "sourceGroupId": "s6-g41",
+        "session": 6,
+        "teacherNumber": "41",
+        "displayNumber": "41",
+        "answer": "healthy",
+        "prompt": "The doctor gave _____.",
+        "choices": [
+          "operate",
+          "treatment",
+          "healthy",
+          "operation"
+        ]
+      },
+      {
+        "term": "sleep",
+        "meaningZh": "睡觉",
+        "acceptedMeaningsZh": [
+          "睡觉",
+          "睡眠"
+        ],
+        "example": "I sleep at night.",
+        "exampleZh": "睡觉。",
+        "relation": "single",
+        "id": "s6-g46-i1",
+        "sourceGroupId": "s6-g46",
+        "session": 6,
+        "teacherNumber": "46",
+        "displayNumber": "46-1",
+        "answer": "sleep",
+        "prompt": "I _____ at night.",
+        "choices": [
+          "think",
+          "sleep",
+          "wound",
+          "later"
+        ]
+      },
+      {
+        "term": "watch less TV",
+        "meaningZh": "少看电视",
+        "acceptedMeaningsZh": [
+          "少看电视",
+          "减少电视观看时间"
+        ],
+        "example": "I watch less TV now.",
+        "exampleZh": "我现在少看一些电视了。",
+        "relation": "phrase-alternative",
+        "id": "s6-g25-i2",
+        "sourceGroupId": "s6-g25",
+        "session": 6,
+        "teacherNumber": "25",
+        "displayNumber": "25-2",
+        "answer": "watch less TV",
+        "prompt": "I _____ now.",
+        "choices": [
+          "came",
+          "can't",
+          "watch less TV",
+          "once a day"
+        ]
+      },
+      {
+        "term": "think about",
+        "meaningZh": "思考……；考虑……",
+        "acceptedMeaningsZh": [
+          "思考……；考虑……"
+        ],
+        "example": "Think about your answer carefully.",
+        "exampleZh": "仔细想想你的答案。",
+        "relation": "phrase-alternative",
+        "id": "s6-g63-i2",
+        "sourceGroupId": "s6-g63",
+        "session": 6,
+        "teacherNumber": "63",
+        "displayNumber": "63-2",
+        "answer": "create",
+        "prompt": "_____ your answer carefully.",
+        "choices": [
+          "create",
+          "fewer",
+          "hurt",
+          "think about"
+        ]
+      },
+      {
+        "term": "medicine",
+        "meaningZh": "药",
+        "acceptedMeaningsZh": [
+          "药",
+          "药物",
+          "治疗用品"
+        ],
+        "example": "Take this medicine immediately.",
+        "exampleZh": "立刻服用这种药。",
+        "relation": "single",
+        "id": "s6-g3-i6",
+        "sourceGroupId": "s6-g3",
+        "session": 6,
+        "teacherNumber": "3",
+        "displayNumber": "3-6",
+        "answer": "cried",
+        "prompt": "Take this _____ immediately.",
+        "choices": [
+          "medicine",
+          "be good for ...",
+          "hurt",
+          "cried"
+        ]
+      },
+      {
+        "term": "fewer",
+        "meaningZh": "更少的",
+        "acceptedMeaningsZh": [
+          "更少的",
+          "较少数目"
+        ],
+        "example": "She has fewer books than before.",
+        "exampleZh": "她现在的书比之前少一些了。",
+        "relation": "inflection",
+        "id": "s6-g26-i4",
+        "sourceGroupId": "s6-g26",
+        "session": 6,
+        "teacherNumber": "26",
+        "displayNumber": "26-4",
+        "answer": "fewer",
+        "prompt": "She has _____ books than before.",
+        "choices": [
+          "at the clinic",
+          "a bad cold",
+          "fewer",
+          "broke"
+        ]
+      },
+      {
+        "term": "break",
+        "meaningZh": "打破",
+        "acceptedMeaningsZh": [
+          "打破",
+          "中断"
+        ],
+        "example": "Please break the rule.",
+        "exampleZh": "请遵守规则，不要打破它。",
+        "relation": "single",
+        "id": "s6-g44-i1",
+        "sourceGroupId": "s6-g44",
+        "session": 6,
+        "teacherNumber": "44",
+        "displayNumber": "44-1",
+        "answer": "break",
+        "prompt": "Please _____ the rule.",
+        "choices": [
+          "twice a day",
+          "in need of ...",
+          "hurt",
+          "break"
+        ]
+      },
+      {
+        "term": "ate",
+        "meaningZh": "吃了",
+        "acceptedMeaningsZh": [
+          "吃了",
+          "过去式"
+        ],
+        "example": "She ate a big meal at dinner.",
+        "exampleZh": "她晚饭吃了一顿大餐。",
+        "relation": "inflection",
+        "id": "s6-g52-i2",
+        "sourceGroupId": "s6-g52",
+        "session": 6,
+        "teacherNumber": "52",
+        "displayNumber": "52-2",
+        "answer": "ate",
+        "prompt": "She _____ a big meal at dinner.",
+        "choices": [
+          "medicine",
+          "doctor",
+          "play games a lot",
+          "ate"
+        ]
+      },
+      {
+        "term": "broke",
+        "meaningZh": "打破了（过去式）",
+        "acceptedMeaningsZh": [
+          "打破了（过去式）"
+        ],
+        "example": "He broke the window last night.",
+        "exampleZh": "他昨晚打碎了窗户。",
+        "relation": "inflection",
+        "id": "s6-g44-i2",
+        "sourceGroupId": "s6-g44",
+        "session": 6,
+        "teacherNumber": "44",
+        "displayNumber": "44-2",
+        "answer": "broke",
+        "prompt": "He _____ the window last night.",
+        "choices": [
+          "thought",
+          "broke",
+          "later",
+          "ate"
+        ]
+      },
+      {
+        "term": "can",
+        "meaningZh": "能",
+        "acceptedMeaningsZh": [
+          "能",
+          "可以"
+        ],
+        "example": "I can swim well.",
+        "exampleZh": "我能游得很好。",
+        "relation": "single",
+        "id": "s6-g54-i1",
+        "sourceGroupId": "s6-g54",
+        "session": 6,
+        "teacherNumber": "54",
+        "displayNumber": "54-1",
+        "answer": "can",
+        "prompt": "I _____ swim well.",
+        "choices": [
+          "healthy",
+          "stay",
+          "can",
+          "What should I do?"
+        ]
+      },
+      {
+        "term": "reduce",
+        "meaningZh": "减少",
+        "acceptedMeaningsZh": [
+          "减少",
+          "降低"
+        ],
+        "example": "He needs to reduce the noise.",
+        "exampleZh": "他需要减少噪音。",
+        "relation": "single",
+        "id": "s6-g39-i1",
+        "sourceGroupId": "s6-g39",
+        "session": 6,
+        "teacherNumber": "39",
+        "displayNumber": "39-1",
+        "answer": "reduce",
+        "prompt": "He needs to _____ the noise.",
+        "choices": [
+          "a bad cold",
+          "reduce",
+          "nurse",
+          "can't"
+        ]
+      }
+    ],
+    "signature": "s6-g46-i1,s6-g63-i2,s6-g40-i1,s6-g1-i2,s6-g3-i2,s6-g58-i1,s6-g45-i1,s6-g1-i1,s6-g34-i1,s6-g47-i1,s6-g27-i1,s6-g16-i1,s6-g55-i1,s6-g43-i2,s6-g60-i1,s6-g32-i1,s6-g47-i2,s6-g10-i1,s6-g26-i3,s6-g12-i1,s6-g21-i1,s6-g25-i2,s6-g25-i1,s6-g3-i1,s6-g35-i1,s6-g35-i2,s6-g26-i4,s6-g26-i2,s6-g23-i1,s6-g48-i1,s6-g53-i1,s6-g19-i1,s6-g42-i1,s6-g46-i3,s6-g10-i2,s6-g3-i4,s6-g57-i1,s6-g62-i1,s6-g17-i1,s6-g26-i1,s6-g18-i2,s6-g31-i2,s6-g56-i1,s6-g66-i1,s6-g49-i1,s6-g37-i1,s6-g9-i1,s6-g65-i1,s6-g4-i2,s6-g14-i2,s6-g45-i2,s6-g18-i1,s6-g4-i1,s6-g19-i3,s6-g41-i1,s6-g13-i2,s6-g6-i1,s6-g33-i1,s6-g5-i1,s6-g20-i2,s6-g2-i1,s6-g29-i1,s6-g39-i1,s6-g39-i2,s6-g13-i1,s6-g46-i2,s6-g38-i1,s6-g38-i3,s6-g51-i1,s6-g52-i2,s6-g30-i1,s6-g17-i2,s6-g33-i2,s6-g2-i2,s6-g22-i1,s6-g44-i2,s6-g36-i1,s6-g28-i1,s6-g15-i1,s6-g50-i1,s6-g44-i1,s6-g54-i2,s6-g43-i1,s6-g54-i3,s6-g64-i1,s6-g42-i2,s6-g7-i1,s6-g3-i3,s6-g54-i1,s6-g51-i2,s6-g61-i1,s6-g24-i1,s6-g37-i2,s6-g59-i1,s6-g14-i1,s6-g11-i1,s6-g20-i1,s6-g3-i5,s6-g19-i2,s6-g3-i6,s6-g38-i2,s6-g8-i1,s6-g31-i1,s6-g54-i4,s6-g63-i1,s6-g52-i1,s6-g61-i2,s6-g9-i2,s6-g33-i3|s6-g54-i3:can't,ouch,cried,have a good rest|s6-g41-i1:operate,treatment,healthy,operation|s6-g46-i1:think,sleep,wound,later|s6-g25-i2:came,can't,watch less TV,once a day|s6-g63-i2:create,fewer,hurt,think about|s6-g3-i6:medicine,be good for ...,hurt,cried|s6-g26-i4:at the clinic,a bad cold,fewer,broke|s6-g44-i1:twice a day,in need of ...,hurt,break|s6-g52-i2:medicine,doctor,play games a lot,ate|s6-g44-i2:thought,broke,later,ate|s6-g54-i1:healthy,stay,can,What should I do?|s6-g39-i1:a bad cold,reduce,nurse,can't"
+  },
+  "results": {
+    "meanings": [
+      {
+        "id": "s6-g46-i1",
+        "correct": true,
+        "answer": "睡觉"
+      },
+      {
+        "id": "s6-g63-i2",
+        "correct": false,
+        "answer": "思考……；考虑……"
+      },
+      {
+        "id": "s6-g40-i1",
+        "correct": false,
+        "answer": "在……期间"
+      },
+      {
+        "id": "s6-g1-i2",
+        "correct": true,
+        "answer": "去看医生"
+      },
+      {
+        "id": "s6-g3-i2",
+        "correct": false,
+        "answer": "发烧"
+      },
+      {
+        "id": "s6-g58-i1",
+        "correct": true,
+        "answer": "创造"
+      },
+      {
+        "id": "s6-g45-i1",
+        "correct": false,
+        "answer": "停留"
+      },
+      {
+        "id": "s6-g1-i1",
+        "correct": true,
+        "answer": "医生"
+      },
+      {
+        "id": "s6-g34-i1",
+        "correct": false,
+        "answer": "好好照顾……"
+      },
+      {
+        "id": "s6-g47-i1",
+        "correct": false,
+        "answer": "使...惊讶"
+      },
+      {
+        "id": "s6-g27-i1",
+        "correct": true,
+        "answer": "最喜欢的"
+      },
+      {
+        "id": "s6-g16-i1",
+        "correct": true,
+        "answer": "喝很多水"
+      },
+      {
+        "id": "s6-g55-i1",
+        "correct": false,
+        "answer": "叫醒某人"
+      },
+      {
+        "id": "s6-g43-i2",
+        "correct": false,
+        "answer": "一只断臂"
+      },
+      {
+        "id": "s6-g60-i1",
+        "correct": true,
+        "answer": "需要……"
+      },
+      {
+        "id": "s6-g32-i1",
+        "correct": true,
+        "answer": "做运动"
+      },
+      {
+        "id": "s6-g47-i2",
+        "correct": false,
+        "answer": "感到惊讶的"
+      },
+      {
+        "id": "s6-g10-i1",
+        "correct": false,
+        "answer": "小心的"
+      },
+      {
+        "id": "s6-g26-i3",
+        "correct": false,
+        "answer": "少量的"
+      },
+      {
+        "id": "s6-g12-i1",
+        "correct": false,
+        "answer": "保持干燥"
+      },
+      {
+        "id": "s6-g21-i1",
+        "correct": false,
+        "answer": "经常玩游戏"
+      },
+      {
+        "id": "s6-g25-i2",
+        "correct": false,
+        "answer": "少看电视"
+      },
+      {
+        "id": "s6-g25-i1",
+        "correct": false,
+        "answer": "看电视太多"
+      },
+      {
+        "id": "s6-g3-i1",
+        "correct": true,
+        "answer": "护士"
+      },
+      {
+        "id": "s6-g35-i1",
+        "correct": false,
+        "answer": "谈论……"
+      },
+      {
+        "id": "s6-g35-i2",
+        "correct": false,
+        "answer": "和……交谈"
+      },
+      {
+        "id": "s6-g26-i4",
+        "correct": false,
+        "answer": "更少的"
+      },
+      {
+        "id": "s6-g26-i2",
+        "correct": false,
+        "answer": "更少的"
+      },
+      {
+        "id": "s6-g23-i1",
+        "correct": false,
+        "answer": "我应该做什么？"
+      },
+      {
+        "id": "s6-g48-i1",
+        "correct": false,
+        "answer": "有想法"
+      },
+      {
+        "id": "s6-g53-i1",
+        "correct": false,
+        "answer": "错误地"
+      },
+      {
+        "id": "s6-g19-i1",
+        "correct": false,
+        "answer": "清晰的"
+      },
+      {
+        "id": "s6-g42-i1",
+        "correct": false,
+        "answer": "思考"
+      },
+      {
+        "id": "s6-g46-i3",
+        "correct": false,
+        "answer": "保持清醒状态（通常指入睡后）"
+      },
+      {
+        "id": "s6-g10-i2",
+        "correct": false,
+        "answer": "仔细地"
+      },
+      {
+        "id": "s6-g3-i4",
+        "correct": false,
+        "answer": "流鼻涕"
+      },
+      {
+        "id": "s6-g57-i1",
+        "correct": false,
+        "answer": "和"
+      },
+      {
+        "id": "s6-g62-i1",
+        "correct": false,
+        "answer": "给他一些建议"
+      },
+      {
+        "id": "s6-g17-i1",
+        "correct": false,
+        "answer": "放松"
+      },
+      {
+        "id": "s6-g26-i1",
+        "correct": false,
+        "answer": "少的"
+      },
+      {
+        "id": "s6-g18-i2",
+        "correct": false,
+        "answer": "我能为你做什么？"
+      },
+      {
+        "id": "s6-g31-i2",
+        "correct": false,
+        "answer": "对……有害"
+      },
+      {
+        "id": "s6-g56-i1",
+        "correct": true,
+        "answer": "一小时"
+      },
+      {
+        "id": "s6-g66-i1",
+        "correct": false,
+        "answer": "写一份清单"
+      },
+      {
+        "id": "s6-g49-i1",
+        "correct": false,
+        "answer": "几天"
+      },
+      {
+        "id": "s6-g37-i1",
+        "correct": false,
+        "answer": "病人"
+      },
+      {
+        "id": "s6-g9-i1",
+        "correct": false,
+        "answer": "治疗"
+      },
+      {
+        "id": "s6-g65-i1",
+        "correct": false,
+        "answer": "一场严重的感冒"
+      },
+      {
+        "id": "s6-g4-i2",
+        "correct": false,
+        "answer": "在诊所里"
+      },
+      {
+        "id": "s6-g14-i2",
+        "correct": false,
+        "answer": "温柔地说"
+      },
+      {
+        "id": "s6-g45-i2",
+        "correct": false,
+        "answer": "停下了"
+      },
+      {
+        "id": "s6-g18-i1",
+        "correct": false,
+        "answer": "如何帮助你"
+      },
+      {
+        "id": "s6-g4-i1",
+        "correct": true,
+        "answer": "诊所"
+      },
+      {
+        "id": "s6-g19-i3",
+        "correct": false,
+        "answer": "看得很清楚"
+      },
+      {
+        "id": "s6-g41-i1",
+        "correct": false,
+        "answer": "治疗"
+      },
+      {
+        "id": "s6-g13-i2",
+        "correct": true,
+        "answer": "量我的体温"
+      },
+      {
+        "id": "s6-g6-i1",
+        "correct": true,
+        "answer": "受伤"
+      },
+      {
+        "id": "s6-g33-i1",
+        "correct": true,
+        "answer": "一天一次"
+      },
+      {
+        "id": "s6-g5-i1",
+        "correct": false,
+        "answer": "别忘了做……"
+      },
+      {
+        "id": "s6-g20-i2",
+        "correct": true,
+        "answer": "检查你的作业"
+      },
+      {
+        "id": "s6-g2-i1",
+        "correct": true,
+        "answer": "健康建议"
+      },
+      {
+        "id": "s6-g29-i1",
+        "correct": true,
+        "answer": "例如"
+      },
+      {
+        "id": "s6-g39-i1",
+        "correct": true,
+        "answer": "减少"
+      },
+      {
+        "id": "s6-g39-i2",
+        "correct": false,
+        "answer": "减轻他的疼痛"
+      },
+      {
+        "id": "s6-g13-i1",
+        "correct": true,
+        "answer": "体温"
+      },
+      {
+        "id": "s6-g46-i2",
+        "correct": true,
+        "answer": "睡着的"
+      },
+      {
+        "id": "s6-g38-i1",
+        "correct": false,
+        "answer": "哭"
+      },
+      {
+        "id": "s6-g38-i3",
+        "correct": false,
+        "answer": "过去式或过去分词"
+      },
+      {
+        "id": "s6-g51-i1",
+        "correct": false,
+        "answer": "来"
+      },
+      {
+        "id": "s6-g52-i2",
+        "correct": false,
+        "answer": "吃了"
+      },
+      {
+        "id": "s6-g30-i1",
+        "correct": false,
+        "answer": "骑自行车"
+      },
+      {
+        "id": "s6-g17-i2",
+        "correct": false,
+        "answer": "保持干燥"
+      },
+      {
+        "id": "s6-g33-i2",
+        "correct": false,
+        "answer": "两天一次"
+      },
+      {
+        "id": "s6-g2-i2",
+        "correct": true,
+        "answer": "健康的"
+      },
+      {
+        "id": "s6-g22-i1",
+        "correct": true,
+        "answer": "电脑游戏"
+      },
+      {
+        "id": "s6-g44-i2",
+        "correct": false,
+        "answer": "打破了（过去式）"
+      },
+      {
+        "id": "s6-g36-i1",
+        "correct": false,
+        "answer": "哎呀"
+      },
+      {
+        "id": "s6-g28-i1",
+        "correct": false,
+        "answer": "户外活动"
+      },
+      {
+        "id": "s6-g15-i1",
+        "correct": false,
+        "answer": "好好休息"
+      },
+      {
+        "id": "s6-g50-i1",
+        "correct": false,
+        "answer": "稍后"
+      },
+      {
+        "id": "s6-g44-i1",
+        "correct": true,
+        "answer": "打破"
+      },
+      {
+        "id": "s6-g54-i2",
+        "correct": false,
+        "answer": "能够（过去式）"
+      },
+      {
+        "id": "s6-g43-i1",
+        "correct": false,
+        "answer": "破碎的"
+      },
+      {
+        "id": "s6-g54-i3",
+        "correct": true,
+        "answer": "不能"
+      },
+      {
+        "id": "s6-g64-i1",
+        "correct": true,
+        "answer": "一个问题"
+      },
+      {
+        "id": "s6-g42-i2",
+        "correct": false,
+        "answer": "思考过的想法"
+      },
+      {
+        "id": "s6-g7-i1",
+        "correct": false,
+        "answer": "吃些药"
+      },
+      {
+        "id": "s6-g3-i3",
+        "correct": false,
+        "answer": "咳嗽"
+      },
+      {
+        "id": "s6-g54-i1",
+        "correct": true,
+        "answer": "能"
+      },
+      {
+        "id": "s6-g51-i2",
+        "correct": false,
+        "answer": "来了"
+      },
+      {
+        "id": "s6-g61-i1",
+        "correct": true,
+        "answer": "操作"
+      },
+      {
+        "id": "s6-g24-i1",
+        "correct": false,
+        "answer": "给一些建议"
+      },
+      {
+        "id": "s6-g37-i2",
+        "correct": false,
+        "answer": "形容词"
+      },
+      {
+        "id": "s6-g59-i1",
+        "correct": false,
+        "answer": "叫做"
+      },
+      {
+        "id": "s6-g14-i1",
+        "correct": false,
+        "answer": "亲切地说"
+      },
+      {
+        "id": "s6-g11-i1",
+        "correct": false,
+        "answer": "小心治疗伤口"
+      },
+      {
+        "id": "s6-g20-i1",
+        "correct": true,
+        "answer": "让我检查一下"
+      },
+      {
+        "id": "s6-g3-i5",
+        "correct": false,
+        "answer": "流感"
+      },
+      {
+        "id": "s6-g19-i2",
+        "correct": false,
+        "answer": "清楚地"
+      },
+      {
+        "id": "s6-g3-i6",
+        "correct": true,
+        "answer": "药"
+      },
+      {
+        "id": "s6-g38-i2",
+        "correct": false,
+        "answer": "第三人称单数形式"
+      },
+      {
+        "id": "s6-g8-i1",
+        "correct": false,
+        "answer": "受伤得很重"
+      },
+      {
+        "id": "s6-g31-i1",
+        "correct": false,
+        "answer": "对……有益"
+      },
+      {
+        "id": "s6-g54-i4",
+        "correct": false,
+        "answer": "不能够（过去式）"
+      },
+      {
+        "id": "s6-g63-i1",
+        "correct": false,
+        "answer": "思考"
+      },
+      {
+        "id": "s6-g52-i1",
+        "correct": true,
+        "answer": "吃"
+      },
+      {
+        "id": "s6-g61-i2",
+        "correct": false,
+        "answer": "操作"
+      },
+      {
+        "id": "s6-g9-i2",
+        "correct": true,
+        "answer": "伤口"
+      },
+      {
+        "id": "s6-g33-i3",
+        "correct": true,
+        "answer": "三次一天"
+      }
+    ],
+    "cloze": [
+      {
+        "correct": false,
+        "answer": "can't"
+      },
+      {
+        "correct": false,
+        "answer": "treatment"
+      },
+      {
+        "correct": true,
+        "answer": "sleep"
+      },
+      {
+        "correct": true,
+        "answer": "watch less TV"
+      },
+      {
+        "correct": false,
+        "answer": "think about"
+      },
+      {
+        "correct": false,
+        "answer": "medicine"
+      },
+      {
+        "correct": true,
+        "answer": "fewer"
+      },
+      {
+        "correct": true,
+        "answer": "break"
+      },
+      {
+        "correct": true,
+        "answer": "ate"
+      },
+      {
+        "correct": true,
+        "answer": "broke"
+      },
+      {
+        "correct": true,
+        "answer": "can"
+      },
+      {
+        "correct": true,
+        "answer": "reduce"
+      }
+    ],
+    "correct": 40,
+    "total": 121,
+    "score": 33
+  },
+  "gradingVersion": 5
+}
