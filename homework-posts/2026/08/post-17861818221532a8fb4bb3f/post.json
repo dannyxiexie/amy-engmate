@@ -38,12 +38,19 @@
       "targetId": "image-1786181787967b0faab0ec8",
       "text": "这次都是关于节日的稍微简单一点点吧，反正过得蛮快的，这是题目有一点点搞啊",
       "createdAt": "2026-08-08T09:38:14.634Z"
+    },
+    {
+      "id": "comment-178618198125017de0691b7",
+      "targetType": "image",
+      "targetId": "image-17861818066308b14c2f973",
+      "text": "这张报纸主要写了一个诗人，他就写了一句诗，然后好像还流传下来了，但这句诗并没有学到啊，然后我记得还有一次他在写的时候诶，就是这一次他刚写完第一句，后面催房租的来了就打断了他的思路，好无语啊而且这次的这个报纸视频也看了很久，哇塞，真的是太情了，都不敢想啊，但题目稍微简单一点了",
+      "createdAt": "2026-08-08T09:39:41.250Z"
     }
   ],
   "confirmedAt": null,
   "confirmedByDeviceId": null,
   "createdAt": "2026-08-08T09:37:02.773Z",
-  "updatedAt": "2026-08-08T09:38:14.634Z",
+  "updatedAt": "2026-08-08T09:39:41.250Z",
   "auditLog": [
     {
       "id": "audit-1786181822773a2bca6af30",
@@ -62,6 +69,16 @@
       "details": {
         "targetType": "image",
         "targetId": "image-1786181787967b0faab0ec8"
+      }
+    },
+    {
+      "id": "audit-1786181981945209e22dac2",
+      "action": "add_comment",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-08T09:39:41.945Z",
+      "details": {
+        "targetType": "image",
+        "targetId": "image-17861818066308b14c2f973"
       }
     }
   ]
