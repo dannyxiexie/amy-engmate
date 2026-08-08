@@ -31,11 +31,19 @@
       "createdAt": "2026-08-08T09:37:02.773Z"
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "id": "comment-17861818946344e4f66dc8e",
+      "targetType": "image",
+      "targetId": "image-1786181787967b0faab0ec8",
+      "text": "这次都是关于节日的稍微简单一点点吧，反正过得蛮快的，这是题目有一点点搞啊",
+      "createdAt": "2026-08-08T09:38:14.634Z"
+    }
+  ],
   "confirmedAt": null,
   "confirmedByDeviceId": null,
   "createdAt": "2026-08-08T09:37:02.773Z",
-  "updatedAt": "2026-08-08T09:37:02.773Z",
+  "updatedAt": "2026-08-08T09:38:14.634Z",
   "auditLog": [
     {
       "id": "audit-1786181822773a2bca6af30",
@@ -44,6 +52,16 @@
       "timestamp": "2026-08-08T09:37:02.773Z",
       "details": {
         "imageCount": 2
+      }
+    },
+    {
+      "id": "audit-1786181895332b563ed45cd",
+      "action": "add_comment",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-08T09:38:15.332Z",
+      "details": {
+        "targetType": "image",
+        "targetId": "image-1786181787967b0faab0ec8"
       }
     }
   ]
