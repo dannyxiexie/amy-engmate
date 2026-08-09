@@ -11,7 +11,7 @@ const HISTORY_KEY = "family-reader:amy-grade-5-vocabulary:exam-history:v1";
 const DRAFTS_KEY = "family-reader:amy-grade-5-vocabulary:exam-drafts:v1";
 const ACCEPTED_KEY = "family-reader:amy-grade-5-vocabulary:accepted-answers:v1";
 const GRADING_VERSION = 5;
-const GRADING_API_URL = import.meta.env.VITE_GRADING_API_URL || "";
+const GRADING_API_URL = import.meta.env.VITE_GRADING_API_URL || "https://grade.dannyxiexie.tech";
 
 function readHistory() {
   if (typeof window === "undefined") return [];
@@ -113,7 +113,10 @@ async function gradeExam(exam, acceptedAnswers = {}) {
     try {
       const response = await fetch(GRADING_API_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          ...(import.meta.env.VITE_APP_KEY ? { "X-App-Key": import.meta.env.VITE_APP_KEY } : {})
+        },
         body: JSON.stringify({ items: semanticItems })
       });
       if (!response.ok) throw new Error("grading request failed");

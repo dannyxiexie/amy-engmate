@@ -1,0 +1,13 @@
+name = "amy-engmate-grading"
+main = "src/index.js"
+compatibility_date = "2026-08-09"
+
+# 通过自定义域名访问（国内可达性优于 workers.dev）
+routes = [
+  { pattern = "grade.dannyxiexie.tech", custom_domain = true }
+]
+
+# 部署后地址：https://amy-engmate-grading.<你的子域>.workers.dev
+# MiMo key 用 secret 注入，不写在这里：
+#   npx wrangler secret put MIMO_API_KEY
+#   npx wrangler secret put APP_KEY   # 可选，设了前端就要带 X-App-Key
