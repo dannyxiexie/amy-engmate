@@ -145,6 +145,49 @@ async function gradeExam(exam, acceptedAnswers = {}) {
   return { meanings, cloze, correct, total, score: total ? Math.round(correct / total * 100) : 0 };
 }
 
+// 用 AI 检查候选例句选词题里哪些"歧义"（多个选项填得通），优先保留非歧义题。
+// AI 不可用或没返回的题按非歧义保留，保证出题永远不卡住。
+async function filterClozeByAi(candidates, wantCount = 12) {
+  if (!candidates?.length) return [];
+  let validMap = new Map();
+  if (GRADING_API_URL) {
+    try {
+      const resp = await fetch(GRADING_API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", ...(import.meta.env.VITE_APP_KEY ? { "X-App-Key": import.meta.env.VITE_APP_KEY } : {}) },
+        body: JSON.stringify({ cloze: candidates.map((c, i) => ({ index: i, prompt: c.prompt, choices: c.choices })) })
+      });
+      if (resp.ok) {
+        const data = await resp.json();
+        validMap = new Map((data.results || []).map((r) => [r.index, r.valid]));
+      }
+    } catch { /* AI 不可用时退化为不筛 */ }
+  }
+  const indexed = candidates.map((c, i) => ({ c, i, amb: (validMap.get(i)?.length ?? 1) > 1 ? 1 : 0 }));
+  indexed.sort((a, b) => a.amb - b.amb || a.i - b.i);
+  return indexed.slice(0, wantCount).map((x) => x.c);
+}
+
+function PreparingExam() {
+  return <main className="amy-preparing"><div className="amy-bike-scene">
+    <svg viewBox="0 0 260 150" className="amy-bike" aria-hidden="true">
+      <line x1="0" y1="128" x2="260" y2="128" stroke="#cbd6cf" strokeWidth="2" />
+      <g className="amy-bike-rider">
+        <circle className="amy-wheel" cx="62" cy="104" r="22" fill="none" stroke="#23745d" strokeWidth="3" />
+        <line x1="62" y1="104" x2="62" y2="82" stroke="#23745d" strokeWidth="2" />
+        <circle className="amy-wheel" cx="186" cy="104" r="22" fill="none" stroke="#23745d" strokeWidth="3" />
+        <line x1="186" y1="104" x2="186" y2="82" stroke="#23745d" strokeWidth="2" />
+        <path d="M62 104 L120 104 L186 104 M120 104 L120 60 M120 60 L150 48 M120 60 L92 50" fill="none" stroke="#23745d" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <path className="amy-leg" d="M120 78 L108 104 L98 96 M120 78 L132 104 L142 98" fill="none" stroke="#b25924" strokeWidth="3" strokeLinecap="round" />
+        <circle cx="150" cy="40" r="11" fill="#f6c9a0" stroke="#b25924" strokeWidth="2" />
+        <path d="M120 60 Q135 54 145 44" fill="none" stroke="#23745d" strokeWidth="3" strokeLinecap="round" />
+      </g>
+    </svg>
+    <p>AI 正在为你精心出题<span className="amy-dots"><i></i><i></i><i></i></span></p>
+    <small>正在挑选最合适的“例句选词”，稍等一下下～</small>
+  </div></main>;
+}
+
 function SessionPicker({ data, selected, drafts, loadingSession, onSelect, onView, onStart }) {
   const current = data.sessions.find((item) => item.number === selected);
   const hasDraft = current && isDraftCompatible(drafts[current.number], current);
@@ -229,6 +272,7 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
   const [storageReady, setStorageReady] = useState(false);
   const [record, setRecord] = useState(null);
   const [isGrading, setIsGrading] = useState(false);
+  const [preparingExam, setPreparingExam] = useState(false);
   const [acceptedAnswers, setAcceptedAnswers] = useState({});
   const [parentMode, setParentMode] = useState(false);
   const [parentFlips, setParentFlips] = useState(() => new Set());
@@ -379,7 +423,7 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
       setLoadingSession((current) => current === sessionNumber ? null : current);
     }
   };
-  const start = () => {
+  const start = async () => {
     if (!session?.entries.length) return;
     const draft = drafts[session.number];
     if (isDraftCompatible(draft, session)) {
@@ -389,21 +433,35 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
       setView("exam");
       return;
     }
-    if (draft) clearDraft(session.number);
-    const previous = history.find((item) => item.session === session.number)?.exam?.signature || "";
-    setExam(createAmyExam(session, previous));
-    setElapsed(0);
-    setResults(null);
-    setView("exam");
+    setPreparingExam(true);
+    try {
+      if (draft) clearDraft(session.number);
+      const previous = history.find((item) => item.session === session.number)?.exam?.signature || "";
+      const base = createAmyExam(session, previous);
+      const cloze = await filterClozeByAi(base.cloze, 12);
+      setExam({ ...base, cloze });
+      setElapsed(0);
+      setResults(null);
+      setView("exam");
+    } finally {
+      setPreparingExam(false);
+    }
   };
-  const restart = () => {
+  const restart = async () => {
     if (!session?.entries.length) return;
     clearDraft(session.number);
-    const previous = history.find((item) => item.session === session.number)?.exam?.signature || "";
-    setExam(createAmyExam(session, previous));
-    setElapsed(0);
-    setResults(null);
-    setView("exam");
+    setPreparingExam(true);
+    try {
+      const previous = history.find((item) => item.session === session.number)?.exam?.signature || "";
+      const base = createAmyExam(session, previous);
+      const cloze = await filterClozeByAi(base.cloze, 12);
+      setExam({ ...base, cloze });
+      setElapsed(0);
+      setResults(null);
+      setView("exam");
+    } finally {
+      setPreparingExam(false);
+    }
   };
   const submit = async () => {
     if (isGrading) return;
@@ -590,11 +648,11 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
   };
   const archivedSession = record ? data.sessions.find((item) => item.number === record.session) : null;
   return <div className="amy-app"><header>{view === "home" && !onBack ? <span className="amy-header-spacer" /> : <button aria-label="返回" onClick={back}><ArrowLeft size={19} /></button>}<div><span>AMY VOCABULARY</span><strong>五年级英语词汇 · 复习与考试</strong></div><nav className="amy-header-actions"><button aria-label="考试历史" className="amy-history-button" onClick={() => setView("history")}><History size={16} /><span>历史</span></button>{onOpenRewards ? <button aria-label="奖励系统" className="amy-history-button" onClick={onOpenRewards}><Gift size={16} /><span>奖励</span></button> : null}{onOpenHomework ? <button aria-label="作业发布" className="amy-history-button" onClick={onOpenHomework}><Images size={16} /><span>作业</span></button> : null}</nav></header>
-    {view === "home" ? <SessionPicker data={data} selected={selected} drafts={drafts} loadingSession={loadingSession} onSelect={selectSession} onView={setView} onStart={start} /> : null}
+    {preparingExam ? <PreparingExam /> : <>{view === "home" ? <SessionPicker data={data} selected={selected} drafts={drafts} loadingSession={loadingSession} onSelect={selectSession} onView={setView} onStart={start} /> : null}
     {view === "review" && session ? <Review session={session} /> : null}
     {view === "exam" && session && exam ? <><Paper session={session} exam={exam} setExam={setExam} elapsed={elapsed} results={results} onSubmit={submit} isGrading={isGrading} />{results ? <button className="amy-retry" onClick={restart}><RotateCcw size={16} /> 再考一套</button> : null}</> : null}
     {view === "history" ? <HistoryPage history={history} onOpen={(item) => { setRecord(item); setSelected(item.session); setParentMode(false); setParentFlips(new Set()); setParentSummary(null); setView("historyDetail"); }} onExport={exportHistory} onImport={importHistory} onUpload={() => uploadHistory()} cloudStatus={cloudStatus} isUploading={isUploading} /> : null}
     {view === "historyDetail" && record && archivedSession ? <Paper session={archivedSession} exam={record.exam} setExam={() => {}} elapsed={record.elapsed} results={record.results} onSubmit={() => {}} allowParentEnter onEnterParent={enterParent} parent={parentMode ? { active: true, flips: parentFlips, onToggle: toggleFlip, onSubmit: submitParentGrading, onCancel: cancelParent } : null} parentSummary={parentSummary} onCopyAccepted={copyAcceptedText} onDismissSummary={() => setParentSummary(null)} /> : null}
-    {showGithubAccess ? <GithubCodeDialog initialToken={githubToken} isSaving={isSavingGithubAccess} error={githubAccessError} onClose={() => setShowGithubAccess(false)} onSave={saveGithubAccess} onClear={clearGithubAccess} /> : null}
+    </>}{showGithubAccess ? <GithubCodeDialog initialToken={githubToken} isSaving={isSavingGithubAccess} error={githubAccessError} onClose={() => setShowGithubAccess(false)} onSave={saveGithubAccess} onClear={clearGithubAccess} /> : null}
   </div>;
 }

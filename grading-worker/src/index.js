@@ -70,6 +70,33 @@ async function gradeBatch(items, key) {
   }
 }
 
+// 出题质检：判断每道例句选词题里，哪些选项填进空格"语法+语义都合理"。
+// 合理选项 > 1 即视为歧义题，前端会跳过。用于避免"好几个词都填得通"的不严谨题目。
+const CLOZE_SYSTEM = `你是英语"例句选词"出题质检员。对每道题，判断4个选项里哪些填进空格在语法和语义上都合理（可能成为正确答案）。
+规则：只有填进去后句子语法正确、语义通顺、符合常理的才算合理；明显不通的不算。
+严格只输出 JSON，不要解释或 markdown：
+{"results":[{"index":0,"valid":[0,2]}]}`;
+
+async function checkClozeBatch(items, key) {
+  const user = "题目：\n" + JSON.stringify(items.map((x, i) => ({ index: x.index ?? i, prompt: x.prompt, choices: x.choices })));
+  const resp = await fetch(MIMO_ENDPOINT, {
+    method: "POST",
+    headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+    body: JSON.stringify({
+      model: MODEL,
+      messages: [{ role: "system", content: CLOZE_SYSTEM }, { role: "user", content: user }],
+      temperature: 0.2,
+      max_completion_tokens: 3000,
+      stream: false
+    })
+  });
+  if (!resp.ok) throw new Error("MiMo HTTP " + resp.status);
+  const content = (await resp.json()).choices?.[0]?.message?.content || "";
+  const match = content.match(/\{[\s\S]*\}/);
+  if (!match) return [];
+  try { const parsed = JSON.parse(match[0]); return Array.isArray(parsed.results) ? parsed.results : []; } catch { return []; }
+}
+
 export default {
   async fetch(request, env) {
     const cors = corsHeaders(request);
@@ -84,6 +111,20 @@ export default {
 
     let body;
     try { body = await request.json(); } catch { return json({ error: "invalid json" }, 400, cors); }
+
+    // 例句选词出题质检：返回每道题里"语法+语义都合理"的选项下标，前端据此跳过歧义题。
+    // AI 失败时该批返回空，前端会把没拿到结果的题当作非歧义保留，不影响出题。
+    if (Array.isArray(body?.cloze)) {
+      const clozeItems = body.cloze.filter((x) => x && x.prompt && Array.isArray(x.choices) && x.choices.length);
+      if (!clozeItems.length) return json({ results: [] }, 200, cors);
+      const key = env.MIMO_API_KEY;
+      if (!key) return json({ error: "server misconfigured" }, 500, cors);
+      const batches = [];
+      for (let i = 0; i < clozeItems.length; i += BATCH_SIZE) batches.push(clozeItems.slice(i, i + BATCH_SIZE));
+      const results = await Promise.all(batches.map((b) => checkClozeBatch(b, key).catch(() => [])));
+      return json({ results: results.flat() }, 200, cors);
+    }
+
     const items = Array.isArray(body?.items)
       ? body.items.filter((x) => x && x.id && x.term && x.expected != null && x.answer != null && String(x.answer).trim())
       : [];

@@ -276,6 +276,22 @@
 .amy-empty { padding: 30px; color: #667772; background: var(--paper); }
 .amy-loading { display: grid; place-items: center; min-height: 100%; color: #38574d; background: #f3f7f3; }
 
+.amy-preparing { display: grid; place-items: center; min-height: 68dvh; padding: 40px 20px; }
+.amy-bike-scene { text-align: center; }
+.amy-bike { width: min(280px, 72vw); height: auto; display: block; margin: 0 auto 18px; }
+.amy-bike-rider { animation: amy-bob 0.55s ease-in-out infinite; transform-origin: center; }
+.amy-wheel { transform-box: fill-box; transform-origin: center; animation: amy-spin 0.9s linear infinite; }
+.amy-leg { animation: amy-pedal 0.55s ease-in-out infinite; transform-box: fill-box; transform-origin: 120px 78px; }
+.amy-bike-scene p { margin: 6px 0; font-size: 18px; font-weight: 700; color: var(--green); }
+.amy-bike-scene small { color: #6b7974; font-size: 13px; }
+.amy-dots i { display: inline-block; width: 6px; height: 6px; margin: 0 2px; border-radius: 50%; background: var(--green); animation: amy-bounce 1s infinite; vertical-align: middle; }
+.amy-dots i:nth-child(2) { animation-delay: .15s; }
+.amy-dots i:nth-child(3) { animation-delay: .3s; }
+@keyframes amy-spin { to { transform: rotate(360deg); } }
+@keyframes amy-bob { 50% { transform: translateY(-4px); } }
+@keyframes amy-pedal { 50% { transform: rotate(7deg); } }
+@keyframes amy-bounce { 0%, 100% { transform: translateY(0); opacity: .5; } 50% { transform: translateY(-4px); opacity: 1; } }
+
 .amy-parent-hint {
   margin: 0 0 10px;
   padding: 9px 12px;

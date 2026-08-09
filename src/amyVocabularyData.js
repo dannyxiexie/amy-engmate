@@ -161,17 +161,20 @@ export function createAmyExam(session, previousSignature = "") {
   const clozePool = meanings
     .map((entry) => ({ entry, prompt: createClozePrompt(entry.example, entry.term) }))
     .filter(({ entry, prompt }) => entry.term.length >= 2 && prompt);
-  const cloze = shuffle(clozePool).slice(0, Math.min(12, clozePool.length)).map(({ entry, prompt }) => ({
-    ...entry,
-    prompt,
-    choices: shuffle([
-      entry.term,
-      ...shuffle([...new Map(meanings
-        .filter((item) => item.id !== entry.id && item.term.toLowerCase() !== entry.term.toLowerCase())
-        .map((item) => [item.term.toLowerCase(), item.term])).values()]).slice(0, 3)
-    ]),
-    answer: ""
-  }));
+  const capitalize = (value) => (value && value[0] ? value[0].toUpperCase() + value.slice(1) : value);
+  const cloze = shuffle(clozePool).slice(0, Math.min(20, clozePool.length)).map(({ entry, prompt }) => {
+    // 空格在句首时，填进去的词按英文规范首字母大写（孩子会注意这个书写细节）
+    const startsSentence = prompt.startsWith("_____");
+    const answerTerm = startsSentence ? capitalize(entry.term) : entry.term;
+    const distractors = [...new Map(meanings
+      .filter((item) => item.id !== entry.id && item.term.toLowerCase() !== entry.term.toLowerCase())
+      .map((item) => [item.term.toLowerCase(), item.term])).values()];
+    const picked = shuffle(distractors).slice(0, 3);
+    const choices = startsSentence
+      ? shuffle([answerTerm, ...picked.map(capitalize)])
+      : shuffle([entry.term, ...picked]);
+    return { ...entry, term: answerTerm, prompt, choices, answer: "" };
+  });
   const signature = meanings.map((item) => item.id).join(",") + "|" + cloze.map((item) => item.id + ":" + item.choices.join(",")).join("|");
   if (signature === previousSignature && meanings.length > 3) return createAmyExam(session, "");
   return { meanings, cloze, signature };
