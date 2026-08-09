@@ -94,7 +94,7 @@ function normalizeMonths(value) {
   return months.reduce((text, [chinese, arabic]) => text.replaceAll(chinese, arabic), value);
 }
 
-function normalizeMeaning(value = "") {
+export function normalizeMeaning(value = "") {
   const canonical = normalizeMonths(normalize(value))
     .replaceAll("阿拉伯数字", "")
     .replaceAll("可以", "能")
@@ -121,6 +121,24 @@ export function gradeMeaning(answer, expected) {
     || (actual.length >= 4 && candidate.length >= 4
       && Math.min(actual.length, candidate.length) / Math.max(actual.length, candidate.length) >= 0.62
       && (actual.includes(candidate) || candidate.includes(actual))));
+}
+
+// 家长批改与接受答案表都用 normalizeMeaning 做归一化比较，
+// 这样“问”与“问。”、“二月”与“2月”等才会被判为同一个答案。
+export function matchesAcceptedAnswer(answer, accepted = []) {
+  const actual = normalizeMeaning(answer);
+  if (!actual) return false;
+  return accepted.some((candidate) => normalizeMeaning(candidate) === actual);
+}
+
+// 家长批改翻转若干题后，按现有口径重算 correct/total/score，
+// 保持和 gradeExam 的计分逻辑一致，避免两处各算各的。
+export function recomputeScore(results) {
+  const meanings = Array.isArray(results?.meanings) ? results.meanings : [];
+  const cloze = Array.isArray(results?.cloze) ? results.cloze : [];
+  const correct = [...meanings, ...cloze].filter((item) => item?.correct).length;
+  const total = meanings.length + cloze.length;
+  return { ...results, meanings, cloze, correct, total, score: total ? Math.round(correct / total * 100) : 0 };
 }
 
 export function formatTime(totalSeconds) {

@@ -7,6 +7,7 @@ on:
       - "exam-logs/**"
       - "reward-logs/**"
       - "homework-posts/**"
+      - "grading-rules/**"
   workflow_dispatch:
 
 permissions:
