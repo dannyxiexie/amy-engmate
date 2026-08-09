@@ -1963,8 +1963,9 @@
     "meanings": [
       {
         "id": "s5-g42-i2",
-        "correct": false,
-        "answer": "婴儿（复数）"
+        "correct": true,
+        "answer": "婴儿（复数）",
+        "parentCorrected": true
       },
       {
         "id": "s5-g24-i2",
@@ -1973,8 +1974,9 @@
       },
       {
         "id": "s5-g52-i1",
-        "correct": false,
-        "answer": "不同的"
+        "correct": true,
+        "answer": "不同的",
+        "parentCorrected": true
       },
       {
         "id": "s5-g18-i1",
@@ -1993,8 +1995,9 @@
       },
       {
         "id": "s5-g63-i1",
-        "correct": false,
-        "answer": "藻类"
+        "correct": true,
+        "answer": "藻类",
+        "parentCorrected": true
       },
       {
         "id": "s5-g53-i1",
@@ -2013,8 +2016,9 @@
       },
       {
         "id": "s5-g66-i2",
-        "correct": false,
-        "answer": "它们的背部"
+        "correct": true,
+        "answer": "它们的背部",
+        "parentCorrected": true
       },
       {
         "id": "s5-g59-i2",
@@ -2023,8 +2027,9 @@
       },
       {
         "id": "s5-g4-i1",
-        "correct": false,
-        "answer": "鲸鱼（鲸类）"
+        "correct": true,
+        "answer": "鲸鱼（鲸类）",
+        "parentCorrected": true
       },
       {
         "id": "s5-g54-i1",
@@ -2078,8 +2083,9 @@
       },
       {
         "id": "s5-g65-i1",
-        "correct": false,
-        "answer": "把……放在……上"
+        "correct": true,
+        "answer": "把……放在……上",
+        "parentCorrected": true
       },
       {
         "id": "s5-g37-i3",
@@ -2088,13 +2094,15 @@
       },
       {
         "id": "s5-g25-i1",
-        "correct": false,
-        "answer": "互相作用"
+        "correct": true,
+        "answer": "互相作用",
+        "parentCorrected": true
       },
       {
         "id": "s5-g14-i1",
-        "correct": false,
-        "answer": "看电影"
+        "correct": true,
+        "answer": "看电影",
+        "parentCorrected": true
       },
       {
         "id": "s5-g35-i2",
@@ -2103,8 +2111,9 @@
       },
       {
         "id": "s5-g22-i1",
-        "correct": false,
-        "answer": "了解……"
+        "correct": true,
+        "answer": "了解……",
+        "parentCorrected": true
       },
       {
         "id": "s5-g30-i2",
@@ -2113,8 +2122,9 @@
       },
       {
         "id": "s5-g15-i1",
-        "correct": false,
-        "answer": "为……做准备"
+        "correct": true,
+        "answer": "为……做准备",
+        "parentCorrected": true
       },
       {
         "id": "s5-g5-i1",
@@ -2138,18 +2148,21 @@
       },
       {
         "id": "s5-g13-i1",
-        "correct": false,
-        "answer": "乘卡车游览"
+        "correct": true,
+        "answer": "乘卡车游览",
+        "parentCorrected": true
       },
       {
         "id": "s5-g42-i1",
-        "correct": false,
-        "answer": "婴儿"
+        "correct": true,
+        "answer": "婴儿",
+        "parentCorrected": true
       },
       {
         "id": "s5-g3-i1",
-        "correct": false,
-        "answer": "日记"
+        "correct": true,
+        "answer": "日记",
+        "parentCorrected": true
       },
       {
         "id": "s5-g8-i1",
@@ -2158,8 +2171,9 @@
       },
       {
         "id": "s5-g55-i1",
-        "correct": false,
-        "answer": "如何潜水"
+        "correct": true,
+        "answer": "如何潜水",
+        "parentCorrected": true
       },
       {
         "id": "s5-g35-i3",
@@ -2178,8 +2192,9 @@
       },
       {
         "id": "s5-g30-i1",
-        "correct": false,
-        "answer": "别忘了"
+        "correct": true,
+        "answer": "别忘了",
+        "parentCorrected": true
       },
       {
         "id": "s5-g36-i1",
@@ -2193,13 +2208,15 @@
       },
       {
         "id": "s5-g1-i1",
-        "correct": false,
-        "answer": "制作并书写"
+        "correct": true,
+        "answer": "制作并书写",
+        "parentCorrected": true
       },
       {
         "id": "s5-g33-i2",
-        "correct": false,
-        "answer": "如何表现"
+        "correct": true,
+        "answer": "如何表现",
+        "parentCorrected": true
       },
       {
         "id": "s5-g51-i3",
@@ -2213,8 +2230,9 @@
       },
       {
         "id": "s5-g37-i2",
-        "correct": false,
-        "answer": "不想加入"
+        "correct": true,
+        "answer": "不想加入",
+        "parentCorrected": true
       },
       {
         "id": "s5-g9-i1",
@@ -2233,13 +2251,15 @@
       },
       {
         "id": "s5-g14-i2",
-        "correct": false,
-        "answer": "看电影"
+        "correct": true,
+        "answer": "看电影",
+        "parentCorrected": true
       },
       {
         "id": "s5-g60-i1",
-        "correct": false,
-        "answer": "喂草"
+        "correct": true,
+        "answer": "喂草",
+        "parentCorrected": true
       },
       {
         "id": "s5-g51-i2",
@@ -2248,8 +2268,9 @@
       },
       {
         "id": "s5-g10-i1",
-        "correct": false,
-        "answer": "列出想法"
+        "correct": true,
+        "answer": "列出想法",
+        "parentCorrected": true
       },
       {
         "id": "s5-g62-i1",
@@ -2268,13 +2289,15 @@
       },
       {
         "id": "s5-g61-i2",
-        "correct": false,
-        "answer": "吃（过去式）"
+        "correct": true,
+        "answer": "吃（过去式）",
+        "parentCorrected": true
       },
       {
         "id": "s5-g28-i1",
-        "correct": false,
-        "answer": "包头的鞋"
+        "correct": true,
+        "answer": "包头的鞋",
+        "parentCorrected": true
       },
       {
         "id": "s5-g52-i2",
@@ -2283,13 +2306,15 @@
       },
       {
         "id": "s5-g38-i1",
-        "correct": false,
-        "answer": "关闭"
+        "correct": true,
+        "answer": "关闭",
+        "parentCorrected": true
       },
       {
         "id": "s5-g23-i2",
-        "correct": false,
-        "answer": "对海洋动物的威胁"
+        "correct": true,
+        "answer": "对海洋动物的威胁",
+        "parentCorrected": true
       },
       {
         "id": "s5-g38-i3",
@@ -2298,8 +2323,9 @@
       },
       {
         "id": "s5-g26-i2",
-        "correct": false,
-        "answer": "玩得开心"
+        "correct": true,
+        "answer": "玩得开心",
+        "parentCorrected": true
       },
       {
         "id": "s5-g34-i1",
@@ -2308,8 +2334,9 @@
       },
       {
         "id": "s5-g45-i2",
-        "correct": false,
-        "answer": "将要做"
+        "correct": true,
+        "answer": "将要做",
+        "parentCorrected": true
       },
       {
         "id": "s5-g25-i2",
@@ -2318,8 +2345,9 @@
       },
       {
         "id": "s5-g45-i1",
-        "correct": false,
-        "answer": "将要"
+        "correct": true,
+        "answer": "将要",
+        "parentCorrected": true
       },
       {
         "id": "s5-g29-i1",
@@ -2328,23 +2356,27 @@
       },
       {
         "id": "s5-g56-i1",
-        "correct": false,
-        "answer": "看见某人正在做某事"
+        "correct": true,
+        "answer": "看见某人正在做某事",
+        "parentCorrected": true
       },
       {
         "id": "s5-g49-i1",
-        "correct": false,
-        "answer": "靠近……"
+        "correct": true,
+        "answer": "靠近……",
+        "parentCorrected": true
       },
       {
         "id": "s5-g46-i2",
-        "correct": false,
-        "answer": "给婴儿糖果"
+        "correct": true,
+        "answer": "给婴儿糖果",
+        "parentCorrected": true
       },
       {
         "id": "s5-g57-i2",
-        "correct": false,
-        "answer": "九岁的"
+        "correct": true,
+        "answer": "九岁的",
+        "parentCorrected": true
       },
       {
         "id": "s5-g32-i1",
@@ -2353,8 +2385,9 @@
       },
       {
         "id": "s5-g9-i2",
-        "correct": false,
-        "answer": "看起来"
+        "correct": true,
+        "answer": "看起来",
+        "parentCorrected": true
       },
       {
         "id": "s5-g38-i2",
@@ -2368,13 +2401,15 @@
       },
       {
         "id": "s5-g59-i1",
-        "correct": false,
-        "answer": "喂养（原形）"
+        "correct": true,
+        "answer": "喂养（原形）",
+        "parentCorrected": true
       },
       {
         "id": "s5-g64-i1",
-        "correct": false,
-        "answer": "长脖子"
+        "correct": true,
+        "answer": "长脖子",
+        "parentCorrected": true
       },
       {
         "id": "s5-g33-i1",
@@ -2383,33 +2418,39 @@
       },
       {
         "id": "s5-g21-i1",
-        "correct": false,
-        "answer": "喜欢"
+        "correct": true,
+        "answer": "喜欢",
+        "parentCorrected": true
       },
       {
         "id": "s5-g50-i1",
-        "correct": false,
-        "answer": "看见（原形）"
+        "correct": true,
+        "answer": "看见（原形）",
+        "parentCorrected": true
       },
       {
         "id": "s5-g6-i1",
-        "correct": false,
-        "answer": "熊猫"
+        "correct": true,
+        "answer": "熊猫",
+        "parentCorrected": true
       },
       {
         "id": "s5-g44-i1",
-        "correct": false,
-        "answer": "尝试喂养"
+        "correct": true,
+        "answer": "尝试喂养",
+        "parentCorrected": true
       },
       {
         "id": "s5-g17-i1",
-        "correct": false,
-        "answer": "理解"
+        "correct": true,
+        "answer": "理解",
+        "parentCorrected": true
       },
       {
         "id": "s5-g19-i1",
-        "correct": false,
-        "answer": "习惯"
+        "correct": true,
+        "answer": "习惯",
+        "parentCorrected": true
       },
       {
         "id": "s5-g58-i1",
@@ -2418,13 +2459,15 @@
       },
       {
         "id": "s5-g19-i2",
-        "correct": false,
-        "answer": "习惯（复数）"
+        "correct": true,
+        "answer": "习惯（复数）",
+        "parentCorrected": true
       },
       {
         "id": "s5-g40-i1",
-        "correct": false,
-        "answer": "它们全部"
+        "correct": true,
+        "answer": "它们全部",
+        "parentCorrected": true
       },
       {
         "id": "s5-g46-i1",
@@ -2433,18 +2476,21 @@
       },
       {
         "id": "s5-g9-i3",
-        "correct": false,
-        "answer": "尝起来"
+        "correct": true,
+        "answer": "尝起来",
+        "parentCorrected": true
       },
       {
         "id": "s5-g31-i2",
-        "correct": false,
-        "answer": "把它（它们）带回家"
+        "correct": true,
+        "answer": "把它（它们）带回家",
+        "parentCorrected": true
       },
       {
         "id": "s5-g50-i2",
-        "correct": false,
-        "answer": "看见（过去式）"
+        "correct": true,
+        "answer": "看见（过去式）",
+        "parentCorrected": true
       },
       {
         "id": "s5-g31-i1",
@@ -2502,9 +2548,289 @@
         "answer": "bring"
       }
     ],
-    "correct": 35,
+    "correct": 81,
     "total": 110,
-    "score": 32
+    "score": 74
   },
-  "gradingVersion": 5
+  "gradingVersion": 5,
+  "regradedAt": "2026-08-09T01:05:24.565Z",
+  "parentGradedAt": "2026-08-09T01:05:24.565Z",
+  "parentGraded": [
+    {
+      "id": "s5-g42-i2",
+      "term": "babies",
+      "answer": "宝宝复数",
+      "displayNumber": "42-2"
+    },
+    {
+      "id": "s5-g52-i1",
+      "term": "different",
+      "answer": "与众不同的",
+      "displayNumber": "52-1"
+    },
+    {
+      "id": "s5-g63-i1",
+      "term": "algae",
+      "answer": "海藻",
+      "displayNumber": "63"
+    },
+    {
+      "id": "s5-g66-i2",
+      "term": "their backs",
+      "answer": "他们的背",
+      "displayNumber": "66-2"
+    },
+    {
+      "id": "s5-g4-i1",
+      "term": "whale (whales)",
+      "answer": "鲸鱼",
+      "displayNumber": "4"
+    },
+    {
+      "id": "s5-g65-i1",
+      "term": "lay...on...",
+      "answer": "把什么东西放上",
+      "displayNumber": "65"
+    },
+    {
+      "id": "s5-g25-i1",
+      "term": "interact",
+      "answer": "互动交流",
+      "displayNumber": "25-1"
+    },
+    {
+      "id": "s5-g14-i1",
+      "term": "watch a movie",
+      "answer": "看一部电影",
+      "displayNumber": "14-1"
+    },
+    {
+      "id": "s5-g22-i1",
+      "term": "learn about",
+      "answer": "学习关于",
+      "displayNumber": "22"
+    },
+    {
+      "id": "s5-g15-i1",
+      "term": "prepare for",
+      "answer": "准备为了",
+      "displayNumber": "15"
+    },
+    {
+      "id": "s5-g13-i1",
+      "term": "take a truck tour",
+      "answer": "坐旅游观光车",
+      "displayNumber": "13"
+    },
+    {
+      "id": "s5-g42-i1",
+      "term": "baby",
+      "answer": "宝贝",
+      "displayNumber": "42-1"
+    },
+    {
+      "id": "s5-g3-i1",
+      "term": "diary",
+      "answer": "日记或者日历",
+      "displayNumber": "3"
+    },
+    {
+      "id": "s5-g55-i1",
+      "term": "how to dive",
+      "answer": "怎样去潜水？",
+      "displayNumber": "55"
+    },
+    {
+      "id": "s5-g30-i1",
+      "term": "don't forget",
+      "answer": "不要忘记",
+      "displayNumber": "30-1"
+    },
+    {
+      "id": "s5-g1-i1",
+      "term": "make and write",
+      "answer": "制作和写",
+      "displayNumber": "1"
+    },
+    {
+      "id": "s5-g33-i2",
+      "term": "how to behave",
+      "answer": "怎样去表现？",
+      "displayNumber": "33-2"
+    },
+    {
+      "id": "s5-g37-i2",
+      "term": "would not like to join",
+      "answer": "你不想去参加",
+      "displayNumber": "37-2"
+    },
+    {
+      "id": "s5-g14-i2",
+      "term": "see a film",
+      "answer": "看一部电影",
+      "displayNumber": "14-2"
+    },
+    {
+      "id": "s5-g60-i1",
+      "term": "feed grass",
+      "answer": "喂养草地，爱护草地",
+      "displayNumber": "60-1"
+    },
+    {
+      "id": "s5-g10-i1",
+      "term": "list the ideas",
+      "answer": "列出建议或者列出想法",
+      "displayNumber": "10"
+    },
+    {
+      "id": "s5-g61-i2",
+      "term": "ate",
+      "answer": "Eat的过去式意思是吃",
+      "displayNumber": "61-2"
+    },
+    {
+      "id": "s5-g28-i1",
+      "term": "closed-toe shoes",
+      "answer": "包头鞋",
+      "displayNumber": "28"
+    },
+    {
+      "id": "s5-g38-i1",
+      "term": "close (verb)",
+      "answer": "关上",
+      "displayNumber": "38-1"
+    },
+    {
+      "id": "s5-g23-i2",
+      "term": "threat to sea animals",
+      "answer": "威胁海里的动物",
+      "displayNumber": "23-2"
+    },
+    {
+      "id": "s5-g26-i2",
+      "term": "enjoy yourself",
+      "answer": "祝你享受或者祝你玩得好",
+      "displayNumber": "26-2"
+    },
+    {
+      "id": "s5-g45-i2",
+      "term": "be going to do",
+      "answer": "将去做某事",
+      "displayNumber": "45-2"
+    },
+    {
+      "id": "s5-g45-i1",
+      "term": "be going to...",
+      "answer": "将要去",
+      "displayNumber": "45-1"
+    },
+    {
+      "id": "s5-g56-i1",
+      "term": "see sb. doing",
+      "answer": "看见某人做某事",
+      "displayNumber": "56"
+    },
+    {
+      "id": "s5-g49-i1",
+      "term": "get closer to ...",
+      "answer": "变得更接近靠近",
+      "displayNumber": "49"
+    },
+    {
+      "id": "s5-g46-i2",
+      "term": "give the baby sweets",
+      "answer": "给宝贝糖果",
+      "displayNumber": "46-2"
+    },
+    {
+      "id": "s5-g57-i2",
+      "term": "nine-year-old",
+      "answer": "九岁",
+      "displayNumber": "57-2"
+    },
+    {
+      "id": "s5-g9-i2",
+      "term": "look",
+      "answer": "看",
+      "displayNumber": "9-2"
+    },
+    {
+      "id": "s5-g59-i1",
+      "term": "feed",
+      "answer": "喂养",
+      "displayNumber": "59-1"
+    },
+    {
+      "id": "s5-g64-i1",
+      "term": "long necks",
+      "answer": "长长的脖子",
+      "displayNumber": "64"
+    },
+    {
+      "id": "s5-g21-i1",
+      "term": "like",
+      "answer": "喜欢或者像",
+      "displayNumber": "21"
+    },
+    {
+      "id": "s5-g50-i1",
+      "term": "see",
+      "answer": "看见",
+      "displayNumber": "50-1"
+    },
+    {
+      "id": "s5-g6-i1",
+      "term": "panda",
+      "answer": "大熊猫",
+      "displayNumber": "6"
+    },
+    {
+      "id": "s5-g44-i1",
+      "term": "try to feed",
+      "answer": "尝试去养",
+      "displayNumber": "44"
+    },
+    {
+      "id": "s5-g17-i1",
+      "term": "understanding",
+      "answer": "理解了解",
+      "displayNumber": "17"
+    },
+    {
+      "id": "s5-g19-i1",
+      "term": "habit",
+      "answer": "习惯习性",
+      "displayNumber": "19-1"
+    },
+    {
+      "id": "s5-g19-i2",
+      "term": "habits",
+      "answer": "习惯习性",
+      "displayNumber": "19-2"
+    },
+    {
+      "id": "s5-g40-i1",
+      "term": "all of them",
+      "answer": "他们所有的",
+      "displayNumber": "40"
+    },
+    {
+      "id": "s5-g9-i3",
+      "term": "taste",
+      "answer": "品尝",
+      "displayNumber": "9-3"
+    },
+    {
+      "id": "s5-g31-i2",
+      "term": "take it (them) home",
+      "answer": "把它带回家或者把他们带回家",
+      "displayNumber": "31-2"
+    },
+    {
+      "id": "s5-g50-i2",
+      "term": "saw",
+      "answer": "看的过去式",
+      "displayNumber": "50-2"
+    }
+  ]
 }
