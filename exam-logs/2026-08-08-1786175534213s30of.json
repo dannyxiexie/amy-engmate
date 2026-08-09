@@ -2153,8 +2153,9 @@
       },
       {
         "id": "s6-g40-i1",
-        "correct": false,
-        "answer": "在……期间"
+        "correct": true,
+        "answer": "在……期间",
+        "parentCorrected": true
       },
       {
         "id": "s6-g1-i2",
@@ -2173,8 +2174,9 @@
       },
       {
         "id": "s6-g45-i1",
-        "correct": false,
-        "answer": "停留"
+        "correct": true,
+        "answer": "停留",
+        "parentCorrected": true
       },
       {
         "id": "s6-g1-i1",
@@ -2188,8 +2190,9 @@
       },
       {
         "id": "s6-g47-i1",
-        "correct": false,
-        "answer": "使...惊讶"
+        "correct": true,
+        "answer": "使...惊讶",
+        "parentCorrected": true
       },
       {
         "id": "s6-g27-i1",
@@ -2203,13 +2206,15 @@
       },
       {
         "id": "s6-g55-i1",
-        "correct": false,
-        "answer": "叫醒某人"
+        "correct": true,
+        "answer": "叫醒某人",
+        "parentCorrected": true
       },
       {
         "id": "s6-g43-i2",
-        "correct": false,
-        "answer": "一只断臂"
+        "correct": true,
+        "answer": "一只断臂",
+        "parentCorrected": true
       },
       {
         "id": "s6-g60-i1",
@@ -2223,13 +2228,15 @@
       },
       {
         "id": "s6-g47-i2",
-        "correct": false,
-        "answer": "感到惊讶的"
+        "correct": true,
+        "answer": "感到惊讶的",
+        "parentCorrected": true
       },
       {
         "id": "s6-g10-i1",
-        "correct": false,
-        "answer": "小心的"
+        "correct": true,
+        "answer": "小心的",
+        "parentCorrected": true
       },
       {
         "id": "s6-g26-i3",
@@ -2238,8 +2245,9 @@
       },
       {
         "id": "s6-g12-i1",
-        "correct": false,
-        "answer": "保持干燥"
+        "correct": true,
+        "answer": "保持干燥",
+        "parentCorrected": true
       },
       {
         "id": "s6-g21-i1",
@@ -2253,8 +2261,9 @@
       },
       {
         "id": "s6-g25-i1",
-        "correct": false,
-        "answer": "看电视太多"
+        "correct": true,
+        "answer": "看电视太多",
+        "parentCorrected": true
       },
       {
         "id": "s6-g3-i1",
@@ -2263,13 +2272,15 @@
       },
       {
         "id": "s6-g35-i1",
-        "correct": false,
-        "answer": "谈论……"
+        "correct": true,
+        "answer": "谈论……",
+        "parentCorrected": true
       },
       {
         "id": "s6-g35-i2",
-        "correct": false,
-        "answer": "和……交谈"
+        "correct": true,
+        "answer": "和……交谈",
+        "parentCorrected": true
       },
       {
         "id": "s6-g26-i4",
@@ -2278,28 +2289,33 @@
       },
       {
         "id": "s6-g26-i2",
-        "correct": false,
-        "answer": "更少的"
+        "correct": true,
+        "answer": "更少的",
+        "parentCorrected": true
       },
       {
         "id": "s6-g23-i1",
-        "correct": false,
-        "answer": "我应该做什么？"
+        "correct": true,
+        "answer": "我应该做什么？",
+        "parentCorrected": true
       },
       {
         "id": "s6-g48-i1",
-        "correct": false,
-        "answer": "有想法"
+        "correct": true,
+        "answer": "有想法",
+        "parentCorrected": true
       },
       {
         "id": "s6-g53-i1",
-        "correct": false,
-        "answer": "错误地"
+        "correct": true,
+        "answer": "错误地",
+        "parentCorrected": true
       },
       {
         "id": "s6-g19-i1",
-        "correct": false,
-        "answer": "清晰的"
+        "correct": true,
+        "answer": "清晰的",
+        "parentCorrected": true
       },
       {
         "id": "s6-g42-i1",
@@ -2313,23 +2329,27 @@
       },
       {
         "id": "s6-g10-i2",
-        "correct": false,
-        "answer": "仔细地"
+        "correct": true,
+        "answer": "仔细地",
+        "parentCorrected": true
       },
       {
         "id": "s6-g3-i4",
-        "correct": false,
-        "answer": "流鼻涕"
+        "correct": true,
+        "answer": "流鼻涕",
+        "parentCorrected": true
       },
       {
         "id": "s6-g57-i1",
-        "correct": false,
-        "answer": "和"
+        "correct": true,
+        "answer": "和",
+        "parentCorrected": true
       },
       {
         "id": "s6-g62-i1",
-        "correct": false,
-        "answer": "给他一些建议"
+        "correct": true,
+        "answer": "给他一些建议",
+        "parentCorrected": true
       },
       {
         "id": "s6-g17-i1",
@@ -2338,8 +2358,9 @@
       },
       {
         "id": "s6-g26-i1",
-        "correct": false,
-        "answer": "少的"
+        "correct": true,
+        "answer": "少的",
+        "parentCorrected": true
       },
       {
         "id": "s6-g18-i2",
@@ -2348,8 +2369,9 @@
       },
       {
         "id": "s6-g31-i2",
-        "correct": false,
-        "answer": "对……有害"
+        "correct": true,
+        "answer": "对……有害",
+        "parentCorrected": true
       },
       {
         "id": "s6-g56-i1",
@@ -2358,13 +2380,15 @@
       },
       {
         "id": "s6-g66-i1",
-        "correct": false,
-        "answer": "写一份清单"
+        "correct": true,
+        "answer": "写一份清单",
+        "parentCorrected": true
       },
       {
         "id": "s6-g49-i1",
-        "correct": false,
-        "answer": "几天"
+        "correct": true,
+        "answer": "几天",
+        "parentCorrected": true
       },
       {
         "id": "s6-g37-i1",
@@ -2383,13 +2407,15 @@
       },
       {
         "id": "s6-g4-i2",
-        "correct": false,
-        "answer": "在诊所里"
+        "correct": true,
+        "answer": "在诊所里",
+        "parentCorrected": true
       },
       {
         "id": "s6-g14-i2",
-        "correct": false,
-        "answer": "温柔地说"
+        "correct": true,
+        "answer": "温柔地说",
+        "parentCorrected": true
       },
       {
         "id": "s6-g45-i2",
@@ -2398,8 +2424,9 @@
       },
       {
         "id": "s6-g18-i1",
-        "correct": false,
-        "answer": "如何帮助你"
+        "correct": true,
+        "answer": "如何帮助你",
+        "parentCorrected": true
       },
       {
         "id": "s6-g4-i1",
@@ -2408,8 +2435,9 @@
       },
       {
         "id": "s6-g19-i3",
-        "correct": false,
-        "answer": "看得很清楚"
+        "correct": true,
+        "answer": "看得很清楚",
+        "parentCorrected": true
       },
       {
         "id": "s6-g41-i1",
@@ -2433,8 +2461,9 @@
       },
       {
         "id": "s6-g5-i1",
-        "correct": false,
-        "answer": "别忘了做……"
+        "correct": true,
+        "answer": "别忘了做……",
+        "parentCorrected": true
       },
       {
         "id": "s6-g20-i2",
@@ -2473,23 +2502,27 @@
       },
       {
         "id": "s6-g38-i1",
-        "correct": false,
-        "answer": "哭"
+        "correct": true,
+        "answer": "哭",
+        "parentCorrected": true
       },
       {
         "id": "s6-g38-i3",
-        "correct": false,
-        "answer": "过去式或过去分词"
+        "correct": true,
+        "answer": "过去式或过去分词",
+        "parentCorrected": true
       },
       {
         "id": "s6-g51-i1",
-        "correct": false,
-        "answer": "来"
+        "correct": true,
+        "answer": "来",
+        "parentCorrected": true
       },
       {
         "id": "s6-g52-i2",
-        "correct": false,
-        "answer": "吃了"
+        "correct": true,
+        "answer": "吃了",
+        "parentCorrected": true
       },
       {
         "id": "s6-g30-i1",
@@ -2498,13 +2531,15 @@
       },
       {
         "id": "s6-g17-i2",
-        "correct": false,
-        "answer": "保持干燥"
+        "correct": true,
+        "answer": "保持干燥",
+        "parentCorrected": true
       },
       {
         "id": "s6-g33-i2",
-        "correct": false,
-        "answer": "两天一次"
+        "correct": true,
+        "answer": "两天一次",
+        "parentCorrected": true
       },
       {
         "id": "s6-g2-i2",
@@ -2518,13 +2553,15 @@
       },
       {
         "id": "s6-g44-i2",
-        "correct": false,
-        "answer": "打破了（过去式）"
+        "correct": true,
+        "answer": "打破了（过去式）",
+        "parentCorrected": true
       },
       {
         "id": "s6-g36-i1",
-        "correct": false,
-        "answer": "哎呀"
+        "correct": true,
+        "answer": "哎呀",
+        "parentCorrected": true
       },
       {
         "id": "s6-g28-i1",
@@ -2548,13 +2585,15 @@
       },
       {
         "id": "s6-g54-i2",
-        "correct": false,
-        "answer": "能够（过去式）"
+        "correct": true,
+        "answer": "能够（过去式）",
+        "parentCorrected": true
       },
       {
         "id": "s6-g43-i1",
-        "correct": false,
-        "answer": "破碎的"
+        "correct": true,
+        "answer": "破碎的",
+        "parentCorrected": true
       },
       {
         "id": "s6-g54-i3",
@@ -2568,18 +2607,21 @@
       },
       {
         "id": "s6-g42-i2",
-        "correct": false,
-        "answer": "思考过的想法"
+        "correct": true,
+        "answer": "思考过的想法",
+        "parentCorrected": true
       },
       {
         "id": "s6-g7-i1",
-        "correct": false,
-        "answer": "吃些药"
+        "correct": true,
+        "answer": "吃些药",
+        "parentCorrected": true
       },
       {
         "id": "s6-g3-i3",
-        "correct": false,
-        "answer": "咳嗽"
+        "correct": true,
+        "answer": "咳嗽",
+        "parentCorrected": true
       },
       {
         "id": "s6-g54-i1",
@@ -2588,8 +2630,9 @@
       },
       {
         "id": "s6-g51-i2",
-        "correct": false,
-        "answer": "来了"
+        "correct": true,
+        "answer": "来了",
+        "parentCorrected": true
       },
       {
         "id": "s6-g61-i1",
@@ -2613,13 +2656,15 @@
       },
       {
         "id": "s6-g14-i1",
-        "correct": false,
-        "answer": "亲切地说"
+        "correct": true,
+        "answer": "亲切地说",
+        "parentCorrected": true
       },
       {
         "id": "s6-g11-i1",
-        "correct": false,
-        "answer": "小心治疗伤口"
+        "correct": true,
+        "answer": "小心治疗伤口",
+        "parentCorrected": true
       },
       {
         "id": "s6-g20-i1",
@@ -2633,8 +2678,9 @@
       },
       {
         "id": "s6-g19-i2",
-        "correct": false,
-        "answer": "清楚地"
+        "correct": true,
+        "answer": "清楚地",
+        "parentCorrected": true
       },
       {
         "id": "s6-g3-i6",
@@ -2643,8 +2689,9 @@
       },
       {
         "id": "s6-g38-i2",
-        "correct": false,
-        "answer": "第三人称单数形式"
+        "correct": true,
+        "answer": "第三人称单数形式",
+        "parentCorrected": true
       },
       {
         "id": "s6-g8-i1",
@@ -2653,18 +2700,21 @@
       },
       {
         "id": "s6-g31-i1",
-        "correct": false,
-        "answer": "对……有益"
+        "correct": true,
+        "answer": "对……有益",
+        "parentCorrected": true
       },
       {
         "id": "s6-g54-i4",
-        "correct": false,
-        "answer": "不能够（过去式）"
+        "correct": true,
+        "answer": "不能够（过去式）",
+        "parentCorrected": true
       },
       {
         "id": "s6-g63-i1",
-        "correct": false,
-        "answer": "思考"
+        "correct": true,
+        "answer": "思考",
+        "parentCorrected": true
       },
       {
         "id": "s6-g52-i1",
@@ -2737,9 +2787,313 @@
         "answer": "reduce"
       }
     ],
-    "correct": 40,
+    "correct": 90,
     "total": 121,
-    "score": 33
+    "score": 74
   },
-  "gradingVersion": 5
+  "gradingVersion": 5,
+  "regradedAt": "2026-08-09T07:39:46.170Z",
+  "parentGradedAt": "2026-08-09T07:39:46.170Z",
+  "parentGraded": [
+    {
+      "id": "s6-g40-i1",
+      "term": "during",
+      "answer": "在什么什么期间",
+      "displayNumber": "40"
+    },
+    {
+      "id": "s6-g45-i1",
+      "term": "stay",
+      "answer": "呆在",
+      "displayNumber": "45-1"
+    },
+    {
+      "id": "s6-g47-i1",
+      "term": "surprise",
+      "answer": "惊喜",
+      "displayNumber": "47-1"
+    },
+    {
+      "id": "s6-g55-i1",
+      "term": "wake sb. up",
+      "answer": "某人醒来",
+      "displayNumber": "55"
+    },
+    {
+      "id": "s6-g43-i2",
+      "term": "a broken arm",
+      "answer": "一个坏了的肩膀或者一个坏了的手臂",
+      "displayNumber": "43-2"
+    },
+    {
+      "id": "s6-g47-i2",
+      "term": "be surprised",
+      "answer": "惊喜",
+      "displayNumber": "47-2"
+    },
+    {
+      "id": "s6-g10-i1",
+      "term": "careful",
+      "answer": "小心",
+      "displayNumber": "10-1"
+    },
+    {
+      "id": "s6-g12-i1",
+      "term": "keep it dry",
+      "answer": "保持它干燥",
+      "displayNumber": "12"
+    },
+    {
+      "id": "s6-g25-i1",
+      "term": "watch TV too much",
+      "answer": "看很久的电视",
+      "displayNumber": "25-1"
+    },
+    {
+      "id": "s6-g35-i1",
+      "term": "talk about ...",
+      "answer": "交流关于",
+      "displayNumber": "35-1"
+    },
+    {
+      "id": "s6-g35-i2",
+      "term": "talk with ...",
+      "answer": "与某人交流或者交流关于某事",
+      "displayNumber": "35-2"
+    },
+    {
+      "id": "s6-g26-i2",
+      "term": "less",
+      "answer": "少量或者小的过去式或者比较级",
+      "displayNumber": "26-2"
+    },
+    {
+      "id": "s6-g23-i1",
+      "term": "What should I do?",
+      "answer": "我能干什么？",
+      "displayNumber": "23"
+    },
+    {
+      "id": "s6-g48-i1",
+      "term": "have an idea",
+      "answer": "有一个想法或者有一个建议",
+      "displayNumber": "48"
+    },
+    {
+      "id": "s6-g53-i1",
+      "term": "by mistake",
+      "answer": "错误的",
+      "displayNumber": "53"
+    },
+    {
+      "id": "s6-g19-i1",
+      "term": "clear",
+      "answer": "清晰",
+      "displayNumber": "19-1"
+    },
+    {
+      "id": "s6-g10-i2",
+      "term": "carefully",
+      "answer": "小心的",
+      "displayNumber": "10-2"
+    },
+    {
+      "id": "s6-g3-i4",
+      "term": "runny nose",
+      "answer": "感冒或者流鼻涕",
+      "displayNumber": "3-4"
+    },
+    {
+      "id": "s6-g57-i1",
+      "term": "with",
+      "answer": "和或者与什么是不是事物有关系",
+      "displayNumber": "57"
+    },
+    {
+      "id": "s6-g62-i1",
+      "term": "have some advice for him",
+      "answer": "对他有一些建议",
+      "displayNumber": "62"
+    },
+    {
+      "id": "s6-g26-i1",
+      "term": "little",
+      "answer": "小或者少",
+      "displayNumber": "26-1"
+    },
+    {
+      "id": "s6-g31-i2",
+      "term": "be bad for ...",
+      "answer": "对什么事情或者对某人是不好的",
+      "displayNumber": "31-2"
+    },
+    {
+      "id": "s6-g66-i1",
+      "term": "write a list",
+      "answer": "写一个表格或者格式或者建议或者想法",
+      "displayNumber": "65（下）"
+    },
+    {
+      "id": "s6-g49-i1",
+      "term": "a few days",
+      "answer": "一些天",
+      "displayNumber": "49"
+    },
+    {
+      "id": "s6-g4-i2",
+      "term": "at the clinic",
+      "answer": "在一家诊所",
+      "displayNumber": "4-2"
+    },
+    {
+      "id": "s6-g14-i2",
+      "term": "say gently",
+      "answer": "轻声地说",
+      "displayNumber": "14-2"
+    },
+    {
+      "id": "s6-g18-i1",
+      "term": "How can I help you?",
+      "answer": "我该怎么样帮助你？",
+      "displayNumber": "18-1"
+    },
+    {
+      "id": "s6-g19-i3",
+      "term": "see clearly",
+      "answer": "清晰地看见",
+      "displayNumber": "19-3"
+    },
+    {
+      "id": "s6-g5-i1",
+      "term": "Don't forget to do ...",
+      "answer": "不要忘记做某事",
+      "displayNumber": "5"
+    },
+    {
+      "id": "s6-g38-i1",
+      "term": "cry",
+      "answer": "哭泣",
+      "displayNumber": "38-1"
+    },
+    {
+      "id": "s6-g38-i3",
+      "term": "cried",
+      "answer": "哭泣的过去式",
+      "displayNumber": "38-3"
+    },
+    {
+      "id": "s6-g51-i1",
+      "term": "come",
+      "answer": "过来",
+      "displayNumber": "51-1"
+    },
+    {
+      "id": "s6-g52-i2",
+      "term": "ate",
+      "answer": "吃饭的过去式",
+      "displayNumber": "52-2"
+    },
+    {
+      "id": "s6-g17-i2",
+      "term": "keep it dry",
+      "answer": "保持它干燥",
+      "displayNumber": "17-2"
+    },
+    {
+      "id": "s6-g33-i2",
+      "term": "twice a day",
+      "answer": "一天两次",
+      "displayNumber": "33-2"
+    },
+    {
+      "id": "s6-g44-i2",
+      "term": "broke",
+      "answer": "打破的过去式",
+      "displayNumber": "44-2"
+    },
+    {
+      "id": "s6-g36-i1",
+      "term": "ouch",
+      "answer": "哎呦",
+      "displayNumber": "36"
+    },
+    {
+      "id": "s6-g54-i2",
+      "term": "could",
+      "answer": "可以",
+      "displayNumber": "54-2"
+    },
+    {
+      "id": "s6-g43-i1",
+      "term": "broken",
+      "answer": "打破的",
+      "displayNumber": "43-1"
+    },
+    {
+      "id": "s6-g42-i2",
+      "term": "thought",
+      "answer": "想法的过去式",
+      "displayNumber": "42-2"
+    },
+    {
+      "id": "s6-g7-i1",
+      "term": "take some medicine",
+      "answer": "吃一些药",
+      "displayNumber": "7"
+    },
+    {
+      "id": "s6-g3-i3",
+      "term": "cough",
+      "answer": "咳嗽感冒",
+      "displayNumber": "3-3"
+    },
+    {
+      "id": "s6-g51-i2",
+      "term": "came",
+      "answer": "过来的过去式",
+      "displayNumber": "51-2"
+    },
+    {
+      "id": "s6-g14-i1",
+      "term": "say kindly",
+      "answer": "友好地说",
+      "displayNumber": "14-1"
+    },
+    {
+      "id": "s6-g11-i1",
+      "term": "treat the wound carefully",
+      "answer": "小心的对待这个伤口",
+      "displayNumber": "11"
+    },
+    {
+      "id": "s6-g19-i2",
+      "term": "clearly",
+      "answer": "清晰的",
+      "displayNumber": "19-2"
+    },
+    {
+      "id": "s6-g38-i2",
+      "term": "cries",
+      "answer": "哭泣的三单",
+      "displayNumber": "38-2"
+    },
+    {
+      "id": "s6-g31-i1",
+      "term": "be good for ...",
+      "answer": "对什么人或者什么事情好",
+      "displayNumber": "31-1"
+    },
+    {
+      "id": "s6-g54-i4",
+      "term": "couldn't",
+      "answer": "不可以的过去式",
+      "displayNumber": "54-4"
+    },
+    {
+      "id": "s6-g63-i1",
+      "term": "think",
+      "answer": "想法",
+      "displayNumber": "63-1"
+    }
+  ]
 }
