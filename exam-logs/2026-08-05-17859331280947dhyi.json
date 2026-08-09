@@ -1631,8 +1631,9 @@
       },
       {
         "id": "s4-g37-i1",
-        "correct": false,
-        "answer": "美丽的"
+        "correct": true,
+        "answer": "美丽的",
+        "parentCorrected": true
       },
       {
         "id": "s4-g54-i3",
@@ -1641,8 +1642,9 @@
       },
       {
         "id": "s4-g27-i2",
-        "correct": false,
-        "answer": "被……所覆盖/沾满"
+        "correct": true,
+        "answer": "被……所覆盖/沾满",
+        "parentCorrected": true
       },
       {
         "id": "s4-g8-i1",
@@ -1661,13 +1663,15 @@
       },
       {
         "id": "s4-g9-i1",
-        "correct": false,
-        "answer": "把植物固定住"
+        "correct": true,
+        "answer": "把植物固定住",
+        "parentCorrected": true
       },
       {
         "id": "s4-g19-i1",
-        "correct": false,
-        "answer": "一次去……的参观"
+        "correct": true,
+        "answer": "一次去……的参观",
+        "parentCorrected": true
       },
       {
         "id": "s4-g3-i2",
@@ -1676,23 +1680,27 @@
       },
       {
         "id": "s4-g26-i1",
-        "correct": false,
-        "answer": "多么可爱啊！"
+        "correct": true,
+        "answer": "多么可爱啊！",
+        "parentCorrected": true
       },
       {
         "id": "s4-g26-i2",
-        "correct": false,
-        "answer": "多么可爱啊！"
+        "correct": true,
+        "answer": "多么可爱啊！",
+        "parentCorrected": true
       },
       {
         "id": "s4-g23-i1",
-        "correct": false,
-        "answer": "冰淇淋甜筒"
+        "correct": true,
+        "answer": "冰淇淋甜筒",
+        "parentCorrected": true
       },
       {
         "id": "s4-g13-i1",
-        "correct": false,
-        "answer": "长得很大"
+        "correct": true,
+        "answer": "长得很大",
+        "parentCorrected": true
       },
       {
         "id": "s4-g15-i1",
@@ -1701,8 +1709,9 @@
       },
       {
         "id": "s4-g12-i1",
-        "correct": false,
-        "answer": "把……带到……处"
+        "correct": true,
+        "answer": "把……带到……处",
+        "parentCorrected": true
       },
       {
         "id": "s4-g44-i1",
@@ -1726,13 +1735,15 @@
       },
       {
         "id": "s4-g54-i1",
-        "correct": false,
-        "answer": "找到"
+        "correct": true,
+        "answer": "找到",
+        "parentCorrected": true
       },
       {
         "id": "s4-g13-i2",
-        "correct": false,
-        "answer": "越来越大"
+        "correct": true,
+        "answer": "越来越大",
+        "parentCorrected": true
       },
       {
         "id": "s4-g16-i1",
@@ -1756,13 +1767,15 @@
       },
       {
         "id": "s4-g1-i1",
-        "correct": false,
-        "answer": "植物"
+        "correct": true,
+        "answer": "植物",
+        "parentCorrected": true
       },
       {
         "id": "s4-g3-i5",
-        "correct": false,
-        "answer": "根（根系）"
+        "correct": true,
+        "answer": "根（根系）",
+        "parentCorrected": true
       },
       {
         "id": "s4-g31-i1",
@@ -1781,13 +1794,15 @@
       },
       {
         "id": "s4-g1-i2",
-        "correct": false,
-        "answer": "植物（复数）"
+        "correct": true,
+        "answer": "植物（复数）",
+        "parentCorrected": true
       },
       {
         "id": "s4-g3-i3",
-        "correct": false,
-        "answer": "叶子"
+        "correct": true,
+        "answer": "叶子",
+        "parentCorrected": true
       },
       {
         "id": "s4-g11-i1",
@@ -1796,8 +1811,9 @@
       },
       {
         "id": "s4-g30-i1",
-        "correct": false,
-        "answer": "特别的"
+        "correct": true,
+        "answer": "特别的",
+        "parentCorrected": true
       },
       {
         "id": "s4-g42-i1",
@@ -1806,13 +1822,15 @@
       },
       {
         "id": "s4-g55-i3",
-        "correct": false,
-        "answer": "大的"
+        "correct": true,
+        "answer": "大的",
+        "parentCorrected": true
       },
       {
         "id": "s4-g24-i1",
-        "correct": false,
-        "answer": "姓名牌"
+        "correct": true,
+        "answer": "姓名牌",
+        "parentCorrected": true
       },
       {
         "id": "s4-g7-i1",
@@ -1821,8 +1839,9 @@
       },
       {
         "id": "s4-g3-i4",
-        "correct": false,
-        "answer": "叶子（复数）"
+        "correct": true,
+        "answer": "叶子（复数）",
+        "parentCorrected": true
       },
       {
         "id": "s4-g17-i1",
@@ -1831,8 +1850,9 @@
       },
       {
         "id": "s4-g52-i1",
-        "correct": false,
-        "answer": "极好的"
+        "correct": true,
+        "answer": "极好的",
+        "parentCorrected": true
       },
       {
         "id": "s4-g41-i1",
@@ -1841,8 +1861,9 @@
       },
       {
         "id": "s4-g10-i1",
-        "correct": false,
-        "answer": "吸收"
+        "correct": true,
+        "answer": "吸收",
+        "parentCorrected": true
       },
       {
         "id": "s4-g4-i4",
@@ -1856,8 +1877,9 @@
       },
       {
         "id": "s4-g36-i2",
-        "correct": false,
-        "answer": "在……后面"
+        "correct": true,
+        "answer": "在……后面",
+        "parentCorrected": true
       },
       {
         "id": "s4-g3-i1",
@@ -1871,8 +1893,9 @@
       },
       {
         "id": "s4-g53-i2",
-        "correct": false,
-        "answer": "记者"
+        "correct": true,
+        "answer": "记者",
+        "parentCorrected": true
       },
       {
         "id": "s4-g28-i1",
@@ -1886,13 +1909,15 @@
       },
       {
         "id": "s4-g4-i1",
-        "correct": false,
-        "answer": "土壤"
+        "correct": true,
+        "answer": "土壤",
+        "parentCorrected": true
       },
       {
         "id": "s4-g36-i1",
-        "correct": false,
-        "answer": "在……前面"
+        "correct": true,
+        "answer": "在……前面",
+        "parentCorrected": true
       },
       {
         "id": "s4-g34-i1",
@@ -1901,8 +1926,9 @@
       },
       {
         "id": "s4-g51-i1",
-        "correct": false,
-        "answer": "紧紧关闭"
+        "correct": true,
+        "answer": "紧紧关闭",
+        "parentCorrected": true
       },
       {
         "id": "s4-g6-i1",
@@ -1911,8 +1937,9 @@
       },
       {
         "id": "s4-g21-i1",
-        "correct": false,
-        "answer": "植物园"
+        "correct": true,
+        "answer": "植物园",
+        "parentCorrected": true
       },
       {
         "id": "s4-g4-i5",
@@ -1936,8 +1963,9 @@
       },
       {
         "id": "s4-g55-i1",
-        "correct": false,
-        "answer": "一根长长的茎干"
+        "correct": true,
+        "answer": "一根长长的茎干",
+        "parentCorrected": true
       },
       {
         "id": "s4-g25-i1",
@@ -1946,18 +1974,21 @@
       },
       {
         "id": "s4-g39-i1",
-        "correct": false,
-        "answer": "令人惊叹的"
+        "correct": true,
+        "answer": "令人惊叹的",
+        "parentCorrected": true
       },
       {
         "id": "s4-g18-i1",
-        "correct": false,
-        "answer": "掉进"
+        "correct": true,
+        "answer": "掉进",
+        "parentCorrected": true
       },
       {
         "id": "s4-g29-i1",
-        "correct": false,
-        "answer": "遍布墙面"
+        "correct": true,
+        "answer": "遍布墙面",
+        "parentCorrected": true
       },
       {
         "id": "s4-g33-i1",
@@ -1966,8 +1997,9 @@
       },
       {
         "id": "s4-g36-i3",
-        "correct": false,
-        "answer": "在……下面"
+        "correct": true,
+        "answer": "在……下面",
+        "parentCorrected": true
       },
       {
         "id": "s4-g27-i1",
@@ -1986,8 +2018,9 @@
       },
       {
         "id": "s4-g46-i1",
-        "correct": false,
-        "answer": "合上"
+        "correct": true,
+        "answer": "合上",
+        "parentCorrected": true
       },
       {
         "id": "s4-g53-i1",
@@ -1996,8 +2029,9 @@
       },
       {
         "id": "s4-g56-i1",
-        "correct": false,
-        "answer": "微笑"
+        "correct": true,
+        "answer": "微笑",
+        "parentCorrected": true
       },
       {
         "id": "s4-g48-i1",
@@ -2006,13 +2040,15 @@
       },
       {
         "id": "s4-g20-i1",
-        "correct": false,
-        "answer": "植物学的"
+        "correct": true,
+        "answer": "植物学的",
+        "parentCorrected": true
       },
       {
         "id": "s4-g36-i4",
-        "correct": false,
-        "answer": "在……上面"
+        "correct": true,
+        "answer": "在……上面",
+        "parentCorrected": true
       },
       {
         "id": "s4-g34-i2",
@@ -2070,9 +2106,229 @@
         "answer": "little feathers"
       }
     ],
-    "correct": 36,
+    "correct": 72,
     "total": 91,
-    "score": 40
+    "score": 79
   },
-  "gradingVersion": 5
+  "gradingVersion": 5,
+  "regradedAt": "2026-08-09T07:26:18.856Z",
+  "parentGradedAt": "2026-08-09T07:26:18.856Z",
+  "parentGraded": [
+    {
+      "id": "s4-g37-i1",
+      "term": "beautiful",
+      "answer": "美丽",
+      "displayNumber": "37"
+    },
+    {
+      "id": "s4-g27-i2",
+      "term": "be covered with...",
+      "answer": "被什么什么覆盖",
+      "displayNumber": "27-2"
+    },
+    {
+      "id": "s4-g9-i1",
+      "term": "hold the plant in place",
+      "answer": "固定植物",
+      "displayNumber": "9"
+    },
+    {
+      "id": "s4-g19-i1",
+      "term": "a visit to ...",
+      "answer": "去拜访",
+      "displayNumber": "19"
+    },
+    {
+      "id": "s4-g26-i1",
+      "term": "How lovely!",
+      "answer": "多可爱呀",
+      "displayNumber": "26-1"
+    },
+    {
+      "id": "s4-g26-i2",
+      "term": "How cute!",
+      "answer": "多可爱呀",
+      "displayNumber": "26-2"
+    },
+    {
+      "id": "s4-g23-i1",
+      "term": "ice cream cone",
+      "answer": "冰淇淋蛋筒",
+      "displayNumber": "23"
+    },
+    {
+      "id": "s4-g13-i1",
+      "term": "grow big",
+      "answer": "长得大",
+      "displayNumber": "13-1"
+    },
+    {
+      "id": "s4-g12-i1",
+      "term": "bring ... to ...",
+      "answer": "带到",
+      "displayNumber": "12"
+    },
+    {
+      "id": "s4-g54-i1",
+      "term": "find",
+      "answer": "寻找",
+      "displayNumber": "54-1"
+    },
+    {
+      "id": "s4-g13-i2",
+      "term": "grow bigger and bigger",
+      "answer": "长得越来越大越来越大（bigger的意思原本是比什么什么更大）",
+      "displayNumber": "13-2"
+    },
+    {
+      "id": "s4-g1-i1",
+      "term": "plant",
+      "answer": "种植",
+      "displayNumber": "1-1"
+    },
+    {
+      "id": "s4-g3-i5",
+      "term": "root (roots)",
+      "answer": "根",
+      "displayNumber": "3-5"
+    },
+    {
+      "id": "s4-g1-i2",
+      "term": "plants",
+      "answer": "植物的复数",
+      "displayNumber": "1-2"
+    },
+    {
+      "id": "s4-g3-i3",
+      "term": "leaf",
+      "answer": "叶子单数",
+      "displayNumber": "3-3"
+    },
+    {
+      "id": "s4-g30-i1",
+      "term": "special",
+      "answer": "特别",
+      "displayNumber": "30"
+    },
+    {
+      "id": "s4-g55-i3",
+      "term": "large",
+      "answer": "巨大的",
+      "displayNumber": "55-3"
+    },
+    {
+      "id": "s4-g24-i1",
+      "term": "name tag",
+      "answer": "命名名牌",
+      "displayNumber": "24"
+    },
+    {
+      "id": "s4-g3-i4",
+      "term": "leaves",
+      "answer": "叶子的复数",
+      "displayNumber": "3-4"
+    },
+    {
+      "id": "s4-g52-i1",
+      "term": "wonderful",
+      "answer": "神奇震惊",
+      "displayNumber": "52"
+    },
+    {
+      "id": "s4-g10-i1",
+      "term": "take in",
+      "answer": "放进",
+      "displayNumber": "10"
+    },
+    {
+      "id": "s4-g36-i2",
+      "term": "behind ...",
+      "answer": "后面",
+      "displayNumber": "36-2"
+    },
+    {
+      "id": "s4-g53-i2",
+      "term": "reporter",
+      "answer": "调查员报告员",
+      "displayNumber": "53-2"
+    },
+    {
+      "id": "s4-g4-i1",
+      "term": "soil",
+      "answer": "泥土",
+      "displayNumber": "4-1"
+    },
+    {
+      "id": "s4-g36-i1",
+      "term": "in front of ...",
+      "answer": "前面",
+      "displayNumber": "36-1"
+    },
+    {
+      "id": "s4-g51-i1",
+      "term": "close tightly",
+      "answer": "紧紧闭上",
+      "displayNumber": "51"
+    },
+    {
+      "id": "s4-g21-i1",
+      "term": "botanical garden",
+      "answer": "植物花园",
+      "displayNumber": "21"
+    },
+    {
+      "id": "s4-g55-i1",
+      "term": "a long stem",
+      "answer": "一根长的茎",
+      "displayNumber": "55-1"
+    },
+    {
+      "id": "s4-g39-i1",
+      "term": "amazing",
+      "answer": "神奇震惊",
+      "displayNumber": "39"
+    },
+    {
+      "id": "s4-g18-i1",
+      "term": "fall into",
+      "answer": "掉入",
+      "displayNumber": "18"
+    },
+    {
+      "id": "s4-g29-i1",
+      "term": "all over the wall",
+      "answer": "整面墙都是",
+      "displayNumber": "29"
+    },
+    {
+      "id": "s4-g36-i3",
+      "term": "under ...",
+      "answer": "下面",
+      "displayNumber": "36-3"
+    },
+    {
+      "id": "s4-g46-i1",
+      "term": "close up",
+      "answer": "关上",
+      "displayNumber": "46"
+    },
+    {
+      "id": "s4-g56-i1",
+      "term": "smile",
+      "answer": "笑脸",
+      "displayNumber": "56"
+    },
+    {
+      "id": "s4-g20-i1",
+      "term": "botanical",
+      "answer": "植物学",
+      "displayNumber": "20"
+    },
+    {
+      "id": "s4-g36-i4",
+      "term": "on ...",
+      "answer": "上面",
+      "displayNumber": "36-4"
+    }
+  ]
 }
