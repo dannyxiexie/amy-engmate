@@ -1,4 +1,4 @@
-const CACHE_NAME = "amy-engmate-v3";
+const CACHE_NAME = "amy-engmate-v4";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.add("./")));
@@ -25,17 +25,14 @@ async function cacheFirst(request) {
 async function navigationResponse(request) {
   const cache = await caches.open(CACHE_NAME);
   const cached = await cache.match(request) || await cache.match("./");
-  const network = fetch(request)
-    .then((response) => {
-      if (response.ok) cache.put(request, response.clone());
-      return response;
-    })
-    .catch(() => cached);
-  if (!cached) return network;
-  return Promise.race([
-    network,
-    new Promise((resolve) => setTimeout(() => resolve(cached), 1200))
-  ]);
+  // 导航优先取网络最新版（保证拿到含 AI 的新前端），只在完全离线时才用缓存
+  try {
+    const response = await fetch(request);
+    if (response.ok) cache.put(request, response.clone());
+    return response;
+  } catch {
+    return cached || Response.error();
+  }
 }
 
 self.addEventListener("fetch", (event) => {
