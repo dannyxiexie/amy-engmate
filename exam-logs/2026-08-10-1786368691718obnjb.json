@@ -1625,8 +1625,9 @@
       },
       {
         "id": "s2-g50-i2",
-        "correct": false,
-        "answer": "很多（不可数）"
+        "correct": true,
+        "answer": "很多（不可数）",
+        "parentCorrected": true
       },
       {
         "id": "s2-g9-i1",
@@ -1695,18 +1696,21 @@
       },
       {
         "id": "s2-g4-i1",
-        "correct": false,
-        "answer": "制作摄影旅行记录"
+        "correct": true,
+        "answer": "制作摄影旅行记录",
+        "parentCorrected": true
       },
       {
         "id": "s2-g54-i1",
-        "correct": false,
-        "answer": "玩得开心"
+        "correct": true,
+        "answer": "玩得开心",
+        "parentCorrected": true
       },
       {
         "id": "s2-g23-i1",
-        "correct": false,
-        "answer": "画（动词）"
+        "correct": true,
+        "answer": "画（动词）",
+        "parentCorrected": true
       },
       {
         "id": "s2-g53-i2",
@@ -1725,8 +1729,9 @@
       },
       {
         "id": "s2-g41-i1",
-        "correct": false,
-        "answer": "中国文化"
+        "correct": true,
+        "answer": "中国文化",
+        "parentCorrected": true
       },
       {
         "id": "s2-g13-i1",
@@ -1735,8 +1740,9 @@
       },
       {
         "id": "s2-g30-i1",
-        "correct": false,
-        "answer": "想要做某事"
+        "correct": true,
+        "answer": "想要做某事",
+        "parentCorrected": true
       },
       {
         "id": "s2-g45-i1",
@@ -1745,28 +1751,33 @@
       },
       {
         "id": "s2-g47-i3",
-        "correct": false,
-        "answer": "变得更容易"
+        "correct": true,
+        "answer": "变得更容易",
+        "parentCorrected": true
       },
       {
         "id": "s2-g46-i1",
-        "correct": false,
-        "answer": "在你的帮助下"
+        "correct": true,
+        "answer": "在你的帮助下",
+        "parentCorrected": true
       },
       {
         "id": "s2-g24-i1",
-        "correct": false,
-        "answer": "夜景"
+        "correct": true,
+        "answer": "夜景",
+        "parentCorrected": true
       },
       {
         "id": "s2-g59-i1",
-        "correct": false,
-        "answer": "图表"
+        "correct": true,
+        "answer": "图表",
+        "parentCorrected": true
       },
       {
         "id": "s2-g35-i2",
-        "correct": false,
-        "answer": "需要给它们上色"
+        "correct": true,
+        "answer": "需要给它们上色",
+        "parentCorrected": true
       },
       {
         "id": "s2-g35-i1",
@@ -1775,8 +1786,9 @@
       },
       {
         "id": "s2-g48-i1",
-        "correct": false,
-        "answer": "学习如何拍照"
+        "correct": true,
+        "answer": "学习如何拍照",
+        "parentCorrected": true
       },
       {
         "id": "s2-g6-i1",
@@ -1790,13 +1802,15 @@
       },
       {
         "id": "s2-g36-i1",
-        "correct": false,
-        "answer": "看起来不错"
+        "correct": true,
+        "answer": "看起来不错",
+        "parentCorrected": true
       },
       {
         "id": "s2-g26-i1",
-        "correct": false,
-        "answer": "令人惊叹的"
+        "correct": true,
+        "answer": "令人惊叹的",
+        "parentCorrected": true
       },
       {
         "id": "s2-g27-i1",
@@ -1830,8 +1844,9 @@
       },
       {
         "id": "s2-g16-i1",
-        "correct": false,
-        "answer": "字母组合 ph 发音为 f"
+        "correct": true,
+        "answer": "字母组合 ph 发音为 f",
+        "parentCorrected": true
       },
       {
         "id": "s2-g2-i1",
@@ -1840,8 +1855,9 @@
       },
       {
         "id": "s2-g5-i1",
-        "correct": false,
-        "answer": "制作照片日记"
+        "correct": true,
+        "answer": "制作照片日记",
+        "parentCorrected": true
       },
       {
         "id": "s2-g33-i1",
@@ -1850,18 +1866,21 @@
       },
       {
         "id": "s2-g52-i2",
-        "correct": false,
-        "answer": "感到难过"
+        "correct": true,
+        "answer": "感到难过",
+        "parentCorrected": true
       },
       {
         "id": "s2-g43-i1",
-        "correct": false,
-        "answer": "开始做……"
+        "correct": true,
+        "answer": "开始做……",
+        "parentCorrected": true
       },
       {
         "id": "s2-g42-i1",
-        "correct": false,
-        "answer": "解决问题"
+        "correct": true,
+        "answer": "解决问题",
+        "parentCorrected": true
       },
       {
         "id": "s2-g18-i1",
@@ -1870,8 +1889,9 @@
       },
       {
         "id": "s2-g29-i1",
-        "correct": false,
-        "answer": "和……一起玩"
+        "correct": true,
+        "answer": "和……一起玩",
+        "parentCorrected": true
       },
       {
         "id": "s2-g52-i1",
@@ -1880,8 +1900,9 @@
       },
       {
         "id": "s2-g36-i2",
-        "correct": false,
-        "answer": "看起来不错"
+        "correct": true,
+        "answer": "看起来不错",
+        "parentCorrected": true
       },
       {
         "id": "s2-g56-i1",
@@ -1895,13 +1916,15 @@
       },
       {
         "id": "s2-g38-i2",
-        "correct": false,
-        "answer": "……怎么样？……如何呢？"
+        "correct": true,
+        "answer": "……怎么样？……如何呢？",
+        "parentCorrected": true
       },
       {
         "id": "s2-g14-i1",
-        "correct": false,
-        "answer": "运动场"
+        "correct": true,
+        "answer": "运动场",
+        "parentCorrected": true
       },
       {
         "id": "s2-g38-i1",
@@ -1935,8 +1958,9 @@
       },
       {
         "id": "s2-g50-i1",
-        "correct": false,
-        "answer": "许多（可数）"
+        "correct": true,
+        "answer": "许多（可数）",
+        "parentCorrected": true
       },
       {
         "id": "s2-g37-i1",
@@ -1975,8 +1999,9 @@
       },
       {
         "id": "s2-g36-i4",
-        "correct": false,
-        "answer": "看起来不好看"
+        "correct": true,
+        "answer": "看起来不好看",
+        "parentCorrected": true
       },
       {
         "id": "s2-g57-i1",
@@ -2064,9 +2089,163 @@
         "answer": "Grade Four"
       }
     ],
-    "correct": 50,
+    "correct": 75,
     "total": 91,
-    "score": 55
+    "score": 82
   },
-  "gradingVersion": 5
+  "gradingVersion": 5,
+  "regradedAt": "2026-08-10T13:59:32.451Z",
+  "parentGradedAt": "2026-08-10T13:59:32.451Z",
+  "parentGraded": [
+    {
+      "id": "s2-g50-i2",
+      "term": "much",
+      "answer": "很多或者许多",
+      "displayNumber": "50-2"
+    },
+    {
+      "id": "s2-g4-i1",
+      "term": "make a photo journey",
+      "answer": "一场摄影旅行或者策划一场摄影旅行",
+      "displayNumber": "4"
+    },
+    {
+      "id": "s2-g54-i1",
+      "term": "have lots of fun",
+      "answer": "非常开心",
+      "displayNumber": "54"
+    },
+    {
+      "id": "s2-g23-i1",
+      "term": "paint",
+      "answer": "绘画或者涂色",
+      "displayNumber": "23-1"
+    },
+    {
+      "id": "s2-g41-i1",
+      "term": "Chinese culture",
+      "answer": "中国文化或者国粹",
+      "displayNumber": "41"
+    },
+    {
+      "id": "s2-g30-i1",
+      "term": "would like to",
+      "answer": "想要去",
+      "displayNumber": "30-1"
+    },
+    {
+      "id": "s2-g47-i3",
+      "term": "become easier",
+      "answer": "变得更简单了",
+      "displayNumber": "47-3"
+    },
+    {
+      "id": "s2-g46-i1",
+      "term": "with your help",
+      "answer": "与你的帮助或者有了你的帮助",
+      "displayNumber": "46"
+    },
+    {
+      "id": "s2-g24-i1",
+      "term": "the night view",
+      "answer": "这夜景",
+      "displayNumber": "24"
+    },
+    {
+      "id": "s2-g59-i1",
+      "term": "chart",
+      "answer": "图表或者表格",
+      "displayNumber": "60"
+    },
+    {
+      "id": "s2-g35-i2",
+      "term": "need to paint them",
+      "answer": "需要去涂上它们",
+      "displayNumber": "35-2"
+    },
+    {
+      "id": "s2-g48-i1",
+      "term": "learn how to take pictures",
+      "answer": "学习怎样去摄影",
+      "displayNumber": "48"
+    },
+    {
+      "id": "s2-g36-i1",
+      "term": "look nice",
+      "answer": "看起来很好，或者看起来很棒",
+      "displayNumber": "36-1"
+    },
+    {
+      "id": "s2-g26-i1",
+      "term": "be amazing",
+      "answer": "变得十分神奇或者惊奇",
+      "displayNumber": "26"
+    },
+    {
+      "id": "s2-g16-i1",
+      "term": "ph /f/",
+      "answer": "音标/f/",
+      "displayNumber": "16-1"
+    },
+    {
+      "id": "s2-g5-i1",
+      "term": "make a photo journal",
+      "answer": "做一个摄影日志",
+      "displayNumber": "5"
+    },
+    {
+      "id": "s2-g52-i2",
+      "term": "feel sad",
+      "answer": "感觉伤心或者感觉难过",
+      "displayNumber": "52-2"
+    },
+    {
+      "id": "s2-g43-i1",
+      "term": "begin to do ...",
+      "answer": "开始去做",
+      "displayNumber": "43"
+    },
+    {
+      "id": "s2-g42-i1",
+      "term": "solve the problem",
+      "answer": "解决这问题",
+      "displayNumber": "42"
+    },
+    {
+      "id": "s2-g29-i1",
+      "term": "play with ...",
+      "answer": "跟…玩",
+      "displayNumber": "29"
+    },
+    {
+      "id": "s2-g36-i2",
+      "term": "looks nice",
+      "answer": "看着很好或者很棒",
+      "displayNumber": "36-2"
+    },
+    {
+      "id": "s2-g38-i2",
+      "term": "What about ...?",
+      "answer": "什么关于…？",
+      "displayNumber": "38-2"
+    },
+    {
+      "id": "s2-g14-i1",
+      "term": "sports field",
+      "answer": "运动会或者运动场",
+      "displayNumber": "14"
+    },
+    {
+      "id": "s2-g50-i1",
+      "term": "many",
+      "answer": "许多或者很多",
+      "displayNumber": "50-1"
+    },
+    {
+      "id": "s2-g36-i4",
+      "term": "doesn't look nice",
+      "answer": "看起来不好或者看起来不棒",
+      "displayNumber": "36-4"
+    }
+  ]
 }
