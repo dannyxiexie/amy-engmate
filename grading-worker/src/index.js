@@ -88,31 +88,44 @@ async function gradeBatch(items, key) {
   }
 }
 
-// 出题质检：判断每道例句选词题里，哪些选项填进空格"语法+语义都合理"。
-// 合理选项 > 1 即视为歧义题，前端会跳过。用于避免"好几个词都填得通"的不严谨题目。
-const CLOZE_SYSTEM = `你是英语"例句选词"出题质检员。对每道题，判断4个选项里哪些填进空格在语法和语义上都合理（可能成为正确答案）。
-规则：只有填进去后句子语法正确、语义通顺、符合常理的才算合理；明显不通的不算。
+// 出题质检：判断每道例句选词题里，哪些选项填进空格"语法+语义都合理"，
+// 以及正确答案填进去整句是否通顺（不通说明题目本身有问题，前端会跳过）。
+const CLOZE_SYSTEM = `你是英语"例句选词"出题质检员。对每道题：
+1. 判断4个选项里哪些填进空格在语法和语义上都合理（valid，填进去后整句语法正确且语义通顺）。
+2. 判断"正确答案(answer)"填进空格后整句是否语法正确、语义通顺(answer_ok)。如果连正确答案都不通，说明题目本身有语法问题。
+规则：be 动词(is/are/was/were)后面应接现在分词/形容词/名词，接动词原形(如 "He is be in step")属语法错误。
 严格只输出 JSON，不要解释或 markdown：
-{"results":[{"index":0,"valid":[0,2]}]}`;
+{"results":[{"index":0,"valid":[0,2],"answer_ok":true}]}`;
 
 async function checkClozeBatch(items, key) {
-  const user = "题目：\n" + JSON.stringify(items.map((x, i) => ({ index: x.index ?? i, prompt: x.prompt, choices: x.choices })));
-  const resp = await fetch(MIMO_ENDPOINT, {
-    method: "POST",
-    headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-    body: JSON.stringify({
-      model: MODEL,
-      messages: [{ role: "system", content: CLOZE_SYSTEM }, { role: "user", content: user }],
-      temperature: 0.2,
-      max_completion_tokens: 3000,
-      stream: false
-    })
-  });
-  if (!resp.ok) throw new Error("MiMo HTTP " + resp.status);
-  const content = (await resp.json()).choices?.[0]?.message?.content || "";
-  const match = content.match(/\{[\s\S]*\}/);
-  if (!match) return [];
-  try { const parsed = JSON.parse(match[0]); return Array.isArray(parsed.results) ? parsed.results : []; } catch { return []; }
+  const user = "题目：\n" + JSON.stringify(items.map((x, i) => ({ index: x.index ?? i, prompt: x.prompt, choices: x.choices, answer: x.answer })));
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      const resp = await fetch(MIMO_ENDPOINT, {
+        method: "POST",
+        headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: MODEL,
+          messages: [{ role: "system", content: CLOZE_SYSTEM }, { role: "user", content: user }],
+          temperature: 0.2,
+          max_completion_tokens: 3000,
+          stream: false
+        })
+      });
+      if (!resp.ok) throw new Error("MiMo HTTP " + resp.status);
+      const content = (await resp.json()).choices?.[0]?.message?.content || "";
+      const match = content.match(/\{[\s\S]*\}/);
+      if (!match) { if (attempt < 2) continue; return []; }
+      try {
+        const parsed = JSON.parse(match[0]);
+        return Array.isArray(parsed.results) ? parsed.results : [];
+      } catch { if (attempt < 2) continue; return []; }
+    } catch (e) {
+      if (attempt < 2) { await new Promise((r) => setTimeout(r, 1500)); continue; }
+      return [];
+    }
+  }
+  return [];
 }
 
 export default {

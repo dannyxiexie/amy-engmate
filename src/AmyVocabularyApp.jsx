@@ -149,22 +149,27 @@ async function gradeExam(exam, acceptedAnswers = {}) {
 // AI 不可用或没返回的题按非歧义保留，保证出题永远不卡住。
 async function filterClozeByAi(candidates, wantCount = 12) {
   if (!candidates?.length) return [];
-  let validMap = new Map();
+  const validMap = new Map();
+  const grammarBad = new Set();
   if (GRADING_API_URL) {
     try {
       const resp = await fetch(GRADING_API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json", ...(import.meta.env.VITE_APP_KEY ? { "X-App-Key": import.meta.env.VITE_APP_KEY } : {}) },
-        body: JSON.stringify({ cloze: candidates.map((c, i) => ({ index: i, prompt: c.prompt, choices: c.choices })) })
+        body: JSON.stringify({ cloze: candidates.map((c, i) => ({ index: i, prompt: c.prompt, choices: c.choices, answer: c.term })) })
       });
       if (resp.ok) {
         const data = await resp.json();
-        validMap = new Map((data.results || []).map((r) => [r.index, r.valid]));
+        for (const r of (data.results || [])) {
+          if (r.valid) validMap.set(r.index, r.valid);
+          if (r.answer_ok === false) grammarBad.add(r.index); // 正确答案填进去语法不通 → 题目有问题
+        }
       }
     } catch { /* AI 不可用时退化为不筛 */ }
   }
-  const indexed = candidates.map((c, i) => ({ c, i, amb: (validMap.get(i)?.length ?? 1) > 1 ? 1 : 0 }));
-  indexed.sort((a, b) => a.amb - b.amb || a.i - b.i);
+  // 优先级：语法OK且非歧义(0) > 语法OK但歧义(1) > 语法有问题(2，跳过)
+  const indexed = candidates.map((c, i) => ({ c, i, rank: grammarBad.has(i) ? 2 : ((validMap.get(i)?.length ?? 1) > 1 ? 1 : 0) }));
+  indexed.sort((a, b) => a.rank - b.rank || a.i - b.i);
   return indexed.slice(0, wantCount).map((x) => x.c);
 }
 
