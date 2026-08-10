@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "id": "post-1786357987348b9598ed592",
+  "metadataPath": "homework-posts/2026/08/post-1786357987348b9598ed592/post.json",
+  "imageFolder": "public/homework-images/2026/08/post-1786357987348b9598ed592",
+  "homeworkDate": "2026-08-10",
+  "description": "8月10日周一",
+  "images": [
+    {
+      "id": "image-1786357945081e9ddf348ae",
+      "title": "报纸",
+      "path": "public/homework-images/2026/08/post-1786357987348b9598ed592/image-1786357945081e9ddf348ae.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-1786357987348b9598ed592/image-1786357945081e9ddf348ae.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-1786357987348b9598ed592/image-1786357945081e9ddf348ae.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1596766,
+      "createdAt": "2026-08-10T10:33:07.672Z"
+    },
+    {
+      "id": "image-178635796247863761b91bf",
+      "title": "听力",
+      "path": "public/homework-images/2026/08/post-1786357987348b9598ed592/image-178635796247863761b91bf.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-1786357987348b9598ed592/image-178635796247863761b91bf.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-1786357987348b9598ed592/image-178635796247863761b91bf.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1513138,
+      "createdAt": "2026-08-10T10:33:07.950Z"
+    }
+  ],
+  "comments": [],
+  "confirmedAt": null,
+  "confirmedByDeviceId": null,
+  "createdAt": "2026-08-10T10:33:07.950Z",
+  "updatedAt": "2026-08-10T10:33:07.950Z",
+  "auditLog": [
+    {
+      "id": "audit-1786357987950b6471a3633",
+      "action": "create_post",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-10T10:33:07.950Z",
+      "details": {
+        "imageCount": 2
+      }
+    }
+  ]
+}
