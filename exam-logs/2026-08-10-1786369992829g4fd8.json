@@ -1826,8 +1826,9 @@
       },
       {
         "id": "s3-g24-i1",
-        "correct": false,
-        "answer": "两种动作"
+        "correct": true,
+        "answer": "两种动作",
+        "parentCorrected": true
       },
       {
         "id": "s3-g39-i1",
@@ -1856,8 +1857,9 @@
       },
       {
         "id": "s3-g11-i2",
-        "correct": false,
-        "answer": "一辆公共汽车来了。"
+        "correct": true,
+        "answer": "一辆公共汽车来了。",
+        "parentCorrected": true
       },
       {
         "id": "s3-g5-i1",
@@ -1936,8 +1938,9 @@
       },
       {
         "id": "s3-g31-i1",
-        "correct": false,
-        "answer": "让我给你展示一下"
+        "correct": true,
+        "answer": "让我给你展示一下",
+        "parentCorrected": true
       },
       {
         "id": "s3-g42-i1",
@@ -1951,8 +1954,9 @@
       },
       {
         "id": "s3-g10-i3",
-        "correct": false,
-        "answer": "跳跃"
+        "correct": true,
+        "answer": "跳跃",
+        "parentCorrected": true
       },
       {
         "id": "s3-g22-i1",
@@ -1976,8 +1980,9 @@
       },
       {
         "id": "s3-g19-i1",
-        "correct": false,
-        "answer": "获得奖品"
+        "correct": true,
+        "answer": "获得奖品",
+        "parentCorrected": true
       },
       {
         "id": "s3-g25-i1",
@@ -1991,8 +1996,9 @@
       },
       {
         "id": "s3-g23-i1",
-        "correct": false,
-        "answer": "风格"
+        "correct": true,
+        "answer": "风格",
+        "parentCorrected": true
       }
     ],
     "cloze": [
@@ -2045,9 +2051,49 @@
         "answer": "more than"
       }
     ],
-    "correct": 72,
+    "correct": 78,
     "total": 90,
-    "score": 80
+    "score": 87
   },
-  "gradingVersion": 5
+  "gradingVersion": 5,
+  "regradedAt": "2026-08-10T14:01:07.771Z",
+  "parentGradedAt": "2026-08-10T14:01:07.771Z",
+  "parentGraded": [
+    {
+      "id": "s3-g24-i1",
+      "term": "two kinds of actions",
+      "answer": "两种动作或者两种行动",
+      "displayNumber": "24"
+    },
+    {
+      "id": "s3-g11-i2",
+      "term": "Here comes a bus.",
+      "answer": "来了一辆公交车或者大巴车",
+      "displayNumber": "11-2"
+    },
+    {
+      "id": "s3-g31-i1",
+      "term": "let me show you",
+      "answer": "让我展示你",
+      "displayNumber": "31"
+    },
+    {
+      "id": "s3-g10-i3",
+      "term": "jump",
+      "answer": "跳跃可能是双脚跳",
+      "displayNumber": "10-3"
+    },
+    {
+      "id": "s3-g19-i1",
+      "term": "get a prize",
+      "answer": "得到一个奖品",
+      "displayNumber": "19"
+    },
+    {
+      "id": "s3-g23-i1",
+      "term": "style",
+      "answer": "风格或者作风",
+      "displayNumber": "23"
+    }
+  ]
 }
