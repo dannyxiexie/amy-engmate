@@ -1661,8 +1661,9 @@
       },
       {
         "id": "s2-g31-i1",
-        "correct": false,
-        "answer": "试一试"
+        "correct": true,
+        "answer": "试一试",
+        "parentCorrected": true
       },
       {
         "id": "s2-g9-i1",
@@ -1701,8 +1702,9 @@
       },
       {
         "id": "s2-g52-i3",
-        "correct": false,
-        "answer": "感到疲倦"
+        "correct": true,
+        "answer": "感到疲倦",
+        "parentCorrected": true
       },
       {
         "id": "s2-g18-i2",
@@ -1716,13 +1718,15 @@
       },
       {
         "id": "s2-g21-i1",
-        "correct": false,
-        "answer": "在生活中"
+        "correct": true,
+        "answer": "在生活中",
+        "parentCorrected": true
       },
       {
         "id": "s2-g40-i1",
-        "correct": false,
-        "answer": "高洁的植物"
+        "correct": true,
+        "answer": "高洁的植物",
+        "parentCorrected": true
       },
       {
         "id": "s2-g42-i1",
@@ -1756,8 +1760,9 @@
       },
       {
         "id": "s2-g2-i1",
-        "correct": false,
-        "answer": "加入这些社团很好"
+        "correct": true,
+        "answer": "加入这些社团很好",
+        "parentCorrected": true
       },
       {
         "id": "s2-g36-i3",
@@ -1766,13 +1771,15 @@
       },
       {
         "id": "s2-g12-i1",
-        "correct": false,
-        "answer": "这学期"
+        "correct": true,
+        "answer": "这学期",
+        "parentCorrected": true
       },
       {
         "id": "s2-g36-i2",
-        "correct": false,
-        "answer": "看起来不错"
+        "correct": true,
+        "answer": "看起来不错",
+        "parentCorrected": true
       },
       {
         "id": "s2-g27-i1",
@@ -1781,8 +1788,9 @@
       },
       {
         "id": "s2-g36-i5",
-        "correct": false,
-        "answer": "听起来很棒"
+        "correct": true,
+        "answer": "听起来很棒",
+        "parentCorrected": true
       },
       {
         "id": "s2-g55-i1",
@@ -1796,8 +1804,9 @@
       },
       {
         "id": "s2-g47-i2",
-        "correct": false,
-        "answer": "变得容易"
+        "correct": true,
+        "answer": "变得容易",
+        "parentCorrected": true
       },
       {
         "id": "s2-g52-i2",
@@ -1806,8 +1815,9 @@
       },
       {
         "id": "s2-g28-i1",
-        "correct": false,
-        "answer": "如何熟练使用……"
+        "correct": true,
+        "answer": "如何熟练使用……",
+        "parentCorrected": true
       },
       {
         "id": "s2-g59-i1",
@@ -1826,8 +1836,9 @@
       },
       {
         "id": "s2-g37-i1",
-        "correct": false,
-        "answer": "改变"
+        "correct": true,
+        "answer": "改变",
+        "parentCorrected": true
       },
       {
         "id": "s2-g18-i1",
@@ -1851,13 +1862,15 @@
       },
       {
         "id": "s2-g50-i1",
-        "correct": false,
-        "answer": "许多（可数）"
+        "correct": true,
+        "answer": "许多（可数）",
+        "parentCorrected": true
       },
       {
         "id": "s2-g23-i2",
-        "correct": false,
-        "answer": "绘画"
+        "correct": true,
+        "answer": "绘画",
+        "parentCorrected": true
       },
       {
         "id": "s2-g16-i2",
@@ -1931,13 +1944,15 @@
       },
       {
         "id": "s2-g50-i2",
-        "correct": false,
-        "answer": "很多（不可数）"
+        "correct": true,
+        "answer": "很多（不可数）",
+        "parentCorrected": true
       },
       {
         "id": "s2-g4-i1",
-        "correct": false,
-        "answer": "制作摄影旅行记录"
+        "correct": true,
+        "answer": "制作摄影旅行记录",
+        "parentCorrected": true
       },
       {
         "id": "s2-g13-i2",
@@ -1991,8 +2006,9 @@
       },
       {
         "id": "s2-g54-i1",
-        "correct": false,
-        "answer": "玩得开心"
+        "correct": true,
+        "answer": "玩得开心",
+        "parentCorrected": true
       },
       {
         "id": "s2-g47-i1",
@@ -2065,9 +2081,109 @@
         "answer": "plant some sunflowers"
       }
     ],
-    "correct": 70,
+    "correct": 86,
     "total": 91,
-    "score": 77
+    "score": 95
   },
-  "gradingVersion": 5
+  "gradingVersion": 5,
+  "regradedAt": "2026-08-11T13:56:06.453Z",
+  "parentGradedAt": "2026-08-11T13:56:06.453Z",
+  "parentGraded": [
+    {
+      "id": "s2-g31-i1",
+      "term": "give a try",
+      "answer": "尝试或者试一试",
+      "displayNumber": "31"
+    },
+    {
+      "id": "s2-g52-i3",
+      "term": "feel tired",
+      "answer": "感觉疲劳或者劳累",
+      "displayNumber": "52-3"
+    },
+    {
+      "id": "s2-g21-i1",
+      "term": "in life",
+      "answer": "在生命中或者在生活中",
+      "displayNumber": "21"
+    },
+    {
+      "id": "s2-g40-i1",
+      "term": "noble plants",
+      "answer": "高洁的植物在中国文化中指代梅兰竹菊四君子",
+      "displayNumber": "40"
+    },
+    {
+      "id": "s2-g2-i1",
+      "term": "good to join the clubs",
+      "answer": "参加俱乐部是好的",
+      "displayNumber": "2"
+    },
+    {
+      "id": "s2-g12-i1",
+      "term": "this term",
+      "answer": "这个学期",
+      "displayNumber": "12"
+    },
+    {
+      "id": "s2-g36-i2",
+      "term": "looks nice",
+      "answer": "看起来好好的",
+      "displayNumber": "36-2"
+    },
+    {
+      "id": "s2-g47-i2",
+      "term": "become easy",
+      "answer": "变得容易或者变得简单",
+      "displayNumber": "47-2"
+    },
+    {
+      "id": "s2-g36-i5",
+      "term": "sound great",
+      "answer": "听起来好",
+      "displayNumber": "36-5"
+    },
+    {
+      "id": "s2-g28-i1",
+      "term": "how to use ... well",
+      "answer": "怎样去熟练的使用…",
+      "displayNumber": "28"
+    },
+    {
+      "id": "s2-g37-i1",
+      "term": "change",
+      "answer": "改变或者变化",
+      "displayNumber": "37"
+    },
+    {
+      "id": "s2-g50-i1",
+      "term": "many",
+      "answer": "很多或者许多",
+      "displayNumber": "50-1"
+    },
+    {
+      "id": "s2-g23-i2",
+      "term": "painting",
+      "answer": "绘画或者涂色",
+      "displayNumber": "23-2"
+    },
+    {
+      "id": "s2-g50-i2",
+      "term": "much",
+      "answer": "许多或者很多",
+      "displayNumber": "50-2"
+    },
+    {
+      "id": "s2-g4-i1",
+      "term": "make a photo journey",
+      "answer": "制作或者开启场摄影旅行",
+      "displayNumber": "4"
+    },
+    {
+      "id": "s2-g54-i1",
+      "term": "have lots of fun",
+      "answer": "祝你玩得开心或者非常开心",
+      "displayNumber": "54"
+    }
+  ]
 }
