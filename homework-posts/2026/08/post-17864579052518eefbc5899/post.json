@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "id": "post-17864579052518eefbc5899",
+  "metadataPath": "homework-posts/2026/08/post-17864579052518eefbc5899/post.json",
+  "imageFolder": "public/homework-images/2026/08/post-17864579052518eefbc5899",
+  "homeworkDate": "2026-08-11",
+  "description": "8月10日周二",
+  "images": [
+    {
+      "id": "image-17864578433290cfc6ac8c4",
+      "title": "报纸",
+      "path": "public/homework-images/2026/08/post-17864579052518eefbc5899/image-17864578433290cfc6ac8c4.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-17864579052518eefbc5899/image-17864578433290cfc6ac8c4.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-17864579052518eefbc5899/image-17864578433290cfc6ac8c4.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1531985,
+      "createdAt": "2026-08-11T14:18:25.860Z"
+    },
+    {
+      "id": "image-1786457866981615cf077c4",
+      "title": "听力",
+      "path": "public/homework-images/2026/08/post-17864579052518eefbc5899/image-1786457866981615cf077c4.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-17864579052518eefbc5899/image-1786457866981615cf077c4.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-17864579052518eefbc5899/image-1786457866981615cf077c4.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1529871,
+      "createdAt": "2026-08-11T14:18:26.438Z"
+    },
+    {
+      "id": "image-1786457872804496c051d65",
+      "title": "听力",
+      "path": "public/homework-images/2026/08/post-17864579052518eefbc5899/image-1786457872804496c051d65.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-17864579052518eefbc5899/image-1786457872804496c051d65.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-17864579052518eefbc5899/image-1786457872804496c051d65.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1547875,
+      "createdAt": "2026-08-11T14:18:27.023Z"
+    },
+    {
+      "id": "image-1786457884162ae230f8e72",
+      "title": "每日作业",
+      "path": "public/homework-images/2026/08/post-17864579052518eefbc5899/image-1786457884162ae230f8e72.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-17864579052518eefbc5899/image-1786457884162ae230f8e72.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-17864579052518eefbc5899/image-1786457884162ae230f8e72.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1460125,
+      "createdAt": "2026-08-11T14:18:27.566Z"
+    }
+  ],
+  "comments": [],
+  "confirmedAt": null,
+  "confirmedByDeviceId": null,
+  "createdAt": "2026-08-11T14:18:27.566Z",
+  "updatedAt": "2026-08-11T14:18:27.566Z",
+  "auditLog": [
+    {
+      "id": "audit-1786457907566b5d6f3dfba",
+      "action": "create_post",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-11T14:18:27.566Z",
+      "details": {
+        "imageCount": 4
+      }
+    }
+  ]
+}
