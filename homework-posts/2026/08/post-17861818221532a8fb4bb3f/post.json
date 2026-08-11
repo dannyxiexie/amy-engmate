@@ -29,6 +29,18 @@
       "height": 801,
       "size": 1650305,
       "createdAt": "2026-08-08T09:37:02.773Z"
+    },
+    {
+      "id": "image-17864577492706f0e1b9503",
+      "title": "每日作业",
+      "path": "public/homework-images/2026/08/post-17861818221532a8fb4bb3f/image-17864577492706f0e1b9503.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-17861818221532a8fb4bb3f/image-17864577492706f0e1b9503.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-17861818221532a8fb4bb3f/image-17864577492706f0e1b9503.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1461531,
+      "createdAt": "2026-08-11T14:15:55.692Z"
     }
   ],
   "comments": [
@@ -50,7 +62,7 @@
   "confirmedAt": null,
   "confirmedByDeviceId": null,
   "createdAt": "2026-08-08T09:37:02.773Z",
-  "updatedAt": "2026-08-08T09:39:41.250Z",
+  "updatedAt": "2026-08-11T14:15:55.692Z",
   "auditLog": [
     {
       "id": "audit-1786181822773a2bca6af30",
@@ -79,6 +91,16 @@
       "details": {
         "targetType": "image",
         "targetId": "image-17861818066308b14c2f973"
+      }
+    },
+    {
+      "id": "audit-1786457755692ca72caadfc",
+      "action": "edit_post",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-11T14:15:55.692Z",
+      "details": {
+        "imageCount": 3,
+        "addedImages": 1
       }
     }
   ]
