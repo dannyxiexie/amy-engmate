@@ -1621,8 +1621,9 @@
       },
       {
         "id": "s3-g38-i1",
-        "correct": false,
-        "answer": "努力地；困难的"
+        "correct": true,
+        "answer": "努力地；困难的",
+        "parentCorrected": true
       },
       {
         "id": "s3-g45-i1",
@@ -1911,13 +1912,15 @@
       },
       {
         "id": "s3-g11-i2",
-        "correct": false,
-        "answer": "一辆公共汽车来了。"
+        "correct": true,
+        "answer": "一辆公共汽车来了。",
+        "parentCorrected": true
       },
       {
         "id": "s3-g52-i1",
-        "correct": false,
-        "answer": "遵守规则"
+        "correct": true,
+        "answer": "遵守规则",
+        "parentCorrected": true
       },
       {
         "id": "s3-g29-i1",
@@ -2045,9 +2048,31 @@
         "answer": "Many others"
       }
     ],
-    "correct": 77,
+    "correct": 80,
     "total": 90,
-    "score": 86
+    "score": 89
   },
-  "gradingVersion": 5
+  "gradingVersion": 5,
+  "regradedAt": "2026-08-12T00:28:28.275Z",
+  "parentGradedAt": "2026-08-12T00:28:28.275Z",
+  "parentGraded": [
+    {
+      "id": "s3-g52-i1",
+      "term": "follow the rule",
+      "answer": "遵守纪律或者遵守规则",
+      "displayNumber": "52"
+    },
+    {
+      "id": "s3-g11-i2",
+      "term": "Here comes a bus.",
+      "answer": "来了的一辆大巴车或者公交车",
+      "displayNumber": "11-2"
+    },
+    {
+      "id": "s3-g38-i1",
+      "term": "hard",
+      "answer": "硬的或者困难的",
+      "displayNumber": "38"
+    }
+  ]
 }
