@@ -1827,8 +1827,9 @@
       },
       {
         "id": "s3-g55-i1",
-        "correct": false,
-        "answer": "超过"
+        "correct": true,
+        "answer": "超过",
+        "parentCorrected": true
       },
       {
         "id": "s3-g46-i3",
@@ -1929,8 +1930,9 @@
       },
       {
         "id": "s3-g30-i1",
-        "correct": false,
-        "answer": "优秀的"
+        "correct": true,
+        "answer": "优秀的",
+        "parentCorrected": true
       },
       {
         "id": "s3-g31-i1",
@@ -2048,31 +2050,25 @@
         "answer": "Many others"
       }
     ],
-    "correct": 80,
+    "correct": 82,
     "total": 90,
-    "score": 89
+    "score": 91
   },
   "gradingVersion": 5,
-  "regradedAt": "2026-08-12T00:28:28.275Z",
-  "parentGradedAt": "2026-08-12T00:28:28.275Z",
+  "regradedAt": "2026-08-12T00:30:58.799Z",
+  "parentGradedAt": "2026-08-12T00:30:58.799Z",
   "parentGraded": [
     {
-      "id": "s3-g52-i1",
-      "term": "follow the rule",
-      "answer": "遵守纪律或者遵守规则",
-      "displayNumber": "52"
+      "id": "s3-g30-i1",
+      "term": "excellent",
+      "answer": "极好的或者特好的",
+      "displayNumber": "30"
     },
     {
-      "id": "s3-g11-i2",
-      "term": "Here comes a bus.",
-      "answer": "来了的一辆大巴车或者公交车",
-      "displayNumber": "11-2"
-    },
-    {
-      "id": "s3-g38-i1",
-      "term": "hard",
-      "answer": "硬的或者困难的",
-      "displayNumber": "38"
+      "id": "s3-g55-i1",
+      "term": "more than",
+      "answer": "更加或者比…更…",
+      "displayNumber": "55"
     }
   ]
 }
