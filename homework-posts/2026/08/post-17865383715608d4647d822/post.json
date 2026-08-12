@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "id": "post-17865383715608d4647d822",
+  "metadataPath": "homework-posts/2026/08/post-17865383715608d4647d822/post.json",
+  "imageFolder": "public/homework-images/2026/08/post-17865383715608d4647d822",
+  "homeworkDate": "2026-08-12",
+  "description": "8月12日，周三",
+  "images": [
+    {
+      "id": "image-178653827102347afd526b8",
+      "title": "报纸",
+      "path": "public/homework-images/2026/08/post-17865383715608d4647d822/image-178653827102347afd526b8.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-17865383715608d4647d822/image-178653827102347afd526b8.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-17865383715608d4647d822/image-178653827102347afd526b8.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1678407,
+      "createdAt": "2026-08-12T12:39:31.898Z"
+    },
+    {
+      "id": "image-17865383137380837eaa73d",
+      "title": "听力",
+      "path": "public/homework-images/2026/08/post-17865383715608d4647d822/image-17865383137380837eaa73d.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-17865383715608d4647d822/image-17865383137380837eaa73d.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-17865383715608d4647d822/image-17865383137380837eaa73d.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1511420,
+      "createdAt": "2026-08-12T12:39:32.171Z"
+    },
+    {
+      "id": "image-1786538352767810c8f1b2a",
+      "title": "每日作业",
+      "path": "public/homework-images/2026/08/post-17865383715608d4647d822/image-1786538352767810c8f1b2a.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-17865383715608d4647d822/image-1786538352767810c8f1b2a.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-17865383715608d4647d822/image-1786538352767810c8f1b2a.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1315949,
+      "createdAt": "2026-08-12T12:39:32.419Z"
+    }
+  ],
+  "comments": [],
+  "confirmedAt": null,
+  "confirmedByDeviceId": null,
+  "createdAt": "2026-08-12T12:39:32.419Z",
+  "updatedAt": "2026-08-12T12:39:32.419Z",
+  "auditLog": [
+    {
+      "id": "audit-1786538372419151c2cb563",
+      "action": "create_post",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-12T12:39:32.419Z",
+      "details": {
+        "imageCount": 3
+      }
+    }
+  ]
+}
