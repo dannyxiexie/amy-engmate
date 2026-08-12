@@ -1627,8 +1627,9 @@
     "meanings": [
       {
         "id": "s4-g26-i2",
-        "correct": false,
-        "answer": "多么可爱啊！"
+        "correct": true,
+        "answer": "多么可爱啊！",
+        "parentCorrected": true
       },
       {
         "id": "s4-g48-i1",
@@ -1637,13 +1638,15 @@
       },
       {
         "id": "s4-g55-i3",
-        "correct": false,
-        "answer": "大的"
+        "correct": true,
+        "answer": "大的",
+        "parentCorrected": true
       },
       {
         "id": "s4-g33-i1",
-        "correct": false,
-        "answer": "宽大的叶子"
+        "correct": true,
+        "answer": "宽大的叶子",
+        "parentCorrected": true
       },
       {
         "id": "s4-g3-i1",
@@ -1662,8 +1665,9 @@
       },
       {
         "id": "s4-g44-i1",
-        "correct": false,
-        "answer": "天气"
+        "correct": true,
+        "answer": "天气",
+        "parentCorrected": true
       },
       {
         "id": "s4-g1-i1",
@@ -1677,8 +1681,9 @@
       },
       {
         "id": "s4-g12-i1",
-        "correct": false,
-        "answer": "把……带到……处"
+        "correct": true,
+        "answer": "把……带到……处",
+        "parentCorrected": true
       },
       {
         "id": "s4-g8-i1",
@@ -1692,8 +1697,9 @@
       },
       {
         "id": "s4-g4-i1",
-        "correct": false,
-        "answer": "土壤"
+        "correct": true,
+        "answer": "土壤",
+        "parentCorrected": true
       },
       {
         "id": "s4-g38-i1",
@@ -1702,8 +1708,9 @@
       },
       {
         "id": "s4-g34-i2",
-        "correct": false,
-        "answer": "一把雨伞"
+        "correct": true,
+        "answer": "一把雨伞",
+        "parentCorrected": true
       },
       {
         "id": "s4-g22-i1",
@@ -1722,8 +1729,9 @@
       },
       {
         "id": "s4-g25-i1",
-        "correct": false,
-        "answer": "被叫做"
+        "correct": true,
+        "answer": "被叫做",
+        "parentCorrected": true
       },
       {
         "id": "s4-g14-i1",
@@ -1737,8 +1745,9 @@
       },
       {
         "id": "s4-g29-i1",
-        "correct": false,
-        "answer": "遍布墙面"
+        "correct": true,
+        "answer": "遍布墙面",
+        "parentCorrected": true
       },
       {
         "id": "s4-g28-i1",
@@ -1812,8 +1821,9 @@
       },
       {
         "id": "s4-g16-i1",
-        "correct": false,
-        "answer": "长成；变成"
+        "correct": true,
+        "answer": "长成；变成",
+        "parentCorrected": true
       },
       {
         "id": "s4-g6-i1",
@@ -1832,8 +1842,9 @@
       },
       {
         "id": "s4-g4-i2",
-        "correct": false,
-        "answer": "阳光"
+        "correct": true,
+        "answer": "阳光",
+        "parentCorrected": true
       },
       {
         "id": "s4-g49-i1",
@@ -2071,9 +2082,79 @@
         "answer": "creepers"
       }
     ],
-    "correct": 73,
+    "correct": 84,
     "total": 91,
-    "score": 80
+    "score": 92
   },
-  "gradingVersion": 5
+  "gradingVersion": 5,
+  "regradedAt": "2026-08-12T11:47:56.593Z",
+  "parentGradedAt": "2026-08-12T11:47:56.593Z",
+  "parentGraded": [
+    {
+      "id": "s4-g26-i2",
+      "term": "How cute!",
+      "answer": "多么可爱呀",
+      "displayNumber": "26-2"
+    },
+    {
+      "id": "s4-g55-i3",
+      "term": "large",
+      "answer": "巨大的或者大的",
+      "displayNumber": "55-3"
+    },
+    {
+      "id": "s4-g33-i1",
+      "term": "broad leaves",
+      "answer": "宽阔的叶子",
+      "displayNumber": "33"
+    },
+    {
+      "id": "s4-g44-i1",
+      "term": "weather",
+      "answer": "天气或者气候",
+      "displayNumber": "44"
+    },
+    {
+      "id": "s4-g12-i1",
+      "term": "bring ... to ...",
+      "answer": "带来…to…",
+      "displayNumber": "12"
+    },
+    {
+      "id": "s4-g4-i1",
+      "term": "soil",
+      "answer": "土地",
+      "displayNumber": "4-1"
+    },
+    {
+      "id": "s4-g34-i2",
+      "term": "an umbrella",
+      "answer": "一把伞",
+      "displayNumber": "34-2"
+    },
+    {
+      "id": "s4-g25-i1",
+      "term": "be called",
+      "answer": "被称为…或者誉为…",
+      "displayNumber": "25"
+    },
+    {
+      "id": "s4-g29-i1",
+      "term": "all over the wall",
+      "answer": "吸附这个墙或者到处都是墙",
+      "displayNumber": "29"
+    },
+    {
+      "id": "s4-g16-i1",
+      "term": "grow into",
+      "answer": "长成或者变成",
+      "displayNumber": "16"
+    },
+    {
+      "id": "s4-g4-i2",
+      "term": "sunlight",
+      "answer": "自然光或者太阳光",
+      "displayNumber": "4-2"
+    }
+  ]
 }
