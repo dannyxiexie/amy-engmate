@@ -1,0 +1,2632 @@
+{
+  "id": "1786709950956r7g3e",
+  "completedAt": "2026-08-14T12:19:10.956Z",
+  "session": 8,
+  "elapsed": 4710,
+  "exam": {
+    "meanings": [
+      {
+        "term": "was thinking about",
+        "meaningZh": "过去正在考虑",
+        "acceptedMeaningsZh": [
+          "过去正在考虑",
+          "那时正想着"
+        ],
+        "example": "He was thinking about his future.",
+        "exampleZh": "他当时在思考他的未来。",
+        "relation": "inflection",
+        "id": "s8-g15-i3",
+        "sourceGroupId": "s8-g15",
+        "session": 8,
+        "teacherNumber": "15",
+        "displayNumber": "15-3",
+        "answer": "过去再思考关于"
+      },
+      {
+        "term": "fall",
+        "meaningZh": "落下",
+        "acceptedMeaningsZh": [
+          "落下",
+          "掉下"
+        ],
+        "example": "The leaves fall in autumn.",
+        "exampleZh": "树叶在秋天飘落。",
+        "relation": "single",
+        "id": "s8-g17-i1",
+        "sourceGroupId": "s8-g17",
+        "session": 8,
+        "teacherNumber": "17",
+        "displayNumber": "17-1",
+        "answer": "秋天或者落下"
+      },
+      {
+        "term": "rocket",
+        "meaningZh": "火箭",
+        "acceptedMeaningsZh": [
+          "火箭",
+          "太空飞船"
+        ],
+        "example": "A rocket flies into space.",
+        "exampleZh": "这是一枚飞向太空的火箭。",
+        "relation": "single",
+        "id": "s8-g21-i1",
+        "sourceGroupId": "s8-g21",
+        "session": 8,
+        "teacherNumber": "21",
+        "displayNumber": "21",
+        "answer": "火箭"
+      },
+      {
+        "term": "that",
+        "meaningZh": "那个",
+        "acceptedMeaningsZh": [
+          "那个",
+          "那（单数）"
+        ],
+        "example": "That is a cat.",
+        "exampleZh": "那是只猫。",
+        "relation": "single",
+        "id": "s8-g9-i3",
+        "sourceGroupId": "s8-g9",
+        "session": 8,
+        "teacherNumber": "9",
+        "displayNumber": "9-3",
+        "answer": "那个"
+      },
+      {
+        "term": "be known for",
+        "meaningZh": "因...而闻名于世的",
+        "acceptedMeaningsZh": [
+          "因...而闻名于世的"
+        ],
+        "example": "Beijing is known for its history.",
+        "exampleZh": "北京因其历史而闻名于世。",
+        "relation": "phrase-alternative",
+        "id": "s8-g5-i3",
+        "sourceGroupId": "s8-g5",
+        "session": 8,
+        "teacherNumber": "5",
+        "displayNumber": "5-3",
+        "answer": "众所周知"
+      },
+      {
+        "term": "want to be ...",
+        "meaningZh": "想成为...",
+        "acceptedMeaningsZh": [
+          "想成为..."
+        ],
+        "example": "I want to be a doctor.",
+        "exampleZh": "我想成为一名医生。",
+        "relation": "pattern",
+        "id": "s8-g24-i1",
+        "sourceGroupId": "s8-g24",
+        "session": 8,
+        "teacherNumber": "24",
+        "displayNumber": "24",
+        "answer": "想要…"
+      },
+      {
+        "term": "research",
+        "meaningZh": "研究",
+        "acceptedMeaningsZh": [
+          "研究",
+          "调查"
+        ],
+        "example": "They did research on animals.",
+        "exampleZh": "他们研究了动物。",
+        "relation": "single",
+        "id": "s8-g35-i1",
+        "sourceGroupId": "s8-g35",
+        "session": 8,
+        "teacherNumber": "35",
+        "displayNumber": "35-1",
+        "answer": "研究"
+      },
+      {
+        "term": "universe",
+        "meaningZh": "宇宙",
+        "acceptedMeaningsZh": [
+          "宇宙",
+          "世界"
+        ],
+        "example": "The universe is vast.",
+        "exampleZh": "这个宇宙很广阔。",
+        "relation": "single",
+        "id": "s8-g16-i1",
+        "sourceGroupId": "s8-g16",
+        "session": 8,
+        "teacherNumber": "16",
+        "displayNumber": "16",
+        "answer": "万物"
+      },
+      {
+        "term": "will",
+        "meaningZh": "将要",
+        "acceptedMeaningsZh": [
+          "将要",
+          "表示将来时态的助动词"
+        ],
+        "example": "He will come tomorrow.",
+        "exampleZh": "他明天会来。",
+        "relation": "pattern",
+        "id": "s8-g28-i1",
+        "sourceGroupId": "s8-g28",
+        "session": 8,
+        "teacherNumber": "28",
+        "displayNumber": "28",
+        "answer": "将要"
+      },
+      {
+        "term": "nationality",
+        "meaningZh": "国籍",
+        "acceptedMeaningsZh": [
+          "国籍",
+          "国民身份"
+        ],
+        "example": "She has British nationality.",
+        "exampleZh": "她有英国国籍。",
+        "relation": "synonym",
+        "id": "s8-g53-i2",
+        "sourceGroupId": "s8-g53",
+        "session": 8,
+        "teacherNumber": "53",
+        "displayNumber": "53-2",
+        "answer": "国籍"
+      },
+      {
+        "term": "save (rescue",
+        "meaningZh": "保存（救援）",
+        "acceptedMeaningsZh": [
+          "保存（救援）"
+        ],
+        "example": "Save your work first.",
+        "exampleZh": "先保存你的工作。",
+        "relation": "single",
+        "id": "s8-g58-i1",
+        "sourceGroupId": "s8-g58",
+        "session": 8,
+        "teacherNumber": "58",
+        "displayNumber": "58-1",
+        "answer": "拯救"
+      },
+      {
+        "term": "hard-working",
+        "meaningZh": "勤劳的",
+        "acceptedMeaningsZh": [
+          "勤劳的",
+          "努力工作的"
+        ],
+        "example": "He is a hard-working student.",
+        "exampleZh": "他是一名勤奋的学生。",
+        "relation": "single",
+        "id": "s8-g6-i1",
+        "sourceGroupId": "s8-g6",
+        "session": 8,
+        "teacherNumber": "6",
+        "displayNumber": "6-1",
+        "answer": "努力工作的"
+      },
+      {
+        "term": "music",
+        "meaningZh": "音乐",
+        "acceptedMeaningsZh": [
+          "音乐",
+          "乐曲"
+        ],
+        "example": "Listen to the music.",
+        "exampleZh": "听这音乐吧。",
+        "relation": "single",
+        "id": "s8-g57-i2",
+        "sourceGroupId": "s8-g57",
+        "session": 8,
+        "teacherNumber": "57",
+        "displayNumber": "57-2",
+        "answer": "音乐"
+      },
+      {
+        "term": "famous",
+        "meaningZh": "著名的",
+        "acceptedMeaningsZh": [
+          "著名的",
+          "有名的"
+        ],
+        "example": "He is a famous scientist.",
+        "exampleZh": "他是一位著名的科学家。",
+        "relation": "single",
+        "id": "s8-g3-i1",
+        "sourceGroupId": "s8-g3",
+        "session": 8,
+        "teacherNumber": "3",
+        "displayNumber": "3-1",
+        "answer": "著名的"
+      },
+      {
+        "term": "transition",
+        "meaningZh": "过渡",
+        "acceptedMeaningsZh": [
+          "过渡",
+          "转换"
+        ],
+        "example": "A smooth transition.",
+        "exampleZh": "一个平滑的过渡。",
+        "relation": "single",
+        "id": "s8-g57-i3",
+        "sourceGroupId": "s8-g57",
+        "session": 8,
+        "teacherNumber": "57",
+        "displayNumber": "57-3",
+        "answer": "转换"
+      },
+      {
+        "term": "the deaf",
+        "meaningZh": "听障者",
+        "acceptedMeaningsZh": [
+          "听障者",
+          "聋人"
+        ],
+        "example": "He is the deaf.",
+        "exampleZh": "他是听障人士。",
+        "relation": "single",
+        "id": "s8-g46-i1",
+        "sourceGroupId": "s8-g46",
+        "session": 8,
+        "teacherNumber": "46",
+        "displayNumber": "46",
+        "answer": "聋人"
+      },
+      {
+        "term": "come true",
+        "meaningZh": "实现",
+        "acceptedMeaningsZh": [
+          "实现",
+          "成真"
+        ],
+        "example": "The dream came true.",
+        "exampleZh": "这个梦想实现了。",
+        "relation": "single",
+        "id": "s8-g29-i1",
+        "sourceGroupId": "s8-g29",
+        "session": 8,
+        "teacherNumber": "29",
+        "displayNumber": "29",
+        "answer": "实现"
+      },
+      {
+        "term": "in the 1980s",
+        "meaningZh": "在二十世纪八十年代",
+        "acceptedMeaningsZh": [
+          "在二十世纪八十年代"
+        ],
+        "example": "Many changes happened in the 1980s.",
+        "exampleZh": "许多变化发生在二十世纪八十年代。",
+        "relation": "single",
+        "id": "s8-g32-i1",
+        "sourceGroupId": "s8-g32",
+        "session": 8,
+        "teacherNumber": "32",
+        "displayNumber": "32",
+        "answer": "在1980年"
+      },
+      {
+        "term": "sugar pill",
+        "meaningZh": "药丸",
+        "acceptedMeaningsZh": [
+          "药丸",
+          "糖果片剂（比喻）"
+        ],
+        "example": "Take this sugar pill every day.",
+        "exampleZh": "每天服用这种药片。",
+        "relation": "phrase-alternative",
+        "id": "s8-g47-i2",
+        "sourceGroupId": "s8-g47",
+        "session": 8,
+        "teacherNumber": "47",
+        "displayNumber": "47-2",
+        "answer": "糖丸"
+      },
+      {
+        "term": "think about",
+        "meaningZh": "考虑",
+        "acceptedMeaningsZh": [
+          "考虑",
+          "思考"
+        ],
+        "example": "I think about my homework.",
+        "exampleZh": "我考虑我的作业。",
+        "relation": "pattern",
+        "id": "s8-g15-i1",
+        "sourceGroupId": "s8-g15",
+        "session": 8,
+        "teacherNumber": "15",
+        "displayNumber": "15-1",
+        "answer": "觉得关于"
+      },
+      {
+        "term": "be short of food",
+        "meaningZh": "缺少食物",
+        "acceptedMeaningsZh": [
+          "缺少食物",
+          "没有吃的东西"
+        ],
+        "example": "They are be short of food.",
+        "exampleZh": "他们缺吃食。",
+        "relation": "phrase-alternative",
+        "id": "s8-g33-i1",
+        "sourceGroupId": "s8-g33",
+        "session": 8,
+        "teacherNumber": "33",
+        "displayNumber": "33",
+        "answer": "食物短缺"
+      },
+      {
+        "term": "practice",
+        "meaningZh": "练习",
+        "acceptedMeaningsZh": [
+          "练习",
+          "实践"
+        ],
+        "example": "We need to practice English every day.",
+        "exampleZh": "我们需要每天练习英语。",
+        "relation": "single",
+        "id": "s8-g42-i1",
+        "sourceGroupId": "s8-g42",
+        "session": 8,
+        "teacherNumber": "42",
+        "displayNumber": "42-1",
+        "answer": "练习"
+      },
+      {
+        "term": "began",
+        "meaningZh": "过去式：开始",
+        "acceptedMeaningsZh": [
+          "过去式：开始",
+          "发起过"
+        ],
+        "example": "She began to sing at once.",
+        "exampleZh": "她立刻就开始唱歌了。",
+        "relation": "inflection",
+        "id": "s8-g34-i2",
+        "sourceGroupId": "s8-g34",
+        "session": 8,
+        "teacherNumber": "34",
+        "displayNumber": "34-2",
+        "answer": "开始的过去式"
+      },
+      {
+        "term": "was born in + place",
+        "meaningZh": "出生于某地",
+        "acceptedMeaningsZh": [
+          "出生于某地"
+        ],
+        "example": "She was born in Beijing.",
+        "exampleZh": "她出生在北京。",
+        "relation": "pattern",
+        "id": "s8-g31-i1",
+        "sourceGroupId": "s8-g31",
+        "session": 8,
+        "teacherNumber": "31",
+        "displayNumber": "31",
+        "answer": "出生在加上地点"
+      },
+      {
+        "term": "invent",
+        "meaningZh": "发明",
+        "acceptedMeaningsZh": [
+          "发明",
+          "创造"
+        ],
+        "example": "She can invent new games.",
+        "exampleZh": "她能发明新的游戏。",
+        "relation": "single",
+        "id": "s8-g40-i1",
+        "sourceGroupId": "s8-g40",
+        "session": 8,
+        "teacherNumber": "40",
+        "displayNumber": "40-1",
+        "answer": "发明"
+      },
+      {
+        "term": "think",
+        "meaningZh": "思考",
+        "acceptedMeaningsZh": [
+          "思考",
+          "认为"
+        ],
+        "example": "I think it is true.",
+        "exampleZh": "我认为这是真的。",
+        "relation": "single",
+        "id": "s8-g18-i1",
+        "sourceGroupId": "s8-g18",
+        "session": 8,
+        "teacherNumber": "18",
+        "displayNumber": "18-1",
+        "answer": "想法或建议"
+      },
+      {
+        "term": "dream",
+        "meaningZh": "做梦",
+        "acceptedMeaningsZh": [
+          "做梦",
+          "梦想"
+        ],
+        "example": "I have a big dream.",
+        "exampleZh": "我有一个大梦想。",
+        "relation": "single",
+        "id": "s8-g27-i1",
+        "sourceGroupId": "s8-g27",
+        "session": 8,
+        "teacherNumber": "27",
+        "displayNumber": "27",
+        "answer": "梦"
+      },
+      {
+        "term": "do research",
+        "meaningZh": "做研究",
+        "acceptedMeaningsZh": [
+          "做研究",
+          "进行研究"
+        ],
+        "example": "We need to do more research.",
+        "exampleZh": "我们需要多做些研究。",
+        "relation": "phrase-alternative",
+        "id": "s8-g35-i2",
+        "sourceGroupId": "s8-g35",
+        "session": 8,
+        "teacherNumber": "35",
+        "displayNumber": "35-2",
+        "answer": "研究"
+      },
+      {
+        "term": "polio",
+        "meaningZh": "小儿麻痹症",
+        "acceptedMeaningsZh": [
+          "小儿麻痹症",
+          "脊髓灰质炎"
+        ],
+        "example": "Polio is a serious childhood disease.",
+        "exampleZh": "小儿麻痹症是一种严重的儿童疾病。",
+        "relation": "single",
+        "id": "s8-g52-i1",
+        "sourceGroupId": "s8-g52",
+        "session": 8,
+        "teacherNumber": "52",
+        "displayNumber": "52",
+        "answer": "小儿麻痹症"
+      },
+      {
+        "term": "is thinking about",
+        "meaningZh": "正在考虑",
+        "acceptedMeaningsZh": [
+          "正在考虑",
+          "正想着"
+        ],
+        "example": "She is thinking about the trip.",
+        "exampleZh": "她正在计划这次旅行。",
+        "relation": "inflection",
+        "id": "s8-g15-i2",
+        "sourceGroupId": "s8-g15",
+        "session": 8,
+        "teacherNumber": "15",
+        "displayNumber": "15-2",
+        "answer": "正在思考关于"
+      },
+      {
+        "term": "interesting",
+        "meaningZh": "有趣的",
+        "acceptedMeaningsZh": [
+          "有趣的",
+          "令人感兴趣的"
+        ],
+        "example": "This book is interesting.",
+        "exampleZh": "这项书很有趣。",
+        "relation": "single",
+        "id": "s8-g25-i1",
+        "sourceGroupId": "s8-g25",
+        "session": 8,
+        "teacherNumber": "25",
+        "displayNumber": "25-1",
+        "answer": "有意思的"
+      },
+      {
+        "term": "fed",
+        "meaningZh": "过去式：已喂过",
+        "acceptedMeaningsZh": [
+          "过去式：已喂过",
+          "曾喂过"
+        ],
+        "example": "I fed the cat last night.",
+        "exampleZh": "我昨晚喂了猫。",
+        "relation": "inflection",
+        "id": "s8-g36-i2",
+        "sourceGroupId": "s8-g36",
+        "session": 8,
+        "teacherNumber": "36",
+        "displayNumber": "36-2",
+        "answer": "喂养"
+      },
+      {
+        "term": "these",
+        "meaningZh": "这些",
+        "acceptedMeaningsZh": [
+          "这些",
+          "这些（复数）"
+        ],
+        "example": "These are my books.",
+        "exampleZh": "这些都是我的书。",
+        "relation": "list",
+        "id": "s8-g9-i2",
+        "sourceGroupId": "s8-g9",
+        "session": 8,
+        "teacherNumber": "9",
+        "displayNumber": "9-2",
+        "answer": "这些"
+      },
+      {
+        "term": "lives",
+        "meaningZh": "生命们（复数）",
+        "acceptedMeaningsZh": [
+          "生命们（复数）",
+          "生活们（复数）"
+        ],
+        "example": "Many people live here.",
+        "exampleZh": "许多人住在这里。",
+        "relation": "inflection",
+        "id": "s8-g14-i2",
+        "sourceGroupId": "s8-g14",
+        "session": 8,
+        "teacherNumber": "14",
+        "displayNumber": "14-2",
+        "answer": "居住"
+      },
+      {
+        "term": "discover",
+        "meaningZh": "发现",
+        "acceptedMeaningsZh": [
+          "发现"
+        ],
+        "example": "They discovered the treasure.",
+        "exampleZh": "他们发现了宝藏。",
+        "relation": "single",
+        "id": "s8-g12-i1",
+        "sourceGroupId": "s8-g12",
+        "session": 8,
+        "teacherNumber": "12",
+        "displayNumber": "12-1",
+        "answer": "查明"
+      },
+      {
+        "term": "those",
+        "meaningZh": "那些",
+        "acceptedMeaningsZh": [
+          "那些",
+          "那些（复数）"
+        ],
+        "example": "Those are cats.",
+        "exampleZh": "那些是猫。",
+        "relation": "list",
+        "id": "s8-g9-i4",
+        "sourceGroupId": "s8-g9",
+        "session": 8,
+        "teacherNumber": "9",
+        "displayNumber": "9-4",
+        "answer": "那些"
+      },
+      {
+        "term": "win",
+        "meaningZh": "赢",
+        "acceptedMeaningsZh": [
+          "赢",
+          "获胜"
+        ],
+        "example": "We will win the game.",
+        "exampleZh": "我们将赢得比赛。",
+        "relation": "single",
+        "id": "s8-g11-i1",
+        "sourceGroupId": "s8-g11",
+        "session": 8,
+        "teacherNumber": "11",
+        "displayNumber": "11-1",
+        "answer": "赢"
+      },
+      {
+        "term": "the world's",
+        "meaningZh": "这个世界的",
+        "acceptedMeaningsZh": [
+          "这个世界的",
+          "属于全世界的"
+        ],
+        "example": "This is the world's history.",
+        "exampleZh": "这个是属于全世界历史的。",
+        "relation": "single",
+        "id": "s8-g41-i1",
+        "sourceGroupId": "s8-g41",
+        "session": 8,
+        "teacherNumber": "41",
+        "displayNumber": "41",
+        "answer": "这单词"
+      },
+      {
+        "term": "explore",
+        "meaningZh": "探索",
+        "acceptedMeaningsZh": [
+          "探索",
+          "探险"
+        ],
+        "example": "We want to explore the forest.",
+        "exampleZh": "我们想探索森林。",
+        "relation": "single",
+        "id": "s8-g2-i1",
+        "sourceGroupId": "s8-g2",
+        "session": 8,
+        "teacherNumber": "2",
+        "displayNumber": "2-1",
+        "answer": "探查（动词）"
+      },
+      {
+        "term": "exploration",
+        "meaningZh": "探险活动",
+        "acceptedMeaningsZh": [
+          "探险活动",
+          "考察"
+        ],
+        "example": "The exploration took three days.",
+        "exampleZh": "这次探险花了三天时间。",
+        "relation": "word-family",
+        "id": "s8-g2-i2",
+        "sourceGroupId": "s8-g2",
+        "session": 8,
+        "teacherNumber": "2",
+        "displayNumber": "2-2",
+        "answer": "探索（名词）"
+      },
+      {
+        "term": "discovered",
+        "meaningZh": "已发现的",
+        "acceptedMeaningsZh": [
+          "已发现的",
+          "被发现了的"
+        ],
+        "example": "He has discovered a new star.",
+        "exampleZh": "他发现了一颗新星。",
+        "relation": "inflection",
+        "id": "s8-g12-i2",
+        "sourceGroupId": "s8-g12",
+        "session": 8,
+        "teacherNumber": "12",
+        "displayNumber": "12-2",
+        "answer": "发现的"
+      },
+      {
+        "term": "winner",
+        "meaningZh": "赢家",
+        "acceptedMeaningsZh": [
+          "赢家",
+          "胜利者"
+        ],
+        "example": "He is a winner.",
+        "exampleZh": "他是一个赢家。",
+        "relation": "word-family",
+        "id": "s8-g11-i2",
+        "sourceGroupId": "s8-g11",
+        "session": 8,
+        "teacherNumber": "11",
+        "displayNumber": "11-2",
+        "answer": "胜利者"
+      },
+      {
+        "term": "human being",
+        "meaningZh": "人",
+        "acceptedMeaningsZh": [
+          "人",
+          "生物体"
+        ],
+        "example": "A human being is special.",
+        "exampleZh": "一个生命个体是特殊的。",
+        "relation": "synonym",
+        "id": "s8-g8-i3",
+        "sourceGroupId": "s8-g8",
+        "session": 8,
+        "teacherNumber": "8",
+        "displayNumber": "8-3",
+        "answer": "人类"
+      },
+      {
+        "term": "scientist",
+        "meaningZh": "科学家",
+        "acceptedMeaningsZh": [
+          "科学家",
+          "科研人员"
+        ],
+        "example": "He is a scientist.",
+        "exampleZh": "他是一名科学家。",
+        "relation": "single",
+        "id": "s8-g1-i2",
+        "sourceGroupId": "s8-g1",
+        "session": 8,
+        "teacherNumber": "1",
+        "displayNumber": "1-2",
+        "answer": "科学家"
+      },
+      {
+        "term": "saved",
+        "meaningZh": "已保存的",
+        "acceptedMeaningsZh": [
+          "已保存的",
+          "被保存的"
+        ],
+        "example": "The document is saved.",
+        "exampleZh": "这份文档已被保存了。",
+        "relation": "inflection",
+        "id": "s8-g13-i2",
+        "sourceGroupId": "s8-g13",
+        "session": 8,
+        "teacherNumber": "13",
+        "displayNumber": "13-2",
+        "answer": "储存或者挽救"
+      },
+      {
+        "term": "media",
+        "meaningZh": "媒体",
+        "acceptedMeaningsZh": [
+          "媒体",
+          "媒介"
+        ],
+        "example": "The media reported the news.",
+        "exampleZh": "这份新闻由媒体报道。",
+        "relation": "single",
+        "id": "s8-g55-i1",
+        "sourceGroupId": "s8-g55",
+        "session": 8,
+        "teacherNumber": "55",
+        "displayNumber": "55",
+        "answer": "大众传媒"
+      },
+      {
+        "term": "reason",
+        "meaningZh": "原因",
+        "acceptedMeaningsZh": [
+          "原因",
+          "理由"
+        ],
+        "example": "He asked for a reason.",
+        "exampleZh": "他问了一个原因。",
+        "relation": "single",
+        "id": "s8-g19-i1",
+        "sourceGroupId": "s8-g19",
+        "session": 8,
+        "teacherNumber": "19",
+        "displayNumber": "19",
+        "answer": "原因或者理由"
+      },
+      {
+        "term": "space",
+        "meaningZh": "太空",
+        "acceptedMeaningsZh": [
+          "太空",
+          "空间"
+        ],
+        "example": "We live in space.",
+        "exampleZh": "我们生活在太空中。",
+        "relation": "single",
+        "id": "s8-g23-i1",
+        "sourceGroupId": "s8-g23",
+        "session": 8,
+        "teacherNumber": "23",
+        "displayNumber": "23-1",
+        "answer": "空间或者差距"
+      },
+      {
+        "term": "like him",
+        "meaningZh": "喜欢他",
+        "acceptedMeaningsZh": [
+          "喜欢他",
+          "喜爱他"
+        ],
+        "example": "I like my brother.",
+        "exampleZh": "我喜欢我的哥哥。",
+        "relation": "single",
+        "id": "s8-g26-i1",
+        "sourceGroupId": "s8-g26",
+        "session": 8,
+        "teacherNumber": "26",
+        "displayNumber": "26-1",
+        "answer": "像他或者喜欢他"
+      },
+      {
+        "term": "slide show",
+        "meaningZh": "幻灯片演示",
+        "acceptedMeaningsZh": [
+          "幻灯片演示"
+        ],
+        "example": "Watch the slide show.",
+        "exampleZh": "看这幻灯片吧。",
+        "relation": "phrase-alternative",
+        "id": "s8-g57-i5",
+        "sourceGroupId": "s8-g57",
+        "session": 8,
+        "teacherNumber": "57",
+        "displayNumber": "57-5",
+        "answer": "幻灯片放映"
+      },
+      {
+        "term": "sugar",
+        "meaningZh": "糖",
+        "acceptedMeaningsZh": [
+          "糖",
+          "砂糖"
+        ],
+        "example": "I like to eat sugar.",
+        "exampleZh": "我喜欢吃糖。",
+        "relation": "single",
+        "id": "s8-g47-i1",
+        "sourceGroupId": "s8-g47",
+        "session": 8,
+        "teacherNumber": "47",
+        "displayNumber": "47-1",
+        "answer": "糖"
+      },
+      {
+        "term": "do research",
+        "meaningZh": "做研究",
+        "acceptedMeaningsZh": [
+          "做研究",
+          "进行研究"
+        ],
+        "example": "We need to do more research on this issue.",
+        "exampleZh": "我们需要在这个问题上再做更多研究。",
+        "relation": "phrase-alternative",
+        "id": "s8-g43-i2",
+        "sourceGroupId": "s8-g43",
+        "session": 8,
+        "teacherNumber": "43",
+        "displayNumber": "43-2",
+        "answer": "做研究"
+      },
+      {
+        "term": "famous scientist",
+        "meaningZh": "著名科学家",
+        "acceptedMeaningsZh": [
+          "著名科学家",
+          "知名学者"
+        ],
+        "example": "She is a famous scientist in China.",
+        "exampleZh": "她是中国一位著名的科学家。",
+        "relation": "phrase-alternative",
+        "id": "s8-g3-i2",
+        "sourceGroupId": "s8-g3",
+        "session": 8,
+        "teacherNumber": "3",
+        "displayNumber": "3-2",
+        "answer": "著名的科学家"
+      },
+      {
+        "term": "discovery",
+        "meaningZh": "发现物",
+        "acceptedMeaningsZh": [
+          "发现物",
+          "新事物"
+        ],
+        "example": "The discovery was amazing.",
+        "exampleZh": "这个发现令人惊叹。",
+        "relation": "word-family",
+        "id": "s8-g4-i2",
+        "sourceGroupId": "s8-g4",
+        "session": 8,
+        "teacherNumber": "4",
+        "displayNumber": "4-2",
+        "answer": "发现"
+      },
+      {
+        "term": "many techniques",
+        "meaningZh": "多种技巧",
+        "acceptedMeaningsZh": [
+          "多种技巧",
+          "诸多方法"
+        ],
+        "example": "There are many different techniques here.",
+        "exampleZh": "这里有多种不同的技巧。",
+        "relation": "phrase-alternative",
+        "id": "s8-g45-i3",
+        "sourceGroupId": "s8-g45",
+        "session": 8,
+        "teacherNumber": "45",
+        "displayNumber": "45-3",
+        "answer": "许多技术"
+      },
+      {
+        "term": "insert",
+        "meaningZh": "插入",
+        "acceptedMeaningsZh": [
+          "插入",
+          "放进"
+        ],
+        "example": "Please insert the card here.",
+        "exampleZh": "请把卡片插在这里。",
+        "relation": "single",
+        "id": "s8-g54-i1",
+        "sourceGroupId": "s8-g54",
+        "session": 8,
+        "teacherNumber": "54",
+        "displayNumber": "54",
+        "answer": "插入"
+      },
+      {
+        "term": "Beijing is known for the Great Wall",
+        "meaningZh": "北京以长城闻名",
+        "acceptedMeaningsZh": [
+          "北京以长城闻名"
+        ],
+        "example": "Beijing is known for the Great Wall.",
+        "exampleZh": "北京以长城闻名。",
+        "relation": "pattern",
+        "id": "s8-g5-i4",
+        "sourceGroupId": "s8-g5",
+        "session": 8,
+        "teacherNumber": "5",
+        "displayNumber": "5-4",
+        "answer": "以北京为长城的名著"
+      },
+      {
+        "term": "practical",
+        "meaningZh": "实用的",
+        "acceptedMeaningsZh": [
+          "实用的",
+          "实际的"
+        ],
+        "example": "A practical solution is needed here.",
+        "exampleZh": "这里需要一个实用的解决方案。",
+        "relation": "single",
+        "id": "s8-g42-i2",
+        "sourceGroupId": "s8-g42",
+        "session": 8,
+        "teacherNumber": "42",
+        "displayNumber": "42-2",
+        "answer": "实际的"
+      },
+      {
+        "term": "be interested in",
+        "meaningZh": "对……感兴趣",
+        "acceptedMeaningsZh": [
+          "对……感兴趣",
+          "对……有兴趣"
+        ],
+        "example": "She is interested in music.",
+        "exampleZh": "她对音乐感兴趣。",
+        "relation": "phrase-alternative",
+        "id": "s8-g25-i3",
+        "sourceGroupId": "s8-g25",
+        "session": 8,
+        "teacherNumber": "25",
+        "displayNumber": "25-3",
+        "answer": "感兴趣"
+      },
+      {
+        "term": "discover",
+        "meaningZh": "发现",
+        "acceptedMeaningsZh": [
+          "发现",
+          "发觉"
+        ],
+        "example": "They discovered the secret.",
+        "exampleZh": "他们发现了秘密。",
+        "relation": "single",
+        "id": "s8-g4-i1",
+        "sourceGroupId": "s8-g4",
+        "session": 8,
+        "teacherNumber": "4",
+        "displayNumber": "4-1",
+        "answer": "查明"
+      },
+      {
+        "term": "nation",
+        "meaningZh": "国家",
+        "acceptedMeaningsZh": [
+          "国家",
+          "民族"
+        ],
+        "example": "The United States is a nation.",
+        "exampleZh": "这个美国是一个国家。",
+        "relation": "single",
+        "id": "s8-g53-i1",
+        "sourceGroupId": "s8-g53",
+        "session": 8,
+        "teacherNumber": "53",
+        "displayNumber": "53-1",
+        "answer": "国家"
+      },
+      {
+        "term": "human",
+        "meaningZh": "人",
+        "acceptedMeaningsZh": [
+          "人",
+          "人类"
+        ],
+        "example": "Humans are smart.",
+        "exampleZh": "人类很聪明。",
+        "relation": "single",
+        "id": "s8-g8-i1",
+        "sourceGroupId": "s8-g8",
+        "session": 8,
+        "teacherNumber": "8",
+        "displayNumber": "8-1",
+        "answer": "人的"
+      },
+      {
+        "term": "text",
+        "meaningZh": "文字",
+        "acceptedMeaningsZh": [
+          "文字",
+          "文本"
+        ],
+        "example": "The text is clear.",
+        "exampleZh": "这项文字很清晰。",
+        "relation": "single",
+        "id": "s8-g57-i1",
+        "sourceGroupId": "s8-g57",
+        "session": 8,
+        "teacherNumber": "57",
+        "displayNumber": "57-1",
+        "answer": "任务"
+      },
+      {
+        "term": "a big fan of ...",
+        "meaningZh": "...的大粉丝",
+        "acceptedMeaningsZh": [
+          "...的大粉丝"
+        ],
+        "example": "He is a big fan of football.",
+        "exampleZh": "...是足球迷。",
+        "relation": "phrase-alternative",
+        "id": "s8-g22-i1",
+        "sourceGroupId": "s8-g22",
+        "session": 8,
+        "teacherNumber": "22",
+        "displayNumber": "22",
+        "answer": "…的忠实粉丝"
+      },
+      {
+        "term": "creative",
+        "meaningZh": "有创造性的",
+        "acceptedMeaningsZh": [
+          "有创造性的",
+          "富有想象力的"
+        ],
+        "example": "She is very creative.",
+        "exampleZh": "她很富有创造力。",
+        "relation": "synonym",
+        "id": "s8-g7-i2",
+        "sourceGroupId": "s8-g7",
+        "session": 8,
+        "teacherNumber": "7",
+        "displayNumber": "7-2",
+        "answer": "有创造力的"
+      },
+      {
+        "term": "science",
+        "meaningZh": "科学",
+        "acceptedMeaningsZh": [
+          "科学",
+          "自然科学"
+        ],
+        "example": "Science is important.",
+        "exampleZh": "这门科学很重要。",
+        "relation": "single",
+        "id": "s8-g1-i1",
+        "sourceGroupId": "s8-g1",
+        "session": 8,
+        "teacherNumber": "1",
+        "displayNumber": "1-1",
+        "answer": "科学"
+      },
+      {
+        "term": "an oral vaccine",
+        "meaningZh": "口服的疫苗",
+        "acceptedMeaningsZh": [
+          "口服的疫苗",
+          "口服疫苗"
+        ],
+        "example": "This is an oral vaccine for flu prevention.",
+        "exampleZh": "这是一种用于流感预防的口服疫苗。",
+        "relation": "phrase-alternative",
+        "id": "s8-g50-i1",
+        "sourceGroupId": "s8-g50",
+        "session": 8,
+        "teacherNumber": "50",
+        "displayNumber": "50",
+        "answer": "口服疫苗"
+      },
+      {
+        "term": "interested",
+        "meaningZh": "感兴趣的",
+        "acceptedMeaningsZh": [
+          "感兴趣的",
+          "有兴趣的"
+        ],
+        "example": "I am interested in art.",
+        "exampleZh": "我对艺术感兴趣。",
+        "relation": "inflection",
+        "id": "s8-g25-i2",
+        "sourceGroupId": "s8-g25",
+        "session": 8,
+        "teacherNumber": "25",
+        "displayNumber": "25-2",
+        "answer": "感兴趣的"
+      },
+      {
+        "term": "effect(s)",
+        "meaningZh": "效果（单复数）",
+        "acceptedMeaningsZh": [
+          "效果（单复数）"
+        ],
+        "example": "The effect is strong.",
+        "exampleZh": "这个效果很强。",
+        "relation": "list",
+        "id": "s8-g57-i4",
+        "sourceGroupId": "s8-g57",
+        "session": 8,
+        "teacherNumber": "57",
+        "displayNumber": "57-4",
+        "answer": "效果"
+      },
+      {
+        "term": "be known",
+        "meaningZh": "被知道的",
+        "acceptedMeaningsZh": [
+          "被知道的",
+          "为人所知的"
+        ],
+        "example": "He was be known in his field.",
+        "exampleZh": "他在那个领域被人所知。",
+        "relation": "phrase-alternative",
+        "id": "s8-g5-i1",
+        "sourceGroupId": "s8-g5",
+        "session": 8,
+        "teacherNumber": "5",
+        "displayNumber": "5-1",
+        "answer": "为人所知"
+      },
+      {
+        "term": "a lot of techniques",
+        "meaningZh": "很多技巧",
+        "acceptedMeaningsZh": [
+          "很多技巧",
+          "许多方法"
+        ],
+        "example": "We need to learn more about this.",
+        "exampleZh": "我们需要学习更多关于这方面的知识。",
+        "relation": "phrase-alternative",
+        "id": "s8-g45-i2",
+        "sourceGroupId": "s8-g45",
+        "session": 8,
+        "teacherNumber": "45",
+        "displayNumber": "45-2",
+        "answer": "很多技巧"
+      },
+      {
+        "term": "this",
+        "meaningZh": "这个",
+        "acceptedMeaningsZh": [
+          "这个",
+          "这"
+        ],
+        "example": "This is my book.",
+        "exampleZh": "这个是我的书。",
+        "relation": "single",
+        "id": "s8-g9-i1",
+        "sourceGroupId": "s8-g9",
+        "session": 8,
+        "teacherNumber": "9",
+        "displayNumber": "9-1",
+        "answer": "这个"
+      },
+      {
+        "term": "add",
+        "meaningZh": "增加",
+        "acceptedMeaningsZh": [
+          "增加",
+          "添加"
+        ],
+        "example": "Please add sugar to your tea.",
+        "exampleZh": "请在你的茶里加糖。",
+        "relation": "single",
+        "id": "s8-g56-i1",
+        "sourceGroupId": "s8-g56",
+        "session": 8,
+        "teacherNumber": "56",
+        "displayNumber": "56",
+        "answer": "补充"
+      },
+      {
+        "term": "against",
+        "meaningZh": "对抗",
+        "acceptedMeaningsZh": [
+          "对抗",
+          "针对",
+          "反对"
+        ],
+        "example": "The virus fights against the bacteria.",
+        "exampleZh": "病毒对抗细菌。",
+        "relation": "single",
+        "id": "s8-g51-i1",
+        "sourceGroupId": "s8-g51",
+        "session": 8,
+        "teacherNumber": "51",
+        "displayNumber": "51",
+        "answer": "紧靠着"
+      },
+      {
+        "term": "save",
+        "meaningZh": "保存",
+        "acceptedMeaningsZh": [
+          "保存",
+          "存留"
+        ],
+        "example": "Save the file.",
+        "exampleZh": "这个文件请保存。",
+        "relation": "single",
+        "id": "s8-g13-i1",
+        "sourceGroupId": "s8-g13",
+        "session": 8,
+        "teacherNumber": "13",
+        "displayNumber": "13-1",
+        "answer": "挽救储存"
+      },
+      {
+        "term": "vaccine",
+        "meaningZh": "疫苗",
+        "acceptedMeaningsZh": [
+          "疫苗",
+          "预防针"
+        ],
+        "example": "The vaccine protects children from diseases.",
+        "exampleZh": "这种疫苗能保护儿童免受疾病。",
+        "relation": "single",
+        "id": "s8-g49-i1",
+        "sourceGroupId": "s8-g49",
+        "session": 8,
+        "teacherNumber": "49",
+        "displayNumber": "49",
+        "answer": "疫苗"
+      },
+      {
+        "term": "practical telephone",
+        "meaningZh": "实用电话的",
+        "acceptedMeaningsZh": [
+          "实用电话的",
+          "实际电话用的"
+        ],
+        "example": "This is a very practical telephone for students.",
+        "exampleZh": "这是一个非常适合学生的实用电话。",
+        "relation": "phrase-alternative",
+        "id": "s8-g42-i3",
+        "sourceGroupId": "s8-g42",
+        "session": 8,
+        "teacherNumber": "42",
+        "displayNumber": "42-3",
+        "answer": "实用电话"
+      },
+      {
+        "term": "hybrid rice",
+        "meaningZh": "杂交水稻",
+        "acceptedMeaningsZh": [
+          "杂交水稻"
+        ],
+        "example": "Hybrid rice is very productive.",
+        "exampleZh": "这种杂交水稻产量很高。",
+        "relation": "single",
+        "id": "s8-g30-i1",
+        "sourceGroupId": "s8-g30",
+        "session": 8,
+        "teacherNumber": "30",
+        "displayNumber": "30-1",
+        "answer": "杂交水稻"
+      },
+      {
+        "term": "create",
+        "meaningZh": "创造",
+        "acceptedMeaningsZh": [
+          "创造",
+          "制作"
+        ],
+        "example": "He created a model.",
+        "exampleZh": "他制造了一个模型。",
+        "relation": "single",
+        "id": "s8-g7-i1",
+        "sourceGroupId": "s8-g7",
+        "session": 8,
+        "teacherNumber": "7",
+        "displayNumber": "7-1",
+        "answer": "创造"
+      },
+      {
+        "term": "the law of gravity",
+        "meaningZh": "万有引力定律",
+        "acceptedMeaningsZh": [
+          "万有引力定律"
+        ],
+        "example": "The earth is held by the law of gravity.",
+        "exampleZh": "地球被万有引力定律束缚着。",
+        "relation": "phrase-alternative",
+        "id": "s8-g20-i1",
+        "sourceGroupId": "s8-g20",
+        "session": 8,
+        "teacherNumber": "20",
+        "displayNumber": "20",
+        "answer": "重力定律"
+      },
+      {
+        "term": "curious",
+        "meaningZh": "好奇的",
+        "acceptedMeaningsZh": [
+          "好奇的",
+          "感兴趣的"
+        ],
+        "example": "She is curious about animals.",
+        "exampleZh": "她对动物很感兴趣。",
+        "relation": "single",
+        "id": "s8-g38-i1",
+        "sourceGroupId": "s8-g38",
+        "session": 8,
+        "teacherNumber": "38",
+        "displayNumber": "38-1",
+        "answer": "好奇地"
+      },
+      {
+        "term": "research",
+        "meaningZh": "研究",
+        "acceptedMeaningsZh": [
+          "研究",
+          "调查"
+        ],
+        "example": "Students should research the topic carefully.",
+        "exampleZh": "学生应该仔细研究这个主题。",
+        "relation": "single",
+        "id": "s8-g43-i1",
+        "sourceGroupId": "s8-g43",
+        "session": 8,
+        "teacherNumber": "43",
+        "displayNumber": "43-1",
+        "answer": "研究"
+      },
+      {
+        "term": "humans",
+        "meaningZh": "人们",
+        "acceptedMeaningsZh": [
+          "人们",
+          "人类（复数）"
+        ],
+        "example": "Many humans live here.",
+        "exampleZh": "许多人都住在这里。",
+        "relation": "inflection",
+        "id": "s8-g8-i2",
+        "sourceGroupId": "s8-g8",
+        "session": 8,
+        "teacherNumber": "8",
+        "displayNumber": "8-2",
+        "answer": "人类"
+      },
+      {
+        "term": "be curious about",
+        "meaningZh": "对……感到好奇",
+        "acceptedMeaningsZh": [
+          "对……感到好奇",
+          "对……感兴趣"
+        ],
+        "example": "He was curious about the story.",
+        "exampleZh": "他对那个故事很好奇。",
+        "relation": "phrase-alternative",
+        "id": "s8-g38-i2",
+        "sourceGroupId": "s8-g38",
+        "session": 8,
+        "teacherNumber": "38",
+        "displayNumber": "38-2",
+        "answer": "好奇关于"
+      },
+      {
+        "term": "feed",
+        "meaningZh": "喂养",
+        "acceptedMeaningsZh": [
+          "喂养",
+          "给食物吃"
+        ],
+        "example": "The dog needs feed every day.",
+        "exampleZh": "这只狗每天需要喂食。",
+        "relation": "single",
+        "id": "s8-g36-i1",
+        "sourceGroupId": "s8-g36",
+        "session": 8,
+        "teacherNumber": "36",
+        "displayNumber": "36-1",
+        "answer": "喂养"
+      },
+      {
+        "term": "oral",
+        "meaningZh": "口头的",
+        "acceptedMeaningsZh": [
+          "口头的",
+          "口语的"
+        ],
+        "example": "It is an oral exam.",
+        "exampleZh": "这是一次口头考试。",
+        "relation": "single",
+        "id": "s8-g48-i1",
+        "sourceGroupId": "s8-g48",
+        "session": 8,
+        "teacherNumber": "48",
+        "displayNumber": "48",
+        "answer": "口述的"
+      },
+      {
+        "term": "technique",
+        "meaningZh": "技巧",
+        "acceptedMeaningsZh": [
+          "技巧",
+          "方法"
+        ],
+        "example": "This is a new technique.",
+        "exampleZh": "这项是一种新方法。",
+        "relation": "single",
+        "id": "s8-g45-i1",
+        "sourceGroupId": "s8-g45",
+        "session": 8,
+        "teacherNumber": "45",
+        "displayNumber": "45-1",
+        "answer": "技巧"
+      },
+      {
+        "term": "Nobel Prize",
+        "meaningZh": "诺贝尔奖",
+        "acceptedMeaningsZh": [
+          "诺贝尔奖"
+        ],
+        "example": "He won the Nobel Prize.",
+        "exampleZh": "他获得了诺贝尔奖。",
+        "relation": "single",
+        "id": "s8-g10-i1",
+        "sourceGroupId": "s8-g10",
+        "session": 8,
+        "teacherNumber": "10",
+        "displayNumber": "10",
+        "answer": "诺贝尔奖"
+      },
+      {
+        "term": "assistant",
+        "meaningZh": "助手",
+        "acceptedMeaningsZh": [
+          "助手",
+          "助理",
+          "帮手"
+        ],
+        "example": "The assistant helped me with my homework.",
+        "exampleZh": "我的助手帮我完成了作业。",
+        "relation": "single",
+        "id": "s8-g39-i1",
+        "sourceGroupId": "s8-g39",
+        "session": 8,
+        "teacherNumber": "39",
+        "displayNumber": "39",
+        "answer": "助手"
+      },
+      {
+        "term": "in outer space",
+        "meaningZh": "在太空中",
+        "acceptedMeaningsZh": [
+          "在太空中"
+        ],
+        "example": "The astronauts are working in outer space.",
+        "exampleZh": "宇航员们正在太空中工作。",
+        "relation": "phrase-alternative",
+        "id": "s8-g23-i2",
+        "sourceGroupId": "s8-g23",
+        "session": 8,
+        "teacherNumber": "23",
+        "displayNumber": "23-2",
+        "answer": "在外太空"
+      },
+      {
+        "term": "her",
+        "meaningZh": "她",
+        "acceptedMeaningsZh": [
+          "她",
+          "她的（代词）"
+        ],
+        "example": "She is a teacher.",
+        "exampleZh": "她是老师。",
+        "relation": "list",
+        "id": "s8-g26-i2",
+        "sourceGroupId": "s8-g26",
+        "session": 8,
+        "teacherNumber": "26",
+        "displayNumber": "26-2",
+        "answer": "她"
+      },
+      {
+        "term": "be known as",
+        "meaningZh": "被称为的",
+        "acceptedMeaningsZh": [
+          "被称为的",
+          "作为...而闻名的"
+        ],
+        "example": "It is known as the capital city.",
+        "exampleZh": "它被称为首都城市。",
+        "relation": "phrase-alternative",
+        "id": "s8-g5-i2",
+        "sourceGroupId": "s8-g5",
+        "session": 8,
+        "teacherNumber": "5",
+        "displayNumber": "5-2",
+        "answer": "被称为"
+      },
+      {
+        "term": "fell",
+        "meaningZh": "落下的",
+        "acceptedMeaningsZh": [
+          "落下的",
+          "掉落的（过去式）"
+        ],
+        "example": "He fell down yesterday.",
+        "exampleZh": "他昨天摔倒了。",
+        "relation": "inflection",
+        "id": "s8-g17-i2",
+        "sourceGroupId": "s8-g17",
+        "session": 8,
+        "teacherNumber": "17",
+        "displayNumber": "17-2",
+        "answer": "砍伐"
+      },
+      {
+        "term": "work hard",
+        "meaningZh": "努力工作",
+        "acceptedMeaningsZh": [
+          "努力工作",
+          "辛勤工作"
+        ],
+        "example": "They work hard every day.",
+        "exampleZh": "他们每天都很努力地工作。",
+        "relation": "phrase-alternative",
+        "id": "s8-g6-i2",
+        "sourceGroupId": "s8-g6",
+        "session": 8,
+        "teacherNumber": "6",
+        "displayNumber": "6-2",
+        "answer": "努力工作"
+      },
+      {
+        "term": "many lives",
+        "meaningZh": "许多生命",
+        "acceptedMeaningsZh": [
+          "许多生命"
+        ],
+        "example": "Many lives are lost in the accident.",
+        "exampleZh": "这场事故中失去了许多生命。",
+        "relation": "phrase-alternative",
+        "id": "s8-g14-i3",
+        "sourceGroupId": "s8-g14",
+        "session": 8,
+        "teacherNumber": "14",
+        "displayNumber": "14-3",
+        "answer": "许多生命"
+      },
+      {
+        "term": "life",
+        "meaningZh": "生命",
+        "acceptedMeaningsZh": [
+          "生命",
+          "生活"
+        ],
+        "example": "Life is precious.",
+        "exampleZh": "这条命很珍贵。",
+        "relation": "single",
+        "id": "s8-g14-i1",
+        "sourceGroupId": "s8-g14",
+        "session": 8,
+        "teacherNumber": "14",
+        "displayNumber": "14-1",
+        "answer": "人生或者生活"
+      },
+      {
+        "term": "the father of hybrid rice",
+        "meaningZh": "杂交水稻之父",
+        "acceptedMeaningsZh": [
+          "杂交水稻之父"
+        ],
+        "example": "He is the father of hybrid rice.",
+        "exampleZh": "他是杂交水稻之父。",
+        "relation": "phrase-alternative",
+        "id": "s8-g30-i2",
+        "sourceGroupId": "s8-g30",
+        "session": 8,
+        "teacherNumber": "30",
+        "displayNumber": "30-2",
+        "answer": "杂交水稻之父"
+      },
+      {
+        "term": "area",
+        "meaningZh": "区域",
+        "acceptedMeaningsZh": [
+          "区域",
+          "地区",
+          "领域"
+        ],
+        "example": "The area is very beautiful and green.",
+        "exampleZh": "这个区域非常美丽且绿意盎然。",
+        "relation": "single",
+        "id": "s8-g44-i1",
+        "sourceGroupId": "s8-g44",
+        "session": 8,
+        "teacherNumber": "44",
+        "displayNumber": "44",
+        "answer": "地区"
+      },
+      {
+        "term": "invented",
+        "meaningZh": "被发明的",
+        "acceptedMeaningsZh": [
+          "被发明的",
+          "已创造的"
+        ],
+        "example": "The light bulb was invented long ago.",
+        "exampleZh": "灯泡很久以前就被发明了。",
+        "relation": "inflection",
+        "id": "s8-g40-i2",
+        "sourceGroupId": "s8-g40",
+        "session": 8,
+        "teacherNumber": "40",
+        "displayNumber": "40-2",
+        "answer": "发明的"
+      },
+      {
+        "term": "thought",
+        "meaningZh": "思考的（过去式）",
+        "acceptedMeaningsZh": [
+          "思考的（过去式）"
+        ],
+        "example": "She thought about the problem.",
+        "exampleZh": "她考虑了这个问题。",
+        "relation": "inflection",
+        "id": "s8-g18-i2",
+        "sourceGroupId": "s8-g18",
+        "session": 8,
+        "teacherNumber": "18",
+        "displayNumber": "18-2",
+        "answer": "想法的过去式"
+      },
+      {
+        "term": "in Scotland",
+        "meaningZh": "在苏格兰",
+        "acceptedMeaningsZh": [
+          "在苏格兰",
+          "在英国北部地区"
+        ],
+        "example": "He lives in Scotland.",
+        "exampleZh": "他住在苏格兰。",
+        "relation": "list",
+        "id": "s8-g37-i1",
+        "sourceGroupId": "s8-g37",
+        "session": 8,
+        "teacherNumber": "37",
+        "displayNumber": "37",
+        "answer": "在苏格兰"
+      },
+      {
+        "term": "preview",
+        "meaningZh": "预览",
+        "acceptedMeaningsZh": [
+          "预览",
+          "预演"
+        ],
+        "example": "Take a preview first.",
+        "exampleZh": "先做个预览吧。",
+        "relation": "single",
+        "id": "s8-g59-i1",
+        "sourceGroupId": "s8-g59",
+        "session": 8,
+        "teacherNumber": "59",
+        "displayNumber": "59",
+        "answer": "预告"
+      },
+      {
+        "term": "store",
+        "meaningZh": "存储",
+        "acceptedMeaningsZh": [
+          "存储",
+          "存放"
+        ],
+        "example": "Store the files here.",
+        "exampleZh": "把文件存到这里。",
+        "relation": "phrase-alternative",
+        "id": "s8-g58-i2",
+        "sourceGroupId": "s8-g58",
+        "session": 8,
+        "teacherNumber": "58",
+        "displayNumber": "58-2",
+        "answer": "商店"
+      },
+      {
+        "term": "begin",
+        "meaningZh": "开始",
+        "acceptedMeaningsZh": [
+          "开始",
+          "发起"
+        ],
+        "example": "He began his work early.",
+        "exampleZh": "他早早开始了工作。",
+        "relation": "single",
+        "id": "s8-g34-i1",
+        "sourceGroupId": "s8-g34",
+        "session": 8,
+        "teacherNumber": "34",
+        "displayNumber": "34-1",
+        "answer": "开始"
+      }
+    ],
+    "cloze": [
+      {
+        "term": "This",
+        "meaningZh": "这个",
+        "acceptedMeaningsZh": [
+          "这个",
+          "这"
+        ],
+        "example": "This is my book.",
+        "exampleZh": "这个是我的书。",
+        "relation": "single",
+        "id": "s8-g9-i1",
+        "sourceGroupId": "s8-g9",
+        "session": 8,
+        "teacherNumber": "9",
+        "displayNumber": "9-1",
+        "answer": "This",
+        "prompt": "_____ is my book.",
+        "choices": [
+          "Interested",
+          "Be short of food",
+          "This",
+          "Insert"
+        ]
+      },
+      {
+        "term": "in outer space",
+        "meaningZh": "在太空中",
+        "acceptedMeaningsZh": [
+          "在太空中"
+        ],
+        "example": "The astronauts are working in outer space.",
+        "exampleZh": "宇航员们正在太空中工作。",
+        "relation": "phrase-alternative",
+        "id": "s8-g23-i2",
+        "sourceGroupId": "s8-g23",
+        "session": 8,
+        "teacherNumber": "23",
+        "displayNumber": "23-2",
+        "answer": "in outer space",
+        "prompt": "The astronauts are working _____.",
+        "choices": [
+          "do research",
+          "in outer space",
+          "discovered",
+          "this"
+        ]
+      },
+      {
+        "term": "vaccine",
+        "meaningZh": "疫苗",
+        "acceptedMeaningsZh": [
+          "疫苗",
+          "预防针"
+        ],
+        "example": "The vaccine protects children from diseases.",
+        "exampleZh": "这种疫苗能保护儿童免受疾病。",
+        "relation": "single",
+        "id": "s8-g49-i1",
+        "sourceGroupId": "s8-g49",
+        "session": 8,
+        "teacherNumber": "49",
+        "displayNumber": "49",
+        "answer": "vaccine",
+        "prompt": "The _____ protects children from diseases.",
+        "choices": [
+          "vaccine",
+          "begin",
+          "in Scotland",
+          "will"
+        ]
+      },
+      {
+        "term": "assistant",
+        "meaningZh": "助手",
+        "acceptedMeaningsZh": [
+          "助手",
+          "助理",
+          "帮手"
+        ],
+        "example": "The assistant helped me with my homework.",
+        "exampleZh": "我的助手帮我完成了作业。",
+        "relation": "single",
+        "id": "s8-g39-i1",
+        "sourceGroupId": "s8-g39",
+        "session": 8,
+        "teacherNumber": "39",
+        "displayNumber": "39",
+        "answer": "assistant",
+        "prompt": "The _____ helped me with my homework.",
+        "choices": [
+          "assistant",
+          "be curious about",
+          "think",
+          "feed"
+        ]
+      },
+      {
+        "term": "in Scotland",
+        "meaningZh": "在苏格兰",
+        "acceptedMeaningsZh": [
+          "在苏格兰",
+          "在英国北部地区"
+        ],
+        "example": "He lives in Scotland.",
+        "exampleZh": "他住在苏格兰。",
+        "relation": "list",
+        "id": "s8-g37-i1",
+        "sourceGroupId": "s8-g37",
+        "session": 8,
+        "teacherNumber": "37",
+        "displayNumber": "37",
+        "answer": "in Scotland",
+        "prompt": "He lives _____.",
+        "choices": [
+          "area",
+          "effect(s)",
+          "vaccine",
+          "in Scotland"
+        ]
+      },
+      {
+        "term": "Many lives",
+        "meaningZh": "许多生命",
+        "acceptedMeaningsZh": [
+          "许多生命"
+        ],
+        "example": "Many lives are lost in the accident.",
+        "exampleZh": "这场事故中失去了许多生命。",
+        "relation": "phrase-alternative",
+        "id": "s8-g14-i3",
+        "sourceGroupId": "s8-g14",
+        "session": 8,
+        "teacherNumber": "14",
+        "displayNumber": "14-3",
+        "answer": "Many lives",
+        "prompt": "_____ are lost in the accident.",
+        "choices": [
+          "Dream",
+          "That",
+          "Many lives",
+          "Come true"
+        ]
+      },
+      {
+        "term": "space",
+        "meaningZh": "太空",
+        "acceptedMeaningsZh": [
+          "太空",
+          "空间"
+        ],
+        "example": "We live in space.",
+        "exampleZh": "我们生活在太空中。",
+        "relation": "single",
+        "id": "s8-g23-i1",
+        "sourceGroupId": "s8-g23",
+        "session": 8,
+        "teacherNumber": "23",
+        "displayNumber": "23-1",
+        "answer": "space",
+        "prompt": "We live in _____.",
+        "choices": [
+          "practical telephone",
+          "space",
+          "will",
+          "technique"
+        ]
+      },
+      {
+        "term": "That",
+        "meaningZh": "那个",
+        "acceptedMeaningsZh": [
+          "那个",
+          "那（单数）"
+        ],
+        "example": "That is a cat.",
+        "exampleZh": "那是只猫。",
+        "relation": "single",
+        "id": "s8-g9-i3",
+        "sourceGroupId": "s8-g9",
+        "session": 8,
+        "teacherNumber": "9",
+        "displayNumber": "9-3",
+        "answer": "That",
+        "prompt": "_____ is a cat.",
+        "choices": [
+          "Invented",
+          "The father of hybrid rice",
+          "Discovery",
+          "That"
+        ]
+      },
+      {
+        "term": "creative",
+        "meaningZh": "有创造性的",
+        "acceptedMeaningsZh": [
+          "有创造性的",
+          "富有想象力的"
+        ],
+        "example": "She is very creative.",
+        "exampleZh": "她很富有创造力。",
+        "relation": "synonym",
+        "id": "s8-g7-i2",
+        "sourceGroupId": "s8-g7",
+        "session": 8,
+        "teacherNumber": "7",
+        "displayNumber": "7-2",
+        "answer": "creative",
+        "prompt": "She is very _____.",
+        "choices": [
+          "create",
+          "creative",
+          "oral",
+          "assistant"
+        ]
+      },
+      {
+        "term": "curious",
+        "meaningZh": "好奇的",
+        "acceptedMeaningsZh": [
+          "好奇的",
+          "感兴趣的"
+        ],
+        "example": "She is curious about animals.",
+        "exampleZh": "她对动物很感兴趣。",
+        "relation": "single",
+        "id": "s8-g38-i1",
+        "sourceGroupId": "s8-g38",
+        "session": 8,
+        "teacherNumber": "38",
+        "displayNumber": "38-1",
+        "answer": "curious",
+        "prompt": "She is _____ about animals.",
+        "choices": [
+          "area",
+          "curious",
+          "practical",
+          "that"
+        ]
+      },
+      {
+        "term": "area",
+        "meaningZh": "区域",
+        "acceptedMeaningsZh": [
+          "区域",
+          "地区",
+          "领域"
+        ],
+        "example": "The area is very beautiful and green.",
+        "exampleZh": "这个区域非常美丽且绿意盎然。",
+        "relation": "single",
+        "id": "s8-g44-i1",
+        "sourceGroupId": "s8-g44",
+        "session": 8,
+        "teacherNumber": "44",
+        "displayNumber": "44",
+        "answer": "area",
+        "prompt": "The _____ is very beautiful and green.",
+        "choices": [
+          "area",
+          "scientist",
+          "the world's",
+          "fell"
+        ]
+      },
+      {
+        "term": "the father of hybrid rice",
+        "meaningZh": "杂交水稻之父",
+        "acceptedMeaningsZh": [
+          "杂交水稻之父"
+        ],
+        "example": "He is the father of hybrid rice.",
+        "exampleZh": "他是杂交水稻之父。",
+        "relation": "phrase-alternative",
+        "id": "s8-g30-i2",
+        "sourceGroupId": "s8-g30",
+        "session": 8,
+        "teacherNumber": "30",
+        "displayNumber": "30-2",
+        "answer": "the father of hybrid rice",
+        "prompt": "He is _____.",
+        "choices": [
+          "the father of hybrid rice",
+          "vaccine",
+          "a lot of techniques",
+          "thought"
+        ]
+      }
+    ],
+    "signature": "s8-g15-i3,s8-g17-i1,s8-g21-i1,s8-g9-i3,s8-g5-i3,s8-g24-i1,s8-g35-i1,s8-g16-i1,s8-g28-i1,s8-g53-i2,s8-g58-i1,s8-g6-i1,s8-g57-i2,s8-g3-i1,s8-g57-i3,s8-g46-i1,s8-g29-i1,s8-g32-i1,s8-g47-i2,s8-g15-i1,s8-g33-i1,s8-g42-i1,s8-g34-i2,s8-g31-i1,s8-g40-i1,s8-g18-i1,s8-g27-i1,s8-g35-i2,s8-g52-i1,s8-g15-i2,s8-g25-i1,s8-g36-i2,s8-g9-i2,s8-g14-i2,s8-g12-i1,s8-g9-i4,s8-g11-i1,s8-g41-i1,s8-g2-i1,s8-g2-i2,s8-g12-i2,s8-g11-i2,s8-g8-i3,s8-g1-i2,s8-g13-i2,s8-g55-i1,s8-g19-i1,s8-g23-i1,s8-g26-i1,s8-g57-i5,s8-g47-i1,s8-g43-i2,s8-g3-i2,s8-g4-i2,s8-g45-i3,s8-g54-i1,s8-g5-i4,s8-g42-i2,s8-g25-i3,s8-g4-i1,s8-g53-i1,s8-g8-i1,s8-g57-i1,s8-g22-i1,s8-g7-i2,s8-g1-i1,s8-g50-i1,s8-g25-i2,s8-g57-i4,s8-g5-i1,s8-g45-i2,s8-g9-i1,s8-g56-i1,s8-g51-i1,s8-g13-i1,s8-g49-i1,s8-g42-i3,s8-g30-i1,s8-g7-i1,s8-g20-i1,s8-g38-i1,s8-g43-i1,s8-g8-i2,s8-g38-i2,s8-g36-i1,s8-g48-i1,s8-g45-i1,s8-g10-i1,s8-g39-i1,s8-g23-i2,s8-g26-i2,s8-g5-i2,s8-g17-i2,s8-g6-i2,s8-g14-i3,s8-g14-i1,s8-g30-i2,s8-g44-i1,s8-g40-i2,s8-g18-i2,s8-g37-i1,s8-g59-i1,s8-g58-i2,s8-g34-i1|s8-g9-i1:Interested,Be short of food,This,Insert|s8-g23-i2:do research,in outer space,discovered,this|s8-g49-i1:vaccine,begin,in Scotland,will|s8-g39-i1:assistant,be curious about,think,feed|s8-g37-i1:area,effect(s),vaccine,in Scotland|s8-g14-i3:Dream,That,Many lives,Come true|s8-g23-i1:practical telephone,space,will,technique|s8-g9-i3:Invented,The father of hybrid rice,Discovery,That|s8-g7-i2:create,creative,oral,assistant|s8-g38-i1:area,curious,practical,that|s8-g44-i1:area,scientist,the world's,fell|s8-g30-i2:the father of hybrid rice,vaccine,a lot of techniques,thought|s8-g6-i1:rocket,hard-working,fed,a lot of techniques|s8-g33-i1:be short of food,this,be known,science|s8-g53-i1:text,the deaf,human being,nation|s8-g2-i1:nation,those,lives,explore|s8-g1-i2:technique,scientist,in Scotland,interested|s8-g56-i1:space,practical telephone,interesting,add|s8-g20-i1:the law of gravity,invent,work hard,area|s8-g9-i2:Technique,Oral,Interesting,These"
+  },
+  "results": {
+    "meanings": [
+      {
+        "id": "s8-g15-i3",
+        "correct": true,
+        "answer": "过去正在考虑"
+      },
+      {
+        "id": "s8-g17-i1",
+        "correct": false,
+        "answer": "落下"
+      },
+      {
+        "id": "s8-g21-i1",
+        "correct": true,
+        "answer": "火箭"
+      },
+      {
+        "id": "s8-g9-i3",
+        "correct": true,
+        "answer": "那个"
+      },
+      {
+        "id": "s8-g5-i3",
+        "correct": true,
+        "answer": "因...而闻名于世的"
+      },
+      {
+        "id": "s8-g24-i1",
+        "correct": true,
+        "answer": "想成为..."
+      },
+      {
+        "id": "s8-g35-i1",
+        "correct": true,
+        "answer": "研究"
+      },
+      {
+        "id": "s8-g16-i1",
+        "correct": false,
+        "answer": "宇宙"
+      },
+      {
+        "id": "s8-g28-i1",
+        "correct": true,
+        "answer": "将要"
+      },
+      {
+        "id": "s8-g53-i2",
+        "correct": true,
+        "answer": "国籍"
+      },
+      {
+        "id": "s8-g58-i1",
+        "correct": true,
+        "answer": "保存（救援）"
+      },
+      {
+        "id": "s8-g6-i1",
+        "correct": true,
+        "answer": "勤劳的"
+      },
+      {
+        "id": "s8-g57-i2",
+        "correct": true,
+        "answer": "音乐"
+      },
+      {
+        "id": "s8-g3-i1",
+        "correct": true,
+        "answer": "著名的"
+      },
+      {
+        "id": "s8-g57-i3",
+        "correct": true,
+        "answer": "过渡"
+      },
+      {
+        "id": "s8-g46-i1",
+        "correct": true,
+        "answer": "听障者"
+      },
+      {
+        "id": "s8-g29-i1",
+        "correct": true,
+        "answer": "实现"
+      },
+      {
+        "id": "s8-g32-i1",
+        "correct": false,
+        "answer": "在二十世纪八十年代"
+      },
+      {
+        "id": "s8-g47-i2",
+        "correct": true,
+        "answer": "药丸"
+      },
+      {
+        "id": "s8-g15-i1",
+        "correct": true,
+        "answer": "考虑"
+      },
+      {
+        "id": "s8-g33-i1",
+        "correct": false,
+        "answer": "缺少食物"
+      },
+      {
+        "id": "s8-g42-i1",
+        "correct": true,
+        "answer": "练习"
+      },
+      {
+        "id": "s8-g34-i2",
+        "correct": false,
+        "answer": "过去式：开始"
+      },
+      {
+        "id": "s8-g31-i1",
+        "correct": false,
+        "answer": "出生于某地"
+      },
+      {
+        "id": "s8-g40-i1",
+        "correct": true,
+        "answer": "发明"
+      },
+      {
+        "id": "s8-g18-i1",
+        "correct": false,
+        "answer": "思考"
+      },
+      {
+        "id": "s8-g27-i1",
+        "correct": false,
+        "answer": "做梦"
+      },
+      {
+        "id": "s8-g35-i2",
+        "correct": false,
+        "answer": "做研究"
+      },
+      {
+        "id": "s8-g52-i1",
+        "correct": true,
+        "answer": "小儿麻痹症"
+      },
+      {
+        "id": "s8-g15-i2",
+        "correct": false,
+        "answer": "正在考虑"
+      },
+      {
+        "id": "s8-g25-i1",
+        "correct": false,
+        "answer": "有趣的"
+      },
+      {
+        "id": "s8-g36-i2",
+        "correct": false,
+        "answer": "过去式：已喂过"
+      },
+      {
+        "id": "s8-g9-i2",
+        "correct": true,
+        "answer": "这些"
+      },
+      {
+        "id": "s8-g14-i2",
+        "correct": false,
+        "answer": "生命们（复数）"
+      },
+      {
+        "id": "s8-g12-i1",
+        "correct": false,
+        "answer": "发现"
+      },
+      {
+        "id": "s8-g9-i4",
+        "correct": true,
+        "answer": "那些"
+      },
+      {
+        "id": "s8-g11-i1",
+        "correct": true,
+        "answer": "赢"
+      },
+      {
+        "id": "s8-g41-i1",
+        "correct": false,
+        "answer": "这个世界的"
+      },
+      {
+        "id": "s8-g2-i1",
+        "correct": false,
+        "answer": "探索"
+      },
+      {
+        "id": "s8-g2-i2",
+        "correct": false,
+        "answer": "探险活动"
+      },
+      {
+        "id": "s8-g12-i2",
+        "correct": true,
+        "answer": "已发现的"
+      },
+      {
+        "id": "s8-g11-i2",
+        "correct": true,
+        "answer": "赢家"
+      },
+      {
+        "id": "s8-g8-i3",
+        "correct": true,
+        "answer": "人"
+      },
+      {
+        "id": "s8-g1-i2",
+        "correct": true,
+        "answer": "科学家"
+      },
+      {
+        "id": "s8-g13-i2",
+        "correct": false,
+        "answer": "已保存的"
+      },
+      {
+        "id": "s8-g55-i1",
+        "correct": true,
+        "answer": "媒体"
+      },
+      {
+        "id": "s8-g19-i1",
+        "correct": false,
+        "answer": "原因"
+      },
+      {
+        "id": "s8-g23-i1",
+        "correct": false,
+        "answer": "太空"
+      },
+      {
+        "id": "s8-g26-i1",
+        "correct": false,
+        "answer": "喜欢他"
+      },
+      {
+        "id": "s8-g57-i5",
+        "correct": true,
+        "answer": "幻灯片演示"
+      },
+      {
+        "id": "s8-g47-i1",
+        "correct": true,
+        "answer": "糖"
+      },
+      {
+        "id": "s8-g43-i2",
+        "correct": true,
+        "answer": "做研究"
+      },
+      {
+        "id": "s8-g3-i2",
+        "correct": true,
+        "answer": "著名科学家"
+      },
+      {
+        "id": "s8-g4-i2",
+        "correct": true,
+        "answer": "发现物"
+      },
+      {
+        "id": "s8-g45-i3",
+        "correct": true,
+        "answer": "多种技巧"
+      },
+      {
+        "id": "s8-g54-i1",
+        "correct": true,
+        "answer": "插入"
+      },
+      {
+        "id": "s8-g5-i4",
+        "correct": false,
+        "answer": "北京以长城闻名"
+      },
+      {
+        "id": "s8-g42-i2",
+        "correct": true,
+        "answer": "实用的"
+      },
+      {
+        "id": "s8-g25-i3",
+        "correct": true,
+        "answer": "对……感兴趣"
+      },
+      {
+        "id": "s8-g4-i1",
+        "correct": true,
+        "answer": "发现"
+      },
+      {
+        "id": "s8-g53-i1",
+        "correct": true,
+        "answer": "国家"
+      },
+      {
+        "id": "s8-g8-i1",
+        "correct": true,
+        "answer": "人"
+      },
+      {
+        "id": "s8-g57-i1",
+        "correct": false,
+        "answer": "文字"
+      },
+      {
+        "id": "s8-g22-i1",
+        "correct": true,
+        "answer": "...的大粉丝"
+      },
+      {
+        "id": "s8-g7-i2",
+        "correct": true,
+        "answer": "有创造性的"
+      },
+      {
+        "id": "s8-g1-i1",
+        "correct": true,
+        "answer": "科学"
+      },
+      {
+        "id": "s8-g50-i1",
+        "correct": true,
+        "answer": "口服的疫苗"
+      },
+      {
+        "id": "s8-g25-i2",
+        "correct": true,
+        "answer": "感兴趣的"
+      },
+      {
+        "id": "s8-g57-i4",
+        "correct": true,
+        "answer": "效果（单复数）"
+      },
+      {
+        "id": "s8-g5-i1",
+        "correct": true,
+        "answer": "被知道的"
+      },
+      {
+        "id": "s8-g45-i2",
+        "correct": true,
+        "answer": "很多技巧"
+      },
+      {
+        "id": "s8-g9-i1",
+        "correct": true,
+        "answer": "这个"
+      },
+      {
+        "id": "s8-g56-i1",
+        "correct": true,
+        "answer": "增加"
+      },
+      {
+        "id": "s8-g51-i1",
+        "correct": true,
+        "answer": "对抗"
+      },
+      {
+        "id": "s8-g13-i1",
+        "correct": false,
+        "answer": "保存"
+      },
+      {
+        "id": "s8-g49-i1",
+        "correct": true,
+        "answer": "疫苗"
+      },
+      {
+        "id": "s8-g42-i3",
+        "correct": true,
+        "answer": "实用电话的"
+      },
+      {
+        "id": "s8-g30-i1",
+        "correct": true,
+        "answer": "杂交水稻"
+      },
+      {
+        "id": "s8-g7-i1",
+        "correct": true,
+        "answer": "创造"
+      },
+      {
+        "id": "s8-g20-i1",
+        "correct": true,
+        "answer": "万有引力定律"
+      },
+      {
+        "id": "s8-g38-i1",
+        "correct": false,
+        "answer": "好奇的"
+      },
+      {
+        "id": "s8-g43-i1",
+        "correct": true,
+        "answer": "研究"
+      },
+      {
+        "id": "s8-g8-i2",
+        "correct": false,
+        "answer": "人们"
+      },
+      {
+        "id": "s8-g38-i2",
+        "correct": false,
+        "answer": "对……感到好奇"
+      },
+      {
+        "id": "s8-g36-i1",
+        "correct": true,
+        "answer": "喂养"
+      },
+      {
+        "id": "s8-g48-i1",
+        "correct": false,
+        "answer": "口头的"
+      },
+      {
+        "id": "s8-g45-i1",
+        "correct": true,
+        "answer": "技巧"
+      },
+      {
+        "id": "s8-g10-i1",
+        "correct": true,
+        "answer": "诺贝尔奖"
+      },
+      {
+        "id": "s8-g39-i1",
+        "correct": true,
+        "answer": "助手"
+      },
+      {
+        "id": "s8-g23-i2",
+        "correct": false,
+        "answer": "在太空中"
+      },
+      {
+        "id": "s8-g26-i2",
+        "correct": true,
+        "answer": "她"
+      },
+      {
+        "id": "s8-g5-i2",
+        "correct": false,
+        "answer": "被称为的"
+      },
+      {
+        "id": "s8-g17-i2",
+        "correct": false,
+        "answer": "落下的"
+      },
+      {
+        "id": "s8-g6-i2",
+        "correct": true,
+        "answer": "努力工作"
+      },
+      {
+        "id": "s8-g14-i3",
+        "correct": true,
+        "answer": "许多生命"
+      },
+      {
+        "id": "s8-g14-i1",
+        "correct": false,
+        "answer": "生命"
+      },
+      {
+        "id": "s8-g30-i2",
+        "correct": true,
+        "answer": "杂交水稻之父"
+      },
+      {
+        "id": "s8-g44-i1",
+        "correct": false,
+        "answer": "区域"
+      },
+      {
+        "id": "s8-g40-i2",
+        "correct": false,
+        "answer": "被发明的"
+      },
+      {
+        "id": "s8-g18-i2",
+        "correct": false,
+        "answer": "思考的（过去式）"
+      },
+      {
+        "id": "s8-g37-i1",
+        "correct": true,
+        "answer": "在苏格兰"
+      },
+      {
+        "id": "s8-g59-i1",
+        "correct": false,
+        "answer": "预览"
+      },
+      {
+        "id": "s8-g58-i2",
+        "correct": true,
+        "answer": "存储"
+      },
+      {
+        "id": "s8-g34-i1",
+        "correct": true,
+        "answer": "开始"
+      }
+    ],
+    "cloze": [
+      {
+        "correct": true,
+        "answer": "This"
+      },
+      {
+        "correct": true,
+        "answer": "in outer space"
+      },
+      {
+        "correct": true,
+        "answer": "vaccine"
+      },
+      {
+        "correct": true,
+        "answer": "assistant"
+      },
+      {
+        "correct": true,
+        "answer": "in Scotland"
+      },
+      {
+        "correct": true,
+        "answer": "Many lives"
+      },
+      {
+        "correct": true,
+        "answer": "space"
+      },
+      {
+        "correct": true,
+        "answer": "That"
+      },
+      {
+        "correct": true,
+        "answer": "creative"
+      },
+      {
+        "correct": true,
+        "answer": "curious"
+      },
+      {
+        "correct": true,
+        "answer": "area"
+      },
+      {
+        "correct": true,
+        "answer": "the father of hybrid rice"
+      }
+    ],
+    "correct": 80,
+    "total": 116,
+    "score": 69
+  },
+  "gradingVersion": 5
+}
