@@ -2662,9 +2662,10 @@
       },
       {
         "id": "s7-g24-i2",
-        "correct": false,
+        "correct": true,
         "answer": "感到自信",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s7-g8-i1",
@@ -2764,9 +2765,10 @@
       },
       {
         "id": "s7-g17-i2",
-        "correct": false,
+        "correct": true,
         "answer": "赢的",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s7-g65-i1",
@@ -2914,9 +2916,10 @@
       },
       {
         "id": "s7-g53-i2",
-        "correct": false,
+        "correct": true,
         "answer": "慢慢地",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s7-g50-i1",
@@ -3028,9 +3031,10 @@
       },
       {
         "id": "s7-g29-i2",
-        "correct": false,
+        "correct": true,
         "answer": "已学的",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s7-g73-i1",
@@ -3292,15 +3296,17 @@
       },
       {
         "id": "s7-g58-i1",
-        "correct": false,
+        "correct": true,
         "answer": "(一封信)",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s7-g30-i1",
-        "correct": false,
+        "correct": true,
         "answer": "从……学习",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s7-g14-i1",
@@ -3340,9 +3346,10 @@
       },
       {
         "id": "s7-g27-i2",
-        "correct": false,
+        "correct": true,
         "answer": "做了（过去式）",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       }
     ],
     "cloze": [
@@ -3395,9 +3402,9 @@
         "answer": "practice"
       }
     ],
-    "correct": 124,
+    "correct": 131,
     "total": 145,
-    "score": 86
+    "score": 90
   },
   "gradingVersion": 6,
   "gradingAudit": {
@@ -4872,5 +4879,55 @@
       }
     ]
   },
-  "regradedAt": "2026-08-17T07:53:12.226Z"
+  "regradedAt": "2026-08-17T08:32:05.000Z",
+  "aiGrading": {
+    "score": 86,
+    "correct": 124,
+    "total": 145
+  },
+  "parentGradedAt": "2026-08-17T08:32:05.000Z",
+  "parentGraded": [
+    {
+      "id": "s7-g24-i2",
+      "term": "be confident",
+      "answer": "自信的",
+      "displayNumber": "24-2"
+    },
+    {
+      "id": "s7-g17-i2",
+      "term": "won",
+      "answer": "赢的过去式",
+      "displayNumber": "17-2"
+    },
+    {
+      "id": "s7-g53-i2",
+      "term": "slowly",
+      "answer": "慢的",
+      "displayNumber": "53-2"
+    },
+    {
+      "id": "s7-g29-i2",
+      "term": "learned",
+      "answer": "学习的过去式",
+      "displayNumber": "29-2"
+    },
+    {
+      "id": "s7-g58-i1",
+      "term": "letter (a written message",
+      "answer": "信封",
+      "displayNumber": "58-1"
+    },
+    {
+      "id": "s7-g30-i1",
+      "term": "learn from...",
+      "answer": "学习来自…",
+      "displayNumber": "30"
+    },
+    {
+      "id": "s7-g27-i2",
+      "term": "did",
+      "answer": "do的过去式",
+      "displayNumber": "27-2"
+    }
+  ]
 }
