@@ -2233,9 +2233,10 @@
       },
       {
         "id": "s6-g3-i5",
-        "correct": false,
+        "correct": true,
         "answer": "流感",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s6-g6-i1",
@@ -2257,9 +2258,10 @@
       },
       {
         "id": "s6-g62-i1",
-        "correct": false,
+        "correct": true,
         "answer": "给他一些建议",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s6-g65-i1",
@@ -2653,9 +2655,10 @@
       },
       {
         "id": "s6-g59-i1",
-        "correct": false,
+        "correct": true,
         "answer": "叫做",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s6-g39-i1",
@@ -2683,9 +2686,10 @@
       },
       {
         "id": "s6-g44-i2",
-        "correct": false,
+        "correct": true,
         "answer": "打破了（过去式）",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s6-g33-i1",
@@ -2719,9 +2723,10 @@
       },
       {
         "id": "s6-g35-i2",
-        "correct": false,
+        "correct": true,
         "answer": "和……交谈",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s6-g20-i1",
@@ -2846,9 +2851,9 @@
         "answer": "computer games"
       }
     ],
-    "correct": 106,
+    "correct": 111,
     "total": 121,
-    "score": 88
+    "score": 92
   },
   "gradingVersion": 6,
   "gradingAudit": {
@@ -4064,5 +4069,43 @@
       }
     ]
   },
-  "regradedAt": "2026-08-17T07:51:19.582Z"
+  "regradedAt": "2026-08-17T08:29:12.168Z",
+  "aiGrading": {
+    "score": 88,
+    "correct": 106,
+    "total": 121
+  },
+  "parentGradedAt": "2026-08-17T08:29:12.168Z",
+  "parentGraded": [
+    {
+      "id": "s6-g3-i5",
+      "term": "flu",
+      "answer": "感冒",
+      "displayNumber": "3-5"
+    },
+    {
+      "id": "s6-g62-i1",
+      "term": "have some advice for him",
+      "answer": "我对他有一些叮嘱",
+      "displayNumber": "62"
+    },
+    {
+      "id": "s6-g59-i1",
+      "term": "be called",
+      "answer": "被誉为",
+      "displayNumber": "59"
+    },
+    {
+      "id": "s6-g44-i2",
+      "term": "broke",
+      "answer": "打破",
+      "displayNumber": "44-2"
+    },
+    {
+      "id": "s6-g35-i2",
+      "term": "talk with ...",
+      "answer": "讨论与…",
+      "displayNumber": "35-2"
+    }
+  ]
 }
