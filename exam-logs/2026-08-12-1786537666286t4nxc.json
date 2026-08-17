@@ -1964,8 +1964,9 @@
     "meanings": [
       {
         "id": "s5-g44-i1",
-        "correct": false,
-        "answer": "尝试喂养"
+        "correct": true,
+        "answer": "尝试喂养",
+        "parentCorrected": true
       },
       {
         "id": "s5-g47-i1",
@@ -1989,8 +1990,9 @@
       },
       {
         "id": "s5-g54-i1",
-        "correct": false,
-        "answer": "用一天休息"
+        "correct": true,
+        "answer": "用一天休息",
+        "parentCorrected": true
       },
       {
         "id": "s5-g42-i1",
@@ -2014,8 +2016,9 @@
       },
       {
         "id": "s5-g10-i1",
-        "correct": false,
-        "answer": "列出想法"
+        "correct": true,
+        "answer": "列出想法",
+        "parentCorrected": true
       },
       {
         "id": "s5-g12-i1",
@@ -2024,8 +2027,9 @@
       },
       {
         "id": "s5-g45-i2",
-        "correct": false,
-        "answer": "将要做"
+        "correct": true,
+        "answer": "将要做",
+        "parentCorrected": true
       },
       {
         "id": "s5-g24-i2",
@@ -2039,8 +2043,9 @@
       },
       {
         "id": "s5-g13-i1",
-        "correct": false,
-        "answer": "乘卡车游览"
+        "correct": true,
+        "answer": "乘卡车游览",
+        "parentCorrected": true
       },
       {
         "id": "s5-g61-i1",
@@ -2359,8 +2364,9 @@
       },
       {
         "id": "s5-g26-i2",
-        "correct": false,
-        "answer": "玩得开心"
+        "correct": true,
+        "answer": "玩得开心",
+        "parentCorrected": true
       },
       {
         "id": "s5-g3-i1",
@@ -2419,8 +2425,9 @@
       },
       {
         "id": "s5-g40-i1",
-        "correct": false,
-        "answer": "它们全部"
+        "correct": true,
+        "answer": "它们全部",
+        "parentCorrected": true
       },
       {
         "id": "s5-g33-i1",
@@ -2503,9 +2510,60 @@
         "answer": "last year"
       }
     ],
-    "correct": 91,
+    "correct": 98,
     "total": 110,
-    "score": 83
+    "score": 89
   },
-  "gradingVersion": 5
+  "gradingVersion": 5,
+  "aiGrading": {
+    "score": 83,
+    "correct": 91,
+    "total": 110
+  },
+  "regradedAt": "2026-08-17T06:49:01.612Z",
+  "parentGradedAt": "2026-08-17T06:49:01.612Z",
+  "parentGraded": [
+    {
+      "id": "s5-g44-i1",
+      "term": "try to feed",
+      "answer": "尝试去喂养",
+      "displayNumber": "44"
+    },
+    {
+      "id": "s5-g54-i1",
+      "term": "spend the day resting",
+      "answer": "休息一天",
+      "displayNumber": "54"
+    },
+    {
+      "id": "s5-g10-i1",
+      "term": "list the ideas",
+      "answer": "列出建议",
+      "displayNumber": "10"
+    },
+    {
+      "id": "s5-g45-i2",
+      "term": "be going to do",
+      "answer": "将要去做某事",
+      "displayNumber": "45-2"
+    },
+    {
+      "id": "s5-g13-i1",
+      "term": "take a truck tour",
+      "answer": "坐卡车浏览",
+      "displayNumber": "13"
+    },
+    {
+      "id": "s5-g26-i2",
+      "term": "enjoy yourself",
+      "answer": "祝你玩得好",
+      "displayNumber": "26-2"
+    },
+    {
+      "id": "s5-g40-i1",
+      "term": "all of them",
+      "answer": "他们的全部",
+      "displayNumber": "40"
+    }
+  ]
 }
