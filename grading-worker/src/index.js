@@ -95,6 +95,7 @@ async function callMimo(messages, key, maxCompletionTokens) {
       body: JSON.stringify({
         model: MODEL,
         messages,
+        thinking: { type: "disabled" },
         temperature: 0.1,
         max_completion_tokens: maxCompletionTokens,
         stream: false

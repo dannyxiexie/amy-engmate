@@ -2549,667 +2549,800 @@
       {
         "id": "s7-g13-i2",
         "correct": true,
-        "answer": "你自己"
+        "answer": "你自己",
+        "source": "ai"
       },
       {
         "id": "s7-g34-i1",
         "correct": true,
-        "answer": "制作"
+        "answer": "制作",
+        "source": "ai"
       },
       {
         "id": "s7-g43-i1",
         "correct": true,
-        "answer": "点头"
+        "answer": "点头",
+        "source": "ai"
       },
       {
         "id": "s7-g8-i4",
         "correct": true,
-        "answer": "是（复数或第二人称）"
+        "answer": "是（复数或第二人称）",
+        "source": "ai"
       },
       {
         "id": "s7-g38-i1",
         "correct": true,
-        "answer": "能"
+        "answer": "能",
+        "source": "ai"
       },
       {
         "id": "s7-g57-i1",
         "correct": true,
-        "answer": "不能"
+        "answer": "不能",
+        "source": "ai"
       },
       {
         "id": "s7-g71-i1",
         "correct": true,
-        "answer": "放弃做……"
+        "answer": "放弃做……",
+        "source": "ai"
       },
       {
         "id": "s7-g60-i2",
         "correct": true,
-        "answer": "过去式：生长了"
+        "answer": "过去式：生长了",
+        "source": "ai"
       },
       {
         "id": "s7-g54-i1",
-        "correct": false,
-        "answer": "抓住"
+        "correct": true,
+        "answer": "抓住",
+        "source": "ai"
       },
       {
         "id": "s7-g36-i1",
-        "correct": false,
-        "answer": "擅长于"
+        "correct": true,
+        "answer": "擅长于",
+        "source": "ai"
       },
       {
         "id": "s7-g39-i1",
         "correct": true,
-        "answer": "控制"
+        "answer": "控制",
+        "source": "ai"
       },
       {
         "id": "s7-g72-i2",
         "correct": true,
-        "answer": "为……感到自豪"
+        "answer": "为……感到自豪",
+        "source": "ai"
       },
       {
         "id": "s7-g46-i2",
         "correct": true,
-        "answer": "无法做某事"
+        "answer": "无法做某事",
+        "source": "ai"
       },
       {
         "id": "s7-g13-i1",
         "correct": true,
-        "answer": "保持我自己"
+        "answer": "保持我自己",
+        "source": "ai"
       },
       {
         "id": "s7-g26-i1",
         "correct": true,
-        "answer": "感到紧张"
+        "answer": "感到紧张",
+        "source": "ai"
       },
       {
         "id": "s7-g13-i6",
         "correct": true,
-        "answer": "他们自己很强"
+        "answer": "他们自己很强",
+        "source": "ai"
       },
       {
         "id": "s7-g24-i1",
         "correct": true,
-        "answer": "自信的"
+        "answer": "自信的",
+        "source": "ai"
       },
       {
         "id": "s7-g61-i2",
         "correct": true,
-        "answer": "变成"
+        "answer": "变成",
+        "source": "ai"
       },
       {
         "id": "s7-g41-i2",
         "correct": true,
-        "answer": "教的（过去式）"
+        "answer": "教的（过去式）",
+        "source": "ai"
       },
       {
         "id": "s7-g24-i2",
-        "correct": true,
-        "answer": "感到自信"
+        "correct": false,
+        "answer": "感到自信",
+        "source": "ai"
       },
       {
         "id": "s7-g8-i1",
-        "correct": false,
-        "answer": "是（第三人称单数）"
+        "correct": true,
+        "answer": "是（第三人称单数）",
+        "source": "ai"
       },
       {
         "id": "s7-g45-i1",
         "correct": true,
-        "answer": "告诉"
+        "answer": "告诉",
+        "source": "ai"
       },
       {
         "id": "s7-g47-i3",
         "correct": false,
-        "answer": "正在做"
+        "answer": "正在做",
+        "source": "ai"
       },
       {
         "id": "s7-g57-i2",
-        "correct": false,
-        "answer": "不能的过去式"
+        "correct": true,
+        "answer": "不能的过去式",
+        "source": "ai"
       },
       {
         "id": "s7-g16-i1",
         "correct": false,
-        "answer": "引语"
+        "answer": "引语",
+        "source": "ai"
       },
       {
         "id": "s7-g13-i4",
         "correct": true,
-        "answer": "她自己"
+        "answer": "她自己",
+        "source": "ai"
       },
       {
         "id": "s7-g12-i1",
         "correct": true,
-        "answer": "练习"
+        "answer": "练习",
+        "source": "ai"
       },
       {
         "id": "s7-g47-i2",
         "correct": false,
-        "answer": "过去进行时"
+        "answer": "过去进行时",
+        "source": "ai"
       },
       {
         "id": "s7-g62-i1",
-        "correct": false,
-        "answer": "给……的一封信"
+        "correct": true,
+        "answer": "给……的一封信",
+        "source": "ai"
       },
       {
         "id": "s7-g66-i3",
         "correct": false,
-        "answer": "五年一班"
+        "answer": "五年一班",
+        "source": "ai"
       },
       {
         "id": "s7-g70-i1",
-        "correct": false,
-        "answer": "变成"
+        "correct": true,
+        "answer": "变成",
+        "source": "ai"
       },
       {
         "id": "s7-g66-i1",
         "correct": true,
-        "answer": "五年级"
+        "answer": "五年级",
+        "source": "ai"
       },
       {
         "id": "s7-g49-i2",
-        "correct": false,
-        "answer": "正在使用的"
+        "correct": true,
+        "answer": "正在使用的",
+        "source": "ai"
       },
       {
         "id": "s7-g49-i1",
         "correct": true,
-        "answer": "使用"
+        "answer": "使用",
+        "source": "ai"
       },
       {
         "id": "s7-g23-i1",
-        "correct": false,
-        "answer": "害羞的"
+        "correct": true,
+        "answer": "害羞的",
+        "source": "ai"
       },
       {
         "id": "s7-g64-i1",
         "correct": true,
-        "answer": "仍然"
+        "answer": "仍然",
+        "source": "ai"
       },
       {
         "id": "s7-g17-i2",
         "correct": false,
-        "answer": "赢的"
+        "answer": "赢的",
+        "source": "ai"
       },
       {
         "id": "s7-g65-i1",
         "correct": true,
-        "answer": "记住"
+        "answer": "记住",
+        "source": "ai"
       },
       {
         "id": "s7-g33-i1",
         "correct": true,
-        "answer": "告诉"
+        "answer": "告诉",
+        "source": "ai"
       },
       {
         "id": "s7-g27-i1",
-        "correct": false,
-        "answer": "做"
+        "correct": true,
+        "answer": "做",
+        "source": "ai"
       },
       {
         "id": "s7-g55-i1",
         "correct": true,
-        "answer": "紧的"
+        "answer": "紧的",
+        "source": "ai"
       },
       {
         "id": "s7-g28-i1",
         "correct": true,
-        "answer": "你如何做到这一点？"
+        "answer": "你如何做到这一点？",
+        "source": "ai"
       },
       {
         "id": "s7-g18-i1",
         "correct": true,
-        "answer": "赢得奖品"
+        "answer": "赢得奖品",
+        "source": "ai"
       },
       {
         "id": "s7-g33-i2",
         "correct": true,
-        "answer": "告诉"
+        "answer": "告诉",
+        "source": "ai"
       },
       {
         "id": "s7-g31-i1",
         "correct": true,
-        "answer": "做很多练习"
+        "answer": "做很多练习",
+        "source": "ai"
       },
       {
         "id": "s7-g34-i2",
         "correct": true,
-        "answer": "制作的"
+        "answer": "制作的",
+        "source": "ai"
       },
       {
         "id": "s7-g63-i2",
         "correct": true,
-        "answer": "在未来"
+        "answer": "在未来",
+        "source": "ai"
       },
       {
         "id": "s7-g55-i3",
         "correct": true,
-        "answer": "抓紧"
+        "answer": "抓紧",
+        "source": "ai"
       },
       {
         "id": "s7-g42-i2",
         "correct": true,
-        "answer": "问的（过去式）"
+        "answer": "问的（过去式）",
+        "source": "ai"
       },
       {
         "id": "s7-g36-i2",
         "correct": true,
-        "answer": "擅长做...（动名词形式）"
+        "answer": "擅长做...（动名词形式）",
+        "source": "ai"
       },
       {
         "id": "s7-g55-i2",
         "correct": false,
-        "answer": "紧紧地"
+        "answer": "紧紧地",
+        "source": "ai"
       },
       {
         "id": "s7-g1-i1",
         "correct": true,
-        "answer": "写信"
+        "answer": "写信",
+        "source": "ai"
       },
       {
         "id": "s7-g52-i1",
         "correct": true,
-        "answer": "从……里拿走"
+        "answer": "从……里拿走",
+        "source": "ai"
       },
       {
         "id": "s7-g22-i1",
         "correct": true,
-        "answer": "遇见"
+        "answer": "遇见",
+        "source": "ai"
       },
       {
         "id": "s7-g10-i2",
         "correct": true,
-        "answer": "双脚"
+        "answer": "双脚",
+        "source": "ai"
       },
       {
         "id": "s7-g48-i1",
         "correct": true,
-        "answer": "观看某人正在做某事"
+        "answer": "观看某人正在做某事",
+        "source": "ai"
       },
       {
         "id": "s7-g68-i1",
         "correct": true,
-        "answer": "新鲜水果"
+        "answer": "新鲜水果",
+        "source": "ai"
       },
       {
         "id": "s7-g69-i2",
         "correct": true,
-        "answer": "健康的饮食"
+        "answer": "健康的饮食",
+        "source": "ai"
       },
       {
         "id": "s7-g53-i4",
         "correct": true,
-        "answer": "慢跑"
+        "answer": "慢跑",
+        "source": "ai"
       },
       {
         "id": "s7-g23-i2",
         "correct": true,
-        "answer": "安静的"
+        "answer": "安静的",
+        "source": "ai"
       },
       {
         "id": "s7-g44-i2",
-        "correct": false,
-        "answer": "不能做任何手势"
+        "correct": true,
+        "answer": "不能做任何手势",
+        "source": "ai"
       },
       {
         "id": "s7-g53-i2",
         "correct": false,
-        "answer": "慢慢地"
+        "answer": "慢慢地",
+        "source": "ai"
       },
       {
         "id": "s7-g50-i1",
-        "correct": false,
-        "answer": "一块的"
+        "correct": true,
+        "answer": "一块的",
+        "source": "ai"
       },
       {
         "id": "s7-g40-i1",
         "correct": true,
-        "answer": "放弃"
+        "answer": "放弃",
+        "source": "ai"
       },
       {
         "id": "s7-g44-i1",
-        "correct": false,
-        "answer": "做几个手势"
+        "correct": true,
+        "answer": "做几个手势",
+        "source": "ai"
       },
       {
         "id": "s7-g42-i1",
         "correct": true,
-        "answer": "问"
+        "answer": "问",
+        "source": "ai"
       },
       {
         "id": "s7-g32-i2",
-        "correct": false,
-        "answer": "谁还？还有谁？"
+        "correct": true,
+        "answer": "谁还？还有谁？",
+        "source": "ai"
       },
       {
         "id": "s7-g53-i1",
         "correct": false,
-        "answer": "缓慢的"
+        "answer": "缓慢的",
+        "source": "ai"
       },
       {
         "id": "s7-g48-i2",
-        "correct": false,
-        "answer": "看妈妈打扫房子"
+        "correct": true,
+        "answer": "看妈妈打扫房子",
+        "source": "ai"
       },
       {
         "id": "s7-g70-i3",
-        "correct": false,
-        "answer": "变得更强的"
+        "correct": true,
+        "answer": "变得更强的",
+        "source": "ai"
       },
       {
         "id": "s7-g8-i5",
-        "correct": false,
-        "answer": "是（过去式"
+        "correct": true,
+        "answer": "是（过去式",
+        "source": "ai"
       },
       {
         "id": "s7-g58-i2",
         "correct": true,
-        "answer": "一个字母字符"
+        "answer": "一个字母字符",
+        "source": "ai"
       },
       {
         "id": "s7-g4-i1",
         "correct": true,
-        "answer": "放弃"
+        "answer": "放弃",
+        "source": "ai"
       },
       {
         "id": "s7-g60-i1",
         "correct": true,
-        "answer": "生长"
+        "answer": "生长",
+        "source": "ai"
       },
       {
         "id": "s7-g6-i1",
         "correct": true,
-        "answer": "练习"
+        "answer": "练习",
+        "source": "ai"
       },
       {
         "id": "s7-g17-i1",
-        "correct": false,
-        "answer": "赢得"
+        "correct": true,
+        "answer": "赢得",
+        "source": "ai"
       },
       {
         "id": "s7-g66-i2",
         "correct": false,
-        "answer": "一班"
+        "answer": "一班",
+        "source": "ai"
       },
       {
         "id": "s7-g56-i2",
-        "correct": false,
-        "answer": "写的"
+        "correct": true,
+        "answer": "写的",
+        "source": "ai"
       },
       {
         "id": "s7-g8-i2",
-        "correct": false,
-        "answer": "是（第一人称单数）"
+        "correct": true,
+        "answer": "是（第一人称单数）",
+        "source": "ai"
       },
       {
         "id": "s7-g68-i2",
-        "correct": false,
-        "answer": "新鲜空气"
+        "correct": true,
+        "answer": "新鲜空气",
+        "source": "ai"
       },
       {
         "id": "s7-g29-i2",
         "correct": false,
-        "answer": "已学的"
+        "answer": "已学的",
+        "source": "ai"
       },
       {
         "id": "s7-g73-i1",
         "correct": true,
-        "answer": "缺点"
+        "answer": "缺点",
+        "source": "ai"
       },
       {
         "id": "s7-g75-i2",
         "correct": true,
-        "answer": "因为"
+        "answer": "因为",
+        "source": "ai"
       },
       {
         "id": "s7-g50-i2",
         "correct": true,
-        "answer": "一块粉笔的"
+        "answer": "一块粉笔的",
+        "source": "ai"
       },
       {
         "id": "s7-g59-i1",
-        "correct": false,
-        "answer": "通往一个新世界的路径"
+        "correct": true,
+        "answer": "通往一个新世界的路径",
+        "source": "ai"
       },
       {
         "id": "s7-g2-i1",
         "correct": true,
-        "answer": "未来"
+        "answer": "未来",
+        "source": "ai"
       },
       {
         "id": "s7-g9-i1",
-        "correct": false,
-        "answer": "左边的"
+        "correct": true,
+        "answer": "左边的",
+        "source": "ai"
       },
       {
         "id": "s7-g45-i2",
         "correct": true,
-        "answer": "告诉的（过去式）"
+        "answer": "告诉的（过去式）",
+        "source": "ai"
       },
       {
         "id": "s7-g65-i2",
-        "correct": false,
-        "answer": "关于……记起/提醒"
+        "correct": true,
+        "answer": "关于……记起/提醒",
+        "source": "ai"
       },
       {
         "id": "s7-g74-i1",
-        "correct": false,
-        "answer": "在过去"
+        "correct": true,
+        "answer": "在过去",
+        "source": "ai"
       },
       {
         "id": "s7-g37-i1",
         "correct": true,
-        "answer": "生病"
+        "answer": "生病",
+        "source": "ai"
       },
       {
         "id": "s7-g35-i1",
         "correct": true,
-        "answer": "给我建议"
+        "answer": "给我建议",
+        "source": "ai"
       },
       {
         "id": "s7-g19-i1",
-        "correct": false,
-        "answer": "参加竞赛"
+        "correct": true,
+        "answer": "参加竞赛",
+        "source": "ai"
       },
       {
         "id": "s7-g54-i2",
         "correct": false,
-        "answer": "被抓住的"
+        "answer": "被抓住的",
+        "source": "ai"
       },
       {
         "id": "s7-g70-i2",
         "correct": true,
-        "answer": "变得强壮的"
+        "answer": "变得强壮的",
+        "source": "ai"
       },
       {
         "id": "s7-g9-i2",
         "correct": false,
-        "answer": "右边的"
+        "answer": "右边的",
+        "source": "ai"
       },
       {
         "id": "s7-g22-i2",
         "correct": true,
-        "answer": "遇见的（过去式）"
+        "answer": "遇见的（过去式）",
+        "source": "ai"
       },
       {
         "id": "s7-g15-i1",
-        "correct": false,
-        "answer": "有志者事竟成"
+        "correct": true,
+        "answer": "有志者事竟成",
+        "source": "ai"
       },
       {
         "id": "s7-g53-i3",
-        "correct": false,
-        "answer": "慢慢走"
+        "correct": true,
+        "answer": "慢慢走",
+        "source": "ai"
       },
       {
         "id": "s7-g11-i1",
         "correct": true,
-        "answer": "放弃"
+        "answer": "放弃",
+        "source": "ai"
       },
       {
         "id": "s7-g72-i1",
         "correct": true,
-        "answer": "自豪的"
+        "answer": "自豪的",
+        "source": "ai"
       },
       {
         "id": "s7-g38-i2",
         "correct": true,
-        "answer": "能够（过去式）"
+        "answer": "能够（过去式）",
+        "source": "ai"
       },
       {
         "id": "s7-g36-i3",
         "correct": true,
-        "answer": "不擅长做..."
+        "answer": "不擅长做...",
+        "source": "ai"
       },
       {
         "id": "s7-g3-i1",
-        "correct": false,
-        "answer": "挑战"
+        "correct": true,
+        "answer": "挑战",
+        "source": "ai"
       },
       {
         "id": "s7-g8-i3",
         "correct": true,
-        "answer": "是（过去式"
+        "answer": "是（过去式",
+        "source": "ai"
       },
       {
         "id": "s7-g47-i1",
         "correct": false,
-        "answer": "正在做"
+        "answer": "正在做",
+        "source": "ai"
       },
       {
         "id": "s7-g29-i1",
         "correct": true,
-        "answer": "学习"
+        "answer": "学习",
+        "source": "ai"
       },
       {
         "id": "s7-g67-i1",
         "correct": true,
-        "answer": "蔬菜"
+        "answer": "蔬菜",
+        "source": "ai"
       },
       {
         "id": "s7-g13-i5",
         "correct": true,
-        "answer": "我们自己"
+        "answer": "我们自己",
+        "source": "ai"
       },
       {
         "id": "s7-g51-i2",
         "correct": true,
-        "answer": "拿了（过去式）"
+        "answer": "拿了（过去式）",
+        "source": "ai"
       },
       {
         "id": "s7-g20-i1",
         "correct": true,
-        "answer": "记住"
+        "answer": "记住",
+        "source": "ai"
       },
       {
         "id": "s7-g13-i3",
         "correct": true,
-        "answer": "他自己"
+        "answer": "他自己",
+        "source": "ai"
       },
       {
         "id": "s7-g41-i1",
         "correct": true,
-        "answer": "教"
+        "answer": "教",
+        "source": "ai"
       },
       {
         "id": "s7-g56-i1",
         "correct": true,
-        "answer": "写"
+        "answer": "写",
+        "source": "ai"
       },
       {
         "id": "s7-g69-i1",
         "correct": true,
-        "answer": "饮食"
+        "answer": "饮食",
+        "source": "ai"
       },
       {
         "id": "s7-g32-i1",
         "correct": true,
-        "answer": "还有什么别的吗？还有其他的吗？"
+        "answer": "还有什么别的吗？还有其他的吗？",
+        "source": "ai"
       },
       {
         "id": "s7-g5-i2",
-        "correct": true,
-        "answer": "成功"
+        "correct": false,
+        "answer": "成功",
+        "source": "ai"
       },
       {
         "id": "s7-g25-i1",
         "correct": true,
-        "answer": "过去常常"
+        "answer": "过去常常",
+        "source": "ai"
       },
       {
         "id": "s7-g10-i1",
         "correct": true,
-        "answer": "脚"
+        "answer": "脚",
+        "source": "ai"
       },
       {
         "id": "s7-g75-i1",
         "correct": false,
-        "answer": "原因"
+        "answer": "原因",
+        "source": "ai"
       },
       {
         "id": "s7-g51-i1",
         "correct": true,
-        "answer": "拿"
+        "answer": "拿",
+        "source": "ai"
       },
       {
         "id": "s7-g63-i1",
         "correct": true,
-        "answer": "未来的"
+        "answer": "未来的",
+        "source": "ai"
       },
       {
         "id": "s7-g61-i1",
         "correct": true,
-        "answer": "变成"
+        "answer": "变成",
+        "source": "ai"
       },
       {
         "id": "s7-g46-i1",
         "correct": true,
-        "answer": "能够做某事"
+        "answer": "能够做某事",
+        "source": "ai"
       },
       {
         "id": "s7-g58-i1",
         "correct": false,
-        "answer": "(一封信)"
+        "answer": "(一封信)",
+        "source": "ai"
       },
       {
         "id": "s7-g30-i1",
-        "correct": true,
-        "answer": "从……学习"
+        "correct": false,
+        "answer": "从……学习",
+        "source": "ai"
       },
       {
         "id": "s7-g14-i1",
         "correct": true,
-        "answer": "移山"
+        "answer": "移山",
+        "source": "ai"
       },
       {
         "id": "s7-g43-i2",
         "correct": true,
-        "answer": "点头（动作）"
+        "answer": "点头（动作）",
+        "source": "ai"
       },
       {
         "id": "s7-g21-i1",
         "correct": false,
-        "answer": "第一次"
+        "answer": "第一次",
+        "source": "ai"
       },
       {
         "id": "s7-g5-i1",
         "correct": true,
-        "answer": "成功"
+        "answer": "成功",
+        "source": "ai"
       },
       {
         "id": "s7-g7-i1",
         "correct": true,
-        "answer": "好的"
+        "answer": "好的",
+        "source": "ai"
       },
       {
         "id": "s7-g7-i2",
         "correct": true,
-        "answer": "更好的"
+        "answer": "更好的",
+        "source": "ai"
       },
       {
         "id": "s7-g27-i2",
-        "correct": true,
-        "answer": "做了（过去式）"
+        "correct": false,
+        "answer": "做了（过去式）",
+        "source": "ai"
       }
     ],
     "cloze": [
@@ -3262,9 +3395,1482 @@
         "answer": "practice"
       }
     ],
-    "correct": 100,
+    "correct": 124,
     "total": 145,
-    "score": 69
+    "score": 86
   },
-  "gradingVersion": 5
+  "gradingVersion": 6,
+  "gradingAudit": {
+    "provider": "xiaomi-mimo",
+    "model": "mimo-v2.5-pro",
+    "startedAt": "2026-08-17T07:36:11.656Z",
+    "completedAt": "2026-08-17T07:53:12.226Z",
+    "itemCount": 133,
+    "items": [
+      {
+        "id": "s7-g13-i2",
+        "requestId": "85f03a70-5138-4113-a3d6-bc1d58fa08d4",
+        "requestIds": [
+          "85f03a70-5138-4113-a3d6-bc1d58fa08d4"
+        ],
+        "attempts": 2,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:36:29.725Z"
+      },
+      {
+        "id": "s7-g34-i1",
+        "requestId": "a4670037-af61-4220-a8eb-f74f3b5c8ba9",
+        "requestIds": [
+          "a4670037-af61-4220-a8eb-f74f3b5c8ba9"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:36:41.398Z"
+      },
+      {
+        "id": "s7-g43-i1",
+        "requestId": "8fc633a3-1aed-4dd3-8747-728d3b913b68",
+        "requestIds": [
+          "8fc633a3-1aed-4dd3-8747-728d3b913b68"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:36:56.335Z"
+      },
+      {
+        "id": "s7-g8-i4",
+        "requestId": "c600826b-357f-4f3c-9baa-a6acc02dee35",
+        "requestIds": [
+          "c600826b-357f-4f3c-9baa-a6acc02dee35"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:47:25.155Z"
+      },
+      {
+        "id": "s7-g38-i1",
+        "requestId": "181c4883-4d9d-4e50-8310-62a108d6d5c3",
+        "requestIds": [
+          "181c4883-4d9d-4e50-8310-62a108d6d5c3"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:47:27.667Z"
+      },
+      {
+        "id": "s7-g57-i1",
+        "requestId": "3f9758f1-1344-44a4-a2a9-03cb554e069e",
+        "requestIds": [
+          "3f9758f1-1344-44a4-a2a9-03cb554e069e"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:47:30.784Z"
+      },
+      {
+        "id": "s7-g71-i1",
+        "requestId": "4671d624-0462-4466-bfa5-06ba80bdb3e5",
+        "requestIds": [
+          "4671d624-0462-4466-bfa5-06ba80bdb3e5"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:47:32.890Z"
+      },
+      {
+        "id": "s7-g60-i2",
+        "requestId": "75a23caa-dfed-4834-b826-13d7f819f1e2",
+        "requestIds": [
+          "75a23caa-dfed-4834-b826-13d7f819f1e2"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:47:34.906Z"
+      },
+      {
+        "id": "s7-g54-i1",
+        "requestId": "40dca75c-0b73-4005-b83f-751a5c11c934",
+        "requestIds": [
+          "40dca75c-0b73-4005-b83f-751a5c11c934"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:47:37.213Z"
+      },
+      {
+        "id": "s7-g36-i1",
+        "requestId": "60670768-fd26-4806-bf10-8c437aeb5d83",
+        "requestIds": [
+          "60670768-fd26-4806-bf10-8c437aeb5d83"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:47:40.998Z"
+      },
+      {
+        "id": "s7-g39-i1",
+        "requestId": "ed125ddd-d64a-421e-b8e4-a34bcfb7ea80",
+        "requestIds": [
+          "ed125ddd-d64a-421e-b8e4-a34bcfb7ea80"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:47:43.483Z"
+      },
+      {
+        "id": "s7-g72-i2",
+        "requestId": "07977378-932c-4352-98f0-eb1006638d37",
+        "requestIds": [
+          "07977378-932c-4352-98f0-eb1006638d37"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:47:47.163Z"
+      },
+      {
+        "id": "s7-g46-i2",
+        "requestId": "aacfbb80-b687-474f-ab78-6c391304646d",
+        "requestIds": [
+          "aacfbb80-b687-474f-ab78-6c391304646d"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:47:49.989Z"
+      },
+      {
+        "id": "s7-g13-i1",
+        "requestId": "67af14f0-0552-4a39-820d-4dab91b5e7cc",
+        "requestIds": [
+          "67af14f0-0552-4a39-820d-4dab91b5e7cc"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:47:52.580Z"
+      },
+      {
+        "id": "s7-g26-i1",
+        "requestId": "e6780aa5-118b-4c4c-bb79-d72b253cf1ce",
+        "requestIds": [
+          "e6780aa5-118b-4c4c-bb79-d72b253cf1ce"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:47:54.796Z"
+      },
+      {
+        "id": "s7-g13-i6",
+        "requestId": "498d265e-9e52-4d34-9614-d7fb1a04e6d0",
+        "requestIds": [
+          "498d265e-9e52-4d34-9614-d7fb1a04e6d0"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:47:57.301Z"
+      },
+      {
+        "id": "s7-g24-i1",
+        "requestId": "1127f088-c58c-41fb-b78d-d8d107a70350",
+        "requestIds": [
+          "1127f088-c58c-41fb-b78d-d8d107a70350"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:47:59.485Z"
+      },
+      {
+        "id": "s7-g61-i2",
+        "requestId": "b3fb3a2a-a9b0-49c7-b942-d90c0fa9a633",
+        "requestIds": [
+          "b3fb3a2a-a9b0-49c7-b942-d90c0fa9a633"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:02.623Z"
+      },
+      {
+        "id": "s7-g41-i2",
+        "requestId": "cd1d10b8-2d42-4695-ae56-64ed0ec11523",
+        "requestIds": [
+          "cd1d10b8-2d42-4695-ae56-64ed0ec11523"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:04.437Z"
+      },
+      {
+        "id": "s7-g24-i2",
+        "requestId": "eed3aeab-be7c-42f0-b02a-d854d5863244",
+        "requestIds": [
+          "eed3aeab-be7c-42f0-b02a-d854d5863244"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:06.994Z"
+      },
+      {
+        "id": "s7-g8-i1",
+        "requestId": "a80ab24e-bc20-46a7-8170-2da0155a8d06",
+        "requestIds": [
+          "a80ab24e-bc20-46a7-8170-2da0155a8d06"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:09.121Z"
+      },
+      {
+        "id": "s7-g45-i1",
+        "requestId": "541f2ebd-c3d8-4ab4-95a9-c96eb6463e95",
+        "requestIds": [
+          "541f2ebd-c3d8-4ab4-95a9-c96eb6463e95"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:12.126Z"
+      },
+      {
+        "id": "s7-g47-i3",
+        "requestId": "2b328f9f-37d8-467b-ba8e-5edd6bc2b5e4",
+        "requestIds": [
+          "2b328f9f-37d8-467b-ba8e-5edd6bc2b5e4"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:14.514Z"
+      },
+      {
+        "id": "s7-g57-i2",
+        "requestId": "2eaf243d-a184-4941-9a22-9027e60f665c",
+        "requestIds": [
+          "2eaf243d-a184-4941-9a22-9027e60f665c"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:17.525Z"
+      },
+      {
+        "id": "s7-g16-i1",
+        "requestId": "8c49255d-ed1a-41d4-a3dc-451b197bb9c3",
+        "requestIds": [
+          "8c49255d-ed1a-41d4-a3dc-451b197bb9c3"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:19.202Z"
+      },
+      {
+        "id": "s7-g13-i4",
+        "requestId": "cab9bea8-35b7-4373-8ce0-8d794f1f9a5d",
+        "requestIds": [
+          "cab9bea8-35b7-4373-8ce0-8d794f1f9a5d"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:21.643Z"
+      },
+      {
+        "id": "s7-g12-i1",
+        "requestId": "86ae13c6-2bec-4975-b475-1c69e7e4228d",
+        "requestIds": [
+          "86ae13c6-2bec-4975-b475-1c69e7e4228d"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:24.482Z"
+      },
+      {
+        "id": "s7-g47-i2",
+        "requestId": "e0c77060-20f6-4f3d-8a30-dbe85cb8fa72",
+        "requestIds": [
+          "e0c77060-20f6-4f3d-8a30-dbe85cb8fa72"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:26.910Z"
+      },
+      {
+        "id": "s7-g62-i1",
+        "requestId": "6bb3ac27-d01a-49b0-be8a-7ce27be510cb",
+        "requestIds": [
+          "6bb3ac27-d01a-49b0-be8a-7ce27be510cb"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:31.084Z"
+      },
+      {
+        "id": "s7-g66-i3",
+        "requestId": "ef52e22a-2596-4832-b143-70d9ac829cf4",
+        "requestIds": [
+          "ef52e22a-2596-4832-b143-70d9ac829cf4"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:33.623Z"
+      },
+      {
+        "id": "s7-g70-i1",
+        "requestId": "4b2119e5-db84-431e-bebb-1b8b4cd61368",
+        "requestIds": [
+          "4b2119e5-db84-431e-bebb-1b8b4cd61368"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:36.965Z"
+      },
+      {
+        "id": "s7-g66-i1",
+        "requestId": "d889a072-dcbc-4e82-ad63-bdc7046e20c5",
+        "requestIds": [
+          "d889a072-dcbc-4e82-ad63-bdc7046e20c5"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:39.834Z"
+      },
+      {
+        "id": "s7-g49-i2",
+        "requestId": "59a309e6-710b-480f-bf75-04b8c97580a9",
+        "requestIds": [
+          "59a309e6-710b-480f-bf75-04b8c97580a9"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:43.467Z"
+      },
+      {
+        "id": "s7-g49-i1",
+        "requestId": "3069f3cf-a795-486a-947c-55a3e0a35751",
+        "requestIds": [
+          "3069f3cf-a795-486a-947c-55a3e0a35751"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:45.361Z"
+      },
+      {
+        "id": "s7-g23-i1",
+        "requestId": "4e74a897-70c2-4449-ba11-2d303d2602fa",
+        "requestIds": [
+          "4e74a897-70c2-4449-ba11-2d303d2602fa"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:47.957Z"
+      },
+      {
+        "id": "s7-g64-i1",
+        "requestId": "98bd9cda-145f-4051-b8e1-2a49ecc51dc6",
+        "requestIds": [
+          "98bd9cda-145f-4051-b8e1-2a49ecc51dc6"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:52.059Z"
+      },
+      {
+        "id": "s7-g17-i2",
+        "requestId": "686b179b-b478-4db1-be26-00a42004902d",
+        "requestIds": [
+          "686b179b-b478-4db1-be26-00a42004902d"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:54.848Z"
+      },
+      {
+        "id": "s7-g65-i1",
+        "requestId": "02afca36-4043-4b09-b19d-2723d871817b",
+        "requestIds": [
+          "02afca36-4043-4b09-b19d-2723d871817b"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:57.378Z"
+      },
+      {
+        "id": "s7-g33-i1",
+        "requestId": "56adfd22-ab62-43ca-bcdd-1a9cc9a46e81",
+        "requestIds": [
+          "56adfd22-ab62-43ca-bcdd-1a9cc9a46e81"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:48:59.453Z"
+      },
+      {
+        "id": "s7-g27-i1",
+        "requestId": "37e30a98-b0b4-4125-9066-f5a388484888",
+        "requestIds": [
+          "37e30a98-b0b4-4125-9066-f5a388484888"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:01.351Z"
+      },
+      {
+        "id": "s7-g55-i1",
+        "requestId": "43abcb9c-67e0-4239-8e9f-09df95348476",
+        "requestIds": [
+          "43abcb9c-67e0-4239-8e9f-09df95348476"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:04.190Z"
+      },
+      {
+        "id": "s7-g28-i1",
+        "requestId": "d9c77016-9eee-4d7c-a3f4-36731d35a71c",
+        "requestIds": [
+          "d9c77016-9eee-4d7c-a3f4-36731d35a71c"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:07.262Z"
+      },
+      {
+        "id": "s7-g18-i1",
+        "requestId": "28f88f88-b040-4993-8b9f-d630ccc25ca6",
+        "requestIds": [
+          "28f88f88-b040-4993-8b9f-d630ccc25ca6"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:10.190Z"
+      },
+      {
+        "id": "s7-g33-i2",
+        "requestId": "651fc37a-4f78-43b4-bbd9-eed7878b7958",
+        "requestIds": [
+          "651fc37a-4f78-43b4-bbd9-eed7878b7958"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:13.281Z"
+      },
+      {
+        "id": "s7-g31-i1",
+        "requestId": "2259989f-b943-4f6e-bb28-110ba29bbb13",
+        "requestIds": [
+          "2259989f-b943-4f6e-bb28-110ba29bbb13"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:16.407Z"
+      },
+      {
+        "id": "s7-g34-i2",
+        "requestId": "665d2a89-b526-44b3-8591-cf874ff33221",
+        "requestIds": [
+          "665d2a89-b526-44b3-8591-cf874ff33221"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:18.876Z"
+      },
+      {
+        "id": "s7-g63-i2",
+        "requestId": "0688848e-2fbf-4b9b-8e76-af014d5c7f74",
+        "requestIds": [
+          "0688848e-2fbf-4b9b-8e76-af014d5c7f74"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:21.561Z"
+      },
+      {
+        "id": "s7-g55-i3",
+        "requestId": "cc89d352-9150-4756-b883-f0bad9bd6c6b",
+        "requestIds": [
+          "cc89d352-9150-4756-b883-f0bad9bd6c6b"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:25.569Z"
+      },
+      {
+        "id": "s7-g42-i2",
+        "requestId": "30186e80-b14b-4664-8765-c4e7eef127f3",
+        "requestIds": [
+          "30186e80-b14b-4664-8765-c4e7eef127f3"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:28.640Z"
+      },
+      {
+        "id": "s7-g36-i2",
+        "requestId": "0741254c-d6c2-4841-b764-2fceb48ed086",
+        "requestIds": [
+          "0741254c-d6c2-4841-b764-2fceb48ed086"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:31.743Z"
+      },
+      {
+        "id": "s7-g55-i2",
+        "requestId": "2ab7024a-f2f4-4901-96ed-508e38a23faf",
+        "requestIds": [
+          "2ab7024a-f2f4-4901-96ed-508e38a23faf"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:35.206Z"
+      },
+      {
+        "id": "s7-g1-i1",
+        "requestId": "4f675b4a-5aec-4083-9bad-36e46c491bfa",
+        "requestIds": [
+          "4f675b4a-5aec-4083-9bad-36e46c491bfa"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:38.592Z"
+      },
+      {
+        "id": "s7-g52-i1",
+        "requestId": "677ffcc6-572d-4e03-a4de-c684edcb7416",
+        "requestIds": [
+          "677ffcc6-572d-4e03-a4de-c684edcb7416"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:40.615Z"
+      },
+      {
+        "id": "s7-g22-i1",
+        "requestId": "48f01ea2-aa57-440d-9e29-30ba70bcd03b",
+        "requestIds": [
+          "48f01ea2-aa57-440d-9e29-30ba70bcd03b"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:43.723Z"
+      },
+      {
+        "id": "s7-g10-i2",
+        "requestId": "b59bbf7a-ce27-4654-a7cb-29ea79cc44d4",
+        "requestIds": [
+          "b59bbf7a-ce27-4654-a7cb-29ea79cc44d4"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:46.386Z"
+      },
+      {
+        "id": "s7-g48-i1",
+        "requestId": "569d9975-410c-4ef3-b722-62285d282397",
+        "requestIds": [
+          "569d9975-410c-4ef3-b722-62285d282397"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:49.505Z"
+      },
+      {
+        "id": "s7-g68-i1",
+        "requestId": "44cc582f-340a-47cf-bd4d-d1bd5f5ba52b",
+        "requestIds": [
+          "44cc582f-340a-47cf-bd4d-d1bd5f5ba52b"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:51.551Z"
+      },
+      {
+        "id": "s7-g69-i2",
+        "requestId": "9e6c3ec3-be3b-4a1e-89e2-e009742f0225",
+        "requestIds": [
+          "9e6c3ec3-be3b-4a1e-89e2-e009742f0225"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:53.860Z"
+      },
+      {
+        "id": "s7-g53-i4",
+        "requestId": "c9df09cc-940f-4c99-90bb-9d5ad9619d01",
+        "requestIds": [
+          "c9df09cc-940f-4c99-90bb-9d5ad9619d01"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:55.762Z"
+      },
+      {
+        "id": "s7-g23-i2",
+        "requestId": "ce14104b-df09-4923-8942-5328f91f2047",
+        "requestIds": [
+          "ce14104b-df09-4923-8942-5328f91f2047"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:49:58.239Z"
+      },
+      {
+        "id": "s7-g44-i2",
+        "requestId": "be0dc3b8-a7e8-4b0c-b0ef-6704c62a034a",
+        "requestIds": [
+          "be0dc3b8-a7e8-4b0c-b0ef-6704c62a034a"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:00.462Z"
+      },
+      {
+        "id": "s7-g53-i2",
+        "requestId": "20da5afa-6fdb-46eb-b1c1-c2fc57723320",
+        "requestIds": [
+          "20da5afa-6fdb-46eb-b1c1-c2fc57723320"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:02.927Z"
+      },
+      {
+        "id": "s7-g50-i1",
+        "requestId": "6643a868-d47d-4a22-ad5c-0081437543a0",
+        "requestIds": [
+          "6643a868-d47d-4a22-ad5c-0081437543a0"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:05.597Z"
+      },
+      {
+        "id": "s7-g40-i1",
+        "requestId": "872b00cc-d805-4fd1-a7d9-b4b6bfc1f70e",
+        "requestIds": [
+          "872b00cc-d805-4fd1-a7d9-b4b6bfc1f70e"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:08.357Z"
+      },
+      {
+        "id": "s7-g44-i1",
+        "requestId": "3169acff-70db-4f10-88cf-c2a43c0b8156",
+        "requestIds": [
+          "3169acff-70db-4f10-88cf-c2a43c0b8156"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:10.934Z"
+      },
+      {
+        "id": "s7-g42-i1",
+        "requestId": "3508d0fe-7031-41a2-a100-1e34355ad107",
+        "requestIds": [
+          "3508d0fe-7031-41a2-a100-1e34355ad107"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:16.260Z"
+      },
+      {
+        "id": "s7-g32-i2",
+        "requestId": "ff078f6d-be7d-4d06-9bc5-ef9dfe40e8cb",
+        "requestIds": [
+          "ff078f6d-be7d-4d06-9bc5-ef9dfe40e8cb"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:18.401Z"
+      },
+      {
+        "id": "s7-g53-i1",
+        "requestId": "02bedca3-c20a-4bf4-be13-edeae5bf1d8d",
+        "requestIds": [
+          "02bedca3-c20a-4bf4-be13-edeae5bf1d8d"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:21.504Z"
+      },
+      {
+        "id": "s7-g48-i2",
+        "requestId": "fb60dac5-dce3-4a85-8610-be86ef4df9b6",
+        "requestIds": [
+          "fb60dac5-dce3-4a85-8610-be86ef4df9b6"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:24.396Z"
+      },
+      {
+        "id": "s7-g70-i3",
+        "requestId": "834c033c-10ad-4a50-9940-601472bb5613",
+        "requestIds": [
+          "834c033c-10ad-4a50-9940-601472bb5613"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:27.580Z"
+      },
+      {
+        "id": "s7-g8-i5",
+        "requestId": "d14eea63-5ae2-4ce6-ba2e-a7bf9d390132",
+        "requestIds": [
+          "d14eea63-5ae2-4ce6-ba2e-a7bf9d390132"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:30.227Z"
+      },
+      {
+        "id": "s7-g58-i2",
+        "requestId": "9f48a98c-bdd1-4019-ad27-1b098062ab74",
+        "requestIds": [
+          "9f48a98c-bdd1-4019-ad27-1b098062ab74"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:31.864Z"
+      },
+      {
+        "id": "s7-g4-i1",
+        "requestId": "9cde19f9-7bd6-48b6-8674-4d1025b23bbe",
+        "requestIds": [
+          "9cde19f9-7bd6-48b6-8674-4d1025b23bbe"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:34.198Z"
+      },
+      {
+        "id": "s7-g60-i1",
+        "requestId": "6d26fa15-c6e8-42f9-b46e-d21fa739dcaf",
+        "requestIds": [
+          "6d26fa15-c6e8-42f9-b46e-d21fa739dcaf"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:37.120Z"
+      },
+      {
+        "id": "s7-g6-i1",
+        "requestId": "037c271a-2e22-429d-93e5-20451f1c6c74",
+        "requestIds": [
+          "037c271a-2e22-429d-93e5-20451f1c6c74"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:39.696Z"
+      },
+      {
+        "id": "s7-g17-i1",
+        "requestId": "18c9a32f-e402-4ed9-bb73-dfdf57747306",
+        "requestIds": [
+          "18c9a32f-e402-4ed9-bb73-dfdf57747306"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:42.455Z"
+      },
+      {
+        "id": "s7-g66-i2",
+        "requestId": "aea39f94-d12e-458b-9770-89a1bea53d09",
+        "requestIds": [
+          "aea39f94-d12e-458b-9770-89a1bea53d09"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:44.824Z"
+      },
+      {
+        "id": "s7-g56-i2",
+        "requestId": "53406aca-3250-4dd0-bf2a-02ce0f92e445",
+        "requestIds": [
+          "53406aca-3250-4dd0-bf2a-02ce0f92e445"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:47.349Z"
+      },
+      {
+        "id": "s7-g8-i2",
+        "requestId": "3679100b-33af-4614-bf5b-2475884358ac",
+        "requestIds": [
+          "3679100b-33af-4614-bf5b-2475884358ac"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:49.535Z"
+      },
+      {
+        "id": "s7-g68-i2",
+        "requestId": "636670ba-03e7-4aad-a490-b985c4b936da",
+        "requestIds": [
+          "636670ba-03e7-4aad-a490-b985c4b936da"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:51.763Z"
+      },
+      {
+        "id": "s7-g29-i2",
+        "requestId": "2491dd4a-3278-4ff3-bfdf-e283357079ce",
+        "requestIds": [
+          "2491dd4a-3278-4ff3-bfdf-e283357079ce"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:53.670Z"
+      },
+      {
+        "id": "s7-g73-i1",
+        "requestId": "47d18582-085d-4d11-9ba5-e514ca9089f5",
+        "requestIds": [
+          "47d18582-085d-4d11-9ba5-e514ca9089f5"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:56.365Z"
+      },
+      {
+        "id": "s7-g75-i2",
+        "requestId": "fd74ef7a-52ac-454e-8e9b-065562820887",
+        "requestIds": [
+          "fd74ef7a-52ac-454e-8e9b-065562820887"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:50:59.482Z"
+      },
+      {
+        "id": "s7-g50-i2",
+        "requestId": "885ef54e-b367-45b4-bab3-18cd019f3cff",
+        "requestIds": [
+          "885ef54e-b367-45b4-bab3-18cd019f3cff"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:01.171Z"
+      },
+      {
+        "id": "s7-g59-i1",
+        "requestId": "0725803a-dc28-4bf4-87f4-e2f027eb6ecd",
+        "requestIds": [
+          "0725803a-dc28-4bf4-87f4-e2f027eb6ecd"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:02.983Z"
+      },
+      {
+        "id": "s7-g2-i1",
+        "requestId": "160c5507-a859-47a6-a107-40aeb083e5ed",
+        "requestIds": [
+          "160c5507-a859-47a6-a107-40aeb083e5ed"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:04.717Z"
+      },
+      {
+        "id": "s7-g9-i1",
+        "requestId": "ad195b92-4eff-4525-beaf-8574a218b8be",
+        "requestIds": [
+          "ad195b92-4eff-4525-beaf-8574a218b8be"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:07.581Z"
+      },
+      {
+        "id": "s7-g45-i2",
+        "requestId": "79fd662b-6cb9-43eb-a340-c7a796622e74",
+        "requestIds": [
+          "79fd662b-6cb9-43eb-a340-c7a796622e74"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:09.883Z"
+      },
+      {
+        "id": "s7-g65-i2",
+        "requestId": "de5e0736-1ce0-4201-8ac0-573d95581756",
+        "requestIds": [
+          "de5e0736-1ce0-4201-8ac0-573d95581756"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:12.755Z"
+      },
+      {
+        "id": "s7-g74-i1",
+        "requestId": "f9facbcb-edda-41cf-91bc-ba0be54ecfca",
+        "requestIds": [
+          "f9facbcb-edda-41cf-91bc-ba0be54ecfca"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:14.696Z"
+      },
+      {
+        "id": "s7-g37-i1",
+        "requestId": "dafbaa87-0761-4311-92b1-838c534ff299",
+        "requestIds": [
+          "dafbaa87-0761-4311-92b1-838c534ff299"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:17.611Z"
+      },
+      {
+        "id": "s7-g35-i1",
+        "requestId": "af5aa1b5-85be-430b-bb7f-1de34d7d6058",
+        "requestIds": [
+          "af5aa1b5-85be-430b-bb7f-1de34d7d6058"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:20.119Z"
+      },
+      {
+        "id": "s7-g19-i1",
+        "requestId": "931f1d5b-bc09-4f50-96c9-d4b31c6416a6",
+        "requestIds": [
+          "931f1d5b-bc09-4f50-96c9-d4b31c6416a6"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:23.006Z"
+      },
+      {
+        "id": "s7-g54-i2",
+        "requestId": "24eadd2b-6590-4c32-8e22-bfe2ee5f4dd8",
+        "requestIds": [
+          "24eadd2b-6590-4c32-8e22-bfe2ee5f4dd8"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:25.159Z"
+      },
+      {
+        "id": "s7-g70-i2",
+        "requestId": "14b5e11a-f532-44ed-b853-abbc0745b746",
+        "requestIds": [
+          "14b5e11a-f532-44ed-b853-abbc0745b746"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:27.930Z"
+      },
+      {
+        "id": "s7-g9-i2",
+        "requestId": "3f7099cf-2b2b-4e9b-9d53-96243e50bb86",
+        "requestIds": [
+          "3f7099cf-2b2b-4e9b-9d53-96243e50bb86"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:31.722Z"
+      },
+      {
+        "id": "s7-g22-i2",
+        "requestId": "6af160a4-3d6e-40db-bd19-cb6b83166a1c",
+        "requestIds": [
+          "6af160a4-3d6e-40db-bd19-cb6b83166a1c"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:34.335Z"
+      },
+      {
+        "id": "s7-g15-i1",
+        "requestId": "866fc7ad-b9b9-4aa1-a4f4-8c3781cf5a53",
+        "requestIds": [
+          "866fc7ad-b9b9-4aa1-a4f4-8c3781cf5a53"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:36.389Z"
+      },
+      {
+        "id": "s7-g53-i3",
+        "requestId": "517dc1ae-56da-4508-9728-58b5d021307d",
+        "requestIds": [
+          "517dc1ae-56da-4508-9728-58b5d021307d"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:38.578Z"
+      },
+      {
+        "id": "s7-g11-i1",
+        "requestId": "543ad68c-5042-4678-b361-23e0ab9c2dee",
+        "requestIds": [
+          "543ad68c-5042-4678-b361-23e0ab9c2dee"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:40.851Z"
+      },
+      {
+        "id": "s7-g72-i1",
+        "requestId": "06c1cdc0-dbb6-4b97-b614-6e0f6780b6b3",
+        "requestIds": [
+          "06c1cdc0-dbb6-4b97-b614-6e0f6780b6b3"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:43.495Z"
+      },
+      {
+        "id": "s7-g38-i2",
+        "requestId": "94122d0e-c357-4d8d-898c-3f565f6d9327",
+        "requestIds": [
+          "94122d0e-c357-4d8d-898c-3f565f6d9327"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:47.141Z"
+      },
+      {
+        "id": "s7-g36-i3",
+        "requestId": "3ca843d0-0deb-4148-beb8-6dd6bc06afc1",
+        "requestIds": [
+          "3ca843d0-0deb-4148-beb8-6dd6bc06afc1"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:49.267Z"
+      },
+      {
+        "id": "s7-g3-i1",
+        "requestId": "3e6d5a9b-f0ae-4201-a1bc-749005ef9df8",
+        "requestIds": [
+          "3e6d5a9b-f0ae-4201-a1bc-749005ef9df8"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:51.341Z"
+      },
+      {
+        "id": "s7-g8-i3",
+        "requestId": "25cb9678-43c8-4364-a920-0c70ea0bf82a",
+        "requestIds": [
+          "25cb9678-43c8-4364-a920-0c70ea0bf82a"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:53.651Z"
+      },
+      {
+        "id": "s7-g47-i1",
+        "requestId": "e1fb4f5b-bbec-40bd-b88e-f9b925b88ffd",
+        "requestIds": [
+          "e1fb4f5b-bbec-40bd-b88e-f9b925b88ffd"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:56.250Z"
+      },
+      {
+        "id": "s7-g29-i1",
+        "requestId": "cec5d4f6-ccd5-4c3b-bfbe-238016c0f61d",
+        "requestIds": [
+          "cec5d4f6-ccd5-4c3b-bfbe-238016c0f61d"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:51:58.269Z"
+      },
+      {
+        "id": "s7-g67-i1",
+        "requestId": "98c4a473-5e07-4141-8bac-9b1ea466662a",
+        "requestIds": [
+          "98c4a473-5e07-4141-8bac-9b1ea466662a"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:01.239Z"
+      },
+      {
+        "id": "s7-g13-i5",
+        "requestId": "c255ea59-c279-401c-bced-9d3102b715f1",
+        "requestIds": [
+          "c255ea59-c279-401c-bced-9d3102b715f1"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:03.477Z"
+      },
+      {
+        "id": "s7-g51-i2",
+        "requestId": "8da3d0b9-3453-496e-85a3-289d0a67877e",
+        "requestIds": [
+          "8da3d0b9-3453-496e-85a3-289d0a67877e"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:05.594Z"
+      },
+      {
+        "id": "s7-g20-i1",
+        "requestId": "47327a54-2e2c-422f-a77f-1162a012d40b",
+        "requestIds": [
+          "47327a54-2e2c-422f-a77f-1162a012d40b"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:08.534Z"
+      },
+      {
+        "id": "s7-g13-i3",
+        "requestId": "d85327e4-c7f4-4903-95a4-e6913b8e3876",
+        "requestIds": [
+          "d85327e4-c7f4-4903-95a4-e6913b8e3876"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:10.564Z"
+      },
+      {
+        "id": "s7-g41-i1",
+        "requestId": "6baa3ca3-2165-4fbb-98af-78a8a152037a",
+        "requestIds": [
+          "6baa3ca3-2165-4fbb-98af-78a8a152037a"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:12.776Z"
+      },
+      {
+        "id": "s7-g56-i1",
+        "requestId": "f17c9b54-a1a6-408d-a2a5-d531c0555699",
+        "requestIds": [
+          "f17c9b54-a1a6-408d-a2a5-d531c0555699"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:14.796Z"
+      },
+      {
+        "id": "s7-g69-i1",
+        "requestId": "151a824a-c2ab-41b7-9a97-ca3e6400345c",
+        "requestIds": [
+          "151a824a-c2ab-41b7-9a97-ca3e6400345c"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:18.395Z"
+      },
+      {
+        "id": "s7-g32-i1",
+        "requestId": "95a7f8a6-746d-47a5-b3dd-8497397388db",
+        "requestIds": [
+          "95a7f8a6-746d-47a5-b3dd-8497397388db"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:21.533Z"
+      },
+      {
+        "id": "s7-g5-i2",
+        "requestId": "ff26cd99-c9a9-40e5-9025-48a5a6a222b6",
+        "requestIds": [
+          "ff26cd99-c9a9-40e5-9025-48a5a6a222b6"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:25.853Z"
+      },
+      {
+        "id": "s7-g25-i1",
+        "requestId": "4fde672b-4cb5-4892-95c8-cd6816c4e424",
+        "requestIds": [
+          "4fde672b-4cb5-4892-95c8-cd6816c4e424"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:27.550Z"
+      },
+      {
+        "id": "s7-g10-i1",
+        "requestId": "20dad86c-1cc6-4e50-8d0f-7df930b9d098",
+        "requestIds": [
+          "20dad86c-1cc6-4e50-8d0f-7df930b9d098"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:30.977Z"
+      },
+      {
+        "id": "s7-g75-i1",
+        "requestId": "1d191d9d-6ec4-40eb-8877-47d8a596f21d",
+        "requestIds": [
+          "1d191d9d-6ec4-40eb-8877-47d8a596f21d"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:33.807Z"
+      },
+      {
+        "id": "s7-g51-i1",
+        "requestId": "891c642f-c376-4ab0-8639-f809179797d9",
+        "requestIds": [
+          "891c642f-c376-4ab0-8639-f809179797d9"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:36.736Z"
+      },
+      {
+        "id": "s7-g63-i1",
+        "requestId": "005672d3-108c-4d74-8ce2-3dc9b0f5a72e",
+        "requestIds": [
+          "005672d3-108c-4d74-8ce2-3dc9b0f5a72e"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:40.010Z"
+      },
+      {
+        "id": "s7-g61-i1",
+        "requestId": "cbc7e81d-2f03-4b44-a0ac-5d99a7272520",
+        "requestIds": [
+          "cbc7e81d-2f03-4b44-a0ac-5d99a7272520"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:44.298Z"
+      },
+      {
+        "id": "s7-g46-i1",
+        "requestId": "9c45600f-dc94-461a-a3c6-0a64f541f194",
+        "requestIds": [
+          "9c45600f-dc94-461a-a3c6-0a64f541f194"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:46.580Z"
+      },
+      {
+        "id": "s7-g58-i1",
+        "requestId": "84dc7644-57f3-44e7-bc58-52f77e121b18",
+        "requestIds": [
+          "84dc7644-57f3-44e7-bc58-52f77e121b18"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:48.948Z"
+      },
+      {
+        "id": "s7-g30-i1",
+        "requestId": "f35c9c9f-2085-476c-98cb-f4d49547a43f",
+        "requestIds": [
+          "f35c9c9f-2085-476c-98cb-f4d49547a43f"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:51.853Z"
+      },
+      {
+        "id": "s7-g14-i1",
+        "requestId": "4d642aef-bb7c-4930-9a12-87c5dfb3bbd5",
+        "requestIds": [
+          "4d642aef-bb7c-4930-9a12-87c5dfb3bbd5"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:54.502Z"
+      },
+      {
+        "id": "s7-g43-i2",
+        "requestId": "03302e9e-13b4-47b2-a092-54cf86050bdd",
+        "requestIds": [
+          "03302e9e-13b4-47b2-a092-54cf86050bdd"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:52:57.495Z"
+      },
+      {
+        "id": "s7-g21-i1",
+        "requestId": "69515148-ff52-47ff-bb20-c6c4802035eb",
+        "requestIds": [
+          "69515148-ff52-47ff-bb20-c6c4802035eb"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:53:00.467Z"
+      },
+      {
+        "id": "s7-g5-i1",
+        "requestId": "9c71bd79-7be8-43b1-99c7-67f8d73fa396",
+        "requestIds": [
+          "9c71bd79-7be8-43b1-99c7-67f8d73fa396"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:53:03.038Z"
+      },
+      {
+        "id": "s7-g7-i1",
+        "requestId": "16acb07e-04a0-4b40-a7fe-6c89148f38b8",
+        "requestIds": [
+          "16acb07e-04a0-4b40-a7fe-6c89148f38b8"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:53:05.263Z"
+      },
+      {
+        "id": "s7-g7-i2",
+        "requestId": "414a01f9-c854-4d9d-abf3-d05e27497983",
+        "requestIds": [
+          "414a01f9-c854-4d9d-abf3-d05e27497983"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:53:07.208Z"
+      },
+      {
+        "id": "s7-g27-i2",
+        "requestId": "0f03990e-cb26-456b-890f-2c035d496615",
+        "requestIds": [
+          "0f03990e-cb26-456b-890f-2c035d496615"
+        ],
+        "attempts": 1,
+        "provider": "xiaomi-mimo",
+        "model": "mimo-v2.5-pro",
+        "gradedAt": "2026-08-17T07:53:12.160Z"
+      }
+    ]
+  },
+  "regradedAt": "2026-08-17T07:53:12.226Z"
 }
