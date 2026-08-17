@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { ArrowLeft, BookOpen, Check, CheckCircle2, ChevronRight, ClipboardCopy, Clock3, CloudUpload, Download, Gift, GraduationCap, History, Images, PenLine, RotateCcw, Upload, X } from "lucide-react";
+import { ArrowLeft, ArrowUpDown, BookOpen, Check, CheckCircle2, ChevronRight, ClipboardCopy, Clock3, Download, Gift, GraduationCap, History, Images, PenLine, RefreshCw, RotateCcw, Upload, X } from "lucide-react";
 import { AMY_VOCABULARY_MANIFEST, createAmyExam, createClozePrompt, fetchAmyVocabularySession, formatTime, gradeMeaning, hideTermInExample, matchesAcceptedAnswer, recomputeScore } from "./amyVocabularyData.js";
 import { GITHUB_TOKEN_KEY, loadGithubAcceptedAnswers, loadGithubExamLogs, mergeAcceptedAnswers, uploadGithubAcceptedAnswers, uploadGithubExamLog, verifyGithubWriteToken } from "./githubExamLogs.js";
 import GithubCodeDialog from "./GithubCodeDialog.jsx";
@@ -10,6 +10,7 @@ import "./amyVocabulary.css";
 const HISTORY_KEY = "family-reader:amy-grade-5-vocabulary:exam-history:v1";
 const DRAFTS_KEY = "family-reader:amy-grade-5-vocabulary:exam-drafts:v1";
 const ACCEPTED_KEY = "family-reader:amy-grade-5-vocabulary:accepted-answers:v1";
+const LAST_SYNC_KEY = "family-reader:amy-grade-5-vocabulary:last-history-sync:v1";
 const GRADING_VERSION = 5;
 const GRADING_API_URL = import.meta.env.VITE_GRADING_API_URL || "https://grade.dannyxiexie.tech";
 
@@ -75,6 +76,47 @@ function recordsNeedingUpload(localHistory, cloudHistory) {
     const cloudRecord = cloudById.get(record.id);
     return !cloudRecord || recordUpdatedAt(record) > recordUpdatedAt(cloudRecord);
   });
+}
+
+function formatSyncTime(value) {
+  if (!value) return "尚未同步";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "尚未同步";
+  return date.toLocaleString("zh-CN", {
+    month: "numeric",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false
+  });
+}
+
+function gradingBreakdown(record = {}) {
+  const results = record.results || {};
+  const meanings = Array.isArray(results.meanings) ? results.meanings : [];
+  const parentCorrected = meanings.filter((item) => item?.parentCorrected).length;
+  const parentReviewed = Boolean(record.parentGradedAt || parentCorrected);
+  const reconstructedAi = parentReviewed
+    ? recomputeScore({
+      ...results,
+      meanings: meanings.map((item) => item?.parentCorrected ? { ...item, correct: false } : item)
+    })
+    : results;
+  const storedAi = record.aiGrading;
+  const ai = storedAi?.total ? storedAi : {
+    score: reconstructedAi.score || 0,
+    correct: reconstructedAi.correct || 0,
+    total: reconstructedAi.total || 0
+  };
+  return {
+    parentReviewed,
+    ai,
+    parent: parentReviewed ? {
+      score: results.score || 0,
+      correct: results.correct || 0,
+      total: results.total || 0
+    } : null
+  };
 }
 
 function isDraftCompatible(draft, session) {
@@ -224,11 +266,14 @@ function Review({ session }) {
   </main>;
 }
 
-function Result({ correct, answer }) {
+function Result({ correct, answer, parentCorrected }) {
+  if (parentCorrected) {
+    return <div className="amy-result-review"><div className="amy-result wrong"><X size={16} /> AI批改：错误，参考答案：{answer}</div><div className="amy-result correct"><CheckCircle2 size={16} /> 家长批改：正确</div></div>;
+  }
   return <div className={"amy-result " + (correct ? "correct" : "wrong")}>{correct ? <><CheckCircle2 size={16} /> 正确</> : <><X size={16} /> 正确答案：{answer}</>}</div>;
 }
 
-function Paper({ session, exam, setExam, elapsed, results, onSubmit, isGrading = false, parent = null, allowParentEnter = false, onEnterParent, parentSummary = null, onCopyAccepted, onDismissSummary }) {
+function Paper({ session, exam, setExam, elapsed, results, grading = null, onSubmit, isGrading = false, parent = null, allowParentEnter = false, onEnterParent, parentSummary = null, onCopyAccepted, onDismissSummary }) {
   const [section, setSection] = useState("meanings");
   const [resultFilter, setResultFilter] = useState("all");
   const done = Boolean(results);
@@ -242,6 +287,7 @@ function Paper({ session, exam, setExam, elapsed, results, onSubmit, isGrading =
   const clozeQuestions = exam.cloze
     .map((item, index) => ({ item, index }))
     .filter(({ index }) => !done || resultFilter === "all" || !results.cloze[index]?.correct);
+  const gradingSummary = done ? (grading || gradingBreakdown({ results })) : null;
   return <main className="amy-exam-layout">
     <section className="amy-paper"><div className="amy-exam-head"><div><span>第 {session.number} 次</span><h1>{done ? "批改结果" : "全量词汇测试"}</h1></div><strong>{answered} / {total} 已作答</strong></div>
       <nav className="amy-tabs"><button className={section === "meanings" ? "active" : ""} onClick={() => setSection("meanings")}>1 英译中 <small>{exam.meanings.filter((item) => item.answer.trim()).length}/{exam.meanings.length}</small></button><button className={section === "cloze" ? "active" : ""} onClick={() => setSection("cloze")}>2 例句选词 <small>{exam.cloze.filter((item) => item.answer).length}/{exam.cloze.length}</small></button></nav>
@@ -254,14 +300,24 @@ function Paper({ session, exam, setExam, elapsed, results, onSubmit, isGrading =
         return <article key={item.id} className="amy-question"><span>{item.displayNumber}</span><div><label>{item.term}</label><input value={item.answer} disabled={done || isGrading} onChange={(event) => updateMeaning(index, event.target.value)} placeholder="写中文含义" autoComplete="off" />{flipped ? <div className="amy-result correct"><CheckCircle2 size={16} /> 家长判对</div> : result ? <Result {...result} /> : null}{canMark ? <button type="button" className={"amy-mark-correct" + (flipped ? " active" : "")} onClick={() => parent.onToggle(index)}><Check size={15} /> {flipped ? "取消算对" : "这题算对"}</button> : null}</div></article>;
       }) : clozeQuestions.map(({ item, index }) => <article key={item.id} className="amy-question"><span>{index + 1}</span><div><label>{item.prompt || hideTermInExample(item.example, item.term)}</label><div className="amy-options">{item.choices.map((choice) => <button key={choice} disabled={done || isGrading} onClick={() => updateCloze(index, choice)} className={item.answer === choice ? "selected" : ""}>{choice}</button>)}</div>{results?.cloze[index] ? <Result {...results.cloze[index]} /> : null}</div></article>)}</div>
     </section>
-    <aside className="amy-aside"><div className="amy-timer"><Clock3 size={17} /><div><span>用时</span><strong>{formatTime(elapsed)}</strong>{!done ? <small>已自动保存</small> : null}</div></div>{done ? <div className="amy-score"><span>本次得分</span><strong>{results.score}<small> / 100</small></strong><p>{results.correct} / {results.total} 题正确</p></div> : <button className="amy-primary" disabled={isGrading} onClick={onSubmit}>{isGrading ? "正在理解答案" : "提交并批改"}</button>}{parentSummary ? <div className="amy-parent-summary"><span>家长批改小结</span><strong>+{parentSummary.count} 题改对</strong><p>最新得分 {parentSummary.score}<small> / 100</small> · {parentSummary.correct}/{parentSummary.total} 题正确</p>{parentSummary.added?.length ? <><small>新增 {parentSummary.added.length} 条可接受答案，下次同样作答会自动判对。</small><button className="copy" onClick={onCopyAccepted}>{parentSummary.copied ? <><Check size={14} /> 已复制</> : <><ClipboardCopy size={14} /> 复制补充答案</>}</button></> : null}<button className="link" onClick={onDismissSummary}>关闭小结</button></div> : null}{done && !parentSummary && parent?.active ? <div className="amy-parent-bar"><div><span>家长批改中</span><strong>已选 {parent.flips.size} 题算对</strong></div><button className="primary" disabled={!parent.flips.size} onClick={parent.onSubmit}>完成批改</button><button onClick={parent.onCancel}>取消</button></div> : null}{done && !parentSummary && !parent?.active && allowParentEnter ? <button className="amy-parent-enter" onClick={onEnterParent}><PenLine size={16} /> 家长批改</button> : null}</aside>
+    <aside className="amy-aside"><div className="amy-timer"><Clock3 size={17} /><div><span>用时</span><strong>{formatTime(elapsed)}</strong>{!done ? <small>已自动保存</small> : null}</div></div>{done ? <div className={"amy-score" + (gradingSummary.parentReviewed ? " compared" : "")}><div className="amy-score-line"><span>AI批改</span><strong>{gradingSummary.ai.score}<small> / 100</small></strong><p>{gradingSummary.ai.correct} / {gradingSummary.ai.total} 题正确</p></div>{gradingSummary.parentReviewed ? <div className="amy-score-line parent"><span>家长批改</span><strong>{gradingSummary.parent.score}<small> / 100</small></strong><p>{gradingSummary.parent.correct} / {gradingSummary.parent.total} 题正确</p></div> : null}</div> : <button className="amy-primary" disabled={isGrading} onClick={onSubmit}>{isGrading ? "正在理解答案" : "提交并批改"}</button>}{parentSummary ? <div className="amy-parent-summary"><span>家长批改小结</span><strong>+{parentSummary.count} 题改对</strong><p>最新得分 {parentSummary.score}<small> / 100</small> · {parentSummary.correct}/{parentSummary.total} 题正确</p>{parentSummary.added?.length ? <><small>新增 {parentSummary.added.length} 条可接受答案，下次同样作答会自动判对。</small><button className="copy" onClick={onCopyAccepted}>{parentSummary.copied ? <><Check size={14} /> 已复制</> : <><ClipboardCopy size={14} /> 复制补充答案</>}</button></> : null}<button className="link" onClick={onDismissSummary}>关闭小结</button></div> : null}{done && !parentSummary && parent?.active ? <div className="amy-parent-bar"><div><span>家长批改中</span><strong>已选 {parent.flips.size} 题算对</strong></div><button className="primary" disabled={!parent.flips.size} onClick={parent.onSubmit}>完成批改</button><button onClick={parent.onCancel}>取消</button></div> : null}{done && !parentSummary && !parent?.active && allowParentEnter ? <button className="amy-parent-enter" onClick={onEnterParent}><PenLine size={16} /> 家长批改</button> : null}</aside>
   </main>;
 }
 
-function HistoryPage({ history, onOpen, onExport, onImport, onUpload, cloudStatus, isUploading }) {
-  return <main className="amy-content"><div className="amy-heading"><div><span>EXAM ARCHIVE</span><h1>历史考试</h1></div><div className="amy-history-tools"><button onClick={onExport} disabled={!history.length}><Download size={15} />导出记录</button><label><Upload size={15} />导入记录<input type="file" accept="application/json,.json" onChange={(event) => { onImport(event.target.files?.[0]); event.target.value = ""; }} /></label><button className="cloud" onClick={onUpload} disabled={!history.length || isUploading}><CloudUpload size={15} />{isUploading ? "正在上传" : "上传记录"}</button></div></div>
-    {cloudStatus.message ? <div className={`amy-cloud-status ${cloudStatus.type || ""}`}><CloudUpload size={15} /><span>{cloudStatus.message}</span></div> : null}
-    {history.length ? <div className="amy-history">{history.map((item) => <button key={item.id} onClick={() => onOpen(item)}><span>第 {item.session} 次</span><span>{new Date(item.completedAt).toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}</span><strong>{item.results.score} 分</strong><ChevronRight size={17} /></button>)}</div> : <p className="amy-empty">完成一次考试后，成绩和错题会保存在这里。</p>}</main>;
+function HistoryPage({ history, sortBy, onSortChange, onOpen, onExport, onImport, onSync, cloudStatus, isSyncing, lastSyncAt }) {
+  const sortedHistory = useMemo(() => [...history].sort((left, right) => {
+    if (sortBy === "session") {
+      return Number(left.session) - Number(right.session)
+        || new Date(right.completedAt || 0).getTime() - new Date(left.completedAt || 0).getTime();
+    }
+    return new Date(right.completedAt || 0).getTime() - new Date(left.completedAt || 0).getTime();
+  }), [history, sortBy]);
+  return <main className="amy-content"><div className="amy-heading"><div><span>EXAM ARCHIVE</span><h1>历史考试</h1></div><div className="amy-history-tools"><button onClick={onExport} disabled={!history.length}><Download size={15} />导出记录</button><label><Upload size={15} />导入记录<input type="file" accept="application/json,.json" onChange={(event) => { onImport(event.target.files?.[0]); event.target.value = ""; }} /></label><button className="cloud" onClick={onSync} disabled={isSyncing}><RefreshCw size={15} />{isSyncing ? "同步中" : "同步"}</button></div></div>
+    <div className={`amy-cloud-status ${cloudStatus.type || ""}`}><RefreshCw size={15} /><span><strong>{cloudStatus.message}</strong><small>上次同步：{formatSyncTime(lastSyncAt)}</small></span></div>
+    {history.length ? <><div className="amy-history-sort"><span><ArrowUpDown size={14} />排序</span><button className={sortBy === "submitted" ? "active" : ""} onClick={() => onSortChange("submitted")}>提交时间</button><button className={sortBy === "session" ? "active" : ""} onClick={() => onSortChange("session")}>第几次</button></div><div className="amy-history">{sortedHistory.map((item) => {
+      const summary = gradingBreakdown(item);
+      return <button key={item.id} className={summary.parentReviewed ? "parent-reviewed" : ""} onClick={() => onOpen(item)}><span className="amy-history-session">第 {item.session} 次</span><time>{new Date(item.completedAt).toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}</time><span className="amy-history-scores"><span>AI {summary.ai.score} 分</span>{summary.parentReviewed ? <strong>家长 {summary.parent.score} 分</strong> : null}</span><span className={"amy-history-review-state " + (summary.parentReviewed ? "done" : "ai-only")}>{summary.parentReviewed ? <><Check size={13} />家长已批改</> : "仅AI批改"}</span><ChevronRight size={17} /></button>;
+    })}</div></> : <p className="amy-empty">完成一次考试后，成绩和错题会保存在这里。</p>}</main>;
 }
 
 export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework }) {
@@ -273,6 +329,7 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
   const [elapsed, setElapsed] = useState(0);
   const [results, setResults] = useState(null);
   const [history, setHistory] = useState([]);
+  const [historySort, setHistorySort] = useState("submitted");
   const [drafts, setDrafts] = useState({});
   const [storageReady, setStorageReady] = useState(false);
   const [record, setRecord] = useState(null);
@@ -290,8 +347,8 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
   const [githubAccessError, setGithubAccessError] = useState("");
   const [isSavingGithubAccess, setIsSavingGithubAccess] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
-  const [cloudLoaded, setCloudLoaded] = useState(false);
-  const [cloudStatus, setCloudStatus] = useState({ type: "", message: "打开历史时会自动同步云端记录" });
+  const [lastSyncAt, setLastSyncAt] = useState(() => window.localStorage.getItem(LAST_SYNC_KEY) || "");
+  const [cloudStatus, setCloudStatus] = useState({ type: "", message: "点击同步获取其他设备的最新记录" });
   const regradedRecords = useRef(new Set());
   const session = useMemo(() => data?.sessions.find((item) => item.number === selected), [data, selected]);
   useEffect(() => {
@@ -302,59 +359,6 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
     setStorageReady(true);
   }, []);
   useEffect(() => {
-    if (!storageReady || view !== "history" || cloudLoaded) return;
-    let cancelled = false;
-    const token = window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
-    const localHistory = readHistory();
-    loadGithubExamLogs(token)
-      .then(async (cloudHistory) => {
-        if (cancelled) return;
-        setHistory((current) => mergeHistory(cloudHistory, current));
-        const pendingRecords = recordsNeedingUpload(localHistory, cloudHistory);
-        if (pendingRecords.length && !token) {
-          setCloudStatus({
-            type: "error",
-            message: `有 ${pendingRecords.length} 份考试只保存在这台设备，需要上传代码才能同步`
-          });
-          setGithubAccessError("");
-          setShowGithubAccess(true);
-          return;
-        }
-        if (pendingRecords.length) {
-          setCloudStatus({ type: "loading", message: `发现 ${pendingRecords.length} 份未同步记录，正在自动补传` });
-          try {
-            for (const record of pendingRecords) await uploadGithubExamLog(record, token);
-            if (cancelled) return;
-            setCloudStatus({
-              type: "success",
-              message: `${mergeHistory(cloudHistory, localHistory).length} 份考试记录已全部同步`
-            });
-            setCloudLoaded(true);
-          } catch (reason) {
-            if (cancelled) return;
-            setCloudStatus({
-              type: "error",
-              message: `${pendingRecords.length} 份记录仍只在这台设备，稍后打开会自动重试`
-            });
-            if (/授权|权限|Token/.test(reason.message || "")) {
-              setGithubAccessError(reason.message);
-              setShowGithubAccess(true);
-            }
-          }
-          return;
-        }
-        setCloudStatus({
-          type: "success",
-          message: cloudHistory.length ? `已从 GitHub 同步 ${cloudHistory.length} 份考试记录` : "GitHub 中还没有考试记录"
-        });
-        setCloudLoaded(true);
-      })
-      .catch(() => {
-        if (!cancelled) setCloudStatus({ type: "error", message: "暂时无法读取 GitHub 记录，本地历史不受影响" });
-      });
-    return () => { cancelled = true; };
-  }, [cloudLoaded, storageReady, view]);
-  useEffect(() => {
     if (!storageReady) return;
     window.localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
   }, [history, storageReady]);
@@ -362,23 +366,6 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
     if (!storageReady) return;
     window.localStorage.setItem(ACCEPTED_KEY, JSON.stringify(acceptedAnswers));
   }, [acceptedAnswers, storageReady]);
-  // 进入历史页时顺带把云端接受答案拉下来与本地取并集，让多端家长批改互相共享。
-  useEffect(() => {
-    if (!storageReady || view !== "history") return;
-    let cancelled = false;
-    const token = window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
-    if (!token) return;
-    loadGithubAcceptedAnswers(token)
-      .then((remote) => {
-        if (cancelled || !remote) return;
-        setAcceptedAnswers((current) => {
-          const merged = mergeAcceptedAnswers(current, remote);
-          return JSON.stringify(merged) === JSON.stringify(current) ? current : merged;
-        });
-      })
-      .catch(() => {});
-    return () => { cancelled = true; };
-  }, [storageReady, view]);
   useEffect(() => {
     if (!storageReady) return;
     const latest = history[0];
@@ -481,9 +468,9 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
     setIsGrading(false);
     const token = window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
     if (token) {
-      setCloudStatus({ type: "loading", message: "正在把本次考试保存到 GitHub" });
+      setCloudStatus({ type: "loading", message: "正在把本次考试保存到云端" });
       uploadGithubExamLog(completedRecord, token)
-        .then(() => setCloudStatus({ type: "success", message: "本次考试已保存到 GitHub" }))
+        .then(() => setCloudStatus({ type: "success", message: "本次考试已保存到云端" }))
         .catch(() => setCloudStatus({ type: "error", message: "本次考试已保存在设备中，请到历史页重新上传" }));
     } else {
       setGithubAccessError("");
@@ -511,26 +498,56 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
       window.alert("这个文件不是有效的 Amy 考试记录。");
     }
   };
-  const uploadHistory = async (tokenOverride = "") => {
+  const syncHistory = async (tokenOverride = "") => {
     const token = tokenOverride || githubToken || window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
-    if (!token) {
-      setGithubAccessError("");
-      setShowGithubAccess(true);
-      return;
-    }
-    if (!history.length || isUploading) return;
+    if (isUploading) return;
     setIsUploading(true);
-    setCloudStatus({ type: "loading", message: `正在上传 ${history.length} 份考试记录` });
+    setCloudStatus({ type: "loading", message: "同步中，正在读取云端记录" });
     try {
-      for (let index = 0; index < history.length; index += 1) {
-        setCloudStatus({ type: "loading", message: `正在上传第 ${index + 1} / ${history.length} 份记录` });
-        await uploadGithubExamLog(history[index], token);
+      const [cloudHistory, cloudAccepted] = await Promise.all([
+        loadGithubExamLogs(token),
+        loadGithubAcceptedAnswers(token)
+      ]);
+      const mergedHistory = mergeHistory(cloudHistory, history);
+      const mergedAccepted = mergeAcceptedAnswers(acceptedAnswers, cloudAccepted);
+      const pendingRecords = recordsNeedingUpload(history, cloudHistory);
+      const acceptedNeedUpload = Object.entries(acceptedAnswers).some(([id, values]) =>
+        values.some((value) => !(cloudAccepted[id] || []).includes(value))
+      );
+
+      setHistory(mergedHistory);
+      setAcceptedAnswers(mergedAccepted);
+
+      if ((pendingRecords.length || acceptedNeedUpload) && !token) {
+        const pendingMessage = pendingRecords.length
+          ? `有 ${pendingRecords.length} 份本机考试记录尚未上传`
+          : "有本机批改内容尚未上传";
+        setCloudStatus({
+          type: "error",
+          message: `已读取云端，但${pendingMessage}`
+        });
+        setGithubAccessError("");
+        setShowGithubAccess(true);
+        return;
       }
-      setCloudStatus({ type: "success", message: `已将 ${history.length} 份考试记录同步到 GitHub` });
-      setCloudLoaded(true);
+
+      for (let index = 0; index < pendingRecords.length; index += 1) {
+        setCloudStatus({ type: "loading", message: `同步中，正在保存第 ${index + 1} / ${pendingRecords.length} 份记录` });
+        await uploadGithubExamLog(pendingRecords[index], token);
+      }
+      if (acceptedNeedUpload) {
+        setCloudStatus({ type: "loading", message: "同步中，正在保存批改规则" });
+        const savedAccepted = await uploadGithubAcceptedAnswers(mergedAccepted, token);
+        setAcceptedAnswers(savedAccepted);
+      }
+
+      const completedAt = new Date().toISOString();
+      window.localStorage.setItem(LAST_SYNC_KEY, completedAt);
+      setLastSyncAt(completedAt);
+      setCloudStatus({ type: "success", message: `同步完成，共 ${mergedHistory.length} 份考试记录` });
     } catch (reason) {
-      setCloudStatus({ type: "error", message: reason.message || "上传失败，本地记录仍然保留" });
-      if (/授权|权限|Token/.test(reason.message || "")) {
+      setCloudStatus({ type: "error", message: reason.message || "同步失败，本机记录仍然保留" });
+      if (/授权|权限|Token|上传代码/.test(reason.message || "")) {
         setGithubAccessError(reason.message);
         setShowGithubAccess(true);
       }
@@ -546,9 +563,9 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
       window.localStorage.setItem(GITHUB_TOKEN_KEY, token);
       setGithubToken(token);
       setShowGithubAccess(false);
-      await uploadHistory(token);
+      await syncHistory(token);
     } catch (reason) {
-      setGithubAccessError(reason.message || "无法验证 GitHub 授权");
+      setGithubAccessError(reason.message || "无法验证上传代码");
     } finally {
       setIsSavingGithubAccess(false);
     }
@@ -558,7 +575,7 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
     setGithubToken("");
     setGithubAccessError("");
     setShowGithubAccess(false);
-    setCloudStatus({ type: "", message: "已清除这台设备上的 GitHub 写入授权" });
+    setCloudStatus({ type: "", message: "已清除这台设备上的上传代码" });
   };
   const enterParent = () => {
     if (!record?.results) return;
@@ -582,13 +599,14 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
     const meanings = record.results.meanings.map((item, index) => (flips.has(index) ? { ...item, correct: true, parentCorrected: true } : item));
     const newResults = recomputeScore({ ...record.results, meanings });
     const now = new Date().toISOString();
+    const originalAi = gradingBreakdown(record).ai;
     const gradedItems = [...flips]
       .map((index) => {
         const source = record.exam?.meanings?.[index];
         return source ? { id: source.id, term: source.term, answer: source.answer, displayNumber: source.displayNumber } : null;
       })
       .filter((item) => item && item.id && item.answer && String(item.answer).trim());
-    const updatedRecord = { ...record, results: newResults, regradedAt: now, parentGradedAt: now, parentGraded: gradedItems };
+    const updatedRecord = { ...record, results: newResults, aiGrading: originalAi, regradedAt: now, parentGradedAt: now, parentGraded: gradedItems };
 
     // 把本次改对的作答并入接受答案表；上传时再与云端取并集，保证多端新增不互相覆盖。
     let nextAccepted = acceptedAnswers;
@@ -617,17 +635,17 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
       setShowGithubAccess(true);
       return;
     }
-    setCloudStatus({ type: "loading", message: "正在把批改结果保存到 GitHub" });
+    setCloudStatus({ type: "loading", message: "正在把批改结果保存到云端" });
     try {
       await uploadGithubExamLog(updatedRecord, token);
       if (gradedItems.length) {
         const merged = await uploadGithubAcceptedAnswers(nextAccepted, token);
         setAcceptedAnswers(merged);
       }
-      setCloudStatus({ type: "success", message: "批改结果与补充答案已保存到 GitHub" });
+      setCloudStatus({ type: "success", message: "批改结果与补充答案已保存到云端" });
     } catch (reason) {
       setCloudStatus({ type: "error", message: reason.message || "批改已保存在设备中，请到历史页重新上传" });
-      if (/授权|权限|Token/.test(reason.message || "")) {
+      if (/授权|权限|Token|上传代码/.test(reason.message || "")) {
         setGithubAccessError(reason.message);
         setShowGithubAccess(true);
       }
@@ -656,8 +674,8 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
     {preparingExam ? <PreparingExam /> : <>{view === "home" ? <SessionPicker data={data} selected={selected} drafts={drafts} loadingSession={loadingSession} onSelect={selectSession} onView={setView} onStart={start} /> : null}
     {view === "review" && session ? <Review session={session} /> : null}
     {view === "exam" && session && exam ? <><Paper session={session} exam={exam} setExam={setExam} elapsed={elapsed} results={results} onSubmit={submit} isGrading={isGrading} />{results ? <button className="amy-retry" onClick={restart}><RotateCcw size={16} /> 再考一套</button> : null}</> : null}
-    {view === "history" ? <HistoryPage history={history} onOpen={(item) => { setRecord(item); setSelected(item.session); setParentMode(false); setParentFlips(new Set()); setParentSummary(null); setView("historyDetail"); }} onExport={exportHistory} onImport={importHistory} onUpload={() => uploadHistory()} cloudStatus={cloudStatus} isUploading={isUploading} /> : null}
-    {view === "historyDetail" && record && archivedSession ? <Paper session={archivedSession} exam={record.exam} setExam={() => {}} elapsed={record.elapsed} results={record.results} onSubmit={() => {}} allowParentEnter onEnterParent={enterParent} parent={parentMode ? { active: true, flips: parentFlips, onToggle: toggleFlip, onSubmit: submitParentGrading, onCancel: cancelParent } : null} parentSummary={parentSummary} onCopyAccepted={copyAcceptedText} onDismissSummary={() => setParentSummary(null)} /> : null}
+    {view === "history" ? <HistoryPage history={history} sortBy={historySort} onSortChange={setHistorySort} onOpen={(item) => { setRecord(item); setSelected(item.session); setParentMode(false); setParentFlips(new Set()); setParentSummary(null); setView("historyDetail"); }} onExport={exportHistory} onImport={importHistory} onSync={() => syncHistory()} cloudStatus={cloudStatus} isSyncing={isUploading} lastSyncAt={lastSyncAt} /> : null}
+    {view === "historyDetail" && record && archivedSession ? <Paper session={archivedSession} exam={record.exam} setExam={() => {}} elapsed={record.elapsed} results={record.results} grading={gradingBreakdown(record)} onSubmit={() => {}} allowParentEnter onEnterParent={enterParent} parent={parentMode ? { active: true, flips: parentFlips, onToggle: toggleFlip, onSubmit: submitParentGrading, onCancel: cancelParent } : null} parentSummary={parentSummary} onCopyAccepted={copyAcceptedText} onDismissSummary={() => setParentSummary(null)} /> : null}
     </>}{showGithubAccess ? <GithubCodeDialog initialToken={githubToken} isSaving={isSavingGithubAccess} error={githubAccessError} onClose={() => setShowGithubAccess(false)} onSave={saveGithubAccess} onClear={clearGithubAccess} /> : null}
   </div>;
 }
