@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "id": "post-1786957736680e611ae6d38",
+  "metadataPath": "homework-posts/2026/08/post-1786957736680e611ae6d38/post.json",
+  "imageFolder": "public/homework-images/2026/08/post-1786957736680e611ae6d38",
+  "homeworkDate": "2026-08-17",
+  "description": "8月17日周一",
+  "images": [
+    {
+      "id": "image-1786956892941bab83f9a9e",
+      "title": "报纸",
+      "path": "public/homework-images/2026/08/post-1786957736680e611ae6d38/image-1786956892941bab83f9a9e.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-1786957736680e611ae6d38/image-1786956892941bab83f9a9e.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-1786957736680e611ae6d38/image-1786956892941bab83f9a9e.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1577178,
+      "createdAt": "2026-08-17T09:08:57.020Z"
+    },
+    {
+      "id": "image-1786957726343630c2fe42f",
+      "title": "每日作业",
+      "path": "public/homework-images/2026/08/post-1786957736680e611ae6d38/image-1786957726343630c2fe42f.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-1786957736680e611ae6d38/image-1786957726343630c2fe42f.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-1786957736680e611ae6d38/image-1786957726343630c2fe42f.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1423856,
+      "createdAt": "2026-08-17T09:08:57.283Z"
+    }
+  ],
+  "comments": [],
+  "confirmedAt": null,
+  "confirmedByDeviceId": null,
+  "createdAt": "2026-08-17T09:08:57.283Z",
+  "updatedAt": "2026-08-17T09:08:57.283Z",
+  "auditLog": [
+    {
+      "id": "audit-178695773728316ab66944b",
+      "action": "create_post",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-17T09:08:57.283Z",
+      "details": {
+        "imageCount": 2
+      }
+    }
+  ]
+}
