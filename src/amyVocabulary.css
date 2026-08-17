@@ -263,6 +263,13 @@
 .amy-score.compared .amy-score-line { padding: 14px; }
 .amy-score.compared .amy-score-line.parent { border-top: 1px solid var(--line); background: #edf5f0; }
 .amy-score.compared .amy-score-line.parent > span { color: #197348; font-weight: 700; }
+.amy-grading-progress { display: grid; gap: 7px; padding: 14px; border: 1px solid #b8cfc4; border-radius: 5px; background: #edf5f0; }
+.amy-grading-progress > span { color: #52655e; font-size: 11px; }
+.amy-grading-progress > strong { color: var(--green); font-size: 22px; }
+.amy-grading-progress > p { color: #53665f; font-size: 12px; line-height: 1.5; }
+.amy-grading-progress.interrupted { border-color: #e1c5bf; background: #fff3f0; }
+.amy-grading-progress.interrupted > strong { color: #a04439; }
+.amy-grading-progress .amy-primary { width: 100%; margin-top: 2px; }
 
 .amy-history { display: grid; gap: 8px; margin-top: 18px; }
 .amy-history-tools { display: flex; flex-direction: row !important; gap: 8px; }
@@ -446,7 +453,8 @@
   .amy-score { grid-column: span 2; }
   .amy-parent-bar,
   .amy-parent-summary,
-  .amy-parent-enter { grid-column: span 2; }
+  .amy-parent-enter,
+  .amy-grading-progress { grid-column: span 2; }
   .amy-parent-enter { width: 100%; }
   .amy-history button { grid-template-columns: 68px minmax(70px, 1fr) auto 18px; gap: 7px 9px; }
   .amy-history-session { grid-column: 1; grid-row: 1; }

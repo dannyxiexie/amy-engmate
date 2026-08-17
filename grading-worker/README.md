@@ -1,6 +1,8 @@
 # Amy EngMate 词汇批改代理（Cloudflare Worker）
 
-把前端"英译中"词汇作答转发给小米 MiMo 大模型批改，MiMo key 只存在 Cloudflare secret 里，不进仓库、不进前端。
+把前端“英译中”词汇作答逐题转发给小米 MiMo 大模型批改，MiMo key 只存在 Cloudflare secret 里，不进仓库、不进前端。接口强制一次只接收一题；前端失败后最多追加 5 次重试，再失败会保留进度并等待用户继续。
+
+批改不使用本地判分兜底。每次请求都会生成 `requestId`，并在 Cloudflare Workers Logs 中写入结构化的开始、成功或失败日志；日志只含请求编号、模型、耗时和题目数量，不含单词、参考答案或学生答案。
 
 ## 一次部署
 

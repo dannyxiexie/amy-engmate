@@ -7,6 +7,10 @@ routes = [
   { pattern = "grade.dannyxiexie.tech", custom_domain = true }
 ]
 
+[observability]
+enabled = true
+head_sampling_rate = 1
+
 # 部署后地址：https://amy-engmate-grading.<你的子域>.workers.dev
 # MiMo key 用 secret 注入，不写在这里：
 #   npx wrangler secret put MIMO_API_KEY

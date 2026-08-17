@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ArrowLeft, ArrowUpDown, BookOpen, Check, CheckCircle2, ChevronRight, ClipboardCopy, Clock3, Download, Gift, GraduationCap, History, Images, PenLine, RefreshCw, RotateCcw, Upload, X } from "lucide-react";
-import { AMY_VOCABULARY_MANIFEST, createAmyExam, createClozePrompt, fetchAmyVocabularySession, formatTime, gradeMeaning, hideTermInExample, matchesAcceptedAnswer, recomputeScore } from "./amyVocabularyData.js";
+import { AMY_VOCABULARY_MANIFEST, createAmyExam, createClozePrompt, fetchAmyVocabularySession, formatTime, hideTermInExample, recomputeScore } from "./amyVocabularyData.js";
 import { GITHUB_TOKEN_KEY, loadGithubAcceptedAnswers, loadGithubExamLogs, mergeAcceptedAnswers, uploadGithubAcceptedAnswers, uploadGithubExamLog, verifyGithubWriteToken } from "./githubExamLogs.js";
 import GithubCodeDialog from "./GithubCodeDialog.jsx";
 import "./amyVocabulary.css";
@@ -11,8 +11,17 @@ const HISTORY_KEY = "family-reader:amy-grade-5-vocabulary:exam-history:v1";
 const DRAFTS_KEY = "family-reader:amy-grade-5-vocabulary:exam-drafts:v1";
 const ACCEPTED_KEY = "family-reader:amy-grade-5-vocabulary:accepted-answers:v1";
 const LAST_SYNC_KEY = "family-reader:amy-grade-5-vocabulary:last-history-sync:v1";
-const GRADING_VERSION = 5;
+const GRADING_VERSION = 6;
 const GRADING_API_URL = import.meta.env.VITE_GRADING_API_URL || "https://grade.dannyxiexie.tech";
+const MAX_GRADING_ATTEMPTS = 6;
+
+function gradingHeaders() {
+  if (import.meta.env.VITE_STORAGE_BACKEND === "server") {
+    const code = window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
+    return code ? { "X-Upload-Code": code } : {};
+  }
+  return import.meta.env.VITE_APP_KEY ? { "X-App-Key": import.meta.env.VITE_APP_KEY } : {};
+}
 
 function readHistory() {
   if (typeof window === "undefined") return [];
@@ -135,56 +144,136 @@ function prepareExam(exam) {
   };
 }
 
-async function gradeExam(exam, acceptedAnswers = {}) {
-  const meanings = exam.meanings.map((item) => ({
-    id: item.id,
-    correct: gradeMeaning(item.answer, item.meaningZh),
-    answer: item.meaningZh
-  }));
-  const semanticItems = exam.meanings
-    .filter((item) => item.answer.trim())
-    .map((item) => ({
-      id: item.id,
-      term: item.term,
-      expected: item.meaningZh,
-      accepted: item.acceptedMeaningsZh || [],
-      answer: item.answer
-    }));
+function createGradingProgress(exam, saved = null) {
+  const savedMeanings = Array.isArray(saved?.meanings) ? saved.meanings : [];
+  const meanings = exam.meanings.map((item, index) => {
+    const previous = savedMeanings[index];
+    if (previous?.id === item.id && typeof previous.correct === "boolean") return previous;
+    if (!item.answer.trim()) return { id: item.id, correct: false, answer: item.meaningZh, source: "blank" };
+    return null;
+  });
+  return {
+    status: saved?.status === "complete" ? "complete" : "ready",
+    meanings,
+    cloze: exam.cloze.map((item) => ({ correct: item.answer === item.term, answer: item.term })),
+    startedAt: saved?.startedAt || new Date().toISOString(),
+    auditItems: Array.isArray(saved?.auditItems) ? saved.auditItems : [],
+    failedIndex: null,
+    currentIndex: null,
+    currentAttempt: 0,
+    error: ""
+  };
+}
 
-  if (semanticItems.length && GRADING_API_URL) {
+function gradingCounts(exam, progress) {
+  const aiIndexes = exam.meanings
+    .map((item, index) => item.answer.trim() ? index : -1)
+    .filter((index) => index >= 0);
+  return {
+    done: aiIndexes.filter((index) => progress?.meanings?.[index]).length,
+    total: aiIndexes.length
+  };
+}
+
+function finishGrading(progress) {
+  return recomputeScore({ meanings: progress.meanings, cloze: progress.cloze });
+}
+
+async function requestAiGrade(item, acceptedAnswers, onAttempt) {
+  if (!GRADING_API_URL) throw new Error("AI批改服务未配置");
+  let lastError = null;
+  const requestIds = [];
+  for (let attempt = 1; attempt <= MAX_GRADING_ATTEMPTS; attempt += 1) {
+    onAttempt(attempt);
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 55000);
     try {
       const response = await fetch(GRADING_API_URL, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          ...(import.meta.env.VITE_APP_KEY ? { "X-App-Key": import.meta.env.VITE_APP_KEY } : {})
-        },
-        body: JSON.stringify({ items: semanticItems })
+        headers: { "Content-Type": "application/json", ...gradingHeaders() },
+        signal: controller.signal,
+        body: JSON.stringify({ items: [{
+          id: item.id,
+          term: item.term,
+          expected: item.meaningZh,
+          accepted: [...(item.acceptedMeaningsZh || []), ...(acceptedAnswers[item.id] || [])],
+          answer: item.answer
+        }] })
       });
-      if (!response.ok) throw new Error("grading request failed");
-      const payload = await response.json();
-      const semanticResults = new Map((payload.results || []).map((item) => [item.id, Boolean(item.correct)]));
-      meanings.forEach((item) => {
-        if (semanticResults.has(item.id)) item.correct = item.correct || semanticResults.get(item.id);
+      const payload = await response.json().catch(() => ({}));
+      if (payload.requestId) requestIds.push(payload.requestId);
+      if (!response.ok) throw new Error(payload.error || `AI批改请求失败（${response.status}）`);
+      const result = Array.isArray(payload.results) ? payload.results[0] : null;
+      if (payload.results?.length !== 1 || result?.id !== item.id || typeof result.correct !== "boolean") {
+        throw new Error("AI返回的批改结果不完整");
+      }
+      return {
+        result: { id: item.id, correct: result.correct, answer: item.meaningZh, source: "ai" },
+        audit: {
+          id: item.id,
+          requestId: payload.requestId || "",
+          requestIds,
+          attempts: attempt,
+          provider: payload.provider || "xiaomi-mimo",
+          model: payload.model || "",
+          gradedAt: payload.gradedAt || new Date().toISOString()
+        }
+      };
+    } catch (reason) {
+      lastError = reason?.name === "AbortError" ? new Error("AI批改请求超时") : reason;
+      if (attempt < MAX_GRADING_ATTEMPTS) {
+        await new Promise((resolve) => window.setTimeout(resolve, 500 * attempt));
+      }
+    } finally {
+      window.clearTimeout(timeout);
+    }
+  }
+  const error = new Error(lastError?.message || "AI批改连续失败");
+  error.requestIds = requestIds;
+  throw error;
+}
+
+async function gradeExamOneByOne(exam, acceptedAnswers, savedProgress, onProgress) {
+  let progress = createGradingProgress(exam, savedProgress);
+  progress = { ...progress, status: "grading" };
+  onProgress(progress);
+
+  for (let index = 0; index < exam.meanings.length; index += 1) {
+    const item = exam.meanings[index];
+    if (!item.answer.trim() || progress.meanings[index]) continue;
+    try {
+      const graded = await requestAiGrade(item, acceptedAnswers, (attempt) => {
+        progress = { ...progress, currentIndex: index, currentAttempt: attempt, error: "" };
+        onProgress(progress);
       });
-    } catch {
-      // The clear local matches still count if the local AI is temporarily unavailable.
+      const meanings = [...progress.meanings];
+      meanings[index] = graded.result;
+      progress = {
+        ...progress,
+        meanings,
+        auditItems: [...progress.auditItems.filter((entry) => entry.id !== item.id), graded.audit],
+        currentIndex: null,
+        currentAttempt: 0
+      };
+      onProgress(progress);
+    } catch (reason) {
+      progress = {
+        ...progress,
+        status: "interrupted",
+        failedIndex: index,
+        currentIndex: null,
+        currentAttempt: MAX_GRADING_ATTEMPTS,
+        error: reason.message || "AI批改暂时不可用",
+        failedRequestIds: reason.requestIds || []
+      };
+      onProgress(progress);
+      return { status: "interrupted", progress };
     }
   }
 
-  // 家长批改沉淀下来的接受答案：同一条目（id 全局稳定）若本次作答命中已接受的写法，直接判对。
-  // 这是静态站上让批改"越用越准"的关键一层，等价于持续更新的批改提示词。
-  exam.meanings.forEach((source, index) => {
-    const accepted = acceptedAnswers[source.id];
-    if (accepted?.length && matchesAcceptedAnswer(source.answer, accepted)) {
-      meanings[index].correct = true;
-    }
-  });
-
-  const cloze = exam.cloze.map((item) => ({ correct: item.answer === item.term, answer: item.term }));
-  const correct = [...meanings, ...cloze].filter((item) => item.correct).length;
-  const total = meanings.length + cloze.length;
-  return { meanings, cloze, correct, total, score: total ? Math.round(correct / total * 100) : 0 };
+  progress = { ...progress, status: "complete", completedAt: new Date().toISOString(), failedIndex: null, error: "" };
+  onProgress(progress);
+  return { status: "complete", progress, results: finishGrading(progress) };
 }
 
 // 用 AI 检查候选例句选词题里哪些"歧义"（多个选项填得通），优先保留非歧义题。
@@ -197,7 +286,7 @@ async function filterClozeByAi(candidates, wantCount = 12) {
     try {
       const resp = await fetch(GRADING_API_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json", ...(import.meta.env.VITE_APP_KEY ? { "X-App-Key": import.meta.env.VITE_APP_KEY } : {}) },
+        headers: { "Content-Type": "application/json", ...gradingHeaders() },
         body: JSON.stringify({ cloze: candidates.map((c, i) => ({ index: i, prompt: c.prompt, choices: c.choices, answer: c.term })) })
       });
       if (resp.ok) {
@@ -273,12 +362,14 @@ function Result({ correct, answer, parentCorrected }) {
   return <div className={"amy-result " + (correct ? "correct" : "wrong")}>{correct ? <><CheckCircle2 size={16} /> 正确</> : <><X size={16} /> 正确答案：{answer}</>}</div>;
 }
 
-function Paper({ session, exam, setExam, elapsed, results, grading = null, onSubmit, isGrading = false, parent = null, allowParentEnter = false, onEnterParent, parentSummary = null, onCopyAccepted, onDismissSummary }) {
+function Paper({ session, exam, setExam, elapsed, results, grading = null, gradingProgress = null, onSubmit, onContinue, isGrading = false, parent = null, allowParentEnter = false, onEnterParent, parentSummary = null, onCopyAccepted, onDismissSummary }) {
   const [section, setSection] = useState("meanings");
   const [resultFilter, setResultFilter] = useState("all");
   const done = Boolean(results);
+  const submitted = done || Boolean(gradingProgress);
   const answered = exam.meanings.filter((item) => item.answer.trim()).length + exam.cloze.filter((item) => item.answer).length;
   const total = exam.meanings.length + exam.cloze.length;
+  const progressCounts = gradingCounts(exam, gradingProgress);
   const updateMeaning = (index, answer) => setExam((current) => ({ ...current, meanings: current.meanings.map((item, itemIndex) => itemIndex === index ? { ...item, answer } : item) }));
   const updateCloze = (index, answer) => setExam((current) => ({ ...current, cloze: current.cloze.map((item, itemIndex) => itemIndex === index ? { ...item, answer } : item) }));
   const meaningQuestions = exam.meanings
@@ -294,13 +385,13 @@ function Paper({ session, exam, setExam, elapsed, results, grading = null, onSub
       {parent?.active ? <p className="amy-parent-hint">家长批改模式：把该算对的“英译中”错题点为对，完成后重算分数；例句选词为客观题，不参与批改。</p> : null}
       {done ? <div className="amy-result-filter" aria-label="批改结果筛选"><span>查看</span><button className={resultFilter === "all" ? "active" : ""} onClick={() => setResultFilter("all")}>全部</button><button className={resultFilter === "wrong" ? "active" : ""} onClick={() => setResultFilter("wrong")}>只看错题</button></div> : null}
       <div className="amy-questions">{section === "meanings" ? meaningQuestions.map(({ item, index }) => {
-        const result = results?.meanings[index];
+        const result = results?.meanings[index] || gradingProgress?.meanings?.[index];
         const flipped = parent?.active && parent.flips.has(index);
         const canMark = parent?.active && result && !result.correct && Boolean(item.answer?.trim());
-        return <article key={item.id} className="amy-question"><span>{item.displayNumber}</span><div><label>{item.term}</label><input value={item.answer} disabled={done || isGrading} onChange={(event) => updateMeaning(index, event.target.value)} placeholder="写中文含义" autoComplete="off" />{flipped ? <div className="amy-result correct"><CheckCircle2 size={16} /> 家长判对</div> : result ? <Result {...result} /> : null}{canMark ? <button type="button" className={"amy-mark-correct" + (flipped ? " active" : "")} onClick={() => parent.onToggle(index)}><Check size={15} /> {flipped ? "取消算对" : "这题算对"}</button> : null}</div></article>;
-      }) : clozeQuestions.map(({ item, index }) => <article key={item.id} className="amy-question"><span>{index + 1}</span><div><label>{item.prompt || hideTermInExample(item.example, item.term)}</label><div className="amy-options">{item.choices.map((choice) => <button key={choice} disabled={done || isGrading} onClick={() => updateCloze(index, choice)} className={item.answer === choice ? "selected" : ""}>{choice}</button>)}</div>{results?.cloze[index] ? <Result {...results.cloze[index]} /> : null}</div></article>)}</div>
+        return <article key={item.id} className="amy-question"><span>{item.displayNumber}</span><div><label>{item.term}</label><input value={item.answer} disabled={submitted || isGrading} onChange={(event) => updateMeaning(index, event.target.value)} placeholder="写中文含义" autoComplete="off" />{flipped ? <div className="amy-result correct"><CheckCircle2 size={16} /> 家长判对</div> : result ? <Result {...result} /> : null}{canMark ? <button type="button" className={"amy-mark-correct" + (flipped ? " active" : "")} onClick={() => parent.onToggle(index)}><Check size={15} /> {flipped ? "取消算对" : "这题算对"}</button> : null}</div></article>;
+      }) : clozeQuestions.map(({ item, index }) => <article key={item.id} className="amy-question"><span>{index + 1}</span><div><label>{item.prompt || hideTermInExample(item.example, item.term)}</label><div className="amy-options">{item.choices.map((choice) => <button key={choice} disabled={submitted || isGrading} onClick={() => updateCloze(index, choice)} className={item.answer === choice ? "selected" : ""}>{choice}</button>)}</div>{(results?.cloze[index] || gradingProgress?.cloze?.[index]) ? <Result {...(results?.cloze[index] || gradingProgress.cloze[index])} /> : null}</div></article>)}</div>
     </section>
-    <aside className="amy-aside"><div className="amy-timer"><Clock3 size={17} /><div><span>用时</span><strong>{formatTime(elapsed)}</strong>{!done ? <small>已自动保存</small> : null}</div></div>{done ? <div className={"amy-score" + (gradingSummary.parentReviewed ? " compared" : "")}><div className="amy-score-line"><span>AI批改</span><strong>{gradingSummary.ai.score}<small> / 100</small></strong><p>{gradingSummary.ai.correct} / {gradingSummary.ai.total} 题正确</p></div>{gradingSummary.parentReviewed ? <div className="amy-score-line parent"><span>家长批改</span><strong>{gradingSummary.parent.score}<small> / 100</small></strong><p>{gradingSummary.parent.correct} / {gradingSummary.parent.total} 题正确</p></div> : null}</div> : <button className="amy-primary" disabled={isGrading} onClick={onSubmit}>{isGrading ? "正在理解答案" : "提交并批改"}</button>}{parentSummary ? <div className="amy-parent-summary"><span>家长批改小结</span><strong>+{parentSummary.count} 题改对</strong><p>最新得分 {parentSummary.score}<small> / 100</small> · {parentSummary.correct}/{parentSummary.total} 题正确</p>{parentSummary.added?.length ? <><small>新增 {parentSummary.added.length} 条可接受答案，下次同样作答会自动判对。</small><button className="copy" onClick={onCopyAccepted}>{parentSummary.copied ? <><Check size={14} /> 已复制</> : <><ClipboardCopy size={14} /> 复制补充答案</>}</button></> : null}<button className="link" onClick={onDismissSummary}>关闭小结</button></div> : null}{done && !parentSummary && parent?.active ? <div className="amy-parent-bar"><div><span>家长批改中</span><strong>已选 {parent.flips.size} 题算对</strong></div><button className="primary" disabled={!parent.flips.size} onClick={parent.onSubmit}>完成批改</button><button onClick={parent.onCancel}>取消</button></div> : null}{done && !parentSummary && !parent?.active && allowParentEnter ? <button className="amy-parent-enter" onClick={onEnterParent}><PenLine size={16} /> 家长批改</button> : null}</aside>
+    <aside className="amy-aside"><div className="amy-timer"><Clock3 size={17} /><div><span>用时</span><strong>{formatTime(elapsed)}</strong>{!done ? <small>已自动保存</small> : null}</div></div>{done ? <div className={"amy-score" + (gradingSummary.parentReviewed ? " compared" : "")}><div className="amy-score-line"><span>AI批改</span><strong>{gradingSummary.ai.score}<small> / 100</small></strong><p>{gradingSummary.ai.correct} / {gradingSummary.ai.total} 题正确</p></div>{gradingSummary.parentReviewed ? <div className="amy-score-line parent"><span>家长批改</span><strong>{gradingSummary.parent.score}<small> / 100</small></strong><p>{gradingSummary.parent.correct} / {gradingSummary.parent.total} 题正确</p></div> : null}</div> : gradingProgress ? <div className={"amy-grading-progress " + gradingProgress.status}><span>AI逐题批改</span><strong>{progressCounts.done} / {progressCounts.total}</strong>{isGrading ? <p>正在批改第 {(gradingProgress.currentIndex ?? 0) + 1} 题{gradingProgress.currentAttempt > 1 ? `，第 ${gradingProgress.currentAttempt} 次尝试` : ""}</p> : <><p>批改在第 {(gradingProgress.failedIndex ?? 0) + 1} 题中断，已完成的结果都已保存。</p><button className="amy-primary" onClick={onContinue}>继续批改</button></>}</div> : <button className="amy-primary" disabled={isGrading} onClick={onSubmit}>提交并批改</button>}{parentSummary ? <div className="amy-parent-summary"><span>家长批改小结</span><strong>+{parentSummary.count} 题改对</strong><p>最新得分 {parentSummary.score}<small> / 100</small> · {parentSummary.correct}/{parentSummary.total} 题正确</p>{parentSummary.added?.length ? <><small>新增 {parentSummary.added.length} 条可接受答案，下次同样作答会自动判对。</small><button className="copy" onClick={onCopyAccepted}>{parentSummary.copied ? <><Check size={14} /> 已复制</> : <><ClipboardCopy size={14} /> 复制补充答案</>}</button></> : null}<button className="link" onClick={onDismissSummary}>关闭小结</button></div> : null}{done && !parentSummary && parent?.active ? <div className="amy-parent-bar"><div><span>家长批改中</span><strong>已选 {parent.flips.size} 题算对</strong></div><button className="primary" disabled={!parent.flips.size} onClick={parent.onSubmit}>完成批改</button><button onClick={parent.onCancel}>取消</button></div> : null}{done && !parentSummary && !parent?.active && allowParentEnter ? <button className="amy-parent-enter" onClick={onEnterParent}><PenLine size={16} /> 家长批改</button> : null}</aside>
   </main>;
 }
 
@@ -334,14 +425,12 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
   const [storageReady, setStorageReady] = useState(false);
   const [record, setRecord] = useState(null);
   const [isGrading, setIsGrading] = useState(false);
+  const [gradingProgress, setGradingProgress] = useState(null);
   const [preparingExam, setPreparingExam] = useState(false);
   const [acceptedAnswers, setAcceptedAnswers] = useState({});
   const [parentMode, setParentMode] = useState(false);
   const [parentFlips, setParentFlips] = useState(() => new Set());
   const [parentSummary, setParentSummary] = useState(null);
-  // 自动重批 effect 用 ref 读最新接受答案，避免把它加进依赖导致反复触发。
-  const acceptedRef = useRef({});
-  acceptedRef.current = acceptedAnswers;
   const [githubToken, setGithubToken] = useState("");
   const [showGithubAccess, setShowGithubAccess] = useState(false);
   const [githubAccessError, setGithubAccessError] = useState("");
@@ -349,7 +438,6 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
   const [isUploading, setIsUploading] = useState(false);
   const [lastSyncAt, setLastSyncAt] = useState(() => window.localStorage.getItem(LAST_SYNC_KEY) || "");
   const [cloudStatus, setCloudStatus] = useState({ type: "", message: "点击同步获取其他设备的最新记录" });
-  const regradedRecords = useRef(new Set());
   const session = useMemo(() => data?.sessions.find((item) => item.number === selected), [data, selected]);
   useEffect(() => {
     setHistory(readHistory());
@@ -367,31 +455,15 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
     window.localStorage.setItem(ACCEPTED_KEY, JSON.stringify(acceptedAnswers));
   }, [acceptedAnswers, storageReady]);
   useEffect(() => {
-    if (!storageReady) return;
-    const latest = history[0];
-    if (!latest?.exam || latest.gradingVersion >= GRADING_VERSION || regradedRecords.current.has(latest.id)) return;
-    regradedRecords.current.add(latest.id);
-    gradeExam(prepareExam(latest.exam), acceptedRef.current).then((outcome) => {
-      setHistory((current) => current.map((item) => item.id === latest.id ? {
-        ...item,
-        exam: prepareExam(item.exam),
-        results: outcome,
-        gradingVersion: GRADING_VERSION,
-        regradedAt: new Date().toISOString()
-      } : item));
-      setRecord((current) => current?.id === latest.id ? { ...current, exam: prepareExam(current.exam), results: outcome, gradingVersion: GRADING_VERSION } : current);
-    });
-  }, [history, storageReady]);
-  useEffect(() => {
     if (view !== "exam" || results || !session || !exam) return;
-    const draft = { session: session.number, exam, elapsed, savedAt: new Date().toISOString() };
+    const draft = { session: session.number, exam, elapsed, gradingProgress, savedAt: new Date().toISOString() };
     setDrafts((current) => {
       const next = { ...current, [session.number]: draft };
       window.localStorage.setItem(DRAFTS_KEY, JSON.stringify(next));
       return next;
     });
-  }, [elapsed, exam, results, session, view]);
-  useEffect(() => { if (view !== "exam" || results) return undefined; const timer = window.setInterval(() => setElapsed((value) => value + 1), 1000); return () => window.clearInterval(timer); }, [view, results]);
+  }, [elapsed, exam, gradingProgress, results, session, view]);
+  useEffect(() => { if (view !== "exam" || results || gradingProgress) return undefined; const timer = window.setInterval(() => setElapsed((value) => value + 1), 1000); return () => window.clearInterval(timer); }, [gradingProgress, view, results]);
   const clearDraft = (sessionNumber) => setDrafts((current) => {
     const next = { ...current };
     delete next[sessionNumber];
@@ -419,9 +491,16 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
     if (!session?.entries.length) return;
     const draft = drafts[session.number];
     if (isDraftCompatible(draft, session)) {
-      setExam(prepareExam(draft.exam));
+      const restoredExam = prepareExam(draft.exam);
+      setExam(restoredExam);
       setElapsed(Number(draft.elapsed) || 0);
       setResults(null);
+      setGradingProgress(draft.gradingProgress ? {
+        ...createGradingProgress(restoredExam, draft.gradingProgress),
+        status: "interrupted",
+        failedIndex: draft.gradingProgress.failedIndex ?? draft.gradingProgress.currentIndex ?? null,
+        error: draft.gradingProgress.error || "上次批改尚未完成"
+      } : null);
       setView("exam");
       return;
     }
@@ -434,6 +513,7 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
       setExam({ ...base, cloze });
       setElapsed(0);
       setResults(null);
+      setGradingProgress(null);
       setView("exam");
     } finally {
       setPreparingExam(false);
@@ -450,22 +530,44 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
       setExam({ ...base, cloze });
       setElapsed(0);
       setResults(null);
+      setGradingProgress(null);
       setView("exam");
     } finally {
       setPreparingExam(false);
     }
   };
-  const submit = async () => {
-    if (isGrading) return;
-    setIsGrading(true);
-    const readyExam = prepareExam(exam);
-    const outcome = await gradeExam(readyExam, acceptedAnswers);
+  const persistGradingProgress = (readyExam, nextProgress) => {
+    setGradingProgress(nextProgress);
+    const draft = { session: session.number, exam: readyExam, elapsed, gradingProgress: nextProgress, savedAt: new Date().toISOString() };
+    setDrafts((current) => {
+      const next = { ...current, [session.number]: draft };
+      window.localStorage.setItem(DRAFTS_KEY, JSON.stringify(next));
+      return next;
+    });
+  };
+  const completeExam = (readyExam, outcome, progress) => {
     setExam(readyExam);
     setResults(outcome);
+    setGradingProgress(null);
     clearDraft(session.number);
-    const completedRecord = { id: String(Date.now()) + Math.random().toString(36).slice(2, 7), completedAt: new Date().toISOString(), session: session.number, elapsed, exam: readyExam, results: outcome, gradingVersion: GRADING_VERSION };
+    const completedRecord = {
+      id: String(Date.now()) + Math.random().toString(36).slice(2, 7),
+      completedAt: new Date().toISOString(),
+      session: session.number,
+      elapsed,
+      exam: readyExam,
+      results: outcome,
+      gradingVersion: GRADING_VERSION,
+      gradingAudit: {
+        provider: progress.auditItems[0]?.provider || "xiaomi-mimo",
+        model: progress.auditItems[0]?.model || "",
+        startedAt: progress.startedAt,
+        completedAt: progress.completedAt,
+        itemCount: progress.auditItems.length,
+        items: progress.auditItems
+      }
+    };
     setHistory((current) => mergeHistory([completedRecord], current));
-    setIsGrading(false);
     const token = window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
     if (token) {
       setCloudStatus({ type: "loading", message: "正在把本次考试保存到云端" });
@@ -475,6 +577,18 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
     } else {
       setGithubAccessError("");
       setShowGithubAccess(true);
+    }
+  };
+  const submit = async () => {
+    if (isGrading) return;
+    setIsGrading(true);
+    const readyExam = prepareExam(exam);
+    setExam(readyExam);
+    try {
+      const outcome = await gradeExamOneByOne(readyExam, acceptedAnswers, gradingProgress, (progress) => persistGradingProgress(readyExam, progress));
+      if (outcome.status === "complete") completeExam(readyExam, outcome.results, outcome.progress);
+    } finally {
+      setIsGrading(false);
     }
   };
   const exportHistory = () => {
@@ -673,7 +787,7 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
   return <div className="amy-app"><header>{view === "home" && !onBack ? <span className="amy-header-spacer" /> : <button aria-label="返回" onClick={back}><ArrowLeft size={19} /></button>}<div><span>AMY VOCABULARY</span><strong>五年级英语词汇 · 复习与考试</strong></div><nav className="amy-header-actions"><button aria-label="考试历史" className="amy-history-button" onClick={() => setView("history")}><History size={16} /><span>历史</span></button>{onOpenRewards ? <button aria-label="奖励系统" className="amy-history-button" onClick={onOpenRewards}><Gift size={16} /><span>奖励</span></button> : null}{onOpenHomework ? <button aria-label="作业发布" className="amy-history-button" onClick={onOpenHomework}><Images size={16} /><span>作业</span></button> : null}</nav></header>
     {preparingExam ? <PreparingExam /> : <>{view === "home" ? <SessionPicker data={data} selected={selected} drafts={drafts} loadingSession={loadingSession} onSelect={selectSession} onView={setView} onStart={start} /> : null}
     {view === "review" && session ? <Review session={session} /> : null}
-    {view === "exam" && session && exam ? <><Paper session={session} exam={exam} setExam={setExam} elapsed={elapsed} results={results} onSubmit={submit} isGrading={isGrading} />{results ? <button className="amy-retry" onClick={restart}><RotateCcw size={16} /> 再考一套</button> : null}</> : null}
+    {view === "exam" && session && exam ? <><Paper session={session} exam={exam} setExam={setExam} elapsed={elapsed} results={results} gradingProgress={gradingProgress} onSubmit={submit} onContinue={submit} isGrading={isGrading} />{results ? <button className="amy-retry" onClick={restart}><RotateCcw size={16} /> 再考一套</button> : null}</> : null}
     {view === "history" ? <HistoryPage history={history} sortBy={historySort} onSortChange={setHistorySort} onOpen={(item) => { setRecord(item); setSelected(item.session); setParentMode(false); setParentFlips(new Set()); setParentSummary(null); setView("historyDetail"); }} onExport={exportHistory} onImport={importHistory} onSync={() => syncHistory()} cloudStatus={cloudStatus} isSyncing={isUploading} lastSyncAt={lastSyncAt} /> : null}
     {view === "historyDetail" && record && archivedSession ? <Paper session={archivedSession} exam={record.exam} setExam={() => {}} elapsed={record.elapsed} results={record.results} grading={gradingBreakdown(record)} onSubmit={() => {}} allowParentEnter onEnterParent={enterParent} parent={parentMode ? { active: true, flips: parentFlips, onToggle: toggleFlip, onSubmit: submitParentGrading, onCancel: cancelParent } : null} parentSummary={parentSummary} onCopyAccepted={copyAcceptedText} onDismissSummary={() => setParentSummary(null)} /> : null}
     </>}{showGithubAccess ? <GithubCodeDialog initialToken={githubToken} isSaving={isSavingGithubAccess} error={githubAccessError} onClose={() => setShowGithubAccess(false)} onSave={saveGithubAccess} onClear={clearGithubAccess} /> : null}

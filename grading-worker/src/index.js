@@ -1,45 +1,51 @@
-// Amy EngMate 词汇批改代理：浏览器 → Cloudflare Worker → MiMo。
-// MiMo key 作为 Cloudflare secret（MIMO_API_KEY）保存，绝不进入代码仓库或前端。
-// 接口与前端 gradeExam 完全对齐：入参 {items:[{id,term,expected,accepted,answer}]}，返回 {results:[{id,correct}]}。
+// Amy EngMate grading proxy: browser -> Cloudflare Worker -> Xiaomi MiMo.
+// Secrets stay in Cloudflare. Structured logs never include terms or student answers.
 
 const MIMO_ENDPOINT = "https://api.xiaomimimo.com/v1/chat/completions";
 const MODEL = "mimo-v2.5-pro";
-const BATCH_SIZE = 20;      // 单次最多判 20 题，避免输出过长被截断
-const MAX_ITEMS = 200;       // 一份试卷上限保护
+const MAX_CLOZE_ITEMS = 200;
+const CLOZE_BATCH_SIZE = 20;
 
-// 允许调用本代理的来源：GitHub Pages 线上站 + 本地开发。
 const ALLOWED_ORIGINS = new Set([
   "https://dannyxiexie.github.io",
+  "https://dannyxiexie.tech",
+  "https://www.dannyxiexie.tech",
   "http://localhost:5173",
   "http://127.0.0.1:5173"
 ]);
 
-// 判分规则：抓住核心语义，宽容合理表达，严惩投机取巧。
-const SYSTEM_PROMPT = `你是英语"英译中"词汇考试批改员。原则：抓住核心语义，宽容合理表达，严惩投机取巧。
+const SYSTEM_PROMPT = `你是小学英语“英译中”考试批改员。你每次只批改一道题。
 
-【判对——核心语义到位即可，鼓励多种合理表达】
-1. 简写省虚词：省略"的、了、在、把"或省略号、量词，算对。例：good→好；better→更好；behind→后面；in front of→前面。
-2. 省略补充解释：标准带括号说明的，省略括号只答核心词算对。例：火烈鸟（一种红色的鸟类）→火烈鸟。
-3. 近义词替换：近义互换算对。例：许多↔很多；其他人↔其他的；精彩↔神奇。
-4. 一词多义：答成该词的另一个常见义项算对。例：baby→宝贝；surprise→惊喜；be surprised→惊喜。
-5. 语法形式+核心：点出语法形式且核心意思对，算对。例：jumping→跳跃的ING形式。
-6. 口语/被动/泛指表述：意思对即可。例：叫醒某人→某人醒来；把…放在…上→把什么放上。
+判断目标：从英文原词或短语出发，独立判断学生中文是否是一种合理译法。standard 只是学习资料中的参考，不是唯一答案；不要先比较两段中文像不像，也不要要求学生逐字复刻参考答案。
 
-【判错——必须严惩投机】
-1. 堆砌多答案：作答用 / 、 ， 或"或者"等分隔成多个意思，整体判错（防猜分）。例：这里有一个男人/那里有个男人；玩得开心→感到许多开心的心情/祝你开心；更多→很多/更多；查明→击败或者找到吧。
-2. 丢失"区分性关键"词：丢了把此词与其它词区分开的关键信息，判错。例：松树→树(丢"松")；单脚跳→跳(丢"单脚"，与jump混)。
-3. 概念混淆/错位：比较级丢"更"变程度(more→很多)、玩得开心→祝你开心，判错。
+必须判对：
+1. 自然的中文同义表达、口语表达、语序变化、合理省略虚词。
+2. 中文数字与阿拉伯数字混用，例如 seven→7、fifth→第5、October→10月。
+3. 不影响含义的标点、空格、省略号、大小写差异。
+4. 人称代词在脱离语境时的合理差异，例如 them→他们/她们/它们。
+5. 家长确认过的 accepted 列表：学生答案只要与其中任一项语义相同，必须判对。
+6. 自然的祝愿或意译，例如 enjoy yourself→玩得开心/祝你玩得好。
+7. 英文在小学课堂语境中允许常见的相邻义项，例如 ideas→想法/主意/建议，over there→在那里/在那边。
+8. 固定结构只要核心关系完整即可，例如 help somebody do something→帮助一个人去干某件事情/帮助某人做某事。
 
-【关键判断】区分"区分性关键"与"虚词/补充"：
-- "松、单脚、比较级的'更'"是区分性关键，丢了→错；
-- "的、在、把、省略号、括号解释、量词"是虚词/补充，省了→对；
-- 比较级(better/more)只要保留了"更"→对，丢了"更"→错。
+应该判错：核心动作、对象、方向、否定、时态或比较程度错误；只答了过于宽泛的上位词；写了彼此矛盾的多个猜测。
 
-判分步骤：先查"判错"三条，命中→错；否则按"判对"宽松判断核心语义是否到位→对。
+示例：
+- try to feed：尝试去喂养 = 尝试喂养，判对。
+- spend the day resting：休息一天 = 用一天休息，判对。
+- list the ideas：列出建议 = 列出想法，判对。
+- take a truck tour：坐卡车浏览 = 乘卡车游览，判对。
+- all of them：他们的全部 = 它们全部，判对。
+- we'll try this：将要尝试这个 = 会尝试/实施这个，判对。
 
-只输出 JSON，不要解释：
+只输出 JSON，不要解释或 markdown：
 {"results":[{"id":"题目id","correct":true}]}`;
 
+const CLOZE_SYSTEM = `你是英语“例句选词”出题质检员。对每道题：
+1. 判断选项里哪些填进空格后语法正确且语义通顺（valid，返回选项下标）。
+2. 判断正确答案填入后是否语法正确且语义通顺（answer_ok）。
+严格只输出 JSON，不要解释或 markdown：
+{"results":[{"index":0,"valid":[0,2],"answer_ok":true}]}`;
 
 function corsHeaders(request) {
   const origin = request.headers.get("origin") || "";
@@ -47,132 +53,161 @@ function corsHeaders(request) {
   return {
     "Access-Control-Allow-Origin": allow,
     "Access-Control-Allow-Methods": "POST, OPTIONS",
-    "Access-Control-Allow-Headers": "Content-Type, X-App-Key",
+    "Access-Control-Allow-Headers": "Content-Type, X-App-Key, X-Upload-Code",
+    "Access-Control-Expose-Headers": "X-Grading-Request-Id",
     "Access-Control-Max-Age": "86400"
   };
 }
 
-function json(data, status, headers = {}) {
+function json(data, status, headers = {}, requestId = "") {
   return new Response(JSON.stringify(data), {
     status,
-    headers: { "Content-Type": "application/json; charset=utf-8", ...headers }
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+      ...(requestId ? { "X-Grading-Request-Id": requestId } : {}),
+      ...headers
+    }
   });
 }
 
-async function gradeBatch(items, key) {
-  const user = "题目：\n" + JSON.stringify(items.map((x) => ({ id: x.id, term: x.term, standard: x.expected, student: x.answer })));
-  const resp = await fetch(MIMO_ENDPOINT, {
-    method: "POST",
-    headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-    body: JSON.stringify({
-      model: MODEL,
-      messages: [
-        { role: "system", content: SYSTEM_PROMPT },
-        { role: "user", content: user }
-      ],
-      temperature: 0.2,
-      max_completion_tokens: 3000,
-      stream: false
-    })
-  });
-  if (!resp.ok) throw new Error("MiMo HTTP " + resp.status);
-  const data = await resp.json();
-  const content = data.choices?.[0]?.message?.content || "";
-  const match = content.match(/\{[\s\S]*\}/);
-  if (!match) return [];
+function log(event, fields = {}) {
+  console.log({ service: "amy-engmate-grading", event, ...fields });
+}
+
+function errorMessage(reason) {
+  return reason instanceof Error ? reason.message.slice(0, 180) : "unknown error";
+}
+
+function parseJsonObject(content) {
+  const match = String(content || "").match(/\{[\s\S]*\}/);
+  if (!match) throw new Error("MiMo response did not contain JSON");
+  return JSON.parse(match[0]);
+}
+
+async function callMimo(messages, key, maxCompletionTokens) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 45000);
   try {
-    const parsed = JSON.parse(match[0]);
-    return Array.isArray(parsed.results) ? parsed.results : [];
-  } catch {
-    return [];
+    const response = await fetch(MIMO_ENDPOINT, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+      signal: controller.signal,
+      body: JSON.stringify({
+        model: MODEL,
+        messages,
+        temperature: 0.1,
+        max_completion_tokens: maxCompletionTokens,
+        stream: false
+      })
+    });
+    if (!response.ok) throw new Error(`MiMo HTTP ${response.status}`);
+    const data = await response.json();
+    return data.choices?.[0]?.message?.content || "";
+  } catch (reason) {
+    if (reason?.name === "AbortError") throw new Error("MiMo request timed out");
+    throw reason;
+  } finally {
+    clearTimeout(timeout);
   }
 }
 
-// 出题质检：判断每道例句选词题里，哪些选项填进空格"语法+语义都合理"，
-// 以及正确答案填进去整句是否通顺（不通说明题目本身有问题，前端会跳过）。
-const CLOZE_SYSTEM = `你是英语"例句选词"出题质检员。对每道题：
-1. 判断4个选项里哪些填进空格在语法和语义上都合理（valid，填进去后整句语法正确且语义通顺）。
-2. 判断"正确答案(answer)"填进空格后整句是否语法正确、语义通顺(answer_ok)。如果连正确答案都不通，说明题目本身有语法问题。
-规则：be 动词(is/are/was/were)后面应接现在分词/形容词/名词，接动词原形(如 "He is be in step")属语法错误。
-严格只输出 JSON，不要解释或 markdown：
-{"results":[{"index":0,"valid":[0,2],"answer_ok":true}]}`;
+async function gradeOne(item, key) {
+  const user = "题目：\n" + JSON.stringify({
+    id: item.id,
+    term: item.term,
+    standard: item.expected,
+    accepted: Array.isArray(item.accepted) ? item.accepted : [],
+    student: item.answer
+  });
+  const content = await callMimo([
+    { role: "system", content: SYSTEM_PROMPT },
+    { role: "user", content: user }
+  ], key, 1000);
+  const parsed = parseJsonObject(content);
+  const result = Array.isArray(parsed.results) ? parsed.results[0] : null;
+  if (parsed.results?.length !== 1 || result?.id !== item.id || typeof result.correct !== "boolean") {
+    throw new Error("MiMo returned an incomplete grading result");
+  }
+  return { id: item.id, correct: result.correct };
+}
 
 async function checkClozeBatch(items, key) {
-  const user = "题目：\n" + JSON.stringify(items.map((x, i) => ({ index: x.index ?? i, prompt: x.prompt, choices: x.choices, answer: x.answer })));
-  for (let attempt = 0; attempt < 3; attempt++) {
-    try {
-      const resp = await fetch(MIMO_ENDPOINT, {
-        method: "POST",
-        headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-        body: JSON.stringify({
-          model: MODEL,
-          messages: [{ role: "system", content: CLOZE_SYSTEM }, { role: "user", content: user }],
-          temperature: 0.2,
-          max_completion_tokens: 3000,
-          stream: false
-        })
-      });
-      if (!resp.ok) throw new Error("MiMo HTTP " + resp.status);
-      const content = (await resp.json()).choices?.[0]?.message?.content || "";
-      const match = content.match(/\{[\s\S]*\}/);
-      if (!match) { if (attempt < 2) continue; return []; }
-      try {
-        const parsed = JSON.parse(match[0]);
-        return Array.isArray(parsed.results) ? parsed.results : [];
-      } catch { if (attempt < 2) continue; return []; }
-    } catch (e) {
-      if (attempt < 2) { await new Promise((r) => setTimeout(r, 1500)); continue; }
-      return [];
-    }
+  const user = "题目：\n" + JSON.stringify(items.map((item, index) => ({
+    index: item.index ?? index,
+    prompt: item.prompt,
+    choices: item.choices,
+    answer: item.answer
+  })));
+  const content = await callMimo([
+    { role: "system", content: CLOZE_SYSTEM },
+    { role: "user", content: user }
+  ], key, 3000);
+  const parsed = parseJsonObject(content);
+  return Array.isArray(parsed.results) ? parsed.results : [];
+}
+
+async function handleCloze(body, key, requestId, cors) {
+  const items = body.cloze.filter((item) => item && item.prompt && Array.isArray(item.choices) && item.choices.length);
+  if (!items.length) return json({ requestId, results: [] }, 200, cors, requestId);
+  if (items.length > MAX_CLOZE_ITEMS) return json({ error: "too many items", requestId }, 400, cors, requestId);
+  const batches = [];
+  for (let index = 0; index < items.length; index += CLOZE_BATCH_SIZE) {
+    batches.push(items.slice(index, index + CLOZE_BATCH_SIZE));
   }
-  return [];
+  try {
+    const results = await Promise.all(batches.map((batch) => checkClozeBatch(batch, key)));
+    log("cloze_check_succeeded", { requestId, model: MODEL, itemCount: items.length });
+    return json({ requestId, provider: "xiaomi-mimo", model: MODEL, results: results.flat() }, 200, cors, requestId);
+  } catch (reason) {
+    console.error({ service: "amy-engmate-grading", event: "cloze_check_failed", requestId, model: MODEL, itemCount: items.length, error: errorMessage(reason) });
+    return json({ error: "cloze check unavailable", requestId }, 502, cors, requestId);
+  }
 }
 
 export default {
   async fetch(request, env) {
+    const requestId = crypto.randomUUID();
+    const startedAt = Date.now();
     const cors = corsHeaders(request);
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
-    if (request.method !== "POST") return json({ error: "method not allowed" }, 405, cors);
+    if (request.method !== "POST") return json({ error: "method not allowed", requestId }, 405, cors, requestId);
 
-    // 可选共享密钥：挡公网随意调用。未设 APP_KEY 则不校验。
-    if (env.APP_KEY) {
-      const appKey = request.headers.get("x-app-key");
-      if (appKey !== env.APP_KEY) return json({ error: "unauthorized" }, 401, cors);
+    if (env.APP_KEY && request.headers.get("x-app-key") !== env.APP_KEY) {
+      log("request_rejected", { requestId, reason: "unauthorized" });
+      return json({ error: "unauthorized", requestId }, 401, cors, requestId);
+    }
+    if (!env.MIMO_API_KEY) {
+      console.error({ service: "amy-engmate-grading", event: "configuration_error", requestId, error: "MIMO_API_KEY missing" });
+      return json({ error: "server misconfigured", requestId }, 500, cors, requestId);
     }
 
     let body;
-    try { body = await request.json(); } catch { return json({ error: "invalid json" }, 400, cors); }
-
-    // 例句选词出题质检：返回每道题里"语法+语义都合理"的选项下标，前端据此跳过歧义题。
-    // AI 失败时该批返回空，前端会把没拿到结果的题当作非歧义保留，不影响出题。
-    if (Array.isArray(body?.cloze)) {
-      const clozeItems = body.cloze.filter((x) => x && x.prompt && Array.isArray(x.choices) && x.choices.length);
-      if (!clozeItems.length) return json({ results: [] }, 200, cors);
-      const key = env.MIMO_API_KEY;
-      if (!key) return json({ error: "server misconfigured" }, 500, cors);
-      const batches = [];
-      for (let i = 0; i < clozeItems.length; i += BATCH_SIZE) batches.push(clozeItems.slice(i, i + BATCH_SIZE));
-      const results = await Promise.all(batches.map((b) => checkClozeBatch(b, key).catch(() => [])));
-      return json({ results: results.flat() }, 200, cors);
+    try {
+      body = await request.json();
+    } catch {
+      log("request_rejected", { requestId, reason: "invalid_json" });
+      return json({ error: "invalid json", requestId }, 400, cors, requestId);
     }
 
+    if (Array.isArray(body?.cloze)) return handleCloze(body, env.MIMO_API_KEY, requestId, cors);
+
     const items = Array.isArray(body?.items)
-      ? body.items.filter((x) => x && x.id && x.term && x.expected != null && x.answer != null && String(x.answer).trim())
+      ? body.items.filter((item) => item && item.id && item.term && item.expected != null && item.answer != null && String(item.answer).trim())
       : [];
-    if (!items.length) return json({ results: [] }, 200, cors);
-    if (items.length > MAX_ITEMS) return json({ error: "too many items" }, 400, cors);
+    if (items.length !== 1) {
+      log("request_rejected", { requestId, reason: "grading_requires_exactly_one_item", itemCount: items.length });
+      return json({ error: "grading requires exactly one item", requestId }, 400, cors, requestId);
+    }
 
-    const key = env.MIMO_API_KEY;
-    if (!key) return json({ error: "server misconfigured" }, 500, cors);
-
-    // 分批并发，单批输出小、不会截断；任一批失败返回空，前端用本地判定兜底。
-    const batches = [];
-    for (let i = 0; i < items.length; i += BATCH_SIZE) batches.push(items.slice(i, i + BATCH_SIZE));
+    log("grading_started", { requestId, model: MODEL, itemCount: 1 });
     try {
-      const results = await Promise.all(batches.map((b) => gradeBatch(b, key).catch(() => [])));
-      return json({ results: results.flat() }, 200, cors);
-    } catch {
-      return json({ results: [] }, 200, cors);
+      const result = await gradeOne(items[0], env.MIMO_API_KEY);
+      const gradedAt = new Date().toISOString();
+      log("grading_succeeded", { requestId, model: MODEL, itemCount: 1, durationMs: Date.now() - startedAt });
+      return json({ requestId, provider: "xiaomi-mimo", model: MODEL, gradedAt, results: [result] }, 200, cors, requestId);
+    } catch (reason) {
+      console.error({ service: "amy-engmate-grading", event: "grading_failed", requestId, model: MODEL, itemCount: 1, durationMs: Date.now() - startedAt, error: errorMessage(reason) });
+      return json({ error: "AI grading unavailable", requestId }, 502, cors, requestId);
     }
   }
 };
