@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { ArrowLeft, ArrowUpRight, CloudUpload, Gift, Plus, WalletCards } from "lucide-react";
-import GithubCodeDialog from "./GithubCodeDialog.jsx";
-import { GITHUB_TOKEN_KEY, loadGithubRewardLogs, uploadGithubRewardLog, verifyGithubWriteToken } from "./githubExamLogs.js";
+import { loadGithubRewardLogs, uploadGithubRewardLog } from "./githubExamLogs.js";
 import "./reward.css";
 
 const REWARD_STORAGE_KEY = "amy-engmate:reward-ledger:v1";
@@ -65,10 +64,6 @@ export default function RewardApp({ onBack }) {
   const [amount, setAmount] = useState("");
   const [note, setNote] = useState("");
   const [cloudStatus, setCloudStatus] = useState({ type: "loading", message: "正在同步奖励记录" });
-  const [showGithubAccess, setShowGithubAccess] = useState(false);
-  const [githubToken, setGithubToken] = useState("");
-  const [githubAccessError, setGithubAccessError] = useState("");
-  const [isSavingGithubAccess, setIsSavingGithubAccess] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
 
   const balance = useMemo(
@@ -79,15 +74,13 @@ export default function RewardApp({ onBack }) {
 
   useEffect(() => {
     setRecords(readLocalRecords());
-    setGithubToken(window.localStorage.getItem(GITHUB_TOKEN_KEY) || "");
     setStorageReady(true);
   }, []);
 
   useEffect(() => {
     if (!storageReady) return;
     let cancelled = false;
-    const token = window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
-    loadGithubRewardLogs(token)
+    loadGithubRewardLogs()
       .then((cloudRecords) => {
         if (cancelled) return;
         setRecords((current) => mergeRecords(cloudRecords, current));
@@ -107,25 +100,15 @@ export default function RewardApp({ onBack }) {
     window.localStorage.setItem(REWARD_STORAGE_KEY, JSON.stringify(records));
   }, [records, storageReady]);
 
-  const uploadAll = async (tokenOverride = "") => {
-    const token = tokenOverride || githubToken || window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
-    if (!token) {
-      setGithubAccessError("");
-      setShowGithubAccess(true);
-      return;
-    }
+  const uploadAll = async () => {
     if (!records.length || isUploading) return;
     setIsUploading(true);
     setCloudStatus({ type: "loading", message: "正在保存奖励记录" });
     try {
-      for (const record of records) await uploadGithubRewardLog(record, token);
+      for (const record of records) await uploadGithubRewardLog(record);
       setCloudStatus({ type: "success", message: "奖励记录已保存" });
     } catch (reason) {
       setCloudStatus({ type: "error", message: reason.message || "上传失败，本机记录仍然保留" });
-      if (/授权|权限|Token/.test(reason.message || "")) {
-        setGithubAccessError(reason.message);
-        setShowGithubAccess(true);
-      }
     } finally {
       setIsUploading(false);
     }
@@ -163,39 +146,10 @@ export default function RewardApp({ onBack }) {
     setAmount("");
     setNote("");
 
-    const token = window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
-    if (token) {
-      setCloudStatus({ type: "loading", message: "正在保存这笔记录" });
-      uploadGithubRewardLog(record, token)
-        .then(() => setCloudStatus({ type: "success", message: "这笔记录已自动保存" }))
-        .catch(() => setCloudStatus({ type: "error", message: "已保存在本机，稍后可点同步重试" }));
-    } else {
-      setShowGithubAccess(true);
-    }
-  };
-
-  const saveGithubAccess = async (token) => {
-    setIsSavingGithubAccess(true);
-    setGithubAccessError("");
-    try {
-      await verifyGithubWriteToken(token);
-      window.localStorage.setItem(GITHUB_TOKEN_KEY, token);
-      setGithubToken(token);
-      setShowGithubAccess(false);
-      await uploadAll(token);
-    } catch (reason) {
-      setGithubAccessError(reason.message || "无法验证上传代码");
-    } finally {
-      setIsSavingGithubAccess(false);
-    }
-  };
-
-  const clearGithubAccess = () => {
-    window.localStorage.removeItem(GITHUB_TOKEN_KEY);
-    setGithubToken("");
-    setGithubAccessError("");
-    setShowGithubAccess(false);
-    setCloudStatus({ type: "", message: "已清除这台设备上的上传代码" });
+    setCloudStatus({ type: "loading", message: "正在保存这笔记录" });
+    uploadGithubRewardLog(record)
+      .then(() => setCloudStatus({ type: "success", message: "这笔记录已自动保存" }))
+      .catch(() => setCloudStatus({ type: "error", message: "已保存在本机，稍后可点同步重试" }));
   };
 
   return <div className="reward-app">
@@ -253,7 +207,5 @@ export default function RewardApp({ onBack }) {
         </div> : <p className="reward-empty">第一笔记录会显示在这里。</p>}
       </section>
     </main>
-
-    {showGithubAccess ? <GithubCodeDialog initialToken={githubToken} isSaving={isSavingGithubAccess} error={githubAccessError} onClose={() => setShowGithubAccess(false)} onSave={saveGithubAccess} onClear={clearGithubAccess} /> : null}
   </div>;
 }

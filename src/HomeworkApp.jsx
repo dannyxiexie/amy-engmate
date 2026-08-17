@@ -1,7 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowLeft, CheckCircle2, ChevronRight, CloudUpload, ImagePlus, MessageSquare, Pencil, Plus, Send, Trash2, X } from "lucide-react";
-import GithubCodeDialog from "./GithubCodeDialog.jsx";
-import { GITHUB_TOKEN_KEY, verifyGithubWriteToken } from "./githubExamLogs.js";
 import {
   commitGithubHomeworkPost,
   createHomeworkStoragePaths,
@@ -242,17 +240,10 @@ export default function HomeworkApp({ onBack }) {
   const [saving, setSaving] = useState(false);
   const [progress, setProgress] = useState("");
   const [busyAction, setBusyAction] = useState("");
-  const [githubToken, setGithubToken] = useState("");
-  const [showGithubAccess, setShowGithubAccess] = useState(false);
-  const [githubAccessError, setGithubAccessError] = useState("");
-  const [isSavingGithubAccess, setIsSavingGithubAccess] = useState(false);
-  const pendingAction = useRef(null);
   const deviceId = useMemo(() => readDeviceId(), []);
 
   useEffect(() => {
-    const token = window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
-    setGithubToken(token);
-    loadGithubHomeworkPosts(token)
+    loadGithubHomeworkPosts()
       .then((records) => {
         setPosts(records);
         setStatus(records.length ? `已读取 ${records.length} 次公开发布` : "还没有公开发布");
@@ -261,41 +252,7 @@ export default function HomeworkApp({ onBack }) {
       .finally(() => setLoading(false));
   }, []);
 
-  const runWithToken = (action) => {
-    const token = window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
-    if (token) {
-      action(token);
-      return;
-    }
-    pendingAction.current = action;
-    setGithubAccessError("");
-    setShowGithubAccess(true);
-  };
-
-  const saveGithubAccess = async (token) => {
-    setIsSavingGithubAccess(true);
-    setGithubAccessError("");
-    try {
-      await verifyGithubWriteToken(token);
-      window.localStorage.setItem(GITHUB_TOKEN_KEY, token);
-      setGithubToken(token);
-      setShowGithubAccess(false);
-      const action = pendingAction.current;
-      pendingAction.current = null;
-      if (action) action(token);
-    } catch (error) {
-      setGithubAccessError(error.message || "无法验证上传代码");
-    } finally {
-      setIsSavingGithubAccess(false);
-    }
-  };
-
-  const clearGithubAccess = () => {
-    window.localStorage.removeItem(GITHUB_TOKEN_KEY);
-    setGithubToken("");
-    pendingAction.current = null;
-    setShowGithubAccess(false);
-  };
+  const runWithUpload = (action) => action();
 
   const compressNewImages = async (newImages, imageFolder) => {
     const uploads = [];
@@ -322,7 +279,7 @@ export default function HomeworkApp({ onBack }) {
     return { uploads, metadata };
   };
 
-  const publishPost = (form) => runWithToken(async (token) => {
+  const publishPost = (form) => runWithUpload(async () => {
     setSaving(true);
     try {
       const postId = newId("post-");
@@ -345,7 +302,7 @@ export default function HomeworkApp({ onBack }) {
         auditLog: [auditEntry("create_post", deviceId, { imageCount: metadata.length })]
       };
       setProgress("正在远程发布");
-      await commitGithubHomeworkPost({ post, imageFiles: uploads, token, message: `Publish Amy homework ${post.id}` });
+      await commitGithubHomeworkPost({ post, imageFiles: uploads, message: `Publish Amy homework ${post.id}` });
       setPosts((current) => updatePostInList(current, post));
       setSelectedPost(post);
       setView("detail");
@@ -358,10 +315,10 @@ export default function HomeworkApp({ onBack }) {
     }
   });
 
-  const editPost = (form) => runWithToken(async (token) => {
+  const editPost = (form) => runWithUpload(async () => {
     setSaving(true);
     try {
-      const { post: latest } = await loadGithubHomeworkPost(selectedPost.metadataPath, token);
+      const { post: latest } = await loadGithubHomeworkPost(selectedPost.metadataPath);
       if (latest.confirmedAt) throw new Error("这次发布已经确认，不能再修改内容");
       const imageFolder = latest.imageFolder || selectedPost.imageFolder;
       const { uploads, metadata } = await compressNewImages(form.newImages, imageFolder);
@@ -388,10 +345,10 @@ export default function HomeworkApp({ onBack }) {
       if (uploads.length) {
         updated = applyEdits(latest);
         setProgress("正在上传补充图片");
-        await commitGithubHomeworkPost({ post: updated, imageFiles: uploads, token, message: `Update Amy homework ${latest.id}` });
+        await commitGithubHomeworkPost({ post: updated, imageFiles: uploads, message: `Update Amy homework ${latest.id}` });
       } else {
         setProgress("正在保存修改");
-        updated = await mutateGithubHomeworkPost(latest.metadataPath, token, applyEdits, `Edit Amy homework ${latest.id}`);
+        updated = await mutateGithubHomeworkPost(latest.metadataPath, applyEdits, `Edit Amy homework ${latest.id}`);
       }
       setSelectedPost(updated);
       setPosts((current) => updatePostInList(current, updated));
@@ -406,13 +363,13 @@ export default function HomeworkApp({ onBack }) {
   });
 
   const addComment = (targetType, targetId, text) => new Promise((resolve) => {
-    runWithToken(async (token) => {
+    runWithUpload(async () => {
       const actionKey = targetType === "post" ? "comment-post" : `comment-${targetId}`;
       setBusyAction(actionKey);
       try {
         const timestamp = new Date().toISOString();
         const comment = { id: newId("comment-"), targetType, targetId, text, createdAt: timestamp };
-        const updated = await mutateGithubHomeworkPost(selectedPost.metadataPath, token, (current) => ({
+        const updated = await mutateGithubHomeworkPost(selectedPost.metadataPath, (current) => ({
           ...current,
           comments: [...(current.comments || []), comment],
           updatedAt: timestamp,
@@ -430,11 +387,11 @@ export default function HomeworkApp({ onBack }) {
     });
   });
 
-  const confirmPost = () => runWithToken(async (token) => {
+  const confirmPost = () => runWithUpload(async () => {
     setBusyAction("confirm");
     try {
       const timestamp = new Date().toISOString();
-      const updated = await mutateGithubHomeworkPost(selectedPost.metadataPath, token, (current) => current.confirmedAt ? current : ({
+      const updated = await mutateGithubHomeworkPost(selectedPost.metadataPath, (current) => current.confirmedAt ? current : ({
         ...current,
         confirmedAt: timestamp,
         confirmedByDeviceId: deviceId,
@@ -468,7 +425,5 @@ export default function HomeworkApp({ onBack }) {
     {view === "create" ? <PostEditor saving={saving} progress={progress} onCancel={() => setView("list")} onSubmit={publishPost} /> : null}
     {view === "edit" && selectedPost ? <PostEditor initialPost={selectedPost} saving={saving} progress={progress} onCancel={() => setView("detail")} onSubmit={editPost} /> : null}
     {view === "detail" && selectedPost ? <PostDetail post={selectedPost} busyAction={busyAction} onBack={() => setView("list")} onEdit={() => setView("edit")} onConfirm={confirmPost} onComment={addComment} /> : null}
-
-    {showGithubAccess ? <GithubCodeDialog initialToken={githubToken} isSaving={isSavingGithubAccess} error={githubAccessError} onClose={() => { pendingAction.current = null; setShowGithubAccess(false); }} onSave={saveGithubAccess} onClear={clearGithubAccess} /> : null}
   </div>;
 }

@@ -1,23 +1,32 @@
 const OWNER = "dannyxiexie";
 const REPOSITORY = "amy-engmate";
 const BRANCH = "main";
-const API_ROOT = `https://api.github.com/repos/${OWNER}/${REPOSITORY}`;
+const WRITE_PROXY_ROOT = String(import.meta.env.VITE_GITHUB_WRITE_PROXY_URL || "https://grade.dannyxiexie.tech/github").replace(/\/$/, "");
 const POST_ROOT = "homework-posts";
 const IMAGE_ROOT = "public/homework-images";
+const DEVICE_ID_KEY = "amy-engmate:device-id:v1";
 
-function requestHeaders(token) {
+function requestHeaders() {
   return {
-    Accept: "application/vnd.github+json",
-    "X-GitHub-Api-Version": "2026-03-10",
-    ...(token ? { Authorization: `Bearer ${token}` } : {})
+    Accept: "application/vnd.github+json"
   };
 }
 
-async function githubRequest(path, { token = "", method = "GET", body } = {}) {
-  return fetch(`${API_ROOT}${path}`, {
+function deviceId() {
+  let value = window.localStorage.getItem(DEVICE_ID_KEY) || "";
+  if (!value) {
+    value = globalThis.crypto?.randomUUID?.() || `device-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
+    window.localStorage.setItem(DEVICE_ID_KEY, value);
+  }
+  return value;
+}
+
+async function githubRequest(path, { method = "GET", body } = {}) {
+  return fetch(`${WRITE_PROXY_ROOT}${path}`, {
     method,
     headers: {
-      ...requestHeaders(token),
+      ...requestHeaders(),
+      "X-Device-Id": deviceId(),
       ...(body ? { "Content-Type": "application/json" } : {})
     },
     body: body ? JSON.stringify(body) : undefined
@@ -44,7 +53,7 @@ function decodeText(value) {
 async function responseError(response, fallback) {
   const payload = await response.json().catch(() => ({}));
   const error = new Error(response.status === 401 || response.status === 403
-    ? "上传代码无效或没有写入权限"
+    ? "后台上传暂时不可用"
     : payload.message || fallback);
   error.status = response.status;
   return error;
@@ -67,15 +76,15 @@ export function homeworkImageUrls(path) {
   };
 }
 
-export async function loadGithubHomeworkPost(path, token = "") {
-  const response = await githubRequest(`/contents/${path.split("/").map(encodeURIComponent).join("/")}?ref=${BRANCH}`, { token });
+export async function loadGithubHomeworkPost(path) {
+  const response = await githubRequest(`/contents/${path.split("/").map(encodeURIComponent).join("/")}?ref=${BRANCH}`);
   if (!response.ok) throw await responseError(response, "无法读取作业记录");
   const payload = await response.json();
   return { post: JSON.parse(decodeText(payload.content)), sha: payload.sha };
 }
 
-export async function loadGithubHomeworkPosts(token = "") {
-  const treeResponse = await githubRequest(`/git/trees/${BRANCH}?recursive=1`, { token });
+export async function loadGithubHomeworkPosts() {
+  const treeResponse = await githubRequest(`/git/trees/${BRANCH}?recursive=1`);
   if (treeResponse.status === 404) return [];
   if (!treeResponse.ok) throw await responseError(treeResponse, "暂时无法读取作业发布记录");
   const tree = await treeResponse.json();
@@ -85,24 +94,23 @@ export async function loadGithubHomeworkPosts(token = "") {
     .sort((left, right) => right.localeCompare(left))
     .slice(0, 200);
 
-  const posts = [];
-  for (const path of paths) {
+  const posts = await Promise.all(paths.map(async (path) => {
     try {
-      const { post } = await loadGithubHomeworkPost(path, token);
-      if (post?.id && post?.homeworkDate && Array.isArray(post?.images)) posts.push(post);
+      const { post } = await loadGithubHomeworkPost(path);
+      return post?.id && post?.homeworkDate && Array.isArray(post?.images) ? post : null;
     } catch {
       // One damaged record should not hide the remaining posts.
+      return null;
     }
-  }
-  return posts.sort((left, right) => {
+  }));
+  return posts.filter(Boolean).sort((left, right) => {
     const dateOrder = String(right.homeworkDate).localeCompare(String(left.homeworkDate));
     return dateOrder || new Date(right.createdAt || 0).getTime() - new Date(left.createdAt || 0).getTime();
   });
 }
 
-async function createBlob(content, token) {
+async function createBlob(content) {
   const response = await githubRequest("/git/blobs", {
-    token,
     method: "POST",
     body: { content, encoding: "base64" }
   });
@@ -110,8 +118,7 @@ async function createBlob(content, token) {
   return (await response.json()).sha;
 }
 
-export async function commitGithubHomeworkPost({ post, imageFiles, token, message }) {
-  if (!token) throw new Error("需要先填写上传代码");
+export async function commitGithubHomeworkPost({ post, imageFiles, message }) {
   const entries = [];
   for (const imageFile of imageFiles) {
     const bytes = new Uint8Array(await imageFile.blob.arrayBuffer());
@@ -119,26 +126,25 @@ export async function commitGithubHomeworkPost({ post, imageFiles, token, messag
       path: imageFile.path,
       mode: "100644",
       type: "blob",
-      sha: await createBlob(bytesToBase64(bytes), token)
+      sha: await createBlob(bytesToBase64(bytes))
     });
   }
   entries.push({
     path: post.metadataPath,
     mode: "100644",
     type: "blob",
-    sha: await createBlob(encodeText(JSON.stringify(post, null, 2)), token)
+    sha: await createBlob(encodeText(JSON.stringify(post, null, 2)))
   });
 
   for (let attempt = 0; attempt < 3; attempt += 1) {
-    const referenceResponse = await githubRequest(`/git/ref/heads/${BRANCH}`, { token });
+    const referenceResponse = await githubRequest(`/git/ref/heads/${BRANCH}`);
     if (!referenceResponse.ok) throw await responseError(referenceResponse, "无法读取仓库状态");
     const parentSha = (await referenceResponse.json()).object.sha;
-    const commitResponse = await githubRequest(`/git/commits/${parentSha}`, { token });
+    const commitResponse = await githubRequest(`/git/commits/${parentSha}`);
     if (!commitResponse.ok) throw await responseError(commitResponse, "无法读取仓库提交");
     const baseTree = (await commitResponse.json()).tree.sha;
 
     const treeResponse = await githubRequest("/git/trees", {
-      token,
       method: "POST",
       body: { base_tree: baseTree, tree: entries }
     });
@@ -146,7 +152,6 @@ export async function commitGithubHomeworkPost({ post, imageFiles, token, messag
     const treeSha = (await treeResponse.json()).sha;
 
     const newCommitResponse = await githubRequest("/git/commits", {
-      token,
       method: "POST",
       body: { message, tree: treeSha, parents: [parentSha] }
     });
@@ -154,7 +159,6 @@ export async function commitGithubHomeworkPost({ post, imageFiles, token, messag
     const commitSha = (await newCommitResponse.json()).sha;
 
     const updateResponse = await githubRequest(`/git/refs/heads/${BRANCH}`, {
-      token,
       method: "PATCH",
       body: { sha: commitSha, force: false }
     });
@@ -166,9 +170,8 @@ export async function commitGithubHomeworkPost({ post, imageFiles, token, messag
   throw new Error("仓库刚刚有其他更新，请再试一次");
 }
 
-async function savePostFile(post, sha, token, message) {
+async function savePostFile(post, sha, message) {
   const response = await githubRequest(`/contents/${post.metadataPath.split("/").map(encodeURIComponent).join("/")}`, {
-    token,
     method: "PUT",
     body: {
       message,
@@ -181,13 +184,12 @@ async function savePostFile(post, sha, token, message) {
   return post;
 }
 
-export async function mutateGithubHomeworkPost(path, token, mutate, message) {
-  if (!token) throw new Error("需要先填写上传代码");
+export async function mutateGithubHomeworkPost(path, mutate, message) {
   for (let attempt = 0; attempt < 3; attempt += 1) {
-    const { post, sha } = await loadGithubHomeworkPost(path, token);
+    const { post, sha } = await loadGithubHomeworkPost(path);
     const nextPost = mutate(structuredClone(post));
     try {
-      return await savePostFile(nextPost, sha, token, message);
+      return await savePostFile(nextPost, sha, message);
     } catch (error) {
       if (![409, 422].includes(error.status) || attempt === 2) throw error;
     }

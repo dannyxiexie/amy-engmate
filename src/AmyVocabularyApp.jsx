@@ -3,8 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { ArrowLeft, ArrowUpDown, BookOpen, Check, CheckCircle2, ChevronRight, ClipboardCopy, Clock3, Download, Gift, GraduationCap, History, Images, PenLine, RefreshCw, RotateCcw, Upload, X } from "lucide-react";
 import { AMY_VOCABULARY_MANIFEST, createAmyExam, createClozePrompt, fetchAmyVocabularySession, formatTime, hideTermInExample, recomputeScore } from "./amyVocabularyData.js";
-import { GITHUB_TOKEN_KEY, loadGithubAcceptedAnswers, loadGithubExamLogs, mergeAcceptedAnswers, uploadGithubAcceptedAnswers, uploadGithubExamLog, verifyGithubWriteToken } from "./githubExamLogs.js";
-import GithubCodeDialog from "./GithubCodeDialog.jsx";
+import { loadGithubAcceptedAnswers, loadGithubExamLogs, mergeAcceptedAnswers, uploadGithubAcceptedAnswers, uploadGithubExamLog } from "./githubExamLogs.js";
 import "./amyVocabulary.css";
 
 const HISTORY_KEY = "family-reader:amy-grade-5-vocabulary:exam-history:v1";
@@ -18,7 +17,7 @@ const GRADING_BATCH_SIZE = 10;
 
 function gradingHeaders() {
   if (import.meta.env.VITE_STORAGE_BACKEND === "server") {
-    const code = window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
+    const code = window.localStorage.getItem("amy-engmate:server-upload-code:v1") || "";
     return code ? { "X-Upload-Code": code } : {};
   }
   return import.meta.env.VITE_APP_KEY ? { "X-App-Key": import.meta.env.VITE_APP_KEY } : {};
@@ -450,10 +449,6 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
   const [parentMode, setParentMode] = useState(false);
   const [parentFlips, setParentFlips] = useState(() => new Set());
   const [parentSummary, setParentSummary] = useState(null);
-  const [githubToken, setGithubToken] = useState("");
-  const [showGithubAccess, setShowGithubAccess] = useState(false);
-  const [githubAccessError, setGithubAccessError] = useState("");
-  const [isSavingGithubAccess, setIsSavingGithubAccess] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
   const [lastSyncAt, setLastSyncAt] = useState(() => window.localStorage.getItem(LAST_SYNC_KEY) || "");
   const [cloudStatus, setCloudStatus] = useState({ type: "", message: "点击同步获取其他设备的最新记录" });
@@ -462,7 +457,6 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
     setHistory(readHistory());
     setDrafts(readDrafts());
     setAcceptedAnswers(readAcceptedAnswers());
-    setGithubToken(window.localStorage.getItem(GITHUB_TOKEN_KEY) || "");
     setStorageReady(true);
   }, []);
   useEffect(() => {
@@ -588,16 +582,10 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
       }
     };
     setHistory((current) => mergeHistory([completedRecord], current));
-    const token = window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
-    if (token) {
-      setCloudStatus({ type: "loading", message: "正在把本次考试保存到云端" });
-      uploadGithubExamLog(completedRecord, token)
-        .then(() => setCloudStatus({ type: "success", message: "本次考试已保存到云端" }))
-        .catch(() => setCloudStatus({ type: "error", message: "本次考试已保存在设备中，请到历史页重新上传" }));
-    } else {
-      setGithubAccessError("");
-      setShowGithubAccess(true);
-    }
+    setCloudStatus({ type: "loading", message: "正在把本次考试保存到云端" });
+    uploadGithubExamLog(completedRecord)
+      .then(() => setCloudStatus({ type: "success", message: "本次考试已保存到云端" }))
+      .catch(() => setCloudStatus({ type: "error", message: "本次考试已保存在设备中，请到历史页重新上传" }));
   };
   const submit = async () => {
     if (isGrading) return;
@@ -632,15 +620,14 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
       window.alert("这个文件不是有效的 Amy 考试记录。");
     }
   };
-  const syncHistory = async (tokenOverride = "") => {
-    const token = tokenOverride || githubToken || window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
+  const syncHistory = async () => {
     if (isUploading) return;
     setIsUploading(true);
     setCloudStatus({ type: "loading", message: "同步中，正在读取云端记录" });
     try {
       const [cloudHistory, cloudAccepted] = await Promise.all([
-        loadGithubExamLogs(token),
-        loadGithubAcceptedAnswers(token)
+        loadGithubExamLogs(),
+        loadGithubAcceptedAnswers()
       ]);
       const mergedHistory = mergeHistory(cloudHistory, history);
       const mergedAccepted = mergeAcceptedAnswers(acceptedAnswers, cloudAccepted);
@@ -652,26 +639,13 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
       setHistory(mergedHistory);
       setAcceptedAnswers(mergedAccepted);
 
-      if ((pendingRecords.length || acceptedNeedUpload) && !token) {
-        const pendingMessage = pendingRecords.length
-          ? `有 ${pendingRecords.length} 份本机考试记录尚未上传`
-          : "有本机批改内容尚未上传";
-        setCloudStatus({
-          type: "error",
-          message: `已读取云端，但${pendingMessage}`
-        });
-        setGithubAccessError("");
-        setShowGithubAccess(true);
-        return;
-      }
-
       for (let index = 0; index < pendingRecords.length; index += 1) {
         setCloudStatus({ type: "loading", message: `同步中，正在保存第 ${index + 1} / ${pendingRecords.length} 份记录` });
-        await uploadGithubExamLog(pendingRecords[index], token);
+        await uploadGithubExamLog(pendingRecords[index]);
       }
       if (acceptedNeedUpload) {
         setCloudStatus({ type: "loading", message: "同步中，正在保存批改规则" });
-        const savedAccepted = await uploadGithubAcceptedAnswers(mergedAccepted, token);
+        const savedAccepted = await uploadGithubAcceptedAnswers(mergedAccepted);
         setAcceptedAnswers(savedAccepted);
       }
 
@@ -681,35 +655,9 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
       setCloudStatus({ type: "success", message: `同步完成，共 ${mergedHistory.length} 份考试记录` });
     } catch (reason) {
       setCloudStatus({ type: "error", message: reason.message || "同步失败，本机记录仍然保留" });
-      if (/授权|权限|Token|上传代码/.test(reason.message || "")) {
-        setGithubAccessError(reason.message);
-        setShowGithubAccess(true);
-      }
     } finally {
       setIsUploading(false);
     }
-  };
-  const saveGithubAccess = async (token) => {
-    setIsSavingGithubAccess(true);
-    setGithubAccessError("");
-    try {
-      await verifyGithubWriteToken(token);
-      window.localStorage.setItem(GITHUB_TOKEN_KEY, token);
-      setGithubToken(token);
-      setShowGithubAccess(false);
-      await syncHistory(token);
-    } catch (reason) {
-      setGithubAccessError(reason.message || "无法验证上传代码");
-    } finally {
-      setIsSavingGithubAccess(false);
-    }
-  };
-  const clearGithubAccess = () => {
-    window.localStorage.removeItem(GITHUB_TOKEN_KEY);
-    setGithubToken("");
-    setGithubAccessError("");
-    setShowGithubAccess(false);
-    setCloudStatus({ type: "", message: "已清除这台设备上的上传代码" });
   };
   const enterParent = () => {
     if (!record?.results) return;
@@ -763,26 +711,16 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
     setParentFlips(new Set());
     setParentSummary({ count: gradedItems.length, added, score: newResults.score, correct: newResults.correct, total: newResults.total });
 
-    const token = window.localStorage.getItem(GITHUB_TOKEN_KEY) || "";
-    if (!token) {
-      setGithubAccessError("");
-      setShowGithubAccess(true);
-      return;
-    }
     setCloudStatus({ type: "loading", message: "正在把批改结果保存到云端" });
     try {
-      await uploadGithubExamLog(updatedRecord, token);
+      await uploadGithubExamLog(updatedRecord);
       if (gradedItems.length) {
-        const merged = await uploadGithubAcceptedAnswers(nextAccepted, token);
+        const merged = await uploadGithubAcceptedAnswers(nextAccepted);
         setAcceptedAnswers(merged);
       }
       setCloudStatus({ type: "success", message: "批改结果与补充答案已保存到云端" });
     } catch (reason) {
       setCloudStatus({ type: "error", message: reason.message || "批改已保存在设备中，请到历史页重新上传" });
-      if (/授权|权限|Token|上传代码/.test(reason.message || "")) {
-        setGithubAccessError(reason.message);
-        setShowGithubAccess(true);
-      }
     }
   };
   const copyAcceptedText = async () => {
@@ -810,6 +748,6 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
     {view === "exam" && session && exam ? <><Paper session={session} exam={exam} setExam={setExam} elapsed={elapsed} results={results} gradingProgress={gradingProgress} onSubmit={submit} onContinue={submit} isGrading={isGrading} />{results ? <button className="amy-retry" onClick={restart}><RotateCcw size={16} /> 再考一套</button> : null}</> : null}
     {view === "history" ? <HistoryPage history={history} sortBy={historySort} onSortChange={setHistorySort} onOpen={(item) => { setRecord(item); setSelected(item.session); setParentMode(false); setParentFlips(new Set()); setParentSummary(null); setView("historyDetail"); }} onExport={exportHistory} onImport={importHistory} onSync={() => syncHistory()} cloudStatus={cloudStatus} isSyncing={isUploading} lastSyncAt={lastSyncAt} /> : null}
     {view === "historyDetail" && record && archivedSession ? <Paper session={archivedSession} exam={record.exam} setExam={() => {}} elapsed={record.elapsed} results={record.results} grading={gradingBreakdown(record)} onSubmit={() => {}} allowParentEnter onEnterParent={enterParent} parent={parentMode ? { active: true, flips: parentFlips, onToggle: toggleFlip, onSubmit: submitParentGrading, onCancel: cancelParent } : null} parentSummary={parentSummary} onCopyAccepted={copyAcceptedText} onDismissSummary={() => setParentSummary(null)} /> : null}
-    </>}{showGithubAccess ? <GithubCodeDialog initialToken={githubToken} isSaving={isSavingGithubAccess} error={githubAccessError} onClose={() => setShowGithubAccess(false)} onSave={saveGithubAccess} onClear={clearGithubAccess} /> : null}
+    </>}
   </div>;
 }
