@@ -2992,9 +2992,10 @@
       },
       {
         "id": "s9-g57-i2",
-        "correct": false,
+        "correct": true,
         "answer": "轻易地，容易地",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s9-g38-i1",
@@ -3197,9 +3198,9 @@
         "answer": "find out"
       }
     ],
-    "correct": 122,
+    "correct": 123,
     "total": 137,
-    "score": 89
+    "score": 90
   },
   "gradingVersion": 6,
   "gradingAudit": {
@@ -4575,5 +4576,19 @@
       }
     ]
   },
-  "regradedAt": "2026-08-17T07:52:48.992Z"
+  "regradedAt": "2026-08-17T08:34:40.676Z",
+  "aiGrading": {
+    "score": 89,
+    "correct": 122,
+    "total": 137
+  },
+  "parentGradedAt": "2026-08-17T08:34:40.676Z",
+  "parentGraded": [
+    {
+      "id": "s9-g57-i2",
+      "term": "easily",
+      "answer": "容易的",
+      "displayNumber": "57-2"
+    }
+  ]
 }
