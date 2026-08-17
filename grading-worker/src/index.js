@@ -3,6 +3,7 @@
 
 const MIMO_ENDPOINT = "https://api.xiaomimimo.com/v1/chat/completions";
 const MODEL = "mimo-v2.5-pro";
+const MAX_GRADING_ITEMS = 10;
 const MAX_CLOZE_ITEMS = 200;
 const CLOZE_BATCH_SIZE = 20;
 
@@ -14,7 +15,9 @@ const ALLOWED_ORIGINS = new Set([
   "http://127.0.0.1:5173"
 ]);
 
-const SYSTEM_PROMPT = `你是小学英语“英译中”考试批改员。你每次只批改一道题。
+const SYSTEM_PROMPT = `你是小学英语“英译中”考试批改员。每次最多批改十道互相独立的题。
+
+每道题必须独立判断，不要让同一批中其他题的答案影响本题。输入有几道题，就按原顺序返回几条结果；不得遗漏、合并或重复题号。
 
 判断目标：从英文原词或短语出发，独立判断学生中文是否是一种合理译法。standard 只是学习资料中的参考，不是唯一答案；不要先比较两段中文像不像，也不要要求学生逐字复刻参考答案。
 
@@ -112,24 +115,28 @@ async function callMimo(messages, key, maxCompletionTokens) {
   }
 }
 
-async function gradeOne(item, key) {
-  const user = "题目：\n" + JSON.stringify({
+async function gradeBatch(items, key) {
+  const user = "题目：\n" + JSON.stringify(items.map((item) => ({
     id: item.id,
     term: item.term,
     standard: item.expected,
     accepted: Array.isArray(item.accepted) ? item.accepted : [],
     student: item.answer
-  });
+  })));
   const content = await callMimo([
     { role: "system", content: SYSTEM_PROMPT },
     { role: "user", content: user }
   ], key, 1000);
   const parsed = parseJsonObject(content);
-  const result = Array.isArray(parsed.results) ? parsed.results[0] : null;
-  if (parsed.results?.length !== 1 || result?.id !== item.id || typeof result.correct !== "boolean") {
+  const results = Array.isArray(parsed.results) ? parsed.results : [];
+  const resultById = new Map(results.map((result) => [result.id, result]));
+  const complete = results.length === items.length
+    && resultById.size === items.length
+    && items.every((item) => typeof resultById.get(item.id)?.correct === "boolean");
+  if (!complete) {
     throw new Error("MiMo returned an incomplete grading result");
   }
-  return { id: item.id, correct: result.correct };
+  return items.map((item) => ({ id: item.id, correct: resultById.get(item.id).correct }));
 }
 
 async function checkClozeBatch(items, key) {
@@ -195,19 +202,19 @@ export default {
     const items = Array.isArray(body?.items)
       ? body.items.filter((item) => item && item.id && item.term && item.expected != null && item.answer != null && String(item.answer).trim())
       : [];
-    if (items.length !== 1) {
-      log("request_rejected", { requestId, reason: "grading_requires_exactly_one_item", itemCount: items.length });
-      return json({ error: "grading requires exactly one item", requestId }, 400, cors, requestId);
+    if (!items.length || items.length > MAX_GRADING_ITEMS) {
+      log("request_rejected", { requestId, reason: "grading_item_count_out_of_range", itemCount: items.length });
+      return json({ error: `grading requires 1-${MAX_GRADING_ITEMS} items`, requestId }, 400, cors, requestId);
     }
 
-    log("grading_started", { requestId, model: MODEL, itemCount: 1 });
+    log("grading_started", { requestId, model: MODEL, itemCount: items.length });
     try {
-      const result = await gradeOne(items[0], env.MIMO_API_KEY);
+      const results = await gradeBatch(items, env.MIMO_API_KEY);
       const gradedAt = new Date().toISOString();
-      log("grading_succeeded", { requestId, model: MODEL, itemCount: 1, durationMs: Date.now() - startedAt });
-      return json({ requestId, provider: "xiaomi-mimo", model: MODEL, gradedAt, results: [result] }, 200, cors, requestId);
+      log("grading_succeeded", { requestId, model: MODEL, itemCount: items.length, durationMs: Date.now() - startedAt });
+      return json({ requestId, provider: "xiaomi-mimo", model: MODEL, gradedAt, results }, 200, cors, requestId);
     } catch (reason) {
-      console.error({ service: "amy-engmate-grading", event: "grading_failed", requestId, model: MODEL, itemCount: 1, durationMs: Date.now() - startedAt, error: errorMessage(reason) });
+      console.error({ service: "amy-engmate-grading", event: "grading_failed", requestId, model: MODEL, itemCount: items.length, durationMs: Date.now() - startedAt, error: errorMessage(reason) });
       return json({ error: "AI grading unavailable", requestId }, 502, cors, requestId);
     }
   }

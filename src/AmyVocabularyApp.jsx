@@ -11,9 +11,10 @@ const HISTORY_KEY = "family-reader:amy-grade-5-vocabulary:exam-history:v1";
 const DRAFTS_KEY = "family-reader:amy-grade-5-vocabulary:exam-drafts:v1";
 const ACCEPTED_KEY = "family-reader:amy-grade-5-vocabulary:accepted-answers:v1";
 const LAST_SYNC_KEY = "family-reader:amy-grade-5-vocabulary:last-history-sync:v1";
-const GRADING_VERSION = 6;
+const GRADING_VERSION = 7;
 const GRADING_API_URL = import.meta.env.VITE_GRADING_API_URL || "https://grade.dannyxiexie.tech";
 const MAX_GRADING_ATTEMPTS = 6;
+const GRADING_BATCH_SIZE = 10;
 
 function gradingHeaders() {
   if (import.meta.env.VITE_STORAGE_BACKEND === "server") {
@@ -160,6 +161,7 @@ function createGradingProgress(exam, saved = null) {
     auditItems: Array.isArray(saved?.auditItems) ? saved.auditItems : [],
     failedIndex: null,
     currentIndex: null,
+    currentBatchEnd: null,
     currentAttempt: 0,
     error: ""
   };
@@ -179,7 +181,7 @@ function finishGrading(progress) {
   return recomputeScore({ meanings: progress.meanings, cloze: progress.cloze });
 }
 
-async function requestAiGrade(item, acceptedAnswers, onAttempt) {
+async function requestAiGradeBatch(items, acceptedAnswers, onAttempt) {
   if (!GRADING_API_URL) throw new Error("AI批改服务未配置");
   let lastError = null;
   const requestIds = [];
@@ -192,32 +194,36 @@ async function requestAiGrade(item, acceptedAnswers, onAttempt) {
         method: "POST",
         headers: { "Content-Type": "application/json", ...gradingHeaders() },
         signal: controller.signal,
-        body: JSON.stringify({ items: [{
+        body: JSON.stringify({ items: items.map((item) => ({
           id: item.id,
           term: item.term,
           expected: item.meaningZh,
           accepted: [...(item.acceptedMeaningsZh || []), ...(acceptedAnswers[item.id] || [])],
           answer: item.answer
-        }] })
+        })) })
       });
       const payload = await response.json().catch(() => ({}));
       if (payload.requestId) requestIds.push(payload.requestId);
       if (!response.ok) throw new Error(payload.error || `AI批改请求失败（${response.status}）`);
-      const result = Array.isArray(payload.results) ? payload.results[0] : null;
-      if (payload.results?.length !== 1 || result?.id !== item.id || typeof result.correct !== "boolean") {
+      const resultById = new Map((payload.results || []).map((result) => [result.id, result]));
+      const complete = payload.results?.length === items.length
+        && resultById.size === items.length
+        && items.every((item) => typeof resultById.get(item.id)?.correct === "boolean");
+      if (!complete) {
         throw new Error("AI返回的批改结果不完整");
       }
       return {
-        result: { id: item.id, correct: result.correct, answer: item.meaningZh, source: "ai" },
-        audit: {
+        results: items.map((item) => ({ id: item.id, correct: resultById.get(item.id).correct, answer: item.meaningZh, source: "ai" })),
+        audits: items.map((item) => ({
           id: item.id,
           requestId: payload.requestId || "",
           requestIds,
           attempts: attempt,
+          batchSize: items.length,
           provider: payload.provider || "xiaomi-mimo",
           model: payload.model || "",
           gradedAt: payload.gradedAt || new Date().toISOString()
-        }
+        }))
       };
     } catch (reason) {
       lastError = reason?.name === "AbortError" ? new Error("AI批改请求超时") : reason;
@@ -233,26 +239,33 @@ async function requestAiGrade(item, acceptedAnswers, onAttempt) {
   throw error;
 }
 
-async function gradeExamOneByOne(exam, acceptedAnswers, savedProgress, onProgress) {
+async function gradeExamInBatches(exam, acceptedAnswers, savedProgress, onProgress) {
   let progress = createGradingProgress(exam, savedProgress);
   progress = { ...progress, status: "grading" };
   onProgress(progress);
 
-  for (let index = 0; index < exam.meanings.length; index += 1) {
-    const item = exam.meanings[index];
-    if (!item.answer.trim() || progress.meanings[index]) continue;
+  const pendingIndexes = exam.meanings
+    .map((item, index) => item.answer.trim() && !progress.meanings[index] ? index : -1)
+    .filter((index) => index >= 0);
+  for (let offset = 0; offset < pendingIndexes.length; offset += GRADING_BATCH_SIZE) {
+    const batchIndexes = pendingIndexes.slice(offset, offset + GRADING_BATCH_SIZE);
+    const batchItems = batchIndexes.map((index) => exam.meanings[index]);
+    const firstIndex = batchIndexes[0];
+    const lastIndex = batchIndexes[batchIndexes.length - 1];
     try {
-      const graded = await requestAiGrade(item, acceptedAnswers, (attempt) => {
-        progress = { ...progress, currentIndex: index, currentAttempt: attempt, error: "" };
+      const graded = await requestAiGradeBatch(batchItems, acceptedAnswers, (attempt) => {
+        progress = { ...progress, currentIndex: firstIndex, currentBatchEnd: lastIndex, currentAttempt: attempt, error: "" };
         onProgress(progress);
       });
       const meanings = [...progress.meanings];
-      meanings[index] = graded.result;
+      batchIndexes.forEach((index, batchIndex) => { meanings[index] = graded.results[batchIndex]; });
+      const batchIds = new Set(batchItems.map((item) => item.id));
       progress = {
         ...progress,
         meanings,
-        auditItems: [...progress.auditItems.filter((entry) => entry.id !== item.id), graded.audit],
+        auditItems: [...progress.auditItems.filter((entry) => !batchIds.has(entry.id)), ...graded.audits],
         currentIndex: null,
+        currentBatchEnd: null,
         currentAttempt: 0
       };
       onProgress(progress);
@@ -260,8 +273,10 @@ async function gradeExamOneByOne(exam, acceptedAnswers, savedProgress, onProgres
       progress = {
         ...progress,
         status: "interrupted",
-        failedIndex: index,
+        failedIndex: firstIndex,
+        failedBatchEnd: lastIndex,
         currentIndex: null,
+        currentBatchEnd: null,
         currentAttempt: MAX_GRADING_ATTEMPTS,
         error: reason.message || "AI批改暂时不可用",
         failedRequestIds: reason.requestIds || []
@@ -370,6 +385,10 @@ function Paper({ session, exam, setExam, elapsed, results, grading = null, gradi
   const answered = exam.meanings.filter((item) => item.answer.trim()).length + exam.cloze.filter((item) => item.answer).length;
   const total = exam.meanings.length + exam.cloze.length;
   const progressCounts = gradingCounts(exam, gradingProgress);
+  const activeStart = (gradingProgress?.currentIndex ?? 0) + 1;
+  const activeEnd = (gradingProgress?.currentBatchEnd ?? gradingProgress?.currentIndex ?? 0) + 1;
+  const failedStart = (gradingProgress?.failedIndex ?? 0) + 1;
+  const failedEnd = (gradingProgress?.failedBatchEnd ?? gradingProgress?.failedIndex ?? 0) + 1;
   const updateMeaning = (index, answer) => setExam((current) => ({ ...current, meanings: current.meanings.map((item, itemIndex) => itemIndex === index ? { ...item, answer } : item) }));
   const updateCloze = (index, answer) => setExam((current) => ({ ...current, cloze: current.cloze.map((item, itemIndex) => itemIndex === index ? { ...item, answer } : item) }));
   const meaningQuestions = exam.meanings
@@ -391,7 +410,7 @@ function Paper({ session, exam, setExam, elapsed, results, grading = null, gradi
         return <article key={item.id} className="amy-question"><span>{item.displayNumber}</span><div><label>{item.term}</label><input value={item.answer} disabled={submitted || isGrading} onChange={(event) => updateMeaning(index, event.target.value)} placeholder="写中文含义" autoComplete="off" />{flipped ? <div className="amy-result correct"><CheckCircle2 size={16} /> 家长判对</div> : result ? <Result {...result} /> : null}{canMark ? <button type="button" className={"amy-mark-correct" + (flipped ? " active" : "")} onClick={() => parent.onToggle(index)}><Check size={15} /> {flipped ? "取消算对" : "这题算对"}</button> : null}</div></article>;
       }) : clozeQuestions.map(({ item, index }) => <article key={item.id} className="amy-question"><span>{index + 1}</span><div><label>{item.prompt || hideTermInExample(item.example, item.term)}</label><div className="amy-options">{item.choices.map((choice) => <button key={choice} disabled={submitted || isGrading} onClick={() => updateCloze(index, choice)} className={item.answer === choice ? "selected" : ""}>{choice}</button>)}</div>{(results?.cloze[index] || gradingProgress?.cloze?.[index]) ? <Result {...(results?.cloze[index] || gradingProgress.cloze[index])} /> : null}</div></article>)}</div>
     </section>
-    <aside className="amy-aside"><div className="amy-timer"><Clock3 size={17} /><div><span>用时</span><strong>{formatTime(elapsed)}</strong>{!done ? <small>已自动保存</small> : null}</div></div>{done ? <div className={"amy-score" + (gradingSummary.parentReviewed ? " compared" : "")}><div className="amy-score-line"><span>AI批改</span><strong>{gradingSummary.ai.score}<small> / 100</small></strong><p>{gradingSummary.ai.correct} / {gradingSummary.ai.total} 题正确</p></div>{gradingSummary.parentReviewed ? <div className="amy-score-line parent"><span>家长批改</span><strong>{gradingSummary.parent.score}<small> / 100</small></strong><p>{gradingSummary.parent.correct} / {gradingSummary.parent.total} 题正确</p></div> : null}</div> : gradingProgress ? <div className={"amy-grading-progress " + gradingProgress.status}><span>AI逐题批改</span><strong>{progressCounts.done} / {progressCounts.total}</strong>{isGrading ? <p>正在批改第 {(gradingProgress.currentIndex ?? 0) + 1} 题{gradingProgress.currentAttempt > 1 ? `，第 ${gradingProgress.currentAttempt} 次尝试` : ""}</p> : <><p>批改在第 {(gradingProgress.failedIndex ?? 0) + 1} 题中断，已完成的结果都已保存。</p><button className="amy-primary" onClick={onContinue}>继续批改</button></>}</div> : <button className="amy-primary" disabled={isGrading} onClick={onSubmit}>提交并批改</button>}{parentSummary ? <div className="amy-parent-summary"><span>家长批改小结</span><strong>+{parentSummary.count} 题改对</strong><p>最新得分 {parentSummary.score}<small> / 100</small> · {parentSummary.correct}/{parentSummary.total} 题正确</p>{parentSummary.added?.length ? <><small>新增 {parentSummary.added.length} 条可接受答案，下次同样作答会自动判对。</small><button className="copy" onClick={onCopyAccepted}>{parentSummary.copied ? <><Check size={14} /> 已复制</> : <><ClipboardCopy size={14} /> 复制补充答案</>}</button></> : null}<button className="link" onClick={onDismissSummary}>关闭小结</button></div> : null}{done && !parentSummary && parent?.active ? <div className="amy-parent-bar"><div><span>家长批改中</span><strong>已选 {parent.flips.size} 题算对</strong></div><button className="primary" disabled={!parent.flips.size} onClick={parent.onSubmit}>完成批改</button><button onClick={parent.onCancel}>取消</button></div> : null}{done && !parentSummary && !parent?.active && allowParentEnter ? <button className="amy-parent-enter" onClick={onEnterParent}><PenLine size={16} /> 家长批改</button> : null}</aside>
+    <aside className="amy-aside"><div className="amy-timer"><Clock3 size={17} /><div><span>用时</span><strong>{formatTime(elapsed)}</strong>{!done ? <small>已自动保存</small> : null}</div></div>{done ? <div className={"amy-score" + (gradingSummary.parentReviewed ? " compared" : "")}><div className="amy-score-line"><span>AI批改</span><strong>{gradingSummary.ai.score}<small> / 100</small></strong><p>{gradingSummary.ai.correct} / {gradingSummary.ai.total} 题正确</p></div>{gradingSummary.parentReviewed ? <div className="amy-score-line parent"><span>家长批改</span><strong>{gradingSummary.parent.score}<small> / 100</small></strong><p>{gradingSummary.parent.correct} / {gradingSummary.parent.total} 题正确</p></div> : null}</div> : gradingProgress ? <div className={"amy-grading-progress " + gradingProgress.status}><span>AI分批批改</span><strong>{progressCounts.done} / {progressCounts.total}</strong>{isGrading ? <p>正在批改第 {activeStart}{activeEnd > activeStart ? `–${activeEnd}` : ""} 题{gradingProgress.currentAttempt > 1 ? `，第 ${gradingProgress.currentAttempt} 次尝试` : ""}</p> : <><p>第 {failedStart}{failedEnd > failedStart ? `–${failedEnd}` : ""} 题这一批中断，之前的结果都已保存。</p><button className="amy-primary" onClick={onContinue}>继续批改</button></>}</div> : <button className="amy-primary" disabled={isGrading} onClick={onSubmit}>提交并批改</button>}{parentSummary ? <div className="amy-parent-summary"><span>家长批改小结</span><strong>+{parentSummary.count} 题改对</strong><p>最新得分 {parentSummary.score}<small> / 100</small> · {parentSummary.correct}/{parentSummary.total} 题正确</p>{parentSummary.added?.length ? <><small>新增 {parentSummary.added.length} 条可接受答案，下次同样作答会自动判对。</small><button className="copy" onClick={onCopyAccepted}>{parentSummary.copied ? <><Check size={14} /> 已复制</> : <><ClipboardCopy size={14} /> 复制补充答案</>}</button></> : null}<button className="link" onClick={onDismissSummary}>关闭小结</button></div> : null}{done && !parentSummary && parent?.active ? <div className="amy-parent-bar"><div><span>家长批改中</span><strong>已选 {parent.flips.size} 题算对</strong></div><button className="primary" disabled={!parent.flips.size} onClick={parent.onSubmit}>完成批改</button><button onClick={parent.onCancel}>取消</button></div> : null}{done && !parentSummary && !parent?.active && allowParentEnter ? <button className="amy-parent-enter" onClick={onEnterParent}><PenLine size={16} /> 家长批改</button> : null}</aside>
   </main>;
 }
 
@@ -499,6 +518,7 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
         ...createGradingProgress(restoredExam, draft.gradingProgress),
         status: "interrupted",
         failedIndex: draft.gradingProgress.failedIndex ?? draft.gradingProgress.currentIndex ?? null,
+        failedBatchEnd: draft.gradingProgress.failedBatchEnd ?? draft.gradingProgress.currentBatchEnd ?? null,
         error: draft.gradingProgress.error || "上次批改尚未完成"
       } : null);
       setView("exam");
@@ -585,7 +605,7 @@ export default function AmyVocabularyApp({ onBack, onOpenRewards, onOpenHomework
     const readyExam = prepareExam(exam);
     setExam(readyExam);
     try {
-      const outcome = await gradeExamOneByOne(readyExam, acceptedAnswers, gradingProgress, (progress) => persistGradingProgress(readyExam, progress));
+      const outcome = await gradeExamInBatches(readyExam, acceptedAnswers, gradingProgress, (progress) => persistGradingProgress(readyExam, progress));
       if (outcome.status === "complete") completeExam(readyExam, outcome.results, outcome.progress);
     } finally {
       setIsGrading(false);
