@@ -101,6 +101,30 @@
       "height": 801,
       "size": 1406409,
       "createdAt": "2026-08-11T14:15:24.227Z"
+    },
+    {
+      "id": "image-1787233891356ff50db32d0",
+      "title": "数学故事",
+      "path": "public/homework-images/2026/08/post-17860987762187ca3c4eaac/image-1787233891356ff50db32d0.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-17860987762187ca3c4eaac/image-1787233891356ff50db32d0.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-17860987762187ca3c4eaac/image-1787233891356ff50db32d0.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1313008,
+      "createdAt": "2026-08-20T13:52:01.455Z"
+    },
+    {
+      "id": "image-1787233909029a43e640dbe",
+      "title": "数学故事",
+      "path": "public/homework-images/2026/08/post-17860987762187ca3c4eaac/image-1787233909029a43e640dbe.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-17860987762187ca3c4eaac/image-1787233909029a43e640dbe.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-17860987762187ca3c4eaac/image-1787233909029a43e640dbe.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1263372,
+      "createdAt": "2026-08-20T13:52:01.700Z"
     }
   ],
   "comments": [
@@ -171,7 +195,7 @@
   "confirmedAt": null,
   "confirmedByDeviceId": null,
   "createdAt": "2026-08-07T10:32:58.127Z",
-  "updatedAt": "2026-08-11T14:15:24.228Z",
+  "updatedAt": "2026-08-20T13:52:01.700Z",
   "auditLog": [
     {
       "id": "audit-1786098778127f481115811",
@@ -280,6 +304,16 @@
       "details": {
         "imageCount": 8,
         "addedImages": 1
+      }
+    },
+    {
+      "id": "audit-1787233921700a551769900",
+      "action": "edit_post",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-20T13:52:01.700Z",
+      "details": {
+        "imageCount": 10,
+        "addedImages": 2
       }
     }
   ]
