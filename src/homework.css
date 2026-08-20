@@ -124,6 +124,7 @@
 .homework-post-list small { color: #74817c; }
 .homework-state { padding: 5px 8px; background: #fff1d8; color: #8b5b0f; font-size: 11px; font-weight: 700; }
 .homework-state.confirmed { background: #e4f2e9; color: #166d48; }
+.homework-state.rejected { background: #fce8e6; color: #b42318; }
 .homework-empty { margin: 16px 0 0; padding: 34px; background: var(--paper); color: #6e7c77; text-align: center; }
 
 .homework-editor-fields { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 16px; margin-top: 20px; }
@@ -187,8 +188,10 @@
 .homework-detail-head small { color: #6e7c77; }
 .homework-detail-actions { display: flex; gap: 8px; margin-top: 16px; }
 .homework-detail-actions button.confirm { border-color: #d5b76d; background: #fff4d7; color: #7c540e; }
+.homework-detail-actions button.reject { border-color: #e6aaa5; background: #fff0ee; color: #b42318; }
 .homework-detail-actions button:disabled { opacity: .55; cursor: not-allowed; }
 .homework-confirmed { display: inline-flex; align-items: center; gap: 6px; padding: 8px 11px; background: #e4f2e9; color: #176b48; font-size: 13px; font-weight: 700; }
+.homework-rejected { display: inline-flex; align-items: center; gap: 6px; padding: 8px 11px; background: #fce8e6; color: #b42318; font-size: 13px; font-weight: 700; }
 
 .homework-post-comments { margin: 20px 0 26px; padding: 18px; border-left: 4px solid #d5ad58; background: #fff9ea; }
 .homework-section-label { display: flex; align-items: center; gap: 7px; color: #4f605a; font-size: 12px; }

@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { ArrowLeft, CheckCircle2, ChevronRight, CloudUpload, ImagePlus, MessageSquare, Pencil, Plus, Send, Trash2, X } from "lucide-react";
+import { ArrowLeft, CheckCircle2, ChevronRight, CircleX, CloudUpload, ImagePlus, MessageSquare, Pencil, Plus, Send, Trash2, X } from "lucide-react";
 import {
   commitGithubHomeworkPost,
   createHomeworkStoragePaths,
@@ -192,13 +192,13 @@ function PostList({ posts, loading, status, onCreate, onOpen }) {
     {loading ? <p className="homework-empty">正在读取公开记录</p> : posts.length ? <section className="homework-post-list">{posts.map((post) => <button key={post.id} onClick={() => onOpen(post)}>
       <div className="homework-date-block"><strong>{new Date(`${post.homeworkDate}T00:00:00`).getDate()}</strong><span>{new Date(`${post.homeworkDate}T00:00:00`).toLocaleString("zh-CN", { month: "short" })}</span></div>
       <div><strong>{formatHomeworkDate(post.homeworkDate)}的作业</strong><p>{post.description}</p><small>{post.images.length} 张图片 · {(post.comments || []).length} 条评论</small></div>
-      <span className={`homework-state ${post.confirmedAt ? "confirmed" : "open"}`}>{post.confirmedAt ? "已确认" : "等待确认"}</span>
+      <span className={`homework-state ${post.confirmedAt ? "confirmed" : post.rejectedAt ? "rejected" : "open"}`}>{post.confirmedAt ? "已确认" : post.rejectedAt ? "已驳回" : "等待确认"}</span>
       <ChevronRight size={18} />
     </button>)}</section> : <p className="homework-empty">还没有发布记录。</p>}
   </main>;
 }
 
-function PostDetail({ post, busyAction, onBack, onEdit, onConfirm, onComment }) {
+function PostDetail({ post, busyAction, onBack, onEdit, onConfirm, onReject, onComment }) {
   const postComments = (post.comments || []).filter((comment) => comment.targetType === "post");
   return <main className="homework-detail">
     <div className="homework-detail-head">
@@ -206,7 +206,10 @@ function PostDetail({ post, busyAction, onBack, onEdit, onConfirm, onComment }) 
       <div><span>{formatHomeworkDate(post.homeworkDate)}</span><h1>{post.description}</h1><small>{post.images.length} 张图片 · 发布于 {formatTimestamp(post.createdAt)}</small></div>
       <div className="homework-detail-actions">
         {!post.confirmedAt ? <button onClick={onEdit}><Pencil size={16} />修改或补图</button> : null}
-        {post.confirmedAt ? <span className="homework-confirmed"><CheckCircle2 size={17} />已确认</span> : <button className="confirm" disabled={busyAction === "confirm"} onClick={onConfirm}><CheckCircle2 size={16} />{busyAction === "confirm" ? "确认中" : "爸妈确认"}</button>}
+        {post.confirmedAt ? <span className="homework-confirmed"><CheckCircle2 size={17} />已确认</span> : post.rejectedAt ? <span className="homework-rejected"><CircleX size={17} />已驳回</span> : <>
+          <button className="confirm" disabled={Boolean(busyAction)} onClick={onConfirm}><CheckCircle2 size={16} />{busyAction === "confirm" ? "确认中" : "爸妈确认"}</button>
+          <button className="reject" disabled={Boolean(busyAction)} onClick={onReject}><CircleX size={16} />{busyAction === "reject" ? "驳回中" : "驳回"}</button>
+        </>}
       </div>
     </div>
 
@@ -297,6 +300,8 @@ export default function HomeworkApp({ onBack }) {
         comments: [],
         confirmedAt: null,
         confirmedByDeviceId: null,
+        rejectedAt: null,
+        rejectedByDeviceId: null,
         createdAt: timestamp,
         updatedAt: timestamp,
         auditLog: [auditEntry("create_post", deviceId, { imageCount: metadata.length })]
@@ -334,6 +339,8 @@ export default function HomeworkApp({ onBack }) {
           homeworkDate: form.homeworkDate,
           description: form.description,
           images: [...keptImages, ...metadata],
+          rejectedAt: null,
+          rejectedByDeviceId: null,
           updatedAt: timestamp,
           auditLog: [...(current.auditLog || []), auditEntry("edit_post", deviceId, {
             imageCount: keptImages.length + metadata.length,
@@ -395,6 +402,8 @@ export default function HomeworkApp({ onBack }) {
         ...current,
         confirmedAt: timestamp,
         confirmedByDeviceId: deviceId,
+        rejectedAt: null,
+        rejectedByDeviceId: null,
         updatedAt: timestamp,
         auditLog: [...(current.auditLog || []), auditEntry("confirm_post", deviceId)]
       }), `Confirm Amy homework ${selectedPost.id}`);
@@ -402,6 +411,28 @@ export default function HomeworkApp({ onBack }) {
       setPosts((current) => updatePostInList(current, updated));
     } catch (error) {
       window.alert(error.message || "确认失败，请稍后重试");
+    } finally {
+      setBusyAction("");
+    }
+  });
+
+  const rejectPost = () => runWithUpload(async () => {
+    setBusyAction("reject");
+    try {
+      const timestamp = new Date().toISOString();
+      const updated = await mutateGithubHomeworkPost(selectedPost.metadataPath, (current) => current.rejectedAt ? current : ({
+        ...current,
+        confirmedAt: null,
+        confirmedByDeviceId: null,
+        rejectedAt: timestamp,
+        rejectedByDeviceId: deviceId,
+        updatedAt: timestamp,
+        auditLog: [...(current.auditLog || []), auditEntry("reject_post", deviceId)]
+      }), `Reject Amy homework ${selectedPost.id}`);
+      setSelectedPost(updated);
+      setPosts((current) => updatePostInList(current, updated));
+    } catch (error) {
+      window.alert(error.message || "驳回失败，请稍后重试");
     } finally {
       setBusyAction("");
     }
@@ -424,6 +455,6 @@ export default function HomeworkApp({ onBack }) {
     {view === "list" ? <PostList posts={posts} loading={loading} status={status} onCreate={() => { setSelectedPost(null); setView("create"); }} onOpen={(post) => { setSelectedPost(post); setView("detail"); }} /> : null}
     {view === "create" ? <PostEditor saving={saving} progress={progress} onCancel={() => setView("list")} onSubmit={publishPost} /> : null}
     {view === "edit" && selectedPost ? <PostEditor initialPost={selectedPost} saving={saving} progress={progress} onCancel={() => setView("detail")} onSubmit={editPost} /> : null}
-    {view === "detail" && selectedPost ? <PostDetail post={selectedPost} busyAction={busyAction} onBack={() => setView("list")} onEdit={() => setView("edit")} onConfirm={confirmPost} onComment={addComment} /> : null}
+    {view === "detail" && selectedPost ? <PostDetail post={selectedPost} busyAction={busyAction} onBack={() => setView("list")} onEdit={() => setView("edit")} onConfirm={confirmPost} onReject={rejectPost} onComment={addComment} /> : null}
   </div>;
 }
