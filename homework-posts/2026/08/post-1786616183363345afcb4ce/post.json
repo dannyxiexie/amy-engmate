@@ -68,10 +68,10 @@
     }
   ],
   "comments": [],
-  "confirmedAt": null,
-  "confirmedByDeviceId": null,
+  "confirmedAt": "2026-08-20T14:20:46.509Z",
+  "confirmedByDeviceId": "device-1785847096793975fb5f573",
   "createdAt": "2026-08-13T10:16:24.488Z",
-  "updatedAt": "2026-08-20T13:57:55.542Z",
+  "updatedAt": "2026-08-20T14:20:46.509Z",
   "auditLog": [
     {
       "id": "audit-1786616184488e11eb99a0e",
@@ -91,6 +91,13 @@
         "imageCount": 5,
         "addedImages": 1
       }
+    },
+    {
+      "id": "audit-17872356471357e3584f6fe",
+      "action": "confirm_post",
+      "deviceId": "device-1785847096793975fb5f573",
+      "timestamp": "2026-08-20T14:20:47.135Z",
+      "details": {}
     }
   ]
 }
