@@ -43,11 +43,19 @@
       "createdAt": "2026-08-20T14:03:39.516Z"
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "id": "comment-1787236067847a69a86293d",
+      "targetType": "post",
+      "targetId": null,
+      "text": "语故无总结",
+      "createdAt": "2026-08-20T14:27:47.847Z"
+    }
+  ],
   "confirmedAt": "2026-08-20T14:21:55.287Z",
   "confirmedByDeviceId": "device-1785847096793975fb5f573",
   "createdAt": "2026-08-20T14:03:39.516Z",
-  "updatedAt": "2026-08-20T14:21:55.287Z",
+  "updatedAt": "2026-08-20T14:27:47.847Z",
   "auditLog": [
     {
       "id": "audit-17872346195165ec0b680e9",
@@ -64,6 +72,16 @@
       "deviceId": "device-1785847096793975fb5f573",
       "timestamp": "2026-08-20T14:21:56.190Z",
       "details": {}
+    },
+    {
+      "id": "audit-1787236068471c5b25de93f",
+      "action": "add_comment",
+      "deviceId": "device-1785847096793975fb5f573",
+      "timestamp": "2026-08-20T14:27:48.471Z",
+      "details": {
+        "targetType": "post",
+        "targetId": null
+      }
     }
   ]
 }
