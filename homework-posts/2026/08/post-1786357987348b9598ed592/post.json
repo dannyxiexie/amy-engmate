@@ -41,13 +41,25 @@
       "height": 801,
       "size": 1454346,
       "createdAt": "2026-08-11T14:16:54.940Z"
+    },
+    {
+      "id": "image-17872341778441f76c1246a",
+      "title": "语文故事",
+      "path": "public/homework-images/2026/08/post-1786357987348b9598ed592/image-17872341778441f76c1246a.webp",
+      "publicUrl": "/amy-engmate/homework-images/2026/08/post-1786357987348b9598ed592/image-17872341778441f76c1246a.webp",
+      "rawUrl": "https://raw.githubusercontent.com/dannyxiexie/amy-engmate/main/public/homework-images/2026/08/post-1786357987348b9598ed592/image-17872341778441f76c1246a.webp",
+      "mimeType": "image/webp",
+      "width": 1067,
+      "height": 801,
+      "size": 1180549,
+      "createdAt": "2026-08-20T13:56:23.456Z"
     }
   ],
   "comments": [],
   "confirmedAt": null,
   "confirmedByDeviceId": null,
   "createdAt": "2026-08-10T10:33:07.950Z",
-  "updatedAt": "2026-08-11T14:16:54.940Z",
+  "updatedAt": "2026-08-20T13:56:23.456Z",
   "auditLog": [
     {
       "id": "audit-1786357987950b6471a3633",
@@ -65,6 +77,16 @@
       "timestamp": "2026-08-11T14:16:54.940Z",
       "details": {
         "imageCount": 3,
+        "addedImages": 1
+      }
+    },
+    {
+      "id": "audit-1787234183456cf16b5c6fe",
+      "action": "edit_post",
+      "deviceId": "device-1785853121471f4c30ed0f4",
+      "timestamp": "2026-08-20T13:56:23.456Z",
+      "details": {
+        "imageCount": 4,
         "addedImages": 1
       }
     }
