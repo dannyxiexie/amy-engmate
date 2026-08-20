@@ -192,10 +192,10 @@
       "createdAt": "2026-08-07T10:36:55.790Z"
     }
   ],
-  "confirmedAt": null,
-  "confirmedByDeviceId": null,
+  "confirmedAt": "2026-08-20T14:12:21.488Z",
+  "confirmedByDeviceId": "device-1785847096793975fb5f573",
   "createdAt": "2026-08-07T10:32:58.127Z",
-  "updatedAt": "2026-08-20T13:52:01.700Z",
+  "updatedAt": "2026-08-20T14:12:21.488Z",
   "auditLog": [
     {
       "id": "audit-1786098778127f481115811",
@@ -315,6 +315,13 @@
         "imageCount": 10,
         "addedImages": 2
       }
+    },
+    {
+      "id": "audit-1787235143948c1db2ee2e6",
+      "action": "confirm_post",
+      "deviceId": "device-1785847096793975fb5f573",
+      "timestamp": "2026-08-20T14:12:23.948Z",
+      "details": {}
     }
   ]
 }
