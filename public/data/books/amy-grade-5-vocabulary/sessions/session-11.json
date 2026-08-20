@@ -1,9 +1,3769 @@
 {
   "number": 11,
-  "available": false,
-  "verifiedEnglish": false,
-  "groupCount": 0,
-  "itemCount": 0,
-  "groups": [],
-  "entries": []
+  "available": true,
+  "verifiedEnglish": true,
+  "groupCount": 61,
+  "itemCount": 109,
+  "groups": [
+    {
+      "id": "s11-g1",
+      "teacherNumber": "1",
+      "sourceText": "green",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "green",
+          "meaningZh": "绿色的；环保的",
+          "example": "We want a green school.",
+          "exampleZh": "我们想要一所环保的学校。",
+          "acceptedMeaningsZh": [
+            "绿色的；环保的"
+          ],
+          "relation": "single",
+          "id": "s11-g1-i1",
+          "sourceGroupId": "s11-g1",
+          "session": 11,
+          "teacherNumber": "1",
+          "displayNumber": "1"
+        }
+      ]
+    },
+    {
+      "id": "s11-g2",
+      "teacherNumber": "2",
+      "sourceText": "greener",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "greener",
+          "meaningZh": "更绿色的；更环保的",
+          "example": "Let us make our city greener.",
+          "exampleZh": "让我们让城市更环保。",
+          "acceptedMeaningsZh": [
+            "更绿色的；更环保的"
+          ],
+          "relation": "single",
+          "id": "s11-g2-i1",
+          "sourceGroupId": "s11-g2",
+          "session": 11,
+          "teacherNumber": "2",
+          "displayNumber": "2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g3",
+      "teacherNumber": "3",
+      "sourceText": "booklet",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "booklet",
+          "meaningZh": "小册子",
+          "example": "This booklet is about recycling.",
+          "exampleZh": "这本小册子是关于回收利用的。",
+          "acceptedMeaningsZh": [
+            "小册子"
+          ],
+          "relation": "single",
+          "id": "s11-g3-i1",
+          "sourceGroupId": "s11-g3",
+          "session": 11,
+          "teacherNumber": "3",
+          "displayNumber": "3"
+        }
+      ]
+    },
+    {
+      "id": "s11-g4",
+      "teacherNumber": "4",
+      "sourceText": "use / reuse",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "use",
+          "meaningZh": "使用",
+          "example": "We use both sides of the paper.",
+          "exampleZh": "我们使用纸的两面。",
+          "acceptedMeaningsZh": [
+            "使用"
+          ],
+          "relation": "related",
+          "id": "s11-g4-i1",
+          "sourceGroupId": "s11-g4",
+          "session": 11,
+          "teacherNumber": "4",
+          "displayNumber": "4-1"
+        },
+        {
+          "term": "reuse",
+          "meaningZh": "再次使用",
+          "example": "We can reuse this bag.",
+          "exampleZh": "我们可以重复使用这个袋子。",
+          "acceptedMeaningsZh": [
+            "再次使用"
+          ],
+          "relation": "related",
+          "id": "s11-g4-i2",
+          "sourceGroupId": "s11-g4",
+          "session": 11,
+          "teacherNumber": "4",
+          "displayNumber": "4-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g5",
+      "teacherNumber": "5",
+      "sourceText": "reduce / reduce costs",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "reduce",
+          "meaningZh": "减少",
+          "example": "We should reduce waste.",
+          "exampleZh": "我们应该减少浪费。",
+          "acceptedMeaningsZh": [
+            "减少"
+          ],
+          "relation": "related",
+          "id": "s11-g5-i1",
+          "sourceGroupId": "s11-g5",
+          "session": 11,
+          "teacherNumber": "5",
+          "displayNumber": "5-1"
+        },
+        {
+          "term": "reduce costs",
+          "meaningZh": "降低成本",
+          "example": "Reusing things can reduce costs.",
+          "exampleZh": "重复使用物品可以降低成本。",
+          "acceptedMeaningsZh": [
+            "降低成本"
+          ],
+          "relation": "related",
+          "id": "s11-g5-i2",
+          "sourceGroupId": "s11-g5",
+          "session": 11,
+          "teacherNumber": "5",
+          "displayNumber": "5-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g6",
+      "teacherNumber": "6",
+      "sourceText": "recycle",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "recycle",
+          "meaningZh": "回收利用",
+          "example": "We recycle paper and bottles.",
+          "exampleZh": "我们回收利用纸和瓶子。",
+          "acceptedMeaningsZh": [
+            "回收利用"
+          ],
+          "relation": "single",
+          "id": "s11-g6-i1",
+          "sourceGroupId": "s11-g6",
+          "session": 11,
+          "teacherNumber": "6",
+          "displayNumber": "6"
+        }
+      ]
+    },
+    {
+      "id": "s11-g7",
+      "teacherNumber": "7",
+      "sourceText": "throw / throw away",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "throw",
+          "meaningZh": "扔；投",
+          "example": "Do not throw stones.",
+          "exampleZh": "不要扔石头。",
+          "acceptedMeaningsZh": [
+            "扔；投"
+          ],
+          "relation": "related",
+          "id": "s11-g7-i1",
+          "sourceGroupId": "s11-g7",
+          "session": 11,
+          "teacherNumber": "7",
+          "displayNumber": "7-1"
+        },
+        {
+          "term": "throw away",
+          "meaningZh": "扔掉",
+          "example": "Do not throw away this box.",
+          "exampleZh": "不要扔掉这个盒子。",
+          "acceptedMeaningsZh": [
+            "扔掉"
+          ],
+          "relation": "related",
+          "id": "s11-g7-i2",
+          "sourceGroupId": "s11-g7",
+          "session": 11,
+          "teacherNumber": "7",
+          "displayNumber": "7-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g8",
+      "teacherNumber": "8",
+      "sourceText": "pick up",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "pick up",
+          "meaningZh": "捡起；拿起",
+          "example": "Please pick up the rubbish.",
+          "exampleZh": "请捡起垃圾。",
+          "acceptedMeaningsZh": [
+            "捡起；拿起"
+          ],
+          "relation": "single",
+          "id": "s11-g8-i1",
+          "sourceGroupId": "s11-g8",
+          "session": 11,
+          "teacherNumber": "8",
+          "displayNumber": "8"
+        }
+      ]
+    },
+    {
+      "id": "s11-g9",
+      "teacherNumber": "9",
+      "sourceText": "turn off (lights / radio) / turn on (television)",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "turn off",
+          "meaningZh": "关闭（电器）",
+          "example": "Turn off the lights when you leave.",
+          "exampleZh": "离开时关灯。",
+          "acceptedMeaningsZh": [
+            "关闭（电器）"
+          ],
+          "relation": "related",
+          "id": "s11-g9-i1",
+          "sourceGroupId": "s11-g9",
+          "session": 11,
+          "teacherNumber": "9",
+          "displayNumber": "9-1"
+        },
+        {
+          "term": "turn on",
+          "meaningZh": "打开（电器）",
+          "example": "Turn on the television, please.",
+          "exampleZh": "请打开电视。",
+          "acceptedMeaningsZh": [
+            "打开（电器）"
+          ],
+          "relation": "related",
+          "id": "s11-g9-i2",
+          "sourceGroupId": "s11-g9",
+          "session": 11,
+          "teacherNumber": "9",
+          "displayNumber": "9-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g10",
+      "teacherNumber": "10",
+      "sourceText": "pollute / pollution",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "pollute",
+          "meaningZh": "污染",
+          "example": "Dirty water can pollute the river.",
+          "exampleZh": "脏水会污染河流。",
+          "acceptedMeaningsZh": [
+            "污染"
+          ],
+          "relation": "related",
+          "id": "s11-g10-i1",
+          "sourceGroupId": "s11-g10",
+          "session": 11,
+          "teacherNumber": "10",
+          "displayNumber": "10-1"
+        },
+        {
+          "term": "pollution",
+          "meaningZh": "污染",
+          "example": "Air pollution is bad for us.",
+          "exampleZh": "空气污染对我们有害。",
+          "acceptedMeaningsZh": [
+            "污染"
+          ],
+          "relation": "related",
+          "id": "s11-g10-i2",
+          "sourceGroupId": "s11-g10",
+          "session": 11,
+          "teacherNumber": "10",
+          "displayNumber": "10-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g11",
+      "teacherNumber": "11",
+      "sourceText": "habit / habits for ...",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "habit",
+          "meaningZh": "习惯",
+          "example": "Walking is a healthy habit.",
+          "exampleZh": "步行是一个健康的习惯。",
+          "acceptedMeaningsZh": [
+            "习惯"
+          ],
+          "relation": "related",
+          "id": "s11-g11-i1",
+          "sourceGroupId": "s11-g11",
+          "session": 11,
+          "teacherNumber": "11",
+          "displayNumber": "11-1"
+        },
+        {
+          "term": "habits for ...",
+          "meaningZh": "适合……的习惯；关于……的习惯",
+          "example": "The booklet shows good habits for a green life.",
+          "exampleZh": "这本小册子介绍环保生活的好习惯。",
+          "acceptedMeaningsZh": [
+            "适合……的习惯；关于……的习惯"
+          ],
+          "relation": "related",
+          "id": "s11-g11-i2",
+          "sourceGroupId": "s11-g11",
+          "session": 11,
+          "teacherNumber": "11",
+          "displayNumber": "11-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g12",
+      "teacherNumber": "12",
+      "sourceText": "a good way / It’s a good way to (do) ...",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "a good way",
+          "meaningZh": "一个好方法",
+          "example": "Walking is a good way to stay healthy.",
+          "exampleZh": "步行是保持健康的好方法。",
+          "acceptedMeaningsZh": [
+            "一个好方法"
+          ],
+          "relation": "related",
+          "id": "s11-g12-i1",
+          "sourceGroupId": "s11-g12",
+          "session": 11,
+          "teacherNumber": "12",
+          "displayNumber": "12-1"
+        },
+        {
+          "term": "It's a good way to do ...",
+          "meaningZh": "这是做……的好方法",
+          "example": "It's a good way to save water.",
+          "exampleZh": "这是节约用水的好方法。",
+          "acceptedMeaningsZh": [
+            "这是做……的好方法"
+          ],
+          "relation": "related",
+          "id": "s11-g12-i2",
+          "sourceGroupId": "s11-g12",
+          "session": 11,
+          "teacherNumber": "12",
+          "displayNumber": "12-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g13",
+      "teacherNumber": "13",
+      "sourceText": "take ... / take a bus / take a car / take the subway",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "take",
+          "meaningZh": "乘坐；拿",
+          "example": "I take my bag to school.",
+          "exampleZh": "我把书包带到学校。",
+          "acceptedMeaningsZh": [
+            "乘坐；拿"
+          ],
+          "relation": "related",
+          "id": "s11-g13-i1",
+          "sourceGroupId": "s11-g13",
+          "session": 11,
+          "teacherNumber": "13",
+          "displayNumber": "13-1"
+        },
+        {
+          "term": "take a bus",
+          "meaningZh": "乘公共汽车",
+          "example": "I take a bus to school.",
+          "exampleZh": "我乘公共汽车上学。",
+          "acceptedMeaningsZh": [
+            "乘公共汽车"
+          ],
+          "relation": "related",
+          "id": "s11-g13-i2",
+          "sourceGroupId": "s11-g13",
+          "session": 11,
+          "teacherNumber": "13",
+          "displayNumber": "13-2"
+        },
+        {
+          "term": "take a car",
+          "meaningZh": "乘小汽车",
+          "example": "We take a car to the park.",
+          "exampleZh": "我们乘小汽车去公园。",
+          "acceptedMeaningsZh": [
+            "乘小汽车"
+          ],
+          "relation": "related",
+          "id": "s11-g13-i3",
+          "sourceGroupId": "s11-g13",
+          "session": 11,
+          "teacherNumber": "13",
+          "displayNumber": "13-3"
+        },
+        {
+          "term": "take the subway",
+          "meaningZh": "乘地铁",
+          "example": "They take the subway to work.",
+          "exampleZh": "他们乘地铁上班。",
+          "acceptedMeaningsZh": [
+            "乘地铁"
+          ],
+          "relation": "related",
+          "id": "s11-g13-i4",
+          "sourceGroupId": "s11-g13",
+          "session": 11,
+          "teacherNumber": "13",
+          "displayNumber": "13-4"
+        }
+      ]
+    },
+    {
+      "id": "s11-g14",
+      "teacherNumber": "14",
+      "sourceText": "walk to ... = go to ... on foot",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "walk to ...",
+          "meaningZh": "步行去……",
+          "example": "I walk to school every day.",
+          "exampleZh": "我每天步行上学。",
+          "acceptedMeaningsZh": [
+            "步行去……"
+          ],
+          "relation": "related",
+          "id": "s11-g14-i1",
+          "sourceGroupId": "s11-g14",
+          "session": 11,
+          "teacherNumber": "14",
+          "displayNumber": "14-1"
+        },
+        {
+          "term": "go to ... on foot",
+          "meaningZh": "步行去……",
+          "example": "We go to the library on foot.",
+          "exampleZh": "我们步行去图书馆。",
+          "acceptedMeaningsZh": [
+            "步行去……"
+          ],
+          "relation": "related",
+          "id": "s11-g14-i2",
+          "sourceGroupId": "s11-g14",
+          "session": 11,
+          "teacherNumber": "14",
+          "displayNumber": "14-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g15",
+      "teacherNumber": "15",
+      "sourceText": "It’s a good / great way to do ...",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "It's a good way to do ...",
+          "meaningZh": "这是做……的好方法",
+          "example": "It's a good way to save energy.",
+          "exampleZh": "这是节约能源的好方法。",
+          "acceptedMeaningsZh": [
+            "这是做……的好方法"
+          ],
+          "relation": "related",
+          "id": "s11-g15-i1",
+          "sourceGroupId": "s11-g15",
+          "session": 11,
+          "teacherNumber": "15",
+          "displayNumber": "15-1"
+        },
+        {
+          "term": "It's a great way to do ...",
+          "meaningZh": "这是做……的好办法",
+          "example": "It's a great way to keep fit.",
+          "exampleZh": "这是保持健康的好办法。",
+          "acceptedMeaningsZh": [
+            "这是做……的好办法"
+          ],
+          "relation": "related",
+          "id": "s11-g15-i2",
+          "sourceGroupId": "s11-g15",
+          "session": 11,
+          "teacherNumber": "15",
+          "displayNumber": "15-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g16",
+      "teacherNumber": "16",
+      "sourceText": "give sth. to sb. / give the meat to the dog / give them to the girls",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "give sth. to sb.",
+          "meaningZh": "把某物给某人",
+          "example": "Please give the book to Amy.",
+          "exampleZh": "请把书给艾米。",
+          "acceptedMeaningsZh": [
+            "把某物给某人"
+          ],
+          "relation": "related",
+          "id": "s11-g16-i1",
+          "sourceGroupId": "s11-g16",
+          "session": 11,
+          "teacherNumber": "16",
+          "displayNumber": "16-1"
+        },
+        {
+          "term": "give the meat to the dog",
+          "meaningZh": "把肉给狗",
+          "example": "I give the meat to the dog.",
+          "exampleZh": "我把肉给狗。",
+          "acceptedMeaningsZh": [
+            "把肉给狗"
+          ],
+          "relation": "related",
+          "id": "s11-g16-i2",
+          "sourceGroupId": "s11-g16",
+          "session": 11,
+          "teacherNumber": "16",
+          "displayNumber": "16-2"
+        },
+        {
+          "term": "give them to the girls",
+          "meaningZh": "把它们给女孩们",
+          "example": "Please give them to the girls.",
+          "exampleZh": "请把它们给女孩们。",
+          "acceptedMeaningsZh": [
+            "把它们给女孩们"
+          ],
+          "relation": "related",
+          "id": "s11-g16-i3",
+          "sourceGroupId": "s11-g16",
+          "session": 11,
+          "teacherNumber": "16",
+          "displayNumber": "16-3"
+        }
+      ]
+    },
+    {
+      "id": "s11-g17",
+      "teacherNumber": "17",
+      "sourceText": "little kids",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "little kids",
+          "meaningZh": "小孩子们",
+          "example": "Little kids like these toys.",
+          "exampleZh": "小孩子们喜欢这些玩具。",
+          "acceptedMeaningsZh": [
+            "小孩子们"
+          ],
+          "relation": "single",
+          "id": "s11-g17-i1",
+          "sourceGroupId": "s11-g17",
+          "session": 11,
+          "teacherNumber": "17",
+          "displayNumber": "17"
+        }
+      ]
+    },
+    {
+      "id": "s11-g18",
+      "teacherNumber": "18",
+      "sourceText": "play with sth. / play with the toys",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "play with sth.",
+          "meaningZh": "玩某物",
+          "example": "Do not play with fire.",
+          "exampleZh": "不要玩火。",
+          "acceptedMeaningsZh": [
+            "玩某物"
+          ],
+          "relation": "related",
+          "id": "s11-g18-i1",
+          "sourceGroupId": "s11-g18",
+          "session": 11,
+          "teacherNumber": "18",
+          "displayNumber": "18-1"
+        },
+        {
+          "term": "play with the toys",
+          "meaningZh": "玩这些玩具",
+          "example": "The children play with the toys.",
+          "exampleZh": "孩子们玩这些玩具。",
+          "acceptedMeaningsZh": [
+            "玩这些玩具"
+          ],
+          "relation": "related",
+          "id": "s11-g18-i2",
+          "sourceGroupId": "s11-g18",
+          "session": 11,
+          "teacherNumber": "18",
+          "displayNumber": "18-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g19",
+      "teacherNumber": "19",
+      "sourceText": "plastic / plastic bag",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "plastic",
+          "meaningZh": "塑料；塑料的",
+          "example": "This bottle is made of plastic.",
+          "exampleZh": "这个瓶子是塑料做的。",
+          "acceptedMeaningsZh": [
+            "塑料；塑料的"
+          ],
+          "relation": "related",
+          "id": "s11-g19-i1",
+          "sourceGroupId": "s11-g19",
+          "session": 11,
+          "teacherNumber": "19",
+          "displayNumber": "19-1"
+        },
+        {
+          "term": "plastic bag",
+          "meaningZh": "塑料袋",
+          "example": "Do not use too many plastic bags.",
+          "exampleZh": "不要使用太多塑料袋。",
+          "acceptedMeaningsZh": [
+            "塑料袋"
+          ],
+          "relation": "related",
+          "id": "s11-g19-i2",
+          "sourceGroupId": "s11-g19",
+          "session": 11,
+          "teacherNumber": "19",
+          "displayNumber": "19-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g20",
+      "teacherNumber": "20",
+      "sourceText": "cloth",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "cloth",
+          "meaningZh": "布；布料",
+          "example": "This bag is made of cloth.",
+          "exampleZh": "这个袋子是布做的。",
+          "acceptedMeaningsZh": [
+            "布；布料"
+          ],
+          "relation": "single",
+          "id": "s11-g20-i1",
+          "sourceGroupId": "s11-g20",
+          "session": 11,
+          "teacherNumber": "20",
+          "displayNumber": "20"
+        }
+      ]
+    },
+    {
+      "id": "s11-g21",
+      "teacherNumber": "21",
+      "sourceText": "paper",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "paper",
+          "meaningZh": "纸",
+          "example": "Please use less paper.",
+          "exampleZh": "请少用纸。",
+          "acceptedMeaningsZh": [
+            "纸"
+          ],
+          "relation": "single",
+          "id": "s11-g21-i1",
+          "sourceGroupId": "s11-g21",
+          "session": 11,
+          "teacherNumber": "21",
+          "displayNumber": "21"
+        }
+      ]
+    },
+    {
+      "id": "s11-g22",
+      "teacherNumber": "22",
+      "sourceText": "tap / turn on the tap / turn off the tap",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "tap",
+          "meaningZh": "水龙头",
+          "example": "The tap is still on.",
+          "exampleZh": "水龙头还开着。",
+          "acceptedMeaningsZh": [
+            "水龙头"
+          ],
+          "relation": "related",
+          "id": "s11-g22-i1",
+          "sourceGroupId": "s11-g22",
+          "session": 11,
+          "teacherNumber": "22",
+          "displayNumber": "22-1"
+        },
+        {
+          "term": "turn on the tap",
+          "meaningZh": "打开水龙头",
+          "example": "Turn on the tap to wash your hands.",
+          "exampleZh": "打开水龙头洗手。",
+          "acceptedMeaningsZh": [
+            "打开水龙头"
+          ],
+          "relation": "related",
+          "id": "s11-g22-i2",
+          "sourceGroupId": "s11-g22",
+          "session": 11,
+          "teacherNumber": "22",
+          "displayNumber": "22-2"
+        },
+        {
+          "term": "turn off the tap",
+          "meaningZh": "关掉水龙头",
+          "example": "Turn off the tap after washing.",
+          "exampleZh": "洗完后关掉水龙头。",
+          "acceptedMeaningsZh": [
+            "关掉水龙头"
+          ],
+          "relation": "related",
+          "id": "s11-g22-i3",
+          "sourceGroupId": "s11-g22",
+          "session": 11,
+          "teacherNumber": "22",
+          "displayNumber": "22-3"
+        }
+      ]
+    },
+    {
+      "id": "s11-g23",
+      "teacherNumber": "23",
+      "sourceText": "brush my teeth",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "brush my teeth",
+          "meaningZh": "刷牙",
+          "example": "I brush my teeth twice a day.",
+          "exampleZh": "我每天刷两次牙。",
+          "acceptedMeaningsZh": [
+            "刷牙"
+          ],
+          "relation": "single",
+          "id": "s11-g23-i1",
+          "sourceGroupId": "s11-g23",
+          "session": 11,
+          "teacherNumber": "23",
+          "displayNumber": "23"
+        }
+      ]
+    },
+    {
+      "id": "s11-g24",
+      "teacherNumber": "24",
+      "sourceText": "save water",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "save water",
+          "meaningZh": "节约用水",
+          "example": "We should save water every day.",
+          "exampleZh": "我们每天都应该节约用水。",
+          "acceptedMeaningsZh": [
+            "节约用水"
+          ],
+          "relation": "single",
+          "id": "s11-g24-i1",
+          "sourceGroupId": "s11-g24",
+          "session": 11,
+          "teacherNumber": "24",
+          "displayNumber": "24"
+        }
+      ]
+    },
+    {
+      "id": "s11-g25",
+      "teacherNumber": "25",
+      "sourceText": "side / both sides / both sides of the paper",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "side",
+          "meaningZh": "一面；一边",
+          "example": "Write on this side of the paper.",
+          "exampleZh": "写在纸的这一面。",
+          "acceptedMeaningsZh": [
+            "一面；一边"
+          ],
+          "relation": "related",
+          "id": "s11-g25-i1",
+          "sourceGroupId": "s11-g25",
+          "session": 11,
+          "teacherNumber": "25",
+          "displayNumber": "25-1"
+        },
+        {
+          "term": "both sides",
+          "meaningZh": "两面",
+          "example": "The paper has words on both sides.",
+          "exampleZh": "这张纸两面都有字。",
+          "acceptedMeaningsZh": [
+            "两面"
+          ],
+          "relation": "related",
+          "id": "s11-g25-i2",
+          "sourceGroupId": "s11-g25",
+          "session": 11,
+          "teacherNumber": "25",
+          "displayNumber": "25-2"
+        },
+        {
+          "term": "both sides of the paper",
+          "meaningZh": "纸的两面",
+          "example": "Use both sides of the paper.",
+          "exampleZh": "使用纸的两面。",
+          "acceptedMeaningsZh": [
+            "纸的两面"
+          ],
+          "relation": "related",
+          "id": "s11-g25-i3",
+          "sourceGroupId": "s11-g25",
+          "session": 11,
+          "teacherNumber": "25",
+          "displayNumber": "25-3"
+        }
+      ]
+    },
+    {
+      "id": "s11-g26",
+      "teacherNumber": "26",
+      "sourceText": "I see.",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "I see.",
+          "meaningZh": "我明白了。",
+          "example": "I see. We should use less paper.",
+          "exampleZh": "我明白了。我们应该少用纸。",
+          "acceptedMeaningsZh": [
+            "我明白了。"
+          ],
+          "relation": "single",
+          "id": "s11-g26-i1",
+          "sourceGroupId": "s11-g26",
+          "session": 11,
+          "teacherNumber": "26",
+          "displayNumber": "26"
+        }
+      ]
+    },
+    {
+      "id": "s11-g27",
+      "teacherNumber": "27",
+      "sourceText": "be made of ... / be made from ...",
+      "sourceFile": "11-1.JPG",
+      "items": [
+        {
+          "term": "be made of ...",
+          "meaningZh": "由……制成（看得出原材料）",
+          "example": "The chair is made of wood.",
+          "exampleZh": "这把椅子是木头制成的。",
+          "acceptedMeaningsZh": [
+            "由……制成（看得出原材料）"
+          ],
+          "relation": "related",
+          "id": "s11-g27-i1",
+          "sourceGroupId": "s11-g27",
+          "session": 11,
+          "teacherNumber": "27",
+          "displayNumber": "27-1"
+        },
+        {
+          "term": "be made from ...",
+          "meaningZh": "由……制成（看不出原材料）",
+          "example": "Paper is made from wood.",
+          "exampleZh": "纸是由木材制成的。",
+          "acceptedMeaningsZh": [
+            "由……制成（看不出原材料）"
+          ],
+          "relation": "related",
+          "id": "s11-g27-i2",
+          "sourceGroupId": "s11-g27",
+          "session": 11,
+          "teacherNumber": "27",
+          "displayNumber": "27-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g28",
+      "teacherNumber": "28",
+      "sourceText": "The desk is made of wood. / Paper is made from wood.",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "The desk is made of wood.",
+          "meaningZh": "这张书桌是木头制成的。",
+          "example": "The desk is made of wood.",
+          "exampleZh": "这张书桌是木头制成的。",
+          "acceptedMeaningsZh": [
+            "这张书桌是木头制成的。"
+          ],
+          "relation": "related",
+          "id": "s11-g28-i1",
+          "sourceGroupId": "s11-g28",
+          "session": 11,
+          "teacherNumber": "28",
+          "displayNumber": "28-1"
+        },
+        {
+          "term": "Paper is made from wood.",
+          "meaningZh": "纸是由木材制成的。",
+          "example": "Paper is made from wood.",
+          "exampleZh": "纸是由木材制成的。",
+          "acceptedMeaningsZh": [
+            "纸是由木材制成的。"
+          ],
+          "relation": "related",
+          "id": "s11-g28-i2",
+          "sourceGroupId": "s11-g28",
+          "session": 11,
+          "teacherNumber": "28",
+          "displayNumber": "28-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g29",
+      "teacherNumber": "29",
+      "sourceText": "paper / little paper / less paper",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "paper",
+          "meaningZh": "纸",
+          "example": "We need paper for the poster.",
+          "exampleZh": "我们做海报需要纸。",
+          "acceptedMeaningsZh": [
+            "纸"
+          ],
+          "relation": "related",
+          "id": "s11-g29-i1",
+          "sourceGroupId": "s11-g29",
+          "session": 11,
+          "teacherNumber": "29",
+          "displayNumber": "29-1"
+        },
+        {
+          "term": "little paper",
+          "meaningZh": "很少的纸",
+          "example": "There is little paper in the box.",
+          "exampleZh": "盒子里几乎没有纸。",
+          "acceptedMeaningsZh": [
+            "很少的纸"
+          ],
+          "relation": "related",
+          "id": "s11-g29-i2",
+          "sourceGroupId": "s11-g29",
+          "session": 11,
+          "teacherNumber": "29",
+          "displayNumber": "29-2"
+        },
+        {
+          "term": "less paper",
+          "meaningZh": "更少的纸",
+          "example": "We should use less paper.",
+          "exampleZh": "我们应该少用纸。",
+          "acceptedMeaningsZh": [
+            "更少的纸"
+          ],
+          "relation": "related",
+          "id": "s11-g29-i3",
+          "sourceGroupId": "s11-g29",
+          "session": 11,
+          "teacherNumber": "29",
+          "displayNumber": "29-3"
+        }
+      ]
+    },
+    {
+      "id": "s11-g30",
+      "teacherNumber": "30",
+      "sourceText": "save",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "save",
+          "meaningZh": "节省；挽救",
+          "example": "We can save energy at home.",
+          "exampleZh": "我们可以在家节约能源。",
+          "acceptedMeaningsZh": [
+            "节省；挽救"
+          ],
+          "relation": "single",
+          "id": "s11-g30-i1",
+          "sourceGroupId": "s11-g30",
+          "session": 11,
+          "teacherNumber": "30",
+          "displayNumber": "30"
+        }
+      ]
+    },
+    {
+      "id": "s11-g31",
+      "teacherNumber": "31",
+      "sourceText": "remind / remind sb. to do sth. / remind sb. of sth. / remind my mum to buy a cake / remind me of my classmates",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "remind",
+          "meaningZh": "提醒；使想起",
+          "example": "This photo can remind me of our trip.",
+          "exampleZh": "这张照片能让我想起我们的旅行。",
+          "acceptedMeaningsZh": [
+            "提醒；使想起"
+          ],
+          "relation": "related",
+          "id": "s11-g31-i1",
+          "sourceGroupId": "s11-g31",
+          "session": 11,
+          "teacherNumber": "31",
+          "displayNumber": "31-1"
+        },
+        {
+          "term": "remind sb. to do sth.",
+          "meaningZh": "提醒某人做某事",
+          "example": "Please remind me to turn off the light.",
+          "exampleZh": "请提醒我关灯。",
+          "acceptedMeaningsZh": [
+            "提醒某人做某事"
+          ],
+          "relation": "related",
+          "id": "s11-g31-i2",
+          "sourceGroupId": "s11-g31",
+          "session": 11,
+          "teacherNumber": "31",
+          "displayNumber": "31-2"
+        },
+        {
+          "term": "remind sb. of sth.",
+          "meaningZh": "使某人想起某事",
+          "example": "The song reminds me of my school.",
+          "exampleZh": "这首歌让我想起学校。",
+          "acceptedMeaningsZh": [
+            "使某人想起某事"
+          ],
+          "relation": "related",
+          "id": "s11-g31-i3",
+          "sourceGroupId": "s11-g31",
+          "session": 11,
+          "teacherNumber": "31",
+          "displayNumber": "31-3"
+        },
+        {
+          "term": "remind my mum to buy a cake",
+          "meaningZh": "提醒妈妈买蛋糕",
+          "example": "I remind my mum to buy a cake.",
+          "exampleZh": "我提醒妈妈买蛋糕。",
+          "acceptedMeaningsZh": [
+            "提醒妈妈买蛋糕"
+          ],
+          "relation": "related",
+          "id": "s11-g31-i4",
+          "sourceGroupId": "s11-g31",
+          "session": 11,
+          "teacherNumber": "31",
+          "displayNumber": "31-4"
+        },
+        {
+          "term": "remind me of my classmates",
+          "meaningZh": "让我想起同学们",
+          "example": "These photos remind me of my classmates.",
+          "exampleZh": "这些照片让我想起同学们。",
+          "acceptedMeaningsZh": [
+            "让我想起同学们"
+          ],
+          "relation": "related",
+          "id": "s11-g31-i5",
+          "sourceGroupId": "s11-g31",
+          "session": 11,
+          "teacherNumber": "31",
+          "displayNumber": "31-5"
+        }
+      ]
+    },
+    {
+      "id": "s11-g32",
+      "teacherNumber": "32",
+      "sourceText": "unplug",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "unplug",
+          "meaningZh": "拔掉插头",
+          "example": "Unplug the television after use.",
+          "exampleZh": "使用后拔掉电视插头。",
+          "acceptedMeaningsZh": [
+            "拔掉插头"
+          ],
+          "relation": "single",
+          "id": "s11-g32-i1",
+          "sourceGroupId": "s11-g32",
+          "session": 11,
+          "teacherNumber": "32",
+          "displayNumber": "32"
+        }
+      ]
+    },
+    {
+      "id": "s11-g33",
+      "teacherNumber": "33",
+      "sourceText": "after doing ... / after watching TV",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "after doing ...",
+          "meaningZh": "做完……之后",
+          "example": "Wash your hands after playing outside.",
+          "exampleZh": "在外面玩后要洗手。",
+          "acceptedMeaningsZh": [
+            "做完……之后"
+          ],
+          "relation": "related",
+          "id": "s11-g33-i1",
+          "sourceGroupId": "s11-g33",
+          "session": 11,
+          "teacherNumber": "33",
+          "displayNumber": "33-1"
+        },
+        {
+          "term": "after watching TV",
+          "meaningZh": "看完电视后",
+          "example": "Unplug it after watching TV.",
+          "exampleZh": "看完电视后拔掉插头。",
+          "acceptedMeaningsZh": [
+            "看完电视后"
+          ],
+          "relation": "related",
+          "id": "s11-g33-i2",
+          "sourceGroupId": "s11-g33",
+          "session": 11,
+          "teacherNumber": "33",
+          "displayNumber": "33-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g34",
+      "teacherNumber": "34",
+      "sourceText": "energy / save energy",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "energy",
+          "meaningZh": "能源；能量",
+          "example": "The sun gives us energy.",
+          "exampleZh": "太阳给我们能量。",
+          "acceptedMeaningsZh": [
+            "能源；能量"
+          ],
+          "relation": "related",
+          "id": "s11-g34-i1",
+          "sourceGroupId": "s11-g34",
+          "session": 11,
+          "teacherNumber": "34",
+          "displayNumber": "34-1"
+        },
+        {
+          "term": "save energy",
+          "meaningZh": "节约能源",
+          "example": "Turn off the lights to save energy.",
+          "exampleZh": "关灯可以节约能源。",
+          "acceptedMeaningsZh": [
+            "节约能源"
+          ],
+          "relation": "related",
+          "id": "s11-g34-i2",
+          "sourceGroupId": "s11-g34",
+          "session": 11,
+          "teacherNumber": "34",
+          "displayNumber": "34-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g35",
+      "teacherNumber": "35",
+      "sourceText": "air pollution",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "air pollution",
+          "meaningZh": "空气污染",
+          "example": "Cars can cause air pollution.",
+          "exampleZh": "汽车会造成空气污染。",
+          "acceptedMeaningsZh": [
+            "空气污染"
+          ],
+          "relation": "single",
+          "id": "s11-g35-i1",
+          "sourceGroupId": "s11-g35",
+          "session": 11,
+          "teacherNumber": "35",
+          "displayNumber": "35"
+        }
+      ]
+    },
+    {
+      "id": "s11-g36",
+      "teacherNumber": "36",
+      "sourceText": "habit / a healthy habit",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "habit",
+          "meaningZh": "习惯",
+          "example": "Reading every day is a good habit.",
+          "exampleZh": "每天阅读是一个好习惯。",
+          "acceptedMeaningsZh": [
+            "习惯"
+          ],
+          "relation": "related",
+          "id": "s11-g36-i1",
+          "sourceGroupId": "s11-g36",
+          "session": 11,
+          "teacherNumber": "36",
+          "displayNumber": "36-1"
+        },
+        {
+          "term": "a healthy habit",
+          "meaningZh": "一个健康的习惯",
+          "example": "Going to bed early is a healthy habit.",
+          "exampleZh": "早睡是一个健康的习惯。",
+          "acceptedMeaningsZh": [
+            "一个健康的习惯"
+          ],
+          "relation": "related",
+          "id": "s11-g36-i2",
+          "sourceGroupId": "s11-g36",
+          "session": 11,
+          "teacherNumber": "36",
+          "displayNumber": "36-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g37",
+      "teacherNumber": "37",
+      "sourceText": "plant seeds",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "plant seeds",
+          "meaningZh": "播种",
+          "example": "We plant seeds in the garden.",
+          "exampleZh": "我们在花园里播种。",
+          "acceptedMeaningsZh": [
+            "播种"
+          ],
+          "relation": "single",
+          "id": "s11-g37-i1",
+          "sourceGroupId": "s11-g37",
+          "session": 11,
+          "teacherNumber": "37",
+          "displayNumber": "37"
+        }
+      ]
+    },
+    {
+      "id": "s11-g38",
+      "teacherNumber": "38",
+      "sourceText": "watch them grow",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "watch them grow",
+          "meaningZh": "看着它们生长",
+          "example": "We water the flowers and watch them grow.",
+          "exampleZh": "我们给花浇水，看着它们生长。",
+          "acceptedMeaningsZh": [
+            "看着它们生长"
+          ],
+          "relation": "single",
+          "id": "s11-g38-i1",
+          "sourceGroupId": "s11-g38",
+          "session": 11,
+          "teacherNumber": "38",
+          "displayNumber": "38"
+        }
+      ]
+    },
+    {
+      "id": "s11-g39",
+      "teacherNumber": "39",
+      "sourceText": "keep sth. adj. / keep the air clean / keep the air fresh",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "keep sth. adj.",
+          "meaningZh": "使某物保持……",
+          "example": "Trees keep our city cool.",
+          "exampleZh": "树木让我们的城市保持凉爽。",
+          "acceptedMeaningsZh": [
+            "使某物保持……"
+          ],
+          "relation": "related",
+          "id": "s11-g39-i1",
+          "sourceGroupId": "s11-g39",
+          "session": 11,
+          "teacherNumber": "39",
+          "displayNumber": "39-1"
+        },
+        {
+          "term": "keep the air clean",
+          "meaningZh": "保持空气清洁",
+          "example": "Trees help keep the air clean.",
+          "exampleZh": "树木帮助保持空气清洁。",
+          "acceptedMeaningsZh": [
+            "保持空气清洁"
+          ],
+          "relation": "related",
+          "id": "s11-g39-i2",
+          "sourceGroupId": "s11-g39",
+          "session": 11,
+          "teacherNumber": "39",
+          "displayNumber": "39-2"
+        },
+        {
+          "term": "keep the air fresh",
+          "meaningZh": "保持空气清新",
+          "example": "Plants can keep the air fresh.",
+          "exampleZh": "植物可以保持空气清新。",
+          "acceptedMeaningsZh": [
+            "保持空气清新"
+          ],
+          "relation": "related",
+          "id": "s11-g39-i3",
+          "sourceGroupId": "s11-g39",
+          "session": 11,
+          "teacherNumber": "39",
+          "displayNumber": "39-3"
+        }
+      ]
+    },
+    {
+      "id": "s11-g40",
+      "teacherNumber": "40",
+      "sourceText": "before doing ... / after doing ...",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "before doing ...",
+          "meaningZh": "做……之前",
+          "example": "Wash your hands before eating.",
+          "exampleZh": "吃饭前要洗手。",
+          "acceptedMeaningsZh": [
+            "做……之前"
+          ],
+          "relation": "related",
+          "id": "s11-g40-i1",
+          "sourceGroupId": "s11-g40",
+          "session": 11,
+          "teacherNumber": "40",
+          "displayNumber": "40-1"
+        },
+        {
+          "term": "after doing ...",
+          "meaningZh": "做……之后",
+          "example": "Turn off the tap after washing.",
+          "exampleZh": "洗完后关掉水龙头。",
+          "acceptedMeaningsZh": [
+            "做……之后"
+          ],
+          "relation": "related",
+          "id": "s11-g40-i2",
+          "sourceGroupId": "s11-g40",
+          "session": 11,
+          "teacherNumber": "40",
+          "displayNumber": "40-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g41",
+      "teacherNumber": "41",
+      "sourceText": "throw away ... / throw it away",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "throw away ...",
+          "meaningZh": "扔掉……",
+          "example": "Do not throw away useful things.",
+          "exampleZh": "不要扔掉有用的东西。",
+          "acceptedMeaningsZh": [
+            "扔掉……"
+          ],
+          "relation": "related",
+          "id": "s11-g41-i1",
+          "sourceGroupId": "s11-g41",
+          "session": 11,
+          "teacherNumber": "41",
+          "displayNumber": "41-1"
+        },
+        {
+          "term": "throw it away",
+          "meaningZh": "把它扔掉",
+          "example": "The bottle is useful, so don't throw it away.",
+          "exampleZh": "这个瓶子有用，所以不要把它扔掉。",
+          "acceptedMeaningsZh": [
+            "把它扔掉"
+          ],
+          "relation": "related",
+          "id": "s11-g41-i2",
+          "sourceGroupId": "s11-g41",
+          "session": 11,
+          "teacherNumber": "41",
+          "displayNumber": "41-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g42",
+      "teacherNumber": "42",
+      "sourceText": "rubbish / rubbish bin / sort rubbish",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "rubbish",
+          "meaningZh": "垃圾",
+          "example": "Put the rubbish in the bin.",
+          "exampleZh": "把垃圾放进垃圾桶。",
+          "acceptedMeaningsZh": [
+            "垃圾"
+          ],
+          "relation": "related",
+          "id": "s11-g42-i1",
+          "sourceGroupId": "s11-g42",
+          "session": 11,
+          "teacherNumber": "42",
+          "displayNumber": "42-1"
+        },
+        {
+          "term": "rubbish bin",
+          "meaningZh": "垃圾桶",
+          "example": "The rubbish bin is near the door.",
+          "exampleZh": "垃圾桶在门旁边。",
+          "acceptedMeaningsZh": [
+            "垃圾桶"
+          ],
+          "relation": "related",
+          "id": "s11-g42-i2",
+          "sourceGroupId": "s11-g42",
+          "session": 11,
+          "teacherNumber": "42",
+          "displayNumber": "42-2"
+        },
+        {
+          "term": "sort rubbish",
+          "meaningZh": "垃圾分类",
+          "example": "We sort rubbish at school.",
+          "exampleZh": "我们在学校进行垃圾分类。",
+          "acceptedMeaningsZh": [
+            "垃圾分类"
+          ],
+          "relation": "related",
+          "id": "s11-g42-i3",
+          "sourceGroupId": "s11-g42",
+          "session": 11,
+          "teacherNumber": "42",
+          "displayNumber": "42-3"
+        }
+      ]
+    },
+    {
+      "id": "s11-g43",
+      "teacherNumber": "43",
+      "sourceText": "drop / drop ... into",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "drop",
+          "meaningZh": "使落下；投放",
+          "example": "Do not drop rubbish on the ground.",
+          "exampleZh": "不要把垃圾扔在地上。",
+          "acceptedMeaningsZh": [
+            "使落下；投放"
+          ],
+          "relation": "related",
+          "id": "s11-g43-i1",
+          "sourceGroupId": "s11-g43",
+          "session": 11,
+          "teacherNumber": "43",
+          "displayNumber": "43-1"
+        },
+        {
+          "term": "drop ... into",
+          "meaningZh": "把……投进……",
+          "example": "Drop the bottle into the right bin.",
+          "exampleZh": "把瓶子投进正确的垃圾桶。",
+          "acceptedMeaningsZh": [
+            "把……投进……"
+          ],
+          "relation": "related",
+          "id": "s11-g43-i2",
+          "sourceGroupId": "s11-g43",
+          "session": 11,
+          "teacherNumber": "43",
+          "displayNumber": "43-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g44",
+      "teacherNumber": "44",
+      "sourceText": "whale",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "whale",
+          "meaningZh": "鲸",
+          "example": "A whale lives in the sea.",
+          "exampleZh": "鲸生活在海里。",
+          "acceptedMeaningsZh": [
+            "鲸"
+          ],
+          "relation": "single",
+          "id": "s11-g44-i1",
+          "sourceGroupId": "s11-g44",
+          "session": 11,
+          "teacherNumber": "44",
+          "displayNumber": "44"
+        }
+      ]
+    },
+    {
+      "id": "s11-g45",
+      "teacherNumber": "45",
+      "sourceText": "eat up / eat it up",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "eat up",
+          "meaningZh": "吃光",
+          "example": "Please eat up your lunch.",
+          "exampleZh": "请把午饭吃光。",
+          "acceptedMeaningsZh": [
+            "吃光"
+          ],
+          "relation": "related",
+          "id": "s11-g45-i1",
+          "sourceGroupId": "s11-g45",
+          "session": 11,
+          "teacherNumber": "45",
+          "displayNumber": "45-1"
+        },
+        {
+          "term": "eat it up",
+          "meaningZh": "把它吃光",
+          "example": "The turtle may eat it up.",
+          "exampleZh": "海龟可能会把它吃掉。",
+          "acceptedMeaningsZh": [
+            "把它吃光"
+          ],
+          "relation": "related",
+          "id": "s11-g45-i2",
+          "sourceGroupId": "s11-g45",
+          "session": 11,
+          "teacherNumber": "45",
+          "displayNumber": "45-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g46",
+      "teacherNumber": "46",
+      "sourceText": "jellyfish",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "jellyfish",
+          "meaningZh": "水母",
+          "example": "A jellyfish swims in the sea.",
+          "exampleZh": "一只水母在海里游。",
+          "acceptedMeaningsZh": [
+            "水母"
+          ],
+          "relation": "single",
+          "id": "s11-g46-i1",
+          "sourceGroupId": "s11-g46",
+          "session": 11,
+          "teacherNumber": "46",
+          "displayNumber": "46"
+        }
+      ]
+    },
+    {
+      "id": "s11-g47",
+      "teacherNumber": "47",
+      "sourceText": "sneeze",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "sneeze",
+          "meaningZh": "打喷嚏",
+          "example": "Dust can make me sneeze.",
+          "exampleZh": "灰尘会让我打喷嚏。",
+          "acceptedMeaningsZh": [
+            "打喷嚏"
+          ],
+          "relation": "single",
+          "id": "s11-g47-i1",
+          "sourceGroupId": "s11-g47",
+          "session": 11,
+          "teacherNumber": "47",
+          "displayNumber": "47"
+        }
+      ]
+    },
+    {
+      "id": "s11-g48",
+      "teacherNumber": "48",
+      "sourceText": "open ... wide",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "open ... wide",
+          "meaningZh": "把……张大；打开得很大",
+          "example": "Open your mouth wide.",
+          "exampleZh": "把嘴巴张大。",
+          "acceptedMeaningsZh": [
+            "把……张大；打开得很大"
+          ],
+          "relation": "single",
+          "id": "s11-g48-i1",
+          "sourceGroupId": "s11-g48",
+          "session": 11,
+          "teacherNumber": "48",
+          "displayNumber": "48"
+        }
+      ]
+    },
+    {
+      "id": "s11-g49",
+      "teacherNumber": "49",
+      "sourceText": "turtle / tortoise",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "turtle",
+          "meaningZh": "海龟；龟",
+          "example": "The turtle swims slowly.",
+          "exampleZh": "海龟慢慢地游。",
+          "acceptedMeaningsZh": [
+            "海龟；龟"
+          ],
+          "relation": "related",
+          "id": "s11-g49-i1",
+          "sourceGroupId": "s11-g49",
+          "session": 11,
+          "teacherNumber": "49",
+          "displayNumber": "49-1"
+        },
+        {
+          "term": "tortoise",
+          "meaningZh": "陆龟",
+          "example": "The tortoise walks on land.",
+          "exampleZh": "陆龟在陆地上行走。",
+          "acceptedMeaningsZh": [
+            "陆龟"
+          ],
+          "relation": "related",
+          "id": "s11-g49-i2",
+          "sourceGroupId": "s11-g49",
+          "session": 11,
+          "teacherNumber": "49",
+          "displayNumber": "49-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g50",
+      "teacherNumber": "50",
+      "sourceText": "spot",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "spot",
+          "meaningZh": "发现；认出",
+          "example": "I can spot a whale in the sea.",
+          "exampleZh": "我能在海里发现一头鲸。",
+          "acceptedMeaningsZh": [
+            "发现；认出"
+          ],
+          "relation": "single",
+          "id": "s11-g50-i1",
+          "sourceGroupId": "s11-g50",
+          "session": 11,
+          "teacherNumber": "50",
+          "displayNumber": "50"
+        }
+      ]
+    },
+    {
+      "id": "s11-g51",
+      "teacherNumber": "51",
+      "sourceText": "swallow",
+      "sourceFile": "11-2.JPG",
+      "items": [
+        {
+          "term": "swallow",
+          "meaningZh": "吞咽；燕子",
+          "example": "Do not swallow the plastic bag.",
+          "exampleZh": "不要吞下塑料袋。",
+          "acceptedMeaningsZh": [
+            "吞咽；燕子"
+          ],
+          "relation": "single",
+          "id": "s11-g51-i1",
+          "sourceGroupId": "s11-g51",
+          "session": 11,
+          "teacherNumber": "51",
+          "displayNumber": "51"
+        }
+      ]
+    },
+    {
+      "id": "s11-g52",
+      "teacherNumber": "52",
+      "sourceText": "make sb. ill",
+      "sourceFile": "11-3.JPG",
+      "items": [
+        {
+          "term": "make sb. ill",
+          "meaningZh": "使某人生病",
+          "example": "Dirty water can make us ill.",
+          "exampleZh": "脏水会使我们生病。",
+          "acceptedMeaningsZh": [
+            "使某人生病"
+          ],
+          "relation": "single",
+          "id": "s11-g52-i1",
+          "sourceGroupId": "s11-g52",
+          "session": 11,
+          "teacherNumber": "52",
+          "displayNumber": "52"
+        }
+      ]
+    },
+    {
+      "id": "s11-g53",
+      "teacherNumber": "53",
+      "sourceText": "cough / cough hard",
+      "sourceFile": "11-3.JPG",
+      "items": [
+        {
+          "term": "cough",
+          "meaningZh": "咳嗽",
+          "example": "The smoke makes me cough.",
+          "exampleZh": "烟使我咳嗽。",
+          "acceptedMeaningsZh": [
+            "咳嗽"
+          ],
+          "relation": "related",
+          "id": "s11-g53-i1",
+          "sourceGroupId": "s11-g53",
+          "session": 11,
+          "teacherNumber": "53",
+          "displayNumber": "53-1"
+        },
+        {
+          "term": "cough hard",
+          "meaningZh": "剧烈咳嗽",
+          "example": "He began to cough hard.",
+          "exampleZh": "他开始剧烈咳嗽。",
+          "acceptedMeaningsZh": [
+            "剧烈咳嗽"
+          ],
+          "relation": "related",
+          "id": "s11-g53-i2",
+          "sourceGroupId": "s11-g53",
+          "session": 11,
+          "teacherNumber": "53",
+          "displayNumber": "53-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g54",
+      "teacherNumber": "54",
+      "sourceText": "at once",
+      "sourceFile": "11-3.JPG",
+      "items": [
+        {
+          "term": "at once",
+          "meaningZh": "立刻；马上",
+          "example": "Go home at once.",
+          "exampleZh": "马上回家。",
+          "acceptedMeaningsZh": [
+            "立刻；马上"
+          ],
+          "relation": "single",
+          "id": "s11-g54-i1",
+          "sourceGroupId": "s11-g54",
+          "session": 11,
+          "teacherNumber": "54",
+          "displayNumber": "54"
+        }
+      ]
+    },
+    {
+      "id": "s11-g55",
+      "teacherNumber": "55",
+      "sourceText": "wave",
+      "sourceFile": "11-3.JPG",
+      "items": [
+        {
+          "term": "wave",
+          "meaningZh": "波浪；挥手",
+          "example": "A big wave carried the bottle away.",
+          "exampleZh": "一个大浪把瓶子冲走了。",
+          "acceptedMeaningsZh": [
+            "波浪；挥手"
+          ],
+          "relation": "single",
+          "id": "s11-g55-i1",
+          "sourceGroupId": "s11-g55",
+          "session": 11,
+          "teacherNumber": "55",
+          "displayNumber": "55"
+        }
+      ]
+    },
+    {
+      "id": "s11-g56",
+      "teacherNumber": "56",
+      "sourceText": "carry / carries",
+      "sourceFile": "11-3.JPG",
+      "items": [
+        {
+          "term": "carry",
+          "meaningZh": "搬运；携带",
+          "example": "I carry my bag to school.",
+          "exampleZh": "我背着书包上学。",
+          "acceptedMeaningsZh": [
+            "搬运；携带"
+          ],
+          "relation": "related",
+          "id": "s11-g56-i1",
+          "sourceGroupId": "s11-g56",
+          "session": 11,
+          "teacherNumber": "56",
+          "displayNumber": "56-1"
+        },
+        {
+          "term": "carries",
+          "meaningZh": "搬运；携带（第三人称单数）",
+          "example": "The river carries rubbish to the sea.",
+          "exampleZh": "河流把垃圾带到海里。",
+          "acceptedMeaningsZh": [
+            "搬运；携带（第三人称单数）"
+          ],
+          "relation": "related",
+          "id": "s11-g56-i2",
+          "sourceGroupId": "s11-g56",
+          "session": 11,
+          "teacherNumber": "56",
+          "displayNumber": "56-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g57",
+      "teacherNumber": "57",
+      "sourceText": "beach / on the beach / at the beach",
+      "sourceFile": "11-3.JPG",
+      "items": [
+        {
+          "term": "beach",
+          "meaningZh": "海滩",
+          "example": "The beach is clean today.",
+          "exampleZh": "今天海滩很干净。",
+          "acceptedMeaningsZh": [
+            "海滩"
+          ],
+          "relation": "related",
+          "id": "s11-g57-i1",
+          "sourceGroupId": "s11-g57",
+          "session": 11,
+          "teacherNumber": "57",
+          "displayNumber": "57-1"
+        },
+        {
+          "term": "on the beach",
+          "meaningZh": "在海滩上",
+          "example": "We pick up rubbish on the beach.",
+          "exampleZh": "我们在海滩上捡垃圾。",
+          "acceptedMeaningsZh": [
+            "在海滩上"
+          ],
+          "relation": "related",
+          "id": "s11-g57-i2",
+          "sourceGroupId": "s11-g57",
+          "session": 11,
+          "teacherNumber": "57",
+          "displayNumber": "57-2"
+        },
+        {
+          "term": "at the beach",
+          "meaningZh": "在海滩",
+          "example": "We had fun at the beach.",
+          "exampleZh": "我们在海滩玩得很开心。",
+          "acceptedMeaningsZh": [
+            "在海滩"
+          ],
+          "relation": "related",
+          "id": "s11-g57-i3",
+          "sourceGroupId": "s11-g57",
+          "session": 11,
+          "teacherNumber": "57",
+          "displayNumber": "57-3"
+        }
+      ]
+    },
+    {
+      "id": "s11-g58",
+      "teacherNumber": "58",
+      "sourceText": "lie / lie around",
+      "sourceFile": "11-3.JPG",
+      "items": [
+        {
+          "term": "lie",
+          "meaningZh": "躺；位于",
+          "example": "The cat likes to lie in the sun.",
+          "exampleZh": "猫喜欢躺在阳光下。",
+          "acceptedMeaningsZh": [
+            "躺；位于"
+          ],
+          "relation": "related",
+          "id": "s11-g58-i1",
+          "sourceGroupId": "s11-g58",
+          "session": 11,
+          "teacherNumber": "58",
+          "displayNumber": "58-1"
+        },
+        {
+          "term": "lie around",
+          "meaningZh": "到处乱放；散落",
+          "example": "Plastic bags lie around on the beach.",
+          "exampleZh": "塑料袋散落在海滩上。",
+          "acceptedMeaningsZh": [
+            "到处乱放；散落"
+          ],
+          "relation": "related",
+          "id": "s11-g58-i2",
+          "sourceGroupId": "s11-g58",
+          "session": 11,
+          "teacherNumber": "58",
+          "displayNumber": "58-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g59",
+      "teacherNumber": "59",
+      "sourceText": "throw the rubbish away / throw the box away",
+      "sourceFile": "11-3.JPG",
+      "items": [
+        {
+          "term": "throw the rubbish away",
+          "meaningZh": "把垃圾扔掉",
+          "example": "Please throw the rubbish away.",
+          "exampleZh": "请把垃圾扔掉。",
+          "acceptedMeaningsZh": [
+            "把垃圾扔掉"
+          ],
+          "relation": "related",
+          "id": "s11-g59-i1",
+          "sourceGroupId": "s11-g59",
+          "session": 11,
+          "teacherNumber": "59",
+          "displayNumber": "59-1"
+        },
+        {
+          "term": "throw the box away",
+          "meaningZh": "把盒子扔掉",
+          "example": "Do not throw the box away.",
+          "exampleZh": "不要把盒子扔掉。",
+          "acceptedMeaningsZh": [
+            "把盒子扔掉"
+          ],
+          "relation": "related",
+          "id": "s11-g59-i2",
+          "sourceGroupId": "s11-g59",
+          "session": 11,
+          "teacherNumber": "59",
+          "displayNumber": "59-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g60",
+      "teacherNumber": "60",
+      "sourceText": "gift / get gifts",
+      "sourceFile": "11-3.JPG",
+      "items": [
+        {
+          "term": "gift",
+          "meaningZh": "礼物",
+          "example": "This book is a gift from Mum.",
+          "exampleZh": "这本书是妈妈送的礼物。",
+          "acceptedMeaningsZh": [
+            "礼物"
+          ],
+          "relation": "related",
+          "id": "s11-g60-i1",
+          "sourceGroupId": "s11-g60",
+          "session": 11,
+          "teacherNumber": "60",
+          "displayNumber": "60-1"
+        },
+        {
+          "term": "get gifts",
+          "meaningZh": "收到礼物",
+          "example": "Children get gifts on their birthdays.",
+          "exampleZh": "孩子们在生日时收到礼物。",
+          "acceptedMeaningsZh": [
+            "收到礼物"
+          ],
+          "relation": "related",
+          "id": "s11-g60-i2",
+          "sourceGroupId": "s11-g60",
+          "session": 11,
+          "teacherNumber": "60",
+          "displayNumber": "60-2"
+        }
+      ]
+    },
+    {
+      "id": "s11-g61",
+      "teacherNumber": "61",
+      "sourceText": "collect / collect the boxes",
+      "sourceFile": "11-3.JPG",
+      "items": [
+        {
+          "term": "collect",
+          "meaningZh": "收集",
+          "example": "We collect old paper at school.",
+          "exampleZh": "我们在学校收集废纸。",
+          "acceptedMeaningsZh": [
+            "收集"
+          ],
+          "relation": "related",
+          "id": "s11-g61-i1",
+          "sourceGroupId": "s11-g61",
+          "session": 11,
+          "teacherNumber": "61",
+          "displayNumber": "61-1"
+        },
+        {
+          "term": "collect the boxes",
+          "meaningZh": "收集这些盒子",
+          "example": "Let's collect the boxes for reuse.",
+          "exampleZh": "让我们收集这些盒子再利用。",
+          "acceptedMeaningsZh": [
+            "收集这些盒子"
+          ],
+          "relation": "related",
+          "id": "s11-g61-i2",
+          "sourceGroupId": "s11-g61",
+          "session": 11,
+          "teacherNumber": "61",
+          "displayNumber": "61-2"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "term": "green",
+      "meaningZh": "绿色的；环保的",
+      "example": "We want a green school.",
+      "exampleZh": "我们想要一所环保的学校。",
+      "acceptedMeaningsZh": [
+        "绿色的；环保的"
+      ],
+      "relation": "single",
+      "id": "s11-g1-i1",
+      "sourceGroupId": "s11-g1",
+      "session": 11,
+      "teacherNumber": "1",
+      "displayNumber": "1"
+    },
+    {
+      "term": "greener",
+      "meaningZh": "更绿色的；更环保的",
+      "example": "Let us make our city greener.",
+      "exampleZh": "让我们让城市更环保。",
+      "acceptedMeaningsZh": [
+        "更绿色的；更环保的"
+      ],
+      "relation": "single",
+      "id": "s11-g2-i1",
+      "sourceGroupId": "s11-g2",
+      "session": 11,
+      "teacherNumber": "2",
+      "displayNumber": "2"
+    },
+    {
+      "term": "booklet",
+      "meaningZh": "小册子",
+      "example": "This booklet is about recycling.",
+      "exampleZh": "这本小册子是关于回收利用的。",
+      "acceptedMeaningsZh": [
+        "小册子"
+      ],
+      "relation": "single",
+      "id": "s11-g3-i1",
+      "sourceGroupId": "s11-g3",
+      "session": 11,
+      "teacherNumber": "3",
+      "displayNumber": "3"
+    },
+    {
+      "term": "use",
+      "meaningZh": "使用",
+      "example": "We use both sides of the paper.",
+      "exampleZh": "我们使用纸的两面。",
+      "acceptedMeaningsZh": [
+        "使用"
+      ],
+      "relation": "related",
+      "id": "s11-g4-i1",
+      "sourceGroupId": "s11-g4",
+      "session": 11,
+      "teacherNumber": "4",
+      "displayNumber": "4-1"
+    },
+    {
+      "term": "reuse",
+      "meaningZh": "再次使用",
+      "example": "We can reuse this bag.",
+      "exampleZh": "我们可以重复使用这个袋子。",
+      "acceptedMeaningsZh": [
+        "再次使用"
+      ],
+      "relation": "related",
+      "id": "s11-g4-i2",
+      "sourceGroupId": "s11-g4",
+      "session": 11,
+      "teacherNumber": "4",
+      "displayNumber": "4-2"
+    },
+    {
+      "term": "reduce",
+      "meaningZh": "减少",
+      "example": "We should reduce waste.",
+      "exampleZh": "我们应该减少浪费。",
+      "acceptedMeaningsZh": [
+        "减少"
+      ],
+      "relation": "related",
+      "id": "s11-g5-i1",
+      "sourceGroupId": "s11-g5",
+      "session": 11,
+      "teacherNumber": "5",
+      "displayNumber": "5-1"
+    },
+    {
+      "term": "reduce costs",
+      "meaningZh": "降低成本",
+      "example": "Reusing things can reduce costs.",
+      "exampleZh": "重复使用物品可以降低成本。",
+      "acceptedMeaningsZh": [
+        "降低成本"
+      ],
+      "relation": "related",
+      "id": "s11-g5-i2",
+      "sourceGroupId": "s11-g5",
+      "session": 11,
+      "teacherNumber": "5",
+      "displayNumber": "5-2"
+    },
+    {
+      "term": "recycle",
+      "meaningZh": "回收利用",
+      "example": "We recycle paper and bottles.",
+      "exampleZh": "我们回收利用纸和瓶子。",
+      "acceptedMeaningsZh": [
+        "回收利用"
+      ],
+      "relation": "single",
+      "id": "s11-g6-i1",
+      "sourceGroupId": "s11-g6",
+      "session": 11,
+      "teacherNumber": "6",
+      "displayNumber": "6"
+    },
+    {
+      "term": "throw",
+      "meaningZh": "扔；投",
+      "example": "Do not throw stones.",
+      "exampleZh": "不要扔石头。",
+      "acceptedMeaningsZh": [
+        "扔；投"
+      ],
+      "relation": "related",
+      "id": "s11-g7-i1",
+      "sourceGroupId": "s11-g7",
+      "session": 11,
+      "teacherNumber": "7",
+      "displayNumber": "7-1"
+    },
+    {
+      "term": "throw away",
+      "meaningZh": "扔掉",
+      "example": "Do not throw away this box.",
+      "exampleZh": "不要扔掉这个盒子。",
+      "acceptedMeaningsZh": [
+        "扔掉"
+      ],
+      "relation": "related",
+      "id": "s11-g7-i2",
+      "sourceGroupId": "s11-g7",
+      "session": 11,
+      "teacherNumber": "7",
+      "displayNumber": "7-2"
+    },
+    {
+      "term": "pick up",
+      "meaningZh": "捡起；拿起",
+      "example": "Please pick up the rubbish.",
+      "exampleZh": "请捡起垃圾。",
+      "acceptedMeaningsZh": [
+        "捡起；拿起"
+      ],
+      "relation": "single",
+      "id": "s11-g8-i1",
+      "sourceGroupId": "s11-g8",
+      "session": 11,
+      "teacherNumber": "8",
+      "displayNumber": "8"
+    },
+    {
+      "term": "turn off",
+      "meaningZh": "关闭（电器）",
+      "example": "Turn off the lights when you leave.",
+      "exampleZh": "离开时关灯。",
+      "acceptedMeaningsZh": [
+        "关闭（电器）"
+      ],
+      "relation": "related",
+      "id": "s11-g9-i1",
+      "sourceGroupId": "s11-g9",
+      "session": 11,
+      "teacherNumber": "9",
+      "displayNumber": "9-1"
+    },
+    {
+      "term": "turn on",
+      "meaningZh": "打开（电器）",
+      "example": "Turn on the television, please.",
+      "exampleZh": "请打开电视。",
+      "acceptedMeaningsZh": [
+        "打开（电器）"
+      ],
+      "relation": "related",
+      "id": "s11-g9-i2",
+      "sourceGroupId": "s11-g9",
+      "session": 11,
+      "teacherNumber": "9",
+      "displayNumber": "9-2"
+    },
+    {
+      "term": "pollute",
+      "meaningZh": "污染",
+      "example": "Dirty water can pollute the river.",
+      "exampleZh": "脏水会污染河流。",
+      "acceptedMeaningsZh": [
+        "污染"
+      ],
+      "relation": "related",
+      "id": "s11-g10-i1",
+      "sourceGroupId": "s11-g10",
+      "session": 11,
+      "teacherNumber": "10",
+      "displayNumber": "10-1"
+    },
+    {
+      "term": "pollution",
+      "meaningZh": "污染",
+      "example": "Air pollution is bad for us.",
+      "exampleZh": "空气污染对我们有害。",
+      "acceptedMeaningsZh": [
+        "污染"
+      ],
+      "relation": "related",
+      "id": "s11-g10-i2",
+      "sourceGroupId": "s11-g10",
+      "session": 11,
+      "teacherNumber": "10",
+      "displayNumber": "10-2"
+    },
+    {
+      "term": "habit",
+      "meaningZh": "习惯",
+      "example": "Walking is a healthy habit.",
+      "exampleZh": "步行是一个健康的习惯。",
+      "acceptedMeaningsZh": [
+        "习惯"
+      ],
+      "relation": "related",
+      "id": "s11-g11-i1",
+      "sourceGroupId": "s11-g11",
+      "session": 11,
+      "teacherNumber": "11",
+      "displayNumber": "11-1"
+    },
+    {
+      "term": "habits for ...",
+      "meaningZh": "适合……的习惯；关于……的习惯",
+      "example": "The booklet shows good habits for a green life.",
+      "exampleZh": "这本小册子介绍环保生活的好习惯。",
+      "acceptedMeaningsZh": [
+        "适合……的习惯；关于……的习惯"
+      ],
+      "relation": "related",
+      "id": "s11-g11-i2",
+      "sourceGroupId": "s11-g11",
+      "session": 11,
+      "teacherNumber": "11",
+      "displayNumber": "11-2"
+    },
+    {
+      "term": "a good way",
+      "meaningZh": "一个好方法",
+      "example": "Walking is a good way to stay healthy.",
+      "exampleZh": "步行是保持健康的好方法。",
+      "acceptedMeaningsZh": [
+        "一个好方法"
+      ],
+      "relation": "related",
+      "id": "s11-g12-i1",
+      "sourceGroupId": "s11-g12",
+      "session": 11,
+      "teacherNumber": "12",
+      "displayNumber": "12-1"
+    },
+    {
+      "term": "It's a good way to do ...",
+      "meaningZh": "这是做……的好方法",
+      "example": "It's a good way to save water.",
+      "exampleZh": "这是节约用水的好方法。",
+      "acceptedMeaningsZh": [
+        "这是做……的好方法"
+      ],
+      "relation": "related",
+      "id": "s11-g12-i2",
+      "sourceGroupId": "s11-g12",
+      "session": 11,
+      "teacherNumber": "12",
+      "displayNumber": "12-2"
+    },
+    {
+      "term": "take",
+      "meaningZh": "乘坐；拿",
+      "example": "I take my bag to school.",
+      "exampleZh": "我把书包带到学校。",
+      "acceptedMeaningsZh": [
+        "乘坐；拿"
+      ],
+      "relation": "related",
+      "id": "s11-g13-i1",
+      "sourceGroupId": "s11-g13",
+      "session": 11,
+      "teacherNumber": "13",
+      "displayNumber": "13-1"
+    },
+    {
+      "term": "take a bus",
+      "meaningZh": "乘公共汽车",
+      "example": "I take a bus to school.",
+      "exampleZh": "我乘公共汽车上学。",
+      "acceptedMeaningsZh": [
+        "乘公共汽车"
+      ],
+      "relation": "related",
+      "id": "s11-g13-i2",
+      "sourceGroupId": "s11-g13",
+      "session": 11,
+      "teacherNumber": "13",
+      "displayNumber": "13-2"
+    },
+    {
+      "term": "take a car",
+      "meaningZh": "乘小汽车",
+      "example": "We take a car to the park.",
+      "exampleZh": "我们乘小汽车去公园。",
+      "acceptedMeaningsZh": [
+        "乘小汽车"
+      ],
+      "relation": "related",
+      "id": "s11-g13-i3",
+      "sourceGroupId": "s11-g13",
+      "session": 11,
+      "teacherNumber": "13",
+      "displayNumber": "13-3"
+    },
+    {
+      "term": "take the subway",
+      "meaningZh": "乘地铁",
+      "example": "They take the subway to work.",
+      "exampleZh": "他们乘地铁上班。",
+      "acceptedMeaningsZh": [
+        "乘地铁"
+      ],
+      "relation": "related",
+      "id": "s11-g13-i4",
+      "sourceGroupId": "s11-g13",
+      "session": 11,
+      "teacherNumber": "13",
+      "displayNumber": "13-4"
+    },
+    {
+      "term": "walk to ...",
+      "meaningZh": "步行去……",
+      "example": "I walk to school every day.",
+      "exampleZh": "我每天步行上学。",
+      "acceptedMeaningsZh": [
+        "步行去……"
+      ],
+      "relation": "related",
+      "id": "s11-g14-i1",
+      "sourceGroupId": "s11-g14",
+      "session": 11,
+      "teacherNumber": "14",
+      "displayNumber": "14-1"
+    },
+    {
+      "term": "go to ... on foot",
+      "meaningZh": "步行去……",
+      "example": "We go to the library on foot.",
+      "exampleZh": "我们步行去图书馆。",
+      "acceptedMeaningsZh": [
+        "步行去……"
+      ],
+      "relation": "related",
+      "id": "s11-g14-i2",
+      "sourceGroupId": "s11-g14",
+      "session": 11,
+      "teacherNumber": "14",
+      "displayNumber": "14-2"
+    },
+    {
+      "term": "It's a good way to do ...",
+      "meaningZh": "这是做……的好方法",
+      "example": "It's a good way to save energy.",
+      "exampleZh": "这是节约能源的好方法。",
+      "acceptedMeaningsZh": [
+        "这是做……的好方法"
+      ],
+      "relation": "related",
+      "id": "s11-g15-i1",
+      "sourceGroupId": "s11-g15",
+      "session": 11,
+      "teacherNumber": "15",
+      "displayNumber": "15-1"
+    },
+    {
+      "term": "It's a great way to do ...",
+      "meaningZh": "这是做……的好办法",
+      "example": "It's a great way to keep fit.",
+      "exampleZh": "这是保持健康的好办法。",
+      "acceptedMeaningsZh": [
+        "这是做……的好办法"
+      ],
+      "relation": "related",
+      "id": "s11-g15-i2",
+      "sourceGroupId": "s11-g15",
+      "session": 11,
+      "teacherNumber": "15",
+      "displayNumber": "15-2"
+    },
+    {
+      "term": "give sth. to sb.",
+      "meaningZh": "把某物给某人",
+      "example": "Please give the book to Amy.",
+      "exampleZh": "请把书给艾米。",
+      "acceptedMeaningsZh": [
+        "把某物给某人"
+      ],
+      "relation": "related",
+      "id": "s11-g16-i1",
+      "sourceGroupId": "s11-g16",
+      "session": 11,
+      "teacherNumber": "16",
+      "displayNumber": "16-1"
+    },
+    {
+      "term": "give the meat to the dog",
+      "meaningZh": "把肉给狗",
+      "example": "I give the meat to the dog.",
+      "exampleZh": "我把肉给狗。",
+      "acceptedMeaningsZh": [
+        "把肉给狗"
+      ],
+      "relation": "related",
+      "id": "s11-g16-i2",
+      "sourceGroupId": "s11-g16",
+      "session": 11,
+      "teacherNumber": "16",
+      "displayNumber": "16-2"
+    },
+    {
+      "term": "give them to the girls",
+      "meaningZh": "把它们给女孩们",
+      "example": "Please give them to the girls.",
+      "exampleZh": "请把它们给女孩们。",
+      "acceptedMeaningsZh": [
+        "把它们给女孩们"
+      ],
+      "relation": "related",
+      "id": "s11-g16-i3",
+      "sourceGroupId": "s11-g16",
+      "session": 11,
+      "teacherNumber": "16",
+      "displayNumber": "16-3"
+    },
+    {
+      "term": "little kids",
+      "meaningZh": "小孩子们",
+      "example": "Little kids like these toys.",
+      "exampleZh": "小孩子们喜欢这些玩具。",
+      "acceptedMeaningsZh": [
+        "小孩子们"
+      ],
+      "relation": "single",
+      "id": "s11-g17-i1",
+      "sourceGroupId": "s11-g17",
+      "session": 11,
+      "teacherNumber": "17",
+      "displayNumber": "17"
+    },
+    {
+      "term": "play with sth.",
+      "meaningZh": "玩某物",
+      "example": "Do not play with fire.",
+      "exampleZh": "不要玩火。",
+      "acceptedMeaningsZh": [
+        "玩某物"
+      ],
+      "relation": "related",
+      "id": "s11-g18-i1",
+      "sourceGroupId": "s11-g18",
+      "session": 11,
+      "teacherNumber": "18",
+      "displayNumber": "18-1"
+    },
+    {
+      "term": "play with the toys",
+      "meaningZh": "玩这些玩具",
+      "example": "The children play with the toys.",
+      "exampleZh": "孩子们玩这些玩具。",
+      "acceptedMeaningsZh": [
+        "玩这些玩具"
+      ],
+      "relation": "related",
+      "id": "s11-g18-i2",
+      "sourceGroupId": "s11-g18",
+      "session": 11,
+      "teacherNumber": "18",
+      "displayNumber": "18-2"
+    },
+    {
+      "term": "plastic",
+      "meaningZh": "塑料；塑料的",
+      "example": "This bottle is made of plastic.",
+      "exampleZh": "这个瓶子是塑料做的。",
+      "acceptedMeaningsZh": [
+        "塑料；塑料的"
+      ],
+      "relation": "related",
+      "id": "s11-g19-i1",
+      "sourceGroupId": "s11-g19",
+      "session": 11,
+      "teacherNumber": "19",
+      "displayNumber": "19-1"
+    },
+    {
+      "term": "plastic bag",
+      "meaningZh": "塑料袋",
+      "example": "Do not use too many plastic bags.",
+      "exampleZh": "不要使用太多塑料袋。",
+      "acceptedMeaningsZh": [
+        "塑料袋"
+      ],
+      "relation": "related",
+      "id": "s11-g19-i2",
+      "sourceGroupId": "s11-g19",
+      "session": 11,
+      "teacherNumber": "19",
+      "displayNumber": "19-2"
+    },
+    {
+      "term": "cloth",
+      "meaningZh": "布；布料",
+      "example": "This bag is made of cloth.",
+      "exampleZh": "这个袋子是布做的。",
+      "acceptedMeaningsZh": [
+        "布；布料"
+      ],
+      "relation": "single",
+      "id": "s11-g20-i1",
+      "sourceGroupId": "s11-g20",
+      "session": 11,
+      "teacherNumber": "20",
+      "displayNumber": "20"
+    },
+    {
+      "term": "paper",
+      "meaningZh": "纸",
+      "example": "Please use less paper.",
+      "exampleZh": "请少用纸。",
+      "acceptedMeaningsZh": [
+        "纸"
+      ],
+      "relation": "single",
+      "id": "s11-g21-i1",
+      "sourceGroupId": "s11-g21",
+      "session": 11,
+      "teacherNumber": "21",
+      "displayNumber": "21"
+    },
+    {
+      "term": "tap",
+      "meaningZh": "水龙头",
+      "example": "The tap is still on.",
+      "exampleZh": "水龙头还开着。",
+      "acceptedMeaningsZh": [
+        "水龙头"
+      ],
+      "relation": "related",
+      "id": "s11-g22-i1",
+      "sourceGroupId": "s11-g22",
+      "session": 11,
+      "teacherNumber": "22",
+      "displayNumber": "22-1"
+    },
+    {
+      "term": "turn on the tap",
+      "meaningZh": "打开水龙头",
+      "example": "Turn on the tap to wash your hands.",
+      "exampleZh": "打开水龙头洗手。",
+      "acceptedMeaningsZh": [
+        "打开水龙头"
+      ],
+      "relation": "related",
+      "id": "s11-g22-i2",
+      "sourceGroupId": "s11-g22",
+      "session": 11,
+      "teacherNumber": "22",
+      "displayNumber": "22-2"
+    },
+    {
+      "term": "turn off the tap",
+      "meaningZh": "关掉水龙头",
+      "example": "Turn off the tap after washing.",
+      "exampleZh": "洗完后关掉水龙头。",
+      "acceptedMeaningsZh": [
+        "关掉水龙头"
+      ],
+      "relation": "related",
+      "id": "s11-g22-i3",
+      "sourceGroupId": "s11-g22",
+      "session": 11,
+      "teacherNumber": "22",
+      "displayNumber": "22-3"
+    },
+    {
+      "term": "brush my teeth",
+      "meaningZh": "刷牙",
+      "example": "I brush my teeth twice a day.",
+      "exampleZh": "我每天刷两次牙。",
+      "acceptedMeaningsZh": [
+        "刷牙"
+      ],
+      "relation": "single",
+      "id": "s11-g23-i1",
+      "sourceGroupId": "s11-g23",
+      "session": 11,
+      "teacherNumber": "23",
+      "displayNumber": "23"
+    },
+    {
+      "term": "save water",
+      "meaningZh": "节约用水",
+      "example": "We should save water every day.",
+      "exampleZh": "我们每天都应该节约用水。",
+      "acceptedMeaningsZh": [
+        "节约用水"
+      ],
+      "relation": "single",
+      "id": "s11-g24-i1",
+      "sourceGroupId": "s11-g24",
+      "session": 11,
+      "teacherNumber": "24",
+      "displayNumber": "24"
+    },
+    {
+      "term": "side",
+      "meaningZh": "一面；一边",
+      "example": "Write on this side of the paper.",
+      "exampleZh": "写在纸的这一面。",
+      "acceptedMeaningsZh": [
+        "一面；一边"
+      ],
+      "relation": "related",
+      "id": "s11-g25-i1",
+      "sourceGroupId": "s11-g25",
+      "session": 11,
+      "teacherNumber": "25",
+      "displayNumber": "25-1"
+    },
+    {
+      "term": "both sides",
+      "meaningZh": "两面",
+      "example": "The paper has words on both sides.",
+      "exampleZh": "这张纸两面都有字。",
+      "acceptedMeaningsZh": [
+        "两面"
+      ],
+      "relation": "related",
+      "id": "s11-g25-i2",
+      "sourceGroupId": "s11-g25",
+      "session": 11,
+      "teacherNumber": "25",
+      "displayNumber": "25-2"
+    },
+    {
+      "term": "both sides of the paper",
+      "meaningZh": "纸的两面",
+      "example": "Use both sides of the paper.",
+      "exampleZh": "使用纸的两面。",
+      "acceptedMeaningsZh": [
+        "纸的两面"
+      ],
+      "relation": "related",
+      "id": "s11-g25-i3",
+      "sourceGroupId": "s11-g25",
+      "session": 11,
+      "teacherNumber": "25",
+      "displayNumber": "25-3"
+    },
+    {
+      "term": "I see.",
+      "meaningZh": "我明白了。",
+      "example": "I see. We should use less paper.",
+      "exampleZh": "我明白了。我们应该少用纸。",
+      "acceptedMeaningsZh": [
+        "我明白了。"
+      ],
+      "relation": "single",
+      "id": "s11-g26-i1",
+      "sourceGroupId": "s11-g26",
+      "session": 11,
+      "teacherNumber": "26",
+      "displayNumber": "26"
+    },
+    {
+      "term": "be made of ...",
+      "meaningZh": "由……制成（看得出原材料）",
+      "example": "The chair is made of wood.",
+      "exampleZh": "这把椅子是木头制成的。",
+      "acceptedMeaningsZh": [
+        "由……制成（看得出原材料）"
+      ],
+      "relation": "related",
+      "id": "s11-g27-i1",
+      "sourceGroupId": "s11-g27",
+      "session": 11,
+      "teacherNumber": "27",
+      "displayNumber": "27-1"
+    },
+    {
+      "term": "be made from ...",
+      "meaningZh": "由……制成（看不出原材料）",
+      "example": "Paper is made from wood.",
+      "exampleZh": "纸是由木材制成的。",
+      "acceptedMeaningsZh": [
+        "由……制成（看不出原材料）"
+      ],
+      "relation": "related",
+      "id": "s11-g27-i2",
+      "sourceGroupId": "s11-g27",
+      "session": 11,
+      "teacherNumber": "27",
+      "displayNumber": "27-2"
+    },
+    {
+      "term": "The desk is made of wood.",
+      "meaningZh": "这张书桌是木头制成的。",
+      "example": "The desk is made of wood.",
+      "exampleZh": "这张书桌是木头制成的。",
+      "acceptedMeaningsZh": [
+        "这张书桌是木头制成的。"
+      ],
+      "relation": "related",
+      "id": "s11-g28-i1",
+      "sourceGroupId": "s11-g28",
+      "session": 11,
+      "teacherNumber": "28",
+      "displayNumber": "28-1"
+    },
+    {
+      "term": "Paper is made from wood.",
+      "meaningZh": "纸是由木材制成的。",
+      "example": "Paper is made from wood.",
+      "exampleZh": "纸是由木材制成的。",
+      "acceptedMeaningsZh": [
+        "纸是由木材制成的。"
+      ],
+      "relation": "related",
+      "id": "s11-g28-i2",
+      "sourceGroupId": "s11-g28",
+      "session": 11,
+      "teacherNumber": "28",
+      "displayNumber": "28-2"
+    },
+    {
+      "term": "paper",
+      "meaningZh": "纸",
+      "example": "We need paper for the poster.",
+      "exampleZh": "我们做海报需要纸。",
+      "acceptedMeaningsZh": [
+        "纸"
+      ],
+      "relation": "related",
+      "id": "s11-g29-i1",
+      "sourceGroupId": "s11-g29",
+      "session": 11,
+      "teacherNumber": "29",
+      "displayNumber": "29-1"
+    },
+    {
+      "term": "little paper",
+      "meaningZh": "很少的纸",
+      "example": "There is little paper in the box.",
+      "exampleZh": "盒子里几乎没有纸。",
+      "acceptedMeaningsZh": [
+        "很少的纸"
+      ],
+      "relation": "related",
+      "id": "s11-g29-i2",
+      "sourceGroupId": "s11-g29",
+      "session": 11,
+      "teacherNumber": "29",
+      "displayNumber": "29-2"
+    },
+    {
+      "term": "less paper",
+      "meaningZh": "更少的纸",
+      "example": "We should use less paper.",
+      "exampleZh": "我们应该少用纸。",
+      "acceptedMeaningsZh": [
+        "更少的纸"
+      ],
+      "relation": "related",
+      "id": "s11-g29-i3",
+      "sourceGroupId": "s11-g29",
+      "session": 11,
+      "teacherNumber": "29",
+      "displayNumber": "29-3"
+    },
+    {
+      "term": "save",
+      "meaningZh": "节省；挽救",
+      "example": "We can save energy at home.",
+      "exampleZh": "我们可以在家节约能源。",
+      "acceptedMeaningsZh": [
+        "节省；挽救"
+      ],
+      "relation": "single",
+      "id": "s11-g30-i1",
+      "sourceGroupId": "s11-g30",
+      "session": 11,
+      "teacherNumber": "30",
+      "displayNumber": "30"
+    },
+    {
+      "term": "remind",
+      "meaningZh": "提醒；使想起",
+      "example": "This photo can remind me of our trip.",
+      "exampleZh": "这张照片能让我想起我们的旅行。",
+      "acceptedMeaningsZh": [
+        "提醒；使想起"
+      ],
+      "relation": "related",
+      "id": "s11-g31-i1",
+      "sourceGroupId": "s11-g31",
+      "session": 11,
+      "teacherNumber": "31",
+      "displayNumber": "31-1"
+    },
+    {
+      "term": "remind sb. to do sth.",
+      "meaningZh": "提醒某人做某事",
+      "example": "Please remind me to turn off the light.",
+      "exampleZh": "请提醒我关灯。",
+      "acceptedMeaningsZh": [
+        "提醒某人做某事"
+      ],
+      "relation": "related",
+      "id": "s11-g31-i2",
+      "sourceGroupId": "s11-g31",
+      "session": 11,
+      "teacherNumber": "31",
+      "displayNumber": "31-2"
+    },
+    {
+      "term": "remind sb. of sth.",
+      "meaningZh": "使某人想起某事",
+      "example": "The song reminds me of my school.",
+      "exampleZh": "这首歌让我想起学校。",
+      "acceptedMeaningsZh": [
+        "使某人想起某事"
+      ],
+      "relation": "related",
+      "id": "s11-g31-i3",
+      "sourceGroupId": "s11-g31",
+      "session": 11,
+      "teacherNumber": "31",
+      "displayNumber": "31-3"
+    },
+    {
+      "term": "remind my mum to buy a cake",
+      "meaningZh": "提醒妈妈买蛋糕",
+      "example": "I remind my mum to buy a cake.",
+      "exampleZh": "我提醒妈妈买蛋糕。",
+      "acceptedMeaningsZh": [
+        "提醒妈妈买蛋糕"
+      ],
+      "relation": "related",
+      "id": "s11-g31-i4",
+      "sourceGroupId": "s11-g31",
+      "session": 11,
+      "teacherNumber": "31",
+      "displayNumber": "31-4"
+    },
+    {
+      "term": "remind me of my classmates",
+      "meaningZh": "让我想起同学们",
+      "example": "These photos remind me of my classmates.",
+      "exampleZh": "这些照片让我想起同学们。",
+      "acceptedMeaningsZh": [
+        "让我想起同学们"
+      ],
+      "relation": "related",
+      "id": "s11-g31-i5",
+      "sourceGroupId": "s11-g31",
+      "session": 11,
+      "teacherNumber": "31",
+      "displayNumber": "31-5"
+    },
+    {
+      "term": "unplug",
+      "meaningZh": "拔掉插头",
+      "example": "Unplug the television after use.",
+      "exampleZh": "使用后拔掉电视插头。",
+      "acceptedMeaningsZh": [
+        "拔掉插头"
+      ],
+      "relation": "single",
+      "id": "s11-g32-i1",
+      "sourceGroupId": "s11-g32",
+      "session": 11,
+      "teacherNumber": "32",
+      "displayNumber": "32"
+    },
+    {
+      "term": "after doing ...",
+      "meaningZh": "做完……之后",
+      "example": "Wash your hands after playing outside.",
+      "exampleZh": "在外面玩后要洗手。",
+      "acceptedMeaningsZh": [
+        "做完……之后"
+      ],
+      "relation": "related",
+      "id": "s11-g33-i1",
+      "sourceGroupId": "s11-g33",
+      "session": 11,
+      "teacherNumber": "33",
+      "displayNumber": "33-1"
+    },
+    {
+      "term": "after watching TV",
+      "meaningZh": "看完电视后",
+      "example": "Unplug it after watching TV.",
+      "exampleZh": "看完电视后拔掉插头。",
+      "acceptedMeaningsZh": [
+        "看完电视后"
+      ],
+      "relation": "related",
+      "id": "s11-g33-i2",
+      "sourceGroupId": "s11-g33",
+      "session": 11,
+      "teacherNumber": "33",
+      "displayNumber": "33-2"
+    },
+    {
+      "term": "energy",
+      "meaningZh": "能源；能量",
+      "example": "The sun gives us energy.",
+      "exampleZh": "太阳给我们能量。",
+      "acceptedMeaningsZh": [
+        "能源；能量"
+      ],
+      "relation": "related",
+      "id": "s11-g34-i1",
+      "sourceGroupId": "s11-g34",
+      "session": 11,
+      "teacherNumber": "34",
+      "displayNumber": "34-1"
+    },
+    {
+      "term": "save energy",
+      "meaningZh": "节约能源",
+      "example": "Turn off the lights to save energy.",
+      "exampleZh": "关灯可以节约能源。",
+      "acceptedMeaningsZh": [
+        "节约能源"
+      ],
+      "relation": "related",
+      "id": "s11-g34-i2",
+      "sourceGroupId": "s11-g34",
+      "session": 11,
+      "teacherNumber": "34",
+      "displayNumber": "34-2"
+    },
+    {
+      "term": "air pollution",
+      "meaningZh": "空气污染",
+      "example": "Cars can cause air pollution.",
+      "exampleZh": "汽车会造成空气污染。",
+      "acceptedMeaningsZh": [
+        "空气污染"
+      ],
+      "relation": "single",
+      "id": "s11-g35-i1",
+      "sourceGroupId": "s11-g35",
+      "session": 11,
+      "teacherNumber": "35",
+      "displayNumber": "35"
+    },
+    {
+      "term": "habit",
+      "meaningZh": "习惯",
+      "example": "Reading every day is a good habit.",
+      "exampleZh": "每天阅读是一个好习惯。",
+      "acceptedMeaningsZh": [
+        "习惯"
+      ],
+      "relation": "related",
+      "id": "s11-g36-i1",
+      "sourceGroupId": "s11-g36",
+      "session": 11,
+      "teacherNumber": "36",
+      "displayNumber": "36-1"
+    },
+    {
+      "term": "a healthy habit",
+      "meaningZh": "一个健康的习惯",
+      "example": "Going to bed early is a healthy habit.",
+      "exampleZh": "早睡是一个健康的习惯。",
+      "acceptedMeaningsZh": [
+        "一个健康的习惯"
+      ],
+      "relation": "related",
+      "id": "s11-g36-i2",
+      "sourceGroupId": "s11-g36",
+      "session": 11,
+      "teacherNumber": "36",
+      "displayNumber": "36-2"
+    },
+    {
+      "term": "plant seeds",
+      "meaningZh": "播种",
+      "example": "We plant seeds in the garden.",
+      "exampleZh": "我们在花园里播种。",
+      "acceptedMeaningsZh": [
+        "播种"
+      ],
+      "relation": "single",
+      "id": "s11-g37-i1",
+      "sourceGroupId": "s11-g37",
+      "session": 11,
+      "teacherNumber": "37",
+      "displayNumber": "37"
+    },
+    {
+      "term": "watch them grow",
+      "meaningZh": "看着它们生长",
+      "example": "We water the flowers and watch them grow.",
+      "exampleZh": "我们给花浇水，看着它们生长。",
+      "acceptedMeaningsZh": [
+        "看着它们生长"
+      ],
+      "relation": "single",
+      "id": "s11-g38-i1",
+      "sourceGroupId": "s11-g38",
+      "session": 11,
+      "teacherNumber": "38",
+      "displayNumber": "38"
+    },
+    {
+      "term": "keep sth. adj.",
+      "meaningZh": "使某物保持……",
+      "example": "Trees keep our city cool.",
+      "exampleZh": "树木让我们的城市保持凉爽。",
+      "acceptedMeaningsZh": [
+        "使某物保持……"
+      ],
+      "relation": "related",
+      "id": "s11-g39-i1",
+      "sourceGroupId": "s11-g39",
+      "session": 11,
+      "teacherNumber": "39",
+      "displayNumber": "39-1"
+    },
+    {
+      "term": "keep the air clean",
+      "meaningZh": "保持空气清洁",
+      "example": "Trees help keep the air clean.",
+      "exampleZh": "树木帮助保持空气清洁。",
+      "acceptedMeaningsZh": [
+        "保持空气清洁"
+      ],
+      "relation": "related",
+      "id": "s11-g39-i2",
+      "sourceGroupId": "s11-g39",
+      "session": 11,
+      "teacherNumber": "39",
+      "displayNumber": "39-2"
+    },
+    {
+      "term": "keep the air fresh",
+      "meaningZh": "保持空气清新",
+      "example": "Plants can keep the air fresh.",
+      "exampleZh": "植物可以保持空气清新。",
+      "acceptedMeaningsZh": [
+        "保持空气清新"
+      ],
+      "relation": "related",
+      "id": "s11-g39-i3",
+      "sourceGroupId": "s11-g39",
+      "session": 11,
+      "teacherNumber": "39",
+      "displayNumber": "39-3"
+    },
+    {
+      "term": "before doing ...",
+      "meaningZh": "做……之前",
+      "example": "Wash your hands before eating.",
+      "exampleZh": "吃饭前要洗手。",
+      "acceptedMeaningsZh": [
+        "做……之前"
+      ],
+      "relation": "related",
+      "id": "s11-g40-i1",
+      "sourceGroupId": "s11-g40",
+      "session": 11,
+      "teacherNumber": "40",
+      "displayNumber": "40-1"
+    },
+    {
+      "term": "after doing ...",
+      "meaningZh": "做……之后",
+      "example": "Turn off the tap after washing.",
+      "exampleZh": "洗完后关掉水龙头。",
+      "acceptedMeaningsZh": [
+        "做……之后"
+      ],
+      "relation": "related",
+      "id": "s11-g40-i2",
+      "sourceGroupId": "s11-g40",
+      "session": 11,
+      "teacherNumber": "40",
+      "displayNumber": "40-2"
+    },
+    {
+      "term": "throw away ...",
+      "meaningZh": "扔掉……",
+      "example": "Do not throw away useful things.",
+      "exampleZh": "不要扔掉有用的东西。",
+      "acceptedMeaningsZh": [
+        "扔掉……"
+      ],
+      "relation": "related",
+      "id": "s11-g41-i1",
+      "sourceGroupId": "s11-g41",
+      "session": 11,
+      "teacherNumber": "41",
+      "displayNumber": "41-1"
+    },
+    {
+      "term": "throw it away",
+      "meaningZh": "把它扔掉",
+      "example": "The bottle is useful, so don't throw it away.",
+      "exampleZh": "这个瓶子有用，所以不要把它扔掉。",
+      "acceptedMeaningsZh": [
+        "把它扔掉"
+      ],
+      "relation": "related",
+      "id": "s11-g41-i2",
+      "sourceGroupId": "s11-g41",
+      "session": 11,
+      "teacherNumber": "41",
+      "displayNumber": "41-2"
+    },
+    {
+      "term": "rubbish",
+      "meaningZh": "垃圾",
+      "example": "Put the rubbish in the bin.",
+      "exampleZh": "把垃圾放进垃圾桶。",
+      "acceptedMeaningsZh": [
+        "垃圾"
+      ],
+      "relation": "related",
+      "id": "s11-g42-i1",
+      "sourceGroupId": "s11-g42",
+      "session": 11,
+      "teacherNumber": "42",
+      "displayNumber": "42-1"
+    },
+    {
+      "term": "rubbish bin",
+      "meaningZh": "垃圾桶",
+      "example": "The rubbish bin is near the door.",
+      "exampleZh": "垃圾桶在门旁边。",
+      "acceptedMeaningsZh": [
+        "垃圾桶"
+      ],
+      "relation": "related",
+      "id": "s11-g42-i2",
+      "sourceGroupId": "s11-g42",
+      "session": 11,
+      "teacherNumber": "42",
+      "displayNumber": "42-2"
+    },
+    {
+      "term": "sort rubbish",
+      "meaningZh": "垃圾分类",
+      "example": "We sort rubbish at school.",
+      "exampleZh": "我们在学校进行垃圾分类。",
+      "acceptedMeaningsZh": [
+        "垃圾分类"
+      ],
+      "relation": "related",
+      "id": "s11-g42-i3",
+      "sourceGroupId": "s11-g42",
+      "session": 11,
+      "teacherNumber": "42",
+      "displayNumber": "42-3"
+    },
+    {
+      "term": "drop",
+      "meaningZh": "使落下；投放",
+      "example": "Do not drop rubbish on the ground.",
+      "exampleZh": "不要把垃圾扔在地上。",
+      "acceptedMeaningsZh": [
+        "使落下；投放"
+      ],
+      "relation": "related",
+      "id": "s11-g43-i1",
+      "sourceGroupId": "s11-g43",
+      "session": 11,
+      "teacherNumber": "43",
+      "displayNumber": "43-1"
+    },
+    {
+      "term": "drop ... into",
+      "meaningZh": "把……投进……",
+      "example": "Drop the bottle into the right bin.",
+      "exampleZh": "把瓶子投进正确的垃圾桶。",
+      "acceptedMeaningsZh": [
+        "把……投进……"
+      ],
+      "relation": "related",
+      "id": "s11-g43-i2",
+      "sourceGroupId": "s11-g43",
+      "session": 11,
+      "teacherNumber": "43",
+      "displayNumber": "43-2"
+    },
+    {
+      "term": "whale",
+      "meaningZh": "鲸",
+      "example": "A whale lives in the sea.",
+      "exampleZh": "鲸生活在海里。",
+      "acceptedMeaningsZh": [
+        "鲸"
+      ],
+      "relation": "single",
+      "id": "s11-g44-i1",
+      "sourceGroupId": "s11-g44",
+      "session": 11,
+      "teacherNumber": "44",
+      "displayNumber": "44"
+    },
+    {
+      "term": "eat up",
+      "meaningZh": "吃光",
+      "example": "Please eat up your lunch.",
+      "exampleZh": "请把午饭吃光。",
+      "acceptedMeaningsZh": [
+        "吃光"
+      ],
+      "relation": "related",
+      "id": "s11-g45-i1",
+      "sourceGroupId": "s11-g45",
+      "session": 11,
+      "teacherNumber": "45",
+      "displayNumber": "45-1"
+    },
+    {
+      "term": "eat it up",
+      "meaningZh": "把它吃光",
+      "example": "The turtle may eat it up.",
+      "exampleZh": "海龟可能会把它吃掉。",
+      "acceptedMeaningsZh": [
+        "把它吃光"
+      ],
+      "relation": "related",
+      "id": "s11-g45-i2",
+      "sourceGroupId": "s11-g45",
+      "session": 11,
+      "teacherNumber": "45",
+      "displayNumber": "45-2"
+    },
+    {
+      "term": "jellyfish",
+      "meaningZh": "水母",
+      "example": "A jellyfish swims in the sea.",
+      "exampleZh": "一只水母在海里游。",
+      "acceptedMeaningsZh": [
+        "水母"
+      ],
+      "relation": "single",
+      "id": "s11-g46-i1",
+      "sourceGroupId": "s11-g46",
+      "session": 11,
+      "teacherNumber": "46",
+      "displayNumber": "46"
+    },
+    {
+      "term": "sneeze",
+      "meaningZh": "打喷嚏",
+      "example": "Dust can make me sneeze.",
+      "exampleZh": "灰尘会让我打喷嚏。",
+      "acceptedMeaningsZh": [
+        "打喷嚏"
+      ],
+      "relation": "single",
+      "id": "s11-g47-i1",
+      "sourceGroupId": "s11-g47",
+      "session": 11,
+      "teacherNumber": "47",
+      "displayNumber": "47"
+    },
+    {
+      "term": "open ... wide",
+      "meaningZh": "把……张大；打开得很大",
+      "example": "Open your mouth wide.",
+      "exampleZh": "把嘴巴张大。",
+      "acceptedMeaningsZh": [
+        "把……张大；打开得很大"
+      ],
+      "relation": "single",
+      "id": "s11-g48-i1",
+      "sourceGroupId": "s11-g48",
+      "session": 11,
+      "teacherNumber": "48",
+      "displayNumber": "48"
+    },
+    {
+      "term": "turtle",
+      "meaningZh": "海龟；龟",
+      "example": "The turtle swims slowly.",
+      "exampleZh": "海龟慢慢地游。",
+      "acceptedMeaningsZh": [
+        "海龟；龟"
+      ],
+      "relation": "related",
+      "id": "s11-g49-i1",
+      "sourceGroupId": "s11-g49",
+      "session": 11,
+      "teacherNumber": "49",
+      "displayNumber": "49-1"
+    },
+    {
+      "term": "tortoise",
+      "meaningZh": "陆龟",
+      "example": "The tortoise walks on land.",
+      "exampleZh": "陆龟在陆地上行走。",
+      "acceptedMeaningsZh": [
+        "陆龟"
+      ],
+      "relation": "related",
+      "id": "s11-g49-i2",
+      "sourceGroupId": "s11-g49",
+      "session": 11,
+      "teacherNumber": "49",
+      "displayNumber": "49-2"
+    },
+    {
+      "term": "spot",
+      "meaningZh": "发现；认出",
+      "example": "I can spot a whale in the sea.",
+      "exampleZh": "我能在海里发现一头鲸。",
+      "acceptedMeaningsZh": [
+        "发现；认出"
+      ],
+      "relation": "single",
+      "id": "s11-g50-i1",
+      "sourceGroupId": "s11-g50",
+      "session": 11,
+      "teacherNumber": "50",
+      "displayNumber": "50"
+    },
+    {
+      "term": "swallow",
+      "meaningZh": "吞咽；燕子",
+      "example": "Do not swallow the plastic bag.",
+      "exampleZh": "不要吞下塑料袋。",
+      "acceptedMeaningsZh": [
+        "吞咽；燕子"
+      ],
+      "relation": "single",
+      "id": "s11-g51-i1",
+      "sourceGroupId": "s11-g51",
+      "session": 11,
+      "teacherNumber": "51",
+      "displayNumber": "51"
+    },
+    {
+      "term": "make sb. ill",
+      "meaningZh": "使某人生病",
+      "example": "Dirty water can make us ill.",
+      "exampleZh": "脏水会使我们生病。",
+      "acceptedMeaningsZh": [
+        "使某人生病"
+      ],
+      "relation": "single",
+      "id": "s11-g52-i1",
+      "sourceGroupId": "s11-g52",
+      "session": 11,
+      "teacherNumber": "52",
+      "displayNumber": "52"
+    },
+    {
+      "term": "cough",
+      "meaningZh": "咳嗽",
+      "example": "The smoke makes me cough.",
+      "exampleZh": "烟使我咳嗽。",
+      "acceptedMeaningsZh": [
+        "咳嗽"
+      ],
+      "relation": "related",
+      "id": "s11-g53-i1",
+      "sourceGroupId": "s11-g53",
+      "session": 11,
+      "teacherNumber": "53",
+      "displayNumber": "53-1"
+    },
+    {
+      "term": "cough hard",
+      "meaningZh": "剧烈咳嗽",
+      "example": "He began to cough hard.",
+      "exampleZh": "他开始剧烈咳嗽。",
+      "acceptedMeaningsZh": [
+        "剧烈咳嗽"
+      ],
+      "relation": "related",
+      "id": "s11-g53-i2",
+      "sourceGroupId": "s11-g53",
+      "session": 11,
+      "teacherNumber": "53",
+      "displayNumber": "53-2"
+    },
+    {
+      "term": "at once",
+      "meaningZh": "立刻；马上",
+      "example": "Go home at once.",
+      "exampleZh": "马上回家。",
+      "acceptedMeaningsZh": [
+        "立刻；马上"
+      ],
+      "relation": "single",
+      "id": "s11-g54-i1",
+      "sourceGroupId": "s11-g54",
+      "session": 11,
+      "teacherNumber": "54",
+      "displayNumber": "54"
+    },
+    {
+      "term": "wave",
+      "meaningZh": "波浪；挥手",
+      "example": "A big wave carried the bottle away.",
+      "exampleZh": "一个大浪把瓶子冲走了。",
+      "acceptedMeaningsZh": [
+        "波浪；挥手"
+      ],
+      "relation": "single",
+      "id": "s11-g55-i1",
+      "sourceGroupId": "s11-g55",
+      "session": 11,
+      "teacherNumber": "55",
+      "displayNumber": "55"
+    },
+    {
+      "term": "carry",
+      "meaningZh": "搬运；携带",
+      "example": "I carry my bag to school.",
+      "exampleZh": "我背着书包上学。",
+      "acceptedMeaningsZh": [
+        "搬运；携带"
+      ],
+      "relation": "related",
+      "id": "s11-g56-i1",
+      "sourceGroupId": "s11-g56",
+      "session": 11,
+      "teacherNumber": "56",
+      "displayNumber": "56-1"
+    },
+    {
+      "term": "carries",
+      "meaningZh": "搬运；携带（第三人称单数）",
+      "example": "The river carries rubbish to the sea.",
+      "exampleZh": "河流把垃圾带到海里。",
+      "acceptedMeaningsZh": [
+        "搬运；携带（第三人称单数）"
+      ],
+      "relation": "related",
+      "id": "s11-g56-i2",
+      "sourceGroupId": "s11-g56",
+      "session": 11,
+      "teacherNumber": "56",
+      "displayNumber": "56-2"
+    },
+    {
+      "term": "beach",
+      "meaningZh": "海滩",
+      "example": "The beach is clean today.",
+      "exampleZh": "今天海滩很干净。",
+      "acceptedMeaningsZh": [
+        "海滩"
+      ],
+      "relation": "related",
+      "id": "s11-g57-i1",
+      "sourceGroupId": "s11-g57",
+      "session": 11,
+      "teacherNumber": "57",
+      "displayNumber": "57-1"
+    },
+    {
+      "term": "on the beach",
+      "meaningZh": "在海滩上",
+      "example": "We pick up rubbish on the beach.",
+      "exampleZh": "我们在海滩上捡垃圾。",
+      "acceptedMeaningsZh": [
+        "在海滩上"
+      ],
+      "relation": "related",
+      "id": "s11-g57-i2",
+      "sourceGroupId": "s11-g57",
+      "session": 11,
+      "teacherNumber": "57",
+      "displayNumber": "57-2"
+    },
+    {
+      "term": "at the beach",
+      "meaningZh": "在海滩",
+      "example": "We had fun at the beach.",
+      "exampleZh": "我们在海滩玩得很开心。",
+      "acceptedMeaningsZh": [
+        "在海滩"
+      ],
+      "relation": "related",
+      "id": "s11-g57-i3",
+      "sourceGroupId": "s11-g57",
+      "session": 11,
+      "teacherNumber": "57",
+      "displayNumber": "57-3"
+    },
+    {
+      "term": "lie",
+      "meaningZh": "躺；位于",
+      "example": "The cat likes to lie in the sun.",
+      "exampleZh": "猫喜欢躺在阳光下。",
+      "acceptedMeaningsZh": [
+        "躺；位于"
+      ],
+      "relation": "related",
+      "id": "s11-g58-i1",
+      "sourceGroupId": "s11-g58",
+      "session": 11,
+      "teacherNumber": "58",
+      "displayNumber": "58-1"
+    },
+    {
+      "term": "lie around",
+      "meaningZh": "到处乱放；散落",
+      "example": "Plastic bags lie around on the beach.",
+      "exampleZh": "塑料袋散落在海滩上。",
+      "acceptedMeaningsZh": [
+        "到处乱放；散落"
+      ],
+      "relation": "related",
+      "id": "s11-g58-i2",
+      "sourceGroupId": "s11-g58",
+      "session": 11,
+      "teacherNumber": "58",
+      "displayNumber": "58-2"
+    },
+    {
+      "term": "throw the rubbish away",
+      "meaningZh": "把垃圾扔掉",
+      "example": "Please throw the rubbish away.",
+      "exampleZh": "请把垃圾扔掉。",
+      "acceptedMeaningsZh": [
+        "把垃圾扔掉"
+      ],
+      "relation": "related",
+      "id": "s11-g59-i1",
+      "sourceGroupId": "s11-g59",
+      "session": 11,
+      "teacherNumber": "59",
+      "displayNumber": "59-1"
+    },
+    {
+      "term": "throw the box away",
+      "meaningZh": "把盒子扔掉",
+      "example": "Do not throw the box away.",
+      "exampleZh": "不要把盒子扔掉。",
+      "acceptedMeaningsZh": [
+        "把盒子扔掉"
+      ],
+      "relation": "related",
+      "id": "s11-g59-i2",
+      "sourceGroupId": "s11-g59",
+      "session": 11,
+      "teacherNumber": "59",
+      "displayNumber": "59-2"
+    },
+    {
+      "term": "gift",
+      "meaningZh": "礼物",
+      "example": "This book is a gift from Mum.",
+      "exampleZh": "这本书是妈妈送的礼物。",
+      "acceptedMeaningsZh": [
+        "礼物"
+      ],
+      "relation": "related",
+      "id": "s11-g60-i1",
+      "sourceGroupId": "s11-g60",
+      "session": 11,
+      "teacherNumber": "60",
+      "displayNumber": "60-1"
+    },
+    {
+      "term": "get gifts",
+      "meaningZh": "收到礼物",
+      "example": "Children get gifts on their birthdays.",
+      "exampleZh": "孩子们在生日时收到礼物。",
+      "acceptedMeaningsZh": [
+        "收到礼物"
+      ],
+      "relation": "related",
+      "id": "s11-g60-i2",
+      "sourceGroupId": "s11-g60",
+      "session": 11,
+      "teacherNumber": "60",
+      "displayNumber": "60-2"
+    },
+    {
+      "term": "collect",
+      "meaningZh": "收集",
+      "example": "We collect old paper at school.",
+      "exampleZh": "我们在学校收集废纸。",
+      "acceptedMeaningsZh": [
+        "收集"
+      ],
+      "relation": "related",
+      "id": "s11-g61-i1",
+      "sourceGroupId": "s11-g61",
+      "session": 11,
+      "teacherNumber": "61",
+      "displayNumber": "61-1"
+    },
+    {
+      "term": "collect the boxes",
+      "meaningZh": "收集这些盒子",
+      "example": "Let's collect the boxes for reuse.",
+      "exampleZh": "让我们收集这些盒子再利用。",
+      "acceptedMeaningsZh": [
+        "收集这些盒子"
+      ],
+      "relation": "related",
+      "id": "s11-g61-i2",
+      "sourceGroupId": "s11-g61",
+      "session": 11,
+      "teacherNumber": "61",
+      "displayNumber": "61-2"
+    }
+  ]
 }

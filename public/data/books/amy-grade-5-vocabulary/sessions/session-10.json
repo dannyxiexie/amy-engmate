@@ -1,9 +1,4451 @@
 {
   "number": 10,
-  "available": false,
-  "verifiedEnglish": false,
-  "groupCount": 0,
-  "itemCount": 0,
-  "groups": [],
-  "entries": []
+  "available": true,
+  "verifiedEnglish": true,
+  "groupCount": 71,
+  "itemCount": 129,
+  "groups": [
+    {
+      "id": "s10-g1",
+      "teacherNumber": "1",
+      "sourceText": "computer / play computer games",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "computer",
+          "meaningZh": "电脑",
+          "example": "This computer is new.",
+          "exampleZh": "这台电脑是新的。",
+          "acceptedMeaningsZh": [
+            "电脑"
+          ],
+          "relation": "related",
+          "id": "s10-g1-i1",
+          "sourceGroupId": "s10-g1",
+          "session": 10,
+          "teacherNumber": "1",
+          "displayNumber": "1-1"
+        },
+        {
+          "term": "play computer games",
+          "meaningZh": "玩电脑游戏",
+          "example": "I play computer games on Sunday.",
+          "exampleZh": "我星期天玩电脑游戏。",
+          "acceptedMeaningsZh": [
+            "玩电脑游戏"
+          ],
+          "relation": "related",
+          "id": "s10-g1-i2",
+          "sourceGroupId": "s10-g1",
+          "session": 10,
+          "teacherNumber": "1",
+          "displayNumber": "1-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g2",
+      "teacherNumber": "2",
+      "sourceText": "quiz / make a quiz",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "quiz",
+          "meaningZh": "小测验",
+          "example": "We have a quiz today.",
+          "exampleZh": "我们今天有一次小测验。",
+          "acceptedMeaningsZh": [
+            "小测验"
+          ],
+          "relation": "related",
+          "id": "s10-g2-i1",
+          "sourceGroupId": "s10-g2",
+          "session": 10,
+          "teacherNumber": "2",
+          "displayNumber": "2-1"
+        },
+        {
+          "term": "make a quiz",
+          "meaningZh": "编一份测验",
+          "example": "The teacher will make a quiz.",
+          "exampleZh": "老师会编一份测验。",
+          "acceptedMeaningsZh": [
+            "编一份测验"
+          ],
+          "relation": "related",
+          "id": "s10-g2-i2",
+          "sourceGroupId": "s10-g2",
+          "session": 10,
+          "teacherNumber": "2",
+          "displayNumber": "2-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g3",
+      "teacherNumber": "3",
+      "sourceText": "click",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "click",
+          "meaningZh": "点击",
+          "example": "Click the blue button.",
+          "exampleZh": "点击蓝色按钮。",
+          "acceptedMeaningsZh": [
+            "点击"
+          ],
+          "relation": "single",
+          "id": "s10-g3-i1",
+          "sourceGroupId": "s10-g3",
+          "session": 10,
+          "teacherNumber": "3",
+          "displayNumber": "3"
+        }
+      ]
+    },
+    {
+      "id": "s10-g4",
+      "teacherNumber": "4",
+      "sourceText": "delete",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "delete",
+          "meaningZh": "删除",
+          "example": "Please delete this photo.",
+          "exampleZh": "请删除这张照片。",
+          "acceptedMeaningsZh": [
+            "删除"
+          ],
+          "relation": "single",
+          "id": "s10-g4-i1",
+          "sourceGroupId": "s10-g4",
+          "session": 10,
+          "teacherNumber": "4",
+          "displayNumber": "4"
+        }
+      ]
+    },
+    {
+      "id": "s10-g5",
+      "teacherNumber": "5",
+      "sourceText": "password",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "password",
+          "meaningZh": "密码",
+          "example": "Do not tell others your password.",
+          "exampleZh": "不要把密码告诉别人。",
+          "acceptedMeaningsZh": [
+            "密码"
+          ],
+          "relation": "single",
+          "id": "s10-g5-i1",
+          "sourceGroupId": "s10-g5",
+          "session": 10,
+          "teacherNumber": "5",
+          "displayNumber": "5"
+        }
+      ]
+    },
+    {
+      "id": "s10-g6",
+      "teacherNumber": "6",
+      "sourceText": "store(s)",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "store",
+          "meaningZh": "储存；商店",
+          "example": "Computers store information.",
+          "exampleZh": "电脑储存信息。",
+          "acceptedMeaningsZh": [
+            "储存；商店",
+            "保存；商店"
+          ],
+          "relation": "single",
+          "id": "s10-g6-i1",
+          "sourceGroupId": "s10-g6",
+          "session": 10,
+          "teacherNumber": "6",
+          "displayNumber": "6"
+        }
+      ]
+    },
+    {
+      "id": "s10-g7",
+      "teacherNumber": "7",
+      "sourceText": "search",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "search",
+          "meaningZh": "搜索；查找",
+          "example": "I search the Internet for facts.",
+          "exampleZh": "我在网上搜索资料。",
+          "acceptedMeaningsZh": [
+            "搜索；查找"
+          ],
+          "relation": "single",
+          "id": "s10-g7-i1",
+          "sourceGroupId": "s10-g7",
+          "session": 10,
+          "teacherNumber": "7",
+          "displayNumber": "7"
+        }
+      ]
+    },
+    {
+      "id": "s10-g8",
+      "teacherNumber": "8",
+      "sourceText": "information / search for information",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "information",
+          "meaningZh": "信息；资料",
+          "example": "The book has useful information.",
+          "exampleZh": "这本书里有有用的信息。",
+          "acceptedMeaningsZh": [
+            "信息；资料"
+          ],
+          "relation": "related",
+          "id": "s10-g8-i1",
+          "sourceGroupId": "s10-g8",
+          "session": 10,
+          "teacherNumber": "8",
+          "displayNumber": "8-1"
+        },
+        {
+          "term": "search for information",
+          "meaningZh": "搜索信息",
+          "example": "We search for information online.",
+          "exampleZh": "我们在网上搜索信息。",
+          "acceptedMeaningsZh": [
+            "搜索信息"
+          ],
+          "relation": "related",
+          "id": "s10-g8-i2",
+          "sourceGroupId": "s10-g8",
+          "session": 10,
+          "teacherNumber": "8",
+          "displayNumber": "8-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g9",
+      "teacherNumber": "9",
+      "sourceText": "desktop",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "desktop",
+          "meaningZh": "台式电脑；桌面",
+          "example": "The desktop is in the study.",
+          "exampleZh": "台式电脑在书房里。",
+          "acceptedMeaningsZh": [
+            "台式电脑；桌面"
+          ],
+          "relation": "single",
+          "id": "s10-g9-i1",
+          "sourceGroupId": "s10-g9",
+          "session": 10,
+          "teacherNumber": "9",
+          "displayNumber": "9"
+        }
+      ]
+    },
+    {
+      "id": "s10-g10",
+      "teacherNumber": "10",
+      "sourceText": "laptop",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "laptop",
+          "meaningZh": "笔记本电脑",
+          "example": "Her laptop is very light.",
+          "exampleZh": "她的笔记本电脑很轻。",
+          "acceptedMeaningsZh": [
+            "笔记本电脑"
+          ],
+          "relation": "single",
+          "id": "s10-g10-i1",
+          "sourceGroupId": "s10-g10",
+          "session": 10,
+          "teacherNumber": "10",
+          "displayNumber": "10"
+        }
+      ]
+    },
+    {
+      "id": "s10-g11",
+      "teacherNumber": "11",
+      "sourceText": "fact → facts",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "fact",
+          "meaningZh": "事实",
+          "example": "This is an interesting fact.",
+          "exampleZh": "这是一个有趣的事实。",
+          "acceptedMeaningsZh": [
+            "事实"
+          ],
+          "relation": "related",
+          "id": "s10-g11-i1",
+          "sourceGroupId": "s10-g11",
+          "session": 10,
+          "teacherNumber": "11",
+          "displayNumber": "11-1"
+        },
+        {
+          "term": "facts",
+          "meaningZh": "多个事实；资料",
+          "example": "I found three facts about whales.",
+          "exampleZh": "我找到了三个关于鲸的事实。",
+          "acceptedMeaningsZh": [
+            "多个事实；资料"
+          ],
+          "relation": "related",
+          "id": "s10-g11-i2",
+          "sourceGroupId": "s10-g11",
+          "session": 10,
+          "teacherNumber": "11",
+          "displayNumber": "11-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g12",
+      "teacherNumber": "12",
+      "sourceText": "as ... as ...",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "as ... as ...",
+          "meaningZh": "和……一样……",
+          "example": "My bag is as light as yours.",
+          "exampleZh": "我的书包和你的一样轻。",
+          "acceptedMeaningsZh": [
+            "和……一样……"
+          ],
+          "relation": "single",
+          "id": "s10-g12-i1",
+          "sourceGroupId": "s10-g12",
+          "session": 10,
+          "teacherNumber": "12",
+          "displayNumber": "12"
+        }
+      ]
+    },
+    {
+      "id": "s10-g13",
+      "teacherNumber": "13",
+      "sourceText": "problem",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "problem",
+          "meaningZh": "问题；难题",
+          "example": "We can solve this problem.",
+          "exampleZh": "我们能解决这个问题。",
+          "acceptedMeaningsZh": [
+            "问题；难题"
+          ],
+          "relation": "single",
+          "id": "s10-g13-i1",
+          "sourceGroupId": "s10-g13",
+          "session": 10,
+          "teacherNumber": "13",
+          "displayNumber": "13"
+        }
+      ]
+    },
+    {
+      "id": "s10-g14",
+      "teacherNumber": "14",
+      "sourceText": "statement(s)",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "statement",
+          "meaningZh": "陈述；说法",
+          "example": "Read the statement carefully.",
+          "exampleZh": "仔细阅读这条陈述。",
+          "acceptedMeaningsZh": [
+            "陈述；说法"
+          ],
+          "relation": "related",
+          "id": "s10-g14-i1",
+          "sourceGroupId": "s10-g14",
+          "session": 10,
+          "teacherNumber": "14",
+          "displayNumber": "14-1"
+        },
+        {
+          "term": "statements",
+          "meaningZh": "多条陈述；说法",
+          "example": "Check the two statements.",
+          "exampleZh": "检查这两条陈述。",
+          "acceptedMeaningsZh": [
+            "多条陈述；说法"
+          ],
+          "relation": "related",
+          "id": "s10-g14-i2",
+          "sourceGroupId": "s10-g14",
+          "session": 10,
+          "teacherNumber": "14",
+          "displayNumber": "14-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g15",
+      "teacherNumber": "15",
+      "sourceText": "enemy / an enemy",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "enemy",
+          "meaningZh": "敌人",
+          "example": "The dragon is not our enemy.",
+          "exampleZh": "这条龙不是我们的敌人。",
+          "acceptedMeaningsZh": [
+            "敌人"
+          ],
+          "relation": "related",
+          "id": "s10-g15-i1",
+          "sourceGroupId": "s10-g15",
+          "session": 10,
+          "teacherNumber": "15",
+          "displayNumber": "15-1"
+        },
+        {
+          "term": "an enemy",
+          "meaningZh": "一个敌人",
+          "example": "He saw an enemy near the gate.",
+          "exampleZh": "他在门附近看见了一个敌人。",
+          "acceptedMeaningsZh": [
+            "一个敌人"
+          ],
+          "relation": "related",
+          "id": "s10-g15-i2",
+          "sourceGroupId": "s10-g15",
+          "session": 10,
+          "teacherNumber": "15",
+          "displayNumber": "15-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g16",
+      "teacherNumber": "16",
+      "sourceText": "should / should be used",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "should",
+          "meaningZh": "应该",
+          "example": "You should finish your homework.",
+          "exampleZh": "你应该完成作业。",
+          "acceptedMeaningsZh": [
+            "应该"
+          ],
+          "relation": "related",
+          "id": "s10-g16-i1",
+          "sourceGroupId": "s10-g16",
+          "session": 10,
+          "teacherNumber": "16",
+          "displayNumber": "16-1"
+        },
+        {
+          "term": "should be used",
+          "meaningZh": "应该被使用",
+          "example": "This tool should be used carefully.",
+          "exampleZh": "这个工具应该小心使用。",
+          "acceptedMeaningsZh": [
+            "应该被使用"
+          ],
+          "relation": "related",
+          "id": "s10-g16-i2",
+          "sourceGroupId": "s10-g16",
+          "session": 10,
+          "teacherNumber": "16",
+          "displayNumber": "16-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g17",
+      "teacherNumber": "17",
+      "sourceText": "birth / birthday / birth date",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "birth",
+          "meaningZh": "出生",
+          "example": "The story tells us about his birth.",
+          "exampleZh": "这个故事告诉我们他的出生情况。",
+          "acceptedMeaningsZh": [
+            "出生"
+          ],
+          "relation": "related",
+          "id": "s10-g17-i1",
+          "sourceGroupId": "s10-g17",
+          "session": 10,
+          "teacherNumber": "17",
+          "displayNumber": "17-1"
+        },
+        {
+          "term": "birthday",
+          "meaningZh": "生日",
+          "example": "Today is my birthday.",
+          "exampleZh": "今天是我的生日。",
+          "acceptedMeaningsZh": [
+            "生日"
+          ],
+          "relation": "related",
+          "id": "s10-g17-i2",
+          "sourceGroupId": "s10-g17",
+          "session": 10,
+          "teacherNumber": "17",
+          "displayNumber": "17-2"
+        },
+        {
+          "term": "birth date",
+          "meaningZh": "出生日期",
+          "example": "Write your birth date here.",
+          "exampleZh": "在这里写下你的出生日期。",
+          "acceptedMeaningsZh": [
+            "出生日期"
+          ],
+          "relation": "related",
+          "id": "s10-g17-i3",
+          "sourceGroupId": "s10-g17",
+          "session": 10,
+          "teacherNumber": "17",
+          "displayNumber": "17-3"
+        }
+      ]
+    },
+    {
+      "id": "s10-g18",
+      "teacherNumber": "18",
+      "sourceText": "create",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "create",
+          "meaningZh": "创建；创造",
+          "example": "We can create a new file.",
+          "exampleZh": "我们可以创建一个新文件。",
+          "acceptedMeaningsZh": [
+            "创建；创造"
+          ],
+          "relation": "single",
+          "id": "s10-g18-i1",
+          "sourceGroupId": "s10-g18",
+          "session": 10,
+          "teacherNumber": "18",
+          "displayNumber": "18"
+        }
+      ]
+    },
+    {
+      "id": "s10-g19",
+      "teacherNumber": "19",
+      "sourceText": "button",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "button",
+          "meaningZh": "按钮",
+          "example": "Press the green button.",
+          "exampleZh": "按下绿色按钮。",
+          "acceptedMeaningsZh": [
+            "按钮"
+          ],
+          "relation": "single",
+          "id": "s10-g19-i1",
+          "sourceGroupId": "s10-g19",
+          "session": 10,
+          "teacherNumber": "19",
+          "displayNumber": "19"
+        }
+      ]
+    },
+    {
+      "id": "s10-g20",
+      "teacherNumber": "20",
+      "sourceText": "store information",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "store information",
+          "meaningZh": "储存信息",
+          "example": "A computer can store information.",
+          "exampleZh": "电脑可以储存信息。",
+          "acceptedMeaningsZh": [
+            "储存信息"
+          ],
+          "relation": "single",
+          "id": "s10-g20-i1",
+          "sourceGroupId": "s10-g20",
+          "session": 10,
+          "teacherNumber": "20",
+          "displayNumber": "20"
+        }
+      ]
+    },
+    {
+      "id": "s10-g21",
+      "teacherNumber": "21",
+      "sourceText": "(a) file / delete a file",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "a file",
+          "meaningZh": "一个文件",
+          "example": "I saved a file on the computer.",
+          "exampleZh": "我在电脑上保存了一个文件。",
+          "acceptedMeaningsZh": [
+            "一个文件"
+          ],
+          "relation": "related",
+          "id": "s10-g21-i1",
+          "sourceGroupId": "s10-g21",
+          "session": 10,
+          "teacherNumber": "21",
+          "displayNumber": "21-1"
+        },
+        {
+          "term": "delete a file",
+          "meaningZh": "删除一个文件",
+          "example": "Do not delete a file by mistake.",
+          "exampleZh": "不要误删文件。",
+          "acceptedMeaningsZh": [
+            "删除一个文件"
+          ],
+          "relation": "related",
+          "id": "s10-g21-i2",
+          "sourceGroupId": "s10-g21",
+          "session": 10,
+          "teacherNumber": "21",
+          "displayNumber": "21-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g22",
+      "teacherNumber": "22",
+      "sourceText": "Recycle Bin",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "Recycle Bin",
+          "meaningZh": "回收站",
+          "example": "The deleted file is in the Recycle Bin.",
+          "exampleZh": "删除的文件在回收站里。",
+          "acceptedMeaningsZh": [
+            "回收站"
+          ],
+          "relation": "single",
+          "id": "s10-g22-i1",
+          "sourceGroupId": "s10-g22",
+          "session": 10,
+          "teacherNumber": "22",
+          "displayNumber": "22"
+        }
+      ]
+    },
+    {
+      "id": "s10-g23",
+      "teacherNumber": "23",
+      "sourceText": "computer screen",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "computer screen",
+          "meaningZh": "电脑屏幕",
+          "example": "The words are on the computer screen.",
+          "exampleZh": "这些字在电脑屏幕上。",
+          "acceptedMeaningsZh": [
+            "电脑屏幕"
+          ],
+          "relation": "single",
+          "id": "s10-g23-i1",
+          "sourceGroupId": "s10-g23",
+          "session": 10,
+          "teacherNumber": "23",
+          "displayNumber": "23"
+        }
+      ]
+    },
+    {
+      "id": "s10-g24",
+      "teacherNumber": "24",
+      "sourceText": "check / check homework",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "check",
+          "meaningZh": "检查",
+          "example": "Please check your answers.",
+          "exampleZh": "请检查你的答案。",
+          "acceptedMeaningsZh": [
+            "检查"
+          ],
+          "relation": "related",
+          "id": "s10-g24-i1",
+          "sourceGroupId": "s10-g24",
+          "session": 10,
+          "teacherNumber": "24",
+          "displayNumber": "24-1"
+        },
+        {
+          "term": "check homework",
+          "meaningZh": "检查作业",
+          "example": "Dad helps me check homework.",
+          "exampleZh": "爸爸帮我检查作业。",
+          "acceptedMeaningsZh": [
+            "检查作业"
+          ],
+          "relation": "related",
+          "id": "s10-g24-i2",
+          "sourceGroupId": "s10-g24",
+          "session": 10,
+          "teacherNumber": "24",
+          "displayNumber": "24-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g25",
+      "teacherNumber": "25",
+      "sourceText": "system",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "system",
+          "meaningZh": "系统",
+          "example": "The computer system is ready.",
+          "exampleZh": "电脑系统准备好了。",
+          "acceptedMeaningsZh": [
+            "系统"
+          ],
+          "relation": "single",
+          "id": "s10-g25-i1",
+          "sourceGroupId": "s10-g25",
+          "session": 10,
+          "teacherNumber": "25",
+          "displayNumber": "25"
+        }
+      ]
+    },
+    {
+      "id": "s10-g26",
+      "teacherNumber": "26",
+      "sourceText": "True → “T” / False → “F”",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "True (T)",
+          "meaningZh": "正确（用 T 表示）",
+          "example": "Write True (T) if the statement is right.",
+          "exampleZh": "如果陈述正确，就写 True（T）。",
+          "acceptedMeaningsZh": [
+            "正确（用 T 表示）"
+          ],
+          "relation": "related",
+          "id": "s10-g26-i1",
+          "sourceGroupId": "s10-g26",
+          "session": 10,
+          "teacherNumber": "26",
+          "displayNumber": "26-1"
+        },
+        {
+          "term": "False (F)",
+          "meaningZh": "错误（用 F 表示）",
+          "example": "Write False (F) if the statement is wrong.",
+          "exampleZh": "如果陈述错误，就写 False（F）。",
+          "acceptedMeaningsZh": [
+            "错误（用 F 表示）"
+          ],
+          "relation": "related",
+          "id": "s10-g26-i2",
+          "sourceGroupId": "s10-g26",
+          "session": 10,
+          "teacherNumber": "26",
+          "displayNumber": "26-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g27",
+      "teacherNumber": "27",
+      "sourceText": "ENIAC",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "ENIAC",
+          "meaningZh": "埃尼阿克（早期电子计算机）",
+          "example": "ENIAC was an early computer.",
+          "exampleZh": "埃尼阿克是一台早期电子计算机。",
+          "acceptedMeaningsZh": [
+            "埃尼阿克（早期电子计算机）"
+          ],
+          "relation": "single",
+          "id": "s10-g27-i1",
+          "sourceGroupId": "s10-g27",
+          "session": 10,
+          "teacherNumber": "27",
+          "displayNumber": "27"
+        }
+      ]
+    },
+    {
+      "id": "s10-g28",
+      "teacherNumber": "28",
+      "sourceText": "the well-known / the best-known / good (well) → better → best",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "the well-known",
+          "meaningZh": "那个著名的",
+          "example": "The well-known story is true.",
+          "exampleZh": "那个著名的故事是真的。",
+          "acceptedMeaningsZh": [
+            "那个著名的"
+          ],
+          "relation": "related",
+          "id": "s10-g28-i1",
+          "sourceGroupId": "s10-g28",
+          "session": 10,
+          "teacherNumber": "28",
+          "displayNumber": "28-1"
+        },
+        {
+          "term": "the best-known",
+          "meaningZh": "那个最著名的",
+          "example": "This is the best-known computer here.",
+          "exampleZh": "这是这里最著名的电脑。",
+          "acceptedMeaningsZh": [
+            "那个最著名的"
+          ],
+          "relation": "related",
+          "id": "s10-g28-i2",
+          "sourceGroupId": "s10-g28",
+          "session": 10,
+          "teacherNumber": "28",
+          "displayNumber": "28-2"
+        },
+        {
+          "term": "good",
+          "meaningZh": "好的",
+          "example": "This is a good idea.",
+          "exampleZh": "这是一个好主意。",
+          "acceptedMeaningsZh": [
+            "好的"
+          ],
+          "relation": "related",
+          "id": "s10-g28-i3",
+          "sourceGroupId": "s10-g28",
+          "session": 10,
+          "teacherNumber": "28",
+          "displayNumber": "28-3"
+        },
+        {
+          "term": "well",
+          "meaningZh": "好地",
+          "example": "She sings well.",
+          "exampleZh": "她唱得很好。",
+          "acceptedMeaningsZh": [
+            "好地"
+          ],
+          "relation": "related",
+          "id": "s10-g28-i4",
+          "sourceGroupId": "s10-g28",
+          "session": 10,
+          "teacherNumber": "28",
+          "displayNumber": "28-4"
+        },
+        {
+          "term": "better",
+          "meaningZh": "更好的；更好地",
+          "example": "This computer works better.",
+          "exampleZh": "这台电脑运行得更好。",
+          "acceptedMeaningsZh": [
+            "更好的；更好地"
+          ],
+          "relation": "related",
+          "id": "s10-g28-i5",
+          "sourceGroupId": "s10-g28",
+          "session": 10,
+          "teacherNumber": "28",
+          "displayNumber": "28-5"
+        },
+        {
+          "term": "best",
+          "meaningZh": "最好的；最好地",
+          "example": "Amy did the best in the quiz.",
+          "exampleZh": "艾米在小测验中表现最好。",
+          "acceptedMeaningsZh": [
+            "最好的；最好地"
+          ],
+          "relation": "related",
+          "id": "s10-g28-i6",
+          "sourceGroupId": "s10-g28",
+          "session": 10,
+          "teacherNumber": "28",
+          "displayNumber": "28-6"
+        }
+      ]
+    },
+    {
+      "id": "s10-g29",
+      "teacherNumber": "29",
+      "sourceText": "key / keyboard",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "key",
+          "meaningZh": "键；钥匙",
+          "example": "Press any key to start.",
+          "exampleZh": "按任意键开始。",
+          "acceptedMeaningsZh": [
+            "键；钥匙"
+          ],
+          "relation": "related",
+          "id": "s10-g29-i1",
+          "sourceGroupId": "s10-g29",
+          "session": 10,
+          "teacherNumber": "29",
+          "displayNumber": "29-1"
+        },
+        {
+          "term": "keyboard",
+          "meaningZh": "键盘",
+          "example": "The keyboard is beside the screen.",
+          "exampleZh": "键盘在屏幕旁边。",
+          "acceptedMeaningsZh": [
+            "键盘"
+          ],
+          "relation": "related",
+          "id": "s10-g29-i2",
+          "sourceGroupId": "s10-g29",
+          "session": 10,
+          "teacherNumber": "29",
+          "displayNumber": "29-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g30",
+      "teacherNumber": "30",
+      "sourceText": "don’t / doesn’t → didn’t",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "don't",
+          "meaningZh": "不；不要（用于 I、you、we、they）",
+          "example": "I don't know the password.",
+          "exampleZh": "我不知道密码。",
+          "acceptedMeaningsZh": [
+            "不；不要（用于 I、you、we、they）"
+          ],
+          "relation": "related",
+          "id": "s10-g30-i1",
+          "sourceGroupId": "s10-g30",
+          "session": 10,
+          "teacherNumber": "30",
+          "displayNumber": "30-1"
+        },
+        {
+          "term": "doesn't",
+          "meaningZh": "不（用于 he、she、it）",
+          "example": "She doesn't use this laptop.",
+          "exampleZh": "她不用这台笔记本电脑。",
+          "acceptedMeaningsZh": [
+            "不（用于 he、she、it）"
+          ],
+          "relation": "related",
+          "id": "s10-g30-i2",
+          "sourceGroupId": "s10-g30",
+          "session": 10,
+          "teacherNumber": "30",
+          "displayNumber": "30-2"
+        },
+        {
+          "term": "didn't",
+          "meaningZh": "没有（过去时）",
+          "example": "We didn't play games yesterday.",
+          "exampleZh": "我们昨天没有玩游戏。",
+          "acceptedMeaningsZh": [
+            "没有（过去时）"
+          ],
+          "relation": "related",
+          "id": "s10-g30-i3",
+          "sourceGroupId": "s10-g30",
+          "session": 10,
+          "teacherNumber": "30",
+          "displayNumber": "30-3"
+        }
+      ]
+    },
+    {
+      "id": "s10-g31",
+      "teacherNumber": "31",
+      "sourceText": "It is → It was",
+      "sourceFile": "10-1.JPG",
+      "items": [
+        {
+          "term": "It is",
+          "meaningZh": "它是；现在是",
+          "example": "It is a new computer.",
+          "exampleZh": "它是一台新电脑。",
+          "acceptedMeaningsZh": [
+            "它是；现在是"
+          ],
+          "relation": "related",
+          "id": "s10-g31-i1",
+          "sourceGroupId": "s10-g31",
+          "session": 10,
+          "teacherNumber": "31",
+          "displayNumber": "31-1"
+        },
+        {
+          "term": "It was",
+          "meaningZh": "它过去是；当时是",
+          "example": "It was very big.",
+          "exampleZh": "它过去很大。",
+          "acceptedMeaningsZh": [
+            "它过去是；当时是"
+          ],
+          "relation": "related",
+          "id": "s10-g31-i2",
+          "sourceGroupId": "s10-g31",
+          "session": 10,
+          "teacherNumber": "31",
+          "displayNumber": "31-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g32",
+      "teacherNumber": "32",
+      "sourceText": "as ... as ... / as + adj. / adv. + as ... / not as + adj. / adv. + as ... / This laptop is as light as that one. / This old computer is not as fast as the new one.",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "as + adj. / adv. + as ...",
+          "meaningZh": "和……一样……",
+          "example": "This laptop is as light as that one.",
+          "exampleZh": "这台笔记本电脑和那台一样轻。",
+          "acceptedMeaningsZh": [
+            "和……一样……"
+          ],
+          "relation": "related",
+          "id": "s10-g32-i1",
+          "sourceGroupId": "s10-g32",
+          "session": 10,
+          "teacherNumber": "32",
+          "displayNumber": "32-1"
+        },
+        {
+          "term": "not as + adj. / adv. + as ...",
+          "meaningZh": "不如……那样……",
+          "example": "This old computer is not as fast as the new one.",
+          "exampleZh": "这台旧电脑不如新电脑快。",
+          "acceptedMeaningsZh": [
+            "不如……那样……"
+          ],
+          "relation": "related",
+          "id": "s10-g32-i2",
+          "sourceGroupId": "s10-g32",
+          "session": 10,
+          "teacherNumber": "32",
+          "displayNumber": "32-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g33",
+      "teacherNumber": "33",
+      "sourceText": "beside / besides",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "beside",
+          "meaningZh": "在……旁边",
+          "example": "The mouse is beside the keyboard.",
+          "exampleZh": "鼠标在键盘旁边。",
+          "acceptedMeaningsZh": [
+            "在……旁边"
+          ],
+          "relation": "related",
+          "id": "s10-g33-i1",
+          "sourceGroupId": "s10-g33",
+          "session": 10,
+          "teacherNumber": "33",
+          "displayNumber": "33-1"
+        },
+        {
+          "term": "besides",
+          "meaningZh": "除……之外还；而且",
+          "example": "Besides English, I study Chinese.",
+          "exampleZh": "除了英语，我还学习语文。",
+          "acceptedMeaningsZh": [
+            "除……之外还；而且"
+          ],
+          "relation": "related",
+          "id": "s10-g33-i2",
+          "sourceGroupId": "s10-g33",
+          "session": 10,
+          "teacherNumber": "33",
+          "displayNumber": "33-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g34",
+      "teacherNumber": "34",
+      "sourceText": "ton(s) / 50 tons",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "ton",
+          "meaningZh": "吨",
+          "example": "The machine weighs one ton.",
+          "exampleZh": "这台机器重一吨。",
+          "acceptedMeaningsZh": [
+            "吨"
+          ],
+          "relation": "related",
+          "id": "s10-g34-i1",
+          "sourceGroupId": "s10-g34",
+          "session": 10,
+          "teacherNumber": "34",
+          "displayNumber": "34-1"
+        },
+        {
+          "term": "tons",
+          "meaningZh": "多吨",
+          "example": "The old computer weighed many tons.",
+          "exampleZh": "那台旧电脑重很多吨。",
+          "acceptedMeaningsZh": [
+            "多吨"
+          ],
+          "relation": "related",
+          "id": "s10-g34-i2",
+          "sourceGroupId": "s10-g34",
+          "session": 10,
+          "teacherNumber": "34",
+          "displayNumber": "34-2"
+        },
+        {
+          "term": "50 tons",
+          "meaningZh": "五十吨",
+          "example": "ENIAC weighed about 50 tons.",
+          "exampleZh": "埃尼阿克重约五十吨。",
+          "acceptedMeaningsZh": [
+            "五十吨"
+          ],
+          "relation": "related",
+          "id": "s10-g34-i3",
+          "sourceGroupId": "s10-g34",
+          "session": 10,
+          "teacherNumber": "34",
+          "displayNumber": "34-3"
+        }
+      ]
+    },
+    {
+      "id": "s10-g35",
+      "teacherNumber": "35",
+      "sourceText": "as big as an elephant / as heavy as four elephants",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "as big as an elephant",
+          "meaningZh": "和一头大象一样大",
+          "example": "The machine is as big as an elephant.",
+          "exampleZh": "这台机器和一头大象一样大。",
+          "acceptedMeaningsZh": [
+            "和一头大象一样大"
+          ],
+          "relation": "related",
+          "id": "s10-g35-i1",
+          "sourceGroupId": "s10-g35",
+          "session": 10,
+          "teacherNumber": "35",
+          "displayNumber": "35-1"
+        },
+        {
+          "term": "as heavy as four elephants",
+          "meaningZh": "和四头大象一样重",
+          "example": "It is as heavy as four elephants.",
+          "exampleZh": "它和四头大象一样重。",
+          "acceptedMeaningsZh": [
+            "和四头大象一样重"
+          ],
+          "relation": "related",
+          "id": "s10-g35-i2",
+          "sourceGroupId": "s10-g35",
+          "session": 10,
+          "teacherNumber": "35",
+          "displayNumber": "35-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g36",
+      "teacherNumber": "36",
+      "sourceText": "different / difficult",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "different",
+          "meaningZh": "不同的",
+          "example": "The two computers are different.",
+          "exampleZh": "这两台电脑不同。",
+          "acceptedMeaningsZh": [
+            "不同的"
+          ],
+          "relation": "related",
+          "id": "s10-g36-i1",
+          "sourceGroupId": "s10-g36",
+          "session": 10,
+          "teacherNumber": "36",
+          "displayNumber": "36-1"
+        },
+        {
+          "term": "difficult",
+          "meaningZh": "困难的",
+          "example": "This maths question is difficult.",
+          "exampleZh": "这道数学题很难。",
+          "acceptedMeaningsZh": [
+            "困难的"
+          ],
+          "relation": "related",
+          "id": "s10-g36-i2",
+          "sourceGroupId": "s10-g36",
+          "session": 10,
+          "teacherNumber": "36",
+          "displayNumber": "36-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g37",
+      "teacherNumber": "37",
+      "sourceText": "task / maths tasks / difficult tasks",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "task",
+          "meaningZh": "任务",
+          "example": "I finished the task.",
+          "exampleZh": "我完成了任务。",
+          "acceptedMeaningsZh": [
+            "任务"
+          ],
+          "relation": "related",
+          "id": "s10-g37-i1",
+          "sourceGroupId": "s10-g37",
+          "session": 10,
+          "teacherNumber": "37",
+          "displayNumber": "37-1"
+        },
+        {
+          "term": "maths tasks",
+          "meaningZh": "数学任务；数学题",
+          "example": "The computer can do maths tasks.",
+          "exampleZh": "电脑可以完成数学任务。",
+          "acceptedMeaningsZh": [
+            "数学任务；数学题"
+          ],
+          "relation": "related",
+          "id": "s10-g37-i2",
+          "sourceGroupId": "s10-g37",
+          "session": 10,
+          "teacherNumber": "37",
+          "displayNumber": "37-2"
+        },
+        {
+          "term": "difficult tasks",
+          "meaningZh": "困难的任务",
+          "example": "It can finish difficult tasks.",
+          "exampleZh": "它可以完成困难的任务。",
+          "acceptedMeaningsZh": [
+            "困难的任务"
+          ],
+          "relation": "related",
+          "id": "s10-g37-i3",
+          "sourceGroupId": "s10-g37",
+          "session": 10,
+          "teacherNumber": "37",
+          "displayNumber": "37-3"
+        }
+      ]
+    },
+    {
+      "id": "s10-g38",
+      "teacherNumber": "38",
+      "sourceText": "microchip",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "microchip",
+          "meaningZh": "微芯片",
+          "example": "A microchip is very small.",
+          "exampleZh": "微芯片非常小。",
+          "acceptedMeaningsZh": [
+            "微芯片"
+          ],
+          "relation": "single",
+          "id": "s10-g38-i1",
+          "sourceGroupId": "s10-g38",
+          "session": 10,
+          "teacherNumber": "38",
+          "displayNumber": "38"
+        }
+      ]
+    },
+    {
+      "id": "s10-g39",
+      "teacherNumber": "39",
+      "sourceText": "make → made",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "make",
+          "meaningZh": "制作；使得",
+          "example": "We make a paper plane.",
+          "exampleZh": "我们制作一架纸飞机。",
+          "acceptedMeaningsZh": [
+            "制作；使得"
+          ],
+          "relation": "related",
+          "id": "s10-g39-i1",
+          "sourceGroupId": "s10-g39",
+          "session": 10,
+          "teacherNumber": "39",
+          "displayNumber": "39-1"
+        },
+        {
+          "term": "made",
+          "meaningZh": "制作了；使得了（make 的过去式）",
+          "example": "Dad made a small robot.",
+          "exampleZh": "爸爸做了一个小机器人。",
+          "acceptedMeaningsZh": [
+            "制作了；使得了（make 的过去式）"
+          ],
+          "relation": "related",
+          "id": "s10-g39-i2",
+          "sourceGroupId": "s10-g39",
+          "session": 10,
+          "teacherNumber": "39",
+          "displayNumber": "39-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g40",
+      "teacherNumber": "40",
+      "sourceText": "are → were",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "are",
+          "meaningZh": "是（现在时复数）",
+          "example": "These computers are fast.",
+          "exampleZh": "这些电脑很快。",
+          "acceptedMeaningsZh": [
+            "是（现在时复数）"
+          ],
+          "relation": "related",
+          "id": "s10-g40-i1",
+          "sourceGroupId": "s10-g40",
+          "session": 10,
+          "teacherNumber": "40",
+          "displayNumber": "40-1"
+        },
+        {
+          "term": "were",
+          "meaningZh": "过去是（are 的过去式）",
+          "example": "The old computers were large.",
+          "exampleZh": "旧电脑过去很大。",
+          "acceptedMeaningsZh": [
+            "过去是（are 的过去式）"
+          ],
+          "relation": "related",
+          "id": "s10-g40-i2",
+          "sourceGroupId": "s10-g40",
+          "session": 10,
+          "teacherNumber": "40",
+          "displayNumber": "40-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g41",
+      "teacherNumber": "41",
+      "sourceText": "salt / a grain of salt",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "salt",
+          "meaningZh": "盐",
+          "example": "Please add a little salt.",
+          "exampleZh": "请加一点盐。",
+          "acceptedMeaningsZh": [
+            "盐"
+          ],
+          "relation": "related",
+          "id": "s10-g41-i1",
+          "sourceGroupId": "s10-g41",
+          "session": 10,
+          "teacherNumber": "41",
+          "displayNumber": "41-1"
+        },
+        {
+          "term": "a grain of salt",
+          "meaningZh": "一粒盐",
+          "example": "The chip is as small as a grain of salt.",
+          "exampleZh": "这块芯片和一粒盐一样小。",
+          "acceptedMeaningsZh": [
+            "一粒盐"
+          ],
+          "relation": "related",
+          "id": "s10-g41-i2",
+          "sourceGroupId": "s10-g41",
+          "session": 10,
+          "teacherNumber": "41",
+          "displayNumber": "41-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g42",
+      "teacherNumber": "42",
+      "sourceText": "How amazing!",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "How amazing!",
+          "meaningZh": "太神奇了！",
+          "example": "How amazing! The tiny chip can do so much.",
+          "exampleZh": "太神奇了！这块小芯片能做这么多事。",
+          "acceptedMeaningsZh": [
+            "太神奇了！"
+          ],
+          "relation": "single",
+          "id": "s10-g42-i1",
+          "sourceGroupId": "s10-g42",
+          "session": 10,
+          "teacherNumber": "42",
+          "displayNumber": "42"
+        }
+      ]
+    },
+    {
+      "id": "s10-g43",
+      "teacherNumber": "43",
+      "sourceText": "email / an email / send emails",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "email",
+          "meaningZh": "电子邮件",
+          "example": "I got an email from Amy.",
+          "exampleZh": "我收到了一封艾米发来的电子邮件。",
+          "acceptedMeaningsZh": [
+            "电子邮件"
+          ],
+          "relation": "related",
+          "id": "s10-g43-i1",
+          "sourceGroupId": "s10-g43",
+          "session": 10,
+          "teacherNumber": "43",
+          "displayNumber": "43-1"
+        },
+        {
+          "term": "an email",
+          "meaningZh": "一封电子邮件",
+          "example": "Please write an email to me.",
+          "exampleZh": "请给我写一封电子邮件。",
+          "acceptedMeaningsZh": [
+            "一封电子邮件"
+          ],
+          "relation": "related",
+          "id": "s10-g43-i2",
+          "sourceGroupId": "s10-g43",
+          "session": 10,
+          "teacherNumber": "43",
+          "displayNumber": "43-2"
+        },
+        {
+          "term": "send emails",
+          "meaningZh": "发送电子邮件",
+          "example": "We use computers to send emails.",
+          "exampleZh": "我们用电脑发送电子邮件。",
+          "acceptedMeaningsZh": [
+            "发送电子邮件"
+          ],
+          "relation": "related",
+          "id": "s10-g43-i3",
+          "sourceGroupId": "s10-g43",
+          "session": 10,
+          "teacherNumber": "43",
+          "displayNumber": "43-3"
+        }
+      ]
+    },
+    {
+      "id": "s10-g44",
+      "teacherNumber": "44",
+      "sourceText": "good / well → better",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "good",
+          "meaningZh": "好的",
+          "example": "This is a good computer.",
+          "exampleZh": "这是一台好电脑。",
+          "acceptedMeaningsZh": [
+            "好的"
+          ],
+          "relation": "related",
+          "id": "s10-g44-i1",
+          "sourceGroupId": "s10-g44",
+          "session": 10,
+          "teacherNumber": "44",
+          "displayNumber": "44-1"
+        },
+        {
+          "term": "well",
+          "meaningZh": "好地",
+          "example": "The computer works well.",
+          "exampleZh": "这台电脑运行得很好。",
+          "acceptedMeaningsZh": [
+            "好地"
+          ],
+          "relation": "related",
+          "id": "s10-g44-i2",
+          "sourceGroupId": "s10-g44",
+          "session": 10,
+          "teacherNumber": "44",
+          "displayNumber": "44-2"
+        },
+        {
+          "term": "better",
+          "meaningZh": "更好的；更好地",
+          "example": "The new one works better.",
+          "exampleZh": "新电脑运行得更好。",
+          "acceptedMeaningsZh": [
+            "更好的；更好地"
+          ],
+          "relation": "related",
+          "id": "s10-g44-i3",
+          "sourceGroupId": "s10-g44",
+          "session": 10,
+          "teacherNumber": "44",
+          "displayNumber": "44-3"
+        }
+      ]
+    },
+    {
+      "id": "s10-g45",
+      "teacherNumber": "45",
+      "sourceText": "as ... / as a gift",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "as ...",
+          "meaningZh": "作为……",
+          "example": "She works as a teacher.",
+          "exampleZh": "她是一名老师。",
+          "acceptedMeaningsZh": [
+            "作为……"
+          ],
+          "relation": "related",
+          "id": "s10-g45-i1",
+          "sourceGroupId": "s10-g45",
+          "session": 10,
+          "teacherNumber": "45",
+          "displayNumber": "45-1"
+        },
+        {
+          "term": "as a gift",
+          "meaningZh": "作为礼物",
+          "example": "I got the book as a gift.",
+          "exampleZh": "我收到这本书作为礼物。",
+          "acceptedMeaningsZh": [
+            "作为礼物"
+          ],
+          "relation": "related",
+          "id": "s10-g45-i2",
+          "sourceGroupId": "s10-g45",
+          "session": 10,
+          "teacherNumber": "45",
+          "displayNumber": "45-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g46",
+      "teacherNumber": "46",
+      "sourceText": "turn on / turn off",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "turn on",
+          "meaningZh": "打开（电器）",
+          "example": "Turn on the computer, please.",
+          "exampleZh": "请打开电脑。",
+          "acceptedMeaningsZh": [
+            "打开（电器）"
+          ],
+          "relation": "related",
+          "id": "s10-g46-i1",
+          "sourceGroupId": "s10-g46",
+          "session": 10,
+          "teacherNumber": "46",
+          "displayNumber": "46-1"
+        },
+        {
+          "term": "turn off",
+          "meaningZh": "关闭（电器）",
+          "example": "Turn off the light before bed.",
+          "exampleZh": "睡觉前关灯。",
+          "acceptedMeaningsZh": [
+            "关闭（电器）"
+          ],
+          "relation": "related",
+          "id": "s10-g46-i2",
+          "sourceGroupId": "s10-g46",
+          "session": 10,
+          "teacherNumber": "46",
+          "displayNumber": "46-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g47",
+      "teacherNumber": "47",
+      "sourceText": "mess / mess up",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "mess",
+          "meaningZh": "混乱；脏乱",
+          "example": "My desk is a mess.",
+          "exampleZh": "我的书桌一团糟。",
+          "acceptedMeaningsZh": [
+            "混乱；脏乱"
+          ],
+          "relation": "related",
+          "id": "s10-g47-i1",
+          "sourceGroupId": "s10-g47",
+          "session": 10,
+          "teacherNumber": "47",
+          "displayNumber": "47-1"
+        },
+        {
+          "term": "mess up",
+          "meaningZh": "弄乱；搞砸",
+          "example": "Do not mess up the files.",
+          "exampleZh": "不要弄乱这些文件。",
+          "acceptedMeaningsZh": [
+            "弄乱；搞砸"
+          ],
+          "relation": "related",
+          "id": "s10-g47-i2",
+          "sourceGroupId": "s10-g47",
+          "session": 10,
+          "teacherNumber": "47",
+          "displayNumber": "47-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g48",
+      "teacherNumber": "48",
+      "sourceText": "need to do ...",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "need to do ...",
+          "meaningZh": "需要做……",
+          "example": "I need to finish my homework.",
+          "exampleZh": "我需要完成作业。",
+          "acceptedMeaningsZh": [
+            "需要做……"
+          ],
+          "relation": "single",
+          "id": "s10-g48-i1",
+          "sourceGroupId": "s10-g48",
+          "session": 10,
+          "teacherNumber": "48",
+          "displayNumber": "48"
+        }
+      ]
+    },
+    {
+      "id": "s10-g49",
+      "teacherNumber": "49",
+      "sourceText": "power on / shut down / power off",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "power on",
+          "meaningZh": "开机；接通电源",
+          "example": "Power on the computer first.",
+          "exampleZh": "先给电脑开机。",
+          "acceptedMeaningsZh": [
+            "开机；接通电源"
+          ],
+          "relation": "related",
+          "id": "s10-g49-i1",
+          "sourceGroupId": "s10-g49",
+          "session": 10,
+          "teacherNumber": "49",
+          "displayNumber": "49-1"
+        },
+        {
+          "term": "shut down",
+          "meaningZh": "关机；关闭",
+          "example": "Please shut down the computer.",
+          "exampleZh": "请把电脑关机。",
+          "acceptedMeaningsZh": [
+            "关机；关闭"
+          ],
+          "relation": "related",
+          "id": "s10-g49-i2",
+          "sourceGroupId": "s10-g49",
+          "session": 10,
+          "teacherNumber": "49",
+          "displayNumber": "49-2"
+        },
+        {
+          "term": "power off",
+          "meaningZh": "关闭电源",
+          "example": "Power off the screen after use.",
+          "exampleZh": "使用后关闭屏幕电源。",
+          "acceptedMeaningsZh": [
+            "关闭电源"
+          ],
+          "relation": "related",
+          "id": "s10-g49-i3",
+          "sourceGroupId": "s10-g49",
+          "session": 10,
+          "teacherNumber": "49",
+          "displayNumber": "49-3"
+        }
+      ]
+    },
+    {
+      "id": "s10-g50",
+      "teacherNumber": "50",
+      "sourceText": "letter / number / symbol",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "letter",
+          "meaningZh": "字母；信",
+          "example": "Type a letter here.",
+          "exampleZh": "在这里输入一个字母。",
+          "acceptedMeaningsZh": [
+            "字母；信"
+          ],
+          "relation": "related",
+          "id": "s10-g50-i1",
+          "sourceGroupId": "s10-g50",
+          "session": 10,
+          "teacherNumber": "50",
+          "displayNumber": "50-1"
+        },
+        {
+          "term": "number",
+          "meaningZh": "数字；号码",
+          "example": "My password has one number.",
+          "exampleZh": "我的密码里有一个数字。",
+          "acceptedMeaningsZh": [
+            "数字；号码"
+          ],
+          "relation": "related",
+          "id": "s10-g50-i2",
+          "sourceGroupId": "s10-g50",
+          "session": 10,
+          "teacherNumber": "50",
+          "displayNumber": "50-2"
+        },
+        {
+          "term": "symbol",
+          "meaningZh": "符号",
+          "example": "Add a symbol to the password.",
+          "exampleZh": "在密码中加一个符号。",
+          "acceptedMeaningsZh": [
+            "符号"
+          ],
+          "relation": "related",
+          "id": "s10-g50-i3",
+          "sourceGroupId": "s10-g50",
+          "session": 10,
+          "teacherNumber": "50",
+          "displayNumber": "50-3"
+        }
+      ]
+    },
+    {
+      "id": "s10-g51",
+      "teacherNumber": "51",
+      "sourceText": "tell others",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "tell others",
+          "meaningZh": "告诉别人",
+          "example": "Do not tell others my password.",
+          "exampleZh": "不要把我的密码告诉别人。",
+          "acceptedMeaningsZh": [
+            "告诉别人"
+          ],
+          "relation": "single",
+          "id": "s10-g51-i1",
+          "sourceGroupId": "s10-g51",
+          "session": 10,
+          "teacherNumber": "51",
+          "displayNumber": "51"
+        }
+      ]
+    },
+    {
+      "id": "s10-g52",
+      "teacherNumber": "52",
+      "sourceText": "luck / Good luck! / lucky",
+      "sourceFile": "10-2.JPG",
+      "items": [
+        {
+          "term": "luck",
+          "meaningZh": "运气",
+          "example": "We need a little luck.",
+          "exampleZh": "我们需要一点运气。",
+          "acceptedMeaningsZh": [
+            "运气"
+          ],
+          "relation": "related",
+          "id": "s10-g52-i1",
+          "sourceGroupId": "s10-g52",
+          "session": 10,
+          "teacherNumber": "52",
+          "displayNumber": "52-1"
+        },
+        {
+          "term": "Good luck!",
+          "meaningZh": "祝你好运！",
+          "example": "Good luck with your quiz!",
+          "exampleZh": "祝你小测验顺利！",
+          "acceptedMeaningsZh": [
+            "祝你好运！"
+          ],
+          "relation": "related",
+          "id": "s10-g52-i2",
+          "sourceGroupId": "s10-g52",
+          "session": 10,
+          "teacherNumber": "52",
+          "displayNumber": "52-2"
+        },
+        {
+          "term": "lucky",
+          "meaningZh": "幸运的",
+          "example": "I am lucky to have your help.",
+          "exampleZh": "有你的帮助，我很幸运。",
+          "acceptedMeaningsZh": [
+            "幸运的"
+          ],
+          "relation": "related",
+          "id": "s10-g52-i3",
+          "sourceGroupId": "s10-g52",
+          "session": 10,
+          "teacherNumber": "52",
+          "displayNumber": "52-3"
+        }
+      ]
+    },
+    {
+      "id": "s10-g53",
+      "teacherNumber": "53",
+      "sourceText": "care / take care of / careful / carefully / careless / carelessly",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "care",
+          "meaningZh": "关心；照料",
+          "example": "Parents care about their children.",
+          "exampleZh": "父母关心孩子。",
+          "acceptedMeaningsZh": [
+            "关心；照料"
+          ],
+          "relation": "related",
+          "id": "s10-g53-i1",
+          "sourceGroupId": "s10-g53",
+          "session": 10,
+          "teacherNumber": "53",
+          "displayNumber": "53-1"
+        },
+        {
+          "term": "take care of",
+          "meaningZh": "照顾",
+          "example": "I take care of my little brother.",
+          "exampleZh": "我照顾我的弟弟。",
+          "acceptedMeaningsZh": [
+            "照顾"
+          ],
+          "relation": "related",
+          "id": "s10-g53-i2",
+          "sourceGroupId": "s10-g53",
+          "session": 10,
+          "teacherNumber": "53",
+          "displayNumber": "53-2"
+        },
+        {
+          "term": "careful",
+          "meaningZh": "小心的；仔细的",
+          "example": "Be careful with the laptop.",
+          "exampleZh": "使用笔记本电脑时要小心。",
+          "acceptedMeaningsZh": [
+            "小心的；仔细的"
+          ],
+          "relation": "related",
+          "id": "s10-g53-i3",
+          "sourceGroupId": "s10-g53",
+          "session": 10,
+          "teacherNumber": "53",
+          "displayNumber": "53-3"
+        },
+        {
+          "term": "carefully",
+          "meaningZh": "小心地；仔细地",
+          "example": "Read the question carefully.",
+          "exampleZh": "仔细读题。",
+          "acceptedMeaningsZh": [
+            "小心地；仔细地"
+          ],
+          "relation": "related",
+          "id": "s10-g53-i4",
+          "sourceGroupId": "s10-g53",
+          "session": 10,
+          "teacherNumber": "53",
+          "displayNumber": "53-4"
+        },
+        {
+          "term": "careless",
+          "meaningZh": "粗心的",
+          "example": "A careless mistake can cause trouble.",
+          "exampleZh": "一个粗心的错误会带来麻烦。",
+          "acceptedMeaningsZh": [
+            "粗心的"
+          ],
+          "relation": "related",
+          "id": "s10-g53-i5",
+          "sourceGroupId": "s10-g53",
+          "session": 10,
+          "teacherNumber": "53",
+          "displayNumber": "53-5"
+        },
+        {
+          "term": "carelessly",
+          "meaningZh": "粗心地",
+          "example": "Do not use the computer carelessly.",
+          "exampleZh": "不要粗心地使用电脑。",
+          "acceptedMeaningsZh": [
+            "粗心地"
+          ],
+          "relation": "related",
+          "id": "s10-g53-i6",
+          "sourceGroupId": "s10-g53",
+          "session": 10,
+          "teacherNumber": "53",
+          "displayNumber": "53-6"
+        }
+      ]
+    },
+    {
+      "id": "s10-g54",
+      "teacherNumber": "54",
+      "sourceText": "drop → dropped",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "drop",
+          "meaningZh": "使掉落；掉下",
+          "example": "Do not drop your phone.",
+          "exampleZh": "不要把手机掉在地上。",
+          "acceptedMeaningsZh": [
+            "使掉落；掉下"
+          ],
+          "relation": "related",
+          "id": "s10-g54-i1",
+          "sourceGroupId": "s10-g54",
+          "session": 10,
+          "teacherNumber": "54",
+          "displayNumber": "54-1"
+        },
+        {
+          "term": "dropped",
+          "meaningZh": "掉落了（drop 的过去式）",
+          "example": "I dropped some water on the desk.",
+          "exampleZh": "我把一些水洒在了桌上。",
+          "acceptedMeaningsZh": [
+            "掉落了（drop 的过去式）"
+          ],
+          "relation": "related",
+          "id": "s10-g54-i2",
+          "sourceGroupId": "s10-g54",
+          "session": 10,
+          "teacherNumber": "54",
+          "displayNumber": "54-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g55",
+      "teacherNumber": "55",
+      "sourceText": "leave it to dry",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "leave it to dry",
+          "meaningZh": "把它放着晾干",
+          "example": "Leave it to dry before you use it.",
+          "exampleZh": "使用前先把它放着晾干。",
+          "acceptedMeaningsZh": [
+            "把它放着晾干"
+          ],
+          "relation": "single",
+          "id": "s10-g55-i1",
+          "sourceGroupId": "s10-g55",
+          "session": 10,
+          "teacherNumber": "55",
+          "displayNumber": "55"
+        }
+      ]
+    },
+    {
+      "id": "s10-g56",
+      "teacherNumber": "56",
+      "sourceText": "be worried",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "be worried",
+          "meaningZh": "担心",
+          "example": "Do not be worried about the test.",
+          "exampleZh": "不要担心考试。",
+          "acceptedMeaningsZh": [
+            "担心"
+          ],
+          "relation": "single",
+          "id": "s10-g56-i1",
+          "sourceGroupId": "s10-g56",
+          "session": 10,
+          "teacherNumber": "56",
+          "displayNumber": "56"
+        }
+      ]
+    },
+    {
+      "id": "s10-g57",
+      "teacherNumber": "57",
+      "sourceText": "ask sb. to do / ask my mother to help me ...",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "ask sb. to do",
+          "meaningZh": "让某人做……；请求某人做……",
+          "example": "I ask Dad to help me.",
+          "exampleZh": "我请爸爸帮我。",
+          "acceptedMeaningsZh": [
+            "让某人做……；请求某人做……"
+          ],
+          "relation": "related",
+          "id": "s10-g57-i1",
+          "sourceGroupId": "s10-g57",
+          "session": 10,
+          "teacherNumber": "57",
+          "displayNumber": "57-1"
+        },
+        {
+          "term": "ask my mother to help me ...",
+          "meaningZh": "请妈妈帮我……",
+          "example": "I ask my mother to help me clean it.",
+          "exampleZh": "我请妈妈帮我把它清理干净。",
+          "acceptedMeaningsZh": [
+            "请妈妈帮我……"
+          ],
+          "relation": "related",
+          "id": "s10-g57-i2",
+          "sourceGroupId": "s10-g57",
+          "session": 10,
+          "teacherNumber": "57",
+          "displayNumber": "57-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g58",
+      "teacherNumber": "58",
+      "sourceText": "while / while doing ... / while using ...",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "while",
+          "meaningZh": "当……时；一段时间",
+          "example": "Be careful while you work.",
+          "exampleZh": "工作时要小心。",
+          "acceptedMeaningsZh": [
+            "当……时；一段时间"
+          ],
+          "relation": "related",
+          "id": "s10-g58-i1",
+          "sourceGroupId": "s10-g58",
+          "session": 10,
+          "teacherNumber": "58",
+          "displayNumber": "58-1"
+        },
+        {
+          "term": "while doing ...",
+          "meaningZh": "在做……时",
+          "example": "Do not eat while doing homework.",
+          "exampleZh": "做作业时不要吃东西。",
+          "acceptedMeaningsZh": [
+            "在做……时"
+          ],
+          "relation": "related",
+          "id": "s10-g58-i2",
+          "sourceGroupId": "s10-g58",
+          "session": 10,
+          "teacherNumber": "58",
+          "displayNumber": "58-2"
+        },
+        {
+          "term": "while using ...",
+          "meaningZh": "在使用……时",
+          "example": "Sit straight while using a computer.",
+          "exampleZh": "使用电脑时要坐直。",
+          "acceptedMeaningsZh": [
+            "在使用……时"
+          ],
+          "relation": "related",
+          "id": "s10-g58-i3",
+          "sourceGroupId": "s10-g58",
+          "session": 10,
+          "teacherNumber": "58",
+          "displayNumber": "58-3"
+        }
+      ]
+    },
+    {
+      "id": "s10-g59",
+      "teacherNumber": "59",
+      "sourceText": "in the future",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "in the future",
+          "meaningZh": "将来",
+          "example": "Computers will be smaller in the future.",
+          "exampleZh": "将来的电脑会更小。",
+          "acceptedMeaningsZh": [
+            "将来"
+          ],
+          "relation": "single",
+          "id": "s10-g59-i1",
+          "sourceGroupId": "s10-g59",
+          "session": 10,
+          "teacherNumber": "59",
+          "displayNumber": "59"
+        }
+      ]
+    },
+    {
+      "id": "s10-g60",
+      "teacherNumber": "60",
+      "sourceText": "used / unused",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "used",
+          "meaningZh": "用过的；二手的",
+          "example": "This is a used computer.",
+          "exampleZh": "这是一台用过的电脑。",
+          "acceptedMeaningsZh": [
+            "用过的；二手的"
+          ],
+          "relation": "related",
+          "id": "s10-g60-i1",
+          "sourceGroupId": "s10-g60",
+          "session": 10,
+          "teacherNumber": "60",
+          "displayNumber": "60-1"
+        },
+        {
+          "term": "unused",
+          "meaningZh": "未使用的",
+          "example": "The unused paper is still clean.",
+          "exampleZh": "未使用的纸仍然很干净。",
+          "acceptedMeaningsZh": [
+            "未使用的"
+          ],
+          "relation": "related",
+          "id": "s10-g60-i2",
+          "sourceGroupId": "s10-g60",
+          "session": 10,
+          "teacherNumber": "60",
+          "displayNumber": "60-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g61",
+      "teacherNumber": "61",
+      "sourceText": "program",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "program",
+          "meaningZh": "程序；编程",
+          "example": "This program helps me draw.",
+          "exampleZh": "这个程序帮助我画画。",
+          "acceptedMeaningsZh": [
+            "程序；编程"
+          ],
+          "relation": "single",
+          "id": "s10-g61-i1",
+          "sourceGroupId": "s10-g61",
+          "session": 10,
+          "teacherNumber": "61",
+          "displayNumber": "61"
+        }
+      ]
+    },
+    {
+      "id": "s10-g62",
+      "teacherNumber": "62",
+      "sourceText": "necessary / unnecessary",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "necessary",
+          "meaningZh": "必要的",
+          "example": "A strong password is necessary.",
+          "exampleZh": "强密码是必要的。",
+          "acceptedMeaningsZh": [
+            "必要的"
+          ],
+          "relation": "related",
+          "id": "s10-g62-i1",
+          "sourceGroupId": "s10-g62",
+          "session": 10,
+          "teacherNumber": "62",
+          "displayNumber": "62-1"
+        },
+        {
+          "term": "unnecessary",
+          "meaningZh": "不必要的",
+          "example": "Delete unnecessary files.",
+          "exampleZh": "删除不必要的文件。",
+          "acceptedMeaningsZh": [
+            "不必要的"
+          ],
+          "relation": "related",
+          "id": "s10-g62-i2",
+          "sourceGroupId": "s10-g62",
+          "session": 10,
+          "teacherNumber": "62",
+          "displayNumber": "62-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g63",
+      "teacherNumber": "63",
+      "sourceText": "update",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "update",
+          "meaningZh": "更新",
+          "example": "Please update the program.",
+          "exampleZh": "请更新这个程序。",
+          "acceptedMeaningsZh": [
+            "更新"
+          ],
+          "relation": "single",
+          "id": "s10-g63-i1",
+          "sourceGroupId": "s10-g63",
+          "session": 10,
+          "teacherNumber": "63",
+          "displayNumber": "63"
+        }
+      ]
+    },
+    {
+      "id": "s10-g64",
+      "teacherNumber": "64",
+      "sourceText": "immediately",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "immediately",
+          "meaningZh": "立刻；马上",
+          "example": "Turn it off immediately.",
+          "exampleZh": "立刻把它关掉。",
+          "acceptedMeaningsZh": [
+            "立刻；马上"
+          ],
+          "relation": "single",
+          "id": "s10-g64-i1",
+          "sourceGroupId": "s10-g64",
+          "session": 10,
+          "teacherNumber": "64",
+          "displayNumber": "64"
+        }
+      ]
+    },
+    {
+      "id": "s10-g65",
+      "teacherNumber": "65",
+      "sourceText": "restart",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "restart",
+          "meaningZh": "重新启动",
+          "example": "Restart the computer after the update.",
+          "exampleZh": "更新后重新启动电脑。",
+          "acceptedMeaningsZh": [
+            "重新启动"
+          ],
+          "relation": "single",
+          "id": "s10-g65-i1",
+          "sourceGroupId": "s10-g65",
+          "session": 10,
+          "teacherNumber": "65",
+          "displayNumber": "65"
+        }
+      ]
+    },
+    {
+      "id": "s10-g66",
+      "teacherNumber": "66",
+      "sourceText": "viruses / virus",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "virus",
+          "meaningZh": "病毒",
+          "example": "A virus can hurt your computer.",
+          "exampleZh": "病毒会损害你的电脑。",
+          "acceptedMeaningsZh": [
+            "病毒"
+          ],
+          "relation": "related",
+          "id": "s10-g66-i1",
+          "sourceGroupId": "s10-g66",
+          "session": 10,
+          "teacherNumber": "66",
+          "displayNumber": "66-1"
+        },
+        {
+          "term": "viruses",
+          "meaningZh": "多种病毒",
+          "example": "This program can find viruses.",
+          "exampleZh": "这个程序能查找病毒。",
+          "acceptedMeaningsZh": [
+            "多种病毒"
+          ],
+          "relation": "related",
+          "id": "s10-g66-i2",
+          "sourceGroupId": "s10-g66",
+          "session": 10,
+          "teacherNumber": "66",
+          "displayNumber": "66-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g67",
+      "teacherNumber": "67",
+      "sourceText": "keep in mind",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "keep in mind",
+          "meaningZh": "记住",
+          "example": "Keep in mind that passwords are private.",
+          "exampleZh": "记住密码是私密的。",
+          "acceptedMeaningsZh": [
+            "记住"
+          ],
+          "relation": "single",
+          "id": "s10-g67-i1",
+          "sourceGroupId": "s10-g67",
+          "session": 10,
+          "teacherNumber": "67",
+          "displayNumber": "67"
+        }
+      ]
+    },
+    {
+      "id": "s10-g68",
+      "teacherNumber": "68",
+      "sourceText": "fill in",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "fill in",
+          "meaningZh": "填写",
+          "example": "Please fill in your name.",
+          "exampleZh": "请填写你的姓名。",
+          "acceptedMeaningsZh": [
+            "填写"
+          ],
+          "relation": "single",
+          "id": "s10-g68-i1",
+          "sourceGroupId": "s10-g68",
+          "session": 10,
+          "teacherNumber": "68",
+          "displayNumber": "68"
+        }
+      ]
+    },
+    {
+      "id": "s10-g69",
+      "teacherNumber": "69",
+      "sourceText": "template(s)",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "template",
+          "meaningZh": "模板",
+          "example": "Choose a template for the card.",
+          "exampleZh": "为卡片选择一个模板。",
+          "acceptedMeaningsZh": [
+            "模板"
+          ],
+          "relation": "related",
+          "id": "s10-g69-i1",
+          "sourceGroupId": "s10-g69",
+          "session": 10,
+          "teacherNumber": "69",
+          "displayNumber": "69-1"
+        },
+        {
+          "term": "templates",
+          "meaningZh": "多个模板",
+          "example": "The program has many templates.",
+          "exampleZh": "这个程序有许多模板。",
+          "acceptedMeaningsZh": [
+            "多个模板"
+          ],
+          "relation": "related",
+          "id": "s10-g69-i2",
+          "sourceGroupId": "s10-g69",
+          "session": 10,
+          "teacherNumber": "69",
+          "displayNumber": "69-2"
+        }
+      ]
+    },
+    {
+      "id": "s10-g70",
+      "teacherNumber": "70",
+      "sourceText": "in the corner",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "in the corner",
+          "meaningZh": "在角落里",
+          "example": "The button is in the corner.",
+          "exampleZh": "按钮在角落里。",
+          "acceptedMeaningsZh": [
+            "在角落里"
+          ],
+          "relation": "single",
+          "id": "s10-g70-i1",
+          "sourceGroupId": "s10-g70",
+          "session": 10,
+          "teacherNumber": "70",
+          "displayNumber": "70"
+        }
+      ]
+    },
+    {
+      "id": "s10-g71",
+      "teacherNumber": "71",
+      "sourceText": "share ... with ...",
+      "sourceFile": "10-3.JPG",
+      "items": [
+        {
+          "term": "share ... with ...",
+          "meaningZh": "与……分享……",
+          "example": "I share my photos with Mum.",
+          "exampleZh": "我和妈妈分享我的照片。",
+          "acceptedMeaningsZh": [
+            "与……分享……"
+          ],
+          "relation": "single",
+          "id": "s10-g71-i1",
+          "sourceGroupId": "s10-g71",
+          "session": 10,
+          "teacherNumber": "71",
+          "displayNumber": "71"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "term": "computer",
+      "meaningZh": "电脑",
+      "example": "This computer is new.",
+      "exampleZh": "这台电脑是新的。",
+      "acceptedMeaningsZh": [
+        "电脑"
+      ],
+      "relation": "related",
+      "id": "s10-g1-i1",
+      "sourceGroupId": "s10-g1",
+      "session": 10,
+      "teacherNumber": "1",
+      "displayNumber": "1-1"
+    },
+    {
+      "term": "play computer games",
+      "meaningZh": "玩电脑游戏",
+      "example": "I play computer games on Sunday.",
+      "exampleZh": "我星期天玩电脑游戏。",
+      "acceptedMeaningsZh": [
+        "玩电脑游戏"
+      ],
+      "relation": "related",
+      "id": "s10-g1-i2",
+      "sourceGroupId": "s10-g1",
+      "session": 10,
+      "teacherNumber": "1",
+      "displayNumber": "1-2"
+    },
+    {
+      "term": "quiz",
+      "meaningZh": "小测验",
+      "example": "We have a quiz today.",
+      "exampleZh": "我们今天有一次小测验。",
+      "acceptedMeaningsZh": [
+        "小测验"
+      ],
+      "relation": "related",
+      "id": "s10-g2-i1",
+      "sourceGroupId": "s10-g2",
+      "session": 10,
+      "teacherNumber": "2",
+      "displayNumber": "2-1"
+    },
+    {
+      "term": "make a quiz",
+      "meaningZh": "编一份测验",
+      "example": "The teacher will make a quiz.",
+      "exampleZh": "老师会编一份测验。",
+      "acceptedMeaningsZh": [
+        "编一份测验"
+      ],
+      "relation": "related",
+      "id": "s10-g2-i2",
+      "sourceGroupId": "s10-g2",
+      "session": 10,
+      "teacherNumber": "2",
+      "displayNumber": "2-2"
+    },
+    {
+      "term": "click",
+      "meaningZh": "点击",
+      "example": "Click the blue button.",
+      "exampleZh": "点击蓝色按钮。",
+      "acceptedMeaningsZh": [
+        "点击"
+      ],
+      "relation": "single",
+      "id": "s10-g3-i1",
+      "sourceGroupId": "s10-g3",
+      "session": 10,
+      "teacherNumber": "3",
+      "displayNumber": "3"
+    },
+    {
+      "term": "delete",
+      "meaningZh": "删除",
+      "example": "Please delete this photo.",
+      "exampleZh": "请删除这张照片。",
+      "acceptedMeaningsZh": [
+        "删除"
+      ],
+      "relation": "single",
+      "id": "s10-g4-i1",
+      "sourceGroupId": "s10-g4",
+      "session": 10,
+      "teacherNumber": "4",
+      "displayNumber": "4"
+    },
+    {
+      "term": "password",
+      "meaningZh": "密码",
+      "example": "Do not tell others your password.",
+      "exampleZh": "不要把密码告诉别人。",
+      "acceptedMeaningsZh": [
+        "密码"
+      ],
+      "relation": "single",
+      "id": "s10-g5-i1",
+      "sourceGroupId": "s10-g5",
+      "session": 10,
+      "teacherNumber": "5",
+      "displayNumber": "5"
+    },
+    {
+      "term": "store",
+      "meaningZh": "储存；商店",
+      "example": "Computers store information.",
+      "exampleZh": "电脑储存信息。",
+      "acceptedMeaningsZh": [
+        "储存；商店",
+        "保存；商店"
+      ],
+      "relation": "single",
+      "id": "s10-g6-i1",
+      "sourceGroupId": "s10-g6",
+      "session": 10,
+      "teacherNumber": "6",
+      "displayNumber": "6"
+    },
+    {
+      "term": "search",
+      "meaningZh": "搜索；查找",
+      "example": "I search the Internet for facts.",
+      "exampleZh": "我在网上搜索资料。",
+      "acceptedMeaningsZh": [
+        "搜索；查找"
+      ],
+      "relation": "single",
+      "id": "s10-g7-i1",
+      "sourceGroupId": "s10-g7",
+      "session": 10,
+      "teacherNumber": "7",
+      "displayNumber": "7"
+    },
+    {
+      "term": "information",
+      "meaningZh": "信息；资料",
+      "example": "The book has useful information.",
+      "exampleZh": "这本书里有有用的信息。",
+      "acceptedMeaningsZh": [
+        "信息；资料"
+      ],
+      "relation": "related",
+      "id": "s10-g8-i1",
+      "sourceGroupId": "s10-g8",
+      "session": 10,
+      "teacherNumber": "8",
+      "displayNumber": "8-1"
+    },
+    {
+      "term": "search for information",
+      "meaningZh": "搜索信息",
+      "example": "We search for information online.",
+      "exampleZh": "我们在网上搜索信息。",
+      "acceptedMeaningsZh": [
+        "搜索信息"
+      ],
+      "relation": "related",
+      "id": "s10-g8-i2",
+      "sourceGroupId": "s10-g8",
+      "session": 10,
+      "teacherNumber": "8",
+      "displayNumber": "8-2"
+    },
+    {
+      "term": "desktop",
+      "meaningZh": "台式电脑；桌面",
+      "example": "The desktop is in the study.",
+      "exampleZh": "台式电脑在书房里。",
+      "acceptedMeaningsZh": [
+        "台式电脑；桌面"
+      ],
+      "relation": "single",
+      "id": "s10-g9-i1",
+      "sourceGroupId": "s10-g9",
+      "session": 10,
+      "teacherNumber": "9",
+      "displayNumber": "9"
+    },
+    {
+      "term": "laptop",
+      "meaningZh": "笔记本电脑",
+      "example": "Her laptop is very light.",
+      "exampleZh": "她的笔记本电脑很轻。",
+      "acceptedMeaningsZh": [
+        "笔记本电脑"
+      ],
+      "relation": "single",
+      "id": "s10-g10-i1",
+      "sourceGroupId": "s10-g10",
+      "session": 10,
+      "teacherNumber": "10",
+      "displayNumber": "10"
+    },
+    {
+      "term": "fact",
+      "meaningZh": "事实",
+      "example": "This is an interesting fact.",
+      "exampleZh": "这是一个有趣的事实。",
+      "acceptedMeaningsZh": [
+        "事实"
+      ],
+      "relation": "related",
+      "id": "s10-g11-i1",
+      "sourceGroupId": "s10-g11",
+      "session": 10,
+      "teacherNumber": "11",
+      "displayNumber": "11-1"
+    },
+    {
+      "term": "facts",
+      "meaningZh": "多个事实；资料",
+      "example": "I found three facts about whales.",
+      "exampleZh": "我找到了三个关于鲸的事实。",
+      "acceptedMeaningsZh": [
+        "多个事实；资料"
+      ],
+      "relation": "related",
+      "id": "s10-g11-i2",
+      "sourceGroupId": "s10-g11",
+      "session": 10,
+      "teacherNumber": "11",
+      "displayNumber": "11-2"
+    },
+    {
+      "term": "as ... as ...",
+      "meaningZh": "和……一样……",
+      "example": "My bag is as light as yours.",
+      "exampleZh": "我的书包和你的一样轻。",
+      "acceptedMeaningsZh": [
+        "和……一样……"
+      ],
+      "relation": "single",
+      "id": "s10-g12-i1",
+      "sourceGroupId": "s10-g12",
+      "session": 10,
+      "teacherNumber": "12",
+      "displayNumber": "12"
+    },
+    {
+      "term": "problem",
+      "meaningZh": "问题；难题",
+      "example": "We can solve this problem.",
+      "exampleZh": "我们能解决这个问题。",
+      "acceptedMeaningsZh": [
+        "问题；难题"
+      ],
+      "relation": "single",
+      "id": "s10-g13-i1",
+      "sourceGroupId": "s10-g13",
+      "session": 10,
+      "teacherNumber": "13",
+      "displayNumber": "13"
+    },
+    {
+      "term": "statement",
+      "meaningZh": "陈述；说法",
+      "example": "Read the statement carefully.",
+      "exampleZh": "仔细阅读这条陈述。",
+      "acceptedMeaningsZh": [
+        "陈述；说法"
+      ],
+      "relation": "related",
+      "id": "s10-g14-i1",
+      "sourceGroupId": "s10-g14",
+      "session": 10,
+      "teacherNumber": "14",
+      "displayNumber": "14-1"
+    },
+    {
+      "term": "statements",
+      "meaningZh": "多条陈述；说法",
+      "example": "Check the two statements.",
+      "exampleZh": "检查这两条陈述。",
+      "acceptedMeaningsZh": [
+        "多条陈述；说法"
+      ],
+      "relation": "related",
+      "id": "s10-g14-i2",
+      "sourceGroupId": "s10-g14",
+      "session": 10,
+      "teacherNumber": "14",
+      "displayNumber": "14-2"
+    },
+    {
+      "term": "enemy",
+      "meaningZh": "敌人",
+      "example": "The dragon is not our enemy.",
+      "exampleZh": "这条龙不是我们的敌人。",
+      "acceptedMeaningsZh": [
+        "敌人"
+      ],
+      "relation": "related",
+      "id": "s10-g15-i1",
+      "sourceGroupId": "s10-g15",
+      "session": 10,
+      "teacherNumber": "15",
+      "displayNumber": "15-1"
+    },
+    {
+      "term": "an enemy",
+      "meaningZh": "一个敌人",
+      "example": "He saw an enemy near the gate.",
+      "exampleZh": "他在门附近看见了一个敌人。",
+      "acceptedMeaningsZh": [
+        "一个敌人"
+      ],
+      "relation": "related",
+      "id": "s10-g15-i2",
+      "sourceGroupId": "s10-g15",
+      "session": 10,
+      "teacherNumber": "15",
+      "displayNumber": "15-2"
+    },
+    {
+      "term": "should",
+      "meaningZh": "应该",
+      "example": "You should finish your homework.",
+      "exampleZh": "你应该完成作业。",
+      "acceptedMeaningsZh": [
+        "应该"
+      ],
+      "relation": "related",
+      "id": "s10-g16-i1",
+      "sourceGroupId": "s10-g16",
+      "session": 10,
+      "teacherNumber": "16",
+      "displayNumber": "16-1"
+    },
+    {
+      "term": "should be used",
+      "meaningZh": "应该被使用",
+      "example": "This tool should be used carefully.",
+      "exampleZh": "这个工具应该小心使用。",
+      "acceptedMeaningsZh": [
+        "应该被使用"
+      ],
+      "relation": "related",
+      "id": "s10-g16-i2",
+      "sourceGroupId": "s10-g16",
+      "session": 10,
+      "teacherNumber": "16",
+      "displayNumber": "16-2"
+    },
+    {
+      "term": "birth",
+      "meaningZh": "出生",
+      "example": "The story tells us about his birth.",
+      "exampleZh": "这个故事告诉我们他的出生情况。",
+      "acceptedMeaningsZh": [
+        "出生"
+      ],
+      "relation": "related",
+      "id": "s10-g17-i1",
+      "sourceGroupId": "s10-g17",
+      "session": 10,
+      "teacherNumber": "17",
+      "displayNumber": "17-1"
+    },
+    {
+      "term": "birthday",
+      "meaningZh": "生日",
+      "example": "Today is my birthday.",
+      "exampleZh": "今天是我的生日。",
+      "acceptedMeaningsZh": [
+        "生日"
+      ],
+      "relation": "related",
+      "id": "s10-g17-i2",
+      "sourceGroupId": "s10-g17",
+      "session": 10,
+      "teacherNumber": "17",
+      "displayNumber": "17-2"
+    },
+    {
+      "term": "birth date",
+      "meaningZh": "出生日期",
+      "example": "Write your birth date here.",
+      "exampleZh": "在这里写下你的出生日期。",
+      "acceptedMeaningsZh": [
+        "出生日期"
+      ],
+      "relation": "related",
+      "id": "s10-g17-i3",
+      "sourceGroupId": "s10-g17",
+      "session": 10,
+      "teacherNumber": "17",
+      "displayNumber": "17-3"
+    },
+    {
+      "term": "create",
+      "meaningZh": "创建；创造",
+      "example": "We can create a new file.",
+      "exampleZh": "我们可以创建一个新文件。",
+      "acceptedMeaningsZh": [
+        "创建；创造"
+      ],
+      "relation": "single",
+      "id": "s10-g18-i1",
+      "sourceGroupId": "s10-g18",
+      "session": 10,
+      "teacherNumber": "18",
+      "displayNumber": "18"
+    },
+    {
+      "term": "button",
+      "meaningZh": "按钮",
+      "example": "Press the green button.",
+      "exampleZh": "按下绿色按钮。",
+      "acceptedMeaningsZh": [
+        "按钮"
+      ],
+      "relation": "single",
+      "id": "s10-g19-i1",
+      "sourceGroupId": "s10-g19",
+      "session": 10,
+      "teacherNumber": "19",
+      "displayNumber": "19"
+    },
+    {
+      "term": "store information",
+      "meaningZh": "储存信息",
+      "example": "A computer can store information.",
+      "exampleZh": "电脑可以储存信息。",
+      "acceptedMeaningsZh": [
+        "储存信息"
+      ],
+      "relation": "single",
+      "id": "s10-g20-i1",
+      "sourceGroupId": "s10-g20",
+      "session": 10,
+      "teacherNumber": "20",
+      "displayNumber": "20"
+    },
+    {
+      "term": "a file",
+      "meaningZh": "一个文件",
+      "example": "I saved a file on the computer.",
+      "exampleZh": "我在电脑上保存了一个文件。",
+      "acceptedMeaningsZh": [
+        "一个文件"
+      ],
+      "relation": "related",
+      "id": "s10-g21-i1",
+      "sourceGroupId": "s10-g21",
+      "session": 10,
+      "teacherNumber": "21",
+      "displayNumber": "21-1"
+    },
+    {
+      "term": "delete a file",
+      "meaningZh": "删除一个文件",
+      "example": "Do not delete a file by mistake.",
+      "exampleZh": "不要误删文件。",
+      "acceptedMeaningsZh": [
+        "删除一个文件"
+      ],
+      "relation": "related",
+      "id": "s10-g21-i2",
+      "sourceGroupId": "s10-g21",
+      "session": 10,
+      "teacherNumber": "21",
+      "displayNumber": "21-2"
+    },
+    {
+      "term": "Recycle Bin",
+      "meaningZh": "回收站",
+      "example": "The deleted file is in the Recycle Bin.",
+      "exampleZh": "删除的文件在回收站里。",
+      "acceptedMeaningsZh": [
+        "回收站"
+      ],
+      "relation": "single",
+      "id": "s10-g22-i1",
+      "sourceGroupId": "s10-g22",
+      "session": 10,
+      "teacherNumber": "22",
+      "displayNumber": "22"
+    },
+    {
+      "term": "computer screen",
+      "meaningZh": "电脑屏幕",
+      "example": "The words are on the computer screen.",
+      "exampleZh": "这些字在电脑屏幕上。",
+      "acceptedMeaningsZh": [
+        "电脑屏幕"
+      ],
+      "relation": "single",
+      "id": "s10-g23-i1",
+      "sourceGroupId": "s10-g23",
+      "session": 10,
+      "teacherNumber": "23",
+      "displayNumber": "23"
+    },
+    {
+      "term": "check",
+      "meaningZh": "检查",
+      "example": "Please check your answers.",
+      "exampleZh": "请检查你的答案。",
+      "acceptedMeaningsZh": [
+        "检查"
+      ],
+      "relation": "related",
+      "id": "s10-g24-i1",
+      "sourceGroupId": "s10-g24",
+      "session": 10,
+      "teacherNumber": "24",
+      "displayNumber": "24-1"
+    },
+    {
+      "term": "check homework",
+      "meaningZh": "检查作业",
+      "example": "Dad helps me check homework.",
+      "exampleZh": "爸爸帮我检查作业。",
+      "acceptedMeaningsZh": [
+        "检查作业"
+      ],
+      "relation": "related",
+      "id": "s10-g24-i2",
+      "sourceGroupId": "s10-g24",
+      "session": 10,
+      "teacherNumber": "24",
+      "displayNumber": "24-2"
+    },
+    {
+      "term": "system",
+      "meaningZh": "系统",
+      "example": "The computer system is ready.",
+      "exampleZh": "电脑系统准备好了。",
+      "acceptedMeaningsZh": [
+        "系统"
+      ],
+      "relation": "single",
+      "id": "s10-g25-i1",
+      "sourceGroupId": "s10-g25",
+      "session": 10,
+      "teacherNumber": "25",
+      "displayNumber": "25"
+    },
+    {
+      "term": "True (T)",
+      "meaningZh": "正确（用 T 表示）",
+      "example": "Write True (T) if the statement is right.",
+      "exampleZh": "如果陈述正确，就写 True（T）。",
+      "acceptedMeaningsZh": [
+        "正确（用 T 表示）"
+      ],
+      "relation": "related",
+      "id": "s10-g26-i1",
+      "sourceGroupId": "s10-g26",
+      "session": 10,
+      "teacherNumber": "26",
+      "displayNumber": "26-1"
+    },
+    {
+      "term": "False (F)",
+      "meaningZh": "错误（用 F 表示）",
+      "example": "Write False (F) if the statement is wrong.",
+      "exampleZh": "如果陈述错误，就写 False（F）。",
+      "acceptedMeaningsZh": [
+        "错误（用 F 表示）"
+      ],
+      "relation": "related",
+      "id": "s10-g26-i2",
+      "sourceGroupId": "s10-g26",
+      "session": 10,
+      "teacherNumber": "26",
+      "displayNumber": "26-2"
+    },
+    {
+      "term": "ENIAC",
+      "meaningZh": "埃尼阿克（早期电子计算机）",
+      "example": "ENIAC was an early computer.",
+      "exampleZh": "埃尼阿克是一台早期电子计算机。",
+      "acceptedMeaningsZh": [
+        "埃尼阿克（早期电子计算机）"
+      ],
+      "relation": "single",
+      "id": "s10-g27-i1",
+      "sourceGroupId": "s10-g27",
+      "session": 10,
+      "teacherNumber": "27",
+      "displayNumber": "27"
+    },
+    {
+      "term": "the well-known",
+      "meaningZh": "那个著名的",
+      "example": "The well-known story is true.",
+      "exampleZh": "那个著名的故事是真的。",
+      "acceptedMeaningsZh": [
+        "那个著名的"
+      ],
+      "relation": "related",
+      "id": "s10-g28-i1",
+      "sourceGroupId": "s10-g28",
+      "session": 10,
+      "teacherNumber": "28",
+      "displayNumber": "28-1"
+    },
+    {
+      "term": "the best-known",
+      "meaningZh": "那个最著名的",
+      "example": "This is the best-known computer here.",
+      "exampleZh": "这是这里最著名的电脑。",
+      "acceptedMeaningsZh": [
+        "那个最著名的"
+      ],
+      "relation": "related",
+      "id": "s10-g28-i2",
+      "sourceGroupId": "s10-g28",
+      "session": 10,
+      "teacherNumber": "28",
+      "displayNumber": "28-2"
+    },
+    {
+      "term": "good",
+      "meaningZh": "好的",
+      "example": "This is a good idea.",
+      "exampleZh": "这是一个好主意。",
+      "acceptedMeaningsZh": [
+        "好的"
+      ],
+      "relation": "related",
+      "id": "s10-g28-i3",
+      "sourceGroupId": "s10-g28",
+      "session": 10,
+      "teacherNumber": "28",
+      "displayNumber": "28-3"
+    },
+    {
+      "term": "well",
+      "meaningZh": "好地",
+      "example": "She sings well.",
+      "exampleZh": "她唱得很好。",
+      "acceptedMeaningsZh": [
+        "好地"
+      ],
+      "relation": "related",
+      "id": "s10-g28-i4",
+      "sourceGroupId": "s10-g28",
+      "session": 10,
+      "teacherNumber": "28",
+      "displayNumber": "28-4"
+    },
+    {
+      "term": "better",
+      "meaningZh": "更好的；更好地",
+      "example": "This computer works better.",
+      "exampleZh": "这台电脑运行得更好。",
+      "acceptedMeaningsZh": [
+        "更好的；更好地"
+      ],
+      "relation": "related",
+      "id": "s10-g28-i5",
+      "sourceGroupId": "s10-g28",
+      "session": 10,
+      "teacherNumber": "28",
+      "displayNumber": "28-5"
+    },
+    {
+      "term": "best",
+      "meaningZh": "最好的；最好地",
+      "example": "Amy did the best in the quiz.",
+      "exampleZh": "艾米在小测验中表现最好。",
+      "acceptedMeaningsZh": [
+        "最好的；最好地"
+      ],
+      "relation": "related",
+      "id": "s10-g28-i6",
+      "sourceGroupId": "s10-g28",
+      "session": 10,
+      "teacherNumber": "28",
+      "displayNumber": "28-6"
+    },
+    {
+      "term": "key",
+      "meaningZh": "键；钥匙",
+      "example": "Press any key to start.",
+      "exampleZh": "按任意键开始。",
+      "acceptedMeaningsZh": [
+        "键；钥匙"
+      ],
+      "relation": "related",
+      "id": "s10-g29-i1",
+      "sourceGroupId": "s10-g29",
+      "session": 10,
+      "teacherNumber": "29",
+      "displayNumber": "29-1"
+    },
+    {
+      "term": "keyboard",
+      "meaningZh": "键盘",
+      "example": "The keyboard is beside the screen.",
+      "exampleZh": "键盘在屏幕旁边。",
+      "acceptedMeaningsZh": [
+        "键盘"
+      ],
+      "relation": "related",
+      "id": "s10-g29-i2",
+      "sourceGroupId": "s10-g29",
+      "session": 10,
+      "teacherNumber": "29",
+      "displayNumber": "29-2"
+    },
+    {
+      "term": "don't",
+      "meaningZh": "不；不要（用于 I、you、we、they）",
+      "example": "I don't know the password.",
+      "exampleZh": "我不知道密码。",
+      "acceptedMeaningsZh": [
+        "不；不要（用于 I、you、we、they）"
+      ],
+      "relation": "related",
+      "id": "s10-g30-i1",
+      "sourceGroupId": "s10-g30",
+      "session": 10,
+      "teacherNumber": "30",
+      "displayNumber": "30-1"
+    },
+    {
+      "term": "doesn't",
+      "meaningZh": "不（用于 he、she、it）",
+      "example": "She doesn't use this laptop.",
+      "exampleZh": "她不用这台笔记本电脑。",
+      "acceptedMeaningsZh": [
+        "不（用于 he、she、it）"
+      ],
+      "relation": "related",
+      "id": "s10-g30-i2",
+      "sourceGroupId": "s10-g30",
+      "session": 10,
+      "teacherNumber": "30",
+      "displayNumber": "30-2"
+    },
+    {
+      "term": "didn't",
+      "meaningZh": "没有（过去时）",
+      "example": "We didn't play games yesterday.",
+      "exampleZh": "我们昨天没有玩游戏。",
+      "acceptedMeaningsZh": [
+        "没有（过去时）"
+      ],
+      "relation": "related",
+      "id": "s10-g30-i3",
+      "sourceGroupId": "s10-g30",
+      "session": 10,
+      "teacherNumber": "30",
+      "displayNumber": "30-3"
+    },
+    {
+      "term": "It is",
+      "meaningZh": "它是；现在是",
+      "example": "It is a new computer.",
+      "exampleZh": "它是一台新电脑。",
+      "acceptedMeaningsZh": [
+        "它是；现在是"
+      ],
+      "relation": "related",
+      "id": "s10-g31-i1",
+      "sourceGroupId": "s10-g31",
+      "session": 10,
+      "teacherNumber": "31",
+      "displayNumber": "31-1"
+    },
+    {
+      "term": "It was",
+      "meaningZh": "它过去是；当时是",
+      "example": "It was very big.",
+      "exampleZh": "它过去很大。",
+      "acceptedMeaningsZh": [
+        "它过去是；当时是"
+      ],
+      "relation": "related",
+      "id": "s10-g31-i2",
+      "sourceGroupId": "s10-g31",
+      "session": 10,
+      "teacherNumber": "31",
+      "displayNumber": "31-2"
+    },
+    {
+      "term": "as + adj. / adv. + as ...",
+      "meaningZh": "和……一样……",
+      "example": "This laptop is as light as that one.",
+      "exampleZh": "这台笔记本电脑和那台一样轻。",
+      "acceptedMeaningsZh": [
+        "和……一样……"
+      ],
+      "relation": "related",
+      "id": "s10-g32-i1",
+      "sourceGroupId": "s10-g32",
+      "session": 10,
+      "teacherNumber": "32",
+      "displayNumber": "32-1"
+    },
+    {
+      "term": "not as + adj. / adv. + as ...",
+      "meaningZh": "不如……那样……",
+      "example": "This old computer is not as fast as the new one.",
+      "exampleZh": "这台旧电脑不如新电脑快。",
+      "acceptedMeaningsZh": [
+        "不如……那样……"
+      ],
+      "relation": "related",
+      "id": "s10-g32-i2",
+      "sourceGroupId": "s10-g32",
+      "session": 10,
+      "teacherNumber": "32",
+      "displayNumber": "32-2"
+    },
+    {
+      "term": "beside",
+      "meaningZh": "在……旁边",
+      "example": "The mouse is beside the keyboard.",
+      "exampleZh": "鼠标在键盘旁边。",
+      "acceptedMeaningsZh": [
+        "在……旁边"
+      ],
+      "relation": "related",
+      "id": "s10-g33-i1",
+      "sourceGroupId": "s10-g33",
+      "session": 10,
+      "teacherNumber": "33",
+      "displayNumber": "33-1"
+    },
+    {
+      "term": "besides",
+      "meaningZh": "除……之外还；而且",
+      "example": "Besides English, I study Chinese.",
+      "exampleZh": "除了英语，我还学习语文。",
+      "acceptedMeaningsZh": [
+        "除……之外还；而且"
+      ],
+      "relation": "related",
+      "id": "s10-g33-i2",
+      "sourceGroupId": "s10-g33",
+      "session": 10,
+      "teacherNumber": "33",
+      "displayNumber": "33-2"
+    },
+    {
+      "term": "ton",
+      "meaningZh": "吨",
+      "example": "The machine weighs one ton.",
+      "exampleZh": "这台机器重一吨。",
+      "acceptedMeaningsZh": [
+        "吨"
+      ],
+      "relation": "related",
+      "id": "s10-g34-i1",
+      "sourceGroupId": "s10-g34",
+      "session": 10,
+      "teacherNumber": "34",
+      "displayNumber": "34-1"
+    },
+    {
+      "term": "tons",
+      "meaningZh": "多吨",
+      "example": "The old computer weighed many tons.",
+      "exampleZh": "那台旧电脑重很多吨。",
+      "acceptedMeaningsZh": [
+        "多吨"
+      ],
+      "relation": "related",
+      "id": "s10-g34-i2",
+      "sourceGroupId": "s10-g34",
+      "session": 10,
+      "teacherNumber": "34",
+      "displayNumber": "34-2"
+    },
+    {
+      "term": "50 tons",
+      "meaningZh": "五十吨",
+      "example": "ENIAC weighed about 50 tons.",
+      "exampleZh": "埃尼阿克重约五十吨。",
+      "acceptedMeaningsZh": [
+        "五十吨"
+      ],
+      "relation": "related",
+      "id": "s10-g34-i3",
+      "sourceGroupId": "s10-g34",
+      "session": 10,
+      "teacherNumber": "34",
+      "displayNumber": "34-3"
+    },
+    {
+      "term": "as big as an elephant",
+      "meaningZh": "和一头大象一样大",
+      "example": "The machine is as big as an elephant.",
+      "exampleZh": "这台机器和一头大象一样大。",
+      "acceptedMeaningsZh": [
+        "和一头大象一样大"
+      ],
+      "relation": "related",
+      "id": "s10-g35-i1",
+      "sourceGroupId": "s10-g35",
+      "session": 10,
+      "teacherNumber": "35",
+      "displayNumber": "35-1"
+    },
+    {
+      "term": "as heavy as four elephants",
+      "meaningZh": "和四头大象一样重",
+      "example": "It is as heavy as four elephants.",
+      "exampleZh": "它和四头大象一样重。",
+      "acceptedMeaningsZh": [
+        "和四头大象一样重"
+      ],
+      "relation": "related",
+      "id": "s10-g35-i2",
+      "sourceGroupId": "s10-g35",
+      "session": 10,
+      "teacherNumber": "35",
+      "displayNumber": "35-2"
+    },
+    {
+      "term": "different",
+      "meaningZh": "不同的",
+      "example": "The two computers are different.",
+      "exampleZh": "这两台电脑不同。",
+      "acceptedMeaningsZh": [
+        "不同的"
+      ],
+      "relation": "related",
+      "id": "s10-g36-i1",
+      "sourceGroupId": "s10-g36",
+      "session": 10,
+      "teacherNumber": "36",
+      "displayNumber": "36-1"
+    },
+    {
+      "term": "difficult",
+      "meaningZh": "困难的",
+      "example": "This maths question is difficult.",
+      "exampleZh": "这道数学题很难。",
+      "acceptedMeaningsZh": [
+        "困难的"
+      ],
+      "relation": "related",
+      "id": "s10-g36-i2",
+      "sourceGroupId": "s10-g36",
+      "session": 10,
+      "teacherNumber": "36",
+      "displayNumber": "36-2"
+    },
+    {
+      "term": "task",
+      "meaningZh": "任务",
+      "example": "I finished the task.",
+      "exampleZh": "我完成了任务。",
+      "acceptedMeaningsZh": [
+        "任务"
+      ],
+      "relation": "related",
+      "id": "s10-g37-i1",
+      "sourceGroupId": "s10-g37",
+      "session": 10,
+      "teacherNumber": "37",
+      "displayNumber": "37-1"
+    },
+    {
+      "term": "maths tasks",
+      "meaningZh": "数学任务；数学题",
+      "example": "The computer can do maths tasks.",
+      "exampleZh": "电脑可以完成数学任务。",
+      "acceptedMeaningsZh": [
+        "数学任务；数学题"
+      ],
+      "relation": "related",
+      "id": "s10-g37-i2",
+      "sourceGroupId": "s10-g37",
+      "session": 10,
+      "teacherNumber": "37",
+      "displayNumber": "37-2"
+    },
+    {
+      "term": "difficult tasks",
+      "meaningZh": "困难的任务",
+      "example": "It can finish difficult tasks.",
+      "exampleZh": "它可以完成困难的任务。",
+      "acceptedMeaningsZh": [
+        "困难的任务"
+      ],
+      "relation": "related",
+      "id": "s10-g37-i3",
+      "sourceGroupId": "s10-g37",
+      "session": 10,
+      "teacherNumber": "37",
+      "displayNumber": "37-3"
+    },
+    {
+      "term": "microchip",
+      "meaningZh": "微芯片",
+      "example": "A microchip is very small.",
+      "exampleZh": "微芯片非常小。",
+      "acceptedMeaningsZh": [
+        "微芯片"
+      ],
+      "relation": "single",
+      "id": "s10-g38-i1",
+      "sourceGroupId": "s10-g38",
+      "session": 10,
+      "teacherNumber": "38",
+      "displayNumber": "38"
+    },
+    {
+      "term": "make",
+      "meaningZh": "制作；使得",
+      "example": "We make a paper plane.",
+      "exampleZh": "我们制作一架纸飞机。",
+      "acceptedMeaningsZh": [
+        "制作；使得"
+      ],
+      "relation": "related",
+      "id": "s10-g39-i1",
+      "sourceGroupId": "s10-g39",
+      "session": 10,
+      "teacherNumber": "39",
+      "displayNumber": "39-1"
+    },
+    {
+      "term": "made",
+      "meaningZh": "制作了；使得了（make 的过去式）",
+      "example": "Dad made a small robot.",
+      "exampleZh": "爸爸做了一个小机器人。",
+      "acceptedMeaningsZh": [
+        "制作了；使得了（make 的过去式）"
+      ],
+      "relation": "related",
+      "id": "s10-g39-i2",
+      "sourceGroupId": "s10-g39",
+      "session": 10,
+      "teacherNumber": "39",
+      "displayNumber": "39-2"
+    },
+    {
+      "term": "are",
+      "meaningZh": "是（现在时复数）",
+      "example": "These computers are fast.",
+      "exampleZh": "这些电脑很快。",
+      "acceptedMeaningsZh": [
+        "是（现在时复数）"
+      ],
+      "relation": "related",
+      "id": "s10-g40-i1",
+      "sourceGroupId": "s10-g40",
+      "session": 10,
+      "teacherNumber": "40",
+      "displayNumber": "40-1"
+    },
+    {
+      "term": "were",
+      "meaningZh": "过去是（are 的过去式）",
+      "example": "The old computers were large.",
+      "exampleZh": "旧电脑过去很大。",
+      "acceptedMeaningsZh": [
+        "过去是（are 的过去式）"
+      ],
+      "relation": "related",
+      "id": "s10-g40-i2",
+      "sourceGroupId": "s10-g40",
+      "session": 10,
+      "teacherNumber": "40",
+      "displayNumber": "40-2"
+    },
+    {
+      "term": "salt",
+      "meaningZh": "盐",
+      "example": "Please add a little salt.",
+      "exampleZh": "请加一点盐。",
+      "acceptedMeaningsZh": [
+        "盐"
+      ],
+      "relation": "related",
+      "id": "s10-g41-i1",
+      "sourceGroupId": "s10-g41",
+      "session": 10,
+      "teacherNumber": "41",
+      "displayNumber": "41-1"
+    },
+    {
+      "term": "a grain of salt",
+      "meaningZh": "一粒盐",
+      "example": "The chip is as small as a grain of salt.",
+      "exampleZh": "这块芯片和一粒盐一样小。",
+      "acceptedMeaningsZh": [
+        "一粒盐"
+      ],
+      "relation": "related",
+      "id": "s10-g41-i2",
+      "sourceGroupId": "s10-g41",
+      "session": 10,
+      "teacherNumber": "41",
+      "displayNumber": "41-2"
+    },
+    {
+      "term": "How amazing!",
+      "meaningZh": "太神奇了！",
+      "example": "How amazing! The tiny chip can do so much.",
+      "exampleZh": "太神奇了！这块小芯片能做这么多事。",
+      "acceptedMeaningsZh": [
+        "太神奇了！"
+      ],
+      "relation": "single",
+      "id": "s10-g42-i1",
+      "sourceGroupId": "s10-g42",
+      "session": 10,
+      "teacherNumber": "42",
+      "displayNumber": "42"
+    },
+    {
+      "term": "email",
+      "meaningZh": "电子邮件",
+      "example": "I got an email from Amy.",
+      "exampleZh": "我收到了一封艾米发来的电子邮件。",
+      "acceptedMeaningsZh": [
+        "电子邮件"
+      ],
+      "relation": "related",
+      "id": "s10-g43-i1",
+      "sourceGroupId": "s10-g43",
+      "session": 10,
+      "teacherNumber": "43",
+      "displayNumber": "43-1"
+    },
+    {
+      "term": "an email",
+      "meaningZh": "一封电子邮件",
+      "example": "Please write an email to me.",
+      "exampleZh": "请给我写一封电子邮件。",
+      "acceptedMeaningsZh": [
+        "一封电子邮件"
+      ],
+      "relation": "related",
+      "id": "s10-g43-i2",
+      "sourceGroupId": "s10-g43",
+      "session": 10,
+      "teacherNumber": "43",
+      "displayNumber": "43-2"
+    },
+    {
+      "term": "send emails",
+      "meaningZh": "发送电子邮件",
+      "example": "We use computers to send emails.",
+      "exampleZh": "我们用电脑发送电子邮件。",
+      "acceptedMeaningsZh": [
+        "发送电子邮件"
+      ],
+      "relation": "related",
+      "id": "s10-g43-i3",
+      "sourceGroupId": "s10-g43",
+      "session": 10,
+      "teacherNumber": "43",
+      "displayNumber": "43-3"
+    },
+    {
+      "term": "good",
+      "meaningZh": "好的",
+      "example": "This is a good computer.",
+      "exampleZh": "这是一台好电脑。",
+      "acceptedMeaningsZh": [
+        "好的"
+      ],
+      "relation": "related",
+      "id": "s10-g44-i1",
+      "sourceGroupId": "s10-g44",
+      "session": 10,
+      "teacherNumber": "44",
+      "displayNumber": "44-1"
+    },
+    {
+      "term": "well",
+      "meaningZh": "好地",
+      "example": "The computer works well.",
+      "exampleZh": "这台电脑运行得很好。",
+      "acceptedMeaningsZh": [
+        "好地"
+      ],
+      "relation": "related",
+      "id": "s10-g44-i2",
+      "sourceGroupId": "s10-g44",
+      "session": 10,
+      "teacherNumber": "44",
+      "displayNumber": "44-2"
+    },
+    {
+      "term": "better",
+      "meaningZh": "更好的；更好地",
+      "example": "The new one works better.",
+      "exampleZh": "新电脑运行得更好。",
+      "acceptedMeaningsZh": [
+        "更好的；更好地"
+      ],
+      "relation": "related",
+      "id": "s10-g44-i3",
+      "sourceGroupId": "s10-g44",
+      "session": 10,
+      "teacherNumber": "44",
+      "displayNumber": "44-3"
+    },
+    {
+      "term": "as ...",
+      "meaningZh": "作为……",
+      "example": "She works as a teacher.",
+      "exampleZh": "她是一名老师。",
+      "acceptedMeaningsZh": [
+        "作为……"
+      ],
+      "relation": "related",
+      "id": "s10-g45-i1",
+      "sourceGroupId": "s10-g45",
+      "session": 10,
+      "teacherNumber": "45",
+      "displayNumber": "45-1"
+    },
+    {
+      "term": "as a gift",
+      "meaningZh": "作为礼物",
+      "example": "I got the book as a gift.",
+      "exampleZh": "我收到这本书作为礼物。",
+      "acceptedMeaningsZh": [
+        "作为礼物"
+      ],
+      "relation": "related",
+      "id": "s10-g45-i2",
+      "sourceGroupId": "s10-g45",
+      "session": 10,
+      "teacherNumber": "45",
+      "displayNumber": "45-2"
+    },
+    {
+      "term": "turn on",
+      "meaningZh": "打开（电器）",
+      "example": "Turn on the computer, please.",
+      "exampleZh": "请打开电脑。",
+      "acceptedMeaningsZh": [
+        "打开（电器）"
+      ],
+      "relation": "related",
+      "id": "s10-g46-i1",
+      "sourceGroupId": "s10-g46",
+      "session": 10,
+      "teacherNumber": "46",
+      "displayNumber": "46-1"
+    },
+    {
+      "term": "turn off",
+      "meaningZh": "关闭（电器）",
+      "example": "Turn off the light before bed.",
+      "exampleZh": "睡觉前关灯。",
+      "acceptedMeaningsZh": [
+        "关闭（电器）"
+      ],
+      "relation": "related",
+      "id": "s10-g46-i2",
+      "sourceGroupId": "s10-g46",
+      "session": 10,
+      "teacherNumber": "46",
+      "displayNumber": "46-2"
+    },
+    {
+      "term": "mess",
+      "meaningZh": "混乱；脏乱",
+      "example": "My desk is a mess.",
+      "exampleZh": "我的书桌一团糟。",
+      "acceptedMeaningsZh": [
+        "混乱；脏乱"
+      ],
+      "relation": "related",
+      "id": "s10-g47-i1",
+      "sourceGroupId": "s10-g47",
+      "session": 10,
+      "teacherNumber": "47",
+      "displayNumber": "47-1"
+    },
+    {
+      "term": "mess up",
+      "meaningZh": "弄乱；搞砸",
+      "example": "Do not mess up the files.",
+      "exampleZh": "不要弄乱这些文件。",
+      "acceptedMeaningsZh": [
+        "弄乱；搞砸"
+      ],
+      "relation": "related",
+      "id": "s10-g47-i2",
+      "sourceGroupId": "s10-g47",
+      "session": 10,
+      "teacherNumber": "47",
+      "displayNumber": "47-2"
+    },
+    {
+      "term": "need to do ...",
+      "meaningZh": "需要做……",
+      "example": "I need to finish my homework.",
+      "exampleZh": "我需要完成作业。",
+      "acceptedMeaningsZh": [
+        "需要做……"
+      ],
+      "relation": "single",
+      "id": "s10-g48-i1",
+      "sourceGroupId": "s10-g48",
+      "session": 10,
+      "teacherNumber": "48",
+      "displayNumber": "48"
+    },
+    {
+      "term": "power on",
+      "meaningZh": "开机；接通电源",
+      "example": "Power on the computer first.",
+      "exampleZh": "先给电脑开机。",
+      "acceptedMeaningsZh": [
+        "开机；接通电源"
+      ],
+      "relation": "related",
+      "id": "s10-g49-i1",
+      "sourceGroupId": "s10-g49",
+      "session": 10,
+      "teacherNumber": "49",
+      "displayNumber": "49-1"
+    },
+    {
+      "term": "shut down",
+      "meaningZh": "关机；关闭",
+      "example": "Please shut down the computer.",
+      "exampleZh": "请把电脑关机。",
+      "acceptedMeaningsZh": [
+        "关机；关闭"
+      ],
+      "relation": "related",
+      "id": "s10-g49-i2",
+      "sourceGroupId": "s10-g49",
+      "session": 10,
+      "teacherNumber": "49",
+      "displayNumber": "49-2"
+    },
+    {
+      "term": "power off",
+      "meaningZh": "关闭电源",
+      "example": "Power off the screen after use.",
+      "exampleZh": "使用后关闭屏幕电源。",
+      "acceptedMeaningsZh": [
+        "关闭电源"
+      ],
+      "relation": "related",
+      "id": "s10-g49-i3",
+      "sourceGroupId": "s10-g49",
+      "session": 10,
+      "teacherNumber": "49",
+      "displayNumber": "49-3"
+    },
+    {
+      "term": "letter",
+      "meaningZh": "字母；信",
+      "example": "Type a letter here.",
+      "exampleZh": "在这里输入一个字母。",
+      "acceptedMeaningsZh": [
+        "字母；信"
+      ],
+      "relation": "related",
+      "id": "s10-g50-i1",
+      "sourceGroupId": "s10-g50",
+      "session": 10,
+      "teacherNumber": "50",
+      "displayNumber": "50-1"
+    },
+    {
+      "term": "number",
+      "meaningZh": "数字；号码",
+      "example": "My password has one number.",
+      "exampleZh": "我的密码里有一个数字。",
+      "acceptedMeaningsZh": [
+        "数字；号码"
+      ],
+      "relation": "related",
+      "id": "s10-g50-i2",
+      "sourceGroupId": "s10-g50",
+      "session": 10,
+      "teacherNumber": "50",
+      "displayNumber": "50-2"
+    },
+    {
+      "term": "symbol",
+      "meaningZh": "符号",
+      "example": "Add a symbol to the password.",
+      "exampleZh": "在密码中加一个符号。",
+      "acceptedMeaningsZh": [
+        "符号"
+      ],
+      "relation": "related",
+      "id": "s10-g50-i3",
+      "sourceGroupId": "s10-g50",
+      "session": 10,
+      "teacherNumber": "50",
+      "displayNumber": "50-3"
+    },
+    {
+      "term": "tell others",
+      "meaningZh": "告诉别人",
+      "example": "Do not tell others my password.",
+      "exampleZh": "不要把我的密码告诉别人。",
+      "acceptedMeaningsZh": [
+        "告诉别人"
+      ],
+      "relation": "single",
+      "id": "s10-g51-i1",
+      "sourceGroupId": "s10-g51",
+      "session": 10,
+      "teacherNumber": "51",
+      "displayNumber": "51"
+    },
+    {
+      "term": "luck",
+      "meaningZh": "运气",
+      "example": "We need a little luck.",
+      "exampleZh": "我们需要一点运气。",
+      "acceptedMeaningsZh": [
+        "运气"
+      ],
+      "relation": "related",
+      "id": "s10-g52-i1",
+      "sourceGroupId": "s10-g52",
+      "session": 10,
+      "teacherNumber": "52",
+      "displayNumber": "52-1"
+    },
+    {
+      "term": "Good luck!",
+      "meaningZh": "祝你好运！",
+      "example": "Good luck with your quiz!",
+      "exampleZh": "祝你小测验顺利！",
+      "acceptedMeaningsZh": [
+        "祝你好运！"
+      ],
+      "relation": "related",
+      "id": "s10-g52-i2",
+      "sourceGroupId": "s10-g52",
+      "session": 10,
+      "teacherNumber": "52",
+      "displayNumber": "52-2"
+    },
+    {
+      "term": "lucky",
+      "meaningZh": "幸运的",
+      "example": "I am lucky to have your help.",
+      "exampleZh": "有你的帮助，我很幸运。",
+      "acceptedMeaningsZh": [
+        "幸运的"
+      ],
+      "relation": "related",
+      "id": "s10-g52-i3",
+      "sourceGroupId": "s10-g52",
+      "session": 10,
+      "teacherNumber": "52",
+      "displayNumber": "52-3"
+    },
+    {
+      "term": "care",
+      "meaningZh": "关心；照料",
+      "example": "Parents care about their children.",
+      "exampleZh": "父母关心孩子。",
+      "acceptedMeaningsZh": [
+        "关心；照料"
+      ],
+      "relation": "related",
+      "id": "s10-g53-i1",
+      "sourceGroupId": "s10-g53",
+      "session": 10,
+      "teacherNumber": "53",
+      "displayNumber": "53-1"
+    },
+    {
+      "term": "take care of",
+      "meaningZh": "照顾",
+      "example": "I take care of my little brother.",
+      "exampleZh": "我照顾我的弟弟。",
+      "acceptedMeaningsZh": [
+        "照顾"
+      ],
+      "relation": "related",
+      "id": "s10-g53-i2",
+      "sourceGroupId": "s10-g53",
+      "session": 10,
+      "teacherNumber": "53",
+      "displayNumber": "53-2"
+    },
+    {
+      "term": "careful",
+      "meaningZh": "小心的；仔细的",
+      "example": "Be careful with the laptop.",
+      "exampleZh": "使用笔记本电脑时要小心。",
+      "acceptedMeaningsZh": [
+        "小心的；仔细的"
+      ],
+      "relation": "related",
+      "id": "s10-g53-i3",
+      "sourceGroupId": "s10-g53",
+      "session": 10,
+      "teacherNumber": "53",
+      "displayNumber": "53-3"
+    },
+    {
+      "term": "carefully",
+      "meaningZh": "小心地；仔细地",
+      "example": "Read the question carefully.",
+      "exampleZh": "仔细读题。",
+      "acceptedMeaningsZh": [
+        "小心地；仔细地"
+      ],
+      "relation": "related",
+      "id": "s10-g53-i4",
+      "sourceGroupId": "s10-g53",
+      "session": 10,
+      "teacherNumber": "53",
+      "displayNumber": "53-4"
+    },
+    {
+      "term": "careless",
+      "meaningZh": "粗心的",
+      "example": "A careless mistake can cause trouble.",
+      "exampleZh": "一个粗心的错误会带来麻烦。",
+      "acceptedMeaningsZh": [
+        "粗心的"
+      ],
+      "relation": "related",
+      "id": "s10-g53-i5",
+      "sourceGroupId": "s10-g53",
+      "session": 10,
+      "teacherNumber": "53",
+      "displayNumber": "53-5"
+    },
+    {
+      "term": "carelessly",
+      "meaningZh": "粗心地",
+      "example": "Do not use the computer carelessly.",
+      "exampleZh": "不要粗心地使用电脑。",
+      "acceptedMeaningsZh": [
+        "粗心地"
+      ],
+      "relation": "related",
+      "id": "s10-g53-i6",
+      "sourceGroupId": "s10-g53",
+      "session": 10,
+      "teacherNumber": "53",
+      "displayNumber": "53-6"
+    },
+    {
+      "term": "drop",
+      "meaningZh": "使掉落；掉下",
+      "example": "Do not drop your phone.",
+      "exampleZh": "不要把手机掉在地上。",
+      "acceptedMeaningsZh": [
+        "使掉落；掉下"
+      ],
+      "relation": "related",
+      "id": "s10-g54-i1",
+      "sourceGroupId": "s10-g54",
+      "session": 10,
+      "teacherNumber": "54",
+      "displayNumber": "54-1"
+    },
+    {
+      "term": "dropped",
+      "meaningZh": "掉落了（drop 的过去式）",
+      "example": "I dropped some water on the desk.",
+      "exampleZh": "我把一些水洒在了桌上。",
+      "acceptedMeaningsZh": [
+        "掉落了（drop 的过去式）"
+      ],
+      "relation": "related",
+      "id": "s10-g54-i2",
+      "sourceGroupId": "s10-g54",
+      "session": 10,
+      "teacherNumber": "54",
+      "displayNumber": "54-2"
+    },
+    {
+      "term": "leave it to dry",
+      "meaningZh": "把它放着晾干",
+      "example": "Leave it to dry before you use it.",
+      "exampleZh": "使用前先把它放着晾干。",
+      "acceptedMeaningsZh": [
+        "把它放着晾干"
+      ],
+      "relation": "single",
+      "id": "s10-g55-i1",
+      "sourceGroupId": "s10-g55",
+      "session": 10,
+      "teacherNumber": "55",
+      "displayNumber": "55"
+    },
+    {
+      "term": "be worried",
+      "meaningZh": "担心",
+      "example": "Do not be worried about the test.",
+      "exampleZh": "不要担心考试。",
+      "acceptedMeaningsZh": [
+        "担心"
+      ],
+      "relation": "single",
+      "id": "s10-g56-i1",
+      "sourceGroupId": "s10-g56",
+      "session": 10,
+      "teacherNumber": "56",
+      "displayNumber": "56"
+    },
+    {
+      "term": "ask sb. to do",
+      "meaningZh": "让某人做……；请求某人做……",
+      "example": "I ask Dad to help me.",
+      "exampleZh": "我请爸爸帮我。",
+      "acceptedMeaningsZh": [
+        "让某人做……；请求某人做……"
+      ],
+      "relation": "related",
+      "id": "s10-g57-i1",
+      "sourceGroupId": "s10-g57",
+      "session": 10,
+      "teacherNumber": "57",
+      "displayNumber": "57-1"
+    },
+    {
+      "term": "ask my mother to help me ...",
+      "meaningZh": "请妈妈帮我……",
+      "example": "I ask my mother to help me clean it.",
+      "exampleZh": "我请妈妈帮我把它清理干净。",
+      "acceptedMeaningsZh": [
+        "请妈妈帮我……"
+      ],
+      "relation": "related",
+      "id": "s10-g57-i2",
+      "sourceGroupId": "s10-g57",
+      "session": 10,
+      "teacherNumber": "57",
+      "displayNumber": "57-2"
+    },
+    {
+      "term": "while",
+      "meaningZh": "当……时；一段时间",
+      "example": "Be careful while you work.",
+      "exampleZh": "工作时要小心。",
+      "acceptedMeaningsZh": [
+        "当……时；一段时间"
+      ],
+      "relation": "related",
+      "id": "s10-g58-i1",
+      "sourceGroupId": "s10-g58",
+      "session": 10,
+      "teacherNumber": "58",
+      "displayNumber": "58-1"
+    },
+    {
+      "term": "while doing ...",
+      "meaningZh": "在做……时",
+      "example": "Do not eat while doing homework.",
+      "exampleZh": "做作业时不要吃东西。",
+      "acceptedMeaningsZh": [
+        "在做……时"
+      ],
+      "relation": "related",
+      "id": "s10-g58-i2",
+      "sourceGroupId": "s10-g58",
+      "session": 10,
+      "teacherNumber": "58",
+      "displayNumber": "58-2"
+    },
+    {
+      "term": "while using ...",
+      "meaningZh": "在使用……时",
+      "example": "Sit straight while using a computer.",
+      "exampleZh": "使用电脑时要坐直。",
+      "acceptedMeaningsZh": [
+        "在使用……时"
+      ],
+      "relation": "related",
+      "id": "s10-g58-i3",
+      "sourceGroupId": "s10-g58",
+      "session": 10,
+      "teacherNumber": "58",
+      "displayNumber": "58-3"
+    },
+    {
+      "term": "in the future",
+      "meaningZh": "将来",
+      "example": "Computers will be smaller in the future.",
+      "exampleZh": "将来的电脑会更小。",
+      "acceptedMeaningsZh": [
+        "将来"
+      ],
+      "relation": "single",
+      "id": "s10-g59-i1",
+      "sourceGroupId": "s10-g59",
+      "session": 10,
+      "teacherNumber": "59",
+      "displayNumber": "59"
+    },
+    {
+      "term": "used",
+      "meaningZh": "用过的；二手的",
+      "example": "This is a used computer.",
+      "exampleZh": "这是一台用过的电脑。",
+      "acceptedMeaningsZh": [
+        "用过的；二手的"
+      ],
+      "relation": "related",
+      "id": "s10-g60-i1",
+      "sourceGroupId": "s10-g60",
+      "session": 10,
+      "teacherNumber": "60",
+      "displayNumber": "60-1"
+    },
+    {
+      "term": "unused",
+      "meaningZh": "未使用的",
+      "example": "The unused paper is still clean.",
+      "exampleZh": "未使用的纸仍然很干净。",
+      "acceptedMeaningsZh": [
+        "未使用的"
+      ],
+      "relation": "related",
+      "id": "s10-g60-i2",
+      "sourceGroupId": "s10-g60",
+      "session": 10,
+      "teacherNumber": "60",
+      "displayNumber": "60-2"
+    },
+    {
+      "term": "program",
+      "meaningZh": "程序；编程",
+      "example": "This program helps me draw.",
+      "exampleZh": "这个程序帮助我画画。",
+      "acceptedMeaningsZh": [
+        "程序；编程"
+      ],
+      "relation": "single",
+      "id": "s10-g61-i1",
+      "sourceGroupId": "s10-g61",
+      "session": 10,
+      "teacherNumber": "61",
+      "displayNumber": "61"
+    },
+    {
+      "term": "necessary",
+      "meaningZh": "必要的",
+      "example": "A strong password is necessary.",
+      "exampleZh": "强密码是必要的。",
+      "acceptedMeaningsZh": [
+        "必要的"
+      ],
+      "relation": "related",
+      "id": "s10-g62-i1",
+      "sourceGroupId": "s10-g62",
+      "session": 10,
+      "teacherNumber": "62",
+      "displayNumber": "62-1"
+    },
+    {
+      "term": "unnecessary",
+      "meaningZh": "不必要的",
+      "example": "Delete unnecessary files.",
+      "exampleZh": "删除不必要的文件。",
+      "acceptedMeaningsZh": [
+        "不必要的"
+      ],
+      "relation": "related",
+      "id": "s10-g62-i2",
+      "sourceGroupId": "s10-g62",
+      "session": 10,
+      "teacherNumber": "62",
+      "displayNumber": "62-2"
+    },
+    {
+      "term": "update",
+      "meaningZh": "更新",
+      "example": "Please update the program.",
+      "exampleZh": "请更新这个程序。",
+      "acceptedMeaningsZh": [
+        "更新"
+      ],
+      "relation": "single",
+      "id": "s10-g63-i1",
+      "sourceGroupId": "s10-g63",
+      "session": 10,
+      "teacherNumber": "63",
+      "displayNumber": "63"
+    },
+    {
+      "term": "immediately",
+      "meaningZh": "立刻；马上",
+      "example": "Turn it off immediately.",
+      "exampleZh": "立刻把它关掉。",
+      "acceptedMeaningsZh": [
+        "立刻；马上"
+      ],
+      "relation": "single",
+      "id": "s10-g64-i1",
+      "sourceGroupId": "s10-g64",
+      "session": 10,
+      "teacherNumber": "64",
+      "displayNumber": "64"
+    },
+    {
+      "term": "restart",
+      "meaningZh": "重新启动",
+      "example": "Restart the computer after the update.",
+      "exampleZh": "更新后重新启动电脑。",
+      "acceptedMeaningsZh": [
+        "重新启动"
+      ],
+      "relation": "single",
+      "id": "s10-g65-i1",
+      "sourceGroupId": "s10-g65",
+      "session": 10,
+      "teacherNumber": "65",
+      "displayNumber": "65"
+    },
+    {
+      "term": "virus",
+      "meaningZh": "病毒",
+      "example": "A virus can hurt your computer.",
+      "exampleZh": "病毒会损害你的电脑。",
+      "acceptedMeaningsZh": [
+        "病毒"
+      ],
+      "relation": "related",
+      "id": "s10-g66-i1",
+      "sourceGroupId": "s10-g66",
+      "session": 10,
+      "teacherNumber": "66",
+      "displayNumber": "66-1"
+    },
+    {
+      "term": "viruses",
+      "meaningZh": "多种病毒",
+      "example": "This program can find viruses.",
+      "exampleZh": "这个程序能查找病毒。",
+      "acceptedMeaningsZh": [
+        "多种病毒"
+      ],
+      "relation": "related",
+      "id": "s10-g66-i2",
+      "sourceGroupId": "s10-g66",
+      "session": 10,
+      "teacherNumber": "66",
+      "displayNumber": "66-2"
+    },
+    {
+      "term": "keep in mind",
+      "meaningZh": "记住",
+      "example": "Keep in mind that passwords are private.",
+      "exampleZh": "记住密码是私密的。",
+      "acceptedMeaningsZh": [
+        "记住"
+      ],
+      "relation": "single",
+      "id": "s10-g67-i1",
+      "sourceGroupId": "s10-g67",
+      "session": 10,
+      "teacherNumber": "67",
+      "displayNumber": "67"
+    },
+    {
+      "term": "fill in",
+      "meaningZh": "填写",
+      "example": "Please fill in your name.",
+      "exampleZh": "请填写你的姓名。",
+      "acceptedMeaningsZh": [
+        "填写"
+      ],
+      "relation": "single",
+      "id": "s10-g68-i1",
+      "sourceGroupId": "s10-g68",
+      "session": 10,
+      "teacherNumber": "68",
+      "displayNumber": "68"
+    },
+    {
+      "term": "template",
+      "meaningZh": "模板",
+      "example": "Choose a template for the card.",
+      "exampleZh": "为卡片选择一个模板。",
+      "acceptedMeaningsZh": [
+        "模板"
+      ],
+      "relation": "related",
+      "id": "s10-g69-i1",
+      "sourceGroupId": "s10-g69",
+      "session": 10,
+      "teacherNumber": "69",
+      "displayNumber": "69-1"
+    },
+    {
+      "term": "templates",
+      "meaningZh": "多个模板",
+      "example": "The program has many templates.",
+      "exampleZh": "这个程序有许多模板。",
+      "acceptedMeaningsZh": [
+        "多个模板"
+      ],
+      "relation": "related",
+      "id": "s10-g69-i2",
+      "sourceGroupId": "s10-g69",
+      "session": 10,
+      "teacherNumber": "69",
+      "displayNumber": "69-2"
+    },
+    {
+      "term": "in the corner",
+      "meaningZh": "在角落里",
+      "example": "The button is in the corner.",
+      "exampleZh": "按钮在角落里。",
+      "acceptedMeaningsZh": [
+        "在角落里"
+      ],
+      "relation": "single",
+      "id": "s10-g70-i1",
+      "sourceGroupId": "s10-g70",
+      "session": 10,
+      "teacherNumber": "70",
+      "displayNumber": "70"
+    },
+    {
+      "term": "share ... with ...",
+      "meaningZh": "与……分享……",
+      "example": "I share my photos with Mum.",
+      "exampleZh": "我和妈妈分享我的照片。",
+      "acceptedMeaningsZh": [
+        "与……分享……"
+      ],
+      "relation": "single",
+      "id": "s10-g71-i1",
+      "sourceGroupId": "s10-g71",
+      "session": 10,
+      "teacherNumber": "71",
+      "displayNumber": "71"
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 export const AMY_VOCABULARY_BOOK_ID = "amy-grade-5-vocabulary";
-const AMY_VOCABULARY_DATA_VERSION = "20260804-1";
+const AMY_VOCABULARY_DATA_VERSION = "20260820-1";
 export const AMY_VOCABULARY_CONTENT_URL =
   import.meta.env.BASE_URL + "data/books/" + AMY_VOCABULARY_BOOK_ID + "/content.json";
 
@@ -17,8 +17,8 @@ export const AMY_VOCABULARY_MANIFEST = {
     { number: 7, available: true, itemCount: 133, groupCount: 75 },
     { number: 8, available: true, itemCount: 104, groupCount: 59 },
     { number: 9, available: true, itemCount: 125, groupCount: 64 },
-    { number: 10, available: false, itemCount: 0, groupCount: 0 },
-    { number: 11, available: false, itemCount: 0, groupCount: 0 }
+    { number: 10, available: true, itemCount: 129, groupCount: 71 },
+    { number: 11, available: true, itemCount: 109, groupCount: 61 }
   ]
 };
 
