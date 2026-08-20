@@ -206,7 +206,7 @@ function PostDetail({ post, busyAction, onBack, onEdit, onConfirm, onReject, onC
       <div><span>{formatHomeworkDate(post.homeworkDate)}</span><h1>{post.description}</h1><small>{post.images.length} 张图片 · 发布于 {formatTimestamp(post.createdAt)}</small></div>
       <div className="homework-detail-actions">
         {!post.confirmedAt ? <button onClick={onEdit}><Pencil size={16} />修改或补图</button> : null}
-        {post.confirmedAt ? <span className="homework-confirmed"><CheckCircle2 size={17} />已确认</span> : post.rejectedAt ? <span className="homework-rejected"><CircleX size={17} />已驳回</span> : <>
+        {post.confirmedAt ? <><span className="homework-confirmed"><CheckCircle2 size={17} />已确认</span><button className="reject" disabled={Boolean(busyAction)} onClick={onReject}><CircleX size={16} />{busyAction === "reject" ? "驳回中" : "改为驳回"}</button></> : post.rejectedAt ? <span className="homework-rejected"><CircleX size={17} />已驳回</span> : <>
           <button className="confirm" disabled={Boolean(busyAction)} onClick={onConfirm}><CheckCircle2 size={16} />{busyAction === "confirm" ? "确认中" : "爸妈确认"}</button>
           <button className="reject" disabled={Boolean(busyAction)} onClick={onReject}><CircleX size={16} />{busyAction === "reject" ? "驳回中" : "驳回"}</button>
         </>}
