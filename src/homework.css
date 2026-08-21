@@ -187,12 +187,14 @@
 .homework-detail-head > div:nth-child(2) > span { color: var(--green); font-size: 12px; font-weight: 800; }
 .homework-detail-head h1 { margin: 8px 0; font: 700 28px/1.35 Georgia, "Songti SC", serif; overflow-wrap: anywhere; }
 .homework-detail-head small { color: #6e7c77; }
-.homework-detail-actions { display: flex; gap: 8px; margin-top: 16px; }
+.homework-detail-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 .homework-detail-actions button.confirm { border-color: #d5b76d; background: #fff4d7; color: #7c540e; }
 .homework-detail-actions button.reject { border-color: #e6aaa5; background: #fff0ee; color: #b42318; }
 .homework-detail-actions button:disabled { opacity: .55; cursor: not-allowed; }
 .homework-confirmed { display: inline-flex; align-items: center; gap: 6px; padding: 8px 11px; background: #e4f2e9; color: #176b48; font-size: 13px; font-weight: 700; }
 .homework-rejected { display: inline-flex; align-items: center; gap: 6px; padding: 8px 11px; background: #fce8e6; color: #b42318; font-size: 13px; font-weight: 700; }
+.homework-confirmed time,
+.homework-rejected time { padding-left: 7px; border-left: 1px solid currentColor; font-size: 11px; font-weight: 500; opacity: .75; }
 .homework-reject-form { display: grid; gap: 10px; max-width: 620px; margin-top: 12px; padding: 12px; border-left: 3px solid #c94c43; background: #fff4f2; }
 .homework-reject-form label { display: grid; gap: 7px; color: #8f2d26; font-size: 12px; font-weight: 700; }
 .homework-reject-form textarea { width: 100%; min-height: 76px; padding: 9px 10px; border: 1px solid #dca8a3; border-radius: 3px; background: #fff; color: var(--ink); resize: vertical; }
@@ -201,7 +203,9 @@
 .homework-reject-form button.reject { border-color: #c94c43; background: #c94c43; color: #fff; }
 .homework-reject-form button:disabled { opacity: .5; cursor: not-allowed; }
 .homework-rejection-detail { max-width: 620px; margin-top: 12px; padding: 11px 12px; border-left: 3px solid #c94c43; background: #fff4f2; }
+.homework-rejection-detail > div { display: flex; align-items: baseline; gap: 9px; }
 .homework-rejection-detail strong { color: #a3372f; font-size: 12px; }
+.homework-rejection-detail time { color: #9a625e; font-size: 10px; }
 .homework-rejection-detail p { margin: 5px 0 0; color: #5c3532; line-height: 1.55; white-space: pre-wrap; overflow-wrap: anywhere; }
 
 .homework-post-comments { margin: 20px 0 26px; padding: 18px; border-left: 4px solid #d5ad58; background: #fff9ea; }

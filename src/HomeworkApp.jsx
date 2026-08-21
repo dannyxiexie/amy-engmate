@@ -216,13 +216,16 @@ function PostDetail({ post, busyAction, onBack, onEdit, onConfirm, onReject, onC
       <div><span>{formatHomeworkDate(post.homeworkDate)}</span><h1>{post.description}</h1><small>{post.images.length} 张图片 · 发布于 {formatTimestamp(post.createdAt)}</small></div>
       <div className="homework-detail-actions">
         {!post.confirmedAt ? <button onClick={onEdit}><Pencil size={16} />修改或补图</button> : null}
-        {post.confirmedAt ? <><span className="homework-confirmed"><CheckCircle2 size={17} />已确认</span><button className="reject" disabled={Boolean(busyAction)} onClick={openRejectForm}><CircleX size={16} />改为驳回</button></> : post.rejectedAt ? <span className="homework-rejected"><CircleX size={17} />已驳回</span> : <>
+        {post.confirmedAt ? <><span className="homework-confirmed"><CheckCircle2 size={17} />已确认<time>{formatTimestamp(post.confirmedAt)}</time></span><button className="reject" disabled={Boolean(busyAction)} onClick={openRejectForm}><CircleX size={16} />改为驳回</button></> : post.rejectedAt ? <>
+          <span className="homework-rejected"><CircleX size={17} />已驳回<time>{formatTimestamp(post.rejectedAt)}</time></span>
+          <button className="confirm" disabled={Boolean(busyAction)} onClick={onConfirm}><CheckCircle2 size={16} />{busyAction === "confirm" ? "确认中" : "再次确认"}</button>
+        </> : <>
           <button className="confirm" disabled={Boolean(busyAction)} onClick={onConfirm}><CheckCircle2 size={16} />{busyAction === "confirm" ? "确认中" : "爸妈确认"}</button>
           <button className="reject" disabled={Boolean(busyAction)} onClick={openRejectForm}><CircleX size={16} />驳回</button>
         </>}
       </div>
       {showRejectForm ? <div className="homework-reject-form"><label>驳回意见<textarea autoFocus rows="3" maxLength="300" value={rejectionNote} onChange={(event) => setRejectionNote(event.target.value)} placeholder="请写明需要修改的问题" /></label><div><button disabled={Boolean(busyAction)} onClick={() => setShowRejectForm(false)}>取消</button><button className="reject" disabled={!rejectionNote.trim() || Boolean(busyAction)} onClick={submitRejection}>{busyAction === "reject" ? "保存中" : "确认驳回"}</button></div></div> : null}
-      {post.rejectedAt && post.rejectionNote ? <div className="homework-rejection-detail"><strong>驳回意见</strong><p>{post.rejectionNote}</p></div> : null}
+      {post.rejectedAt && post.rejectionNote ? <div className="homework-rejection-detail"><div><strong>驳回意见</strong><time>{formatTimestamp(post.rejectedAt)}</time></div><p>{post.rejectionNote}</p></div> : null}
     </div>
 
     <section className="homework-post-comments">
