@@ -56,10 +56,10 @@
     }
   ],
   "comments": [],
-  "confirmedAt": "2026-08-20T14:16:28.545Z",
-  "confirmedByDeviceId": "device-1785847096793975fb5f573",
+  "confirmedAt": null,
+  "confirmedByDeviceId": null,
   "createdAt": "2026-08-10T10:33:07.950Z",
-  "updatedAt": "2026-08-20T14:16:28.545Z",
+  "updatedAt": "2026-08-21T07:13:03.084Z",
   "auditLog": [
     {
       "id": "audit-1786357987950b6471a3633",
@@ -96,6 +96,18 @@
       "deviceId": "device-1785847096793975fb5f573",
       "timestamp": "2026-08-20T14:16:32.790Z",
       "details": {}
+    },
+    {
+      "id": "audit-17872963836997c744dc9f9",
+      "action": "reject_post",
+      "deviceId": "device-1785847096793975fb5f573",
+      "timestamp": "2026-08-21T07:13:03.699Z",
+      "details": {
+        "noteLength": 8
+      }
     }
-  ]
+  ],
+  "rejectedAt": "2026-08-21T07:13:03.084Z",
+  "rejectedByDeviceId": "device-1785847096793975fb5f573",
+  "rejectionNote": "无语文故事总结。"
 }
