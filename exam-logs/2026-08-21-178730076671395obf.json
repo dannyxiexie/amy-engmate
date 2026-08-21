@@ -2367,9 +2367,10 @@
       },
       {
         "id": "s10-g37-i2",
-        "correct": false,
+        "correct": true,
         "answer": "数学任务；数学题",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s10-g62-i1",
@@ -2379,15 +2380,17 @@
       },
       {
         "id": "s10-g25-i1",
-        "correct": false,
+        "correct": true,
         "answer": "系统",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s10-g37-i3",
-        "correct": false,
+        "correct": true,
         "answer": "困难的任务",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s10-g44-i1",
@@ -2499,9 +2502,10 @@
       },
       {
         "id": "s10-g39-i2",
-        "correct": false,
+        "correct": true,
         "answer": "制作了；使得了（make 的过去式）",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s10-g15-i2",
@@ -2589,9 +2593,10 @@
       },
       {
         "id": "s10-g50-i2",
-        "correct": false,
+        "correct": true,
         "answer": "数字；号码",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s10-g61-i1",
@@ -2757,9 +2762,10 @@
       },
       {
         "id": "s10-g44-i2",
-        "correct": false,
+        "correct": true,
         "answer": "好地",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s10-g44-i3",
@@ -2775,9 +2781,10 @@
       },
       {
         "id": "s10-g69-i2",
-        "correct": false,
+        "correct": true,
         "answer": "多个模板",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s10-g28-i2",
@@ -2787,9 +2794,10 @@
       },
       {
         "id": "s10-g34-i2",
-        "correct": false,
+        "correct": true,
         "answer": "多吨",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s10-g27-i1",
@@ -2829,9 +2837,10 @@
       },
       {
         "id": "s10-g28-i4",
-        "correct": false,
+        "correct": true,
         "answer": "好地",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s10-g17-i1",
@@ -2943,9 +2952,10 @@
       },
       {
         "id": "s10-g54-i2",
-        "correct": false,
+        "correct": true,
         "answer": "掉落了（drop 的过去式）",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s10-g40-i1",
@@ -3015,9 +3025,10 @@
       },
       {
         "id": "s10-g32-i2",
-        "correct": false,
+        "correct": true,
         "answer": "不如……那样……",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s10-g21-i1",
@@ -3063,9 +3074,10 @@
       },
       {
         "id": "s10-g12-i1",
-        "correct": false,
+        "correct": true,
         "answer": "和……一样……",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s10-g47-i1",
@@ -3081,9 +3093,10 @@
       },
       {
         "id": "s10-g22-i1",
-        "correct": false,
+        "correct": true,
         "answer": "回收站",
-        "source": "ai"
+        "source": "ai",
+        "parentCorrected": true
       },
       {
         "id": "s10-g53-i4",
@@ -3178,9 +3191,9 @@
         "answer": "an email"
       }
     ],
-    "correct": 108,
+    "correct": 121,
     "total": 141,
-    "score": 77
+    "score": 86
   },
   "gradingVersion": 7,
   "gradingAudit": {
@@ -4727,5 +4740,92 @@
         "gradedAt": "2026-08-21T08:26:06.577Z"
       }
     ]
-  }
+  },
+  "aiGrading": {
+    "score": 77,
+    "correct": 108,
+    "total": 141
+  },
+  "regradedAt": "2026-08-21T08:39:23.198Z",
+  "parentGradedAt": "2026-08-21T08:39:23.198Z",
+  "parentGraded": [
+    {
+      "id": "s10-g28-i4",
+      "term": "well",
+      "answer": "好的",
+      "displayNumber": "28-4"
+    },
+    {
+      "id": "s10-g12-i1",
+      "term": "as ... as ...",
+      "answer": "一样",
+      "displayNumber": "12"
+    },
+    {
+      "id": "s10-g22-i1",
+      "term": "Recycle Bin",
+      "answer": "垃圾桶",
+      "displayNumber": "22"
+    },
+    {
+      "id": "s10-g37-i2",
+      "term": "maths tasks",
+      "answer": "数学测试",
+      "displayNumber": "37-2"
+    },
+    {
+      "id": "s10-g25-i1",
+      "term": "system",
+      "answer": "系统或者程序",
+      "displayNumber": "25"
+    },
+    {
+      "id": "s10-g37-i3",
+      "term": "difficult tasks",
+      "answer": "困难的测试或者任务",
+      "displayNumber": "37-3"
+    },
+    {
+      "id": "s10-g39-i2",
+      "term": "made",
+      "answer": "制作的过去式",
+      "displayNumber": "39-2"
+    },
+    {
+      "id": "s10-g50-i2",
+      "term": "number",
+      "answer": "编号或者学号",
+      "displayNumber": "50-2"
+    },
+    {
+      "id": "s10-g34-i2",
+      "term": "tons",
+      "answer": "吨（复数）",
+      "displayNumber": "34-2"
+    },
+    {
+      "id": "s10-g69-i2",
+      "term": "templates",
+      "answer": "模板",
+      "displayNumber": "69-2"
+    },
+    {
+      "id": "s10-g44-i2",
+      "term": "well",
+      "answer": "好的",
+      "displayNumber": "44-2"
+    },
+    {
+      "id": "s10-g54-i2",
+      "term": "dropped",
+      "answer": "掉落的",
+      "displayNumber": "54-2"
+    },
+    {
+      "id": "s10-g32-i2",
+      "term": "not as + adj. / adv. + as ...",
+      "answer": "什么不是和什么一样的中间是名词或者副词",
+      "displayNumber": "32-2"
+    }
+  ]
 }
