@@ -68,10 +68,10 @@
     }
   ],
   "comments": [],
-  "confirmedAt": "2026-08-20T14:17:30.792Z",
-  "confirmedByDeviceId": "device-1785847096793975fb5f573",
+  "confirmedAt": null,
+  "confirmedByDeviceId": null,
   "createdAt": "2026-08-11T14:18:27.566Z",
-  "updatedAt": "2026-08-20T14:17:30.792Z",
+  "updatedAt": "2026-08-21T07:13:45.535Z",
   "auditLog": [
     {
       "id": "audit-1786457907566b5d6f3dfba",
@@ -98,6 +98,18 @@
       "deviceId": "device-1785847096793975fb5f573",
       "timestamp": "2026-08-20T14:17:31.422Z",
       "details": {}
+    },
+    {
+      "id": "audit-178729642681558fdba77fa",
+      "action": "reject_post",
+      "deviceId": "device-1785847096793975fb5f573",
+      "timestamp": "2026-08-21T07:13:46.815Z",
+      "details": {
+        "noteLength": 14
+      }
     }
-  ]
+  ],
+  "rejectedAt": "2026-08-21T07:13:45.535Z",
+  "rejectedByDeviceId": "device-1785847096793975fb5f573",
+  "rejectionNote": "无《水浒传》和语文故事总结。"
 }
