@@ -191,7 +191,7 @@ function PostList({ posts, loading, status, onCreate, onOpen }) {
     {status ? <div className="homework-status"><CloudUpload size={15} /><span>{status}</span></div> : null}
     {loading ? <p className="homework-empty">正在读取公开记录</p> : posts.length ? <section className="homework-post-list">{posts.map((post) => <button key={post.id} onClick={() => onOpen(post)}>
       <div className="homework-date-block"><strong>{new Date(`${post.homeworkDate}T00:00:00`).getDate()}</strong><span>{new Date(`${post.homeworkDate}T00:00:00`).toLocaleString("zh-CN", { month: "short" })}</span></div>
-      <div><strong>{formatHomeworkDate(post.homeworkDate)}的作业</strong><p>{post.description}</p><small>{post.images.length} 张图片 · {(post.comments || []).length} 条评论</small></div>
+      <div><strong>{formatHomeworkDate(post.homeworkDate)}的作业</strong><p>{post.description}</p><small>{post.images.length} 张图片 · {(post.comments || []).length} 条评论</small>{post.rejectedAt && post.rejectionNote ? <span className="homework-rejection-preview">驳回意见：{post.rejectionNote}</span> : null}</div>
       <span className={`homework-state ${post.confirmedAt ? "confirmed" : post.rejectedAt ? "rejected" : "open"}`}>{post.confirmedAt ? "已确认" : post.rejectedAt ? "已驳回" : "等待确认"}</span>
       <ChevronRight size={18} />
     </button>)}</section> : <p className="homework-empty">还没有发布记录。</p>}
@@ -200,17 +200,29 @@ function PostList({ posts, loading, status, onCreate, onOpen }) {
 
 function PostDetail({ post, busyAction, onBack, onEdit, onConfirm, onReject, onComment }) {
   const postComments = (post.comments || []).filter((comment) => comment.targetType === "post");
+  const [showRejectForm, setShowRejectForm] = useState(false);
+  const [rejectionNote, setRejectionNote] = useState("");
+  const openRejectForm = () => {
+    setRejectionNote(post.rejectionNote || "");
+    setShowRejectForm(true);
+  };
+  const submitRejection = async () => {
+    const saved = await onReject(rejectionNote.trim());
+    if (saved !== false) setShowRejectForm(false);
+  };
   return <main className="homework-detail">
     <div className="homework-detail-head">
       <button className="homework-inline-back" onClick={onBack}><ArrowLeft size={16} />全部发布</button>
       <div><span>{formatHomeworkDate(post.homeworkDate)}</span><h1>{post.description}</h1><small>{post.images.length} 张图片 · 发布于 {formatTimestamp(post.createdAt)}</small></div>
       <div className="homework-detail-actions">
         {!post.confirmedAt ? <button onClick={onEdit}><Pencil size={16} />修改或补图</button> : null}
-        {post.confirmedAt ? <><span className="homework-confirmed"><CheckCircle2 size={17} />已确认</span><button className="reject" disabled={Boolean(busyAction)} onClick={onReject}><CircleX size={16} />{busyAction === "reject" ? "驳回中" : "改为驳回"}</button></> : post.rejectedAt ? <span className="homework-rejected"><CircleX size={17} />已驳回</span> : <>
+        {post.confirmedAt ? <><span className="homework-confirmed"><CheckCircle2 size={17} />已确认</span><button className="reject" disabled={Boolean(busyAction)} onClick={openRejectForm}><CircleX size={16} />改为驳回</button></> : post.rejectedAt ? <span className="homework-rejected"><CircleX size={17} />已驳回</span> : <>
           <button className="confirm" disabled={Boolean(busyAction)} onClick={onConfirm}><CheckCircle2 size={16} />{busyAction === "confirm" ? "确认中" : "爸妈确认"}</button>
-          <button className="reject" disabled={Boolean(busyAction)} onClick={onReject}><CircleX size={16} />{busyAction === "reject" ? "驳回中" : "驳回"}</button>
+          <button className="reject" disabled={Boolean(busyAction)} onClick={openRejectForm}><CircleX size={16} />驳回</button>
         </>}
       </div>
+      {showRejectForm ? <div className="homework-reject-form"><label>驳回意见<textarea autoFocus rows="3" maxLength="300" value={rejectionNote} onChange={(event) => setRejectionNote(event.target.value)} placeholder="请写明需要修改的问题" /></label><div><button disabled={Boolean(busyAction)} onClick={() => setShowRejectForm(false)}>取消</button><button className="reject" disabled={!rejectionNote.trim() || Boolean(busyAction)} onClick={submitRejection}>{busyAction === "reject" ? "保存中" : "确认驳回"}</button></div></div> : null}
+      {post.rejectedAt && post.rejectionNote ? <div className="homework-rejection-detail"><strong>驳回意见</strong><p>{post.rejectionNote}</p></div> : null}
     </div>
 
     <section className="homework-post-comments">
@@ -302,6 +314,7 @@ export default function HomeworkApp({ onBack }) {
         confirmedByDeviceId: null,
         rejectedAt: null,
         rejectedByDeviceId: null,
+        rejectionNote: null,
         createdAt: timestamp,
         updatedAt: timestamp,
         auditLog: [auditEntry("create_post", deviceId, { imageCount: metadata.length })]
@@ -341,6 +354,7 @@ export default function HomeworkApp({ onBack }) {
           images: [...keptImages, ...metadata],
           rejectedAt: null,
           rejectedByDeviceId: null,
+          rejectionNote: null,
           updatedAt: timestamp,
           auditLog: [...(current.auditLog || []), auditEntry("edit_post", deviceId, {
             imageCount: keptImages.length + metadata.length,
@@ -404,6 +418,7 @@ export default function HomeworkApp({ onBack }) {
         confirmedByDeviceId: deviceId,
         rejectedAt: null,
         rejectedByDeviceId: null,
+        rejectionNote: null,
         updatedAt: timestamp,
         auditLog: [...(current.auditLog || []), auditEntry("confirm_post", deviceId)]
       }), `Confirm Amy homework ${selectedPost.id}`);
@@ -416,9 +431,11 @@ export default function HomeworkApp({ onBack }) {
     }
   });
 
-  const rejectPost = () => runWithUpload(async () => {
+  const rejectPost = (rejectionNote) => runWithUpload(async () => {
     setBusyAction("reject");
     try {
+      const cleanNote = String(rejectionNote || "").trim();
+      if (!cleanNote) return false;
       const timestamp = new Date().toISOString();
       const updated = await mutateGithubHomeworkPost(selectedPost.metadataPath, (current) => current.rejectedAt ? current : ({
         ...current,
@@ -426,13 +443,16 @@ export default function HomeworkApp({ onBack }) {
         confirmedByDeviceId: null,
         rejectedAt: timestamp,
         rejectedByDeviceId: deviceId,
+        rejectionNote: cleanNote,
         updatedAt: timestamp,
-        auditLog: [...(current.auditLog || []), auditEntry("reject_post", deviceId)]
+        auditLog: [...(current.auditLog || []), auditEntry("reject_post", deviceId, { noteLength: cleanNote.length })]
       }), `Reject Amy homework ${selectedPost.id}`);
       setSelectedPost(updated);
       setPosts((current) => updatePostInList(current, updated));
+      return true;
     } catch (error) {
       window.alert(error.message || "驳回失败，请稍后重试");
+      return false;
     } finally {
       setBusyAction("");
     }

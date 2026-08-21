@@ -104,7 +104,7 @@ function validGithubPayload(method, path, body) {
       && typeof body.content === "string"
       && body.content.length <= MAX_GITHUB_BODY_BYTES
       && (!body.sha || validSha(body.sha))
-      && /^(?:Save Amy (?:exam|reward) record|Update Amy accepted answers|(?:Edit|Comment on|Confirm) Amy homework)/.test(String(body.message || ""));
+      && /^(?:Save Amy (?:exam|reward) record|Update Amy accepted answers|(?:Edit|Comment on|Confirm|Reject) Amy homework)/.test(String(body.message || ""));
   }
   if (path === "/git/blobs") {
     return body?.encoding === "base64" && typeof body.content === "string" && body.content.length <= MAX_GITHUB_BODY_BYTES;
