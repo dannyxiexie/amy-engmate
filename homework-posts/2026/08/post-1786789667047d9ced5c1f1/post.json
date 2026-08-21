@@ -44,10 +44,10 @@
     }
   ],
   "comments": [],
-  "confirmedAt": "2026-08-20T14:23:04.224Z",
-  "confirmedByDeviceId": "device-1785847096793975fb5f573",
+  "confirmedAt": null,
+  "confirmedByDeviceId": null,
   "createdAt": "2026-08-15T10:27:47.629Z",
-  "updatedAt": "2026-08-20T14:23:04.224Z",
+  "updatedAt": "2026-08-21T07:15:09.103Z",
   "auditLog": [
     {
       "id": "audit-1786789667629ab4e2ce558",
@@ -74,6 +74,18 @@
       "deviceId": "device-1785847096793975fb5f573",
       "timestamp": "2026-08-20T14:23:04.849Z",
       "details": {}
+    },
+    {
+      "id": "audit-1787296509724091daf2d4d",
+      "action": "reject_post",
+      "deviceId": "device-1785847096793975fb5f573",
+      "timestamp": "2026-08-21T07:15:09.724Z",
+      "details": {
+        "noteLength": 12
+      }
     }
-  ]
+  ],
+  "rejectedAt": "2026-08-21T07:15:09.103Z",
+  "rejectedByDeviceId": "device-1785847096793975fb5f573",
+  "rejectionNote": "无作业本和语文故事总结。"
 }
